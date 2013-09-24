@@ -34,12 +34,12 @@ if HAVE_OCAML
 # Note this list must be in dependency order.
 OBJECTS = \
 	$(top_builddir)/fish/guestfish-progress.o \
-	$(top_builddir)/resize/tty-c.o \
-	$(top_builddir)/resize/progress-c.o \
-	$(top_builddir)/resize/common_gettext.cmx \
-	$(top_builddir)/resize/common_utils.cmx \
-	$(top_builddir)/resize/tTY.cmx \
-	$(top_builddir)/resize/progress.cmx \
+	$(top_builddir)/mllib/tty-c.o \
+	$(top_builddir)/mllib/progress-c.o \
+	$(top_builddir)/mllib/common_gettext.cmx \
+	$(top_builddir)/mllib/common_utils.cmx \
+	$(top_builddir)/mllib/tTY.cmx \
+	$(top_builddir)/mllib/progress.cmx \
 	statvfs-c.o \
 	sparsify.cmx
 
@@ -48,7 +48,11 @@ bin_SCRIPTS = virt-sparsify
 # -I $(top_builddir)/src/.libs is a hack which forces corresponding -L
 # option to be passed to gcc, so we don't try linking against an
 # installed copy of libguestfs.
-OCAMLPACKAGES = -package str,unix -I $(top_builddir)/src/.libs -I $(top_builddir)/ocaml -I $(top_builddir)/resize
+OCAMLPACKAGES = \
+	-package str,unix \
+	-I $(top_builddir)/src/.libs \
+	-I $(top_builddir)/ocaml \
+	-I $(top_builddir)/mllib
 if HAVE_OCAML_PKG_GETTEXT
 OCAMLPACKAGES += -package gettext-stub
 endif
@@ -112,7 +116,7 @@ depend: .depend
 
 .depend: $(wildcard $(abs_srcdir)/*.mli) $(wildcard $(abs_srcdir)/*.ml)
 	rm -f $@ $@-t
-	$(OCAMLFIND) ocamldep -I ../ocaml -I $(abs_srcdir) -I $(top_srcdir)/resize $^ | \
+	$(OCAMLFIND) ocamldep -I ../ocaml -I $(abs_srcdir) -I $(top_srcdir)/mllib $^ | \
 	  $(SED) 's/ *$$//' | \
 	  $(SED) -e :a -e '/ *\\$$/N; s/ *\\\n */ /; ta' | \
 	  $(SED) -e 's,$(abs_srcdir)/,$(builddir)/,g' | \
