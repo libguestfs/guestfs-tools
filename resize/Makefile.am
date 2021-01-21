@@ -19,6 +19,7 @@ include $(top_srcdir)/subdir-rules.mk
 
 EXTRA_DIST = \
 	$(SOURCES_MLI) $(SOURCES_ML) $(SOURCES_C) \
+	rhbz1285847.sh \
 	test-virt-resize.pl \
 	test-virt-resize-docs.sh \
 	virt-resize.pod
@@ -51,14 +52,10 @@ virt_resize_CFLAGS = \
 BOBJECTS = $(SOURCES_ML:.ml=.cmo)
 XOBJECTS = $(BOBJECTS:.cmo=.cmx)
 
-# -I $(top_builddir)/lib/.libs is a hack which forces corresponding -L
-# option to be passed to gcc, so we don't try linking against an
-# installed copy of libguestfs.
 OCAMLPACKAGES = \
-	-package str,unix \
+	-package str,unix,guestfs \
 	-I $(top_builddir)/common/utils/.libs \
 	-I $(top_builddir)/common/progress/.libs \
-	-I $(top_builddir)/lib/.libs \
 	-I $(top_builddir)/gnulib/lib/.libs \
 	-I $(top_builddir)/ocaml \
 	-I $(top_builddir)/common/mlstdutils \
@@ -133,12 +130,9 @@ stamp-virt-resize.pod: virt-resize.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-resize-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	rhbz1285847.sh \
+	test-virt-resize-docs.sh \
 	test-virt-resize.pl
-endif
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

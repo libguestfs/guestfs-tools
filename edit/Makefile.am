@@ -40,6 +40,7 @@ virt_edit_CPPFLAGS = \
 
 virt_edit_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS)
 
 virt_edit_LDADD = \
@@ -47,7 +48,7 @@ virt_edit_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/windows/libwindows.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -74,9 +75,5 @@ stamp-virt-edit.pod: virt-edit.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-edit-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-edit-docs.sh \
 	test-virt-edit.sh
-endif ENABLE_APPLIANCE

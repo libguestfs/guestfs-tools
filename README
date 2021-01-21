@@ -1,0 +1,14 @@
+Guestfs-tools contains tools for accessing and modifying guest disk
+images.  For more information see the home page:
+
+  http://libguestfs.org/
+
+For discussion, development, patches, etc. please use the mailing list:
+
+  http://www.redhat.com/mailman/listinfo/libguestfs
+
+Copyright (C) 2009-2021 Red Hat Inc.
+
+The programs are distributed under the GPLv2+.  Some parts are LGPLv2+
+licensed.  See individual files for license details, and COPYING and
+COPYING.LIB for full license information.

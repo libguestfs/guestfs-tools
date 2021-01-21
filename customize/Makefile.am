@@ -117,13 +117,9 @@ else
 OBJECTS = $(XOBJECTS)
 endif
 
-# -I $(top_builddir)/lib/.libs is a hack which forces corresponding -L
-# option to be passed to gcc, so we don't try linking against an
-# installed copy of libguestfs.
 OCAMLPACKAGES = \
-	-package str,unix \
+	-package str,unix,guestfs \
 	-I $(top_builddir)/common/utils/.libs \
-	-I $(top_builddir)/lib/.libs \
 	-I $(top_builddir)/gnulib/lib/.libs \
 	-I $(top_builddir)/ocaml \
 	-I $(top_builddir)/common/mlstdutils \
@@ -218,13 +214,9 @@ stamp-virt-customize.pod: virt-customize.pod $(top_srcdir)/common/mlcustomize/cu
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-customize-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-customize-docs.sh \
 	test-virt-customize.sh \
 	$(SLOW_TESTS)
-endif
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

@@ -46,6 +46,7 @@ virt_df_CPPFLAGS = \
 virt_df_CFLAGS = \
 	-pthread \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
 	$(LIBVIRT_CFLAGS)
 
@@ -54,7 +55,7 @@ virt_df_LDADD = \
 	$(top_builddir)/common/parallel/libparallel.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -82,17 +83,13 @@ stamp-virt-df.pod: virt-df.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-df-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-df-docs.sh \
 	test-virt-df.sh
 
 if HAVE_LIBVIRT
 TESTS += \
 	test-virt-df-guests.sh
 endif
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

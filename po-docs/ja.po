@@ -34826,7 +34826,7 @@ msgstr ""
 #: ../docs/guestfs-release-notes-1.36.pod:388
 msgid ""
 "*** No rule to make target '../perl/lib/Sys/Guestfs.c', needed by "
-"'libguestfs.pot'"
+"'guestfs-tools.pot'"
 msgstr ""
 
 #. type: =item

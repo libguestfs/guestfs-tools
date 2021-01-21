@@ -174,14 +174,10 @@ virt_builder_repository_CFLAGS = \
 REPOSITORY_BOBJECTS = $(REPOSITORY_SOURCES_ML:.ml=.cmo)
 REPOSITORY_XOBJECTS = $(REPOSITORY_BOBJECTS:.cmo=.cmx)
 
-# -I $(top_builddir)/lib/.libs is a hack which forces corresponding -L
-# option to be passed to gcc, so we don't try linking against an
-# installed copy of libguestfs.
 OCAMLPACKAGES = \
-	-package str,unix \
+	-package str,unix,guestfs \
 	-I $(top_builddir)/common/utils/.libs \
 	-I $(top_builddir)/common/mlxml \
-	-I $(top_builddir)/lib/.libs \
 	-I $(top_builddir)/gnulib/lib/.libs \
 	-I $(top_builddir)/ocaml \
 	-I $(top_builddir)/common/mlstdutils \
@@ -363,11 +359,10 @@ TESTS = \
 	$(SLOW_TESTS)
 check_PROGRAMS =
 
-TESTS += test-virt-builder-list-simplestreams.sh
+TESTS += \
+	test-virt-builder-list-simplestreams.sh \
+	test-virt-builder.sh
 
-if ENABLE_APPLIANCE
-TESTS += test-virt-builder.sh
-endif ENABLE_APPLIANCE
 if HAVE_OCAML_PKG_OUNIT
 check_PROGRAMS += index_parser_tests
 TESTS += index_parser_tests

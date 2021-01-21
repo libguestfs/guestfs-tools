@@ -25,52 +25,6 @@ LINGUA = $(shell basename -- `pwd`)
 CLEANFILES += *.pl *.pod
 
 MANPAGES = \
-	guestfish.1 \
-	guestfs.3 \
-	guestfs-building.1 \
-	guestfs-erlang.3 \
-	guestfs-examples.3 \
-	guestfs-faq.1 \
-	guestfs-hacking.1 \
-	guestfs-internals.1 \
-	guestfs-golang.3 \
-	guestfs-java.3 \
-	guestfs-lua.3 \
-	guestfs-ocaml.3 \
-	guestfs-performance.1 \
-	guestfs-perl.3 \
-	guestfs-python.3 \
-	guestfs-recipes.1 \
-	guestfs-release-notes-1.42.1 \
-	guestfs-release-notes-1.40.1 \
-	guestfs-release-notes-1.38.1 \
-	guestfs-release-notes-1.36.1 \
-	guestfs-release-notes-1.34.1 \
-	guestfs-release-notes-1.32.1 \
-	guestfs-release-notes-1.30.1 \
-	guestfs-release-notes-1.28.1 \
-	guestfs-release-notes-1.26.1 \
-	guestfs-release-notes-1.24.1 \
-	guestfs-release-notes-1.22.1 \
-	guestfs-release-notes-1.20.1 \
-	guestfs-release-notes-1.18.1 \
-	guestfs-release-notes-1.16.1 \
-	guestfs-release-notes-1.14.1 \
-	guestfs-release-notes-1.12.1 \
-	guestfs-release-notes-1.10.1 \
-	guestfs-release-notes-1.8.1 \
-	guestfs-release-notes-1.6.1 \
-	guestfs-release-notes-1.4.1 \
-	guestfs-release-notes-historical.1 \
-	guestfs-ruby.3 \
-	guestfs-security.1 \
-	guestfs-testing.1 \
-	guestfsd.8 \
-	guestmount.1 \
-	guestunmount.1 \
-	libguestfs-make-fixed-appliance.1 \
-	libguestfs-test-tool.1 \
-	libguestfs-tools.conf.5 \
 	virt-alignment-scan.1 \
 	virt-builder.1 \
 	virt-cat.1 \
@@ -86,16 +40,12 @@ MANPAGES = \
 	virt-get-kernel.1 \
 	virt-index-validate.1 \
 	virt-inspector.1 \
-	virt-list-filesystems.1 \
-	virt-list-partitions.1 \
 	virt-log.1 \
 	virt-ls.1 \
 	virt-make-fs.1 \
-	virt-rescue.1 \
 	virt-resize.1 \
 	virt-sparsify.1 \
 	virt-sysprep.1 \
-	virt-tar.1 \
 	virt-tar-in.1 \
 	virt-tar-out.1 \
 	virt-win-reg.1
@@ -111,28 +61,6 @@ EXTRA_DIST = \
 
 all-local: $(MANPAGES)
 
-guestfs.3: guestfs.pod guestfs-actions.pod guestfs-availability.pod guestfs-structs.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --section 3 \
-	  --license LGPLv2+ \
-	  --insert $(srcdir)/guestfs-actions.pod:__ACTIONS__ \
-	  --insert $(srcdir)/guestfs-availability.pod:__AVAILABILITY__ \
-	  --insert $(srcdir)/guestfs-structs.pod:__STRUCTS__ \
-	  $<
-
-# XXX --warning parameter is not passed, so no WARNING section is
-# generated in any translated manual.  To fix this we need to expand
-# out all the %.1 pattern rules below.
-
-guestfish.1: guestfish.pod guestfish-actions.pod guestfish-commands.pod guestfish-prepopts.pod blocksize-option.pod key-option.pod keys-from-stdin-option.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --license GPLv2+ \
-	  $<
-
 virt-builder.1: virt-builder.pod customize-synopsis.pod customize-options.pod
 	$(PODWRAPPER) \
 	  --no-strict-checks \
@@ -140,6 +68,7 @@ virt-builder.1: virt-builder.pod customize-synopsis.pod customize-options.pod
 	  --license GPLv2+ \
 	  --insert $(srcdir)/customize-synopsis.pod:__CUSTOMIZE_SYNOPSIS__ \
 	  --insert $(srcdir)/customize-options.pod:__CUSTOMIZE_OPTIONS__ \
+	  --path $(top_srcdir)/common/options \
 	  $<
 
 virt-customize.1: virt-customize.pod customize-synopsis.pod customize-options.pod
@@ -149,6 +78,7 @@ virt-customize.1: virt-customize.pod customize-synopsis.pod customize-options.po
 	  --license GPLv2+ \
 	  --insert $(srcdir)/customize-synopsis.pod:__CUSTOMIZE_SYNOPSIS__ \
 	  --insert $(srcdir)/customize-options.pod:__CUSTOMIZE_OPTIONS__ \
+	  --path $(top_srcdir)/common/options \
 	  $<
 
 virt-sysprep.1: virt-sysprep.pod sysprep-extra-options.pod sysprep-operations.pod
@@ -158,41 +88,14 @@ virt-sysprep.1: virt-sysprep.pod sysprep-extra-options.pod sysprep-operations.po
 	  --license GPLv2+ \
           --insert $(srcdir)/sysprep-extra-options.pod:__EXTRA_OPTIONS__ \
           --insert $(srcdir)/sysprep-operations.pod:__OPERATIONS__ \
-	  $<
-
-virt-p2v.1: virt-p2v.pod virt-p2v-kernel-config.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --license GPLv2+ \
-	  --insert $(srcdir)/virt-p2v-kernel-config.pod:__KERNEL_CONFIG__ \
+	  --path $(top_srcdir)/common/options \
 	  $<
 
 %.1: %.pod
 	$(PODWRAPPER) \
 	  --no-strict-checks \
 	  --man $@ \
-	  $<
-
-%.3: %.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --section 3 \
-	  $<
-
-%.5: %.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --section 5 \
-	  $<
-
-%.8: %.pod
-	$(PODWRAPPER) \
-	  --no-strict-checks \
-	  --man $@ \
-	  --section 8 \
+	  --path $(top_srcdir)/common/options \
 	  $<
 
 # Note: po4a puts the following junk at the top of every POD file it

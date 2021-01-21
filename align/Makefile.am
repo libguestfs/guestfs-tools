@@ -42,6 +42,7 @@ virt_alignment_scan_CPPFLAGS = \
 virt_alignment_scan_CFLAGS = \
 	-pthread \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
 	$(LIBVIRT_CFLAGS)
 
@@ -50,7 +51,7 @@ virt_alignment_scan_LDADD = \
 	$(top_builddir)/common/parallel/libparallel.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -78,16 +79,12 @@ stamp-virt-alignment-scan.pod: virt-alignment-scan.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-alignment-scan-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-alignment-scan-docs.sh \
 	test-virt-alignment-scan.sh
 
 if HAVE_LIBVIRT
 TESTS += \
 	test-virt-alignment-scan-guests.sh
-endif
 endif
 
 check-valgrind:

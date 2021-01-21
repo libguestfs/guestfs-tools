@@ -48,14 +48,15 @@ virt_cat_CPPFLAGS = \
 
 virt_cat_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS)
 
 virt_cat_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/windows/libwindows.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -77,14 +78,15 @@ virt_filesystems_CPPFLAGS = \
 
 virt_filesystems_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS)
 
 virt_filesystems_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/windows/libwindows.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -106,13 +108,14 @@ virt_log_CPPFLAGS = \
 
 virt_log_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS)
 
 virt_log_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -135,14 +138,15 @@ virt_ls_CPPFLAGS = \
 
 virt_ls_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBGUESTFS_LIBS)
 
 virt_ls_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/visit/libvisit.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -164,14 +168,15 @@ virt_tail_CPPFLAGS = \
 
 virt_tail_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS)
 
 virt_tail_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/windows/libwindows.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -252,16 +257,12 @@ stamp-virt-tail.pod: virt-tail.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-docs.sh \
 	test-virt-cat.sh \
 	test-virt-filesystems.sh \
 	test-virt-log.sh \
 	test-virt-ls.sh \
 	test-virt-tail.sh
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

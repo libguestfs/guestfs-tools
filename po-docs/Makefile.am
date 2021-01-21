@@ -19,7 +19,7 @@ include $(top_srcdir)/subdir-rules.mk
 
 # XXX The use of po4a is naive here.  Also we should integrate this
 # into the po/ directory and the translations into the usual
-# libguestfs.pot file.
+# guestfs-tools.pot file.
 
 # Languages.
 # Don't use LINGUAS (uppercase) as Gentoo defines it (RHBZ#804464).
@@ -30,7 +30,7 @@ linguas_translated = ja uk
 
 EXTRA_DIST = \
 	LINGUAS \
-	libguestfs-docs.pot \
+	guestfs-tools-docs.pot \
 	$(linguas:%=%.po) \
 	podfiles
 
@@ -40,7 +40,7 @@ EXTRA_DIST = \
 # XXX Is there a better way?
 SUBDIRS = $(linguas_translated)
 
-libguestfs-docs.pot:
+guestfs-tools-docs.pot:
 	cd $(top_srcdir) && $(PO4A_GETTEXTIZE) \
 	  -f pod \
 	  -M utf-8 -L utf-8 \

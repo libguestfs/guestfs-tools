@@ -105,14 +105,10 @@ virt_sysprep_CFLAGS = \
 BOBJECTS = $(SOURCES_ML:.ml=.cmo)
 XOBJECTS = $(BOBJECTS:.cmo=.cmx)
 
-# -I $(top_builddir)/lib/.libs is a hack which forces corresponding -L
-# option to be passed to gcc, so we don't try linking against an
-# installed copy of libguestfs.
 OCAMLPACKAGES = \
-	-package str,unix \
+	-package str,unix,guestfs \
 	-I $(top_builddir)/common/utils/.libs \
 	-I $(top_builddir)/common/structs/.libs \
-	-I $(top_builddir)/lib/.libs \
 	-I $(top_builddir)/gnulib/lib/.libs \
 	-I $(top_builddir)/ocaml \
 	-I $(top_builddir)/common/visit/.libs \
@@ -218,19 +214,11 @@ TESTS_ENVIRONMENT = \
 	$(top_builddir)/run --test
 
 TESTS = \
-	test-virt-sysprep-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-sysprep-docs.sh \
 	test-virt-sysprep.sh \
 	test-virt-sysprep-backup-files.sh \
-	test-virt-sysprep-passwords.sh
-
-if HAVE_FUSE
-TESTS += \
+	test-virt-sysprep-passwords.sh \
 	test-virt-sysprep-script.sh
-endif HAVE_FUSE
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) TESTS="test-virt-sysprep.sh" VG="@VG@" check

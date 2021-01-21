@@ -51,37 +51,3 @@ PKG_CHECK_MODULES([LIBLZMA], [liblzma], [
     LIBS="$old_LIBS"
 ],
 [AC_MSG_WARN([liblzma not found, virt-builder will be slower])])
-
-dnl Readline (used by guestfish).
-AC_ARG_WITH([readline],[
-    AS_HELP_STRING([--with-readline],
-        [support fancy command line editing @<:@default=check@:>@])],
-    [],
-    [with_readline=check])
-
-LIBREADLINE=
-AS_IF([test "x$with_readline" != xno],[
-    AC_CHECK_LIB([readline], [main],
-        [AC_SUBST([LIBREADLINE], ["-lreadline -lncurses"])
-         AC_DEFINE([HAVE_LIBREADLINE], [1],
-                   [Define if you have libreadline.])
-        ],
-        [if test "x$with_readline" != xcheck; then
-         AC_MSG_FAILURE(
-             [--with-readline was given, but test for readline failed])
-         fi
-        ], -lncurses)
-    old_LIBS="$LIBS"
-    LIBS="$LIBS $LIBREADLINE"
-    AC_CHECK_FUNCS([append_history completion_matches rl_completion_matches])
-    LIBS="$old_LIBS"
-    ])
-
-dnl libconfig (highly recommended) used by guestfish and others.
-PKG_CHECK_MODULES([LIBCONFIG], [libconfig],[
-    AC_SUBST([LIBCONFIG_CFLAGS])
-    AC_SUBST([LIBCONFIG_LIBS])
-    AC_DEFINE([HAVE_LIBCONFIG],[1],[libconfig found at compile time.])
-],
-    [AC_MSG_WARN([libconfig not found, some features will be disabled])])
-AM_CONDITIONAL([HAVE_LIBCONFIG],[test "x$LIBCONFIG_LIBS" != "x"])

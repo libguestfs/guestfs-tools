@@ -40,13 +40,14 @@ virt_make_fs_CPPFLAGS = \
 
 virt_make_fs_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS)
 
 virt_make_fs_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LTLIBINTL) \
 	../gnulib/lib/libgnu.la
@@ -73,12 +74,8 @@ stamp-virt-make-fs.pod: virt-make-fs.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-make-fs-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-make-fs-docs.sh \
 	test-virt-make-fs.sh
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

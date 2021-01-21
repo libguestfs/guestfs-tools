@@ -18,19 +18,13 @@
 include $(top_srcdir)/subdir-rules.mk
 
 scripts = \
-	guestfish \
-	guestmount \
-	libguestfs-test-tool \
 	virt-alignment-scan \
-	virt-rescue
+	virt-win-reg
 
 # Some of the scripts are simply symbolic links.
 symlinks = \
-	guestunmount \
 	virt-builder \
 	virt-cat \
-	virt-copy-in \
-	virt-copy-out \
 	virt-customize \
 	virt-diff \
 	virt-df \
@@ -45,10 +39,7 @@ symlinks = \
 	virt-resize \
 	virt-sparsify \
 	virt-sysprep \
-	virt-tail \
-	virt-tar-in \
-	virt-tar-out \
-	virt-win-reg
+	virt-tail
 
 # Note: Don't distribute the symbolic links, only the real files.
 EXTRA_DIST = \
@@ -59,18 +50,10 @@ EXTRA_DIST = \
 CLEANFILES += \
 	$(symlinks)
 
-# Any tool that has --short-options and --long-options only is handled
-# by this common script.
-virt-win-reg:
-	rm -f $@
-	$(LN_S) libguestfs-test-tool $@
-
 # Any tool that has --short-options and --long-options and a few
 # common options like -d is handled by this common script.  However
 # this script cannot deal with commands that use --ro/--rw
-# (eg. virt-rescue), nor commands that have lots of exceptions
-# (eg. guestfish).  Those tools have to be handled individually.
-guestunmount \
+# (eg. virt-rescue).  Those tools have to be handled individually.
 virt-builder virt-cat virt-customize virt-df virt-dib virt-diff \
 virt-edit virt-filesystems virt-format virt-get-kernel virt-inspector \
 virt-log virt-ls \
@@ -78,11 +61,6 @@ virt-resize virt-sparsify virt-sysprep \
 virt-tail:
 	rm -f $@
 	$(LN_S) virt-alignment-scan $@
-
-# guestfish is handled specially.
-virt-copy-in virt-copy-out virt-tar-in virt-tar-out:
-	rm -f $@
-	$(LN_S) guestfish $@
 
 if HAVE_BASH_COMPLETION
 

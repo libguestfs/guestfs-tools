@@ -1,5 +1,5 @@
 # libguestfs
-# Copyright (C) 2009-2020 Red Hat Inc.
+# Copyright (C) 2009-2021 Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -39,16 +39,6 @@ AC_PROG_AWK
 
 AC_PROG_LN_S
 
-dnl Check for cpio which isn't in the default Pardus install amazingly.
-AC_CHECK_PROG([CPIO],[cpio],[cpio],[no])
-test "x$CPIO" = "xno" &&
-    AC_MSG_ERROR([cpio must be installed])
-
-dnl Check for gperf.
-AC_CHECK_PROG([GPERF],[gperf],[gperf],[no])
-test "x$GPERF" = "xno" &&
-    AC_MSG_ERROR([gperf must be installed])
-
 dnl Check for genisoimage/mkisofs
 AC_PATH_PROGS([GENISOIMAGE],[genisoimage mkisofs],[no],
     [$PATH$PATH_SEPARATOR/usr/sbin$PATH_SEPARATOR/sbin])
@@ -71,30 +61,6 @@ if test "x$DB_DUMP" != "xno"; then
 fi
 if test "x$DB_LOAD" != "xno"; then
     AC_DEFINE_UNQUOTED([DB_LOAD],["$DB_LOAD"],[Name of db_load program.])
-fi
-
-dnl Check for netpbm programs (optional).
-AC_PATH_PROGS([PBMTEXT],[pbmtext],[no])
-AC_PATH_PROGS([PNMTOPNG],[pnmtopng],[no])
-AC_PATH_PROGS([BMPTOPNM],[bmptopnm],[no])
-AC_PATH_PROGS([PAMCUT],[pamcut],[no])
-if test "x$PBMTEXT" != "xno"; then
-    AC_DEFINE_UNQUOTED([PBMTEXT],["$PBMTEXT"],[Name of pbmtext program.])
-fi
-if test "x$PNMTOPNG" != "xno"; then
-    AC_DEFINE_UNQUOTED([PNMTOPNG],["$PNMTOPNG"],[Name of pnmtopng program.])
-fi
-if test "x$BMPTOPNM" != "xno"; then
-    AC_DEFINE_UNQUOTED([BMPTOPNM],["$BMPTOPNM"],[Name of bmptopnm program.])
-fi
-if test "x$PAMCUT" != "xno"; then
-    AC_DEFINE_UNQUOTED([PAMCUT],["$PAMCUT"],[Name of pamcut program.])
-fi
-
-dnl Check for icoutils (optional).
-AC_PATH_PROGS([WRESTOOL],[wrestool],[no])
-if test "x$WRESTOOL" != "xno"; then
-    AC_DEFINE_UNQUOTED([WRESTOOL],["$WRESTOOL"],[Name of wrestool program.])
 fi
 
 dnl Check for xzcat (required).
@@ -128,11 +94,3 @@ AS_IF([test "x$VALGRIND" != "xno"],[
 ])
 AC_SUBST([VG])
 AM_SUBST_NOTMAKE([VG])
-
-dnl Check for fuser (used in FUSE stuff).
-AC_PATH_PROGS([FUSER],[fuser],[/sbin/fuser])
-AC_DEFINE_UNQUOTED([FUSER],["$FUSER"],[Name of fuser program.])
-
-dnl Check for true (used in tests).
-AC_PATH_PROGS([TOOL_TRUE],[true],[/bin/true])
-AC_DEFINE_UNQUOTED([TOOL_TRUE],["$TOOL_TRUE"],[Name of 'true' program.])

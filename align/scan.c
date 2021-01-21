@@ -29,6 +29,7 @@
 #include <error.h>
 #include <locale.h>
 #include <assert.h>
+#include <limits.h>
 #include <libintl.h>
 
 #include <pthread.h>

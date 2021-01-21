@@ -61,13 +61,14 @@ virt_inspector_CPPFLAGS = \
 
 virt_inspector_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS)
 
 virt_inspector_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -92,13 +93,10 @@ stamp-virt-inspector.pod: virt-inspector.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-inspector-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-inspector-docs.sh \
 	test-virt-inspector.sh \
 	test-virt-inspector-luks.sh
-endif ENABLE_APPLIANCE
+
 if HAVE_XMLLINT
 TESTS += test-xmllint.sh
 endif

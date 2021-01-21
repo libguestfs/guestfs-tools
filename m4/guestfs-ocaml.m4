@@ -38,10 +38,10 @@ AC_ARG_ENABLE([ocaml],
     [],
     [enable_ocaml=yes])
 
-dnl OCaml >= 4.01 is required.
-ocaml_ver_str=4.01
+dnl OCaml >= 4.02 is required.
+ocaml_ver_str=4.02
 ocaml_min_major=4
-ocaml_min_minor=1
+ocaml_min_minor=2
 AC_MSG_CHECKING([if OCaml version >= $ocaml_ver_str])
 ocaml_major="`echo $OCAMLVERSION | $AWK -F. '{print $1}'`"
 ocaml_minor="`echo $OCAMLVERSION | $AWK -F. '{print $2}' | sed 's/^0//'`"
@@ -97,60 +97,12 @@ else
 fi
 AC_SUBST([OCAMLDEP_ONE_LINE])
 
-have_Hivex_OPEN_UNSAFE=no
-if test "x$enable_daemon" = "xyes"; then
-    OCAML_PKG_hivex=no
-    AC_CHECK_OCAML_PKG(hivex)
-    if test "x$OCAML_PKG_hivex" = "xno"; then
-        AC_MSG_ERROR([the OCaml module 'hivex' is required])
-    fi
-
-    # Check if Hivex has 'OPEN_UNSAFE' flag.
-    AC_MSG_CHECKING([for Hivex.OPEN_UNSAFE])
-    rm -f conftest.ml
-    echo 'let s = Hivex.OPEN_UNSAFE' > conftest.ml
-    if $OCAMLFIND ocamlc -package hivex -c conftest.ml >&5 2>&5 ; then
-        AC_MSG_RESULT([yes])
-        have_Hivex_OPEN_UNSAFE=yes
-    else
-        AC_MSG_RESULT([no])
-        have_Hivex_OPEN_UNSAFE=no
-    fi
-
-    dnl Check which OCaml runtime to link the daemon again.
-    dnl We can't use AC_CHECK_LIB here unfortunately because
-    dnl the other symbols are resolved by OCaml itself.
-    AC_MSG_CHECKING([which OCaml runtime we should link the daemon with])
-    if test "x$OCAMLOPT" != "xno"; then
-        for f in asmrun_pic asmrun; do
-            if test -f "$OCAMLLIB/lib$f.a"; then
-                CAMLRUN=$f
-                break
-            fi
-        done
-    else
-        for f in camlrun; do
-            if test -f "$OCAMLLIB/lib$f.a"; then
-                CAMLRUN=$f
-                break
-            fi
-        done
-    fi
-    if test "x$CAMLRUN" != "x"; then
-        AC_MSG_RESULT([$CAMLRUN])
-    else
-        AC_MSG_ERROR([could not find or link to libasmrun or libcamlrun])
-    fi
-    AC_SUBST([CAMLRUN])
+# Check for OCaml libguestfs bindings.
+OCAML_PKG_guestfs=no
+AC_CHECK_OCAML_PKG(guestfs)
+if test "x$OCAML_PKG_guestfs" = "xno"; then
+    AC_MSG_ERROR([the OCaml module 'guestfs' is required])
 fi
-
-dnl Define HIVEX_OPEN_UNSAFE_FLAG based on test above.
-AS_IF([test "x$have_Hivex_OPEN_UNSAFE" = "xno"],[
-    HIVEX_OPEN_UNSAFE_FLAG="None"
-],[
-    HIVEX_OPEN_UNSAFE_FLAG="Some Hivex.OPEN_UNSAFE"
-])
-AC_SUBST([HIVEX_OPEN_UNSAFE_FLAG])
 
 OCAML_PKG_gettext=no
 OCAML_PKG_oUnit=no
@@ -194,24 +146,6 @@ AM_CONDITIONAL([HAVE_OCAML_PKG_OUNIT],
 AC_CHECK_PROG([OCAML_GETTEXT],[ocaml-gettext],[ocaml-gettext],[no])
 AM_CONDITIONAL([HAVE_OCAML_GETTEXT],
                [test "x$OCAML_PKG_gettext" != "xno" && test "x$OCAML_GETTEXT" != "xno"])
-
-dnl Create the backwards compatibility Bytes module for OCaml < 4.02.
-mkdir -p common/mlstdutils
-rm -f common/mlstdutils/bytes.ml common/mlstdutils/bytes.mli
-AS_IF([test "x$have_Bytes_module" = "xno"],[
-    cat > common/mlstdutils/bytes.ml <<EOF
-include String
-let of_string = String.copy
-let to_string = String.copy
-let sub_string = String.sub
-EOF
-    $OCAMLC -i common/mlstdutils/bytes.ml > common/mlstdutils/bytes.mli
-    safe_string_option=
-],[
-    safe_string_option="-safe-string"
-])
-AM_CONDITIONAL([HAVE_BYTES_COMPAT_ML],
-	       [test "x$have_Bytes_module" = "xno"])
 
 dnl Check if OCaml has caml_alloc_initialized_string (added 2017).
 AS_IF([test "x$OCAMLC" != "xno" && test "x$OCAMLFIND" != "xno" && \

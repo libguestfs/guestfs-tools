@@ -40,6 +40,7 @@ virt_diff_CPPFLAGS = \
 
 virt_diff_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS)
 
 virt_diff_LDADD = \
@@ -47,7 +48,7 @@ virt_diff_LDADD = \
 	$(top_builddir)/common/visit/libvisit.la \
 	$(top_builddir)/common/structs/libstructs.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -76,12 +77,8 @@ stamp-virt-diff.pod: virt-diff.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-diff-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-diff-docs.sh \
 	test-virt-diff.sh
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

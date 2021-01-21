@@ -1,4 +1,1 @@
-tools/virt-list-filesystems
-tools/virt-list-partitions
-tools/virt-tar
-tools/virt-win-reg
+win-reg/virt-win-reg

@@ -39,13 +39,14 @@ virt_format_CPPFLAGS = \
 
 virt_format_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
 	$(LIBVIRT_CFLAGS)
 
 virt_format_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/utils/libutils.la \
-	$(top_builddir)/lib/libguestfs.la \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LTLIBINTL) \
@@ -72,12 +73,8 @@ stamp-virt-format.pod: virt-format.pod
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-format-docs.sh
-
-if ENABLE_APPLIANCE
-TESTS += \
+	test-virt-format-docs.sh \
 	test-virt-format.sh
-endif ENABLE_APPLIANCE
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check
