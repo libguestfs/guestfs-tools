@@ -27,6 +27,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <error.h>
+#include <limits.h>
 #include <locale.h>
 #include <assert.h>
 #include <libintl.h>
