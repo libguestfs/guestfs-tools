@@ -33,7 +33,6 @@
 
 #include "c-ctype.h"
 #include "human.h"
-#include "intprops.h"
 #include "getprogname.h"
 
 #include "guestfs.h"
@@ -892,7 +891,7 @@ write_row (const char *name, const char *type,
   size_t len = 0;
   char hum[LONGEST_HUMAN_READABLE];
   char num[256];
-  char mbr_id_str[INT_BUFSIZE_BOUND (mbr_id)];
+  char mbr_id_str[32];
 
   if ((columns & COLUMN_NAME))
     strings[len++] = name;
