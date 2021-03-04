@@ -33,7 +33,6 @@
 #include <sys/stat.h>
 #include <utime.h>
 
-#include "xvasprintf.h"
 #include "getprogname.h"
 
 #include "guestfs.h"

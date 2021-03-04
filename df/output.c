@@ -23,7 +23,6 @@
 #include <stdint.h>
 #include <string.h>
 #include <inttypes.h>
-#include <xvasprintf.h>
 #include <errno.h>
 #include <libintl.h>
 #include <math.h>
