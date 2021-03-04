@@ -30,6 +30,8 @@
 
 #include <guestfs.h>
 
+#include "options.h"
+
 #include "getprogname.h"
 #include "guestfs-utils.h"
 
@@ -90,10 +92,7 @@ main (int argc, char *argv[])
       break;
 
     case 'V':
-      printf ("%s %s%s\n",
-              getprogname (),
-              PACKAGE_VERSION, PACKAGE_VERSION_EXTRA);
-      exit (EXIT_SUCCESS);
+      OPTION_V;
 
     case HELP_OPTION:
       usage (EXIT_SUCCESS);
