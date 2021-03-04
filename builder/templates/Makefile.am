@@ -28,10 +28,10 @@ EXTRA_DIST = \
 	ubuntu.preseed \
 	validate.sh
 
-# Create the index file under the top level website/ directory.
-noinst_DATA = $(top_builddir)/website/download/builder/index
+# Create the index file.
+noinst_DATA = index
 
-$(top_builddir)/website/download/builder/index: $(index_fragments)
+index: $(index_fragments)
 	rm -f $@ $@-t
 	LANG=C sh -c 'cat *.index-fragment' > $@-t
 	mv $@-t $@
