@@ -114,6 +114,16 @@ AM_CONDITIONAL([HAVE_GNU_GETTEXT],
 dnl Check for gettext.
 AM_GNU_GETTEXT([external])
 
+dnl Check for PCRE2 (required)
+PKG_CHECK_MODULES([PCRE2], [libpcre2-8], [], [
+    AC_CHECK_PROGS([PCRE2_CONFIG], [pcre2-config], [no])
+    AS_IF([test "x$PCRE2_CONFIG" = "xno"], [
+        AC_MSG_ERROR([Please install the pcre2 devel package])
+    ])
+    PCRE_CFLAGS=`$PCRE2_CONFIG --cflags`
+    PCRE_LIBS=`$PCRE2_CONFIG --libs8`
+])
+
 dnl libvirt (highly recommended)
 AC_ARG_WITH([libvirt],[
     AS_HELP_STRING([--without-libvirt],
