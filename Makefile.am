@@ -172,12 +172,5 @@ maintainer-check-extra-dist:
 	@echo Checking for differences between EXTRA_DIST and git ...
 	cat tmp/comm-out
 	[ ! -s tmp/comm-out ]
-	@echo Checking for generated files missing from the tarball ...
-	@for f in `cat generator/files-generated.txt | grep -v '^common/mlv2v/'`; do \
-	  if ! grep -sq "^$$f\$$" tmp/tarfiles; then \
-	    echo generated file missing from tarball: $$f; \
-	    exit 1; \
-	  fi; \
-	done
 	rm tmp/tarfiles tmp/gitfiles tmp/comm-out
 	@echo PASS: EXTRA_DIST tests
