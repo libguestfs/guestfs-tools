@@ -24,7 +24,7 @@ $TEST_FUNCTIONS
 skip_if_skipped
 
 export XDG_CONFIG_HOME=
-export XDG_CONFIG_DIRS="$abs_builddir/test-config"
+export VIRT_BUILDER_DIRS="$abs_builddir/test-config"
 
 short_list=$($VG virt-builder --no-check-signature --no-cache --list)
 

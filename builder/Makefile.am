@@ -423,12 +423,8 @@ endif
 
 # virt-builder's default repository
 
-repoconfdir = $(sysconfdir)/xdg/virt-builder/repos.d
-repoconf_DATA = libguestfs.conf libguestfs.gpg \
-		opensuse.conf opensuse.gpg
-
-install-exec-hook:
-	$(LN_S) -f xdg/virt-builder $(DESTDIR)$(sysconfdir)/virt-builder
+repoconfdir = $(sysconfdir)/virt-builder/repos.d
+repoconf_DATA = libguestfs.conf libguestfs.gpg opensuse.conf opensuse.gpg
 
 # Build a small C index validator program.
 bin_PROGRAMS += virt-index-validate

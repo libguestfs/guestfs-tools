@@ -23,6 +23,6 @@ val xdg_config_home : unit -> string option
 (** [$XDG_CONFIG_HOME/prog] or [$HOME/.config/prog] or [None]. *)
 
 val xdg_config_dirs : unit -> string list
-(** [$XDG_CONFIG_DIRS] (which is a colon-separated path), split.  Empty
+(** [$VIRT_BUILDER_DIRS] (which is a colon-separated path), split.  Empty
     elements are removed from the list.  If the environment variable
-    is not set [["/etc/xdg"]] is returned instead. *)
+    is not set [["/etc/virt-builder"]] is returned instead. *)

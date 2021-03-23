@@ -95,9 +95,9 @@ export PATH
 
 # Make virt-builder use the local website copy to avoid hitting
 # the network all the time.
-if [ -z "$XDG_CONFIG_DIRS" ]; then
-    prepend XDG_CONFIG_DIRS "$b/builder/test-website"
-    export XDG_CONFIG_DIRS
+if [ -z "$VIRT_BUILDER_DIRS" ]; then
+    prepend VIRT_BUILDER_DIRS "$b/builder/test-website"
+    export VIRT_BUILDER_DIRS
 fi
 
 # This is a cheap way to find some use-after-free and uninitialized

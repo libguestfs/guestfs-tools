@@ -1146,9 +1146,9 @@ F<$HOME/.config> if not set).
 
 =item *
 
-$XDG_CONFIG_DIRS/virt-builder/repos.d/ (where C<$XDG_CONFIG_DIRS>
-means any of the directories in that environment variable, or just F</etc/xdg>
-if not set)
+$VIRT_BUILDER_DIRS/virt-builder/repos.d/ (where C<$VIRT_BUILDER_DIRS>
+means any of the directories in that environment variable, or just F</etc>
+if not set).
 
 =back
 
@@ -1866,7 +1866,7 @@ Used to determine the location of the template cache.  See L</CACHING>.
 Used to determine the location of the user' sources.  See
 L</SOURCES OF TEMPLATES>.
 
-=item C<XDG_CONFIG_DIRS>
+=item C<VIRT_BUILDER_DIRS>
 
 Used to determine the location of the system sources.  See
 L</SOURCES OF TEMPLATES>.

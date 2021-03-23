@@ -22,7 +22,7 @@ $TEST_FUNCTIONS
 skip_if_skipped
 
 export XDG_CONFIG_HOME=
-export XDG_CONFIG_DIRS="$abs_builddir/test-simplestreams"
+export VIRT_BUILDER_DIRS="$abs_builddir/test-simplestreams"
 
 short_list=$($VG virt-builder --no-check-signature --no-cache --list)
 

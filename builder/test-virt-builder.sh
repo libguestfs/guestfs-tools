@@ -22,7 +22,7 @@ $TEST_FUNCTIONS
 skip_if_skipped
 
 export XDG_CONFIG_HOME=
-export XDG_CONFIG_DIRS="$abs_builddir/test-config"
+export VIRT_BUILDER_DIRS="$abs_builddir/test-config"
 
 if [ ! -f fedora.xz ]; then
     echo "$0: test skipped because there is no fedora.xz in the build directory"

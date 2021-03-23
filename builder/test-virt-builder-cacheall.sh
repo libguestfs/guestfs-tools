@@ -68,7 +68,7 @@ uri=$indexfile
 EOF
 
 export XDG_CONFIG_HOME=
-export XDG_CONFIG_DIRS="$tmpdir"
+export VIRT_BUILDER_DIRS="$tmpdir"
 export XDG_CACHE_HOME="$cachedir"
 
 short_list=$($VG virt-builder --no-check-signature --no-cache --list)
