@@ -75,7 +75,6 @@ EXTRA_DIST = \
 	common/README \
 	lib/guestfs-internal-all.h \
 	m4/.gitignore \
-	m4/introspection.m4 \
 	podcheck.pl \
 	test-functions.sh \
 	tmp/.gitignore \
