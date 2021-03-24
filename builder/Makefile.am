@@ -192,7 +192,7 @@ if HAVE_OCAML_PKG_GETTEXT
 OCAMLPACKAGES += -package gettext-stub
 endif
 if HAVE_OCAML_PKG_OUNIT
-OCAMLPACKAGES_TESTS += -package oUnit
+OCAMLPACKAGES_TESTS += -package ounit2
 endif
 
 OCAMLCLIBS = \
