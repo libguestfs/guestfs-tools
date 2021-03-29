@@ -53,15 +53,8 @@ AC_CHECK_PROG([PO4A_GETTEXTIZE],[po4a-gettextize],[po4a-gettextize],[no])
 AC_CHECK_PROG([PO4A_TRANSLATE],[po4a-translate],[po4a-translate],[no])
 AM_CONDITIONAL([HAVE_PO4A], [test "x$PO4A_GETTEXTIZE" != "xno" && test "x$PO4A_TRANSLATE" != "xno"])
 
-dnl Check for db_dump, db_load (optional).
-GUESTFS_FIND_DB_TOOL([DB_DUMP], [dump])
-GUESTFS_FIND_DB_TOOL([DB_LOAD], [load])
-if test "x$DB_DUMP" != "xno"; then
-    AC_DEFINE_UNQUOTED([DB_DUMP],["$DB_DUMP"],[Name of db_dump program.])
-fi
-if test "x$DB_LOAD" != "xno"; then
-    AC_DEFINE_UNQUOTED([DB_LOAD],["$DB_LOAD"],[Name of db_load program.])
-fi
+dnl Check for sqlite3 (optional).
+AC_CHECK_PROG([SQLITE3],[sqlite3],[sqlite3],[no])
 
 dnl Check for xzcat (required).
 AC_PATH_PROGS([XZCAT],[xzcat],[no])
