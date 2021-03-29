@@ -41,6 +41,10 @@ die "$script: guestname parameter not set, don't run this test directly"
     unless @ARGV == 1;
 my $guestname = $ARGV[0];
 
+# Undefine this which is set by ./run script, since we want to use the
+# public virt-builder templates.
+delete $ENV{VIRT_BUILDER_DIRS};
+
 my $disk = "password-$guestname.img";
 eval { unlink $disk };
 

@@ -132,11 +132,19 @@ CLEANFILES += \
 clean-local:
 	-find . -name '*~' -delete
 
+# Tests.
+TESTS = check-mli.sh
+
 build-test-guests:
 	$(MAKE) -C test-data/phony-guests check
 
-# Some tests which run at the top level.
-TESTS = check-mli.sh
+check-slow: build-test-guests
+	@errors=0; \
+	for f in `grep -l '^$@:' $(SUBDIRS:%=%/Makefile.am)`; do \
+	  echo $(MAKE) -C `dirname $$f` $@; \
+	  $(MAKE) -C `dirname $$f` $@ || (( errors++ )); \
+	done; \
+	exit $$(( $$errors ? 1 : 0 ))
 
 # Commit everything in current directory to HEAD, and set commit
 # message to current version (only for maintainer).

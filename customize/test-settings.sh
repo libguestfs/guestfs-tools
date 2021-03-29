@@ -34,6 +34,10 @@ if [ -z "$guestname" ]; then
     exit 1
 fi
 
+# Undefine this which is set by ./run script, since we want to use the
+# public virt-builder templates.
+unset VIRT_BUILDER_DIRS
+
 disk="settings-$guestname.img"
 rm -f "$disk" "$disk.firstboot.sh" "$disk.firstboot.out"
 

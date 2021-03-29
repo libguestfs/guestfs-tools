@@ -36,6 +36,10 @@ if [ -z "$guestname" ]; then
     exit 1
 fi
 
+# Undefine this which is set by ./run script, since we want to use the
+# public virt-builder templates.
+unset VIRT_BUILDER_DIRS
+
 # If the guest doesn't exist in virt-builder, skip.  This is because
 # we test some RHEL guests which most users won't have access to.
 skip_unless_virt_builder_guest "$guestname"
