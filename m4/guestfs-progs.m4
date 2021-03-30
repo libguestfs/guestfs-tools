@@ -39,10 +39,10 @@ AC_PROG_AWK
 
 AC_PROG_LN_S
 
-dnl Check for genisoimage/mkisofs
-AC_PATH_PROGS([GENISOIMAGE],[genisoimage mkisofs],[no],
+dnl Check for xorriso/genisoimage/mkisofs.
+AC_PATH_PROGS([MKISOFS],[xorrisofs genisoimage mkisofs],[no],
     [$PATH$PATH_SEPARATOR/usr/sbin$PATH_SEPARATOR/sbin])
-test "x$GENISOIMAGE" = "xno" && AC_MSG_ERROR([genisoimage must be installed])
+test "x$MKISOFS" = "xno" && AC_MSG_ERROR([xorriso or genisoimage or mkisofs must be installed])
 
 dnl Check for optional xmllint.
 AC_CHECK_PROG([XMLLINT],[xmllint],[xmllint],[no])
