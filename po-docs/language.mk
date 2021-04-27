@@ -109,7 +109,7 @@ virt-sysprep.1: virt-sysprep.pod sysprep-extra-options.pod sysprep-operations.po
 	  -f pod \
 	  -M utf-8 -L utf-8 \
 	  -k 0 \
-	  -m $(top_srcdir)/$(shell grep '/$(notdir $@)$$' $(top_srcdir)/po-docs/podfiles) \
+	  -m $(top_srcdir)/$(shell grep -E '/$(basename $@)(\.|$$)' $(top_srcdir)/po-docs/podfiles) \
 	  -p $< \
 	  | $(SED) '0,/^=encoding/d' > $@
 
