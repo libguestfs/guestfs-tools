@@ -55,7 +55,7 @@ podfiles: Makefile
 	rm -f $@ $@-t
 	cd $(top_srcdir) && find . -name '*.pod' -printf '%P\n'| \
 	  grep -v ^debian/ | \
-	  grep -v ^libguestfs-1 | \
+	  grep -v ^guestfs-tools-1 | \
 	  grep -v ^po-docs/ | \
 	  grep -v ^stamp- | \
 	  grep -v /stamp- \
