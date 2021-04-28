@@ -26,8 +26,7 @@
 
 #load "str.cma";;
 #load "unix.cma";;
-#directory "../../ocaml";; (* use locally built guestfs *)
-(*#directory "+guestfs";; (* use globally installed guestfs *) *)
+#directory "+guestfs";; (* use globally installed guestfs *)
 #load "mlguestfs.cma";;
 
 open Printf
