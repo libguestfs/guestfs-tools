@@ -52,7 +52,7 @@ let () =
   );
 
   (* Check that the ./run script was used. *)
-  (try ignore (Sys.getenv "CAML_LD_LIBRARY_PATH")
+  (try ignore (Sys.getenv "VIRT_BUILDER_DIRS")
    with Not_found ->
      eprintf "%s: you must use `../../run ./make-template.ml ...' to run this script\n"
              prog;
