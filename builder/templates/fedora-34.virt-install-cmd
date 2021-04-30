@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'fedora-34'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-8s3jezyz' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=fedora26' \
+    '--initrd-inject=fedora-34.ks' \
+    '--extra-args=inst.ks=file:/fedora-34.ks inst.proxy=http://cache.home.annexia.org:3128 console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-8s3jezyz.img,size=6,format=raw' \
+    '--location=https://mirror.bytemark.co.uk/fedora/linux/releases/34/Server/x86_64/os/' \
+    '--serial=pty' \
+    '--nographics' 
+
