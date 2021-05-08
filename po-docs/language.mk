@@ -28,8 +28,6 @@ MANPAGES = \
 	virt-alignment-scan.1 \
 	virt-builder.1 \
 	virt-cat.1 \
-	virt-copy-in.1 \
-	virt-copy-out.1 \
 	virt-customize.1 \
 	virt-df.1 \
 	virt-dib.1 \
@@ -46,8 +44,6 @@ MANPAGES = \
 	virt-resize.1 \
 	virt-sparsify.1 \
 	virt-sysprep.1 \
-	virt-tar-in.1 \
-	virt-tar-out.1 \
 	virt-win-reg.1
 
 podfiles := $(shell for f in `cat $(top_srcdir)/po-docs/podfiles`; do echo `basename $$f .pod`.pod; done)
