@@ -26,4 +26,4 @@ sparsify/virt-sparsify.pod
 sysprep/sysprep-extra-options.pod
 sysprep/sysprep-operations.pod
 sysprep/virt-sysprep.pod
-win-reg/virt-win-reg
+win-reg/virt-win-reg.in

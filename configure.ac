@@ -99,6 +99,8 @@ AC_CONFIG_FILES([podwrapper.pl],
                 [chmod +x,-w podwrapper.pl])
 AC_CONFIG_FILES([run],
                 [chmod +x,-w run])
+AC_CONFIG_FILES([win-reg/virt-win-reg],
+                [chmod +x,-w win-reg/virt-win-reg])
 
 AC_CONFIG_FILES([Makefile
                  align/Makefile

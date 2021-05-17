@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.46.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2021-05-08 08:57+0100\n"
+"POT-Creation-Date: 2021-05-17 15:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4213,11 +4213,11 @@ msgstr ""
 msgid "%s: subprocess failed\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:260
+#: win-reg/virt-win-reg.in:261
 msgid "no libvirt domain name or disk image given\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:316
+#: win-reg/virt-win-reg.in:317
 #, perl-brace-format
 msgid ""
 "{prog}: No operating system could be detected inside this disk image.\n"
@@ -4230,33 +4230,33 @@ msgid ""
 "information about the disk image as possible.\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:320
+#: win-reg/virt-win-reg.in:321
 #, perl-brace-format
 msgid "{prog}: multiboot operating systems are not supported.\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:342
+#: win-reg/virt-win-reg.in:343
 msgid ""
 "expecting 1 or 2 more parameters, subkey path and optionally the value to "
 "export\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:502
+#: win-reg/virt-win-reg.in:503
 #, perl-brace-format
 msgid "virt-win-reg: {p}: cannot find user directory\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:507
+#: win-reg/virt-win-reg.in:508
 #, perl-brace-format
 msgid "virt-win-reg: {p}: not a supported Windows Registry path\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:580
+#: win-reg/virt-win-reg.in:581
 #, perl-brace-format
 msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
 msgstr ""
 
-#: win-reg/virt-win-reg:597
+#: win-reg/virt-win-reg.in:598
 #, perl-brace-format
 msgid "virt-win-reg: {p}: could not upload registry file: {err}\n"
 msgstr ""

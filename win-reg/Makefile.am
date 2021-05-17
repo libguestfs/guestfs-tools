@@ -17,8 +17,6 @@
 
 include $(top_srcdir)/subdir-rules.mk
 
-EXTRA_DIST = virt-win-reg
-
 bin_SCRIPTS = virt-win-reg
 
 # Manual pages and HTML files for the website.
@@ -36,7 +34,3 @@ stamp-virt-win-reg.pod: virt-win-reg
 	  --warning custom \
 	  $<
 	touch $@
-
-all-local:
-	for f in virt-win-reg; do echo win-reg/$$f; done \
-	    > $(top_srcdir)/po/POTFILES-pl
