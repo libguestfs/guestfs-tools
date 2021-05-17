@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 # virt-win-reg
-# Copyright (C) 2010 Red Hat Inc.
+# Copyright (C) 2010-2021 Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -234,9 +234,10 @@ my %opts = ("help|?" => \$help,
 GetOptions (%opts) or pod2usage (2);
 pod2usage (1) if $help;
 if ($version) {
+    print "virt-win-reg @PACKAGE_VERSION@\n";
     my $g = Sys::Guestfs->new ();
     my %h = $g->version ();
-    print "virt-win-reg $h{major}.$h{minor}.$h{release}$h{extra}\n";
+    print "libguestfs $h{major}.$h{minor}.$h{release}$h{extra}\n";
     exit
 }
 
