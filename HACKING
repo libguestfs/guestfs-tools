@@ -1,0 +1,15 @@
+To learn how to compile guestfs-tools from sources:
+
+  guestfs-building(1)  or  http://libguestfs.org/guestfs-building.1.html
+
+To learn how to extend guestfs-tools:
+
+  guestfs-hacking(1)       http://libguestfs.org/guestfs-hacking.1.html
+
+Although the above documentation applies specifically to libguestfs,
+this project was split from that repo, and similar steps and principles
+apply.
+
+For example, replace libguestfs with guestfs-tools in commands like:
+
+    dnf builddep guestfs-tools
