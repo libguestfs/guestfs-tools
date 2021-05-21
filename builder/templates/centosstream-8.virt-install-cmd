@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'centosstream-8'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-parkabak' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=rhel8.0' \
+    '--initrd-inject=centosstream-8.ks' \
+    '--extra-args=ks=file:/centosstream-8.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/data/src/guestfs-tools/builder/templates/tmp-parkabak.img,size=6,format=raw' \
+    '--location=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os' \
+    '--serial=pty' \
+    '--nographics' 
+
