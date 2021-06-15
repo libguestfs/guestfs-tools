@@ -22,7 +22,7 @@ open Common_gettext.Gettext
 
 open Printf
 
-type password_crypto = [`MD5 | `SHA256 | `SHA512 ]
+type password_crypto = [`MD5 | `SHA256 | `SHA512 | `YESCRYPT ]
 
 type password_selector = {
   pw_password : password;
@@ -46,8 +46,9 @@ let password_crypto_of_string = function
   | "md5" -> `MD5
   | "sha256" -> `SHA256
   | "sha512" -> `SHA512
+  | "yescrypt" -> `YESCRYPT
   | arg ->
-    error (f_"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\" or \"sha512\"") arg
+    error (f_"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" or \"yescrypt\"") arg
 
 let rec parse_selector arg =
   parse_selector_list arg (String.nsplit ":" arg)
@@ -125,13 +126,25 @@ let rec set_linux_passwords ?password_crypto (g : Guestfs.guestfs) root password
  * https://rwmj.wordpress.com/2013/07/09/setting-the-root-or-other-passwords-in-a-linux-guest/
  *)
 and encrypt password crypto =
-  (* Get random characters from the set [A-Za-z0-9./] *)
-  let salt = Urandom.urandom_uniform 16 chars in
+  (* Get random characters from the set [A-Za-z0-9./]
+   *
+   * 24 characters gives a 144 bits (18 bytes) salt.  Unlike the more
+   * traditional 128 bits (16 bytes) salt, this 144 bits salt is always
+   * represented by the same number of base64 characters without any
+   * padding issues, where 128 bits can be represented by 22 or 23
+   * (depending on padding) base64-encoded characters, even with a
+   * non-standard base64 encoding scheme.
+   *
+   * We need it this way, because the yescrypt hashing methods requires
+   * at least 128 bits of salt to work properly.
+   *)
+  let salt = Urandom.urandom_uniform 24 chars in
   let salt =
     (match crypto with
     | `MD5 -> "$1$"
     | `SHA256 -> "$5$"
-    | `SHA512 -> "$6$") ^ salt ^ "$" in
+    | `SHA512 -> "$6$"
+    | `YESCRYPT -> "$y$j9T$") ^ salt ^ "$" in
   let r = Crypt.crypt password salt in
   (*printf "password: encrypt %s with salt %s -> %s\n" password salt r;*)
   r
@@ -139,33 +152,40 @@ and encrypt password crypto =
 (* glibc 2.7 was released in Oct 2007.  Approximately, all guests that
  * precede this date only support md5, whereas all guests after this
  * date can support sha512.
+ *
+ * Most distros released in 2020 or later ship with libxcrypt >= 4.3,
+ * and are able to handle yescrypt hashes.
  *)
 and default_crypto g root =
   let distro = g#inspect_get_distro root in
   let major = g#inspect_get_major_version root in
   match distro, major with
+  | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v when v >= 9 ->
+    `YESCRYPT
   | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v when v >= 6 ->
     `SHA512
   | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), _ ->
     `MD5 (* RHEL 5 does not appear to support SHA512, according to crypt(3) *)
 
+  | "fedora", v when v >= 30 -> `YESCRYPT
   | "fedora", v when v >= 9 -> `SHA512
   | "fedora", _ -> `MD5
 
+  | "debian", v when v >= 11 -> `YESCRYPT
   | "debian", v when v >= 5 -> `SHA512
   | "debian", _ -> `MD5
 
-  (* Very likely earlier versions of Ubuntu than 10.04 had new crypt,
-   * but Ubuntu 10.04 is the earliest version I have checked.
-   *)
+  | "ubuntu", v when v >= 20 -> `YESCRYPT
   | "ubuntu", v when v >= 10 -> `SHA512
   | "ubuntu", _ -> `MD5
 
+  | ("opensuse"|"sles"), v when v >= 15 -> `YESCRYPT
   | ("opensuse"|"sles"), v when v >= 11 -> `SHA512
   | ("opensuse"|"sles"), _ -> `MD5
 
   (* Rolling distributions, which hopefully should be updated enough. *)
-  | ("archlinux"|"voidlinux"|"kalilinux"), _ -> `SHA512
+  | ("archlinux"|"kalilinux"), _ -> `YESCRYPT
+  | ("voidlinux"), _ -> `SHA512
 
   | _, _ ->
     let minor = g#inspect_get_minor_version root in
