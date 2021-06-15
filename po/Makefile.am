@@ -64,7 +64,7 @@ FIX_CHARSET = \
 $(DOMAIN).pot: Makefile POTFILES $(POTFILES) POTFILES-pl $(POTFILES_PL) POTFILES-ml $(POTFILES_ML)
 	rm -f $@-t
 	touch $@-t
-if HAVE_OCAML_GETTEXT
+if HAVE_OCAML_PKG_GETTEXT
 	cd $(top_srcdir) && $(OCAML_GETTEXT) --action extract --extract-pot $(abs_srcdir)/$@-t $(shell cat $(abs_srcdir)/POTFILES-ml)
 	 \
 	$(FIX_CHARSET) $@-t
