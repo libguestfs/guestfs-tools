@@ -22,7 +22,7 @@ open Common_gettext.Gettext
 
 open Printf
 
-type password_crypto = [`MD5 | `SHA256 | `SHA512 | `YESCRYPT ]
+type password_crypto = [ `MD5 | `SHA256 | `SHA512 | `YESCRYPT ]
 
 type password_selector = {
   pw_password : password;
