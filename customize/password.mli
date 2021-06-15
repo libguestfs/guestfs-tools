@@ -16,7 +16,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *)
 
-type password_crypto = [ `MD5 | `SHA256 | `SHA512 ]
+type password_crypto = [ `MD5 | `SHA256 | `SHA512 | `YESCRYPT ]
 
 val password_crypto_of_string : string -> password_crypto
 (** Parse --password-crypto parameter on command line. *)
