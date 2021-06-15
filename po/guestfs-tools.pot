@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.47.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2021-05-17 15:25+0100\n"
+"POT-Creation-Date: 2021-06-15 23:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1915,7 +1915,7 @@ msgstr ""
 msgid "Setting passwords"
 msgstr ""
 
-#: customize/password.ml:110
+#: customize/password.ml:111
 msgid "Setting random password of %s to %s"
 msgstr ""
 
@@ -2670,7 +2670,7 @@ msgstr ""
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
-#: customize/password.ml:71
+#: customize/password.ml:72
 msgid "invalid password selector ‘%s’; see the man page"
 msgstr ""
 
@@ -2852,12 +2852,13 @@ msgstr ""
 msgid "part=size"
 msgstr ""
 
-#: customize/password.ml:50
+#: customize/password.ml:51
 msgid ""
-"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\" or \"sha512\""
+"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" "
+"or \"yescrypt\""
 msgstr ""
 
-#: customize/password.ml:172
+#: customize/password.ml:192
 msgid ""
 "password: using insecure md5 password encryption for guest of type %s "
 "version %d.%d.\n"
