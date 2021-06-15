@@ -54,7 +54,7 @@ _guestfs_virttools ()
             COMPREPLY=( $( compgen -W "short long json" -- "$cur") )
             return ;;
         --password-crypto)
-            COMPREPLY=( $( compgen -W "md5 sha256 sha512" -- "$cur") )
+            COMPREPLY=( $( compgen -W "md5 sha256 sha512 yescrypt" -- "$cur") )
             return ;;
         --unknown-filesystems)
             COMPREPLY=( $( compgen -W "ignore warn error" -- "$cur") )
