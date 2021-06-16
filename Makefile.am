@@ -68,6 +68,7 @@ SUBDIRS += po-docs
 endif
 
 EXTRA_DIST = \
+	HACKING \
 	README \
 	.gitignore \
 	check-mli.sh \
