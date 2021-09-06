@@ -139,7 +139,7 @@ virt_ls_CPPFLAGS = \
 virt_ls_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
-	$(LIBGUESTFS_LIBS)
+	$(LIBGUESTFS_CFLAGS)
 
 virt_ls_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
