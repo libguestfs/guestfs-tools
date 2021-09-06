@@ -103,6 +103,7 @@ libcustomize_a_CPPFLAGS = \
 	-I$(top_srcdir)/common/edit
 libcustomize_a_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBCRYPT_CFLAGS) \
 	$(LIBVIRT_CFLAGS) \
 	$(LIBXML2_CFLAGS) \

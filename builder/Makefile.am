@@ -149,6 +149,7 @@ virt_builder_CFLAGS = \
 	-pthread \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
 	-Wno-unused-macros \
+	$(LIBGUESTFS_CFLAGS) \
 	$(LIBLZMA_CFLAGS) \
 	$(LIBTINFO_CFLAGS) \
 	$(LIBXML2_CFLAGS)
@@ -447,7 +448,8 @@ virt_index_validate_CPPFLAGS = \
 	-I$(top_srcdir)/include
 virt_index_validate_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	-Wno-unused-macros
+	-Wno-unused-macros \
+	$(LIBGUESTFS_CFLAGS)
 virt_index_validate_LDADD = \
 	$(LTLIBINTL) \
 	../gnulib/lib/libgnu.la
