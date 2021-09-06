@@ -169,6 +169,7 @@ OCAMLCLIBS = \
 	-pthread -lpthread \
 	-lutils \
 	$(LIBTINFO_LIBS) \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBCRYPT_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LIBXML2_LIBS) \

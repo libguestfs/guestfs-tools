@@ -74,6 +74,7 @@ OCAMLCLIBS = \
 	-pthread -lpthread \
 	-lutils \
 	$(LIBXML2_LIBS) \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBINTL) \
 	-lgnu
 

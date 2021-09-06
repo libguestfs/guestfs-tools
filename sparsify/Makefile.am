@@ -81,6 +81,7 @@ OCAMLCLIBS = \
 	-lutils \
 	$(LIBTINFO_LIBS) \
 	$(LIBXML2_LIBS) \
+	$(LIBGUESTFS_LIBS) \
 	$(LIBINTL) \
 	-lgnu
 
