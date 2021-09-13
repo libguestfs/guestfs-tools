@@ -1169,7 +1169,7 @@ and os_variant_of_os ?(for_fedora = false) os arch =
     | Fedora _, (PPC64|PPC64le) -> "fedora22"
     | Fedora ver, _ when ver <= 23 ->
        sprintf "fedora%d" ver
-    | Fedora _, _ -> "fedora26" (* max version known in Fedora 28 *)
+    | Fedora _, _ -> "fedora34" (* max version known in Fedora 34 *)
 
     | CentOS (8, _), _ -> "rhel8.0" (* temporary until osinfo updated *)
     | CentOS (major, minor), _ when (major, minor) <= (7,0) ->
