@@ -1043,6 +1043,10 @@ and make_virt_install_command os arch ks tmpname tmpout tmpefivars
       add "--machine=pseries";
       add "--cpu=power8";
       add "--vcpus=1"
+   | Armv7 ->
+      add "--arch=armv7l";
+      add "--machine=virt-2.11"; (* RHBZ#1633328, RHBZ#2003706 *)
+      add "--vcpus=1"
    | arch ->
       add (sprintf "--arch=%s" (string_of_arch arch));
       add "--vcpus=1"
