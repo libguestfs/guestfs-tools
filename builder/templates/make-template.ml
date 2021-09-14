@@ -139,6 +139,9 @@ let rec main () =
         | Aarch64 ->
            "/usr/share/edk2/aarch64/QEMU_EFI-pflash.raw",
            "/usr/share/edk2/aarch64/vars-template-pflash.raw"
+        | Armv7 ->
+           "/usr/share/edk2/arm/QEMU_EFI-pflash.raw",
+           "/usr/share/edk2/arm/vars-template-pflash.raw"
         | _ -> assert false in
 
       let vars_out = Sys.getcwd () // sprintf "%s.vars" tmpname in
@@ -476,6 +479,7 @@ and is_selinux_os = function
 
 and needs_uefi os arch =
   match os, arch with
+  | Fedora _, Armv7
   | Fedora _, Aarch64
   | RHEL _, Aarch64 -> true
   | RHEL _, _ | CentOS _, _ | CentOSStream _, _ | Fedora _, _
