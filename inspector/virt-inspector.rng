@@ -87,10 +87,12 @@
         <value>freedos</value>
         <value>frugalware</value>
         <value>gentoo</value>
+        <value>kalilinux</value>
         <value>linuxmint</value>
         <value>mageia</value>
         <value>mandriva</value>
         <value>meego</value>
+        <value>msdos</value>
         <value>neokylin</value>
         <value>netbsd</value>
         <value>openbsd</value>
