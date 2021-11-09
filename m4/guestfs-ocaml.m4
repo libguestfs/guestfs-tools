@@ -107,7 +107,6 @@ fi
 OCAML_PKG_gettext=no
 OCAML_PKG_ounit2=no
 ounit_is_v2=no
-have_Bytes_module=no
 AS_IF([test "x$OCAMLC" != "xno"],[
     # Create common/mlgettext/common_gettext.ml gettext functions or stubs.
 
@@ -122,20 +121,6 @@ AS_IF([test "x$OCAMLC" != "xno"],[
     # oUnit >= 2 is required, so check that it has OUnit2.
     if test "x$OCAML_PKG_ounit2" != "xno"; then
         AC_CHECK_OCAML_MODULE(ounit_is_v2,[OUnit.OUnit2],OUnit2,[+ounit2])
-    fi
-
-    # Check if we have the 'Bytes' module.  If not (OCaml < 4.02) then
-    # we need to create a compatibility module.
-    # AC_CHECK_OCAML_MODULE is a bit broken, so open code this test.
-    AC_MSG_CHECKING([for OCaml module Bytes])
-    rm -f conftest.ml
-    echo 'let s = Bytes.empty' > conftest.ml
-    if $OCAMLC -c conftest.ml >&5 2>&5 ; then
-        AC_MSG_RESULT([yes])
-        have_Bytes_module=yes
-    else
-        AC_MSG_RESULT([not found])
-        have_Bytes_module=no
     fi
 ])
 AM_CONDITIONAL([HAVE_OCAML_PKG_GETTEXT],
