@@ -52,6 +52,7 @@ operations = \
 	mail_spool \
 	net_hostname \
 	net_hwaddr \
+	net_nmconn \
 	pacct_log \
 	package_manager_cache \
 	pam_data \
