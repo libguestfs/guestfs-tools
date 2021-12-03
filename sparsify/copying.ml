@@ -158,7 +158,7 @@ You can ignore this warning or change it to a hard failure using the
     match tmp_place with
     | Directory temp_dir ->
       let tmp = Filename.temp_file ~temp_dir "sparsify" ".qcow2" in
-      unlink_on_exit tmp;
+      On_exit.unlink tmp;
       create tmp;
       tmp
 

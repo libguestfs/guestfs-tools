@@ -420,7 +420,7 @@ let main () =
   (* Create a temporary folder to work in *)
   let tmpdir = Mkdtemp.temp_dir ~base_dir:cmdline.repo
                                 "virt-builder-repository." in
-  rmdir_on_exit tmpdir;
+  On_exit.rmdir tmpdir;
 
   let tmprepo = tmpdir // "repo" in
   mkdir_p tmprepo 0o700;

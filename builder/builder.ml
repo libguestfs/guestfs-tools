@@ -182,7 +182,7 @@ let main () =
    * create.
    *)
   let tmpdir = Mkdtemp.temp_dir "virt-builder." in
-  rmdir_on_exit tmpdir;
+  On_exit.rmdir tmpdir;
 
   (* Download the sources. *)
   let downloader = Downloader.create ~curl:cmdline.curl ~cache ~tmpdir in
@@ -305,7 +305,7 @@ let main () =
       let progress_bar = not (quiet ()) in
       Downloader.download downloader ~template ~progress_bar ~proxy
         file_uri in
-    if delete_on_exit then unlink_on_exit template;
+    if delete_on_exit then On_exit.unlink template;
     template in
 
   (* Check the signature of the file. *)
@@ -331,7 +331,7 @@ let main () =
         | { Index.signature_uri = Some signature_uri } ->
           let sigfile, delete_on_exit =
             Downloader.download downloader signature_uri in
-          if delete_on_exit then unlink_on_exit sigfile;
+          if delete_on_exit then On_exit.unlink sigfile;
           Some sigfile in
 
       Sigchecker.verify_detached sigchecker template sigfile in
@@ -473,7 +473,7 @@ let main () =
      * to choose unique tempfiles per transition, so this is OK:
      *)
     let tempfile = Filename.temp_file ~temp_dir:cache_dir "vb" ".img" in
-    unlink_on_exit tempfile;
+    On_exit.unlink tempfile;
 
     (* Always possible to copy from one place to another.  The only
      * thing a copy does is to remove the template tag (since it's always

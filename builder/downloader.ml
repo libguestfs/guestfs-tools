@@ -78,7 +78,7 @@ and download_to t ?(progress_bar = false) ~proxy uri filename =
    * atomically rename it to the final filename.
    *)
   let filename_new = filename ^ "." ^ String.random8 () in
-  unlink_on_exit filename_new;
+  On_exit.unlink filename_new;
 
   (match parseduri.URI.protocol with
   (* Download (ie. copy) from a local file. *)

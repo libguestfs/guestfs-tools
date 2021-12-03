@@ -550,7 +550,7 @@ let main () =
   let image_basename_d = image_basename ^ ".d" in
 
   let tmpdir = Mkdtemp.temp_dir "dib." in
-  rmdir_on_exit tmpdir;
+  On_exit.rmdir tmpdir;
   let auxtmpdir = tmpdir // "in_target.aux" in
   do_mkdir auxtmpdir;
   let hookstmpdir = auxtmpdir // "hooks" in
