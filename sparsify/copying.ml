@@ -44,7 +44,11 @@ let run indisk outdisk check_tmpdir compress convert
    * need to catch SIGINT (^C) and exit cleanly so the temporary file
    * goes away.  Note that we don't delete temporaries in the signal
    * handler.
+   *
+   * To safely set a signal handler, we must call [On_exit.register]
+   * because that may register signal handlers which we override.
    *)
+  On_exit.register ();
   let do_sigint _ = exit 1 in
   Sys.set_signal Sys.sigint (Sys.Signal_handle do_sigint);
 

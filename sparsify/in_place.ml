@@ -34,7 +34,12 @@ let run disk format ignores zeroes ks =
   (* Connect to libguestfs. *)
   let g = open_guestfs () in
 
-  (* Capture ^C and clean up gracefully. *)
+  (* Capture ^C and clean up gracefully.
+   *
+   * To safely set a signal handler, we must call [On_exit.register]
+   * because that may register signal handlers which we override.
+   *)
+  On_exit.register ();
   let quit = ref false in
   let set_quit _ = quit := true in
   Sys.set_signal Sys.sigint (Sys.Signal_handle set_quit);
