@@ -33,6 +33,7 @@ common/mltools/URI.ml
 common/mltools/checksums.ml
 common/mltools/curl.ml
 common/mltools/getopt.ml
+common/mltools/on_exit.ml
 common/mltools/planner.ml
 common/mltools/regedit.ml
 common/mltools/registry.ml
@@ -99,6 +100,7 @@ sysprep/sysprep_operation_machine_id.ml
 sysprep/sysprep_operation_mail_spool.ml
 sysprep/sysprep_operation_net_hostname.ml
 sysprep/sysprep_operation_net_hwaddr.ml
+sysprep/sysprep_operation_net_nmconn.ml
 sysprep/sysprep_operation_pacct_log.ml
 sysprep/sysprep_operation_package_manager_cache.ml
 sysprep/sysprep_operation_pam_data.ml

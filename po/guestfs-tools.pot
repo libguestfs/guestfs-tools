@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.47.2\n"
+"Project-Id-Version: guestfs-tools 1.47.3\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2021-06-16 08:31+0100\n"
+"POT-Creation-Date: 2021-12-04 11:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "guest to partition this extra space if you want."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:187
+#: common/mltools/tools_utils.ml:193
 msgid "%s"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: customize/customize_run.ml:446 common/mltools/tools_utils.ml:640
+#: customize/customize_run.ml:446 common/mltools/tools_utils.ml:639
 msgid "%s (ignored)"
 msgstr ""
 
@@ -91,11 +91,11 @@ msgstr ""
 msgid "%s needed but not found"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:183 common/mltools/tools_utils.ml:155
+#: common/mltools/tools_utils.ml:189 common/mltools/tools_utils.ml:161
 msgid "%s: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:185
+#: common/mltools/tools_utils.ml:191
 msgid "%s: %s: %s"
 msgstr ""
 
@@ -222,7 +222,7 @@ msgid ""
 "read the man page virt-customize(1).\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:125
+#: common/mltools/tools_utils.ml:131
 msgid "%s: error: %s"
 msgstr ""
 
@@ -287,7 +287,7 @@ msgstr ""
 msgid "%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:673
+#: common/mltools/tools_utils.ml:672
 msgid "%s: operation timed out"
 msgstr ""
 
@@ -384,7 +384,7 @@ msgid ""
 "virt-resize only supports MBR (DOS) and GPT partition tables."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:144
+#: common/mltools/tools_utils.ml:150
 msgid "%s: warning: %s"
 msgstr ""
 
@@ -426,7 +426,7 @@ msgstr ""
 msgid "--check-tmpdir: unknown argument ‘%s’"
 msgstr ""
 
-#: sparsify/copying.ml:69
+#: sparsify/copying.ml:73
 msgid ""
 "--compress cannot be used for raw output.  Remove this option or use --"
 "convert qcow2."
@@ -493,20 +493,20 @@ msgstr ""
 msgid "--shrink option given more than once"
 msgstr ""
 
-#: sparsify/copying.ml:89
+#: sparsify/copying.ml:93
 msgid ""
 "--tmp parameter must point to a directory, block device or prebuilt file"
 msgstr ""
 
-#: sparsify/copying.ml:80
+#: sparsify/copying.ml:84
 msgid "--tmp prebuilt:file: %s: file does not exist"
 msgstr ""
 
-#: sparsify/copying.ml:85
+#: sparsify/copying.ml:89
 msgid "--tmp prebuilt:file: %s: file does not have backing file"
 msgstr ""
 
-#: sparsify/copying.ml:83
+#: sparsify/copying.ml:87
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
 msgstr ""
 
@@ -611,7 +611,7 @@ msgstr ""
 msgid "Base path of diskimage-builder library"
 msgstr ""
 
-#: sparsify/copying.ml:340
+#: sparsify/copying.ml:344
 msgid ""
 "Before deleting the old disk, carefully check that the target disk boots and "
 "works correctly."
@@ -673,7 +673,7 @@ msgid ""
 " %s\n"
 msgstr ""
 
-#: sparsify/in_place.ml:119 sparsify/copying.ml:271
+#: sparsify/in_place.ml:124 sparsify/copying.ml:275
 msgid "Clearing Linux swap on %s"
 msgstr ""
 
@@ -744,11 +744,11 @@ msgstr ""
 msgid "Create a directory"
 msgstr ""
 
-#: sparsify/copying.ml:145
+#: sparsify/copying.ml:149
 msgid "Create overlay device %s to protect source disk"
 msgstr ""
 
-#: sparsify/copying.ml:143
+#: sparsify/copying.ml:147
 msgid "Create overlay file in %s to protect source disk"
 msgstr ""
 
@@ -828,7 +828,7 @@ msgstr ""
 msgid "Disable template cache"
 msgstr ""
 
-#: sparsify/in_place.ml:154
+#: sparsify/in_place.ml:159
 msgid "Discard space in volgroup %s"
 msgstr ""
 
@@ -844,7 +844,7 @@ msgstr ""
 msgid "Display name: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:332
+#: common/mltools/tools_utils.ml:343
 msgid "Display version and exit"
 msgstr ""
 
@@ -888,11 +888,11 @@ msgstr ""
 msgid "Don’t perform changes"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:336
+#: common/mltools/tools_utils.ml:347
 msgid "Don’t print progress messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:354
+#: common/mltools/tools_utils.ml:363
 msgid "Don’t turn off echo for passphrases"
 msgstr ""
 
@@ -933,7 +933,7 @@ msgstr ""
 msgid "Enable debugging messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:333
+#: common/mltools/tools_utils.ml:344
 msgid "Enable libguestfs debugging messages"
 msgstr ""
 
@@ -941,7 +941,7 @@ msgstr ""
 msgid "Enable specific operations"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:334
+#: common/mltools/tools_utils.ml:345
 msgid "Enable tracing of libguestfs calls"
 msgstr ""
 
@@ -949,7 +949,7 @@ msgstr ""
 msgid "Enable/disable specific operations"
 msgstr ""
 
-#: sparsify/copying.ml:173
+#: sparsify/copying.ml:177
 msgid "Examine source disk"
 msgstr ""
 
@@ -1050,11 +1050,11 @@ msgstr ""
 msgid "Filesystem for the image"
 msgstr ""
 
-#: sparsify/copying.ml:256
+#: sparsify/copying.ml:260
 msgid "Fill free space in %s with zero"
 msgstr ""
 
-#: sparsify/copying.ml:304
+#: sparsify/copying.ml:308
 msgid "Fill free space in volgroup %s with zero"
 msgstr ""
 
@@ -1174,7 +1174,7 @@ msgstr ""
 msgid "Identifier: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:130
+#: common/mltools/tools_utils.ml:136
 msgid ""
 "If reporting bugs, run %s with debugging enabled and include the complete "
 "output:\n"
@@ -1260,7 +1260,7 @@ msgstr ""
 msgid "Main element for building ramdisks"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:361
+#: common/mltools/tools_utils.ml:369
 msgid "Make output machine readable"
 msgstr ""
 
@@ -1440,7 +1440,7 @@ msgstr ""
 msgid "Read customize commands from file"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:355
+#: common/mltools/tools_utils.ml:364
 msgid "Read passphrases from stdin"
 msgstr ""
 
@@ -1752,7 +1752,7 @@ msgid "SCRIPT"
 msgstr ""
 
 #. customize/customize_cmdline.ml:315
-#. common/mltools/tools_utils.ml:356
+#. common/mltools/tools_utils.ml:365
 #. common/mlcustomize/customize_cmdline.ml:470
 #. common/mlcustomize/customize_cmdline.ml:344
 #. common/mlcustomize/customize_cmdline.ml:315
@@ -1867,6 +1867,10 @@ msgstr ""
 msgid "Set password crypto"
 msgstr ""
 
+#: common/mltools/tools_utils.ml:373
+msgid "Set program name"
+msgstr ""
+
 #: customize/customize_cmdline.ml:320
 #: common/mlcustomize/customize_cmdline.ml:320
 msgid "Set root password"
@@ -1955,11 +1959,11 @@ msgstr ""
 msgid "Skip the inclusion of the ‘base’ element"
 msgstr ""
 
-#: sparsify/copying.ml:252
+#: sparsify/copying.ml:256
 msgid "Skipping %s, as it is a read-only btrfs snapshot."
 msgstr ""
 
-#: sparsify/copying.ml:254
+#: sparsify/copying.ml:258
 msgid "Skipping %s, as it is a read-only device."
 msgstr ""
 
@@ -1967,15 +1971,15 @@ msgstr ""
 msgid "Source URI: %s\n"
 msgstr ""
 
-#: sparsify/in_place.ml:177
+#: sparsify/in_place.ml:182
 msgid "Sparsify in-place operation completed with no errors"
 msgstr ""
 
-#: sparsify/copying.ml:338
+#: sparsify/copying.ml:342
 msgid "Sparsify operation completed with no errors."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:356
+#: common/mltools/tools_utils.ml:365
 msgid "Specify a LUKS key"
 msgstr ""
 
@@ -2134,7 +2138,7 @@ msgstr ""
 msgid "There is a surplus of %s."
 msgstr ""
 
-#: sparsify/copying.ml:105
+#: sparsify/copying.ml:109
 msgid ""
 "There may not be enough free space on %s.\n"
 "You may need to set TMPDIR to point to a directory with more free space.\n"
@@ -2174,7 +2178,7 @@ msgstr ""
 msgid "Total usable space"
 msgstr ""
 
-#: sparsify/in_place.ml:97
+#: sparsify/in_place.ml:102
 msgid "Trimming %s"
 msgstr ""
 
@@ -2249,7 +2253,7 @@ msgstr ""
 msgid "Uploading: %s to %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:338
+#: common/mltools/tools_utils.ml:349
 msgid "Use ANSI colour sequences even if not tty"
 msgstr ""
 
@@ -2265,7 +2269,7 @@ msgstr ""
 msgid "Users to remove"
 msgstr ""
 
-#: sparsify/copying.ml:147
+#: sparsify/copying.ml:151
 msgid "Using prebuilt file %s as overlay"
 msgstr ""
 
@@ -2306,7 +2310,7 @@ msgstr ""
 msgid "Zero filesystem"
 msgstr ""
 
-#: sparsify/in_place.ml:86 sparsify/copying.ml:242
+#: sparsify/in_place.ml:91 sparsify/copying.ml:246
 msgid "Zeroing %s"
 msgstr ""
 
@@ -2342,7 +2346,7 @@ msgstr ""
 msgid "cached"
 msgstr ""
 
-#: sparsify/copying.ml:64
+#: sparsify/copying.ml:68
 msgid "cannot detect input disk format; use the --format parameter"
 msgstr ""
 
@@ -2452,7 +2456,7 @@ msgstr ""
 msgid "disallowed character (%c) in operation name"
 msgstr ""
 
-#: sparsify/in_place.ml:62
+#: sparsify/in_place.ml:67
 msgid "discard/trim is not supported"
 msgstr ""
 
@@ -2498,7 +2502,7 @@ msgstr ""
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:200
+#: common/mltools/tools_utils.ml:206
 msgid "exception: %s"
 msgstr ""
 
@@ -2508,19 +2512,19 @@ msgid ""
 "string: %s)"
 msgstr ""
 
-#: sparsify/copying.ml:335
+#: sparsify/copying.ml:339
 msgid "external command failed: %s"
 msgstr ""
 
-#: dib/dib.ml:998 common/mltools/tools_utils.ml:382
+#: dib/dib.ml:998 common/mltools/tools_utils.ml:404
 msgid "external command ‘%s’ exited with error %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:463 common/mltools/tools_utils.ml:384
+#: common/mltools/tools_utils.ml:485 common/mltools/tools_utils.ml:406
 msgid "external command ‘%s’ killed by signal %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:465 common/mltools/tools_utils.ml:386
+#: common/mltools/tools_utils.ml:487 common/mltools/tools_utils.ml:408
 msgid "external command ‘%s’ stopped by signal %d"
 msgstr ""
 
@@ -2536,7 +2540,7 @@ msgstr ""
 msgid "failed to sign index"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:191
+#: common/mltools/tools_utils.ml:197
 msgid "failure: %s"
 msgstr ""
 
@@ -2585,13 +2589,13 @@ msgstr ""
 msgid "fs"
 msgstr ""
 
-#: sparsify/in_place.ml:103
+#: sparsify/in_place.ml:108
 msgid ""
 "fstrim operation is not supported on %s (%s).  Suppress this warning using "
 "'--ignore %s', or use copying mode instead."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:210
+#: common/mltools/tools_utils.ml:216
 msgid "generated by %s %s"
 msgstr ""
 
@@ -2632,15 +2636,15 @@ msgstr ""
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:198
+#: common/mltools/tools_utils.ml:204
 msgid "internal error: Not_found exception was thrown"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:195
+#: common/mltools/tools_utils.ml:201
 msgid "internal error: assertion failed at %s, line %d, char %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:193
+#: common/mltools/tools_utils.ml:199
 msgid "internal error: invalid argument: %s"
 msgstr ""
 
@@ -2650,7 +2654,7 @@ msgstr ""
 msgid "invalid format for '--%s' parameter, see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:308
+#: common/mltools/tools_utils.ml:317
 msgid "invalid format string for --machine-readable: %s"
 msgstr ""
 
@@ -2658,15 +2662,15 @@ msgstr ""
 msgid "invalid format ‘%s’ in --formats"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:323
+#: common/mltools/tools_utils.ml:332
 msgid "invalid output fd for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:325
+#: common/mltools/tools_utils.ml:334
 msgid "invalid output for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:317
+#: common/mltools/tools_utils.ml:326
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
@@ -2674,7 +2678,7 @@ msgstr ""
 msgid "invalid password selector ‘%s’; see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:351
+#: common/mltools/tools_utils.ml:360
 msgid "invalid selector string for --key: %s"
 msgstr ""
 
@@ -2690,7 +2694,7 @@ msgstr ""
 msgid "invalid ssh-inject selector ‘%s’; see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:189
+#: common/mltools/tools_utils.ml:195
 msgid "libguestfs error: %s"
 msgstr ""
 
@@ -2885,11 +2889,11 @@ msgstr ""
 msgid "pvresize"
 msgstr ""
 
-#: sparsify/in_place.ml:128 sparsify/copying.ml:280
+#: sparsify/in_place.ml:133 sparsify/copying.ml:284
 msgid "pwrite: short write restoring swap partition header"
 msgstr ""
 
-#: sparsify/in_place.ml:181
+#: sparsify/in_place.ml:186
 msgid "quit (^C) at user request"
 msgstr ""
 
@@ -2975,7 +2979,7 @@ msgid ""
 "removing ‘--no-network’ or adding ‘--network’ on the command line."
 msgstr ""
 
-#: common/mltools/JSON_parser.ml:76
+#: common/mltools/JSON_parser.ml:81
 msgid "the key ‘%s’ was not found in a list of objects"
 msgstr ""
 
@@ -2996,23 +3000,27 @@ msgstr ""
 msgid "the specified base path is not the diskimage-builder library"
 msgstr ""
 
-#: common/mltools/JSON_parser.ml:70
+#: common/mltools/JSON_parser.ml:75
 msgid "the value for key ‘%s’ is not a string as expected"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:47
+msgid "the value for the key ‘%s’ is not a bool"
 msgstr ""
 
 #: common/mltools/JSON_parser.ml:42
 msgid "the value for the key ‘%s’ is not a string"
 msgstr ""
 
-#: common/mltools/JSON_parser.ml:62
+#: common/mltools/JSON_parser.ml:67
 msgid "the value for the key ‘%s’ is not an integer"
 msgstr ""
 
-#: common/mltools/JSON_parser.ml:47
+#: common/mltools/JSON_parser.ml:52
 msgid "the value for the key ‘%s’ is not an object"
 msgstr ""
 
-#: common/mltools/JSON_parser.ml:51
+#: common/mltools/JSON_parser.ml:56
 msgid "the value is not an object"
 msgstr ""
 
