@@ -1,6 +1,6 @@
 #!/usr/bin/env ocaml
 (* libguestfs
- * Copyright (C) 2016-2020 Red Hat Inc.
+ * Copyright (C) 2016-2022 Red Hat Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -75,6 +75,7 @@ let () =
   ;;
 
 type os =
+  | Alma of int * int           (* major, minor *)
   | CentOS of int * int         (* major, minor *)
   | CentOSStream of int         (* major *)
   | RHEL of int * int
@@ -349,6 +350,7 @@ Options:
 
 and os_of_string os ver =
   match os, ver with
+  | "alma", ver -> let maj, min = parse_major_minor ver in Alma (maj, min)
   | "centos", ver -> let maj, min = parse_major_minor ver in CentOS (maj, min)
   | "centosstream", ver -> CentOSStream(int_of_string ver)
   | "rhel", ver -> let maj, min = parse_major_minor ver in RHEL (maj, min)
@@ -427,6 +429,9 @@ and filename_of_os os arch ext =
   | Fedora ver ->
      if arch = X86_64 then sprintf "fedora-%d%s" ver ext
      else sprintf "fedora-%d-%s%s" ver (string_of_arch arch) ext
+  | Alma (major, minor) ->
+     if arch = X86_64 then sprintf "alma-%d.%d%s" major minor ext
+     else sprintf "alma-%d.%d-%s%s" major minor (string_of_arch arch) ext
   | CentOS (major, minor) ->
      if arch = X86_64 then sprintf "centos-%d.%d%s" major minor ext
      else sprintf "centos-%d.%d-%s%s" major minor (string_of_arch arch) ext
@@ -459,6 +464,7 @@ and string_of_os os arch = filename_of_os os arch ""
 (* This is what virt-builder called "os-version". *)
 and string_of_os_noarch = function
   | Fedora ver -> sprintf "fedora-%d" ver
+  | Alma (major, minor) -> sprintf "alma-%d.%d" major minor
   | CentOS (major, minor) -> sprintf "centos-%d.%d" major minor
   | CentOSStream ver -> sprintf "centosstream-%d" ver
   | RHEL (major, minor) -> sprintf "rhel-%d.%d" major minor
@@ -470,11 +476,12 @@ and string_of_os_noarch = function
 
 (* Does virt-sysprep know how to sysprep this OS? *)
 and can_sysprep_os = function
-  | RHEL _ | CentOS _ | CentOSStream _ | Fedora _ | Debian _ | Ubuntu _ -> true
+  | RHEL _ | Alma _ | CentOS _ | CentOSStream _ | Fedora _
+  | Debian _ | Ubuntu _ -> true
   | FreeBSD _ | Windows _ -> false
 
 and is_selinux_os = function
-  | RHEL _ | CentOS _ | CentOSStream _ | Fedora _ -> true
+  | RHEL _ | Alma _ | CentOS _ | CentOSStream _ | Fedora _ -> true
   | Debian _ | Ubuntu _
   | FreeBSD _ | Windows _ -> false
 
@@ -483,13 +490,13 @@ and needs_uefi os arch =
   | Fedora _, Armv7
   | Fedora _, Aarch64
   | RHEL _, Aarch64 -> true
-  | RHEL _, _ | CentOS _, _ | CentOSStream _, _ | Fedora _, _
+  | RHEL _, _ | Alma _, _ | CentOS _, _ | CentOSStream _, _ | Fedora _, _
   | Debian _, _ | Ubuntu _, _
   | FreeBSD _, _ | Windows _, _ -> false
 
 and get_virtual_size_gb os arch =
   match os with
-  | RHEL _ | CentOS _ | CentOSStream _ | Fedora _
+  | RHEL _ | Alma _ | CentOS _ | CentOSStream _ | Fedora _
   | Debian _ | Ubuntu _
   | FreeBSD _ -> 6
   | Windows (10, _, _) -> 40    (* Windows 10 *)
@@ -500,7 +507,7 @@ and get_virtual_size_gb os arch =
 and make_kickstart os arch =
   match os with
   (* Kickstart. *)
-  | Fedora _ | CentOS _ | CentOSStream _ | RHEL _ ->
+  | Fedora _ | Alma _ | CentOS _ | CentOSStream _ | RHEL _ ->
      let ks_filename = filename_of_os os arch ".ks" in
      Some (make_kickstart_common ks_filename os arch)
 
@@ -527,7 +534,8 @@ and make_kickstart_common ks_filename os arch =
   (* Fedora 34+ removes the "install" keyword. *)
   (match os with
    | Fedora n when n >= 34 -> ()
-   | RHEL (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 -> ()
+   | RHEL (n, _)
+   | Alma (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 -> ()
    | _ -> bpf "install\n";
   );
 
@@ -589,7 +597,7 @@ part /boot --fstype=%s   --size=512         --asprimary
 part swap                --size=1024        --asprimary
 part /     --fstype=%s   --size=1024 --grow --asprimary
 " bootfs rootfs;
-   | CentOS _ | CentOSStream _ | RHEL _ | Fedora _ ->
+   | Alma _ | CentOS _ | CentOSStream _ | RHEL _ | Fedora _ ->
       bpf "\
 zerombr
 clearpart --all --initlabel --disklabel=gpt
@@ -847,6 +855,11 @@ and make_unattend_iso os arch =
 
 and make_boot_media os arch =
   match os, arch with
+  | Alma (major, minor), X86_64 ->
+     (* UK mirror *)
+     Location (sprintf "http://mirror.cov.ukservers.com/almalinux/%d.%d/BaseOS/x86_64/kickstart/"
+                 major minor)
+
   | CentOS (major, _), Aarch64 ->
      (* XXX This always points to the latest CentOS, so
       * effectively the minor number is always ignored.
@@ -996,7 +1009,8 @@ The FreeBSD install is not automated.  Select all defaults, except:
 
 (* If the install is not automated and we need a graphical console. *)
 and needs_graphics = function
-  | CentOS _ | CentOSStream _ | RHEL _ | Debian _ | Ubuntu _ | Fedora _ -> false
+  | Alma _ | CentOS _ | CentOSStream _ | RHEL _
+  | Debian _ | Ubuntu _ | Fedora _ -> false
   | FreeBSD _ | Windows _ -> true
 
 (* NB: Arguments do not need to be quoted, because we pass them
@@ -1071,7 +1085,7 @@ and make_virt_install_command os arch ks tmpname tmpout tmpefivars
   (* --initrd-inject and --extra-args flags for Linux only. *)
   (match os with
    | Debian _ | Ubuntu _
-   | Fedora _ | RHEL _ | CentOS _ | CentOSStream _ ->
+   | Fedora _ | RHEL _ | Alma _ | CentOS _ | CentOSStream _ ->
       let ks =
         match ks with None -> assert false | Some ks -> ks in
       add (sprintf "--initrd-inject=%s" ks);
@@ -1081,6 +1095,12 @@ and make_virt_install_command os arch ks tmpname tmpout tmpefivars
         | Debian _ | Ubuntu _ -> "auto"
         | Fedora n when n >= 34 ->
            sprintf "inst.ks=file:/%s" (Filename.basename ks)
+        | Alma (major, _) ->
+           (* This is only required because of missing osinfo-db data.
+            * https://bugs.almalinux.org/view.php?id=127
+            * Once this is fixed, do the same as CentOS below.
+            *)
+           sprintf "inst.ks=file:/%s inst.repo=http://repo.almalinux.org/almalinux/%d/BaseOS/x86_64/os/" (Filename.basename ks) major
         | RHEL (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 ->
            sprintf "inst.ks=file:/%s" (Filename.basename ks)
         | Fedora _ | RHEL _ | CentOS _ | CentOSStream _ ->
@@ -1091,15 +1111,19 @@ and make_virt_install_command os arch ks tmpname tmpout tmpefivars
         match p with
         | None ->
            (match os with
-            | Fedora _ | RHEL _ | CentOS _ | CentOSStream _ | Ubuntu _ -> ""
+            | Fedora _ | RHEL _ | Alma _ | CentOS _ | CentOSStream _
+            | Ubuntu _ -> ""
             | Debian _ -> "mirror/http/proxy="
             | FreeBSD _ | Windows _ -> assert false
            )
         | Some p ->
            match os with
            | Fedora n when n >= 34 -> sprintf "inst.proxy=" ^ p
-           | RHEL (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 -> "inst.proxy=" ^ p
-           | Fedora _ | RHEL _ | CentOS _ | CentOSStream _ -> "proxy=" ^ p
+           | RHEL (n, _)
+           | Alma (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 ->
+              "inst.proxy=" ^ p
+           | Fedora _ | RHEL _ | Alma _ | CentOS _ | CentOSStream _ ->
+              "proxy=" ^ p
            | Debian _ | Ubuntu _ -> "mirror/http/proxy=" ^ p
            | FreeBSD _ | Windows _ -> assert false in
 
@@ -1156,6 +1180,7 @@ and os_variant_of_os ?(for_fedora = false) os arch =
   if not for_fedora then (
     match os with
     | Fedora ver -> sprintf "fedora%d" ver
+    | Alma (major, _) -> sprintf "almalinux%d" major
     | CentOS (major, minor) -> sprintf "centos%d.%d" major minor
     | CentOSStream ver -> sprintf "centosstream%d" ver
     | RHEL (major, minor) -> sprintf "rhel%d.%d" major minor
@@ -1180,6 +1205,8 @@ and os_variant_of_os ?(for_fedora = false) os arch =
     | Fedora ver, _ when ver <= 23 ->
        sprintf "fedora%d" ver
     | Fedora _, _ -> "fedora34" (* max version known in Fedora 34 *)
+
+    | Alma (major, _), _ -> sprintf "almalinux%d" major
 
     | CentOS (8, _), _ -> "rhel8.0" (* temporary until osinfo updated *)
     | CentOS (major, minor), _ when (major, minor) <= (7,0) ->
@@ -1228,8 +1255,8 @@ and kernel_cmdline_of_os os arch =
      "console=tty0 console=ttyAMA0,115200 rd_NO_PLYMOUTH"
   | (Debian _|Fedora _|Ubuntu _), (PPC64|PPC64le) ->
      "console=tty0 console=hvc0 rd_NO_PLYMOUTH"
-  | (RHEL _|CentOS _|CentOSStream _), PPC64
-  | (RHEL _|CentOS _|CentOSStream _), PPC64le ->
+  | (RHEL _ | Alma _ | CentOS _ | CentOSStream _), PPC64
+  | (RHEL _ | Alma _ | CentOS _ | CentOSStream _), PPC64le ->
      "console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH"
 
   | FreeBSD _, _ | Windows _, _ -> assert false
@@ -1254,7 +1281,8 @@ and make_postinstall os arch =
          g#write "/etc/yum.repos.d/download.devel.redhat.com.repo" yum_conf
      )
 
-  | RHEL _ | Fedora _ | CentOS _ | CentOSStream _ | FreeBSD _ | Windows _ -> None
+  | RHEL _ | Fedora _ | Alma _ | CentOS _ | CentOSStream _
+  | FreeBSD _ | Windows _ -> None
 
 and make_rhel_yum_conf major minor arch =
   let buf = Buffer.create 4096 in
@@ -1402,6 +1430,10 @@ and make_index_fragment os arch index_fragment output nvram revision
 
 and long_name_of_os os arch =
   match os, arch with
+  | Alma (major, minor), X86_64 ->
+     sprintf "AlmaLinux %d.%d" major minor
+  | Alma (major, minor), arch ->
+     sprintf "AlmaLinux %d.%d (%s)" major minor (string_of_arch arch)
   | CentOS (major, minor), X86_64 ->
      sprintf "CentOS %d.%d" major minor
   | CentOS (major, minor), arch ->
@@ -1452,6 +1484,8 @@ and notes_of_os os arch nvram =
   add "";
 
   (match os with
+   | Alma _ ->
+      add "This AlmaLinux image contains only unmodified @Core group packages."
    | CentOS _ ->
       add "This CentOS image contains only unmodified @Core group packages."
    | CentOSStream _ ->

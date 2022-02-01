@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'alma-8.5'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-pev56f7p' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=almalinux8' \
+    '--initrd-inject=alma-8.5.ks' \
+    '--extra-args=inst.ks=file:/alma-8.5.ks inst.repo=http://repo.almalinux.org/almalinux/8/BaseOS/x86_64/os/  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-pev56f7p.img,size=6,format=raw' \
+    '--location=http://mirror.cov.ukservers.com/almalinux/8.5/BaseOS/x86_64/kickstart/' \
+    '--serial=pty' \
+    '--nographics' 
+
