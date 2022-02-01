@@ -573,7 +573,7 @@ mouse generic
    *)
   (match os with
    | CentOS (8, _) ->
-      bpf "url --url=\"http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os\"\n"
+      bpf "url --url=\"https://vault.centos.org/8.5.2111/BaseOS/x86_64/os/\"\n"
    | _ -> ()
   );
   bpf "\n";
@@ -863,7 +863,8 @@ and make_boot_media os arch =
      Location "http://mirror.centos.org/centos-7/7/os/x86_64/"
 
   | CentOS (8, _), X86_64 ->
-     Location "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/kickstart"
+     (* This is probably the last CentOS 8 release. *)
+     Location "https://vault.centos.org/8.5.2111/BaseOS/x86_64/kickstart/"
 
   | CentOSStream ver, X86_64 ->
      Location (sprintf "http://mirror.centos.org/centos/%d-stream/BaseOS/x86_64/os" ver)
