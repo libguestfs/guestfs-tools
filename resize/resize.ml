@@ -938,7 +938,7 @@ read the man page virt-resize(1).
               ""
             ) in
 
-      wrap (text ^ "\n\n") in
+      info "%s" (text ^ "\n") in
 
     List.iter print_summary partitions;
 
@@ -969,7 +969,7 @@ read the man page virt-resize(1).
                 ""
               ) in
 
-            wrap (text ^ "\n\n")
+            info "%s" (text ^ "\n")
     ) lvs;
 
     if surplus > 0L then (
@@ -983,7 +983,7 @@ read the man page virt-resize(1).
         ) else
           s_"  The surplus space will be ignored.  Run a partitioning program in the guest to partition this extra space if you want." in
 
-      wrap (text ^ "\n\n")
+      info "%s" (text ^ "\n")
     );
 
     printf "**********\n";
@@ -1440,7 +1440,9 @@ read the man page virt-resize(1).
 
   if not (quiet ()) then (
     print_newline ();
-    wrap (s_"Resize operation completed with no errors.  Before deleting the old disk, carefully check that the resized disk boots and works correctly.\n");
+    info "%s" (s_"Resize operation completed with no errors.  Before deleting \
+               the old disk, carefully check that the resized disk boots and \
+               works correctly.");
   )
 
 let () = run_main_and_handle_errors main
