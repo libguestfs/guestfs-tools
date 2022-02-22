@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'fedora-35-aarch64'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-fd1rfc4g' \
+    '--ram=4096' \
+    '--arch=aarch64' \
+    '--vcpus=1' \
+    '--os-variant=fedora34' \
+    '--boot' 'loader=/usr/share/edk2/aarch64/QEMU_EFI-pflash.raw,loader_ro=yes,loader_type=pflash,nvram=/home/rjones/d/guestfs-tools/builder/templates/tmp-fd1rfc4g.vars' \
+    '--initrd-inject=fedora-35-aarch64.ks' \
+    '--extra-args=inst.ks=file:/fedora-35-aarch64.ks  console=ttyAMA0 earlyprintk=pl011,0x9000000 ignore_loglevel no_timer_check printk.time=1 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-fd1rfc4g.img,size=6,format=raw' \
+    '--location=https://mirror.bytemark.co.uk/fedora/linux/releases/35/Server/aarch64/os/' \
+    '--serial=pty' \
+    '--nographics' 
+
