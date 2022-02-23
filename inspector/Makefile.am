@@ -27,12 +27,14 @@ example_xml = \
 EXTRA_DIST = \
 	expected-debian.img.xml \
 	expected-fedora.img.xml \
+	expected-fedora-luks-on-lvm.img.xml \
 	expected-fedora-lvm-on-luks.img.xml \
 	expected-ubuntu.img.xml \
 	expected-archlinux.img.xml \
 	expected-coreos.img.xml \
 	expected-windows.img.xml \
 	test-virt-inspector.sh \
+	test-virt-inspector-luks-on-lvm.sh \
 	test-virt-inspector-lvm-on-luks.sh \
 	test-virt-inspector-docs.sh \
 	test-xmllint.sh \
@@ -95,6 +97,7 @@ TESTS_ENVIRONMENT = $(top_builddir)/run --test
 TESTS = \
 	test-virt-inspector-docs.sh \
 	test-virt-inspector.sh \
+	test-virt-inspector-luks-on-lvm.sh \
 	test-virt-inspector-lvm-on-luks.sh
 
 if HAVE_XMLLINT
@@ -102,7 +105,7 @@ TESTS += test-xmllint.sh
 endif
 
 check-valgrind:
-	$(MAKE) TESTS="test-virt-inspector.sh test-virt-inspector-lvm-on-luks.sh" VG="@VG@" check
+	$(MAKE) TESTS="test-virt-inspector.sh test-virt-inspector-luks-on-lvm.sh test-virt-inspector-lvm-on-luks.sh" VG="@VG@" check
 
 check-valgrind-local-guests:
 	for g in $(GUESTS); do \
