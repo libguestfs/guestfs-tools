@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.47.3\n"
+"Project-Id-Version: guestfs-tools 1.47.4\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2021-12-04 11:40+0000\n"
+"POT-Creation-Date: 2022-03-01 11:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "guest to partition this extra space if you want."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:193
+#: common/mltools/tools_utils.ml:234
 msgid "%s"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: customize/customize_run.ml:446 common/mltools/tools_utils.ml:639
+#: customize/customize_run.ml:446 common/mltools/tools_utils.ml:681
 msgid "%s (ignored)"
 msgstr ""
 
@@ -91,12 +91,18 @@ msgstr ""
 msgid "%s needed but not found"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:189 common/mltools/tools_utils.ml:161
+#: common/mltools/tools_utils.ml:230 common/mltools/tools_utils.ml:201
 msgid "%s: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:191
+#: common/mltools/tools_utils.ml:232
 msgid "%s: %s: %s"
+msgstr ""
+
+#: common/mltools/on_exit.ml:77
+msgid ""
+"%s: Exiting on signal %s\n"
+"%!"
 msgstr ""
 
 #: resize/resize.ml:706
@@ -222,7 +228,7 @@ msgid ""
 "read the man page virt-customize(1).\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:131
+#: common/mltools/tools_utils.ml:171
 msgid "%s: error: %s"
 msgstr ""
 
@@ -287,7 +293,7 @@ msgstr ""
 msgid "%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:672
+#: common/mltools/tools_utils.ml:714
 msgid "%s: operation timed out"
 msgstr ""
 
@@ -384,7 +390,7 @@ msgid ""
 "virt-resize only supports MBR (DOS) and GPT partition tables."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:150
+#: common/mltools/tools_utils.ml:190
 msgid "%s: warning: %s"
 msgstr ""
 
@@ -844,7 +850,7 @@ msgstr ""
 msgid "Display name: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:343
+#: common/mltools/tools_utils.ml:384
 msgid "Display version and exit"
 msgstr ""
 
@@ -888,11 +894,11 @@ msgstr ""
 msgid "Don’t perform changes"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:347
+#: common/mltools/tools_utils.ml:388
 msgid "Don’t print progress messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:363
+#: common/mltools/tools_utils.ml:405
 msgid "Don’t turn off echo for passphrases"
 msgstr ""
 
@@ -933,7 +939,7 @@ msgstr ""
 msgid "Enable debugging messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:344
+#: common/mltools/tools_utils.ml:385
 msgid "Enable libguestfs debugging messages"
 msgstr ""
 
@@ -941,7 +947,7 @@ msgstr ""
 msgid "Enable specific operations"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:345
+#: common/mltools/tools_utils.ml:386
 msgid "Enable tracing of libguestfs calls"
 msgstr ""
 
@@ -1174,7 +1180,7 @@ msgstr ""
 msgid "Identifier: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:136
+#: common/mltools/tools_utils.ml:176
 msgid ""
 "If reporting bugs, run %s with debugging enabled and include the complete "
 "output:\n"
@@ -1260,7 +1266,7 @@ msgstr ""
 msgid "Main element for building ramdisks"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:369
+#: common/mltools/tools_utils.ml:411
 msgid "Make output machine readable"
 msgstr ""
 
@@ -1310,6 +1316,10 @@ msgid ""
 "Notes:\n"
 "\n"
 "%s\n"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_nmconn.ml:38
+msgid "On Fedora and Red Hat Enterprise Linux, remove the C<"
 msgstr ""
 
 #: sysprep/sysprep_operation_lvm_uuids.ml:45
@@ -1440,7 +1450,7 @@ msgstr ""
 msgid "Read customize commands from file"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:364
+#: common/mltools/tools_utils.ml:406
 msgid "Read passphrases from stdin"
 msgstr ""
 
@@ -1545,6 +1555,10 @@ msgstr ""
 
 #: sysprep/sysprep_operation_package_manager_cache.ml:46
 msgid "Remove package manager cache"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_nmconn.ml:36
+msgid "Remove system-local NetworkManager connection profiles (keyfiles)"
 msgstr ""
 
 #: sysprep/sysprep_operation_tmp_files.ml:50
@@ -1679,7 +1693,7 @@ msgstr ""
 #: resize/resize.ml:1443
 msgid ""
 "Resize operation completed with no errors.  Before deleting the old disk, "
-"carefully check that the resized disk boots and works correctly.\n"
+"carefully check that the resized disk boots and works correctly."
 msgstr ""
 
 #: resize/resize.ml:209
@@ -1752,7 +1766,7 @@ msgid "SCRIPT"
 msgstr ""
 
 #. customize/customize_cmdline.ml:315
-#. common/mltools/tools_utils.ml:365
+#. common/mltools/tools_utils.ml:407
 #. common/mlcustomize/customize_cmdline.ml:470
 #. common/mlcustomize/customize_cmdline.ml:344
 #. common/mlcustomize/customize_cmdline.ml:315
@@ -1867,7 +1881,7 @@ msgstr ""
 msgid "Set password crypto"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:373
+#: common/mltools/tools_utils.ml:415
 msgid "Set program name"
 msgstr ""
 
@@ -1979,7 +1993,7 @@ msgstr ""
 msgid "Sparsify operation completed with no errors."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:365
+#: common/mltools/tools_utils.ml:407
 msgid "Specify a LUKS key"
 msgstr ""
 
@@ -2253,7 +2267,7 @@ msgstr ""
 msgid "Uploading: %s to %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:349
+#: common/mltools/tools_utils.ml:390
 msgid "Use ANSI colour sequences even if not tty"
 msgstr ""
 
@@ -2277,6 +2291,10 @@ msgstr ""
 msgid ""
 "VHD output not produced, most probably vhd-util is old or not patched for "
 "‘convert’"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:391
+msgid "Wrap log messages even if not tty"
 msgstr ""
 
 #: customize/customize_cmdline.ml:442
@@ -2502,7 +2520,7 @@ msgstr ""
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:206
+#: common/mltools/tools_utils.ml:247
 msgid "exception: %s"
 msgstr ""
 
@@ -2516,15 +2534,15 @@ msgstr ""
 msgid "external command failed: %s"
 msgstr ""
 
-#: dib/dib.ml:998 common/mltools/tools_utils.ml:404
+#: dib/dib.ml:998 common/mltools/tools_utils.ml:446
 msgid "external command ‘%s’ exited with error %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:485 common/mltools/tools_utils.ml:406
+#: common/mltools/tools_utils.ml:527 common/mltools/tools_utils.ml:448
 msgid "external command ‘%s’ killed by signal %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:487 common/mltools/tools_utils.ml:408
+#: common/mltools/tools_utils.ml:529 common/mltools/tools_utils.ml:450
 msgid "external command ‘%s’ stopped by signal %d"
 msgstr ""
 
@@ -2540,7 +2558,7 @@ msgstr ""
 msgid "failed to sign index"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:197
+#: common/mltools/tools_utils.ml:238
 msgid "failure: %s"
 msgstr ""
 
@@ -2595,7 +2613,7 @@ msgid ""
 "'--ignore %s', or use copying mode instead."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:216
+#: common/mltools/tools_utils.ml:257
 msgid "generated by %s %s"
 msgstr ""
 
@@ -2636,15 +2654,15 @@ msgstr ""
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:204
+#: common/mltools/tools_utils.ml:245
 msgid "internal error: Not_found exception was thrown"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:201
+#: common/mltools/tools_utils.ml:242
 msgid "internal error: assertion failed at %s, line %d, char %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:199
+#: common/mltools/tools_utils.ml:240
 msgid "internal error: invalid argument: %s"
 msgstr ""
 
@@ -2654,7 +2672,7 @@ msgstr ""
 msgid "invalid format for '--%s' parameter, see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:317
+#: common/mltools/tools_utils.ml:358
 msgid "invalid format string for --machine-readable: %s"
 msgstr ""
 
@@ -2662,15 +2680,15 @@ msgstr ""
 msgid "invalid format ‘%s’ in --formats"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:332
+#: common/mltools/tools_utils.ml:373
 msgid "invalid output fd for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:334
+#: common/mltools/tools_utils.ml:375
 msgid "invalid output for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:326
+#: common/mltools/tools_utils.ml:367
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
@@ -2678,7 +2696,7 @@ msgstr ""
 msgid "invalid password selector ‘%s’; see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:360
+#: common/mltools/tools_utils.ml:402
 msgid "invalid selector string for --key: %s"
 msgstr ""
 
@@ -2694,7 +2712,7 @@ msgstr ""
 msgid "invalid ssh-inject selector ‘%s’; see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:195
+#: common/mltools/tools_utils.ml:236
 msgid "libguestfs error: %s"
 msgstr ""
 
@@ -3615,7 +3633,7 @@ msgstr ""
 msgid "%s: line %d: error parsing configuration file: %s"
 msgstr ""
 
-#: common/options/decrypt.c:122
+#: common/options/decrypt.c:134
 #, c-format
 msgid ""
 "could not find key to open LUKS encrypted %s.\n"
@@ -3927,8 +3945,8 @@ msgstr ""
 #, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
-"Make sure to specify the argument for --checksum or --format like '--format="
-"%s'.\n"
+"Make sure to specify the argument for --checksum or --format like '--"
+"format=%s'.\n"
 msgstr ""
 
 #: diff/diff.c:769
