@@ -139,6 +139,14 @@ TESTS = check-mli.sh
 build-test-guests:
 	$(MAKE) -C test-data/phony-guests check
 
+check-valgrind: build-test-guests
+	@errors=0; \
+	for f in `grep -l '^$@:' $(SUBDIRS:%=%/Makefile.am)`; do \
+	  echo $(MAKE) -C `dirname $$f` $@; \
+	  $(MAKE) -C `dirname $$f` $@ || (( errors++ )); \
+	done; \
+	exit $$(( $$errors ? 1 : 0 ))
+
 check-slow: build-test-guests
 	@errors=0; \
 	for f in `grep -l '^$@:' $(SUBDIRS:%=%/Makefile.am)`; do \
