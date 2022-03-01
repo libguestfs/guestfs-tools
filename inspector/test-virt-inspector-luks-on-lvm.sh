@@ -27,6 +27,14 @@ set -x
 $TEST_FUNCTIONS
 skip_if_skipped
 
+# This test requires libguestfs >= 1.47.3.  Just check the minor
+# number because this is a development branch so we can expect
+# everyone to be at the latest version.
+if [ "$(guestfish version | grep minor | awk '{print $2}')" -lt 47 ]; then
+    echo "$0: test skipped because this requires libguestfs >= 1.47.3"
+    exit 77
+fi
+
 f=../test-data/phony-guests/fedora-luks-on-lvm.img
 keys=(--key /dev/VG/Root:key:FEDORA-Root
       --key /dev/VG/LV1:key:FEDORA-LV1
