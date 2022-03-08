@@ -133,6 +133,7 @@ AC_CONFIG_FILES([Makefile
                  common/windows/Makefile
                  config.sh
                  customize/Makefile
+                 docs/Makefile
                  df/Makefile
                  dib/Makefile
                  diff/Makefile

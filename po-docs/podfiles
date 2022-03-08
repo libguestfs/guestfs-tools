@@ -16,6 +16,7 @@ customize/virt-customize.pod
 df/virt-df.pod
 dib/virt-dib.pod
 diff/virt-diff.pod
+docs/guestfs-tools-release-notes-1.48.pod
 edit/virt-edit.pod
 format/virt-format.pod
 get-kernel/virt-get-kernel.pod

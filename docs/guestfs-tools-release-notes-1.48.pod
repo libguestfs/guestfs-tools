@@ -1,0 +1,105 @@
+=head1 NAME
+
+guestfs-tools-release-notes - guestfs tools release Notes
+
+=head1 RELEASE NOTES FOR GUESTFS TOOLS 1.48
+
+These are the release notes for guestfs tools stable release 1.48.
+This describes the major changes since 1.46.
+
+Guestfs tools 1.48.0 was released on B<XXXX XXXX 2022>.
+
+=head2 virt-builder
+
+New templates: C<alma-8.5>, C<centosstream-8>, C<debian-11>,
+C<fedora-34>, C<fedora-34> (armv7l), C<fedora-35> C<fedora-35>
+(aarch64)
+(Lars Kaiser, Stef Walter).
+
+New fedora-34 (armv7l) template is built to use UEFI.
+
+=head2 virt-customize
+
+The yescrypt password hashing method is now supported
+(Björn Esser).
+
+=head2 virt-inspector
+
+Recognise C<kalilinux>, C<kylin> and C<msdos> operating systems /
+Linux distros (Laszlo Ersek).
+
+Inspection of LUKS encrypted filesystems placed directly on logical
+volumes is now supported, but you will need libguestfs E<ge> 1.48
+(Laszlo Ersek).
+
+=head2 virt-sysprep
+
+Add a new default operation called C<keyfiles> which removes
+NetworkManager connection profiles (Laszlo Ersek).
+
+=head2 virt-win-reg
+
+C<virt-win-reg --version> now prints both the version of guestfs tools
+and the libguestfs library that it is linked with.
+
+=head2 Common changes
+
+All OCaml tools now suppress line wrapping when output is redirected
+to a file (to make it easier to parse logs with external programs).
+There is a new I<--wrap> option which can be used to reenable line
+wrapping to files if needed (Laszlo Ersek).
+
+=head2 Build changes
+
+Multiple fixes to make it easier to build against either the system
+installed libguestfs or a locally built libguestfs (Laszlo Ersek).
+
+Fix multiple OCaml warnings.  Remove some deprecated OCaml features.
+We now require OCaml E<ge> 4.04.
+
+Multiple fixes to valgrind support for glibc 2.35, OCaml 4.13 and
+libvirt 7.7.  C<make check-valgrind> should now work.
+
+=head2 Internals
+
+New OCaml C<On_exit> module (from libguestfs-common) is used instead
+of custom on-exit and signal handling.
+
+=head2 Bugs fixed
+
+=over 4
+
+
+
+
+=back
+
+=head1 SEE ALSO
+
+L<http://libguestfs.org/>
+
+=head1 AUTHORS
+
+=begin comment
+
+git shortlog -s v1.46.0..
+
+=end comment
+
+=over 4
+
+=item Björn Esser
+
+=item Lars Kaiser
+
+=item Laszlo Ersek
+
+=item Richard W.M. Jones
+
+=item Stef Walter
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009-2022 Red Hat Inc.

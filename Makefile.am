@@ -61,6 +61,9 @@ SUBDIRS += bash
 # Perl tools.
 SUBDIRS += win-reg
 
+# Miscellaneous documentation.
+SUBDIRS += docs
+
 # After all source files were used we can generate the translation strings
 SUBDIRS += po
 if HAVE_PO4A
