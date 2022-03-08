@@ -22,8 +22,6 @@ set -e
 
 $TEST_FUNCTIONS
 skip_if_skipped
-# UML backend does not support qcow2.
-skip_if_backend uml
 skip_unless_phony_guest fedora.img
 
 f=$top_builddir/test-data/phony-guests/fedora.img

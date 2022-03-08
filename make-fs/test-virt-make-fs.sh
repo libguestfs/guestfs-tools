@@ -41,11 +41,6 @@ if [ -n "$SKIP_TEST_VIRT_MAKE_FS_BTRFS" ]; then
     btrfs_available=
 fi
 
-# UML backend doesn't support qcow2.
-if [ "$(guestfish get-backend)" != "uml" ]; then
-    qcow2_supported=yes
-fi
-
 declare -a choices
 
 # Return a random element from the array 'choices'.
@@ -67,12 +62,8 @@ if [ "$btrfs_available" = "yes" ]; then
 fi
 type=`random_choice`
 
-if [ "$qcow2_supported" = "yes" ]; then
-    choices=("" --format=raw --format=qcow2)
-    format=`random_choice`
-else
-    format="--format=raw"
-fi
+choices=("" --format=raw --format=qcow2)
+format=`random_choice`
 
 choices=(--partition --partition=gpt --partition=mbr)
 partition=`random_choice`

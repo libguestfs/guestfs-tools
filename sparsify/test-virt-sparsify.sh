@@ -20,8 +20,6 @@ set -e
 
 $TEST_FUNCTIONS
 skip_if_skipped
-# UML does not support qcow2.
-skip_if_backend uml
 
 rm -f test-virt-sparsify-1.img test-virt-sparsify-2.img
 

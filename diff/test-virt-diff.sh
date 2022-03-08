@@ -20,7 +20,6 @@ set -e
 
 $TEST_FUNCTIONS
 skip_if_skipped
-skip_if_backend uml
 skip_unless_phony_guest fedora.img
 
 rm -f fedora.qcow2

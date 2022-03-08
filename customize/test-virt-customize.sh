@@ -29,8 +29,7 @@ out=test-virt-customize.out
 rm -f $fq $out
 qemu-img create -f qcow2 -b $f -F raw $fq
 
-# Add --no-network so UML works.
-$VG virt-customize --format qcow2 -a $fq --no-network \
+$VG virt-customize --format qcow2 -a $fq \
     --write /etc/motd:MOTD \
     --write /etc/motd2:MOTD2 \
     --write /etc/motd3:MOTD3 \

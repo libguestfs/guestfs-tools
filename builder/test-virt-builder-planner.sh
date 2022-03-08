@@ -21,7 +21,6 @@ set -e
 $TEST_FUNCTIONS
 slow_test
 skip_if_skipped
-skip_if_backend uml
 
 export XDG_CONFIG_HOME=
 export VIRT_BUILDER_DIRS="$abs_builddir/test-config"

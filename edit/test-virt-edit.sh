@@ -20,8 +20,6 @@ set -e
 
 $TEST_FUNCTIONS
 skip_if_skipped
-# UML backend does not support qcow2.
-skip_if_backend uml
 
 rm -f test.qcow2
 

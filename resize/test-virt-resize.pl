@@ -87,11 +87,11 @@ if (rand () >= 0.2) {
     $expand = 1;
 }
 my $source_format = "raw";
-if ($backend ne "uml" && rand () < 0.2) {
+if (rand () < 0.2) {
     $source_format = "qcow2";
 }
 my $target_format = "raw";
-if ($backend ne "uml" && rand () < 0.2) {
+if (rand () < 0.2) {
     $target_format = "qcow2";
 }
 my $no_extra_partition = 0;

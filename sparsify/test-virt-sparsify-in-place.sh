@@ -20,8 +20,6 @@ set -e
 
 $TEST_FUNCTIONS
 skip_if_skipped
-# UML does not support discard.
-skip_if_backend uml
 
 rm -f test-virt-sparsify-in-place.img
 

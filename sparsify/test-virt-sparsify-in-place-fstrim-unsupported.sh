@@ -32,8 +32,6 @@ set -x
 
 $TEST_FUNCTIONS
 skip_if_skipped
-# UML does not support discard.
-skip_if_backend uml
 skip_unless_filesystem_available minix
 
 img=test-virt-sparsify-in-place-fstrim-unsupported.img

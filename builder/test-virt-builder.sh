@@ -31,18 +31,6 @@ fi
 
 output=phony-fedora.img
 
-format=qcow2
-if [ "$(guestfish get-backend)" = "uml" ]; then
-    format=raw
-
-    # XXX We specifically want virt-builder to work with the UML
-    # backend.  However currently it fails with:
-    #   error: uml backend does not support networking
-    # We should be able to make uml have a network backend, but in
-    # the meantime add this:
-    no_network=--no-network
-fi
-
 rm -f $output
 
 # Test as many options as we can!
@@ -55,7 +43,7 @@ rm -f $output
 # on the multi-line parameters. (RHBZ#1420301)
 virt-builder phony-fedora \
     -v --no-cache --no-check-signature $no_network \
-    -o $output --size 2G --format $format \
+    -o $output --size 2G --format qcow2 \
     --arch x86_64 \
     --hostname test.example.com \
     --timezone Europe/London \

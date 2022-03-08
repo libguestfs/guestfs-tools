@@ -1743,21 +1743,6 @@ Virt-builder uses an internal implementation of pxzcat (parallel
 xzcat) if liblzma was found at build time.  If liblzma was not found
 at build time, regular C<xzcat> is used which is single-threaded.
 
-=head3 User-Mode Linux
-
-You can use virt-builder with the User-Mode Linux (UML) backend.  This
-may be faster when running virt-builder inside a virtual machine
-(eg. in the cloud).
-
-To enable the UML backend, read the instructions in
-L<guestfs(3)/USER-MODE LINUX BACKEND>.
-
-Currently you have to use the I<--no-network> option.  This should be
-fixed in a future version.
-
-The qcow2 output format is not supported by UML.  You can only create
-raw-format guests.
-
 =head2 SELINUX
 
 Guests which use SELinux (such as Fedora and Red Hat Enterprise Linux)
