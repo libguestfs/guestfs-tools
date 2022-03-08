@@ -47,7 +47,6 @@
 
 guestfs_h *g;
 const char *libvirt_uri;
-int live;
 int read_only;
 int verbose;
 int in_guestfish = 0;

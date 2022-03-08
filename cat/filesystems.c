@@ -44,7 +44,6 @@
 guestfs_h *g;
 
 int read_only = 1;
-int live = 0;
 int verbose = 0;
 int keys_from_stdin = 0;
 int echo_keys = 0;
@@ -300,7 +299,6 @@ main (int argc, char *argv[])
    */
   assert (read_only == 1);
   assert (inspector == 0);
-  assert (live == 0);
 
   /* Must be no extra arguments on the command line. */
   if (optind != argc) {

@@ -62,7 +62,6 @@ static void free_tree (struct tree *);
 guestfs_h *g, *g2;
 
 int read_only = 1;
-int live = 0;
 int verbose = 0;
 int keys_from_stdin = 0;
 int echo_keys = 0;
@@ -370,7 +369,6 @@ main (int argc, char *argv[])
    */
   assert (read_only == 1);
   assert (inspector == 1);
-  assert (live == 0);
 
   CHECK_OPTION_format_consumed;
   CHECK_OPTION_blocksize_consumed;

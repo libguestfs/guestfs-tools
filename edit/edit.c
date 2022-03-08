@@ -46,7 +46,6 @@
 guestfs_h *g;
 
 int read_only = 0;
-int live = 0;
 int verbose = 0;
 int keys_from_stdin = 0;
 int echo_keys = 0;
@@ -257,7 +256,6 @@ main (int argc, char *argv[])
    */
   assert (read_only == 0);
   assert (inspector == 1 || mps != NULL);
-  assert (live == 0);
 
   /* User must specify at least one filename on the command line. */
   if (optind >= argc || argc - optind < 1)
