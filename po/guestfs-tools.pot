@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.47.4\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2022-03-01 11:17+0000\n"
+"POT-Creation-Date: 2022-03-08 13:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3633,7 +3633,12 @@ msgstr ""
 msgid "%s: line %d: error parsing configuration file: %s"
 msgstr ""
 
-#: common/options/decrypt.c:134
+#: common/options/decrypt.c:48
+#, c-format
+msgid "string size overflow"
+msgstr ""
+
+#: common/options/decrypt.c:170
 #, c-format
 msgid ""
 "could not find key to open LUKS encrypted %s.\n"
