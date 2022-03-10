@@ -34,7 +34,7 @@ volumes is now supported, but you will need libguestfs E<ge> 1.48
 
 =head2 virt-sysprep
 
-Add a new default operation called C<keyfiles> which removes
+Add a new default operation called C<net-nmconn> which removes
 NetworkManager connection profiles (Laszlo Ersek).
 
 =head2 virt-win-reg
