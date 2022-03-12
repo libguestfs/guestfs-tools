@@ -69,8 +69,33 @@ of custom on-exit and signal handling.
 
 =over 4
 
+=item L<https://bugzilla.redhat.com/2003706>
 
+virt-install armv7 guest on aarch64 host doesn't work, no LPAE support and no PCI devices
 
+=item L<https://bugzilla.redhat.com/1995391>
+
+RFE: virt-inspector fails to detect the distro and applications on Kylin-Desktop-V10 image
+
+=item L<https://bugzilla.redhat.com/1980922>
+
+virt-sysprep doesn't cleanup NetworkManager connection files
+
+=item L<https://bugzilla.redhat.com/1961160>
+
+The version is incorrect when running 'virt-win-reg --version'
+
+=item L<https://bugzilla.redhat.com/1820221>
+
+Log lines wrapping make log parsing difficult
+
+=item L<https://bugzilla.redhat.com/1658126>
+
+Virt-v2v can't convert guest using LUKS-on-LV
+
+=item L<https://bugzilla.redhat.com/1633328>
+
+Armv7 guest fails to boot with qemu-3.0.0-1
 
 =back
 
