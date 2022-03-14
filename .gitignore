@@ -12,6 +12,7 @@
 *.o
 *.so
 *.tar.gz
+*.tar.gz.sig
 *.trs
 stamp-*.pod
 

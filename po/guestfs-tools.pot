@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.47.5\n"
+"Project-Id-Version: guestfs-tools 1.48.0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2022-03-08 13:54+0000\n"
+"POT-Creation-Date: 2022-03-14 13:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3262,14 +3262,14 @@ msgstr ""
 msgid "‘xz’ command failed"
 msgstr ""
 
-#: align/scan.c:81 cat/cat.c:60 cat/filesystems.c:93 cat/log.c:70 cat/ls.c:98
-#: cat/tail.c:68 df/main.c:73 diff/diff.c:106 edit/edit.c:68
-#: inspector/inspector.c:85 make-fs/make-fs.c:83
+#: align/scan.c:80 cat/cat.c:59 cat/filesystems.c:92 cat/log.c:69 cat/ls.c:97
+#: cat/tail.c:67 df/main.c:72 diff/diff.c:105 edit/edit.c:67
+#: inspector/inspector.c:84 make-fs/make-fs.c:82
 #, c-format
 msgid "Try ‘%s --help’ for more information.\n"
 msgstr ""
 
-#: align/scan.c:84
+#: align/scan.c:83
 #, c-format
 msgid ""
 "%s: check alignment of virtual machine partitions\n"
@@ -3294,34 +3294,34 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: align/scan.c:168 builder/index-validate.c:90 cat/cat.c:158
-#: cat/filesystems.c:253 cat/log.c:161 cat/ls.c:256 cat/tail.c:167
-#: df/main.c:170 diff/diff.c:289 edit/edit.c:170 format/format.c:193
-#: inspector/inspector.c:188 make-fs/make-fs.c:158
+#: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157
+#: cat/filesystems.c:252 cat/log.c:160 cat/ls.c:255 cat/tail.c:166
+#: df/main.c:169 diff/diff.c:288 edit/edit.c:169 format/format.c:192
+#: inspector/inspector.c:187 make-fs/make-fs.c:157
 #, c-format
 msgid "unknown long option: %s (%d)"
 msgstr ""
 
-#: align/scan.c:186 df/main.c:196
+#: align/scan.c:185 df/main.c:195
 #, c-format
 msgid "-P option is not numeric"
 msgstr ""
 
-#: align/scan.c:242
+#: align/scan.c:240
 #, c-format
 msgid "compiled without support for libvirt"
 msgstr ""
 
-#: align/scan.c:246
+#: align/scan.c:244
 #, c-format
 msgid "--uuid option cannot be used with -a or -d"
 msgstr ""
 
-#: align/scan.c:345
+#: align/scan.c:343
 msgid "alignment < 4K"
 msgstr ""
 
-#: align/scan.c:348
+#: align/scan.c:346
 msgid "alignment < 64K"
 msgstr ""
 
@@ -3368,7 +3368,7 @@ msgid ""
 "builder 1.24.0"
 msgstr ""
 
-#: cat/cat.c:63
+#: cat/cat.c:62
 #, c-format
 msgid ""
 "%s: display files in a virtual machine\n"
@@ -3395,13 +3395,13 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/cat.c:247 cat/filesystems.c:351 cat/log.c:219 cat/ls.c:371
-#: cat/tail.c:233 diff/diff.c:343 edit/edit.c:271 inspector/inspector.c:289
+#: cat/cat.c:245 cat/filesystems.c:349 cat/log.c:217 cat/ls.c:369
+#: cat/tail.c:231 diff/diff.c:342 edit/edit.c:269 inspector/inspector.c:287
 #, c-format
 msgid "%s: error: you must specify at least one -a or -d option.\n"
 msgstr ""
 
-#: cat/filesystems.c:96
+#: cat/filesystems.c:95
 #, c-format
 msgid ""
 "%s: list filesystems, partitions, block devices, LVM in a VM\n"
@@ -3442,24 +3442,24 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/filesystems.c:307 cat/log.c:207 inspector/inspector.c:264
+#: cat/filesystems.c:305 cat/log.c:205 inspector/inspector.c:262
 #, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format like '--format=%s'.\n"
 msgstr ""
 
-#: cat/filesystems.c:322 cat/ls.c:363 df/main.c:268 diff/diff.c:357
+#: cat/filesystems.c:320 cat/ls.c:361 df/main.c:266 diff/diff.c:356
 #, c-format
 msgid "you cannot use -h and --csv options together."
 msgstr ""
 
-#: cat/filesystems.c:500
+#: cat/filesystems.c:498
 #, c-format
 msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
 msgstr ""
 
-#: cat/log.c:73
+#: cat/log.c:72
 #, c-format
 msgid ""
 "%s: display log files in a virtual machine\n"
@@ -3484,17 +3484,17 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/log.c:272
+#: cat/log.c:270
 #, c-format
 msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
 msgstr ""
 
-#: cat/log.c:380
+#: cat/log.c:378
 #, c-format
 msgid "%s: could not format journal entry timestamp\n"
 msgstr ""
 
-#: cat/log.c:446
+#: cat/log.c:444
 #, c-format
 msgid ""
 "%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
@@ -3503,12 +3503,12 @@ msgid ""
 "from this guest, and examine in a binary file viewer.\n"
 msgstr ""
 
-#: cat/log.c:465
+#: cat/log.c:463
 #, c-format
 msgid "%s: Windows Event Log file (%s) not found\n"
 msgstr ""
 
-#: cat/ls.c:101
+#: cat/ls.c:100
 #, c-format
 msgid ""
 "%s: list files in a virtual machine\n"
@@ -3546,14 +3546,14 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/ls.c:356
+#: cat/ls.c:354
 #, c-format
 msgid ""
 "used a flag which can only be combined with -lR mode\n"
 "For more information, read the virt-ls(1) man page."
 msgstr ""
 
-#: cat/tail.c:71
+#: cat/tail.c:70
 #, c-format
 msgid ""
 "%s: follow (tail) files in a virtual machine\n"
@@ -3581,19 +3581,19 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/tail.c:222
+#: cat/tail.c:220
 #, c-format
 msgid ""
 "%s: error: missing filenames on command line.\n"
 "Please specify at least one file to follow.\n"
 msgstr ""
 
-#: cat/tail.c:426
+#: cat/tail.c:424
 #, c-format
 msgid "%s: error: none of the files were found in the disk image\n"
 msgstr ""
 
-#: cat/tail.c:431
+#: cat/tail.c:429
 #, c-format
 msgid "%s: all files deleted, exiting\n"
 msgstr ""
@@ -3648,12 +3648,7 @@ msgid ""
 "Original error: %s (%d)"
 msgstr ""
 
-#: common/options/inspect.c:71
-#, c-format
-msgid "don’t use --live and -i options together"
-msgstr ""
-
-#: common/options/inspect.c:81
+#: common/options/inspect.c:78
 #, c-format
 msgid ""
 "%s: no operating system was found on this disk\n"
@@ -3672,7 +3667,7 @@ msgid ""
 "(see the virt tool manual page).\n"
 msgstr ""
 
-#: common/options/inspect.c:102
+#: common/options/inspect.c:99
 #, c-format
 msgid ""
 "%s: multi-boot operating systems are not supported\n"
@@ -3691,17 +3686,17 @@ msgid ""
 "(see the virt tool manual page).\n"
 msgstr ""
 
-#: common/options/inspect.c:164
+#: common/options/inspect.c:161
 #, c-format
 msgid "%s: some filesystems could not be mounted (ignored)\n"
 msgstr ""
 
-#: common/options/inspect.c:181
+#: common/options/inspect.c:178
 #, c-format
 msgid "Operating system: %s\n"
 msgstr ""
 
-#: common/options/inspect.c:199
+#: common/options/inspect.c:196
 #, c-format
 msgid "%s mounted on %s\n"
 msgstr ""
@@ -3823,7 +3818,7 @@ msgstr ""
 msgid "drive '%c:' not found."
 msgstr ""
 
-#: df/main.c:76
+#: df/main.c:75
 #, c-format
 msgid ""
 "%s: display free space on virtual filesystems\n"
@@ -3851,7 +3846,7 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: df/main.c:283
+#: df/main.c:281
 #, c-format
 msgid "compiled without support for libvirt."
 msgstr ""
@@ -3900,7 +3895,7 @@ msgstr ""
 msgid "IUse%"
 msgstr ""
 
-#: diff/diff.c:109
+#: diff/diff.c:108
 #, c-format
 msgid ""
 "%s: list differences between virtual machines\n"
@@ -3941,12 +3936,12 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: diff/diff.c:348
+#: diff/diff.c:347
 #, c-format
 msgid "%s: error: you must specify at least one -A or -D option.\n"
 msgstr ""
 
-#: diff/diff.c:360
+#: diff/diff.c:359
 #, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
@@ -3954,16 +3949,16 @@ msgid ""
 "format=%s'.\n"
 msgstr ""
 
-#: diff/diff.c:769
+#: diff/diff.c:767
 #, c-format
 msgid "%s: external diff command failed\n"
 msgstr ""
 
-#: diff/diff.c:773
+#: diff/diff.c:771
 msgid "End of diff"
 msgstr ""
 
-#: edit/edit.c:71
+#: edit/edit.c:70
 #, c-format
 msgid ""
 "%s: Edit a file in a virtual machine\n"
@@ -3992,28 +3987,28 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: edit/edit.c:180
+#: edit/edit.c:179
 #, c-format
 msgid "-b option given multiple times"
 msgstr ""
 
-#: edit/edit.c:194
+#: edit/edit.c:193
 #, c-format
 msgid "-e option given multiple times"
 msgstr ""
 
-#: format/format.c:69
+#: format/format.c:68
 msgid "IMPORTANT NOTE: This program ERASES ALL DATA on disks."
 msgstr ""
 
-#: format/format.c:72
+#: format/format.c:71
 #, c-format
 msgid ""
 "Try ‘%s --help’ for more information.\n"
 "%s\n"
 msgstr ""
 
-#: format/format.c:75
+#: format/format.c:74
 #, c-format
 msgid ""
 "%s: erase and make a blank disk\n"
@@ -4043,17 +4038,17 @@ msgid ""
 "\n"
 msgstr ""
 
-#: format/format.c:163
+#: format/format.c:162
 #, c-format
 msgid "no filesystem was specified"
 msgstr ""
 
-#: format/format.c:169
+#: format/format.c:168
 #, c-format
 msgid "--lvm option cannot be given multiple times"
 msgstr ""
 
-#: format/format.c:236
+#: format/format.c:234
 #, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
@@ -4061,12 +4056,12 @@ msgid ""
 "format=%s'.\n"
 msgstr ""
 
-#: format/format.c:248
+#: format/format.c:246
 #, c-format
 msgid "%s: error: you must specify at least one -a option.\n"
 msgstr ""
 
-#: format/format.c:290
+#: format/format.c:288
 #, c-format
 msgid ""
 "failed to rescan the disks after two attempts.  This\n"
@@ -4075,12 +4070,12 @@ msgid ""
 "is a bug, please file a bug at http://libguestfs.org/\n"
 msgstr ""
 
-#: format/format.c:328
+#: format/format.c:326
 #, c-format
 msgid "cannot parse --lvm option (%s)"
 msgstr ""
 
-#: inspector/inspector.c:88
+#: inspector/inspector.c:87
 #, c-format
 msgid ""
 "%s: display information about a virtual machine\n"
@@ -4108,12 +4103,12 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: inspector/inspector.c:280
+#: inspector/inspector.c:278
 #, c-format
 msgid "cannot use --xpath together with other options."
 msgstr ""
 
-#: inspector/inspector.c:317
+#: inspector/inspector.c:315
 #, c-format
 msgid ""
 "no operating system could be detected inside this disk image.\n"
@@ -4130,52 +4125,52 @@ msgid ""
 "information about the disk image as possible.\n"
 msgstr ""
 
-#: inspector/inspector.c:333
+#: inspector/inspector.c:331
 #, c-format
 msgid "xmlOutputBufferCreateFd: failed to open stdout"
 msgstr ""
 
-#: inspector/inspector.c:339
+#: inspector/inspector.c:337
 #, c-format
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
 msgstr ""
 
-#: inspector/inspector.c:711
+#: inspector/inspector.c:709
 #, c-format
 msgid "unable to parse XML from stdin"
 msgstr ""
 
-#: inspector/inspector.c:715
+#: inspector/inspector.c:713
 #, c-format
 msgid "unable to create new XPath context"
 msgstr ""
 
-#: inspector/inspector.c:719
+#: inspector/inspector.c:717
 #, c-format
 msgid "unable to evaluate XPath expression"
 msgstr ""
 
-#: inspector/inspector.c:730
+#: inspector/inspector.c:728
 #, c-format
 msgid "xmlSaveToFd failed"
 msgstr ""
 
-#: inspector/inspector.c:735
+#: inspector/inspector.c:733
 #, c-format
 msgid "xmlNewDoc failed"
 msgstr ""
 
-#: inspector/inspector.c:738
+#: inspector/inspector.c:736
 #, c-format
 msgid "xmlCopyNode failed"
 msgstr ""
 
-#: inspector/inspector.c:743
+#: inspector/inspector.c:741
 #, c-format
 msgid "xmlSaveDoc failed"
 msgstr ""
 
-#: make-fs/make-fs.c:86
+#: make-fs/make-fs.c:85
 #, c-format
 msgid ""
 "%s: make a filesystem from a tar archive or files\n"
@@ -4199,48 +4194,48 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: make-fs/make-fs.c:155
+#: make-fs/make-fs.c:154
 #, c-format
 msgid "--blocksize option is not numeric"
 msgstr ""
 
-#: make-fs/make-fs.c:196
+#: make-fs/make-fs.c:195
 #, c-format
 msgid "%s: missing input and output arguments on the command line\n"
 msgstr ""
 
-#: make-fs/make-fs.c:215
+#: make-fs/make-fs.c:214
 #, c-format
 msgid "%s: NTFS support was disabled when libguestfs was compiled\n"
 msgstr ""
 
-#: make-fs/make-fs.c:265 make-fs/make-fs.c:329
+#: make-fs/make-fs.c:264 make-fs/make-fs.c:328
 #, c-format
 msgid "%s: %s command failed\n"
 msgstr ""
 
-#: make-fs/make-fs.c:454
+#: make-fs/make-fs.c:453
 #, c-format
 msgid "%s: cannot parse the output of ‘du’ command: %s\n"
 msgstr ""
 
-#: make-fs/make-fs.c:489
+#: make-fs/make-fs.c:488
 #, c-format
 msgid ""
 "%s: %s: input is not a directory, tar archive or compressed tar archive\n"
 msgstr ""
 
-#: make-fs/make-fs.c:520
+#: make-fs/make-fs.c:519
 #, c-format
 msgid "%s: %s: unknown compressed input format (%s)\n"
 msgstr ""
 
-#: make-fs/make-fs.c:643
+#: make-fs/make-fs.c:642
 #, c-format
 msgid "%s: %s: invalid size parameter ‘%s’ (%s returned %u)\n"
 msgstr ""
 
-#: make-fs/make-fs.c:869
+#: make-fs/make-fs.c:868
 #, c-format
 msgid "%s: subprocess failed\n"
 msgstr ""

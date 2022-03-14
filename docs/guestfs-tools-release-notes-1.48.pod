@@ -7,7 +7,7 @@ guestfs-tools-release-notes - guestfs tools release Notes
 These are the release notes for guestfs tools stable release 1.48.
 This describes the major changes since 1.46.
 
-Guestfs tools 1.48.0 was released on B<XXXX XXXX 2022>.
+Guestfs tools 1.48.0 was released on B<14 March 2022>.
 
 =head2 virt-builder
 
