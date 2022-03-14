@@ -74,6 +74,7 @@ EXTRA_DIST = \
 	HACKING \
 	README \
 	.gitignore \
+	bugs-in-changelog.sh \
 	check-mli.sh \
 	common/.gitignore \
 	common/README \
