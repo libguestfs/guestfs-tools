@@ -5,7 +5,7 @@
 
 'virt-install' \
     '--transient' \
-    '--name=tmp-parkabak' \
+    '--name=tmp-slg0r3ft' \
     '--ram=4096' \
     '--arch=x86_64' \
     '--cpu=host' \
@@ -13,7 +13,7 @@
     '--os-variant=rhel8.0' \
     '--initrd-inject=centosstream-8.ks' \
     '--extra-args=ks=file:/centosstream-8.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
-    '--disk=/data/src/guestfs-tools/builder/templates/tmp-parkabak.img,size=6,format=raw' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-slg0r3ft.img,size=6,format=raw' \
     '--location=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os' \
     '--serial=pty' \
     '--nographics' 
