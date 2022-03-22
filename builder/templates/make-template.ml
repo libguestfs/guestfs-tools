@@ -879,8 +879,11 @@ and make_boot_media os arch =
      (* This is probably the last CentOS 8 release. *)
      Location "https://vault.centos.org/8.5.2111/BaseOS/x86_64/kickstart/"
 
+  | CentOSStream 8, X86_64 ->
+     Location (sprintf "http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os")
+
   | CentOSStream ver, X86_64 ->
-     Location (sprintf "http://mirror.centos.org/centos/%d-stream/BaseOS/x86_64/os" ver)
+     Location (sprintf "http://mirror.stream.centos.org/%d-stream/BaseOS/x86_64/os" ver)
 
   | Debian (_, dist), arch ->
      Location (sprintf "http://deb.debian.org/debian/dists/%s/main/installer-%s"
