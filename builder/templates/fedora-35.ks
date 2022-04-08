@@ -27,9 +27,11 @@ poweroff
 
 %post
 # Ensure the installation is up-to-date.
-# This makes Fedora >= 33 unbootable, see:
+dnf -y --best upgrade
+# This required otherwise the kernel will not be bootable, see
 # https://bugzilla.redhat.com/show_bug.cgi?id=1911177
-#dnf -y --best upgrade
+# https://bugzilla.redhat.com/show_bug.cgi?id=1945835#c24
+grub2-mkconfig -o /boot/grub2/grub.cfg
 # Enable Xen domU support.
 pushd /etc/dracut.conf.d
 echo 'add_drivers+=" xen:vbd xen:vif "' > virt-builder-xen-drivers.conf
