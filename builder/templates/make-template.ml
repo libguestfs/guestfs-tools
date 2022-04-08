@@ -649,9 +649,11 @@ dracut -f /boot/initramfs-$KERNEL_VERSION.img $KERNEL_VERSION
       bpf "%%post\n";
       bpf "\
 # Ensure the installation is up-to-date.
-# This makes Fedora >= 33 unbootable, see:
+dnf -y --best upgrade
+# This required otherwise the kernel will not be bootable, see
 # https://bugzilla.redhat.com/show_bug.cgi?id=1911177
-#dnf -y --best upgrade
+# https://bugzilla.redhat.com/show_bug.cgi?id=1945835#c24
+grub2-mkconfig -o /boot/grub2/grub.cfg
 ";
 
       let needs_regenerate_dracut = ref false in

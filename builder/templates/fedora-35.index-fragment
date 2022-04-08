@@ -3,10 +3,11 @@ name=Fedora® 35 Server
 osinfo=fedora35
 arch=x86_64
 file=fedora-35.xz
-checksum[sha512]=bd5d6c1311463b7bee3c3743ab14ad05dfbfedc135933c519015e62ebd127d904be7222391fb73c4631044e44b5f70038a28d87b5a6be1508bca752517929415
+revision=2
+checksum[sha512]=fa4ce7f9d37c76dcf1ed3d30668227f738761d97503daf4a47565b1d14de4e6d577855886b3e2e55429163753af84a5da1a58aa5aa975e6f189542b4f9afac61
 format=raw
 size=6442450944
-compressed_size=474387772
+compressed_size=623046248
 expand=/dev/sda3
 notes=Fedora® 35 Server
  

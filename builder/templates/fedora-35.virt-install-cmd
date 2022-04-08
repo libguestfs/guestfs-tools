@@ -5,7 +5,7 @@
 
 'virt-install' \
     '--transient' \
-    '--name=tmp-4qrk2p3m' \
+    '--name=tmp-tn6upkps' \
     '--ram=4096' \
     '--arch=x86_64' \
     '--cpu=host' \
@@ -13,7 +13,7 @@
     '--os-variant=fedora34' \
     '--initrd-inject=fedora-35.ks' \
     '--extra-args=inst.ks=file:/fedora-35.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
-    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-4qrk2p3m.img,size=6,format=raw' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-tn6upkps.img,size=6,format=raw' \
     '--location=https://mirror.bytemark.co.uk/fedora/linux/releases/35/Server/x86_64/os/' \
     '--serial=pty' \
     '--nographics' 
