@@ -653,8 +653,10 @@ dnf -y --best upgrade
 # This required otherwise the kernel will not be bootable, see
 # https://bugzilla.redhat.com/show_bug.cgi?id=1911177
 # https://bugzilla.redhat.com/show_bug.cgi?id=1945835#c24
-grub2-mkconfig -o /boot/grub2/grub.cfg
-";
+grub2-mkconfig -o %s
+" (quote
+     (if needs_uefi os arch then "/etc/grub2-efi.cfg"
+      else "/etc/grub2.cfg"));
 
       let needs_regenerate_dracut = ref false in
       if arch = X86_64 then (
