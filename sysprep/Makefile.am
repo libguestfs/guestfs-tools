@@ -46,6 +46,7 @@ operations = \
 	ipa_client \
 	kerberos_data \
 	kerberos_hostkeytab \
+	lvm_system_devices \
 	lvm_uuids \
 	logfiles \
 	machine_id \
