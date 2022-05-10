@@ -415,7 +415,7 @@ let run (g : G.guestfs) root (ops : ops) =
       warning (f_"passwords could not be set for this type of guest")
   );
 
-  if ops.flags.selinux_relabel then (
+  if not ops.flags.no_selinux_relabel then (
     message (f_"SELinux relabelling");
     SELinux_relabel.relabel g
   );
