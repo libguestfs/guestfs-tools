@@ -131,12 +131,6 @@ To update the installed packages to the latest version:
 
  virt-builder debian-7 --update
 
-For guests which use SELinux, like Fedora and Red Hat Enterprise
-Linux, you may need to do SELinux relabelling after installing or
-updating packages (see L</SELINUX> below):
-
- virt-builder fedora-27 --update --selinux-relabel
-
 =head2 Customizing the installation
 
 There are many options that let you customize the installation.  These
@@ -972,7 +966,7 @@ command line.
 
 =item *
 
-SELinux relabelling is done (I<--selinux-relabel>).
+SELinux relabelling is done unless disabled with I<--no-selinux-relabel>.
 
 =back
 
@@ -1072,8 +1066,7 @@ A typical virt-builder command would be:
    --install puppet \
    --append-line '/etc/puppet/puppet.conf:[agent]' \
    --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/' \
-   --run-command 'systemctl enable puppet' \
-   --selinux-relabel
+   --run-command 'systemctl enable puppet'
 
 The precise instructions vary according to the Linux distro.  For
 further information see:
@@ -1753,14 +1746,14 @@ two possible strategies it can use to ensure correct labelling:
 
 =over 4
 
-=item Using I<--selinux-relabel>
+=item Automatic relabeling
 
 This runs L<setfiles(8)> just before finalizing the guest, which sets
 SELinux labels correctly in the disk image.
 
 This is the recommended method.
 
-=item I<--touch> F</.autorelabel>
+=item Using I<--no-selinux-relabel> I<--touch> F</.autorelabel>
 
 Guest templates may already contain a file called F</.autorelabel> or
 you may touch it.
@@ -1770,11 +1763,6 @@ first boot.  Guests will reboot themselves once the first time you use
 them, which is normal and harmless.
 
 =back
-
-Please note that if your guest uses SELinux, and you are doing operations
-on it which might create new files or change existing ones, you are
-recommended to use I<--selinux-relabel>.  This will help in making sure
-that files have the right SELinux labels.
 
 =head1 MACHINE READABLE OUTPUT
 

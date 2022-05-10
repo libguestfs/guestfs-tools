@@ -61,9 +61,6 @@ case "$guestname" in
         extra[${#extra[*]}]='/etc/inittab:
                                 s,^#([1-9].*respawn.*/sbin/getty.*),$1,'
         ;;
-    fedora*|rhel*|centos*)
-        extra[${#extra[*]}]='--selinux-relabel'
-        ;;
     *)
         ;;
 esac

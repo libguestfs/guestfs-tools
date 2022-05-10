@@ -132,8 +132,6 @@ let main () =
       [ L"mount-options" ], Getopt.Set_string (s_"opts", mount_opts),  s_"Set mount options (eg /:noatime;/var:rw,noatime)";
       [ L"network" ], Getopt.Set network,           s_"Enable appliance network";
       [ L"no-network" ], Getopt.Clear network,      s_"Disable appliance network (default)";
-      [ L"no-selinux-relabel" ], Getopt.Unit (fun () -> ()),
-                                              s_"Compatibility option, does nothing";
       [ L"operation"; L"operations" ],  Getopt.String (s_"operations", set_operations), s_"Enable/disable specific operations";
     ] in
     let args = basic_args @ Sysprep_operation.extra_args () in

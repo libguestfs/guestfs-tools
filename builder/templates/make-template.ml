@@ -256,8 +256,7 @@ let rec main () =
     printf "Sysprepping ...\n%!";
     let cmd =
       sprintf "virt-sysprep --quiet -a %s%s"
-              (quote tmpout)
-              (if is_selinux_os os then " --selinux-relabel" else "") in
+              (quote tmpout) in
     if Sys.command cmd <> 0 then exit 1
   );
 
@@ -478,11 +477,6 @@ and string_of_os_noarch = function
 and can_sysprep_os = function
   | RHEL _ | Alma _ | CentOS _ | CentOSStream _ | Fedora _
   | Debian _ | Ubuntu _ -> true
-  | FreeBSD _ | Windows _ -> false
-
-and is_selinux_os = function
-  | RHEL _ | Alma _ | CentOS _ | CentOSStream _ | Fedora _ -> true
-  | Debian _ | Ubuntu _
   | FreeBSD _ | Windows _ -> false
 
 and needs_uefi os arch =
