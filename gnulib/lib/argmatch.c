@@ -28,6 +28,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <libintl.h>
 
 #define _(msgid) gettext (msgid)
 
