@@ -23,21 +23,25 @@ ACLOCAL_AMFLAGS = -I m4
 SUBDIRS  = gnulib/lib
 SUBDIRS += common/utils
 SUBDIRS += common/structs
+if HAVE_OCAML
 SUBDIRS += common/mlstdutils
 SUBDIRS += common/mlutils
 SUBDIRS += common/mlpcre
+endif
 SUBDIRS += common/edit
 SUBDIRS += common/options
 SUBDIRS += common/parallel
 SUBDIRS += common/progress
 SUBDIRS += common/visit
 SUBDIRS += common/windows
+if HAVE_OCAML
 SUBDIRS += common/mlgettext
 SUBDIRS += common/mlprogress
 SUBDIRS += common/mlvisit
 SUBDIRS += common/mlxml
 SUBDIRS += common/mltools
 SUBDIRS += common/mlcustomize
+endif
 
 # Data used by the tests.
 SUBDIRS += test-data
@@ -45,6 +49,7 @@ SUBDIRS += test-data
 # virt-tools in C.
 SUBDIRS += align cat diff df edit format inspector make-fs
 
+if HAVE_OCAML
 # OCaml tools.  Note 'common/ml*' and 'customize' contain shared code
 # used by other OCaml tools, so these must come first.
 SUBDIRS += customize
@@ -54,12 +59,15 @@ SUBDIRS += resize
 SUBDIRS += sparsify
 SUBDIRS += sysprep
 SUBDIRS += dib
+endif
 
 # bash-completion
 SUBDIRS += bash
 
+if HAVE_TOOLS
 # Perl tools.
 SUBDIRS += win-reg
+endif
 
 # Miscellaneous documentation.
 SUBDIRS += docs
