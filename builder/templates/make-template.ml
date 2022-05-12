@@ -254,9 +254,7 @@ let rec main () =
   if can_sysprep_os os then (
     (* Sysprep.  Relabel SELinux-using guests. *)
     printf "Sysprepping ...\n%!";
-    let cmd =
-      sprintf "virt-sysprep --quiet -a %s%s"
-              (quote tmpout) in
+    let cmd = sprintf "virt-sysprep --quiet -a %s" (quote tmpout) in
     if Sys.command cmd <> 0 then exit 1
   );
 
