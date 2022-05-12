@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'fedora-36'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-xg0sk0a5' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=fedora34' \
+    '--initrd-inject=fedora-36.ks' \
+    '--extra-args=inst.ks=file:/fedora-36.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-xg0sk0a5.img,size=6,format=raw' \
+    '--location=https://lon.mirror.rackspace.com/fedora/releases/36/Server/x86_64/os/' \
+    '--serial=pty' \
+    '--nographics' 
+
