@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.48.0\n"
+"Project-Id-Version: guestfs-tools 1.49.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2022-03-14 13:33+0000\n"
+"POT-Creation-Date: 2022-05-12 14:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -324,7 +324,7 @@ msgstr ""
 msgid "%s: physical volume not returned by pvs_full"
 msgstr ""
 
-#: sysprep/main.ml:141
+#: sysprep/main.ml:139
 msgid ""
 "%s: reset or unconfigure a virtual machine so clones can be made\n"
 "\n"
@@ -459,7 +459,7 @@ msgstr ""
 msgid "--expand option given more than once"
 msgstr ""
 
-#: sysprep/main.ml:156 customize/customize_main.ml:109
+#: sysprep/main.ml:154 customize/customize_main.ml:109
 msgid "--format parameter must appear before -a parameter"
 msgstr ""
 
@@ -683,10 +683,6 @@ msgstr ""
 msgid "Clearing Linux swap on %s"
 msgstr ""
 
-#: sysprep/main.ml:136
-msgid "Compatibility option, does nothing"
-msgstr ""
-
 #: sparsify/cmdline.ml:69
 msgid "Compressed output format"
 msgstr ""
@@ -862,6 +858,11 @@ msgstr ""
 msgid "Do not fsync output file on exit"
 msgstr ""
 
+#: customize/customize_cmdline.ml:464
+#: common/mlcustomize/customize_cmdline.ml:464
+msgid "Do not relabel files with correct SELinux labels"
+msgstr ""
+
 #: builder/cmdline.ml:168
 msgid "Do not warn if writing to a partition"
 msgstr ""
@@ -951,7 +952,7 @@ msgstr ""
 msgid "Enable tracing of libguestfs calls"
 msgstr ""
 
-#: sysprep/main.ml:137
+#: sysprep/main.ml:135
 msgid "Enable/disable specific operations"
 msgstr ""
 
@@ -963,7 +964,7 @@ msgstr ""
 msgid "Examining %s"
 msgstr ""
 
-#: sysprep/main.ml:209 customize/customize_main.ml:155
+#: sysprep/main.ml:207 customize/customize_main.ml:155
 msgid "Examining the guest ..."
 msgstr ""
 
@@ -1470,11 +1471,6 @@ msgstr ""
 
 #: customize/customize_run.ml:320
 msgid "Registering with subscription-manager"
-msgstr ""
-
-#: customize/customize_cmdline.ml:464
-#: common/mlcustomize/customize_cmdline.ml:464
-msgid "Relabel files with correct SELinux labels"
 msgstr ""
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:38
@@ -2621,7 +2617,7 @@ msgstr ""
 msgid "guest type %s is not supported"
 msgstr ""
 
-#: common/mlcustomize/firstboot.ml:367
+#: common/mlcustomize/firstboot.ml:370
 msgid "guest type %s/%s is not supported"
 msgstr ""
 
@@ -2792,7 +2788,7 @@ msgstr ""
 msgid "no operating system found"
 msgstr ""
 
-#: sysprep/main.ml:225 customize/customize_main.ml:182
+#: sysprep/main.ml:223 customize/customize_main.ml:182
 msgid "no operating systems were found in the guest image"
 msgstr ""
 
@@ -2831,7 +2827,7 @@ msgstr ""
 msgid "operation name is an empty string"
 msgstr ""
 
-#: sysprep/main.ml:137 sysprep/main.ml:129
+#: sysprep/main.ml:135 sysprep/main.ml:129
 msgid "operations"
 msgstr ""
 
@@ -3192,7 +3188,7 @@ msgid ""
 "page for further information."
 msgstr ""
 
-#: sysprep/main.ml:176
+#: sysprep/main.ml:174
 msgid ""
 "you cannot give -a and -d options together.  Read virt-sysprep(1) man page "
 "for further information."
@@ -3242,7 +3238,7 @@ msgid ""
 "further information."
 msgstr ""
 
-#: sysprep/main.ml:165
+#: sysprep/main.ml:163
 msgid ""
 "you must give either -a or -d options.  Read virt-sysprep(1) man page for "
 "further information."
@@ -3638,7 +3634,7 @@ msgstr ""
 msgid "string size overflow"
 msgstr ""
 
-#: common/options/decrypt.c:170
+#: common/options/decrypt.c:169
 #, c-format
 msgid ""
 "could not find key to open LUKS encrypted %s.\n"
@@ -3745,7 +3741,7 @@ msgstr ""
 
 #: common/options/uri.c:138
 #, c-format
-msgid "%s: %s: cannot both a server name and a socket query parameter\n"
+msgid "%s: %s: cannot have both a server name and a socket query parameter\n"
 msgstr ""
 
 #: common/parallel/domains.c:106
