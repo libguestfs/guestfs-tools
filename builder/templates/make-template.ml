@@ -887,16 +887,16 @@ and make_boot_media os arch =
 
   (* Fedora primary architectures. *)
   | Fedora ver, Armv7 ->
-     Location (sprintf "https://mirror.bytemark.co.uk/fedora/linux/releases/%d/Server/armhfp/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/armhfp/os/" ver)
 
   | Fedora ver, X86_64 when ver < 21 ->
-     Location (sprintf "https://mirror.bytemark.co.uk/fedora/linux/releases/%d/Fedora/x86_64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/releases/%d/Fedora/x86_64/os/" ver)
 
   | Fedora ver, X86_64 ->
-     Location (sprintf "https://mirror.bytemark.co.uk/fedora/linux/releases/%d/Server/x86_64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/x86_64/os/" ver)
 
   | Fedora ver, Aarch64 ->
-     Location (sprintf "https://mirror.bytemark.co.uk/fedora/linux/releases/%d/Server/aarch64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/aarch64/os/" ver)
 
   (* Fedora secondary architectures.
    * By using dl.fedoraproject.org we avoid randomly using mirrors
