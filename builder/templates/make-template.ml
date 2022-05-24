@@ -1215,13 +1215,13 @@ and os_variant_of_os ?(for_fedora = false) os arch =
 
     | Alma (major, _), _ -> sprintf "almalinux%d" major
 
-    | CentOS (8, _), _ -> "rhel8.0" (* temporary until osinfo updated *)
+    | CentOS (8, _), _ -> "rhel8.5" (* max version known in Fedora 36 *)
     | CentOS (major, minor), _ when (major, minor) <= (7,0) ->
        sprintf "centos%d.%d" major minor
     | CentOS _, _ -> "centos7.0" (* max version known in Fedora 31 *)
 
-    | CentOSStream 8, _ -> "rhel8.0" (* temporary until osinfo updated *)
-    | CentOSStream _, _ -> "rhel8.0" (* min known version is 8 *)
+    | CentOSStream 8, _ -> "rhel8.5" (* max version known in Fedora 36 *)
+    | CentOSStream _, _ -> "rhel8.5" (* max version known in Fedora 36 *)
 
     | RHEL (6, minor), _ when minor <= 8 ->
        sprintf "rhel6.%d" minor
@@ -1229,7 +1229,7 @@ and os_variant_of_os ?(for_fedora = false) os arch =
     | RHEL (7, minor), _ when minor <= 4 ->
        sprintf "rhel7.%d" minor
     | RHEL (7, _), _ -> "rhel7.5" (* max version known in Fedora 29 *)
-    | RHEL (8, _), _ -> "rhel8.0" (* temporary until osinfo updated *)
+    | RHEL (8, _), _ -> "rhel8.5" (* max version known in Fedora 36 *)
     | RHEL (major, minor), _ ->
        sprintf "rhel%d.%d" major minor
 
