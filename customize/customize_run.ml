@@ -67,99 +67,11 @@ let run (g : G.guestfs) root (ops : ops) =
         error (f_"%s: command exited with an error") display
   in
 
-  (* http://distrowatch.com/dwres.php?resource=package-management *)
-  let rec guest_install_command packages =
-    let quoted_args = String.concat " " (List.map quote packages) in
-    match g#inspect_get_package_management root with
-    | "apk" ->
-       sprintf "
-         apk update
-         apk add %s
-       " quoted_args
-    | "apt" ->
-      (* http://unix.stackexchange.com/questions/22820 *)
-      sprintf "
-        export DEBIAN_FRONTEND=noninteractive
-        apt_opts='-q -y -o Dpkg::Options::=--force-confnew'
-        apt-get $apt_opts update
-        apt-get $apt_opts install %s
-      " quoted_args
-    | "dnf" ->
-       sprintf "dnf%s -y install %s"
-               (if verbose () then " --verbose" else "")
-               quoted_args
-    | "pisi" ->   sprintf "pisi it %s" quoted_args
-    | "pacman" -> sprintf "pacman -S --noconfirm %s" quoted_args
-    | "urpmi" ->  sprintf "urpmi %s" quoted_args
-    | "xbps" ->   sprintf "xbps-install -Sy %s" quoted_args
-    | "yum" ->    sprintf "yum -y install %s" quoted_args
-    | "zypper" -> sprintf "zypper -n in -l %s" quoted_args
-
-    | "unknown" ->
-      error_unknown_package_manager (s_"--install")
-    | pm ->
-      error_unimplemented_package_manager (s_"--install") pm
-
-  and guest_update_command () =
-    match g#inspect_get_package_management root with
-    | "apk" ->
-       "
-         apk update
-         apk upgrade
-       "
-    | "apt" ->
-      (* http://unix.stackexchange.com/questions/22820 *)
-      "
-        export DEBIAN_FRONTEND=noninteractive
-        apt_opts='-q -y -o Dpkg::Options::=--force-confnew'
-        apt-get $apt_opts update
-        apt-get $apt_opts upgrade
-      "
-    | "dnf" ->
-       sprintf "dnf%s -y --best upgrade"
-               (if verbose () then " --verbose" else "")
-    | "pisi" ->   "pisi upgrade"
-    | "pacman" -> "pacman -Su"
-    | "urpmi" ->  "urpmi --auto-select"
-    | "xbps" ->   "xbps-install -Suy"
-    | "yum" ->    "yum -y update"
-    | "zypper" -> "zypper -n update -l"
-
-    | "unknown" ->
-      error_unknown_package_manager (s_"--update")
-    | pm ->
-      error_unimplemented_package_manager (s_"--update") pm
-
-  and guest_uninstall_command packages =
-    let quoted_args = String.concat " " (List.map quote packages) in
-    match g#inspect_get_package_management root with
-    | "apk" -> sprintf "apk del %s" quoted_args
-    | "apt" ->
-      (* http://unix.stackexchange.com/questions/22820 *)
-      sprintf "
-        export DEBIAN_FRONTEND=noninteractive
-        apt_opts='-q -y -o Dpkg::Options::=--force-confnew'
-        apt-get $apt_opts remove %s
-      " quoted_args
-    | "dnf" ->    sprintf "dnf -y remove %s" quoted_args
-    | "pisi" ->   sprintf "pisi rm %s" quoted_args
-    | "pacman" -> sprintf "pacman -R %s" quoted_args
-    | "urpmi" ->  sprintf "urpme %s" quoted_args
-    | "xbps" ->   sprintf "xbps-remove -Sy %s" quoted_args
-    | "yum" ->    sprintf "yum -y remove %s" quoted_args
-    | "zypper" -> sprintf "zypper -n rm %s" quoted_args
-
-    | "unknown" ->
-      error_unknown_package_manager (s_"--uninstall")
-    | pm ->
-      error_unimplemented_package_manager (s_"--uninstall") pm
-
-  (* Windows has package_management == "unknown". *)
-  and error_unknown_package_manager flag =
-    error (f_"cannot use ‘%s’ because no package manager has been detected for this guest OS.\n\nIf this guest OS is a common one with ordinary package management then this may have been caused by a failure of libguestfs inspection.\n\nFor OSes such as Windows that lack package management, this is not possible.  Try using one of the ‘--firstboot*’ flags instead (described in the manual).") flag
-
-  and error_unimplemented_package_manager flag pm =
-      error (f_"sorry, ‘%s’ with the ‘%s’ package manager has not been implemented yet.\n\nYou can work around this by using one of the ‘--run*’ or ‘--firstboot*’ options instead (described in the manual).") flag pm
+  let guest_pkgs_command f =
+    try f (g#inspect_get_package_management root) with
+    | Guest_packages.Unknown_package_manager msg
+    | Guest_packages.Unimplemented_package_manager msg ->
+      error "%s" msg
   in
 
   (* Set the random seed. *)
@@ -255,7 +167,7 @@ let run (g : G.guestfs) root (ops : ops) =
     | `FirstbootPackages pkgs ->
       message (f_"Installing firstboot packages: %s")
         (String.concat " " pkgs);
-      let cmd = guest_install_command pkgs in
+      let cmd = guest_pkgs_command (Guest_packages.install_command pkgs) in
       let name = String.concat " " ("install" :: pkgs) in
       Firstboot.add_firstboot_script g root name cmd
 
@@ -271,7 +183,7 @@ let run (g : G.guestfs) root (ops : ops) =
 
     | `InstallPackages pkgs ->
       message (f_"Installing packages: %s") (String.concat " " pkgs);
-      let cmd = guest_install_command pkgs in
+      let cmd = guest_pkgs_command (Guest_packages.install_command pkgs) in
       do_run ~display:cmd ~warn_failed_no_network:true cmd
 
     | `Link (target, links) ->
@@ -365,12 +277,12 @@ let run (g : G.guestfs) root (ops : ops) =
 
     | `UninstallPackages pkgs ->
       message (f_"Uninstalling packages: %s") (String.concat " " pkgs);
-      let cmd = guest_uninstall_command pkgs in
+      let cmd = guest_pkgs_command (Guest_packages.uninstall_command pkgs) in
       do_run ~display:cmd cmd
 
     | `Update ->
       message (f_"Updating packages");
-      let cmd = guest_update_command () in
+      let cmd = guest_pkgs_command Guest_packages.update_command in
       do_run ~display:cmd ~warn_failed_no_network:true cmd
 
     | `Upload (path, dest) ->
