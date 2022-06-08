@@ -77,7 +77,8 @@ blank-%.img:
 # Make a (dummy) Fedora image.
 fedora.img: make-fedora-img.pl \
 		fedora-journal.tar.xz \
-		fedora.db
+		fedora.db \
+		fedora-static-bin
 	SRCDIR=$(srcdir) LAYOUT=partitions $(top_builddir)/run --test ./$<
 
 # Make a (dummy) Fedora image using md devices
@@ -85,7 +86,8 @@ fedora-md1.img fedora-md2.img: stamp-fedora-md.img
 
 stamp-fedora-md.img: make-fedora-img.pl \
 		fedora-journal.tar.xz \
-		fedora.db
+		fedora.db \
+		fedora-static-bin
 	rm -f $@
 	SRCDIR=$(srcdir) LAYOUT=partitions-md $(top_builddir)/run --test ./$<
 	touch $@
@@ -94,19 +96,22 @@ stamp-fedora-md.img: make-fedora-img.pl \
 # for root and home.
 fedora-btrfs.img: make-fedora-img.pl \
 		fedora-journal.tar.xz \
-		fedora.db
+		fedora.db \
+		fedora-static-bin
 	SRCDIR=$(srcdir) LAYOUT=btrfs $(top_builddir)/run --test ./$<
 
 # Make a (dummy) Fedora image with LUKS-on-LVM.
 fedora-luks-on-lvm.img: make-fedora-img.pl \
 		fedora-journal.tar.xz \
-		fedora.db
+		fedora.db \
+		fedora-static-bin
 	SRCDIR=$(srcdir) LAYOUT=luks-on-lvm $(top_builddir)/run --test ./$<
 
 # Make a (dummy) Fedora image with LVM-on-LUKS.
 fedora-lvm-on-luks.img: make-fedora-img.pl \
 		fedora-journal.tar.xz \
-		fedora.db
+		fedora.db \
+		fedora-static-bin
 	SRCDIR=$(srcdir) LAYOUT=lvm-on-luks $(top_builddir)/run --test ./$<
 
 # Make a (dummy) Debian image.
@@ -143,6 +148,13 @@ fedora.db: fedora-db.sql.xz
 	rm -f $@ $@-t
 	xzcat $< | $(SQLITE3) $@-t
 	mv $@-t $@
+
+# This is included in the phony Fedora image to act as a phony "rpm"
+# and "dracut" command.  For the use of -all-static here, see
+# libguestfs/tests/Makefile.am
+check_PROGRAMS = fedora-static-bin
+fedora_static_bin_SOURCES = fedora.c
+fedora_static_bin_LDFLAGS = -all-static
 
 windows-software: windows-software.reg
 	rm -f $@ $@-t

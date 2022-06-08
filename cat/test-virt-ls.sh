@@ -23,6 +23,7 @@ skip_if_skipped
 
 # Read out the test directory using virt-ls.
 if [ "$($VG virt-ls --format=raw -a ../test-data/phony-guests/fedora.img /bin)" != "ls
+rpm
 test1
 test2
 test3
@@ -39,7 +40,9 @@ output="$($VG virt-ls -lR --format=raw -a ../test-data/phony-guests/fedora.img /
 expected="d0755/boot
 d0755/boot/grub
 -0644/boot/grub/grub.conf
-d0700/boot/lost+found"
+-0644/boot/initramfs-5.19.0-0.rc1.14.fc37.x86_64.img
+d0700/boot/lost+found
+-0644/boot/vmlinuz-5.19.0-0.rc1.14.fc37.x86_64"
 if [ "$output" != "$expected" ]; then
     echo "$0: error: unexpected output from virt-ls -lR"
     echo "output: ------------------------------------------"
