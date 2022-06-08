@@ -30,9 +30,56 @@
     </filesystems>
     <applications>
       <application>
+        <name>alternatives</name>
+        <version>1.19</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/fedora-sysv/chkconfig</url>
+        <summary>A tool to maintain symbolic links determining default commands</summary>
+        <description>alternatives creates, removes, maintains and displays information about the
+symbolic links comprising the alternatives system. It is possible for several
+programs fulfilling the same or similar functions to be installed on a single
+system at the same time.</description>
+      </application>
+      <application>
+        <name>audit-libs</name>
+        <version>3.0.8</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://people.redhat.com/sgrubb/audit/</url>
+        <summary>Dynamic library for libaudit</summary>
+        <description>The audit-libs package contains the dynamic libraries needed for
+applications to use the audit framework.</description>
+      </application>
+      <application>
+        <name>authselect</name>
+        <version>1.4.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/authselect/authselect</url>
+        <summary>Configures authentication and identity sources from supported profiles</summary>
+        <description>Authselect is designed to be a replacement for authconfig but it takes
+a different approach to configure the system. Instead of letting
+the administrator build the PAM stack with a tool (which may potentially
+end up with a broken configuration), it would ship several tested stacks
+(profiles) that solve a use-case and are well tested and supported.
+At the same time, some obsolete features of authconfig are not
+supported by authselect.</description>
+      </application>
+      <application>
+        <name>authselect-libs</name>
+        <version>1.4.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/authselect/authselect</url>
+        <summary>Utility library used by the authselect tool</summary>
+        <description>Common library files for authselect. This package is used by the authselect
+command line tool and any other potential front-ends.</description>
+      </application>
+      <application>
         <name>basesystem</name>
         <version>11</version>
-        <release>10.fc33</release>
+        <release>13.fc36</release>
         <arch>noarch</arch>
         <url>(none)</url>
         <summary>The skeleton package which defines a simple Fedora system</summary>
@@ -43,8 +90,8 @@ should never be removed.</description>
       </application>
       <application>
         <name>bash</name>
-        <version>5.0.17</version>
-        <release>2.fc33</release>
+        <version>5.1.16</version>
+        <release>2.fc36</release>
         <arch>x86_64</arch>
         <url>https://www.gnu.org/software/bash</url>
         <summary>The GNU Bourne Again shell</summary>
@@ -54,9 +101,305 @@ incorporates useful features from the Korn shell (ksh) and the C shell
 (csh). Most sh scripts can be run by bash without modification.</description>
       </application>
       <application>
+        <name>bzip2-libs</name>
+        <version>1.0.8</version>
+        <release>11.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.bzip.org/</url>
+        <summary>Libraries for applications using bzip2</summary>
+        <description>Libraries for applications using the bzip2 compression format.</description>
+      </application>
+      <application>
+        <name>ca-certificates</name>
+        <version>2021.2.52</version>
+        <release>3.fc36</release>
+        <arch>noarch</arch>
+        <url>https://fedoraproject.org/wiki/CA-Certificates</url>
+        <summary>The Mozilla CA root certificate bundle</summary>
+        <description>This package contains the set of CA certificates chosen by the
+Mozilla Foundation for use with the Internet PKI.</description>
+      </application>
+      <application>
+        <name>coreutils</name>
+        <version>9.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/coreutils/</url>
+        <summary>A set of basic GNU tools commonly used in shell scripts</summary>
+        <description>These are the GNU core utilities.  This package is the combination of
+the old GNU fileutils, sh-utils, and textutils packages.</description>
+      </application>
+      <application>
+        <name>coreutils-common</name>
+        <version>9.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/coreutils/</url>
+        <summary>coreutils common optional components</summary>
+        <description>Optional though recommended components,
+including documentation and translations.</description>
+      </application>
+      <application>
+        <name>cpio</name>
+        <version>2.13</version>
+        <release>12.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/cpio/</url>
+        <summary>A GNU archiving program</summary>
+        <description>GNU cpio copies files into or out of a cpio or tar archive.  Archives
+are files which contain a collection of other files plus information
+about them, such as their file name, owner, timestamps, and access
+permissions.  The archive can be another file on the disk, a magnetic
+tape, or a pipe.  GNU cpio supports the following archive formats:  binary,
+old ASCII, new ASCII, crc, HPUX binary, HPUX old ASCII, old tar and POSIX.1
+tar.  By default, cpio creates binary format archives, so that they are
+compatible with older cpio programs.  When it is extracting files from
+archives, cpio automatically recognizes which kind of archive it is reading
+and can read archives created on machines with a different byte-order.
+
+Install cpio if you need a program to manage file archives.</description>
+      </application>
+      <application>
+        <name>cracklib</name>
+        <version>2.9.6</version>
+        <release>28.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://sourceforge.net/projects/cracklib/</url>
+        <summary>A password-checking library</summary>
+        <description>CrackLib tests passwords to determine whether they match certain
+security-oriented characteristics, with the purpose of stopping users
+from choosing passwords that are easy to guess. CrackLib performs
+several tests on passwords: it tries to generate words from a username
+and gecos entry and checks those words against the password; it checks
+for simplistic patterns in passwords; and it checks for the password
+in a dictionary.
+
+CrackLib is actually a library containing a particular C function
+which is used to check the password, as well as other C
+functions. CrackLib is not a replacement for a passwd program; it must
+be used in conjunction with an existing passwd program.
+
+Install the cracklib package if you need a program to check users'
+passwords to see if they are at least minimally secure. If you install
+CrackLib, you will also want to install the cracklib-dicts package.</description>
+      </application>
+      <application>
+        <name>crypto-policies</name>
+        <version>20220428</version>
+        <release>1.gitdfb10ea.fc37</release>
+        <arch>noarch</arch>
+        <url>https://gitlab.com/redhat-crypto/fedora-crypto-policies</url>
+        <summary>System-wide crypto policies</summary>
+        <description>This package provides pre-built configuration files with
+cryptographic policies for various cryptographic back-ends,
+such as SSL/TLS libraries.</description>
+      </application>
+      <application>
+        <name>crypto-policies-scripts</name>
+        <version>20220428</version>
+        <release>1.gitdfb10ea.fc37</release>
+        <arch>noarch</arch>
+        <url>https://gitlab.com/redhat-crypto/fedora-crypto-policies</url>
+        <summary>Tool to switch between crypto policies</summary>
+        <description>This package provides a tool update-crypto-policies, which applies
+the policies provided by the crypto-policies package. These can be
+either the pre-built policies from the base package or custom policies
+defined in simple policy definition files.
+
+The package also provides a tool fips-mode-setup, which can be used
+to enable or disable the system FIPS mode.</description>
+      </application>
+      <application>
+        <name>cryptsetup-libs</name>
+        <version>2.4.3</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://gitlab.com/cryptsetup/cryptsetup</url>
+        <summary>Cryptsetup shared library</summary>
+        <description>This package contains the cryptsetup shared library, libcryptsetup.</description>
+      </application>
+      <application>
+        <name>curl</name>
+        <version>7.83.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://curl.se/</url>
+        <summary>A utility for getting files from remote servers (FTP, HTTP, and others)</summary>
+        <description>curl is a command line tool for transferring data with URL syntax, supporting
+FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP,
+SMTP, POP3 and RTSP.  curl supports SSL certificates, HTTP POST, HTTP PUT, FTP
+uploading, HTTP form based upload, proxies, cookies, user+password
+authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer
+resume, proxy tunneling and a busload of other useful tricks.</description>
+      </application>
+      <application>
+        <name>cyrus-sasl-lib</name>
+        <version>2.1.28</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.cyrusimap.org/sasl/</url>
+        <summary>Shared libraries needed by applications which use Cyrus SASL</summary>
+        <description>The cyrus-sasl-lib package contains shared libraries which are needed by
+applications which use the Cyrus SASL library.</description>
+      </application>
+      <application>
+        <name>dbus</name>
+        <epoch>1</epoch>
+        <version>1.14.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/dbus/</url>
+        <summary>D-BUS message bus</summary>
+        <description>D-BUS is a system for sending messages between applications. It is
+used both for the system-wide message bus service, and as a
+per-user-login-session messaging facility.</description>
+      </application>
+      <application>
+        <name>dbus-broker</name>
+        <version>31</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/bus1/dbus-broker</url>
+        <summary>Linux D-Bus Message Broker</summary>
+        <description>dbus-broker is an implementation of a message bus as defined by the D-Bus
+specification. Its aim is to provide high performance and reliability, while
+keeping compatibility to the D-Bus reference implementation. It is exclusively
+written for Linux systems, and makes use of many modern features provided by
+recent Linux kernel releases.</description>
+      </application>
+      <application>
+        <name>dbus-common</name>
+        <epoch>1</epoch>
+        <version>1.14.0</version>
+        <release>1.fc37</release>
+        <arch>noarch</arch>
+        <url>https://www.freedesktop.org/wiki/Software/dbus/</url>
+        <summary>D-BUS message bus configuration</summary>
+        <description>The dbus-common package provides the configuration and setup files for D-Bus
+implementations to provide a System and User Message Bus.</description>
+      </application>
+      <application>
+        <name>device-mapper</name>
+        <version>1.02.175</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.sourceware.org/dm/</url>
+        <summary>Device mapper utility</summary>
+        <description>This package contains the supporting userspace utility, dmsetup,
+for the kernel device-mapper.</description>
+      </application>
+      <application>
+        <name>device-mapper-libs</name>
+        <version>1.02.175</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://sourceware.org/lvm2/</url>
+        <summary>Device-mapper shared library</summary>
+        <description>This package contains the device-mapper shared library, libdevmapper.</description>
+      </application>
+      <application>
+        <name>diffutils</name>
+        <version>3.8</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/diffutils/diffutils.html</url>
+        <summary>GNU collection of diff utilities</summary>
+        <description>Diffutils includes four utilities: diff, cmp, diff3 and sdiff. Diff
+compares two files and shows the differences, line by line.  The cmp
+command shows the offset and line numbers where two files differ, or
+cmp can show the characters that differ between the two files.  The
+diff3 command shows the differences between three files.  Diff3 can be
+used when two people have made independent changes to a common
+original; diff3 can produce a merged file that contains both sets of
+changes and warnings about conflicts.  The sdiff command can be used
+to merge two files interactively.
+
+Install diffutils if you need to compare text files.</description>
+      </application>
+      <application>
+        <name>dracut</name>
+        <version>056</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://dracut.wiki.kernel.org/</url>
+        <summary>Initramfs generator using udev</summary>
+        <description>dracut contains tools to create bootable initramfses for the Linux
+kernel. Unlike other implementations, dracut hard-codes as little
+as possible into the initramfs. dracut contains various modules which
+are driven by the event-based udev. Having root on MD, DM, LVM2, LUKS
+is supported as well as NFS, iSCSI, NBD, FCoE with the dracut-network
+package.</description>
+      </application>
+      <application>
+        <name>elfutils-debuginfod-client</name>
+        <version>0.187</version>
+        <release>4.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://elfutils.org/</url>
+        <summary>Library and command line client for build-id HTTP ELF/DWARF server</summary>
+        <description>The elfutils-debuginfod-client package contains shared libraries
+dynamically loaded from -ldw, which use a debuginfod service
+to look up debuginfo and associated data. Also includes a
+command-line frontend.</description>
+      </application>
+      <application>
+        <name>elfutils-default-yama-scope</name>
+        <version>0.187</version>
+        <release>4.fc37</release>
+        <arch>noarch</arch>
+        <url>http://elfutils.org/</url>
+        <summary>Default yama attach scope sysctl setting</summary>
+        <description>Yama sysctl setting to enable default attach scope settings
+enabling programs to use ptrace attach, access to
+/proc/PID/{mem,personality,stack,syscall}, and the syscalls
+process_vm_readv and process_vm_writev which are used for
+interprocess services, communication and introspection
+(like synchronisation, signaling, debugging, tracing and
+profiling) of processes.</description>
+      </application>
+      <application>
+        <name>elfutils-libelf</name>
+        <version>0.187</version>
+        <release>4.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://elfutils.org/</url>
+        <summary>Library to read and write ELF files</summary>
+        <description>The elfutils-libelf package provides a DSO which allows reading and
+writing ELF files on a high level.  Third party programs depend on
+this package to read internals of ELF files.  The programs of the
+elfutils package use it also to generate new ELF files.</description>
+      </application>
+      <application>
+        <name>elfutils-libs</name>
+        <version>0.187</version>
+        <release>4.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://elfutils.org/</url>
+        <summary>Libraries to handle compiled objects</summary>
+        <description>The elfutils-libs package contains libraries which implement DWARF, ELF,
+and machine-specific ELF handling and process introspection.  These
+libraries are used by the programs in the elfutils package.  The
+elfutils-devel package enables building other programs using these
+libraries.</description>
+      </application>
+      <application>
+        <name>expat</name>
+        <version>2.4.8</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://libexpat.github.io/</url>
+        <summary>An XML parser library</summary>
+        <description>This is expat, the C library for parsing XML, written by James Clark. Expat
+is a stream oriented XML parser. This means that you register handlers with
+the parser prior to starting the parse. These handlers are called when the
+parser discovers the associated structures in the document being parsed. A
+start tag is an example of the kind of structures for which you may
+register handlers.</description>
+      </application>
+      <application>
         <name>fedora-gpg-keys</name>
-        <version>33</version>
-        <release>3</release>
+        <version>37</version>
+        <release>0.2</release>
         <arch>noarch</arch>
         <url>https://fedoraproject.org/</url>
         <summary>Fedora RPM keys</summary>
@@ -64,8 +407,8 @@ incorporates useful features from the Korn shell (ksh) and the C shell
       </application>
       <application>
         <name>fedora-release</name>
-        <version>33</version>
-        <release>3</release>
+        <version>37</version>
+        <release>0.5</release>
         <arch>noarch</arch>
         <url>https://fedoraproject.org/</url>
         <summary>Fedora release files</summary>
@@ -74,8 +417,8 @@ and systemd preset files that determine which services are enabled by default.</
       </application>
       <application>
         <name>fedora-release-common</name>
-        <version>33</version>
-        <release>3</release>
+        <version>37</version>
+        <release>0.5</release>
         <arch>noarch</arch>
         <url>https://fedoraproject.org/</url>
         <summary>Fedora release files</summary>
@@ -83,8 +426,8 @@ and systemd preset files that determine which services are enabled by default.</
       </application>
       <application>
         <name>fedora-release-identity-basic</name>
-        <version>33</version>
-        <release>3</release>
+        <version>37</version>
+        <release>0.5</release>
         <arch>noarch</arch>
         <url>https://fedoraproject.org/</url>
         <summary>Package providing the basic Fedora identity</summary>
@@ -93,17 +436,48 @@ itself as a particular Edition or Spin.</description>
       </application>
       <application>
         <name>fedora-repos</name>
-        <version>33</version>
-        <release>3</release>
+        <version>37</version>
+        <release>0.2</release>
         <arch>noarch</arch>
         <url>https://fedoraproject.org/</url>
         <summary>Fedora package repositories</summary>
         <description>Fedora package repository files for yum and dnf along with gpg public keys.</description>
       </application>
       <application>
+        <name>fedora-repos-rawhide</name>
+        <version>37</version>
+        <release>0.2</release>
+        <arch>noarch</arch>
+        <url>https://fedoraproject.org/</url>
+        <summary>Rawhide repo definitions</summary>
+        <description>This package provides the rawhide repo definitions.</description>
+      </application>
+      <application>
+        <name>file</name>
+        <version>5.41</version>
+        <release>5.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.darwinsys.com/file/</url>
+        <summary>Utility for determining file types</summary>
+        <description>The file command is used to identify a particular file according to the
+type of data contained by the file.  File can identify many different
+file types, including ELF binaries, system libraries, RPM packages, and
+different graphics formats.</description>
+      </application>
+      <application>
+        <name>file-libs</name>
+        <version>5.41</version>
+        <release>5.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.darwinsys.com/file/</url>
+        <summary>Libraries for applications using libmagic</summary>
+        <description>
+Libraries for applications using libmagic.</description>
+      </application>
+      <application>
         <name>filesystem</name>
-        <version>3.14</version>
-        <release>3.fc33</release>
+        <version>3.16</version>
+        <release>2.fc36</release>
         <arch>x86_64</arch>
         <url>https://pagure.io/filesystem</url>
         <summary>The basic directory layout for a Linux system</summary>
@@ -113,9 +487,99 @@ for a Linux operating system, including the correct permissions for
 the directories.</description>
       </application>
       <application>
+        <name>findutils</name>
+        <epoch>1</epoch>
+        <version>4.9.0</version>
+        <release>1.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/findutils/</url>
+        <summary>The GNU versions of find utilities (find and xargs)</summary>
+        <description>The findutils package contains programs which will help you locate
+files on your system.  The find utility searches through a hierarchy
+of directories looking for files which match a certain set of criteria
+(such as a file name pattern).  The xargs utility builds and executes
+command lines from standard input arguments (usually lists of file
+names generated by the find command).
+
+You should install findutils because it includes tools that are very
+useful for finding things on your system.</description>
+      </application>
+      <application>
+        <name>fuse-libs</name>
+        <version>2.9.9</version>
+        <release>14.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://fuse.sf.net</url>
+        <summary>File System in Userspace (FUSE) v2 libraries</summary>
+        <description>Devel With FUSE it is possible to implement a fully functional filesystem in a
+userspace program. This package contains the FUSE v2 libraries.</description>
+      </application>
+      <application>
+        <name>gawk</name>
+        <version>5.1.1</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/gawk/</url>
+        <summary>The GNU version of the AWK text processing utility</summary>
+        <description>The gawk package contains the GNU version of AWK text processing utility. AWK is
+a programming language designed for text processing and typically used as a data
+extraction and reporting tool.
+
+The gawk utility can be used to do quick and easy text pattern matching,
+extracting or reformatting. It is considered to be a standard Linux tool for
+text processing.</description>
+      </application>
+      <application>
+        <name>gawk-all-langpacks</name>
+        <version>5.1.1</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/gawk/</url>
+        <summary>Additional localisation files for gawk utility</summary>
+        <description>The base package of gawk supports only the english localisation. This subpackage
+contains additional localisation files.</description>
+      </application>
+      <application>
+        <name>gdbm-libs</name>
+        <epoch>1</epoch>
+        <version>1.22</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/gdbm/</url>
+        <summary>Libraries files for gdbm</summary>
+        <description>Libraries for the Gdbm GNU database indexing library</description>
+      </application>
+      <application>
+        <name>gettext</name>
+        <version>0.21</version>
+        <release>13.fc37.0.20220203</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/gettext/</url>
+        <summary>GNU libraries and utilities for producing multi-lingual messages</summary>
+        <description>The GNU gettext package provides a set of tools and documentation for
+producing multi-lingual messages in programs. Tools include a set of
+conventions about how programs should be written to support message
+catalogs, a directory and file naming organization for the message
+catalogs, a runtime library which supports the retrieval of translated
+messages, and stand-alone programs for handling the translatable and
+the already translated strings. Gettext provides an easy to use
+library and tools for creating, using, and modifying natural language
+catalogs and is a powerful and simple method for internationalizing
+programs.</description>
+      </application>
+      <application>
+        <name>gettext-libs</name>
+        <version>0.21</version>
+        <release>13.fc37.0.20220203</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/gettext/</url>
+        <summary>Libraries for gettext</summary>
+        <description>This package contains libraries used internationalization support.</description>
+      </application>
+      <application>
         <name>glibc</name>
-        <version>2.32</version>
-        <release>4.fc33</release>
+        <version>2.35.9000</version>
+        <release>20.fc37</release>
         <arch>x86_64</arch>
         <url>http://www.gnu.org/software/glibc/</url>
         <summary>The GNU libc libraries</summary>
@@ -128,17 +592,9 @@ library and the standard math library. Without these two libraries, a
 Linux system will not function.</description>
       </application>
       <application>
-        <name>glibc-all-langpacks</name>
-        <version>2.32</version>
-        <release>4.fc33</release>
-        <arch>x86_64</arch>
-        <url>http://www.gnu.org/software/glibc/</url>
-        <summary>All language packs for glibc.</summary>
-      </application>
-      <application>
         <name>glibc-common</name>
-        <version>2.32</version>
-        <release>4.fc33</release>
+        <version>2.35.9000</version>
+        <release>20.fc37</release>
         <arch>x86_64</arch>
         <url>http://www.gnu.org/software/glibc/</url>
         <summary>Common binaries and locale data for glibc</summary>
@@ -146,57 +602,1089 @@ Linux system will not function.</description>
 libraries, as well as national language (locale) support.</description>
       </application>
       <application>
+        <name>glibc-gconv-extra</name>
+        <version>2.35.9000</version>
+        <release>20.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/glibc/</url>
+        <summary>All iconv converter modules for glibc.</summary>
+        <description>This package contains all iconv converter modules built in glibc.</description>
+      </application>
+      <application>
+        <name>glibc-minimal-langpack</name>
+        <version>2.35.9000</version>
+        <release>20.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/glibc/</url>
+        <summary>Minimal language packs for glibc.</summary>
+        <description>This is a Meta package that is used to install minimal language packs.
+This package ensures you can use C, POSIX, or C.UTF-8 locales, but
+nothing else. It is designed for assembling a minimal system.</description>
+      </application>
+      <application>
+        <name>gmp</name>
+        <epoch>1</epoch>
+        <version>6.2.1</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://gmplib.org/</url>
+        <summary>GNU arbitrary precision library</summary>
+        <description>The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.</description>
+      </application>
+      <application>
         <name>gpg-pubkey</name>
-        <version>9570ff31</version>
-        <release>5e3006fb</release>
+        <version>eb10b464</version>
+        <release>6202d9c6</release>
         <arch>(none)</arch>
         <url>(none)</url>
-        <summary>Fedora (33) &lt;fedora-33-primary@fedoraproject.org&gt; public key</summary>
+        <summary>Fedora (38) &lt;fedora-38-primary@fedoraproject.org&gt; public key</summary>
         <description>-----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: rpm-4.16.1.2 (NSS-3)
+Version: rpm-4.17.0 (NSS-3)
 
-mQINBF4wBvsBEADQmcGbVUbDRUoXADReRmOOEMeydHghtKC9uRs9YNpGYZIB+bie
-bGYZmflQayfh/wEpO2W/IZfGpHPL42V7SbyvqMjwNls/fnXsCtf4LRofNK8Qd9fN
-kYargc9R7BEz/mwXKMiRQVx+DzkmqGWy2gq4iD0/mCyf5FdJCE40fOWoIGJXaOI1
-Tz1vWqKwLS5T0dfmi9U4Tp/XsKOZGvN8oi5h0KmqFk7LEZr1MXarhi2Va86sgxsF
-QcZEKfu5tgD0r00vXzikoSjn3qA5JW5FW07F1pGP4bF5f9J3CZbQyOjTSWMmmfTm
-2d2BURWzaDiJN9twY2yjzkoOMuPdXXvovg7KxLcQerKT+FbKbq8DySJX2rnOA77k
-UG4c9BGf/L1uBkAT8dpHLk6Uf5BfmypxUkydSWT1xfTDnw1MqxO0MsLlAHOR3J7c
-oW9kLcOLuCQn1hBEwfZv7VSWBkGXSmKfp0LLIxAFgRtv+Dh+rcMMRdJgKr1V3FU+
-rZ1+ZAfYiBpQJFPjv70vx+rGEgS801D3PJxBZUEy4Ic4ZYaKNhK9x9PRQuWcIBuW
-6eTe/6lKWZeyxCumLLdiS75mF2oTcBaWeoc3QxrPRV15eDKeYJMbhnUai/7lSrhs
-EWCkKR1RivgF4slYmtNE5ZPGZ/d61zjwn2xi4xNJVs8q9WRPMpHp0vCyMwARAQAB
-tDFGZWRvcmEgKDMzKSA8ZmVkb3JhLTMzLXByaW1hcnlAZmVkb3JhcHJvamVjdC5v
-cmc+iQI4BBMBAgAiBQJeMAb7AhsPBgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAK
-CRBJ/XdJlXD/MZm2D/9kriL43vd3+0DNMeA82n2v9mSR2PQqKny39xNlYPyy/1yZ
-P/KXoa4NYSCA971LSd7lv4n/h5bEKgGHxZfttfOzOnWMVSSTfjRyM/df/NNzTUEV
-7ORA5GW18g8PEtS7uRxVBf3cLvWu5q+8jmqES5HqTAdGVcuIFQeBXFN8Gy1Jinuz
-AH8rJSdkUeZ0cehWbERq80BWM9dhad5dW+/+Gv0foFBvP15viwhWqajr8V0B8es+
-2/tHI0k86FAujV5i0rrXl5UOoLilO57QQNDZH/qW9GsHwVI+2yecLstpUNLq+EZC
-GqTZCYoxYRpl0gAMbDLztSL/8Bc0tJrCRG3tavJotFYlgUK60XnXlQzRkh9rgsfT
-EXbQifWdQMMogzjCJr0hzJ+V1d0iozdUxB2ZEgTjukOvatkB77DY1FPZRkSFIQs+
-fdcjazDIBLIxwJu5QwvTNW8lOLnJ46g4sf1WJoUdNTbR0BaC7HHj1inVWi0p7IuN
-66EPGzJOSjLK+vW+J0ncPDEgLCV74RF/0nR5fVTdrmiopPrzFuguHf9S9gYI3Zun
-Yl8FJUu4kRO6JPPTicUXWX+8XZmE94aK14RCJL23nOSi8T1eW8JLW43dCBRO8QUE
-Aso1t2pypm/1zZexJdOV8yGME3g5l2W6PLgpz58DBECgqc/kda+VWgEAp7rO2A==
-=EPL3
+mQINBGIC2cYBEADJye1aE0AR17qwj6wsHWlCQlcihmqkL8s4gbOk1IevBbH4iXJx
+lu6bN+NhTcCCX6eHmaL5Pwb/bpkMmLR+/r1D2cLDK24YzvN6kJnwRQUTf2dbqYmg
+mNBgIMm+kAabBZPwUHUzyQ9CT/WJpYr1OYu8JIkdxF35nrPewnnOUUqxqbi8fXRQ
+gskSLF8UveiOjFIqmWwlPwT1UtnevAaF80UGQlkwFvqjjh4b9vKY2gHMAQwt+wg5
+HFFCSwSrnd88ZoDb3pKvDMeurYUiPzF5f2r+ziVkMuaSNckvp58uge7HvyqQPAdJ
+ZRswCCxhUAo9VqkNfB4Ud25ASyalk9jOE3HB8E35gFfPXvuX1n15THXNcwMEiybk
+Omne2YwXL8ShGNr5otjqywThMrrqcl2g/pJVTcpDHTR5Hn9YRp+GHlYLjyEr+/x7
+xM19y9ca9GUiJqDbEREHcKKIhYiGmcIjjcJvei/3C/aM4pqeGFJBbVSnw3qeMxH/
+6ArAMA1sAdShCkv2YjlcF0r4uoCjXdS3xrKLz9PSCquot7RySnOE9TZ7flfJll7Z
+q+lNaSeJg7FK8VWSUb9Lit6VEYVbzWKzespDDbujrHbFpydyq8gXurk7bSR2w0te
+gsmytQqT/w1z2bydgGF6SfY9Px0wuA8GQKr48l5Bhdc6+vHHFqPKzz0PVQARAQAB
+tDFGZWRvcmEgKDM4KSA8ZmVkb3JhLTM4LXByaW1hcnlAZmVkb3JhcHJvamVjdC5v
+cmc+iQJOBBMBCAA4FiEEalG7q7o9VGe2FxIhgJqNfOsQtGQFAmIC2cYCGw8FCwkI
+BwIGFQoJCAsCBBYCAwECHgECF4AACgkQgJqNfOsQtGScyw/7BLmD4Fwi4QZY94zl
+vlJdNufZRavOemSIVVDHoCr8pQBAdrvoMypxJd5zM4ODIqFsjdYpFti+Tkeq4/4U
+25UoLPEOtU8UDt2uq7LqfdCxspaj7VyXAJIkpf7wEvLS4Jzo+YaMIlsd0dCrMXTM
+vhu4gKpBFW6C+gGlmuDyTJbyrf7ilytgVzVtIfRrT7XffylviIlZHwKm43UDjvzX
+YEl3EAFR1RjATwXMy2aJh7GCNsz+fKs+7YRKQUhpMF5un/2pyNJO+LbVGGwGZvga
+K9Kfsg/4r1ync4nDDD1dadKIHhobDeiJ9uZLoBvvVDz7Ywu7q/vv4zIPxstYBNq4
+6fLKDtYXuJCK0EV9Qy4ox67t0UGlaRGH8y5YUqOI10xH7iQej0xWlSc8w2dKhPz8
+z9XLv2OMK+PvqvflhFHhWkqEoQRqTu0TVD0fLLe4lqieJlqZcJqW0F9G/vNSSWmf
+POLa/Nim71gL2fPjCJOIRV4K/cJSyBmu5NchG7dHD5sUtJxZ4TFSuepaBZ8cPK1x
+e26TaCBqoUWgUXWmw+P89aOpYOJYEFfT/VAm2Ywn+c1EFUmD+30wQ7aP/RUFl94z
+n0BjqsWDnCKVFHydZ0TZSpeADmXMg2VYZPcp/cQR1KjoBoDxAscis7b1XPQUg7CB
+zquq5jBVAnsNIhs7g47GWKyDUJM=
+=aCLl
 -----END PGP PUBLIC KEY BLOCK-----
 </description>
       </application>
       <application>
+        <name>gpg-pubkey</name>
+        <version>5323552a</version>
+        <release>6112bcdc</release>
+        <arch>(none)</arch>
+        <url>(none)</url>
+        <summary>Fedora (37) &lt;fedora-37-primary@fedoraproject.org&gt; public key</summary>
+        <description>-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: rpm-4.17.0 (NSS-3)
+
+mQINBGESvNwBEAC7HsCDTlugVeDSMFX6aW3zAPFMfvBssNj+89fdmbxcI9t7UY6f
+HvkkGziUET8e+9jB8R2/wXQCGOw1J+sfmwO4aN0LdVQjhKvVNj+F5jWt3m5FAIBa
+OTWS6Kvqw2ECTpH7fD86541eK3BuCni6d5U3PCd73t976FcUmpQ/1AthqMksM0Jz
+cJapvNmLTCR0NZ2XyyLmn/K1hgNXe8G5j0cSrJiY+Zpz5aQkT96j96Jm6W2A+tBI
+icU4n6V4vlj2TxmCumtXJGXGBGJnof/dCgh45aqi+sk5c429ns+5sooYcaEJojj6
+FYSITv10l+az6ZMJz/j61VYSkhMY8hQ4Wd+yL2JVzLE9N9V0L95sX1yEZ5ILmzwx
+oRKe4WHSBE6yMxNWobv7hmC+3ZC5mLPaEDS/g/0xuQj9Sy9eT2mhhFPxOv29YQ+P
+sC3zXHJMMT0tlGd72PVHQQ0JYONfMhcC+7AHGFGz8p4/wor2jIFG1ouqE6Lfzm8o
+XWZMYm3AydlrP/xkYaoWNE3jL/+dskSBr/Yz7ZzlkAqH9lb1HKnXQLTrw6gz6pmI
+KufSDXjEFNxnFI/9gMlshJtk5+QSDzezmxFm+NMviSvDUNAVIzrU1D84dauBYph4
+OrJVeECQHEotny/I53AdlVwLYB4TWkObzTs6vtV7Pz1TK2CmHpe3UW72xwARAQAB
+tDFGZWRvcmEgKDM3KSA8ZmVkb3JhLTM3LXByaW1hcnlAZmVkb3JhcHJvamVjdC5v
+cmc+iQJOBBMBCAA4FiEErLXuToMcdLt8Fo0n9VrT+1MjVSoFAmESvNwCGw8FCwkI
+BwIGFQoJCAsCBBYCAwECHgECF4AACgkQ9VrT+1MjVSoPMhAAist7kK/YtcyBL/dt
+P55hPrkJT6Ay+e2Dvt4Pixe4iT32Y3jG12aoX2LY//mxVOOpV+EhXYTTb5aLt2Jj
+a8/qCKJFk7zuCOxa1hgdRcjoR7ZbU0lNjD9mMCax/YT9QafcaMEib/FlknP3g1SN
+GRSKLObTJd6BbtZXCE80JRIX+Dy6+/Oz7LXRXeKpiimhlXT1wuTaqAJEtuHdQvg7
+dkL4DzAJ2FiURVd5gvgo266WaCMafJjFRrSGHJm0c+V+0Z9NsuH80JbPm+rCUh5U
+E9PMyztqlqtldtqc1+aZ1iUbVuXY059BUmlAhmf5sAlBktY+hEabH/4kmfGccbBL
+TyBIn03Y9q9173okZSUe6q16m/hbbWI8dwkSpIADZbGGJbRi8PJpCg9y6KI355qD
+atE2irleoy6eXqpKa+uPTRBk7i/r6jDoA+u+tZyFfcEnwvSWP8cN1j5mNklvITZl
+YF1n5b3fejkZVdOmRZQNkyzMxYEd4UZFQZNYrx0nltAagRS8b5ikqNk2UTl+dyBG
+k9gLOSZhAa2JdmAqwe9rT69jaa4kZMLlxPPC3246s83t0s7lp7vF+zLPfPSvxpsU
+tg+fuT+OFKWYdBFF7VkEA+wezHAznIP6TPyQXbBpkzE889/hOXy4BYs0wy8Bpda/
+Ve2Ba329f99dSCZKImi5DPCxJY4=
+=ZmVd
+-----END PGP PUBLIC KEY BLOCK-----
+</description>
+      </application>
+      <application>
+        <name>grep</name>
+        <version>3.7</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/grep/</url>
+        <summary>Pattern matching utilities</summary>
+        <description>The GNU versions of commonly used grep utilities. Grep searches through
+textual input for lines which contain a match to a specified pattern and then
+prints the matching lines. GNU's grep utilities include grep, egrep and fgrep.
+
+GNU grep is needed by many scripts, so it shall be installed on every system.</description>
+      </application>
+      <application>
+        <name>grub2-common</name>
+        <epoch>1</epoch>
+        <version>2.06</version>
+        <release>41.fc37</release>
+        <arch>noarch</arch>
+        <url>http://www.gnu.org/software/grub/</url>
+        <summary>grub2 common layout</summary>
+        <description>This package provides some directories which are required by various grub2
+subpackages.</description>
+      </application>
+      <application>
+        <name>grub2-tools</name>
+        <epoch>1</epoch>
+        <version>2.06</version>
+        <release>41.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/grub/</url>
+        <summary>Support tools for GRUB.</summary>
+        <description>
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms.</description>
+      </application>
+      <application>
+        <name>grub2-tools-minimal</name>
+        <epoch>1</epoch>
+        <version>2.06</version>
+        <release>41.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/grub/</url>
+        <summary>Support tools for GRUB.</summary>
+        <description>
+The GRand Unified Bootloader (GRUB) is a highly configurable and
+customizable bootloader with modular architecture.  It supports a rich
+variety of kernel formats, file systems, computer architectures and
+hardware devices.
+
+This subpackage provides tools for support of all platforms.</description>
+      </application>
+      <application>
+        <name>grubby</name>
+        <version>8.40</version>
+        <release>60.fc37</release>
+        <arch>x86_64</arch>
+        <url>(none)</url>
+        <summary>Command line tool for updating bootloader configs</summary>
+        <description>This package provides a grubby compatibility script that manages
+BootLoaderSpec files and is meant to be backward compatible with
+the previous grubby tool.</description>
+      </application>
+      <application>
+        <name>gzip</name>
+        <version>1.12</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gzip.org/</url>
+        <summary>GNU data compression program</summary>
+        <description>The gzip package contains the popular GNU gzip data compression
+program. Gzipped files have a .gz extension.
+
+Gzip should be installed on your system, because it is a
+very commonly used data compression program.</description>
+      </application>
+      <application>
+        <name>json-c</name>
+        <version>0.16</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/json-c/json-c</url>
+        <summary>JSON implementation in C</summary>
+        <description>JSON-C implements a reference counting object model that allows you
+to easily construct JSON objects in C, output them as JSON formatted
+strings and parse JSON formatted strings back into the C representation
+of JSON objects.  It aims to conform to RFC 7159.</description>
+      </application>
+      <application>
+        <name>kbd</name>
+        <version>2.4.0</version>
+        <release>9.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.kbd-project.org/</url>
+        <summary>Tools for configuring the console (keyboard, virtual terminals, etc.)</summary>
+        <description>The kbd package contains tools for managing a Linux
+system's console's behavior, including the keyboard, the screen
+fonts, the virtual terminals and font files.</description>
+      </application>
+      <application>
+        <name>kbd-misc</name>
+        <version>2.4.0</version>
+        <release>9.fc36</release>
+        <arch>noarch</arch>
+        <url>http://www.kbd-project.org/</url>
+        <summary>Data for kbd package</summary>
+        <description>The kbd-misc package contains data for kbd package - console fonts,
+keymaps etc. Please note that kbd-misc is not helpful without kbd.</description>
+      </application>
+      <application>
+        <name>kernel</name>
+        <version>5.19.0</version>
+        <release>0.rc1.14.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.kernel.org/</url>
+        <summary>The Linux kernel</summary>
+        <description>The kernel meta package</description>
+      </application>
+      <application>
+        <name>kernel-core</name>
+        <version>5.19.0</version>
+        <release>0.rc1.14.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.kernel.org/</url>
+        <summary>The Linux kernel</summary>
+        <description>The kernel package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.</description>
+      </application>
+      <application>
+        <name>kernel-modules</name>
+        <version>5.19.0</version>
+        <release>0.rc1.14.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.kernel.org/</url>
+        <summary>kernel modules to match the core kernel</summary>
+        <description>This package provides commonly used kernel modules for the core kernel package.</description>
+      </application>
+      <application>
+        <name>keyutils-libs</name>
+        <version>1.6.1</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://people.redhat.com/~dhowells/keyutils/</url>
+        <summary>Key utilities library</summary>
+        <description>This package provides a wrapper library for the key management facility system
+calls.</description>
+      </application>
+      <application>
+        <name>kmod</name>
+        <version>29</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git</url>
+        <summary>Linux kernel module management utilities</summary>
+        <description>The kmod package provides various programs needed for automatic
+loading and unloading of modules under 2.6, 3.x, and later kernels, as well
+as other module management programs. Device drivers and filesystems are two
+examples of loaded and unloaded modules.</description>
+      </application>
+      <application>
+        <name>kmod-libs</name>
+        <version>29</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git</url>
+        <summary>Libraries to handle kernel module loading and unloading</summary>
+        <description>The kmod-libs package provides runtime libraries for any application that
+wishes to load or unload Linux kernel modules from the running system.</description>
+      </application>
+      <application>
+        <name>kpartx</name>
+        <version>0.8.9</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://christophe.varoqui.free.fr/</url>
+        <summary>Partition device manager for device-mapper devices</summary>
+        <description>kpartx manages partition creation and removal for device-mapper devices.</description>
+      </application>
+      <application>
+        <name>krb5-libs</name>
+        <version>1.19.2</version>
+        <release>9.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://web.mit.edu/kerberos/www/</url>
+        <summary>The non-admin shared libraries used by Kerberos 5</summary>
+        <description>Kerberos is a network authentication system. The krb5-libs package
+contains the shared libraries needed by Kerberos 5. If you are using
+Kerberos, you need to install this package.</description>
+      </application>
+      <application>
+        <name>libacl</name>
+        <version>2.3.1</version>
+        <release>3.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://savannah.nongnu.org/projects/acl</url>
+        <summary>Dynamic library for access control list support</summary>
+        <description>This package contains the libacl.so dynamic library which contains
+the POSIX 1003.1e draft standard 17 functions for manipulating access
+control lists.</description>
+      </application>
+      <application>
+        <name>libarchive</name>
+        <version>3.6.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.libarchive.org/</url>
+        <summary>A library for handling streaming archive formats</summary>
+        <description>Libarchive is a programming library that can create and read several different
+streaming archive formats, including most popular tar variants, several cpio
+formats, and both BSD and GNU ar variants. It can also write shar archives and
+read ISO9660 CDROM images and ZIP archives.</description>
+      </application>
+      <application>
+        <name>libargon2</name>
+        <version>20171227</version>
+        <release>9.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/P-H-C/phc-winner-argon2</url>
+        <summary>The password-hashing library</summary>
+        <description>Argon2 is a password-hashing function that summarizes the state of the art
+in the design of memory-hard functions and can be used to hash passwords
+for credential storage, key derivation, or other applications.</description>
+      </application>
+      <application>
+        <name>libattr</name>
+        <version>2.5.1</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://savannah.nongnu.org/projects/attr</url>
+        <summary>Dynamic library for extended attribute support</summary>
+        <description>This package contains the libattr.so dynamic library which contains
+the extended attribute system calls and library functions.</description>
+      </application>
+      <application>
+        <name>libblkid</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Block device ID library</summary>
+        <description>This is block device identification library, part of util-linux.</description>
+      </application>
+      <application>
+        <name>libbpf</name>
+        <epoch>2</epoch>
+        <version>0.8.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/libbpf/libbpf</url>
+        <summary>Libbpf library</summary>
+        <description>A mirror of bpf-next linux tree bpf-next/tools/lib/bpf directory plus its
+supporting header files. The version of the package reflects the version of
+ABI.</description>
+      </application>
+      <application>
+        <name>libbrotli</name>
+        <version>1.0.9</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/google/brotli</url>
+        <summary>Library for brotli lossless compression algorithm</summary>
+        <description>Brotli is a generic-purpose lossless compression algorithm that compresses
+data using a combination of a modern variant of the LZ77 algorithm, Huffman
+coding and 2nd order context modeling, with a compression ratio comparable
+to the best currently available general-purpose compression methods.
+It is similar in speed with deflate but offers more dense compression.</description>
+      </application>
+      <application>
+        <name>libcap</name>
+        <version>2.48</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://sites.google.com/site/fullycapable/</url>
+        <summary>Library for getting and setting POSIX.1e capabilities</summary>
+        <description>libcap is a library for getting and setting POSIX.1e (formerly POSIX 6)
+draft 15 capabilities.</description>
+      </application>
+      <application>
+        <name>libcap-ng</name>
+        <version>0.8.3</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://people.redhat.com/sgrubb/libcap-ng/</url>
+        <summary>Alternate posix capabilities library</summary>
+        <description>Libcap-ng is a library that makes using posix capabilities easier</description>
+      </application>
+      <application>
+        <name>libcbor</name>
+        <version>0.7.0</version>
+        <release>5.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://libcbor.org</url>
+        <summary>A CBOR parsing library</summary>
+        <description>libcbor is a C library for parsing and generating CBOR.</description>
+      </application>
+      <application>
+        <name>libcom_err</name>
+        <version>1.46.5</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://e2fsprogs.sourceforge.net/</url>
+        <summary>Common error description library</summary>
+        <description>This is the common error description library, part of e2fsprogs.
+
+libcom_err is an attempt to present a common error-handling mechanism.</description>
+      </application>
+      <application>
+        <name>libcurl</name>
+        <version>7.83.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://curl.se/</url>
+        <summary>A library for getting files from web servers</summary>
+        <description>libcurl is a free and easy-to-use client-side URL transfer library, supporting
+FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP,
+SMTP, POP3 and RTSP. libcurl supports SSL certificates, HTTP POST, HTTP PUT,
+FTP uploading, HTTP form based upload, proxies, cookies, user+password
+authentication (Basic, Digest, NTLM, Negotiate, Kerberos4), file transfer
+resume, http proxy tunneling and more.</description>
+      </application>
+      <application>
+        <name>libdb</name>
+        <version>5.3.28</version>
+        <release>52.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.oracle.com/database/berkeley-db/</url>
+        <summary>The Berkeley DB database library for C</summary>
+        <description>The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. The Berkeley DB includes B+tree, Extended
+Linear Hashing, Fixed and Variable-length record access methods,
+transactions, locking, logging, shared memory caching, and database
+recovery. The Berkeley DB supports C, C++, and Perl APIs. It is
+used by many applications, including Python and Perl, so this should
+be installed on all systems.</description>
+      </application>
+      <application>
+        <name>libeconf</name>
+        <version>0.4.0</version>
+        <release>3.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/openSUSE/libeconf</url>
+        <summary>Enhanced config file parser library</summary>
+        <description>libeconf is a highly flexible and configurable library to parse and manage
+key=value configuration files. It reads configuration file snippets from
+different directories and builds the final configuration file from it.</description>
+      </application>
+      <application>
+        <name>libevent</name>
+        <version>2.1.12</version>
+        <release>6.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://libevent.org/</url>
+        <summary>Abstract asynchronous event notification library</summary>
+        <description>The libevent API provides a mechanism to execute a callback function
+when a specific event occurs on a file descriptor or after a timeout
+has been reached. libevent is meant to replace the asynchronous event
+loop found in event driven network servers. An application just needs
+to call event_dispatch() and can then add or remove events dynamically
+without having to change the event loop.</description>
+      </application>
+      <application>
+        <name>libfdisk</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Partitioning library for fdisk-like programs</summary>
+        <description>This is library for fdisk-like programs, part of util-linux.</description>
+      </application>
+      <application>
+        <name>libffi</name>
+        <version>3.4.2</version>
+        <release>8.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://sourceware.org/libffi</url>
+        <summary>A portable foreign function interface library</summary>
+        <description>Compilers for high level languages generate code that follow certain
+conventions.  These conventions are necessary, in part, for separate
+compilation to work.  One such convention is the &quot;calling convention&quot;.
+The calling convention is a set of assumptions made by the compiler
+about where function arguments will be found on entry to a function.  A
+calling convention also specifies where the return value for a function
+is found.
+
+Some programs may not know at the time of compilation what arguments
+are to be passed to a function.  For instance, an interpreter may be
+told at run-time about the number and types of arguments used to call a
+given function.  `Libffi' can be used in such programs to provide a
+bridge from the interpreter program to compiled code.
+
+The `libffi' library provides a portable, high level programming
+interface to various calling conventions.  This allows a programmer to
+call any function specified by a call interface description at run time.
+
+FFI stands for Foreign Function Interface.  A foreign function
+interface is the popular name for the interface that allows code
+written in one language to call code written in another language.  The
+`libffi' library really only provides the lowest, machine dependent
+layer of a fully featured foreign function interface.  A layer must
+exist above `libffi' that handles type conversions for values passed
+between the two languages.</description>
+      </application>
+      <application>
+        <name>libfido2</name>
+        <version>1.11.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/Yubico/libfido2</url>
+        <summary>FIDO2 library</summary>
+        <description>libfido2 is an open source library to support the FIDO2 protocol.  FIDO2 is
+an open authentication standard that consists of the W3C Web Authentication
+specification (WebAuthn API), and the Client to Authentication Protocol
+(CTAP).  CTAP is an application layer protocol used for communication
+between a client (browser) or a platform (operating system) with an external
+authentication device (for example the Yubico Security Key).</description>
+      </application>
+      <application>
         <name>libgcc</name>
-        <version>10.2.1</version>
-        <release>9.fc33</release>
+        <version>12.1.1</version>
+        <release>1.fc37</release>
         <arch>x86_64</arch>
         <url>http://gcc.gnu.org</url>
-        <summary>GCC version 10 shared support library</summary>
+        <summary>GCC version 12 shared support library</summary>
         <description>This package contains GCC shared support library which is needed
 e.g. for exception handling support.</description>
       </application>
       <application>
+        <name>libgcrypt</name>
+        <version>1.10.1</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnupg.org/</url>
+        <summary>A general-purpose cryptography library</summary>
+        <description>Libgcrypt is a general purpose crypto library based on the code used
+in GNU Privacy Guard.  This is a development version.</description>
+      </application>
+      <application>
+        <name>libgomp</name>
+        <version>12.1.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://gcc.gnu.org</url>
+        <summary>GCC OpenMP v4.5 shared support library</summary>
+        <description>This package contains GCC shared support library which is needed
+for OpenMP v4.5 support.</description>
+      </application>
+      <application>
+        <name>libgpg-error</name>
+        <version>1.45</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnupg.org/related_software/libgpg-error/</url>
+        <summary>Library for error values used by GnuPG components</summary>
+        <description>This is a library that defines common error values for all GnuPG
+components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+pinentry, SmartCard Daemon and possibly more in the future.</description>
+      </application>
+      <application>
+        <name>libidn2</name>
+        <version>2.3.2</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/libidn/#libidn2</url>
+        <summary>Library to support IDNA2008 internationalized domain names</summary>
+        <description>Libidn2 is an implementation of the IDNA2008 specifications in RFC
+5890, 5891, 5892, 5893 and TR46 for internationalized domain names
+(IDN). It is a standalone library, without any dependency on libidn.</description>
+      </application>
+      <application>
+        <name>libkcapi</name>
+        <version>1.3.1</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.chronox.de/libkcapi.html</url>
+        <summary>User space interface to the Linux Kernel Crypto API</summary>
+        <description>libkcapi allows user-space to access the Linux kernel crypto API.
+
+This library uses the netlink interface and exports easy to use APIs
+so that a developer does not need to consider the low-level netlink
+interface handling.
+
+The library does not implement any cipher algorithms.  All consumer
+requests are sent to the kernel for processing.  Results from the
+kernel crypto API are returned to the consumer via the library API.
+
+The kernel interface and therefore this library can be used by
+unprivileged processes.</description>
+      </application>
+      <application>
+        <name>libkcapi-hmaccalc</name>
+        <version>1.3.1</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.chronox.de/libkcapi.html</url>
+        <summary>Drop-in replacements for hmaccalc provided by the libkcapi package</summary>
+        <description>Provides drop-in replacements for sha*hmac tools (from package
+hmaccalc) using libkcapi.</description>
+      </application>
+      <application>
+        <name>libmount</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Device mounting library</summary>
+        <description>This is the device mounting library, part of util-linux.</description>
+      </application>
+      <application>
+        <name>libnghttp2</name>
+        <version>1.47.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://nghttp2.org/</url>
+        <summary>A library implementing the HTTP/2 protocol</summary>
+        <description>libnghttp2 is a library implementing the Hypertext Transfer Protocol
+version 2 (HTTP/2) protocol in C.</description>
+      </application>
+      <application>
+        <name>libnsl2</name>
+        <version>2.0.0</version>
+        <release>3.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/thkukuk/libnsl</url>
+        <summary>Public client interface library for NIS(YP) and NIS+</summary>
+        <description>This package contains the libnsl library. This library contains
+the public client interface for NIS(YP) and NIS+.
+This code was formerly part of glibc, but is now standalone to
+be able to link against TI-RPC for IPv6 support.</description>
+      </application>
+      <application>
+        <name>libpsl</name>
+        <version>0.21.1</version>
+        <release>5.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://rockdaboot.github.io/libpsl</url>
+        <summary>C library for the Publix Suffix List</summary>
+        <description>libpsl is a C library to handle the Public Suffix List. A &quot;public suffix&quot; is a
+domain name under which Internet users can directly register own names.
+
+Browsers and other web clients can use it to
+
+- Avoid privacy-leaking &quot;supercookies&quot;;
+- Avoid privacy-leaking &quot;super domain&quot; certificates;
+- Domain highlighting parts of the domain in a user interface;
+- Sorting domain lists by site;
+
+Libpsl...
+
+- has built-in PSL data for fast access;
+- allows to load PSL data from files;
+- checks if a given domain is a &quot;public suffix&quot;;
+- provides immediate cookie domain verification;
+- finds the longest public part of a given domain;
+- finds the shortest private part of a given domain;
+- works with international domains (UTF-8 and IDNA2008 Punycode);
+- is thread-safe;
+- handles IDNA2008 UTS#46;</description>
+      </application>
+      <application>
+        <name>libpwquality</name>
+        <version>1.4.4</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/libpwquality/libpwquality/</url>
+        <summary>A library for password generation and password quality checking</summary>
+        <description>This is a library for password quality checks and generation
+of random passwords that pass the checks.
+This library uses the cracklib and cracklib dictionaries
+to perform some of the checks.</description>
+      </application>
+      <application>
+        <name>libseccomp</name>
+        <version>2.5.3</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/seccomp/libseccomp</url>
+        <summary>Enhanced seccomp library</summary>
+        <description>The libseccomp library provides an easy to use interface to the Linux Kernel's
+syscall filtering mechanism, seccomp.  The libseccomp API allows an application
+to specify which syscalls, and optionally which syscall arguments, the
+application is allowed to execute, all of which are enforced by the Linux
+Kernel.</description>
+      </application>
+      <application>
+        <name>libselinux</name>
+        <version>3.4</version>
+        <release>0.rc3.1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/SELinuxProject/selinux/wiki</url>
+        <summary>SELinux library and simple utilities</summary>
+        <description>Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libselinux provides an API for SELinux applications to get and set
+process and file security contexts and to obtain security policy
+decisions.  Required for any applications that use the SELinux API.</description>
+      </application>
+      <application>
+        <name>libsemanage</name>
+        <version>3.4</version>
+        <release>0.rc3.1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/SELinuxProject/selinux/wiki</url>
+        <summary>SELinux binary policy manipulation library</summary>
+        <description>Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsemanage provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.</description>
+      </application>
+      <application>
+        <name>libsepol</name>
+        <version>3.4</version>
+        <release>0.rc3.1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/SELinuxProject/selinux/wiki</url>
+        <summary>SELinux binary policy manipulation library</summary>
+        <description>Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsepol provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.</description>
+      </application>
+      <application>
+        <name>libsigsegv</name>
+        <version>2.14</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/libsigsegv/</url>
+        <summary>Library for handling page faults in user mode</summary>
+        <description>This is a library for handling page faults in user mode. A page fault
+occurs when a program tries to access to a region of memory that is
+currently not available. Catching and handling a page fault is a useful
+technique for implementing:
+  - pageable virtual memory
+  - memory-mapped access to persistent databases
+  - generational garbage collectors
+  - stack overflow handlers
+  - distributed shared memory</description>
+      </application>
+      <application>
+        <name>libsmartcols</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Formatting library for ls-like programs</summary>
+        <description>This is library for ls-like terminal programs, part of util-linux.</description>
+      </application>
+      <application>
+        <name>libssh</name>
+        <version>0.9.6</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.libssh.org</url>
+        <summary>A library implementing the SSH protocol</summary>
+        <description>The ssh library was designed to be used by programmers needing a working SSH
+implementation by the mean of a library. The complete control of the client is
+made by the programmer. With libssh, you can remotely execute programs, transfer
+files, use a secure and transparent tunnel for your remote programs. With its
+Secure FTP implementation, you can play with remote files easily, without
+third-party programs others than libcrypto (from openssl).</description>
+      </application>
+      <application>
+        <name>libssh-config</name>
+        <version>0.9.6</version>
+        <release>4.fc36</release>
+        <arch>noarch</arch>
+        <url>http://www.libssh.org</url>
+        <summary>Configuration files for libssh</summary>
+        <description>The libssh-config package provides the default configuration files for libssh.</description>
+      </application>
+      <application>
+        <name>libstdc++</name>
+        <version>12.1.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://gcc.gnu.org</url>
+        <summary>GNU Standard C++ Library</summary>
+        <description>The libstdc++ package contains a rewritten standard compliant GCC Standard
+C++ Library.</description>
+      </application>
+      <application>
+        <name>libtasn1</name>
+        <version>4.18.0</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.gnu.org/software/libtasn1/</url>
+        <summary>The ASN.1 library used in GNUTLS</summary>
+        <description>A library that provides Abstract Syntax Notation One (ASN.1, as specified
+by the X.680 ITU-T recommendation) parsing and structures management, and
+Distinguished Encoding Rules (DER, as per X.690) encoding and decoding functions.</description>
+      </application>
+      <application>
+        <name>libtirpc</name>
+        <version>1.3.2</version>
+        <release>1.rc1.fc36.1</release>
+        <arch>x86_64</arch>
+        <url>http://git.linux-nfs.org/?p=steved/libtirpc.git;a=summary</url>
+        <summary>Transport Independent RPC Library</summary>
+        <description>This package contains SunLib's implementation of transport-independent
+RPC (TI-RPC) documentation.  This library forms a piece of the base of
+Open Network Computing (ONC), and is derived directly from the
+Solaris 2.3 source.
+
+TI-RPC is an enhanced version of TS-RPC that requires the UNIX System V
+Transport Layer Interface (TLI) or an equivalent X/Open Transport Interface
+(XTI).  TI-RPC is on-the-wire compatible with the TS-RPC, which is supported
+by almost 70 vendors on all major operating systems.  TS-RPC source code
+(RPCSRC 4.0) remains available from several internet sites.</description>
+      </application>
+      <application>
+        <name>libunistring</name>
+        <version>1.0</version>
+        <release>1.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.gnu.org/software/libunistring/</url>
+        <summary>GNU Unicode string library</summary>
+        <description>This portable C library implements Unicode string types in three flavours:
+(UTF-8, UTF-16, UTF-32), together with functions for character processing
+(names, classifications, properties) and functions for string processing
+(iteration, formatted output, width, word breaks, line breaks, normalization,
+case folding and regular expressions).</description>
+      </application>
+      <application>
+        <name>libutempter</name>
+        <version>1.2.1</version>
+        <release>6.fc36</release>
+        <arch>x86_64</arch>
+        <url>ftp://ftp.altlinux.org/pub/people/ldv/utempter</url>
+        <summary>A privileged helper for utmp/wtmp updates</summary>
+        <description>This library provides interface for terminal emulators such as
+screen and xterm to record user sessions to utmp and wtmp files.</description>
+      </application>
+      <application>
+        <name>libuuid</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Universally unique ID library</summary>
+        <description>This is the universally unique ID library, part of util-linux.
+
+The libuuid library generates and parses 128-bit universally unique
+id's (UUID's).  A UUID is an identifier that is unique across both
+space and time, with respect to the space of all UUIDs.  A UUID can
+be used for multiple purposes, from tagging objects with an extremely
+short lifetime, to reliably identifying very persistent objects
+across a network.
+
+See also the &quot;uuid&quot; package, which is a separate implementation.</description>
+      </application>
+      <application>
+        <name>libverto</name>
+        <version>0.3.2</version>
+        <release>3.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/latchset/libverto</url>
+        <summary>Main loop abstraction library</summary>
+        <description>libverto provides a way for libraries to expose asynchronous interfaces
+without having to choose a particular event loop, offloading this
+decision to the end application which consumes the library.
+
+If you are packaging an application, not library, based on libverto,
+you should depend either on a specific implementation module or you
+can depend on the virtual provides 'libverto-module-base'. This will
+ensure that you have at least one module installed that provides io,
+timeout and signal functionality. Currently glib is the only module
+that does not provide these three because it lacks signal. However,
+glib will support signal in the future.</description>
+      </application>
+      <application>
+        <name>libxcrypt</name>
+        <version>4.4.28</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/besser82/libxcrypt</url>
+        <summary>Extended crypt library for descrypt, md5crypt, bcrypt, and others</summary>
+        <description>libxcrypt is a modern library for one-way hashing of passwords.  It
+supports a wide variety of both modern and historical hashing methods:
+yescrypt, gost-yescrypt, scrypt, bcrypt, sha512crypt, sha256crypt,
+md5crypt, SunMD5, sha1crypt, NT, bsdicrypt, bigcrypt, and descrypt.
+It provides the traditional Unix crypt and crypt_r interfaces, as well
+as a set of extended interfaces pioneered by Openwall Linux, crypt_rn,
+crypt_ra, crypt_gensalt, crypt_gensalt_rn, and crypt_gensalt_ra.
+
+libxcrypt is intended to be used by login(1), passwd(1), and other
+similar programs; that is, to hash a small number of passwords during
+an interactive authentication dialogue with a human. It is not suitable
+for use in bulk password-cracking applications, or in any other situation
+where speed is more important than careful handling of sensitive data.
+However, it is intended to be fast and lightweight enough for use in
+servers that must field thousands of login attempts per minute.
+
+This version of the library does not provide the legacy API functions
+that have been provided by glibc's libcrypt.so.1.</description>
+      </application>
+      <application>
+        <name>libxcrypt-compat</name>
+        <version>4.4.28</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/besser82/libxcrypt</url>
+        <summary>Compatibility library providing legacy API functions</summary>
+        <description>This package contains the library providing the compatibility API
+for applications that are linked against glibc's libxcrypt, or that
+are still using the unsafe and deprecated, encrypt, encrypt_r,
+setkey, setkey_r, and fcrypt functions, which are still required by
+recent versions of POSIX, the Single UNIX Specification, and various
+other standards.
+
+All existing binary executables linked against glibc's libcrypt should
+work unmodified with the library supplied by this package.</description>
+      </application>
+      <application>
+        <name>libxkbcommon</name>
+        <version>1.4.1</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.x.org</url>
+        <summary>X.Org X11 XKB parsing library</summary>
+        <description>libxkbcommon is the X.Org library for compiling XKB maps into formats usable by
+the X Server or other display servers.</description>
+      </application>
+      <application>
+        <name>libxml2</name>
+        <version>2.9.14</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://xmlsoft.org/</url>
+        <summary>Library providing XML and HTML support</summary>
+        <description>This library allows to manipulate XML files. It includes support
+to read, modify and write XML and HTML files. There is DTDs support
+this includes parsing and validation even with complex DtDs, either
+at parse time or later once the document has been modified. The output
+can be a simple SAX stream or and in-memory DOM like representations.
+In this case one can use the built-in XPath and XPointer implementation
+to select sub nodes or ranges. A flexible Input/Output mechanism is
+available, with existing HTTP and FTP modules and combined to an
+URI library.</description>
+      </application>
+      <application>
+        <name>libzstd</name>
+        <version>1.5.2</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/facebook/zstd</url>
+        <summary>Zstd shared library</summary>
+        <description>Zstandard compression shared library.</description>
+      </application>
+      <application>
+        <name>linux-firmware</name>
+        <version>20220509</version>
+        <release>133.fc37</release>
+        <arch>noarch</arch>
+        <url>http://www.kernel.org/</url>
+        <summary>Firmware files used by the Linux kernel</summary>
+        <description>This package includes firmware files required for some devices to
+operate.</description>
+      </application>
+      <application>
+        <name>linux-firmware-whence</name>
+        <version>20220509</version>
+        <release>133.fc37</release>
+        <arch>noarch</arch>
+        <url>http://www.kernel.org/</url>
+        <summary>WHENCE License file</summary>
+        <description>This package contains the WHENCE license file which documents the vendor license details.</description>
+      </application>
+      <application>
+        <name>lua-libs</name>
+        <version>5.4.4</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.lua.org/</url>
+        <summary>Libraries for lua</summary>
+        <description>This package contains the shared libraries for lua.</description>
+      </application>
+      <application>
+        <name>lz4-libs</name>
+        <version>1.9.3</version>
+        <release>4.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://lz4.github.io/lz4/</url>
+        <summary>Libaries for lz4</summary>
+        <description>This package contains the libaries for lz4.</description>
+      </application>
+      <application>
+        <name>memstrack</name>
+        <version>0.2.4</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/ryncsn/memstrack</url>
+        <summary>A memory allocation tracer, like a hot spot analyzer for memory allocation</summary>
+        <description>A memory allocation tracer, like a hot spot analyzer for memory allocation</description>
+      </application>
+      <application>
+        <name>mkpasswd</name>
+        <version>5.5.13</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.linux.it/~md/software/</url>
+        <summary>Encrypt a password with crypt(3) function using a salt</summary>
+        <description>mkpasswd tool encrypts a given password with the crypt(3) libc function
+using a given salt.</description>
+      </application>
+      <application>
+        <name>mpdecimal</name>
+        <version>2.5.1</version>
+        <release>3.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://www.bytereef.org/mpdecimal/index.html</url>
+        <summary>Library for general decimal arithmetic</summary>
+        <description>The package contains a library limpdec implementing General Decimal Arithmetic
+Specification. The specification, written by Mike Cowlishaw from IBM, defines
+a general purpose arbitrary precision data type together with rigorously
+specified functions and rounding behavior.</description>
+      </application>
+      <application>
+        <name>mpfr</name>
+        <version>4.1.0</version>
+        <release>9.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.mpfr.org/</url>
+        <summary>C library for multiple-precision floating-point computations</summary>
+        <description>The MPFR library is a C library for multiple-precision floating-point
+computations with &quot;correct rounding&quot;. The MPFR is efficient and
+also has a well-defined semantics. It copies the good ideas from the
+ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+(53-bit mantissa). MPFR is based on the GMP multiple-precision library.</description>
+      </application>
+      <application>
         <name>ncurses-base</name>
-        <version>6.2</version>
-        <release>3.20200222.fc33</release>
+        <version>6.3</version>
+        <release>2.20220501.fc37</release>
         <arch>noarch</arch>
         <url>https://invisible-island.net/ncurses/ncurses.html</url>
         <summary>Descriptions of common terminals</summary>
@@ -205,8 +1693,8 @@ descriptions are included in the ncurses-term package.</description>
       </application>
       <application>
         <name>ncurses-libs</name>
-        <version>6.2</version>
-        <release>3.20200222.fc33</release>
+        <version>6.3</version>
+        <release>2.20220501.fc37</release>
         <arch>x86_64</arch>
         <url>https://invisible-island.net/ncurses/ncurses.html</url>
         <summary>Ncurses libraries</summary>
@@ -218,9 +1706,349 @@ discontinued 4.4 BSD classic curses library.
 This package contains the ncurses libraries.</description>
       </application>
       <application>
+        <name>openldap</name>
+        <version>2.6.2</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.openldap.org/</url>
+        <summary>LDAP support libraries</summary>
+        <description>OpenLDAP is an open source suite of LDAP (Lightweight Directory Access
+Protocol) applications and development tools. LDAP is a set of
+protocols for accessing directory services (usually phone book style
+information, but other information is possible) over the Internet,
+similar to the way DNS (Domain Name System) information is propagated
+over the Internet. The openldap package contains configuration files,
+libraries, and documentation for OpenLDAP.</description>
+      </application>
+      <application>
+        <name>openssl-libs</name>
+        <epoch>1</epoch>
+        <version>3.0.2</version>
+        <release>4.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.openssl.org/</url>
+        <summary>A general purpose cryptography library with TLS implementation</summary>
+        <description>OpenSSL is a toolkit for supporting cryptography. The openssl-libs
+package contains the libraries that are used by various applications which
+support cryptographic algorithms and protocols.</description>
+      </application>
+      <application>
+        <name>openssl-pkcs11</name>
+        <version>0.4.11</version>
+        <release>8.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/OpenSC/libp11</url>
+        <summary>A PKCS#11 engine for use with OpenSSL</summary>
+        <description>openssl-pkcs11 enables hardware security module (HSM), and smart card support in
+OpenSSL applications. More precisely, it is an OpenSSL engine which makes
+registered PKCS#11 modules available for OpenSSL applications. The engine is
+optional and can be loaded by configuration file, command line or through the
+OpenSSL ENGINE API.</description>
+      </application>
+      <application>
+        <name>os-prober</name>
+        <version>1.77</version>
+        <release>9.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://kitenet.net/~joey/code/os-prober/</url>
+        <summary>Probes disks on the system for installed operating systems</summary>
+        <description>This package detects other OSes available on a system and outputs the results
+in a generic machine-readable format. Support for new OSes and Linux
+distributions can be added easily.</description>
+      </application>
+      <application>
+        <name>p11-kit</name>
+        <version>0.24.1</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://p11-glue.freedesktop.org/p11-kit.html</url>
+        <summary>Library for loading and sharing PKCS#11 modules</summary>
+        <description>p11-kit provides a way to load and enumerate PKCS#11 modules, as well
+as a standard configuration setup for installing PKCS#11 modules in
+such a way that they're discoverable.</description>
+      </application>
+      <application>
+        <name>p11-kit-trust</name>
+        <version>0.24.1</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://p11-glue.freedesktop.org/p11-kit.html</url>
+        <summary>System trust module from p11-kit</summary>
+        <description>The p11-kit-trust package contains a system trust PKCS#11 module which
+contains certificate anchors and black lists.</description>
+      </application>
+      <application>
+        <name>pam</name>
+        <version>1.5.2</version>
+        <release>12.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.linux-pam.org/</url>
+        <summary>An extensible library which provides authentication for applications</summary>
+        <description>PAM (Pluggable Authentication Modules) is a system security tool that
+allows system administrators to set authentication policy without
+having to recompile programs that handle authentication.</description>
+      </application>
+      <application>
+        <name>pam-libs</name>
+        <version>1.5.2</version>
+        <release>12.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.linux-pam.org/</url>
+        <summary>Shared libraries of the PAM package</summary>
+        <description>PAM (Pluggable Authentication Modules) is a system security tool that
+allows system administrators to set authentication policy without
+having to recompile programs that handle authentication. The pam-libs
+contains the shared libraries for PAM.</description>
+      </application>
+      <application>
+        <name>pcre</name>
+        <version>8.45</version>
+        <release>1.fc36.1</release>
+        <arch>x86_64</arch>
+        <url>https://www.pcre.org/</url>
+        <summary>Perl-compatible regular expression library</summary>
+        <description>PCRE, Perl-compatible regular expression, library has its own native API, but
+a set of wrapper functions that are based on the POSIX API are also supplied
+in the libpcreposix library. Note that this just provides a POSIX calling
+interface to PCRE: the regular expressions themselves still follow Perl syntax
+and semantics. This package provides support for strings in 8-bit and UTF-8
+encodings. Detailed change log is provided by pcre-doc package.</description>
+      </application>
+      <application>
+        <name>pcre2</name>
+        <version>10.40</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.pcre.org/</url>
+        <summary>Perl-compatible regular expression library</summary>
+        <description>PCRE2 is a re-working of the original PCRE (Perl-compatible regular
+expression) library to provide an entirely new API.
+
+PCRE2 is written in C, and it has its own API. There are three sets of
+functions, one for the 8-bit library, which processes strings of bytes, one
+for the 16-bit library, which processes strings of 16-bit values, and one for
+the 32-bit library, which processes strings of 32-bit values. There are no C++
+wrappers. This package provides support for strings in 8-bit and UTF-8
+encodings. Install pcre2-utf16 or pcre2-utf32 packages for the other ones.
+
+The distribution does contain a set of C wrapper functions for the 8-bit
+library that are based on the POSIX regular expression API (see the pcre2posix
+man page). These can be found in a library called libpcre2posix. Note that
+this just provides a POSIX calling interface to PCRE2; the regular expressions
+themselves still follow Perl syntax and semantics. The POSIX API is
+restricted, and does not give full access to all of PCRE2's facilities.</description>
+      </application>
+      <application>
+        <name>pcre2-syntax</name>
+        <version>10.40</version>
+        <release>1.fc37</release>
+        <arch>noarch</arch>
+        <url>https://www.pcre.org/</url>
+        <summary>Documentation for PCRE2 regular expressions</summary>
+        <description>This is a set of manual pages that document a syntax of the regular
+expressions implemented by the PCRE2 library.</description>
+      </application>
+      <application>
+        <name>pigz</name>
+        <version>2.7</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.zlib.net/pigz/</url>
+        <summary>Parallel implementation of gzip</summary>
+        <description>pigz, which stands for parallel implementation of gzip,
+is a fully functional replacement for gzip that exploits
+multiple processors and multiple cores to the hilt when
+compressing data.</description>
+      </application>
+      <application>
+        <name>popt</name>
+        <version>1.18</version>
+        <release>7.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/rpm-software-management/popt/</url>
+        <summary>C library for parsing command line parameters</summary>
+        <description>Popt is a C library for parsing command line parameters. Popt was
+heavily influenced by the getopt() and getopt_long() functions, but
+it improves on them by allowing more powerful argument expansion.
+Popt can parse arbitrary argv[] style arrays and automatically set
+variables based on command line arguments. Popt allows command line
+arguments to be aliased via configuration files and includes utility
+functions for parsing arbitrary strings into argv[] arrays using
+shell-like rules.</description>
+      </application>
+      <application>
+        <name>procps-ng</name>
+        <version>3.3.17</version>
+        <release>5.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://sourceforge.net/projects/procps-ng/</url>
+        <summary>System and process monitoring utilities</summary>
+        <description>The procps package contains a set of system utilities that provide
+system information. Procps includes ps, free, skill, pkill, pgrep,
+snice, tload, top, uptime, vmstat, pidof, pmap, slabtop, w, watch,
+pwdx and pidwait.
+The ps command displays a snapshot of running processes. The top command
+provides a repetitive update of the statuses of running processes.
+The free command displays the amounts of free and used memory on your
+system. The skill command sends a terminate command (or another
+specified signal) to a specified set of processes. The snice
+command is used to change the scheduling priority of specified
+processes. The tload command prints a graph of the current system
+load average to a specified tty. The uptime command displays the
+current time, how long the system has been running, how many users
+are logged on, and system load averages for the past one, five,
+and fifteen minutes. The w command displays a list of the users
+who are currently logged on and what they are running. The watch
+program watches a running program. The vmstat command displays
+virtual memory statistics about processes, memory, paging, block
+I/O, traps, and CPU activity. The pwdx command reports the current
+working directory of a process or processes. The pidwait command
+waits for processes of specified names.</description>
+      </application>
+      <application>
+        <name>publicsuffix-list-dafsa</name>
+        <version>20210518</version>
+        <release>4.fc36</release>
+        <arch>noarch</arch>
+        <url>https://publicsuffix.org/</url>
+        <summary>Cross-vendor public domain suffix database in DAFSA form</summary>
+        <description>The Public Suffix List is a cross-vendor initiative to provide
+an accurate list of domain name suffixes, maintained by the hard work
+of Mozilla volunteers and by submissions from registries.
+Software using the Public Suffix List will be able to determine where
+cookies may and may not be set, protecting the user from being
+tracked across sites.
+
+This package includes a DAFSA representation of the Public Suffix List
+for runtime loading.</description>
+      </application>
+      <application>
+        <name>python-pip-wheel</name>
+        <version>22.0.4</version>
+        <release>2.fc37</release>
+        <arch>noarch</arch>
+        <url>https://pip.pypa.io/</url>
+        <summary>The pip wheel</summary>
+        <description>A Python wheel of pip to use with venv.</description>
+      </application>
+      <application>
+        <name>python-setuptools-wheel</name>
+        <version>60.9.3</version>
+        <release>2.fc37</release>
+        <arch>noarch</arch>
+        <url>https://pypi.python.org/pypi/setuptools</url>
+        <summary>The setuptools wheel</summary>
+        <description>A Python wheel of setuptools to use with venv.</description>
+      </application>
+      <application>
+        <name>python-unversioned-command</name>
+        <version>3.10.4</version>
+        <release>1.fc37</release>
+        <arch>noarch</arch>
+        <url>https://www.python.org/</url>
+        <summary>The &quot;python&quot; command that runs Python 3</summary>
+        <description>This package contains /usr/bin/python - the &quot;python&quot; command that runs Python 3.</description>
+      </application>
+      <application>
+        <name>python3</name>
+        <version>3.10.4</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.python.org/</url>
+        <summary>Python 3.10 interpreter</summary>
+        <description>Python 3.10 is an accessible, high-level, dynamically typed, interpreted
+programming language, designed with an emphasis on code readability.
+It includes an extensive standard library, and has a vast ecosystem of
+third-party libraries.
+
+The python3 package provides the &quot;python3&quot; executable: the reference
+interpreter for the Python language, version 3.
+The majority of its standard library is provided in the python3-libs package,
+which should be installed automatically along with python3.
+The remaining parts of the Python standard library are broken out into the
+python3-tkinter and python3-test packages, which may need to be installed
+separately.
+
+Documentation for Python is provided in the python3-docs package.
+
+Packages containing additional libraries for Python are generally named with
+the &quot;python3-&quot; prefix.</description>
+      </application>
+      <application>
+        <name>python3-libs</name>
+        <version>3.10.4</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.python.org/</url>
+        <summary>Python runtime libraries</summary>
+        <description>This package contains runtime libraries for use by Python:
+- the majority of the Python standard library
+- a dynamically linked library for use by applications that embed Python as
+  a scripting language, and by the main &quot;python3&quot; executable</description>
+      </application>
+      <application>
+        <name>qrencode-libs</name>
+        <version>4.1.1</version>
+        <release>2.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://fukuchi.org/works/qrencode/</url>
+        <summary>QR Code encoding library - Shared libraries</summary>
+        <description>The qrencode-libs package contains the shared libraries and header files for
+applications that use qrencode.</description>
+      </application>
+      <application>
+        <name>readline</name>
+        <version>8.1</version>
+        <release>6.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://tiswww.case.edu/php/chet/readline/rltop.html</url>
+        <summary>A library for editing typed command lines</summary>
+        <description>The Readline library provides a set of functions that allow users to
+edit command lines. Both Emacs and vi editing modes are available. The
+Readline library includes additional functions for maintaining a list
+of previously-entered command lines for recalling or editing those
+lines, and for performing csh-like history expansion on previous
+commands.</description>
+      </application>
+      <application>
+        <name>rpm</name>
+        <version>4.18.0</version>
+        <release>0.alpha2.1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.rpm.org/</url>
+        <summary>The RPM package management system</summary>
+        <description>The RPM Package Manager (RPM) is a powerful command line driven
+package management system capable of installing, uninstalling,
+verifying, querying, and updating software packages. Each software
+package consists of an archive of files along with information about
+the package like its version, a description, etc.</description>
+      </application>
+      <application>
+        <name>rpm-libs</name>
+        <version>4.18.0</version>
+        <release>0.alpha2.1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.rpm.org/</url>
+        <summary>Libraries for manipulating RPM packages</summary>
+        <description>This package contains the RPM shared libraries.</description>
+      </application>
+      <application>
+        <name>sed</name>
+        <version>4.8</version>
+        <release>10.fc36</release>
+        <arch>x86_64</arch>
+        <url>http://sed.sourceforge.net/</url>
+        <summary>A GNU stream text editor</summary>
+        <description>The sed (Stream EDitor) editor is a stream or batch (non-interactive)
+editor.  Sed takes text as input, performs an operation or set of
+operations on the text and outputs the modified text.  The operations
+that sed performs (substitutions, deletions, insertions, etc.) can be
+specified in a script file or from the command line.</description>
+      </application>
+      <application>
         <name>setup</name>
-        <version>2.13.7</version>
-        <release>2.fc33</release>
+        <version>2.13.10</version>
+        <release>1.fc37</release>
         <arch>noarch</arch>
         <url>https://pagure.io/setup/</url>
         <summary>A set of system configuration and setup files</summary>
@@ -228,14 +2056,205 @@ This package contains the ncurses libraries.</description>
 setup files, such as passwd, group, and profile.</description>
       </application>
       <application>
+        <name>shadow-utils</name>
+        <epoch>2</epoch>
+        <version>4.11.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/shadow-maint/shadow</url>
+        <summary>Utilities for managing accounts and shadow password files</summary>
+        <description>The shadow-utils package includes the necessary programs for
+converting UNIX password files to the shadow password format, plus
+programs for managing user and group accounts. The pwconv command
+converts passwords to the shadow password format. The pwunconv command
+unconverts shadow passwords and generates a passwd file (a standard
+UNIX password file). The pwck command checks the integrity of password
+and shadow files. The lastlog command prints out the last login times
+for all users. The useradd, userdel, and usermod commands are used for
+managing user accounts. The groupadd, groupdel, and groupmod commands
+are used for managing group accounts.</description>
+      </application>
+      <application>
+        <name>sqlite-libs</name>
+        <version>3.38.5</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>http://www.sqlite.org/</url>
+        <summary>Shared library for the sqlite3 embeddable SQL database engine.</summary>
+        <description>This package contains the shared library for sqlite.</description>
+      </application>
+      <application>
+        <name>systemd</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>System and Service Manager</summary>
+        <description>systemd is a system and service manager that runs as PID 1 and starts the rest
+of the system. It provides aggressive parallelization capabilities, uses socket
+and D-Bus activation for starting services, offers on-demand starting of
+daemons, keeps track of processes using Linux control groups, maintains mount
+and automount points, and implements an elaborate transactional dependency-based
+service control logic. systemd supports SysV and LSB init scripts and works as a
+replacement for sysvinit. Other parts of this package are a logging daemon,
+utilities to control basic system configuration like the hostname, date, locale,
+maintain a list of logged-in users, system accounts, runtime directories and
+settings, and a logging daemons.
+
+This package was built from the 251.1-stable branch of systemd.</description>
+      </application>
+      <application>
+        <name>systemd-libs</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>systemd libraries</summary>
+        <description>Libraries for systemd and udev.</description>
+      </application>
+      <application>
+        <name>systemd-networkd</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>System daemon that manages network configurations</summary>
+        <description>systemd-networkd is a system service that manages networks. It detects and
+configures network devices as they appear, as well as creating virtual network
+devices.</description>
+      </application>
+      <application>
+        <name>systemd-pam</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>systemd PAM module</summary>
+        <description>Systemd PAM module registers the session with systemd-logind.</description>
+      </application>
+      <application>
+        <name>systemd-resolved</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>Network Name Resolution manager</summary>
+        <description>systemd-resolved is a system service that provides network name resolution to
+local applications. It implements a caching and validating DNS/DNSSEC stub
+resolver, as well as an LLMNR and MulticastDNS resolver and responder.</description>
+      </application>
+      <application>
+        <name>systemd-udev</name>
+        <version>251.1</version>
+        <release>2.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://www.freedesktop.org/wiki/Software/systemd</url>
+        <summary>Rule-based device node and kernel event manager</summary>
+        <description>This package contains systemd-udev and the rules and hardware database needed to
+manage device nodes. This package is necessary on physical machines and in
+virtual machines, but not in containers.
+
+This package also provides systemd-timesyncd, a network time protocol daemon.
+
+It also contains tools to manage encrypted home areas and secrets bound to the
+machine, and to create or grow partitions and make file systems automatically.</description>
+      </application>
+      <application>
+        <name>tpm2-tss</name>
+        <version>3.2.0</version>
+        <release>1.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://github.com/tpm2-software/tpm2-tss</url>
+        <summary>TPM2.0 Software Stack</summary>
+        <description>tpm2-tss is a software stack supporting Trusted Platform Module(TPM) 2.0 system
+APIs. It sits between TPM driver and applications, providing TPM2.0 specified
+APIs for applications to access TPM module through kernel TPM drivers.</description>
+      </application>
+      <application>
         <name>tzdata</name>
-        <version>2021a</version>
-        <release>1.fc33</release>
+        <version>2022a</version>
+        <release>1.fc37</release>
         <arch>noarch</arch>
         <url>https://www.iana.org/time-zones</url>
         <summary>Timezone data</summary>
         <description>This package contains data files with rules for various timezones around
 the world.</description>
+      </application>
+      <application>
+        <name>util-linux</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>Collection of basic system utilities</summary>
+        <description>The util-linux package contains a large variety of low-level system
+utilities that are necessary for a Linux system to function. Among
+others, util-linux contains the fdisk configuration tool and the login
+program.</description>
+      </application>
+      <application>
+        <name>util-linux-core</name>
+        <version>2.38</version>
+        <release>3.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://en.wikipedia.org/wiki/Util-linux</url>
+        <summary>The most essential utilities from the util-linux suite</summary>
+        <description>This is a very basic set of Linux utilities that is necessary on
+minimal installations.</description>
+      </application>
+      <application>
+        <name>whois-nls</name>
+        <version>5.5.13</version>
+        <release>1.fc37</release>
+        <arch>noarch</arch>
+        <url>http://www.linux.it/~md/software/</url>
+        <summary>Gettext catalogs for whois tools</summary>
+        <description>whois tools messages translated into different natural languages.</description>
+      </application>
+      <application>
+        <name>xkeyboard-config</name>
+        <version>2.35.1</version>
+        <release>1.fc37</release>
+        <arch>noarch</arch>
+        <url>http://www.freedesktop.org/wiki/Software/XKeyboardConfig</url>
+        <summary>X Keyboard Extension configuration data</summary>
+        <description>This package contains configuration data used by the X Keyboard Extension (XKB),
+which allows selection of keyboard layouts when using a graphical interface.</description>
+      </application>
+      <application>
+        <name>xz</name>
+        <version>5.2.5</version>
+        <release>9.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://tukaani.org/xz/</url>
+        <summary>LZMA compression utilities</summary>
+        <description>XZ Utils are an attempt to make LZMA compression easy to use on free (as in
+freedom) operating systems. This is achieved by providing tools and libraries
+which are similar to use than the equivalents of the most popular existing
+compression algorithms.
+
+LZMA is a general purpose compression algorithm designed by Igor Pavlov as
+part of 7-Zip. It provides high compression ratio while keeping the
+decompression speed fast.</description>
+      </application>
+      <application>
+        <name>xz-libs</name>
+        <version>5.2.5</version>
+        <release>9.fc37</release>
+        <arch>x86_64</arch>
+        <url>https://tukaani.org/xz/</url>
+        <summary>Libraries for decoding LZMA compression</summary>
+        <description>Libraries for decoding files compressed with LZMA or XZ utils.</description>
+      </application>
+      <application>
+        <name>zlib</name>
+        <version>1.2.11</version>
+        <release>31.fc36</release>
+        <arch>x86_64</arch>
+        <url>https://www.zlib.net/</url>
+        <summary>Compression and decompression library</summary>
+        <description>Zlib is a general-purpose, patent-free, lossless data compression
+library which is used by many different programs.</description>
       </application>
     </applications>
   </operatingsystem>
