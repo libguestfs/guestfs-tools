@@ -44,6 +44,7 @@ let main () =
     let libvirturi = ref "" in
     let mount_opts = ref "" in
     let network = ref false in
+    let no_network = ref false in
     let operations = ref None in
 
     let format = ref "auto" in
@@ -131,7 +132,7 @@ let main () =
       [ L"list-operations" ], Getopt.Unit list_operations, s_"List supported operations";
       [ L"mount-options" ], Getopt.Set_string (s_"opts", mount_opts),  s_"Set mount options (eg /:noatime;/var:rw,noatime)";
       [ L"network" ], Getopt.Set network,           s_"Enable appliance network";
-      [ L"no-network" ], Getopt.Clear network,      s_"Disable appliance network (default)";
+      [ L"no-network" ], Getopt.Set no_network,     s_"Disable appliance network (default)";
       [ L"operation"; L"operations" ],  Getopt.String (s_"operations", set_operations), s_"Enable/disable specific operations";
     ] in
     let args = basic_args @ Sysprep_operation.extra_args () in
@@ -188,6 +189,7 @@ read the man page virt-sysprep(1).
     (* Dereference the rest of the args. *)
     let dryrun = !dryrun in
     let network = !network in
+    let no_network = !no_network in
     let operations = !operations in
 
     (* At this point we know which operations are enabled.  So call the
@@ -208,7 +210,8 @@ read the man page virt-sysprep(1).
 
     (* Connect to libguestfs. *)
     let g = open_guestfs () in
-    g#set_network network;
+    g#set_network (not no_network &&
+                   (network || key_store_requires_network opthandle.ks));
     add g dryrun;
     g#launch ();
 
