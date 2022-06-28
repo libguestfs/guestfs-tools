@@ -187,6 +187,7 @@ You can ignore this warning or change it to a hard failure using the
       let machine_readable = machine_readable () <> None in
       Progress.set_up_progress_bar ~machine_readable g
     );
+    g#set_network (key_store_requires_network ks);
     g#launch ();
 
     g in
