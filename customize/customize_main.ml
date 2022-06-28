@@ -52,7 +52,11 @@ let main () =
   let libvirturi = ref "" in
   let memsize = ref None in
   let set_memsize arg = memsize := Some arg in
+
+  (* Note that [--key ID:clevis] depends on this default. See more below, near
+   * [g#set_network network]. *)
   let network = ref true in
+
   let smp = ref None in
   let set_smp arg = smp := Some arg in
 
@@ -159,6 +163,9 @@ read the man page virt-customize(1).
     let g = open_guestfs () in
     Option.may g#set_memsize memsize;
     Option.may g#set_smp smp;
+    (* [--no-network] from the command line takes precedence over the automatic
+     * network enablement for [--key ID:clevis], so here we intentionally don't check
+     * [key_store_requires_network opthandle.ks]. *)
     g#set_network network;
 
     (* Add disks. *)
