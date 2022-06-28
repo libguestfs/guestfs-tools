@@ -176,6 +176,7 @@ let main () =
   (* Connect to libguestfs. *)
   let g = open_guestfs () in
   add g;
+  g#set_network (key_store_requires_network ks);
   g#launch ();
 
   (* Decrypt the disks. *)

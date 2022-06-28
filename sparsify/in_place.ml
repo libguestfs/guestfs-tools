@@ -58,6 +58,7 @@ let run disk format ignores zeroes ks =
     let machine_readable = machine_readable () <> None in
     Progress.set_up_progress_bar ~machine_readable g
   );
+  g#set_network (key_store_requires_network ks);
   g#launch ();
 
   (* If discard is not supported in the appliance, we must return exit
