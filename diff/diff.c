@@ -209,6 +209,7 @@ main (int argc, char *argv[])
   int option_index;
   struct tree *tree1, *tree2;
   struct key_store *ks = NULL;
+  bool network;
 
   g = guestfs_create ();
   if (g == NULL)
@@ -378,6 +379,10 @@ main (int argc, char *argv[])
   /* Mount up first guest. */
   add_drives (drvs);
 
+  network = key_store_requires_network (ks);
+  if (guestfs_set_network (g, network) == -1)
+    exit (EXIT_FAILURE);
+
   if (guestfs_launch (g) == -1)
     exit (EXIT_FAILURE);
 
@@ -388,6 +393,9 @@ main (int argc, char *argv[])
 
   /* Mount up second guest. */
   add_drives_handle (g2, drvs2, 0);
+
+  if (guestfs_set_network (g2, network) == -1)
+    exit (EXIT_FAILURE);
 
   if (guestfs_launch (g2) == -1)
     exit (EXIT_FAILURE);
