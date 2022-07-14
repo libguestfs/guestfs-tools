@@ -519,6 +519,13 @@ Either or both options can be used multiple times on the command line.
 
 =head1 SECURITY
 
+Virtual machines that employ full disk encryption I<internally to the
+guest> should not be considered for cloning and distribution, as it
+provides multiple parties with the same internal volume key, enabling
+any one such party to decrypt all the other clones.  Refer to the L<LUKS
+FAQ|https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md> for
+details.
+
 Although virt-sysprep removes some sensitive information from the
 guest, it does not pretend to remove all of it.  You should examine
 the L</OPERATIONS> above and the guest afterwards.
