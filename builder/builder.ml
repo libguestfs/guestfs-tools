@@ -182,7 +182,7 @@ let main () =
    * create.
    *)
   let tmpdir = Mkdtemp.temp_dir "virt-builder." in
-  On_exit.rmdir tmpdir;
+  On_exit.rm_rf tmpdir;
 
   (* Download the sources. *)
   let downloader = Downloader.create ~curl:cmdline.curl ~cache ~tmpdir in
