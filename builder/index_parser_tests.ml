@@ -28,7 +28,7 @@ open Tools_utils
 
 let tmpdir =
   let tmpdir = Mkdtemp.temp_dir "guestfs-tests." in
-  On_exit.rmdir tmpdir;
+  On_exit.rm_rf tmpdir;
   tmpdir
 
 let dummy_sigchecker = Sigchecker.create ~gpg:"gpg"
