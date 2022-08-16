@@ -30,13 +30,14 @@ dnl Headers.
 AC_CHECK_HEADERS([\
     byteswap.h \
     endian.h \
-    sys/endian.h \
+    error.h \
     errno.h \
     linux/fs.h \
     linux/magic.h \
     linux/raid/md_u.h \
     linux/rtc.h \
     printf.h \
+    sys/endian.h \
     sys/inotify.h \
     sys/mount.h \
     sys/resource.h \
@@ -54,6 +55,7 @@ AC_CHECK_HEADERS([\
 dnl Functions.
 AC_CHECK_FUNCS([\
     be32toh \
+    error \
     fsync \
     futimens \
     getprogname \

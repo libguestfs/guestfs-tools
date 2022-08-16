@@ -27,6 +27,8 @@ libgnu_la_SOURCES = \
 	argmatch.h \
 	bitrotate.h \
 	c-ctype.h \
+	error.c \
+	error.h \
 	getprogname.h \
 	hash.c \
 	hash.h \
