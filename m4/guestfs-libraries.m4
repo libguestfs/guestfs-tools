@@ -56,6 +56,7 @@ AC_CHECK_FUNCS([\
     be32toh \
     fsync \
     futimens \
+    getprogname \
     getxattr \
     htonl \
     htons \
