@@ -39,6 +39,11 @@ AC_PROG_AWK
 
 AC_PROG_LN_S
 
+dnl Check for realpath (used by ocaml-dep.sh for basic builds).
+AC_CHECK_PROGS([REALPATH],[grealpath realpath],[no])
+test "x$REALPATH" = "xno" &&
+    AC_MSG_ERROR([GNU realpath program must be installed])
+
 dnl Check for xorriso/genisoimage/mkisofs.
 AC_PATH_PROGS([MKISOFS],[xorrisofs genisoimage mkisofs],[no],
     [$PATH$PATH_SEPARATOR/usr/sbin$PATH_SEPARATOR/sbin])
