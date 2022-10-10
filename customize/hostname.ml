@@ -36,7 +36,8 @@ let rec set_hostname (g : Guestfs.guestfs) root hostname =
     update_etc_machine_info g hostname;
     true
 
-  | "linux", ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v
+  | "linux", ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"rocky"|
+              "redhat-based"), v
     when v >= 7 ->
     update_etc_hostname g hostname;
     update_etc_machine_info g hostname;

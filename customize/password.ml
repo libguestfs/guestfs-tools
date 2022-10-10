@@ -160,7 +160,8 @@ and default_crypto g root =
   let distro = g#inspect_get_distro root in
   let major = g#inspect_get_major_version root in
   match distro, major with
-  | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v when v >= 9 ->
+  | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"rocky"|
+     "redhat-based"), v when v >= 9 ->
     `YESCRYPT
   | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v when v >= 6 ->
     `SHA512
