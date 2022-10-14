@@ -23,10 +23,6 @@ set -e
 $TEST_FUNCTIONS
 skip_if_skipped
 
-# glibc.malloc.check=1 breaks parallel virt-df
-# Issue reported upstream 2022-10-11 (see email to Florian)
-unset GLIBC_TUNABLES
-
 libvirt_uri="test://$abs_top_builddir/test-data/phony-guests/guests.xml"
 
 $VG virt-df -c "$libvirt_uri"
