@@ -363,6 +363,7 @@ and os_of_string os ver =
   | "ubuntu", "16.04" -> Ubuntu (ver, "xenial")
   | "ubuntu", "18.04" -> Ubuntu (ver, "bionic")
   | "ubuntu", "20.04" -> Ubuntu (ver, "focal")
+  | "ubuntu", "22.04" -> Ubuntu (ver, "jammy")
   | "fedora", ver -> Fedora (int_of_string ver)
   | "freebsd", ver -> let maj, min = parse_major_minor ver in FreeBSD (maj, min)
   | "windows", ver -> parse_windows_version ver
@@ -1231,9 +1232,7 @@ and os_variant_of_os ?(for_fedora = false) os arch =
     | Debian (ver, _), _ when ver <= 8 -> sprintf "debian%d" ver
     | Debian _, _ -> "debian8" (* max version known in Fedora 26 *)
 
-    | Ubuntu (ver, _), _ when ver < "20.04" -> sprintf "ubuntu%s" ver
-    | Ubuntu ("20.04", _), _ -> "ubuntu19.10"
-    | Ubuntu _, _ -> assert false
+    | Ubuntu (ver, _), _ -> sprintf "ubuntu%s" ver
 
     | FreeBSD (major, minor), _ -> sprintf "freebsd%d.%d" major minor
 
