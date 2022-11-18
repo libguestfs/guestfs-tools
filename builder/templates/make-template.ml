@@ -952,7 +952,7 @@ and make_boot_media os arch =
      Location (sprintf "http://download.eng.bos.redhat.com/released/rhel-6-7-8/rhel-8/RHEL-8/8.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
 
   | RHEL (9, minor), arch ->
-     Location (sprintf "http://download.eng.bos.redhat.com/released/rhel-9/RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
+     Location (sprintf "http://download.eng.bos.redhat.com/released/RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
 
   | Ubuntu (_, dist), X86_64 ->
      Location (sprintf "http://archive.ubuntu.com/ubuntu/dists/%s/main/installer-amd64" dist)
