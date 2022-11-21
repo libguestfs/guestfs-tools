@@ -1,3 +1,5 @@
-[opensuse.org]
-uri=http://download.opensuse.org/repositories/Virtualization:/virt-builder-images/images/index
-gpgkey=file://@SYSCONFDIR@/virt-builder/repos.d/opensuse.gpg
+# Disabled for now, see:
+# https://github.com/libguestfs/libguestfs/issues/99
+#[opensuse.org]
+#uri=http://download.opensuse.org/repositories/Virtualization:/virt-builder-images/images/index
+#gpgkey=file://@SYSCONFDIR@/virt-builder/repos.d/opensuse.gpg
