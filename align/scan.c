@@ -364,6 +364,11 @@ static int
 scan_work (guestfs_h *g, size_t i, FILE *fp)
 {
   struct guestfs_add_libvirt_dom_argv optargs;
+  const char *name = domains[i].name ? domains[i].name : "(no name)";
+  int r;
+
+  if (verbose)
+    fprintf (stderr, "scan: domain %zu: %s: opening connection\n", i, name);
 
   optargs.bitmask =
     GUESTFS_ADD_LIBVIRT_DOM_READONLY_BITMASK |
@@ -377,7 +382,16 @@ scan_work (guestfs_h *g, size_t i, FILE *fp)
   if (guestfs_launch (g) == -1)
     return -1;
 
-  return scan (g, !uuid ? domains[i].name : domains[i].uuid, fp);
+  if (verbose)
+    fprintf (stderr, "scan: domain %zu: %s: performing scan\n", i, name);
+
+  r = scan (g, !uuid ? domains[i].name : domains[i].uuid, fp);
+
+  if (verbose)
+    fprintf (stderr, "scan: domain %zu: %s: finishing scan: result=%d\n",
+             i, name, r);
+
+  return r;
 }
 
 #endif /* HAVE_LIBVIRT */
