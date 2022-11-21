@@ -1,3 +1,7 @@
-[opensuse.org]
-uri=http://download.opensuse.org/repositories/Virtualization:/virt-builder-images/images/index
-gpgkey=file://@SYSCONFDIR@/virt-builder/repos.d/opensuse.gpg
+# https://bugzilla.redhat.com/show_bug.cgi?id=2145160
+# This is disabled in RHEL by default, but you can enable it by
+# uncommenting the lines below.
+
+#[opensuse.org]
+#uri=http://download.opensuse.org/repositories/Virtualization:/virt-builder-images/images/index
+#gpgkey=file://@SYSCONFDIR@/virt-builder/repos.d/opensuse.gpg
