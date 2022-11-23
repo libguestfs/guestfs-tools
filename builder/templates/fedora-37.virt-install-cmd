@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'fedora-37'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-99wfai2n' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=fedora34' \
+    '--initrd-inject=fedora-37.ks' \
+    '--extra-args=inst.ks=file:/fedora-37.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-99wfai2n.img,size=6,format=raw' \
+    '--location=https://lon.mirror.rackspace.com/fedora/releases/37/Server/x86_64/os/' \
+    '--serial=pty' \
+    '--nographics' 
+
