@@ -447,6 +447,14 @@ output_root (xmlTextWriterPtr xo, char *root)
       single_element ("hostname", str);
     free (str);
 
+#ifdef GUESTFS_HAVE_INSPECT_GET_BUILD_ID
+    str = guestfs_inspect_get_build_id (g, root);
+    if (!str) exit (EXIT_FAILURE);
+    if (STRNEQ (str, "unknown"))
+      single_element ("build_id", str);
+    free (str);
+#endif
+
     str = guestfs_inspect_get_osinfo (g, root);
     if (!str) exit (EXIT_FAILURE);
     if (STRNEQ (str, "unknown"))
