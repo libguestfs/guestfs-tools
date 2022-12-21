@@ -344,7 +344,7 @@ let run (g : G.guestfs) root (ops : ops) =
         message (f_"SSH key inject: %s") user;
         Ssh_key.do_ssh_inject_unix g user selector
       ) else
-        warning (f_"SSH key could be injected for this type of guest")
+        warning (f_"SSH key could not be injected for this type of guest")
 
     | `Truncate path ->
       message (f_"Truncating: %s") path;
