@@ -107,6 +107,7 @@ libcustomize_a_CFLAGS = \
 	$(LIBCRYPT_CFLAGS) \
 	$(LIBVIRT_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
+	$(LIBOSINFO_CFLAGS) \
 	-fPIC
 
 BOBJECTS = $(SOURCES_ML:.ml=.cmo)
@@ -127,6 +128,7 @@ OCAMLPACKAGES = \
 	-I $(top_builddir)/common/mlutils \
 	-I $(top_builddir)/common/mlgettext \
 	-I $(top_builddir)/common/mlpcre \
+	-I $(top_builddir)/common/mlxml \
 	-I $(top_builddir)/common/mltools \
 	-I $(top_builddir)/common/mlcustomize \
 	-I $(builddir)
@@ -159,6 +161,7 @@ OCAMLLINKFLAGS = \
 	mlguestfs.$(MLARCHIVE) \
 	mlgettext.$(MLARCHIVE) \
 	mlpcre.$(MLARCHIVE) \
+	mlxml.$(MLARCHIVE) \
 	mlcutils.$(MLARCHIVE) \
 	mltools.$(MLARCHIVE) \
 	mlcustomize.$(MLARCHIVE) \
@@ -173,6 +176,7 @@ OCAMLCLIBS = \
 	$(LIBCRYPT_LIBS) \
 	$(LIBVIRT_LIBS) \
 	$(LIBXML2_LIBS) \
+	$(LIBOSINFO_LIBS) \
 	$(LIBINTL) \
 	-lgnu
 
@@ -186,6 +190,7 @@ virt_customize_DEPENDENCIES = \
 	../common/mlutils/mlcutils.$(MLARCHIVE) \
 	../common/mlgettext/mlgettext.$(MLARCHIVE) \
 	../common/mlpcre/mlpcre.$(MLARCHIVE) \
+	../common/mlxml/mlxml.$(MLARCHIVE) \
 	../common/mltools/mltools.$(MLARCHIVE) \
 	../common/mlcustomize/mlcustomize.$(MLARCHIVE)
 virt_customize_LINK = \

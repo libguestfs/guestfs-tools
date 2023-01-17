@@ -152,7 +152,8 @@ virt_builder_CFLAGS = \
 	$(LIBGUESTFS_CFLAGS) \
 	$(LIBLZMA_CFLAGS) \
 	$(LIBTINFO_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBOSINFO_CFLAGS)
 
 BOBJECTS = $(SOURCES_ML:.ml=.cmo)
 XOBJECTS = $(BOBJECTS:.cmo=.cmx)
@@ -204,6 +205,7 @@ OCAMLCLIBS = \
 	$(LIBGUESTFS_LIBS) \
 	$(LIBLZMA_LIBS) \
 	$(LIBXML2_LIBS) \
+	$(LIBOSINFO_LIBS) \
 	$(JANSSON_LIBS) \
 	$(LIBINTL) \
 	-lgnu
@@ -233,6 +235,7 @@ OCAMLLINKFLAGS = \
 virt_builder_DEPENDENCIES = \
 	$(OBJECTS) \
 	../common/mlpcre/mlpcre.$(MLARCHIVE) \
+	../common/mlxml/mlxml.$(MLARCHIVE) \
 	../common/mlgettext/mlgettext.$(MLARCHIVE) \
 	../common/mlstdutils/mlstdutils.$(MLARCHIVE) \
 	../common/mlutils/mlcutils.$(MLARCHIVE) \

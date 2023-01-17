@@ -107,6 +107,23 @@ let run (g : G.guestfs) root (ops : ops) =
     Hashtbl.replace passwords user pw
   in
 
+  (* Helper function to convert --inject-qemu-ga/--inject-virtio-win
+   * method parameter into a virtio-win handle.
+   *)
+  let get_virtio_win_handle op meth =
+    if g#inspect_get_type root <> "windows" then (
+        warning (f_"%s ignored for non-Windows guest") op;
+        None
+    )
+    else (
+      match meth with
+      | "osinfo" | "libosinfo" ->
+         Some (Inject_virtio_win.from_libosinfo g root)
+      | path ->
+         Some (Inject_virtio_win.from_path g root path)
+    )
+  in
+
   (* Perform the remaining customizations in command-line order. *)
   List.iter (
     function
@@ -180,6 +197,33 @@ let run (g : G.guestfs) root (ops : ops) =
       message (f_"Setting the hostname: %s") hostname;
       if not (Hostname.set_hostname g root hostname) then
         warning (f_"hostname could not be set for this type of guest")
+
+    | `InjectQemuGA meth ->
+       (match get_virtio_win_handle "--inject-qemu-ga" meth with
+        | None -> ()
+        | Some t ->
+           if not (Inject_virtio_win.inject_qemu_ga t) then
+             warning (f_"--inject-qemu-ga: QEMU Guest Agent MSI not found in \
+                         virtio-win source that you specified")
+       )
+
+    | `InjectVirtioWin meth ->
+       (match get_virtio_win_handle "--inject-virtio-win" meth with
+        | None -> ()
+        | Some t ->
+           let windows_system_hive = g#inspect_get_windows_system_hive root in
+           Registry.with_hive_write g windows_system_hive (
+             fun reg ->
+               let installed =
+                 Inject_virtio_win.inject_virtio_win_drivers t reg in
+
+               (* Warn if we didn't install at least the virtio-blk driver. *)
+               if installed.block_driver <> Inject_virtio_win.Virtio_blk then
+                 warning (f_"--inject-virtio-win: virtio drivers were not \
+                             found for this Windows version in the \
+                             virtio-win source that you specified")
+             )
+       )
 
     | `InstallPackages pkgs ->
       message (f_"Installing packages: %s") (String.concat " " pkgs);

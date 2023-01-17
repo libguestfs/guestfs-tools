@@ -102,7 +102,8 @@ virt_sysprep_CPPFLAGS = \
 	-I$(top_srcdir)/lib
 virt_sysprep_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBXML2_CFLAGS)
+	$(LIBXML2_CFLAGS) \
+	$(LIBOSINFO_CFLAGS)
 
 BOBJECTS = $(SOURCES_ML:.ml=.cmo)
 XOBJECTS = $(BOBJECTS:.cmo=.cmx)
@@ -118,6 +119,7 @@ OCAMLPACKAGES = \
 	-I $(top_builddir)/common/mlutils \
 	-I $(top_builddir)/common/mlgettext \
 	-I $(top_builddir)/common/mlpcre \
+	-I $(top_builddir)/common/mlxml \
 	-I $(top_builddir)/common/mlvisit \
 	-I $(top_builddir)/common/mltools \
 	-I $(top_builddir)/common/mlcustomize \
@@ -134,6 +136,7 @@ OCAMLCLIBS = \
 	$(LIBTINFO_LIBS) \
 	$(LIBCRYPT_LIBS) \
 	$(LIBXML2_LIBS) \
+	$(LIBOSINFO_LIBS) \
 	$(LIBGUESTFS_LIBS) \
 	$(LIBINTL) \
 	-lgnu
@@ -151,6 +154,7 @@ OCAMLLINKFLAGS = \
 	mlguestfs.$(MLARCHIVE) \
 	mlgettext.$(MLARCHIVE) \
 	mlpcre.$(MLARCHIVE) \
+	mlxml.$(MLARCHIVE) \
 	mlcutils.$(MLARCHIVE) \
 	mltools.$(MLARCHIVE) \
 	mlvisit.$(MLARCHIVE) \
@@ -164,6 +168,7 @@ virt_sysprep_DEPENDENCIES = \
 	../common/mlutils/mlcutils.$(MLARCHIVE) \
 	../common/mlgettext/mlgettext.$(MLARCHIVE) \
 	../common/mlpcre/mlpcre.$(MLARCHIVE) \
+	../common/mlxml/mlxml.$(MLARCHIVE) \
 	../common/mltools/mltools.$(MLARCHIVE) \
 	../common/mlcustomize/mlcustomize.$(MLARCHIVE) \
 	../customize/customize.$(MLARCHIVE) \
