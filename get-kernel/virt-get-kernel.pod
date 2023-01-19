@@ -10,7 +10,7 @@ virt-get-kernel - Extract kernel and ramdisk from guests
 
 =head1 DESCRIPTION
 
-This option extracts the kernel and initramfs from a guest.
+This program extracts the kernel and initramfs from a guest.
 
 The format of the disk image is automatically detected unless you
 specify it by using the I<--format> option.
