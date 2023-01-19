@@ -40,6 +40,7 @@ SUBDIRS += common/mlprogress
 SUBDIRS += common/mlvisit
 SUBDIRS += common/mlxml
 SUBDIRS += common/mltools
+SUBDIRS += common/mldrivers
 SUBDIRS += common/mlcustomize
 endif
 
@@ -54,6 +55,7 @@ if HAVE_OCAML
 # used by other OCaml tools, so these must come first.
 SUBDIRS += customize
 SUBDIRS += builder builder/templates
+SUBDIRS += drivers
 SUBDIRS += get-kernel
 SUBDIRS += resize
 SUBDIRS += sparsify
@@ -119,7 +121,7 @@ po/POTFILES: configure.ac
 po/POTFILES-ml: configure.ac
 	rm -f $@ $@-t
 	cd $(srcdir); \
-	find builder common/ml* customize dib get-kernel resize sparsify sysprep -name '*.ml' | \
+	find builder common/ml* customize dib drivers get-kernel resize sparsify sysprep -name '*.ml' | \
 	grep -v '^builder/templates/' | \
 	grep -v '^common/mlv2v/' | \
 	grep -v -E '.*_tests\.ml$$' | \

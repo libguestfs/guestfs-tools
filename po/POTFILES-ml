@@ -22,6 +22,10 @@ common/mlcustomize/customize_cmdline.ml
 common/mlcustomize/firstboot.ml
 common/mlcustomize/guest_packages.ml
 common/mlcustomize/inject_virtio_win.ml
+common/mldrivers/firmware.ml
+common/mldrivers/linux.ml
+common/mldrivers/linux_bootloaders.ml
+common/mldrivers/linux_kernels.ml
 common/mlgettext/common_gettext.ml
 common/mlpcre/PCRE.ml
 common/mlprogress/progress.ml
@@ -29,6 +33,7 @@ common/mlstdutils/guestfs_config.ml
 common/mlstdutils/std_utils.ml
 common/mlstdutils/stringMap.ml
 common/mlstdutils/stringSet.ml
+common/mltools/DOM.ml
 common/mltools/JSON.ml
 common/mltools/JSON_parser.ml
 common/mltools/URI.ml
@@ -72,6 +77,7 @@ dib/output_format_tar.ml
 dib/output_format_tgz.ml
 dib/output_format_vhd.ml
 dib/utils.ml
+drivers/drivers.ml
 get-kernel/get_kernel.ml
 resize/resize.ml
 sparsify/cmdline.ml

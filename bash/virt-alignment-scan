@@ -127,6 +127,12 @@ _virt_diff ()
 } &&
 complete -o default -F _virt_diff virt-diff
 
+_virt_drivers ()
+{
+    _guestfs_virttools "virt-drivers" 1
+} &&
+complete -o default -F _virt_drivers virt-drivers
+
 _virt_edit ()
 {
     _guestfs_virttools "virt-edit" 0

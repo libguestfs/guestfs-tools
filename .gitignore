@@ -32,6 +32,7 @@ Makefile.in
 /bash/virt-df
 /bash/virt-dib
 /bash/virt-diff
+/bash/virt-drivers
 /bash/virt-edit
 /bash/virt-filesystems
 /bash/virt-format
@@ -97,6 +98,8 @@ Makefile.in
 /dib/.depend
 /dib/output_format_*.mli
 /dib/virt-dib
+/drivers/.depend
+/drivers/virt-drivers
 /diff/virt-diff
 /edit/virt-edit
 /format/virt-format

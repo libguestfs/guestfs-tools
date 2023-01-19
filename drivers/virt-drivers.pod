@@ -1,24 +1,93 @@
 =head1 NAME
 
-virt-get-kernel - Extract kernel and ramdisk from guests
+virt-drivers - Detect bootloader, kernel and drivers inside guest
 
 =head1 SYNOPSIS
 
- virt-get-kernel [--options] -d domname
+ virt-drivers [--options] -d domname
 
- virt-get-kernel [--options] -a disk.img
+ virt-drivers [--options] -a disk.img
 
 =head1 DESCRIPTION
 
-This program extracts the kernel and initramfs from a guest.
+This tool can detect the bootloader, kernel and drivers inside some
+guests from only the disk image.  It can detect, for example, whether
+a disk image needs BIOS or UEFI to boot, and whether it supports
+virtio or requires slower emulated devices.
 
-The format of the disk image is automatically detected unless you
-specify it by using the I<--format> option.
+=head2 Notes
 
-In the case where the guest contains multiple kernels, the one with
-the highest version number is chosen.  To extract arbitrary kernels
-from the disk image, see L<guestfish(1)>.  To extract the entire
-C</boot> directory of a guest, see L<virt-copy-out(1)>.
+Normally you should distribute hypervisor metadata (eg. libvirt XML or
+OVF) alongside disk images to tell the hypervisor how to boot them.
+This tool is used when this metadata has not been provided.  Work with
+the supplier of the disk image to get them to provide proper metadata.
+
+This tool best supports Linux at present, and only has outline support
+for Windows.  Windows support will be enhanced in a future release of
+guestfs-tools.
+
+=head1 XML FORMAT
+
+The output is an XML document.  At the top level it lists the
+operating systems found (the same as L<virt-inspector(1)>):
+
+ <operatingsystems>
+   <operatingsystem>
+     <root>/dev/sda2</root>
+     <name>linux</name>
+     <arch>x86_64</arch>
+     <distro>fedora</distro>
+     ...
+   </operatingsystem>
+   <operatingsystem>
+     <root>/dev/sdb1</root>
+     ...
+   </operatingsystem>
+ </operatingsystems>
+
+=head2 E<lt>firmwareE<gt>
+
+The E<lt>firmwareE<gt> element lists the firmware which is required to
+boot the guest.  For UEFI it will additionally show the EFI system
+partition ("ESP").  Guests may support multiple boot firmwares.  For
+example this guest is detected as using UEFI boot, and the UEFI ESP is
+the first partition of the first disk:
+
+ <operatingsystems>
+   <firmware type='uefi'>/dev/sda1</firmware>
+   <operatingsystem>
+     ...
+
+=head2 E<lt>bootloaderE<gt> and E<lt>kernelE<gt>
+
+The E<lt>bootloaderE<gt> element shows the bootloader found in the
+guest.  If known, this may contain information about what OS kernels
+are provided.  For example:
+
+ <operatingsystems>
+   <firmware type='bios'/>
+   <operatingsystem>
+     <root>/dev/sda2</root>
+     <name>linux</name>
+     ...
+     <bootloader type='grub2' config='/boot/grub2/grub.cfg'>
+       <kernel>
+         <name>kernel</name>
+         <version>6.1.0-0.rc6.46.fc38.x86_64</version>
+         <vmlinuz>/boot/vmlinuz-6.1.0-0.rc6.46.fc38.x86_64</vmlinuz>
+         <modules>
+           ...
+         </modules>
+         <supports_virtio_blk/>
+         <supports_virtio_net/>
+         ...
+       </kernel>
+     </bootloader>
+
+Many more fields are usually available for Linux guests, including a
+complete list of kernel modules and information about support for
+virtio.  For a complete example see:
+L<https://github.com/rwmjones/guestfs-tools/tree/master/drivers>
 
 =head1 OPTIONS
 
@@ -101,50 +170,11 @@ __INCLUDE:key-option.pod__
 
 __INCLUDE:keys-from-stdin-option.pod__
 
-=item B<--machine-readable>
-
-=item B<--machine-readable>=format
-
-This option is used to make the output more machine friendly
-when being parsed by other programs.  See
-L</MACHINE READABLE OUTPUT> below.
-
-=item B<-o> directory
-
-=item B<--output> directory
-
-This option specifies the output directory where kernel and initramfs
-from the guest are written.
-
-If not specified, the default output is the current directory.
-
-=item B<--prefix> prefix
-
-This option specifies a prefix for the extracted files.
-
-If a prefix is specified, then there will be a dash (C<->) after the
-prefix and before the rest of the file name; for example, a kernel
-in the guest like C<vmlinuz-3.19.0-20-generic> is saved as
-C<mydistro-vmlinuz-3.19.0-20-generic> when the prefix is C<mydistro>.
-
-See also I<--unversioned-names>.
-
 =item B<-q>
 
 =item B<--quiet>
 
 Don’t print ordinary progress messages.
-
-=item B<--unversioned-names>
-
-This option affects the destination file name of extracted files.
-
-If enabled, files will be saved locally just with the base name;
-for example, kernel and ramdisk in the guest like
-C<vmlinuz-3.19.0-20-generic> and C<initrd.img-3.19.0-20-generic>
-are saved respectively as C<vmlinuz> and C<initrd.img>.
-
-See also I<--prefix>.
 
 =item B<-v>
 
@@ -170,24 +200,6 @@ Enable tracing of libguestfs API calls.
 
 =back
 
-=head1 MACHINE READABLE OUTPUT
-
-The I<--machine-readable> option can be used to make the output more
-machine friendly, which is useful when calling virt-get-kernel from
-other programs, GUIs etc.
-
-Use the option on its own to query the capabilities of the
-virt-get-kernel binary.  Typical output looks like this:
-
- $ virt-get-kernel --machine-readable
- virt-get-kernel
-
-A list of features is printed, one per line, and the program exits
-with status 0.
-
-It is possible to specify a format string for controlling the output;
-see L<guestfs(3)/ADVANCED MACHINE READABLE OUTPUT>.
-
 =head1 ENVIRONMENT VARIABLES
 
 For other environment variables which affect all libguestfs programs,
@@ -203,8 +215,9 @@ error.
 L<guestfs(3)>,
 L<guestfish(1)>,
 L<guestmount(1)>,
-L<virt-copy-out(1)>,
-L<virt-drivers(1)>,
+L<virt-get-kernel(1)>,
+L<virt-inspector(1)>,
+L<virt-v2v(1)>,
 L<http://libguestfs.org/>.
 
 =head1 AUTHOR
@@ -213,4 +226,4 @@ Richard W.M. Jones L<http://people.redhat.com/~rjones/>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2013-2020 Red Hat Inc.
+Copyright (C) 2009-2023 Red Hat Inc.

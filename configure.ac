@@ -115,6 +115,7 @@ AC_CONFIG_FILES([Makefile
                  cat/Makefile
                  common/edit/Makefile
                  common/mlcustomize/Makefile
+                 common/mldrivers/Makefile
                  common/mlgettext/Makefile
                  common/mlpcre/Makefile
                  common/mlprogress/Makefile
@@ -137,6 +138,7 @@ AC_CONFIG_FILES([Makefile
                  df/Makefile
                  dib/Makefile
                  diff/Makefile
+                 drivers/Makefile
                  edit/Makefile
                  format/Makefile
                  get-kernel/Makefile

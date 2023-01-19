@@ -260,6 +260,7 @@ error.
 L<df(1)>,
 L<guestfs(3)>,
 L<guestfish(1)>,
+L<virt-drivers(1)>,
 L<virt-filesystems(1)>,
 L<http://libguestfs.org/>.
 

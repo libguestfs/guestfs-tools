@@ -49,6 +49,9 @@ L<guestfs(3)/INSPECTION>).  The same information can also be fetched
 using guestfish or via libguestfs bindings in many programming
 languages (see L</GETTING INSPECTION DATA FROM THE LIBGUESTFS API>).
 
+Additional information about bootloader, kernel and drivers inside a
+guest can be found using L<virt-drivers(1)>.
+
 =head1 OPTIONS
 
 =over 4
@@ -495,6 +498,7 @@ L<guestfish(1)>,
 L<http://www.w3.org/TR/xpath/>,
 L<base64(1)>,
 L<xmlstarlet(1)>,
+L<virt-drivers(1)>,
 L<http://libguestfs.org/>.
 
 =head1 AUTHORS
