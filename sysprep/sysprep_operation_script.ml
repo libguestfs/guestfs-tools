@@ -132,7 +132,9 @@ B<Note:> This is different from I<--firstboot> scripts (which run
 in the context of the guest when it is booting first time).
 I<--script> scripts run on the host, not in the guest.");
     extra_args = [
-      { extra_argspec = [ L"scriptdir" ], Getopt.String (s_"dir", set_scriptdir), s_"Mount point on host";
+      { extra_argspec = [ L"scriptdir" ],
+                        Getopt.String (s_"dir", set_scriptdir),
+                        s_"Mount point on host";
         extra_pod_argval = Some "SCRIPTDIR";
         extra_pod_description = s_"\
 The mount point (an empty directory on the host) used when
@@ -145,7 +147,9 @@ If I<--scriptdir> is not specified then a temporary mountpoint
 will be created."
       };
 
-      { extra_argspec = [ L"script" ], Getopt.String (s_"script", add_script), s_"Script or program to run on guest";
+      { extra_argspec = [ L"script" ],
+                        Getopt.String (s_"script", add_script),
+                        s_"Script or program to run on guest";
         extra_pod_argval = Some "SCRIPT";
         extra_pod_description = s_"\
 Run the named C<SCRIPT> (a shell script or program) against the

@@ -68,7 +68,8 @@ A short summary of the options is given below.  For detailed help please
 read the man page virt-builder-repository(1).
 ")
       prog in
-  let opthandle = create_standard_options argspec ~anon_fun ~machine_readable:true usage_msg in
+  let opthandle = create_standard_options argspec
+                    ~anon_fun ~machine_readable:true usage_msg in
   Getopt.parse opthandle.getopt;
 
   (* Machine-readable mode?  Print out some facts about what
@@ -97,7 +98,8 @@ read the man page virt-builder-repository(1).
 
 Use ‘/path/to/repo’ to point to the repository folder.")
     | _ ->
-      error (f_"too many parameters, only one path to repository is allowed") in
+      error (f_"too many parameters, \
+                only one path to repository is allowed") in
 
   {
     gpg = gpg;
@@ -217,7 +219,8 @@ let process_image acc_entries filename repo tmprepo index interactive
       id in
 
   let ask_arch guess =
-    let arches = [ "x86_64"; "aarch64"; "armv7l"; "i686"; "ppc64"; "ppc64le"; "s390x" ] in
+    let arches = [ "x86_64"; "aarch64"; "armv7l";
+                   "i686"; "ppc64"; "ppc64le"; "s390x" ] in
     Index.Arch (ask (s_"Architecture: ") ~default:guess ~values:arches)
   in
 
@@ -225,7 +228,8 @@ let process_image acc_entries filename repo tmprepo index interactive
     let osinfo = ask (s_ "osinfo short ID: ") ~default in
     let osinfo_ids = osinfo_get_short_ids () in
     if not (StringSet.mem osinfo osinfo_ids) then
-      warning (f_"‘%s’ is not a recognized osinfo OS id; using it anyway") osinfo;
+      warning (f_"‘%s’ is not a recognized osinfo OS id; using it anyway")
+        osinfo;
     osinfo in
 
   let extract_entry_data ?entry () =
@@ -237,7 +241,8 @@ let process_image acc_entries filename repo tmprepo index interactive
     let roots = g#inspect_os () in
     let nroots = Array.length roots in
     if nroots <> 1 then
-      error (f_"virt-builder template images must have one and only one root file system, found %d")
+      error (f_"virt-builder template images must have \
+                one and only one root file system, found %d")
             nroots;
 
     let root = Array.get roots 0 in
@@ -274,7 +279,8 @@ let process_image acc_entries filename repo tmprepo index interactive
         match arch with
         | Index.Arch arch
         | Index.GuessedArch arch -> arch in
-      error (f_"Already existing image with id %s and architecture %s") id arch
+      error (f_"Already existing image with id %s and architecture %s")
+        id arch
     );
 
     let printable_name =
@@ -451,7 +457,8 @@ let main () =
 
   (* Check for index/interactive consistency *)
   if not cmdline.interactive && index = [] then
-    error (f_"the repository must contain an index file when running in automated mode");
+    error (f_"the repository must contain an index file when \
+              running in automated mode");
 
   debug "Searching for images ...";
 

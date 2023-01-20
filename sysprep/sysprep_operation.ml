@@ -224,8 +224,8 @@ let dump_pod_options () =
 
     | (op_name,
        { extra_argspec = (arg_names,
-                          (Getopt.String _ | Getopt.Set_string _ | Getopt.Int _ |
-                           Getopt.Set_int _ | Getopt.Symbol _),
+                          (Getopt.String _ | Getopt.Set_string _ |
+                           Getopt.Int _ | Getopt.Set_int _ | Getopt.Symbol _),
                           _);
          extra_pod_argval = Some arg_val;
          extra_pod_description = pod }) ->
@@ -243,7 +243,8 @@ let dump_pod_options () =
   let args = List.flatten args in
 
   let args =
-    List.sort (fun (a, _) (b, _) -> Getopt.compare_command_line_args a b) args in
+    List.sort (fun (a, _) (b, _) ->
+        Getopt.compare_command_line_args a b) args in
 
   List.iter (
     fun (arg_name, (op_name, heading, pod)) ->

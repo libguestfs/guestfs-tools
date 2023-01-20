@@ -30,7 +30,8 @@ and c_section = string * c_fields             (* [name] + fields *)
 and c_fields = field array
 
 (* Calls yyparse in the C code. *)
-external parse_index : prog:string -> error_suffix:string -> string -> c_sections = "virt_builder_parse_index"
+external parse_index : prog:string -> error_suffix:string -> string ->
+                       c_sections = "virt_builder_parse_index"
 
 let read_ini ?(error_suffix = "") file =
   let sections = parse_index ~prog ~error_suffix file in

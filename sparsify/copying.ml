@@ -65,12 +65,14 @@ let run indisk outdisk check_tmpdir compress convert
         (* Don't know, so we must autodetect. *)
         match (open_guestfs ())#disk_format indisk  with
         | "unknown" ->
-          error (f_"cannot detect input disk format; use the --format parameter")
+          error (f_"cannot detect input disk format; use the \
+                    --format parameter")
         | fmt -> fmt in
 
   (* Compression is not supported by raw output (RHBZ#852194). *)
   if output_format = "raw" && compress then
-    error (f_"--compress cannot be used for raw output.  Remove this option or use --convert qcow2.");
+    error (f_"--compress cannot be used for raw output.  \
+              Remove this option or use --convert qcow2.");
 
   (* Use TMPDIR or --tmp parameter? *)
   let tmp_place =
@@ -90,7 +92,8 @@ let run indisk outdisk check_tmpdir compress convert
           file;
       Prebuilt_file file
     | Some path ->
-      error (f_"--tmp parameter must point to a directory, block device or prebuilt file") in
+      error (f_"--tmp parameter must point to a directory, block device \
+                or prebuilt file") in
 
   (* Check there is enough space in temporary directory. *)
   (match tmp_place with
@@ -342,4 +345,5 @@ You can ignore this warning or change it to a hard failure using the
   (* Finished. *)
   message (f_"Sparsify operation completed with no errors.");
   if not (quiet ()) then
-    info (f_"Before deleting the old disk, carefully check that the target disk boots and works correctly.")
+    info (f_"Before deleting the old disk, carefully check that the \
+             target disk boots and works correctly.")

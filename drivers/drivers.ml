@@ -37,7 +37,8 @@ let parse_cmdline () =
     let uri =
       try URI.parse_uri arg
       with URI.Parse_failed ->
-        error (f_"error parsing URI '%s'. Look for error messages printed above.") arg in
+        error (f_"error parsing URI '%s'. \
+                  Look for error messages printed above.") arg in
     file := Some uri
   and set_domain dom =
     if !domain <> None then

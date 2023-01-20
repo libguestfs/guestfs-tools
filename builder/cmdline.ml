@@ -190,7 +190,8 @@ A short summary of the options is given below.  For detailed help please
 read the man page virt-builder(1).
 ")
       prog in
-  let opthandle = create_standard_options argspec ~anon_fun ~machine_readable:true usage_msg in
+  let opthandle = create_standard_options argspec
+                    ~anon_fun ~machine_readable:true usage_msg in
   Getopt.parse opthandle.getopt;
 
   (* Dereference options. *)
@@ -236,7 +237,8 @@ read the man page virt-builder(1).
       (match args with
       | [arg] -> arg
       | [] ->
-        error (f_"virt-builder os-version\nMissing ‘os-version’. Use ‘--list’ to list available template names.")
+        error (f_"virt-builder os-version\nMissing ‘os-version’. \
+                  Use ‘--list’ to list available template names.")
       | _ ->
         error (f_"too many parameters, expecting ‘os-version’")
       )
@@ -247,13 +249,15 @@ read the man page virt-builder(1).
       | [arg] -> arg
       | [] -> ""
       | _ ->
-        error (f_"too many parameters, at most one ‘os-version’ is allowed for --list")
+        error (f_"too many parameters, at most one ‘os-version’ \
+                  is allowed for --list")
       )
     | `Notes ->
       (match args with
       | [arg] -> arg
       | [] ->
-        error (f_"virt-builder --notes os-version\nMissing ‘os-version’. Use ‘--list’ to list available template names.")
+        error (f_"virt-builder --notes os-version\nMissing ‘os-version’. \
+                  Use ‘--list’ to list available template names.")
       | _ ->
         error (f_"--notes: too many parameters, expecting ‘os-version’");
       )
@@ -263,13 +267,15 @@ read the man page virt-builder(1).
       (match args with
       | [] -> ""
       | _ ->
-        error (f_"--cache-all-templates/--print-cache/--delete-cache does not need any extra arguments")
+        error (f_"--cache-all-templates/--print-cache/--delete-cache \
+                  does not need any extra arguments")
       )
     | `Get_kernel ->
       (match args with
       | [arg] -> arg
       | [] ->
-        error (f_"virt-builder --get-kernel image\nMissing ‘image’ (disk image file) argument")
+        error (f_"virt-builder --get-kernel image\nMissing ‘image’ \
+                  (disk image file) argument")
       | _ ->
         error (f_"--get-kernel: too many parameters")
       ) in

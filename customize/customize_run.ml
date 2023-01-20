@@ -50,7 +50,10 @@ let run (g : G.guestfs) root (ops : ops) =
   let do_run ~display ?(warn_failed_no_network = false) cmd =
     let incompatible_fn () =
       let guest_arch = g#inspect_get_arch root in
-      error (f_"host cpu (%s) and guest arch (%s) are not compatible, so you cannot use command line options that involve running commands in the guest.  Use --firstboot scripts instead.")
+      error (f_"host cpu (%s) and guest arch (%s) are not compatible, \
+                so you cannot use command line options that involve \
+                running commands in the guest.  Use --firstboot scripts \
+                instead.")
             Guestfs_config.host_cpu guest_arch
     in
 
@@ -61,7 +64,9 @@ let run (g : G.guestfs) root (ops : ops) =
         debug_logfile ();
         if warn_failed_no_network && not (g#get_network ()) then (
           prerr_newline ();
-          warning (f_"the command may have failed because the network is disabled.  Try either removing ‘--no-network’ or adding ‘--network’ on the command line.");
+          warning (f_"the command may have failed because the network is \
+                      disabled.  Try either removing ‘--no-network’ or \
+                      adding ‘--network’ on the command line.");
           prerr_newline ()
         );
         error (f_"%s: command exited with an error") display
@@ -103,7 +108,8 @@ let run (g : G.guestfs) root (ops : ops) =
   let passwords = Hashtbl.create 13 in
   let set_password user pw =
     if Hashtbl.mem passwords user then
-      error (f_"multiple --root-password/--password options set the password for user ‘%s’ twice") user;
+      error (f_"multiple --root-password/--password options set the \
+                password for user ‘%s’ twice") user;
     Hashtbl.replace passwords user pw
   in
 
@@ -132,7 +138,9 @@ let run (g : G.guestfs) root (ops : ops) =
         * to prevent incorrect line endings being added to a file.
         *)
        if String.contains line '\n' then
-         error (f_"--append-line: line must not contain newline characters.  Use the --append-line option multiple times to add several lines.");
+         error (f_"--append-line: line must not contain newline characters.  \
+                   Use the --append-line option multiple times to add \
+                   several lines.");
 
        message (f_"Appending line to %s") path;
        append_line g root path line
@@ -277,9 +285,11 @@ let run (g : G.guestfs) root (ops : ops) =
       let creds =
         match ops.flags.sm_credentials with
         | None ->
-          error (f_"subscription-manager credentials required for --sm-register")
+          error (f_"subscription-manager credentials required for \
+                    --sm-register")
         | Some c -> c in
-      let cmd = sprintf "subscription-manager register --username=%s --password=%s"
+      let cmd = sprintf "subscription-manager register \
+                         --username=%s --password=%s"
                   (quote creds.Subscription_manager.sm_username)
                   (quote creds.Subscription_manager.sm_password) in
       do_run ~display:"subscription-manager register"

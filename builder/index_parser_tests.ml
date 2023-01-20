@@ -58,7 +58,8 @@ let parse_file file =
                                        ~sigchecker:dummy_sigchecker
                                        source in
   List.map (
-    fun (id, e) -> (id, { e with Index.file_uri = Filename.basename e.Index.file_uri })
+    fun (id, e) -> (id, { e with Index.file_uri =
+                                   Filename.basename e.Index.file_uri })
   ) entries
 
 let format_entries entries =
@@ -88,7 +89,9 @@ let test_write_complete ctx =
            compressed_size = Some (Int64.of_int 12345);
            expand = Some "/dev/sda1";
            lvexpand = Some "/some/lv";
-           notes = [ ("", "Notes split\non several lines\n\n with starting space ") ];
+           notes = [ ("",
+                      "Notes split\non several lines\n\n with starting space ")
+                   ];
            hidden = false;
            aliases = Some ["alias1"; "alias2"];
            sigchecker = dummy_sigchecker;

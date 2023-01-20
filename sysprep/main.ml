@@ -58,7 +58,8 @@ let main () =
       let uri =
         try URI.parse_uri arg
         with URI.Parse_failed ->
-          error (f_"error parsing URI ‘%s’. Look for error messages printed above.") arg in
+          error (f_"error parsing URI ‘%s’. \
+                    Look for error messages printed above.") arg in
       let format = match !format with "auto" -> None | fmt -> Some fmt in
       List.push_front (uri, format) files;
       format_consumed := true
@@ -103,7 +104,8 @@ let main () =
           | `Add "" | `Remove "" ->
             error (f_"--operations: empty operation name")
           | `Add "defaults" -> Sysprep_operation.add_defaults_to_set opset
-          | `Remove "defaults" -> Sysprep_operation.remove_defaults_from_set opset
+          | `Remove "defaults" ->
+             Sysprep_operation.remove_defaults_from_set opset
           | `Add "all" -> Sysprep_operation.add_all_to_set opset
           | `Remove "all" -> Sysprep_operation.remove_all_from_set opset
           | `Add n | `Remove n ->
@@ -161,7 +163,8 @@ read the man page virt-sysprep(1).
     let add =
       match files, domain with
       | [], None ->
-        error (f_"you must give either -a or -d options.  Read virt-sysprep(1) man page for further information.")
+        error (f_"you must give either -a or -d options.  \
+                  Read virt-sysprep(1) man page for further information.")
       | [], Some dom ->
         fun (g : Guestfs.guestfs) readonly ->
           let allowuuid = true in
@@ -172,7 +175,8 @@ read the man page virt-sysprep(1).
                     ?libvirturi ~allowuuid ~readonlydisk
                     dom)
       | _::_, Some _ ->
-        error (f_"you cannot give -a and -d options together.  Read virt-sysprep(1) man page for further information.")
+        error (f_"you cannot give -a and -d options together.  \
+                  Read virt-sysprep(1) man page for further information.")
       | files, None ->
         fun g readonly ->
           List.iter (

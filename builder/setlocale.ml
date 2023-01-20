@@ -26,4 +26,5 @@ type localecategory =
   | LC_MESSAGES
 ;;
 
-external setlocale : localecategory -> string option -> string option = "virt_builder_setlocale"
+external setlocale : localecategory -> string option -> string option =
+  "virt_builder_setlocale"

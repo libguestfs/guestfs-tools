@@ -121,7 +121,8 @@ and list_entries_json ~sources index =
         let item =
           match compressed_size with
           | None -> item
-          | Some n -> ("compressed-size", JSON.String (Int64.to_string n)) :: item in
+          | Some n -> ("compressed-size",
+                       JSON.String (Int64.to_string n)) :: item in
         let item =
           let json_notes =
             List.fold_right (

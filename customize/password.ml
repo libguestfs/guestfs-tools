@@ -48,7 +48,8 @@ let password_crypto_of_string = function
   | "sha512" -> `SHA512
   | "yescrypt" -> `YESCRYPT
   | arg ->
-    error (f_"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" or \"yescrypt\"") arg
+    error (f_"password-crypto: unknown algorithm %s, \
+              use \"md5\", \"sha256\", \"sha512\" or \"yescrypt\"") arg
 
 let rec parse_selector arg =
   parse_selector_list arg (String.nsplit ":" arg)
@@ -74,7 +75,8 @@ and parse_selector_list orig_arg = function
 (* Permissible characters in a salt. *)
 let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./"
 
-let rec set_linux_passwords ?password_crypto (g : Guestfs.guestfs) root passwords =
+let rec set_linux_passwords ?password_crypto (g : Guestfs.guestfs)
+          root passwords =
   let crypto =
     match password_crypto with
     | None -> default_crypto g root
@@ -163,7 +165,8 @@ and default_crypto g root =
   | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"rocky"|
      "redhat-based"), v when v >= 9 ->
     `YESCRYPT
-  | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v when v >= 6 ->
+  | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), v
+       when v >= 6 ->
     `SHA512
   | ("rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based"), _ ->
     `MD5 (* RHEL 5 does not appear to support SHA512, according to crypt(3) *)
@@ -190,7 +193,9 @@ and default_crypto g root =
 
   | _, _ ->
     let minor = g#inspect_get_minor_version root in
-    warning (f_"password: using insecure md5 password encryption for guest of type %s version %d.%d.
-If this is incorrect, use --password-crypto option and file a bug.")
+    warning (f_"password: using insecure md5 password encryption for \
+                guest of type %s version %d.%d.\n\
+                If this is incorrect, use --password-crypto option \
+                and file a bug.")
       distro major minor;
     `MD5

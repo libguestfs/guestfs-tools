@@ -97,7 +97,8 @@ let selected_cli_item cmdline index =
         name = arg && cmdline.arch = normalize_arch (Index.string_of_arch a)
     ) index
     with Not_found ->
-      error (f_"cannot find os-version ‘%s’ with architecture ‘%s’.\nUse --list to list available guest types.")
+      error (f_"cannot find os-version ‘%s’ with architecture ‘%s’.\n\
+                Use --list to list available guest types.")
         arg cmdline.arch in
   item
 
@@ -152,7 +153,13 @@ let main () =
   if cmdline.check_signature then (
     let cmd = sprintf "%s --help >/dev/null 2>&1" cmdline.gpg in
     if cmdline.gpg = "" || shell_command cmd <> 0 then
-      error (f_"no GNU Privacy Guard (GnuPG, gpg) binary was found.\n\nEither gpg v1 or v2 can be installed to check signatures.  Virt-builder looks for a binary called either ‘gpg2’ or ‘gpg‘ on the $PATH.  You can also specify a binary using the ‘--gpg’ option.  If you don't want to check signatures, use ’--no-check-signature’ but note that this may make you vulnerable to Man-In-The-Middle attacks.")
+      error (f_"no GNU Privacy Guard (GnuPG, gpg) binary was found.\n\n\
+                Either gpg v1 or v2 can be installed to check signatures.  \
+                Virt-builder looks for a binary called either ‘gpg2’ or \
+                ‘gpg‘ on the $PATH.  You can also specify a binary using \
+                the ‘--gpg’ option.  If you don't want to check signatures, \
+                use ’--no-check-signature’ but note that this may make you \
+                vulnerable to Man-In-The-Middle attacks.")
   );
 
   (* Check that curl works. *)
@@ -291,7 +298,11 @@ let main () =
   (match cmdline.output with
    | Some device when is_partition device ->
       if cmdline.warn_if_partition then
-        warning (f_"output device (%s) is a partition.  If you are writing to a USB key or external drive then you probably need to write to the whole device, not to a partition.  If this warning is wrong then you can disable it with --no-warn-if-partition")
+        warning (f_"output device (%s) is a partition.  If you are writing \
+                    to a USB key or external drive then you probably need \
+                    to write to the whole device, not to a partition.  If \
+                    this warning is wrong then you can disable it with \
+                    --no-warn-if-partition")
                 device;
    | Some _ | None -> ()
   );
@@ -316,10 +327,17 @@ let main () =
       (match Checksums.verify_checksums csums template with
        | Checksums.Good_checksum -> ()
        | Checksums.Mismatched_checksum (csum, csum_actual) ->
-          error (f_"%s checksum of template did not match the expected checksum!\n  found checksum: %s\n  expected checksum: %s\nTry:\n - Use the ‘-v’ option and look for earlier error messages.\n - Delete the cache: virt-builder --delete-cache\n - Check no one has tampered with the website or your network!")
-                (Checksums.string_of_csum_t csum) csum_actual (Checksums.string_of_csum csum)
+          error (f_"%s checksum of template did not match the expected \
+                    checksum!\n  found checksum: %s\n  expected checksum: %s\n\
+                    Try:\n - Use the ‘-v’ option and look for earlier error \
+                    messages.\n - Delete the cache: \
+                    virt-builder --delete-cache\n - Check no one has tampered \
+                    with the website or your network!")
+                (Checksums.string_of_csum_t csum) csum_actual
+                (Checksums.string_of_csum csum)
        | Checksums.Missing_file ->
-          error (f_"%s: template not downloaded or deleted.  You may have run ‘virt-builder --delete-cache’ in parallel.")
+          error (f_"%s: template not downloaded or deleted.  You may have \
+                    run ‘virt-builder --delete-cache’ in parallel.")
                 template
       )
 
@@ -391,10 +409,14 @@ let main () =
       | None -> blockdev_size in
 
     if size < original_image_size then
-      error (f_"images cannot be shrunk, the output size is too small for this image.  Requested size = %s, minimum size = %s")
+      error (f_"images cannot be shrunk, the output size is too small \
+                for this image.  Requested size = %s, minimum size = %s")
         (human_size size) (human_size original_image_size)
-    else if output_is_block_dev && output_format = "raw" && size > blockdev_size then
-      error (f_"output size is too large for this block device.  Requested size = %s, output block device = %s, output block device size = %s")
+    else if output_is_block_dev &&
+              output_format = "raw" && size > blockdev_size then
+      error (f_"output size is too large for this block device.  Requested \
+                size = %s, output block device = %s, output \
+                block device size = %s")
         (human_size size) output_filename (human_size blockdev_size);
     size in
 
@@ -558,7 +580,10 @@ let main () =
     match plan ~max_depth:5 transitions itags ~must ~must_not with
     | Some plan -> plan
     | None ->
-       error (f_"no plan could be found for making a disk image with\nthe required size, format etc. This is a bug in libguestfs!\nPlease file a bug, giving the command line arguments you used.") in
+       error (f_"no plan could be found for making a disk image with\n\
+                 the required size, format etc. \
+                 This is a bug in libguestfs!\nPlease file a bug, giving \
+                 the command line arguments you used.") in
 
   (* Print out the plan. *)
   if verbose () then (
@@ -642,7 +667,8 @@ let main () =
       let { Index.expand; lvexpand } = entry in
       message (f_"Resizing (using virt-resize) to expand the disk to %s")
         (human_size osize);
-      let preallocation = if oformat = "qcow2" then Some "metadata" else None in
+      let preallocation =
+        if oformat = "qcow2" then Some "metadata" else None in
       let () =
         let g = open_guestfs () in
         g#disk_create ?preallocation ofile oformat osize in
@@ -666,7 +692,8 @@ let main () =
       let ofile = List.assoc `Filename otags in
       let osize = Int64.of_string (List.assoc `Size otags) in
       let osize = roundup64 osize 512L in
-      message (f_"Resizing container (but not filesystems) to expand the disk to %s")
+      message (f_"Resizing container (but not filesystems) to \
+                  expand the disk to %s")
         (human_size osize);
       let cmd = sprintf "qemu-img resize %s %Ld%s"
         (quote ofile) osize (if verbose () then "" else " >/dev/null") in
@@ -720,7 +747,9 @@ let main () =
       inspect_mount_root g root;
       root
     | _ ->
-      error (f_"no guest operating systems or multiboot OS found in this disk image\nThis is a failure of the source repository.  Use -v for more information.")
+      error (f_"no guest operating systems or multiboot OS \
+                found in this disk image\nThis is a failure \
+                of the source repository.  Use -v for more information.")
   in
 
   Customize_run.run g root cmdline.customize_ops;

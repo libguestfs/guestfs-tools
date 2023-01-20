@@ -33,7 +33,8 @@ let ca_certificates_perform (g : Guestfs.guestfs) root side_effects =
     let excepts = [ "/etc/pki/tls/certs/ca-bundle.crt";
                     "/etc/pki/tls/certs/ca-bundle.trust.crt"; ] in
     (* Thanks Rich for this StringSet method *)
-    let paths = List.concat (List.map Array.to_list (List.map g#glob_expand paths)) in
+    let paths = List.concat (List.map Array.to_list
+                               (List.map g#glob_expand paths)) in
     let set = List.fold_right StringSet.add paths StringSet.empty in
     let excepts = List.fold_right StringSet.add excepts StringSet.empty in
     let set = StringSet.diff set excepts in

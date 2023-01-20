@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.49.10\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2023-01-26 21:43+0000\n"
+"POT-Creation-Date: 2023-02-06 15:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,21 +22,21 @@ msgstr ""
 msgid "  %s: already provided by %s"
 msgstr ""
 
-#: resize/resize.ml:980
+#: resize/resize.ml:1029
 msgid "  An extra partition will be created for the surplus."
 msgstr ""
 
-#: resize/resize.ml:954 resize/resize.ml:923
+#: resize/resize.ml:1001 resize/resize.ml:967
 msgid "  The %s on %s will be expanded using the ‘%s’ method."
 msgstr ""
 
-#: resize/resize.ml:982
+#: resize/resize.ml:1031
 msgid ""
 "  The surplus space is not large enough for an extra partition to be created "
 "and so it will just be ignored."
 msgstr ""
 
-#: resize/resize.ml:984
+#: resize/resize.ml:1034
 msgid ""
 "  The surplus space will be ignored.  Run a partitioning program in the "
 "guest to partition this extra space if you want."
@@ -52,11 +52,11 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: customize/customize_run.ml:402 common/mltools/tools_utils.ml:686
+#: customize/customize_run.ml:412 common/mltools/tools_utils.ml:686
 msgid "%s (ignored)"
 msgstr ""
 
-#: builder/builder.ml:319
+#: builder/builder.ml:330
 msgid ""
 "%s checksum of template did not match the expected checksum!\n"
 "  found checksum: %s\n"
@@ -71,11 +71,11 @@ msgstr ""
 msgid "%s did not return any output"
 msgstr ""
 
-#: customize/customize_run.ml:173
+#: customize/customize_run.ml:181
 msgid "%s does not exist in the guest"
 msgstr ""
 
-#: customize/customize_run.ml:115
+#: customize/customize_run.ml:121
 msgid "%s ignored for non-Windows guest"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgstr ""
 msgid "%s is not a Simple Streams (products) v1.0 JSON file (format: %s)"
 msgstr ""
 
-#: customize/customize_run.ml:176
+#: customize/customize_run.ml:184
 msgid "%s is not a regular file in the guest"
 msgstr ""
 
@@ -109,7 +109,7 @@ msgid ""
 "%!"
 msgstr ""
 
-#: resize/resize.ml:706
+#: resize/resize.ml:733
 msgid ""
 "%s: This extended partition contains logical partitions which might be "
 "damaged by shrinking it.  If you want to shrink this partition, you need to "
@@ -118,11 +118,11 @@ msgid ""
 "line.)"
 msgstr ""
 
-#: resize/resize.ml:951
+#: resize/resize.ml:997
 msgid "%s: This logical volume will be expanded to maximum size."
 msgstr ""
 
-#: resize/resize.ml:702
+#: resize/resize.ml:724
 msgid ""
 "%s: This partition contains a %s filesystem which will be damaged by "
 "shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
@@ -131,7 +131,7 @@ msgid ""
 "‘%s’ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:698
+#: resize/resize.ml:714
 msgid ""
 "%s: This partition contains an LVM physical volume which will be damaged by "
 "shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
@@ -140,7 +140,7 @@ msgid ""
 "‘%s‘ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:695
+#: resize/resize.ml:707
 msgid ""
 "%s: This partition has unknown content which might be damaged by shrinking "
 "it.  If you want to shrink this partition, you need to use the ‘--resize-"
@@ -148,21 +148,21 @@ msgid ""
 "error came from ‘%s’ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:916
+#: resize/resize.ml:959
 msgid ""
 "%s: This partition will be created, but the contents will be ignored (ie. "
 "not copied to the target)."
 msgstr ""
 
-#: resize/resize.ml:918
+#: resize/resize.ml:962
 msgid "%s: This partition will be deleted."
 msgstr ""
 
-#: resize/resize.ml:914
+#: resize/resize.ml:957
 msgid "%s: This partition will be left alone."
 msgstr ""
 
-#: resize/resize.ml:920
+#: resize/resize.ml:964
 msgid "%s: This partition will be resized from %s to %s."
 msgstr ""
 
@@ -182,7 +182,7 @@ msgid ""
 "read the man page virt-builder(1).\n"
 msgstr ""
 
-#: builder/index_parser.ml:145
+#: builder/index_parser.ml:156
 msgid "%s: cannot determine the virtual size of %s due to compression"
 msgstr ""
 
@@ -190,27 +190,27 @@ msgstr ""
 msgid "%s: cannot open virtio-win ISO file: %s"
 msgstr ""
 
-#: builder/index_parser.ml:171
+#: builder/index_parser.ml:184
 msgid "%s: cannot parse ‘compressed_size’ field for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:196
+#: builder/index_parser.ml:211
 msgid "%s: cannot parse ‘hidden’ field for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:132
+#: builder/index_parser.ml:142
 msgid "%s: cannot parse ‘revision’ field for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:162
+#: builder/index_parser.ml:174
 msgid "%s: cannot parse ‘size’ field for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:246
+#: builder/index_parser.ml:261
 msgid "%s: cannot use a URI (‘%s’) in the index file\n"
 msgstr ""
 
-#: customize/customize_run.ml:67
+#: customize/customize_run.ml:72
 msgid "%s: command exited with an error"
 msgstr ""
 
@@ -236,7 +236,7 @@ msgid ""
 "read the man page virt-customize(1).\n"
 msgstr ""
 
-#: drivers/drivers.ml:56
+#: drivers/drivers.ml:57
 msgid ""
 "%s: detect bootloader, kernel and drivers inside guest\n"
 "\n"
@@ -248,7 +248,7 @@ msgstr ""
 msgid "%s: error: %s"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:66
+#: get-kernel/get_kernel.ml:67
 msgid ""
 "%s: extract kernel and ramdisk from a guest\n"
 "\n"
@@ -256,52 +256,52 @@ msgid ""
 "read the man page virt-get-kernel(1).\n"
 msgstr ""
 
-#: resize/resize.ml:415 resize/resize.ml:412
+#: resize/resize.ml:421 resize/resize.ml:418
 msgid "%s: file is too small to be a disk image (%Ld bytes)"
 msgstr ""
 
-#: builder/index_parser.ml:76
+#: builder/index_parser.ml:81
 msgid "%s: index is corrupt: %s: field ‘%s[%s]’ appears two or more times\n"
 msgstr ""
 
-#: builder/index_parser.ml:78
+#: builder/index_parser.ml:84
 msgid "%s: index is corrupt: %s: field ‘%s’ appears two or more times\n"
 msgstr ""
 
-#: builder/index_parser.ml:60
+#: builder/index_parser.ml:63
 msgid ""
 "%s: index is corrupt: os-version ‘%s’ with architecture ‘%s’ appears two or "
 "more times\n"
 msgstr ""
 
-#: resize/resize.ml:852
+#: resize/resize.ml:890
 msgid ""
 "%s: logical volume not found in the source disk image (this error came from "
 "‘--lv-expand’ option on the command line).  Try running this command: virt-"
 "filesystems --logical-volumes --long -a %s"
 msgstr ""
 
-#: resize/resize.ml:725
+#: resize/resize.ml:757
 msgid "%s: missing size field in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:734
+#: resize/resize.ml:766
 msgid "%s: new partition size is zero or negative"
 msgstr ""
 
-#: builder/index_parser.ml:109
+#: builder/index_parser.ml:118
 msgid "%s: no ‘arch’ entry for %s and failed to guess it\n"
 msgstr ""
 
-#: builder/index_parser.ml:116
+#: builder/index_parser.ml:126
 msgid "%s: no ‘arch’ entry for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:97
+#: builder/index_parser.ml:106
 msgid "%s: no ‘file’ (URI) entry for ‘%s’\n"
 msgstr ""
 
-#: builder/index_parser.ml:155
+#: builder/index_parser.ml:167
 msgid "%s: no ‘size’ field for ‘%s’\n"
 msgstr ""
 
@@ -313,34 +313,34 @@ msgstr ""
 msgid "%s: operation timed out"
 msgstr ""
 
-#: resize/resize.ml:646
+#: resize/resize.ml:657
 msgid "%s: partition already deleted, you cannot use it in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:642
+#: resize/resize.ml:652
 msgid "%s: partition already ignored, you cannot use it in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:638
+#: resize/resize.ml:645
 msgid ""
 "%s: partition not found in the source disk image (this error came from ‘%s’ "
 "option on the command line).  Try running this command: virt-filesystems --"
 "partitions --long -a %s"
 msgstr ""
 
-#: resize/resize.ml:543
+#: resize/resize.ml:550
 msgid "%s: partition size %Ld < filesystem size %Ld"
 msgstr ""
 
-#: resize/resize.ml:538
+#: resize/resize.ml:545
 msgid "%s: partition size %Ld < physical volume size %Ld"
 msgstr ""
 
-#: resize/resize.ml:450
+#: resize/resize.ml:457
 msgid "%s: physical volume not returned by pvs_full"
 msgstr ""
 
-#: sysprep/main.ml:140
+#: sysprep/main.ml:142
 msgid ""
 "%s: reset or unconfigure a virtual machine so clones can be made\n"
 "\n"
@@ -352,7 +352,7 @@ msgid ""
 "read the man page virt-sysprep(1).\n"
 msgstr ""
 
-#: resize/resize.ml:219
+#: resize/resize.ml:221
 msgid ""
 "%s: resize a virtual machine disk\n"
 "\n"
@@ -382,25 +382,25 @@ msgid ""
 "read the man page virt-sparsify(1).\n"
 msgstr ""
 
-#: builder/builder.ml:322
+#: builder/builder.ml:339
 msgid ""
 "%s: template not downloaded or deleted.  You may have run ‘virt-builder --"
 "delete-cache’ in parallel."
 msgstr ""
 
-#: resize/resize.ml:680
+#: resize/resize.ml:692
 msgid "%s: this partition has already been ignored or deleted"
 msgstr ""
 
-#: resize/resize.ml:676
+#: resize/resize.ml:688
 msgid "%s: this partition has already been marked for resizing"
 msgstr ""
 
-#: resize/resize.ml:553
+#: resize/resize.ml:560
 msgid "%s: this partition overlaps the previous one"
 msgstr ""
 
-#: resize/resize.ml:427
+#: resize/resize.ml:433
 msgid ""
 "%s: unknown partition table type\n"
 "virt-resize only supports MBR (DOS) and GPT partition tables."
@@ -410,11 +410,11 @@ msgstr ""
 msgid "%s: warning: %s"
 msgstr ""
 
-#: builder/index_parser.ml:250
+#: builder/index_parser.ml:265
 msgid "%s: you must use relative paths (not ‘%s’) in the index file\n"
 msgstr ""
 
-#: builder/index_parser.ml:242
+#: builder/index_parser.ml:257
 msgid "%s: zero length path in the index file\n"
 msgstr ""
 
@@ -428,7 +428,7 @@ msgstr ""
 msgid "--add option can only be given once"
 msgstr ""
 
-#: customize/customize_run.ml:135
+#: customize/customize_run.ml:141
 msgid ""
 "--append-line: line must not contain newline characters.  Use the --append-"
 "line option multiple times to add several lines."
@@ -438,7 +438,7 @@ msgstr ""
 msgid "--attach-format parameter must appear before --attach parameter"
 msgstr ""
 
-#: builder/cmdline.ml:266
+#: builder/cmdline.ml:270
 msgid ""
 "--cache-all-templates/--print-cache/--delete-cache does not need any extra "
 "arguments"
@@ -448,7 +448,7 @@ msgstr ""
 msgid "--check-tmpdir: unknown argument ‘%s’"
 msgstr ""
 
-#: sparsify/copying.ml:73
+#: sparsify/copying.ml:74
 msgid ""
 "--compress cannot be used for raw output.  Remove this option or use --"
 "convert qcow2."
@@ -459,59 +459,59 @@ msgid "--debug parameter must be >= 0"
 msgstr ""
 
 #. customize/customize_main.ml:74
-#: sysprep/main.ml:67 get-kernel/get_kernel.ml:48 drivers/drivers.ml:44
+#: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
 msgid "--domain option can only be given once"
 msgstr ""
 
-#: sysprep/main.ml:77
+#: sysprep/main.ml:78
 msgid "--enable option can only be given once"
 msgstr ""
 
-#: sysprep/main.ml:85
+#: sysprep/main.ml:86
 msgid "--enable: ‘%s’ is not a known operation"
 msgstr ""
 
-#: resize/resize.ml:173
+#: resize/resize.ml:174
 msgid "--expand option given more than once"
 msgstr ""
 
-#: sysprep/main.ml:155 customize/customize_main.ml:113
+#: sysprep/main.ml:157 customize/customize_main.ml:113
 msgid "--format parameter must appear before -a parameter"
 msgstr ""
 
-#: builder/cmdline.ml:274
+#: builder/cmdline.ml:280
 msgid "--get-kernel: too many parameters"
 msgstr ""
 
-#: customize/customize_run.ml:206
+#: customize/customize_run.ml:214
 msgid ""
 "--inject-qemu-ga: QEMU Guest Agent MSI not found in virtio-win source that "
 "you specified"
 msgstr ""
 
-#: customize/customize_run.ml:222
+#: customize/customize_run.ml:230
 msgid ""
 "--inject-virtio-win: virtio drivers were not found for this Windows version "
 "in the virtio-win source that you specified"
 msgstr ""
 
-#: builder/cmdline.ml:245
+#: builder/cmdline.ml:247
 msgid "--list: use ‘--list-format’, not ‘--format’"
 msgstr ""
 
-#: builder/cmdline.ml:258
+#: builder/cmdline.ml:262
 msgid "--notes: too many parameters, expecting ‘os-version’"
 msgstr ""
 
-#: sysprep/main.ml:104
+#: sysprep/main.ml:105
 msgid "--operations: empty operation name"
 msgstr ""
 
-#: sysprep/main.ml:115
+#: sysprep/main.ml:117
 msgid "--operations: ‘%s’ is not a known operation"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:52
+#: get-kernel/get_kernel.ml:53
 msgid "--prefix option can only be given once"
 msgstr ""
 
@@ -519,24 +519,24 @@ msgstr ""
 msgid "--scriptdir cannot be used more than once"
 msgstr ""
 
-#: resize/resize.ml:188
+#: resize/resize.ml:190
 msgid "--shrink option given more than once"
 msgstr ""
 
-#: sparsify/copying.ml:93
+#: sparsify/copying.ml:95
 msgid ""
 "--tmp parameter must point to a directory, block device or prebuilt file"
 msgstr ""
 
-#: sparsify/copying.ml:84
+#: sparsify/copying.ml:86
 msgid "--tmp prebuilt:file: %s: file does not exist"
 msgstr ""
 
-#: sparsify/copying.ml:89
+#: sparsify/copying.ml:91
 msgid "--tmp prebuilt:file: %s: file does not have backing file"
 msgstr ""
 
-#: sparsify/copying.ml:87
+#: sparsify/copying.ml:89
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
 msgstr ""
 
@@ -545,7 +545,7 @@ msgid "-B must be specified"
 msgstr ""
 
 #. customize/customize_main.ml:79
-#: sysprep/main.ml:124 get-kernel/get_kernel.ml:56 drivers/drivers.ml:49
+#: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "Add disk image file"
 msgstr ""
 
@@ -579,15 +579,15 @@ msgstr ""
 msgid "Aliases:"
 msgstr ""
 
-#: resize/resize.ml:195
+#: resize/resize.ml:197
 msgid "Align first partition (default: auto)"
 msgstr ""
 
-#: builder/repository_main.ml:214
+#: builder/repository_main.ml:216
 msgid "Allowed characters are letters, digits, - _ and ."
 msgstr ""
 
-#: builder/repository_main.ml:277
+#: builder/repository_main.ml:282
 msgid "Already existing image with id %s and architecture %s"
 msgstr ""
 
@@ -596,7 +596,7 @@ msgstr ""
 msgid "Append line(s) to the file"
 msgstr ""
 
-#: customize/customize_run.ml:137
+#: customize/customize_run.ml:145
 msgid "Appending line to %s"
 msgstr ""
 
@@ -604,7 +604,7 @@ msgstr ""
 msgid "Architecture:"
 msgstr ""
 
-#: builder/repository_main.ml:221
+#: builder/repository_main.ml:224
 msgid "Architecture: "
 msgstr ""
 
@@ -621,11 +621,11 @@ msgstr ""
 msgid "Attach to a subscription-manager pool"
 msgstr ""
 
-#: customize/customize_run.ml:266
+#: customize/customize_run.ml:274
 msgid "Attaching to compatible subscriptions"
 msgstr ""
 
-#: customize/customize_run.ml:270
+#: customize/customize_run.ml:278
 msgid "Attaching to the pool %s"
 msgstr ""
 
@@ -633,13 +633,13 @@ msgstr ""
 msgid "Base path of diskimage-builder library"
 msgstr ""
 
-#: sparsify/copying.ml:345
+#: sparsify/copying.ml:348
 msgid ""
 "Before deleting the old disk, carefully check that the target disk boots and "
 "works correctly."
 msgstr ""
 
-#: resize/resize.ml:214
+#: resize/resize.ml:216
 msgid "Behaviour on expand unknown filesystems (default: warn)"
 msgstr ""
 
@@ -677,7 +677,7 @@ msgstr ""
 msgid "Change the permissions of a file"
 msgstr ""
 
-#: customize/customize_run.ml:141
+#: customize/customize_run.ml:149
 msgid "Changing permissions of %s to %s"
 msgstr ""
 
@@ -689,13 +689,13 @@ msgstr ""
 msgid "Check there is enough space in $TMPDIR"
 msgstr ""
 
-#: builder/repository_main.ml:200
+#: builder/repository_main.ml:202
 msgid ""
 "Choose one from the list below:\n"
 " %s\n"
 msgstr ""
 
-#: sparsify/in_place.ml:125 sparsify/copying.ml:276
+#: sparsify/in_place.ml:127 sparsify/copying.ml:279
 msgid "Clearing Linux swap on %s"
 msgstr ""
 
@@ -720,11 +720,11 @@ msgstr ""
 msgid "Compressing the image as tar.gz"
 msgstr ""
 
-#: builder/builder.ml:683
+#: builder/builder.ml:710
 msgid "Converting %s to %s"
 msgstr ""
 
-#: builder/builder.ml:682
+#: builder/builder.ml:709
 msgid "Converting to %s"
 msgstr ""
 
@@ -746,19 +746,19 @@ msgstr ""
 msgid "Copy local files or directories into image"
 msgstr ""
 
-#: builder/builder.ml:618
+#: builder/builder.ml:643
 msgid "Copying"
 msgstr ""
 
-#: resize/resize.ml:1246
+#: resize/resize.ml:1301
 msgid "Copying %s"
 msgstr ""
 
-#: customize/customize_run.ml:158
+#: customize/customize_run.ml:166
 msgid "Copying (in image): %s to %s"
 msgstr ""
 
-#: customize/customize_run.ml:162
+#: customize/customize_run.ml:170
 msgid "Copying: %s to %s"
 msgstr ""
 
@@ -767,11 +767,11 @@ msgstr ""
 msgid "Create a directory"
 msgstr ""
 
-#: sparsify/copying.ml:149
+#: sparsify/copying.ml:152
 msgid "Create overlay device %s to protect source disk"
 msgstr ""
 
-#: sparsify/copying.ml:147
+#: sparsify/copying.ml:150
 msgid "Create overlay file in %s to protect source disk"
 msgstr ""
 
@@ -780,7 +780,7 @@ msgstr ""
 msgid "Create symbolic links"
 msgstr ""
 
-#: builder/repository_main.ml:559
+#: builder/repository_main.ml:566
 msgid "Creating index backup copy"
 msgstr ""
 
@@ -823,7 +823,7 @@ msgstr ""
 msgid "Delete a file or directory"
 msgstr ""
 
-#: resize/resize.ml:199
+#: resize/resize.ml:201
 msgid "Delete partition"
 msgstr ""
 
@@ -831,7 +831,7 @@ msgstr ""
 msgid "Delete the template cache"
 msgstr ""
 
-#: customize/customize_run.ml:166 builder/builder.ml:138
+#: customize/customize_run.ml:174 builder/builder.ml:139
 msgid "Deleting: %s"
 msgstr ""
 
@@ -839,7 +839,7 @@ msgstr ""
 msgid "Disable appliance network"
 msgstr ""
 
-#: sysprep/main.ml:135
+#: sysprep/main.ml:137
 msgid "Disable appliance network (default)"
 msgstr ""
 
@@ -851,7 +851,7 @@ msgstr ""
 msgid "Disable template cache"
 msgstr ""
 
-#: sparsify/in_place.ml:160
+#: sparsify/in_place.ml:163
 msgid "Discard space in volgroup %s"
 msgstr ""
 
@@ -863,7 +863,7 @@ msgstr ""
 msgid "Display installation notes"
 msgstr ""
 
-#: builder/repository_main.ml:284
+#: builder/repository_main.ml:290
 msgid "Display name: "
 msgstr ""
 
@@ -896,11 +896,11 @@ msgstr ""
 msgid "Don’t compress the new images in the index"
 msgstr ""
 
-#: resize/resize.ml:197
+#: resize/resize.ml:199
 msgid "Don’t copy boot loader"
 msgstr ""
 
-#: resize/resize.ml:202
+#: resize/resize.ml:204
 msgid "Don’t create extra partition"
 msgstr ""
 
@@ -908,11 +908,11 @@ msgstr ""
 msgid "Don’t delete output file on failure"
 msgstr ""
 
-#: resize/resize.ml:201
+#: resize/resize.ml:203
 msgid "Don’t expand content"
 msgstr ""
 
-#: resize/resize.ml:206
+#: resize/resize.ml:208
 msgid "Don’t perform changes"
 msgstr ""
 
@@ -932,7 +932,7 @@ msgstr ""
 msgid "Download size:"
 msgstr ""
 
-#: builder/builder.ml:304 builder/builder.ml:256
+#: builder/builder.ml:315 builder/builder.ml:263
 msgid "Downloading: %s"
 msgstr ""
 
@@ -941,7 +941,7 @@ msgstr ""
 msgid "Edit file using Perl expression"
 msgstr ""
 
-#: customize/customize_run.ml:170
+#: customize/customize_run.ml:178
 msgid "Editing: %s"
 msgstr ""
 
@@ -949,7 +949,7 @@ msgstr ""
 msgid "Elements: %s"
 msgstr ""
 
-#: sysprep/main.ml:134
+#: sysprep/main.ml:136
 msgid "Enable appliance network"
 msgstr ""
 
@@ -957,7 +957,7 @@ msgstr ""
 msgid "Enable appliance network (default)"
 msgstr ""
 
-#: resize/resize.ml:198
+#: resize/resize.ml:200
 msgid "Enable debugging messages"
 msgstr ""
 
@@ -965,7 +965,7 @@ msgstr ""
 msgid "Enable libguestfs debugging messages"
 msgstr ""
 
-#: sysprep/main.ml:130
+#: sysprep/main.ml:132
 msgid "Enable specific operations"
 msgstr ""
 
@@ -973,19 +973,19 @@ msgstr ""
 msgid "Enable tracing of libguestfs calls"
 msgstr ""
 
-#: sysprep/main.ml:136
+#: sysprep/main.ml:138
 msgid "Enable/disable specific operations"
 msgstr ""
 
-#: sparsify/copying.ml:177
+#: sparsify/copying.ml:180
 msgid "Examine source disk"
 msgstr ""
 
-#: resize/resize.ml:379
+#: resize/resize.ml:385
 msgid "Examining %s"
 msgstr ""
 
-#: sysprep/main.ml:209 customize/customize_main.ml:159
+#: sysprep/main.ml:213 customize/customize_main.ml:161
 msgid "Examining the guest ..."
 msgstr ""
 
@@ -997,19 +997,19 @@ msgstr ""
 msgid "Exclude the specified script"
 msgstr ""
 
-#: resize/resize.ml:205
+#: resize/resize.ml:207
 msgid "Expand logical volume"
 msgstr ""
 
-#: resize/resize.ml:200
+#: resize/resize.ml:202
 msgid "Expand partition"
 msgstr ""
 
-#: builder/repository_main.ml:312 builder/repository_main.ml:305
+#: builder/repository_main.ml:318 builder/repository_main.ml:311
 msgid "Expandable partition: "
 msgstr ""
 
-#: builder/repository_main.ml:331 builder/repository_main.ml:324
+#: builder/repository_main.ml:337 builder/repository_main.ml:330
 msgid "Expandable volume: "
 msgstr ""
 
@@ -1017,15 +1017,15 @@ msgstr ""
 msgid "Expanded elements: %s"
 msgstr ""
 
-#: resize/resize.ml:1413
+#: resize/resize.ml:1469
 msgid "Expanding %s using the ‘%s’ method"
 msgstr ""
 
-#: resize/resize.ml:1394
+#: resize/resize.ml:1450
 msgid "Expanding %s%s using the ‘%s’ method"
 msgstr ""
 
-#: builder/repository_main.ml:232
+#: builder/repository_main.ml:236
 msgid "Extracting data from the image..."
 msgstr ""
 
@@ -1066,7 +1066,7 @@ msgstr ""
 msgid "FILENAME"
 msgstr ""
 
-#: resize/resize.ml:1041
+#: resize/resize.ml:1092
 msgid ""
 "Failed to initialize the partition table on the target disk.  You need to "
 "wipe or recreate the target disk and then run virt-resize again.\n"
@@ -1078,11 +1078,11 @@ msgstr ""
 msgid "Filesystem for the image"
 msgstr ""
 
-#: sparsify/copying.ml:261
+#: sparsify/copying.ml:264
 msgid "Fill free space in %s with zero"
 msgstr ""
 
-#: sparsify/copying.ml:309
+#: sparsify/copying.ml:312
 msgid "Fill free space in volgroup %s with zero"
 msgstr ""
 
@@ -1094,11 +1094,11 @@ msgstr ""
 msgid "Fingerprint: %s\n"
 msgstr ""
 
-#: customize/customize_main.ml:205 builder/builder.ml:768
+#: customize/customize_main.ml:208 builder/builder.ml:797
 msgid "Finishing off"
 msgstr ""
 
-#: resize/resize.ml:1292
+#: resize/resize.ml:1348
 msgid "Fixing first NTFS partition boot record"
 msgstr ""
 
@@ -1106,8 +1106,8 @@ msgstr ""
 msgid "Flag the system for reconfiguration"
 msgstr ""
 
-#. sysprep/sysprep_operation_net_hostname.ml:54
-#: sysprep/sysprep_operation_net_hwaddr.ml:52
+#. sysprep/sysprep_operation_net_hostname.ml:56
+#: sysprep/sysprep_operation_net_hwaddr.ml:53
 msgid ""
 "For Fedora and Red Hat Enterprise Linux,\n"
 "this is removed from C<ifcfg-*> files."
@@ -1120,16 +1120,16 @@ msgid ""
 "as the root password and timezone."
 msgstr ""
 
-#: resize/resize.ml:207
+#: resize/resize.ml:209
 msgid "Force ntfsresize"
 msgstr ""
 
-#: resize/resize.ml:210
+#: resize/resize.ml:212
 msgid "Forcefully resize partition"
 msgstr ""
 
-#. drivers/drivers.ml:53
-#: sparsify/cmdline.ml:71 resize/resize.ml:203 get-kernel/get_kernel.ml:60
+#. drivers/drivers.ml:54
+#: sparsify/cmdline.ml:71 resize/resize.ml:205 get-kernel/get_kernel.ml:61
 msgid "Format of input disk"
 msgstr ""
 
@@ -1137,7 +1137,7 @@ msgstr ""
 msgid "Format of optional drive"
 msgstr ""
 
-#: resize/resize.ml:208
+#: resize/resize.ml:210
 msgid "Format of output disk"
 msgstr ""
 
@@ -1145,11 +1145,11 @@ msgstr ""
 msgid "Format of output disk (default: same as input)"
 msgstr ""
 
-#: builder/repository_main.ml:494
+#: builder/repository_main.ml:501
 msgid "Found new images: %s"
 msgstr ""
 
-#: builder/builder.ml:758
+#: builder/builder.ml:787
 msgid "Free space"
 msgstr ""
 
@@ -1157,25 +1157,25 @@ msgstr ""
 msgid "Full name:"
 msgstr ""
 
-#: builder/sigchecker.ml:111
+#: builder/sigchecker.ml:114
 msgid ""
 "GPG failure: could not run GPG the first time\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
 
-#: builder/sigchecker.ml:65
+#: builder/sigchecker.ml:66
 msgid ""
 "GPG failure: could not trust the imported key\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
 
-#: builder/sigchecker.ml:204
+#: builder/sigchecker.ml:215
 msgid ""
 "GPG failure: could not verify digital signature of file\n"
 "Try:\n"
 " - Use the ‘-v’ option and look for earlier error messages.\n"
-" - Delete the cache: virt-builder --delete-cache\n"
-" - Check no one has tampered with the website or your network!"
+"- Delete the cache: virt-builder --delete-cache\n"
+"- Check no one has tampered with the website or your network!"
 msgstr ""
 
 #: dib/cmdline.ml:172
@@ -1199,7 +1199,7 @@ msgstr ""
 msgid "ID of the GPG key to sign the repo with"
 msgstr ""
 
-#: builder/repository_main.ml:212
+#: builder/repository_main.ml:214
 msgid "Identifier: "
 msgstr ""
 
@@ -1215,7 +1215,7 @@ msgstr ""
 msgid "Ignore filesystem"
 msgstr ""
 
-#: resize/resize.ml:204
+#: resize/resize.ml:206
 msgid "Ignore partition"
 msgstr ""
 
@@ -1223,7 +1223,7 @@ msgstr ""
 msgid "Importing the image to docker as ‘%s’"
 msgstr ""
 
-#: sysprep/sysprep_operation_ca_certificates.ml:55
+#: sysprep/sysprep_operation_ca_certificates.ml:56
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
 
@@ -1246,19 +1246,19 @@ msgstr ""
 msgid "Installation type"
 msgstr ""
 
-#: customize/customize_run.ml:181
+#: customize/customize_run.ml:189
 msgid "Installing firstboot command: %s"
 msgstr ""
 
-#: customize/customize_run.ml:185
+#: customize/customize_run.ml:193
 msgid "Installing firstboot packages: %s"
 msgstr ""
 
-#: customize/customize_run.ml:192
+#: customize/customize_run.ml:200
 msgid "Installing firstboot script: %s"
 msgstr ""
 
-#: customize/customize_run.ml:229
+#: customize/customize_run.ml:237
 msgid "Installing packages: %s"
 msgstr ""
 
@@ -1279,7 +1279,7 @@ msgstr ""
 msgid "Label for the root fs"
 msgstr ""
 
-#: customize/customize_run.ml:236
+#: customize/customize_run.ml:244
 msgid "Linking: %s -> %s"
 msgstr ""
 
@@ -1287,7 +1287,7 @@ msgstr ""
 msgid "List available templates"
 msgstr ""
 
-#: sysprep/main.ml:132
+#: sysprep/main.ml:134
 msgid "List supported operations"
 msgstr ""
 
@@ -1309,7 +1309,7 @@ msgstr ""
 msgid "Make output machine readable"
 msgstr ""
 
-#: customize/customize_run.ml:241
+#: customize/customize_run.ml:249
 msgid "Making directory: %s"
 msgstr ""
 
@@ -1321,7 +1321,7 @@ msgstr ""
 msgid "Modify the disk image in-place"
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:135
+#: sysprep/sysprep_operation_script.ml:137
 msgid "Mount point on host"
 msgstr ""
 
@@ -1330,11 +1330,11 @@ msgstr ""
 msgid "Move files in disk image"
 msgstr ""
 
-#: builder/repository_main.ml:568
+#: builder/repository_main.ml:575
 msgid "Moving files to final destination"
 msgstr ""
 
-#: customize/customize_run.ml:245
+#: customize/customize_run.ml:253
 msgid "Moving: %s -> %s"
 msgstr ""
 
@@ -1342,7 +1342,7 @@ msgstr ""
 msgid "Name of the image"
 msgstr ""
 
-#: builder/repository_main.ml:490
+#: builder/repository_main.ml:497
 msgid "No new image found"
 msgstr ""
 
@@ -1399,7 +1399,7 @@ msgstr ""
 msgid "Opening the disks"
 msgstr ""
 
-#: builder/builder.ml:695
+#: builder/builder.ml:722
 msgid "Opening the new disk"
 msgstr ""
 
@@ -1411,15 +1411,15 @@ msgstr ""
 msgid "Output architecture"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:61
+#: get-kernel/get_kernel.ml:62
 msgid "Output directory"
 msgstr ""
 
-#: builder/builder.ml:753
+#: builder/builder.ml:782
 msgid "Output file"
 msgstr ""
 
-#: builder/builder.ml:755
+#: builder/builder.ml:784
 msgid "Output format"
 msgstr ""
 
@@ -1431,7 +1431,7 @@ msgstr ""
 msgid "Output formats"
 msgstr ""
 
-#: builder/builder.ml:754
+#: builder/builder.ml:783
 msgid "Output size"
 msgstr ""
 
@@ -1462,23 +1462,23 @@ msgstr ""
 msgid "POD notes for %s must not end with newline"
 msgstr ""
 
-#: sysprep/main.ml:127 customize/customize_main.ml:85
+#: sysprep/main.ml:129 customize/customize_main.ml:85
 msgid "Perform a dry run"
 msgstr ""
 
-#: sysprep/sysprep_operation.ml:318 sysprep/sysprep_operation.ml:297
+#: sysprep/sysprep_operation.ml:319 sysprep/sysprep_operation.ml:298
 msgid "Performing %S ..."
 msgstr ""
 
-#: builder/builder.ml:556
+#: builder/builder.ml:578
 msgid "Planning how to build this image"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:63
+#: get-kernel/get_kernel.ml:64
 msgid "Prefix for files"
 msgstr ""
 
-#: builder/repository_main.ml:184
+#: builder/repository_main.ml:186
 msgid "Preparing %s"
 msgstr ""
 
@@ -1504,7 +1504,7 @@ msgstr ""
 msgid "Recursively truncate all files in directory"
 msgstr ""
 
-#: customize/customize_run.ml:310
+#: customize/customize_run.ml:320
 msgid "Recursively truncating: %s"
 msgstr ""
 
@@ -1513,7 +1513,7 @@ msgstr ""
 msgid "Register using subscription-manager"
 msgstr ""
 
-#: customize/customize_run.ml:276
+#: customize/customize_run.ml:284
 msgid "Registering with subscription-manager"
 msgstr ""
 
@@ -1525,7 +1525,7 @@ msgstr ""
 msgid "Remove /etc/passwd- and similar backup files"
 msgstr ""
 
-#: sysprep/sysprep_operation_ca_certificates.ml:54
+#: sysprep/sysprep_operation_ca_certificates.ml:55
 msgid "Remove CA certificates in the guest"
 msgstr ""
 
@@ -1541,11 +1541,11 @@ msgstr ""
 msgid "Remove Dovecot (mail server) data"
 msgstr ""
 
-#: sysprep/sysprep_operation_net_hostname.ml:53
+#: sysprep/sysprep_operation_net_hostname.ml:54
 msgid "Remove HOSTNAME and DHCP_HOSTNAME in network interface configuration"
 msgstr ""
 
-#: sysprep/sysprep_operation_net_hwaddr.ml:51
+#: sysprep/sysprep_operation_net_hwaddr.ml:52
 msgid "Remove HWADDR (hard-coded MAC address) configuration"
 msgstr ""
 
@@ -1557,7 +1557,7 @@ msgstr ""
 msgid "Remove LVM2 system.devices file"
 msgstr ""
 
-#: sysprep/sysprep_operation_ipa_client.ml:57
+#: sysprep/sysprep_operation_ipa_client.ml:58
 msgid ""
 "Remove all the files related to an IPA (Identity, Policy, Audit) system.\n"
 "This effectively unenrolls the guest from an IPA server without interacting\n"
@@ -1615,7 +1615,7 @@ msgid ""
 "users who have a C<.ssh> directory in their home directory."
 msgstr ""
 
-#: sysprep/sysprep_operation_ipa_client.ml:56
+#: sysprep/sysprep_operation_ipa_client.ml:57
 msgid "Remove the IPA files"
 msgstr ""
 
@@ -1691,7 +1691,7 @@ msgstr ""
 msgid "Remove the local machine ID"
 msgstr ""
 
-#: sysprep/sysprep_operation_pacct_log.ml:56
+#: sysprep/sysprep_operation_pacct_log.ml:57
 msgid "Remove the process accounting log files"
 msgstr ""
 
@@ -1726,7 +1726,7 @@ msgstr ""
 msgid "Remove user at-jobs and cron-jobs"
 msgstr ""
 
-#: customize/customize_run.ml:289
+#: customize/customize_run.ml:299
 msgid "Removing all the subscriptions"
 msgstr ""
 
@@ -1734,21 +1734,21 @@ msgstr ""
 msgid "Repo and tag for docker"
 msgstr ""
 
-#: resize/resize.ml:1443
+#: resize/resize.ml:1499
 msgid ""
 "Resize operation completed with no errors.  Before deleting the old disk, "
 "carefully check that the resized disk boots and works correctly."
 msgstr ""
 
-#: resize/resize.ml:209
+#: resize/resize.ml:211
 msgid "Resize partition"
 msgstr ""
 
-#: builder/builder.ml:643
+#: builder/builder.ml:668
 msgid "Resizing (using virt-resize) to expand the disk to %s"
 msgstr ""
 
-#: builder/builder.ml:669
+#: builder/builder.ml:695
 msgid "Resizing container (but not filesystems) to expand the disk to %s"
 msgstr ""
 
@@ -1776,7 +1776,7 @@ msgstr ""
 msgid "Run script in disk image"
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:150
+#: sysprep/sysprep_operation_script.ml:154
 msgid ""
 "Run the named C<SCRIPT> (a shell script or program) against the\n"
 "guest.  The script can be any program on the host.  The script’s\n"
@@ -1791,11 +1791,11 @@ msgstr ""
 msgid "Run touch on a file"
 msgstr ""
 
-#: customize/customize_run.ml:319
+#: customize/customize_run.ml:329
 msgid "Running touch: %s"
 msgstr ""
 
-#: customize/customize_run.ml:255 customize/customize_run.ml:149
+#: customize/customize_run.ml:263 customize/customize_run.ml:157
 msgid "Running: %s"
 msgstr ""
 
@@ -1818,7 +1818,7 @@ msgstr ""
 msgid "SELECTOR"
 msgstr ""
 
-#: customize/customize_run.ml:375
+#: customize/customize_run.ml:385
 msgid "SELinux relabelling"
 msgstr ""
 
@@ -1828,15 +1828,15 @@ msgstr ""
 msgid "SOURCE:DEST"
 msgstr ""
 
-#: customize/customize_run.ml:303
+#: customize/customize_run.ml:313
 msgid "SSH key could not be injected for this type of guest"
 msgstr ""
 
-#: customize/customize_run.ml:300
+#: customize/customize_run.ml:310
 msgid "SSH key inject: %s"
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:148
+#: sysprep/sysprep_operation_script.ml:152
 msgid "Script or program to run on guest"
 msgstr ""
 
@@ -1850,11 +1850,11 @@ msgstr ""
 msgid "Scrub build log file"
 msgstr ""
 
-#: customize/customize_run.ml:386
+#: customize/customize_run.ml:396
 msgid "Scrubbing the log file"
 msgstr ""
 
-#: customize/customize_run.ml:260
+#: customize/customize_run.ml:268
 msgid "Scrubbing: %s"
 msgstr ""
 
@@ -1878,21 +1878,21 @@ msgstr ""
 msgid "Set debug level"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
+#: get-kernel/get_kernel.ml:58 drivers/drivers.ml:51
 msgid "Set disk sector size"
 msgstr ""
 
-#: sysprep/main.ml:131 customize/customize_main.ml:86
+#: sysprep/main.ml:133 customize/customize_main.ml:86
 msgid "Set format (default: auto)"
 msgstr ""
 
 #. customize/customize_main.ml:83
-#: sysprep/main.ml:125 get-kernel/get_kernel.ml:58 drivers/drivers.ml:51
+#: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "Set libvirt URI"
 msgstr ""
 
 #. customize/customize_main.ml:84
-#: sysprep/main.ml:126 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+#: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "Set libvirt guest name"
 msgstr ""
 
@@ -1900,7 +1900,7 @@ msgstr ""
 msgid "Set memory size"
 msgstr ""
 
-#: sysprep/main.ml:133
+#: sysprep/main.ml:135
 msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
 msgstr ""
 
@@ -1916,7 +1916,7 @@ msgstr ""
 msgid "Set output filename"
 msgstr ""
 
-#: resize/resize.ml:196
+#: resize/resize.ml:198
 msgid "Set partition alignment (default: 128 sectors)"
 msgstr ""
 
@@ -1969,31 +1969,31 @@ msgstr ""
 msgid "Set user password"
 msgstr ""
 
-#: customize/customize_run.ml:78
+#: customize/customize_run.ml:83
 msgid "Setting a random seed"
 msgstr ""
 
-#: customize/customize_run.ml:366
+#: customize/customize_run.ml:376
 msgid "Setting passwords"
 msgstr ""
 
-#: customize/password.ml:111
+#: customize/password.ml:113
 msgid "Setting random password of %s to %s"
 msgstr ""
 
-#: customize/customize_run.ml:197
+#: customize/customize_run.ml:205
 msgid "Setting the hostname: %s"
 msgstr ""
 
-#: customize/customize_run.ml:93
+#: customize/customize_run.ml:98
 msgid "Setting the machine ID in %s"
 msgstr ""
 
-#: customize/customize_run.ml:314
+#: customize/customize_run.ml:324
 msgid "Setting the timezone: %s"
 msgstr ""
 
-#: resize/resize.ml:1017
+#: resize/resize.ml:1068
 msgid "Setting up initial partition table on %s"
 msgstr ""
 
@@ -2005,11 +2005,11 @@ msgstr ""
 msgid "Shortcut for --list-format long"
 msgstr ""
 
-#: resize/resize.ml:211
+#: resize/resize.ml:213
 msgid "Shrink partition"
 msgstr ""
 
-#: builder/repository_main.ml:545
+#: builder/repository_main.ml:552
 msgid "Signing index with the GPG key %s"
 msgstr ""
 
@@ -2017,11 +2017,11 @@ msgstr ""
 msgid "Skip the inclusion of the ‘base’ element"
 msgstr ""
 
-#: sparsify/copying.ml:257
+#: sparsify/copying.ml:260
 msgid "Skipping %s, as it is a read-only btrfs snapshot."
 msgstr ""
 
-#: sparsify/copying.ml:259
+#: sparsify/copying.ml:262
 msgid "Skipping %s, as it is a read-only device."
 msgstr ""
 
@@ -2029,11 +2029,11 @@ msgstr ""
 msgid "Source URI: %s\n"
 msgstr ""
 
-#: sparsify/in_place.ml:183
+#: sparsify/in_place.ml:186
 msgid "Sparsify in-place operation completed with no errors"
 msgstr ""
 
-#: sparsify/copying.ml:343
+#: sparsify/copying.ml:346
 msgid "Sparsify operation completed with no errors."
 msgstr ""
 
@@ -2115,7 +2115,7 @@ msgid ""
 "See: L<https://bugzilla.redhat.com/show_bug.cgi?id=991641>"
 msgstr ""
 
-#: builder/index_parser.ml:30
+#: builder/index_parser.ml:31
 msgid ""
 "The index file downloaded from ‘%s’ is corrupt.\n"
 "You need to ask the supplier of this file to fix it and upload a fixed "
@@ -2130,7 +2130,7 @@ msgid ""
 "found to be empty."
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:137
+#: sysprep/sysprep_operation_script.ml:139
 msgid ""
 "The mount point (an empty directory on the host) used when\n"
 "the C<script> operation is enabled and one or more scripts\n"
@@ -2142,13 +2142,13 @@ msgid ""
 "will be created."
 msgstr ""
 
-#: sysprep/sysprep_operation_pacct_log.ml:57
+#: sysprep/sysprep_operation_pacct_log.ml:58
 msgid ""
 "The system wide process accounting will store to the pacct\n"
 "log files if the process accounting is on."
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:129
+#: sysprep/sysprep_operation_user_account.ml:133
 msgid ""
 "The user accounts to be kept in the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -2162,7 +2162,7 @@ msgid ""
 "This option can be specified multiple times."
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:114
+#: sysprep/sysprep_operation_user_account.ml:116
 msgid ""
 "The user accounts to be removed from the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -2176,11 +2176,11 @@ msgid ""
 "This option can be specified multiple times."
 msgstr ""
 
-#: builder/builder.ml:280
+#: builder/builder.ml:287
 msgid "There are no notes for %s\n"
 msgstr ""
 
-#: resize/resize.ml:837
+#: resize/resize.ml:873
 msgid ""
 "There is a deficit of %Ld bytes (%s).  You need to make the target disk "
 "larger by at least this amount or adjust your resizing requests."
@@ -2192,11 +2192,11 @@ msgid ""
 "%s/%s in: %s"
 msgstr ""
 
-#: resize/resize.ml:977
+#: resize/resize.ml:1026
 msgid "There is a surplus of %s."
 msgstr ""
 
-#: sparsify/copying.ml:109
+#: sparsify/copying.ml:112
 msgid ""
 "There may not be enough free space on %s.\n"
 "You may need to set TMPDIR to point to a directory with more free space.\n"
@@ -2232,7 +2232,7 @@ msgstr ""
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
 msgstr ""
 
-#: builder/builder.ml:756
+#: builder/builder.ml:785
 msgid "Total usable space"
 msgstr ""
 
@@ -2245,11 +2245,11 @@ msgstr ""
 msgid "Truncate a file to zero size"
 msgstr ""
 
-#: customize/customize_run.ml:306
+#: customize/customize_run.ml:316
 msgid "Truncating: %s"
 msgstr ""
 
-#: resize/resize.ml:212
+#: resize/resize.ml:214
 msgid "Turn off sparse copying"
 msgstr ""
 
@@ -2263,7 +2263,7 @@ msgstr ""
 msgid "USER[:SELECTOR]"
 msgstr ""
 
-#: resize/resize.ml:1381
+#: resize/resize.ml:1437
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
 msgstr ""
 
@@ -2271,7 +2271,7 @@ msgstr ""
 msgid "Umounting the disks"
 msgstr ""
 
-#: builder/builder.ml:631
+#: builder/builder.ml:656
 msgid "Uncompressing"
 msgstr ""
 
@@ -2280,7 +2280,7 @@ msgstr ""
 msgid "Uninstall package(s)"
 msgstr ""
 
-#: customize/customize_run.ml:323
+#: customize/customize_run.ml:333
 msgid "Uninstalling packages: %s"
 msgstr ""
 
@@ -2289,7 +2289,7 @@ msgstr ""
 msgid "Unregister using subscription-manager"
 msgstr ""
 
-#: customize/customize_run.ml:294
+#: customize/customize_run.ml:304
 msgid "Unregistering with subscription-manager"
 msgstr ""
 
@@ -2298,7 +2298,7 @@ msgstr ""
 msgid "Update packages"
 msgstr ""
 
-#: customize/customize_run.ml:328
+#: customize/customize_run.ml:338
 msgid "Updating packages"
 msgstr ""
 
@@ -2307,7 +2307,7 @@ msgstr ""
 msgid "Upload local file to destination"
 msgstr ""
 
-#: customize/customize_run.ml:333
+#: customize/customize_run.ml:343
 msgid "Uploading: %s to %s"
 msgstr ""
 
@@ -2315,19 +2315,19 @@ msgstr ""
 msgid "Use ANSI colour sequences even if not tty"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:62
+#: get-kernel/get_kernel.ml:63
 msgid "Use unversioned names for files"
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:127
+#: sysprep/sysprep_operation_user_account.ml:131
 msgid "Users to keep"
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:112
+#: sysprep/sysprep_operation_user_account.ml:114
 msgid "Users to remove"
 msgstr ""
 
-#: sparsify/copying.ml:151
+#: sparsify/copying.ml:154
 msgid "Using prebuilt file %s as overlay"
 msgstr ""
 
@@ -2346,17 +2346,17 @@ msgstr ""
 msgid "Write file"
 msgstr ""
 
-#: customize/customize_run.ml:358
+#: customize/customize_run.ml:368
 msgid "Writing: %s"
 msgstr ""
 
-#: resize/resize.ml:808
+#: resize/resize.ml:841
 msgid ""
 "You cannot use --expand when there is no surplus space to expand into.  You "
 "need to make the target disk larger by at least %s."
 msgstr ""
 
-#: resize/resize.ml:820
+#: resize/resize.ml:855
 msgid ""
 "You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-"
 "resize(1) man page)."
@@ -2372,11 +2372,11 @@ msgstr ""
 msgid "Zero filesystem"
 msgstr ""
 
-#: sparsify/in_place.ml:92 sparsify/copying.ml:247
+#: sparsify/in_place.ml:92 sparsify/copying.ml:250
 msgid "Zeroing %s"
 msgstr ""
 
-#: resize/resize.ml:255
+#: resize/resize.ml:259
 msgid "alignment cannot be < 1"
 msgstr ""
 
@@ -2396,7 +2396,7 @@ msgstr ""
 msgid "btrfs-filesystem-resize"
 msgstr ""
 
-#: builder/builder.ml:175
+#: builder/builder.ml:182
 msgid "cache %s: %s"
 msgstr ""
 
@@ -2425,7 +2425,7 @@ msgid ""
 "at boot."
 msgstr ""
 
-#: builder/builder.ml:369
+#: builder/builder.ml:387
 msgid "cannot output to a character device or /dev/null"
 msgstr ""
 
@@ -2464,7 +2464,7 @@ msgstr ""
 msgid "could not determine a way to update the configuration of Grub2"
 msgstr ""
 
-#: builder/sigchecker.ml:124
+#: builder/sigchecker.ml:128
 msgid ""
 "could not export public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
@@ -2474,7 +2474,7 @@ msgstr ""
 msgid "could not find bootloader mount point (%s): %s"
 msgstr ""
 
-#: builder/builder.ml:142
+#: builder/builder.ml:143
 msgid "could not find cache directory. Is $HOME set?"
 msgstr ""
 
@@ -2513,7 +2513,7 @@ msgstr ""
 msgid "cp (download) command failed copying ‘%s’"
 msgstr ""
 
-#: builder/builder.ml:161
+#: builder/builder.ml:168
 msgid "curl is not installed (or does not work)"
 msgstr ""
 
@@ -2533,15 +2533,15 @@ msgstr ""
 msgid "didn't find grub entry for kernel %s"
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:135
+#: sysprep/sysprep_operation_script.ml:136
 msgid "dir"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:61
+#: get-kernel/get_kernel.ml:62
 msgid "directory"
 msgstr ""
 
-#: builder/builder.ml:176
+#: builder/builder.ml:183
 msgid "disabling the cache"
 msgstr ""
 
@@ -2562,7 +2562,7 @@ msgid "docker: a target was not specified, use ‘--docker-target’"
 msgstr ""
 
 #. customize/customize_main.ml:84
-#: sysprep/main.ml:126 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+#: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "domain"
 msgstr ""
 
@@ -2578,7 +2578,7 @@ msgstr ""
 msgid "don’t know how to remove packages using %s: packages: %s"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:189
+#: get-kernel/get_kernel.ml:192
 msgid "dual/multi-boot images are not supported by this tool"
 msgstr ""
 
@@ -2598,7 +2598,7 @@ msgstr ""
 msgid "empty --expand option"
 msgstr ""
 
-#: resize/resize.ml:187
+#: resize/resize.ml:188
 msgid "empty --shrink option"
 msgstr ""
 
@@ -2608,7 +2608,7 @@ msgstr ""
 msgid "error parsing URI '%s'. Look for error messages printed above."
 msgstr ""
 
-#: sysprep/main.ml:61 resize/resize.ml:327 resize/resize.ml:320
+#: sysprep/main.ml:61 resize/resize.ml:332 resize/resize.ml:324
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
 msgstr ""
 
@@ -2622,7 +2622,7 @@ msgid ""
 "string: %s)"
 msgstr ""
 
-#: sparsify/copying.ml:340
+#: sparsify/copying.ml:343
 msgid "external command failed: %s"
 msgstr ""
 
@@ -2638,11 +2638,11 @@ msgstr ""
 msgid "external command ‘%s’ stopped by signal %d"
 msgstr ""
 
-#: builder/downloader.ml:126
+#: builder/downloader.ml:127
 msgid "failed to download %s: HTTP status code %s"
 msgstr ""
 
-#: builder/repository_main.ml:550
+#: builder/repository_main.ml:557
 msgid "failed to export the GPG key %s"
 msgstr ""
 
@@ -2650,7 +2650,7 @@ msgstr ""
 msgid "failed to find grub2-mkconfig binary (but Grub2 was detected on guest)"
 msgstr ""
 
-#: builder/repository_main.ml:556
+#: builder/repository_main.ml:563
 msgid "failed to sign index"
 msgstr ""
 
@@ -2659,18 +2659,18 @@ msgid "failure: %s"
 msgstr ""
 
 #. customize/customize_main.ml:79
-#: sysprep/main.ml:124 get-kernel/get_kernel.ml:56 drivers/drivers.ml:49
+#: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "file"
 msgstr ""
 
-#: builder/sigchecker.ml:221
+#: builder/sigchecker.ml:237
 msgid ""
 "fingerprint of signature does not match the expected fingerprint!\n"
-"  found fingerprint: %s\n"
-"  expected fingerprint: %s"
+"found fingerprint: %s\n"
+"expected fingerprint: %s"
 msgstr ""
 
-#: resize/resize.ml:1290
+#: resize/resize.ml:1345
 msgid "first partition is NTFS but does not contain NTFS boot loader magic"
 msgstr ""
 
@@ -2686,13 +2686,13 @@ msgid ""
 "%s"
 msgstr ""
 
-#. resize/resize.ml:208
-#. resize/resize.ml:203
-#. get-kernel/get_kernel.ml:60
-#. drivers/drivers.ml:53
+#. resize/resize.ml:210
+#. resize/resize.ml:205
+#. get-kernel/get_kernel.ml:61
+#. drivers/drivers.ml:54
 #. dib/cmdline.ml:184
 #. customize/customize_main.ml:86
-#: sysprep/main.ml:131 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
+#: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
 msgid "format"
 msgstr ""
 
@@ -2733,11 +2733,11 @@ msgid ""
 "firstboot scripts instead."
 msgstr ""
 
-#: customize/customize_run.ml:199
+#: customize/customize_run.ml:207
 msgid "hostname could not be set for this type of guest"
 msgstr ""
 
-#: resize/resize.ml:213
+#: resize/resize.ml:215
 msgid "ignore|warn|error"
 msgstr ""
 
@@ -2745,13 +2745,13 @@ msgstr ""
 msgid "ignoring kernel %s in bootloader, as it does not exist."
 msgstr ""
 
-#: builder/builder.ml:394
+#: builder/builder.ml:412
 msgid ""
 "images cannot be shrunk, the output size is too small for this image.  "
 "Requested size = %s, minimum size = %s"
 msgstr ""
 
-#: builder/builder.ml:354
+#: builder/builder.ml:372
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
@@ -2805,7 +2805,7 @@ msgstr ""
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
-#: customize/password.ml:72
+#: customize/password.ml:73
 msgid "invalid password selector ‘%s’; see the man page"
 msgstr ""
 
@@ -2833,7 +2833,7 @@ msgstr ""
 msgid "log file %s: %s (ignored)"
 msgstr ""
 
-#: resize/resize.ml:205
+#: resize/resize.ml:207
 msgid "lv"
 msgstr ""
 
@@ -2842,7 +2842,7 @@ msgstr ""
 msgid "md5|sha256|sha512"
 msgstr ""
 
-#: builder/repository_main.ml:257
+#: builder/repository_main.ml:262
 msgid "missing image identifier"
 msgstr ""
 
@@ -2858,21 +2858,21 @@ msgstr ""
 msgid "more than value for the key ‘%s’"
 msgstr ""
 
-#: builder/repository_main.ml:114
+#: builder/repository_main.ml:116
 msgid "moving file ‘%s’ to ‘%s’ failed"
 msgstr ""
 
-#: customize/customize_run.ml:106
+#: customize/customize_run.ml:111
 msgid ""
 "multiple --root-password/--password options set the password for user ‘%s’ "
 "twice"
 msgstr ""
 
-#: resize/resize.ml:195
+#: resize/resize.ml:197
 msgid "never|always|auto"
 msgstr ""
 
-#: builder/builder.ml:155
+#: builder/builder.ml:156
 msgid ""
 "no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
 "\n"
@@ -2887,15 +2887,15 @@ msgstr ""
 msgid "no bootloader detected"
 msgstr ""
 
-#: builder/builder.ml:250
+#: builder/builder.ml:257
 msgid "no cache directory"
 msgstr ""
 
-#: builder/builder.ml:243
+#: builder/builder.ml:250
 msgid "no cache directory\n"
 msgstr ""
 
-#: builder/builder.ml:723
+#: builder/builder.ml:750
 msgid ""
 "no guest operating systems or multiboot OS found in this disk image\n"
 "This is a failure of the source repository.  Use -v for more information."
@@ -2912,7 +2912,7 @@ msgid ""
 "This probably indicates that %s was unable to inspect this guest properly."
 msgstr ""
 
-#: get-kernel/get_kernel.ml:161
+#: get-kernel/get_kernel.ml:164
 msgid "no kernel found in %s"
 msgstr ""
 
@@ -2924,11 +2924,11 @@ msgid ""
 "configuration of this guest."
 msgstr ""
 
-#: get-kernel/get_kernel.ml:187
+#: get-kernel/get_kernel.ml:190
 msgid "no operating system found"
 msgstr ""
 
-#: sysprep/main.ml:226 customize/customize_main.ml:189
+#: sysprep/main.ml:230 customize/customize_main.ml:192
 msgid "no operating systems were found in the guest image"
 msgstr ""
 
@@ -2936,7 +2936,7 @@ msgstr ""
 msgid "no partitions found in the helper drive"
 msgstr ""
 
-#: builder/builder.ml:561
+#: builder/builder.ml:583
 msgid ""
 "no plan could be found for making a disk image with\n"
 "the required size, format etc. This is a bug in libguestfs!\n"
@@ -2947,7 +2947,7 @@ msgstr ""
 msgid "ntfsresize"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:128
+#: get-kernel/get_kernel.ml:131
 msgid "operating system ‘%s’ not supported"
 msgstr ""
 
@@ -2967,7 +2967,7 @@ msgstr ""
 msgid "operation name is an empty string"
 msgstr ""
 
-#: sysprep/main.ml:136 sysprep/main.ml:130
+#: sysprep/main.ml:138 sysprep/main.ml:132
 msgid "operations"
 msgstr ""
 
@@ -2975,15 +2975,15 @@ msgstr ""
 msgid "option"
 msgstr ""
 
-#: sysprep/main.ml:133
+#: sysprep/main.ml:135
 msgid "opts"
 msgstr ""
 
-#: builder/repository_main.ml:225
+#: builder/repository_main.ml:228
 msgid "osinfo short ID: "
 msgstr ""
 
-#: builder/builder.ml:294
+#: builder/builder.ml:301
 msgid ""
 "output device (%s) is a partition.  If you are writing to a USB key or "
 "external drive then you probably need to write to the whole device, not to a "
@@ -2991,22 +2991,22 @@ msgid ""
 "if-partition"
 msgstr ""
 
-#: builder/builder.ml:397
+#: builder/builder.ml:417
 msgid ""
 "output size is too large for this block device.  Requested size = %s, output "
 "block device = %s, output block device size = %s"
 msgstr ""
 
-#: sparsify/cmdline.ml:149
+#: sparsify/cmdline.ml:150
 msgid "output ‘%s’ cannot be a character device, it must be a regular file"
 msgstr ""
 
-#. resize/resize.ml:199
-#: resize/resize.ml:211 resize/resize.ml:204 resize/resize.ml:200
+#. resize/resize.ml:201
+#: resize/resize.ml:213 resize/resize.ml:206 resize/resize.ml:202
 msgid "part"
 msgstr ""
 
-#: resize/resize.ml:210 resize/resize.ml:209
+#: resize/resize.ml:212 resize/resize.ml:211
 msgid "part=size"
 msgstr ""
 
@@ -3016,14 +3016,14 @@ msgid ""
 "or \"yescrypt\""
 msgstr ""
 
-#: customize/password.ml:193
+#: customize/password.ml:196
 msgid ""
 "password: using insecure md5 password encryption for guest of type %s "
 "version %d.%d.\n"
 "If this is incorrect, use --password-crypto option and file a bug."
 msgstr ""
 
-#: customize/customize_run.ml:371
+#: customize/customize_run.ml:381
 msgid "passwords could not be set for this type of guest"
 msgstr ""
 
@@ -3031,11 +3031,11 @@ msgstr ""
 msgid "please include an operating system element"
 msgstr ""
 
-#: resize/resize.ml:1077 resize/resize.ml:1053
+#: resize/resize.ml:1131 resize/resize.ml:1107
 msgid "pread-device: short read"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:63
+#: get-kernel/get_kernel.ml:64
 msgid "prefix"
 msgstr ""
 
@@ -3043,19 +3043,19 @@ msgstr ""
 msgid "pvresize"
 msgstr ""
 
-#: sparsify/in_place.ml:134 sparsify/copying.ml:285
+#: sparsify/in_place.ml:136 sparsify/copying.ml:288
 msgid "pwrite: short write restoring swap partition header"
 msgstr ""
 
-#: sparsify/in_place.ml:187
+#: sparsify/in_place.ml:190
 msgid "quit (^C) at user request"
 msgstr ""
 
-#: customize/customize_run.ml:80
+#: customize/customize_run.ml:85
 msgid "random seed could not be set for this type of guest"
 msgstr ""
 
-#: builder/repository_main.ml:418
+#: builder/repository_main.ml:424
 msgid "repository folder ‘%s’ doesn’t exist"
 msgstr ""
 
@@ -3076,7 +3076,7 @@ msgid ""
 "broken in some way.  Please report this as a bug with a full debug log."
 msgstr ""
 
-#: sysprep/sysprep_operation_script.ml:148
+#: sysprep/sysprep_operation_script.ml:151
 msgid "script"
 msgstr ""
 
@@ -3092,7 +3092,7 @@ msgstr ""
 msgid "script: killed by signal (%d)"
 msgstr ""
 
-#: resize/resize.ml:196
+#: resize/resize.ml:198
 msgid "sectors"
 msgstr ""
 
@@ -3134,7 +3134,7 @@ msgid ""
 "options instead (described in the virt-customize(1) manual)."
 msgstr ""
 
-#: builder/cmdline.ml:300
+#: builder/cmdline.ml:306
 msgid "source and fingerprint lists are not the same length"
 msgstr ""
 
@@ -3162,11 +3162,11 @@ msgstr ""
 msgid "sub-process killed by signal (%d)"
 msgstr ""
 
-#: customize/customize_run.ml:280
+#: customize/customize_run.ml:288
 msgid "subscription-manager credentials required for --sm-register"
 msgstr ""
 
-#: customize/customize_run.ml:64
+#: customize/customize_run.ml:67
 msgid ""
 "the command may have failed because the network is disabled.  Try either "
 "removing ‘--no-network’ or adding ‘--network’ on the command line."
@@ -3180,12 +3180,12 @@ msgstr ""
 msgid "the list of output formats cannot be empty"
 msgstr ""
 
-#: builder/repository_main.ml:454
+#: builder/repository_main.ml:460
 msgid ""
 "the repository must contain an index file when running in automated mode"
 msgstr ""
 
-#: resize/resize.ml:477
+#: resize/resize.ml:484
 msgid "the source disk has no partitions"
 msgstr ""
 
@@ -3229,7 +3229,7 @@ msgid ""
 "The guest will be configured to use slower emulated devices."
 msgstr ""
 
-#: builder/sigchecker.ml:174
+#: builder/sigchecker.ml:179
 msgid ""
 "there is no detached signature file\n"
 "This probably means the index file is missing a sig=... line.\n"
@@ -3253,19 +3253,23 @@ msgid ""
 "The guest will be configured to use a slower emulated device."
 msgstr ""
 
-#: customize/customize_run.ml:316
+#: customize/timezone.ml:35
+msgid "timezone '%s' does not exist, use a location like 'Europe/London'"
+msgstr ""
+
+#: customize/customize_run.ml:326
 msgid "timezone could not be set for this type of guest"
 msgstr ""
 
-#: builder/cmdline.ml:250
+#: builder/cmdline.ml:252
 msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
 msgstr ""
 
-#: builder/cmdline.ml:241
+#: builder/cmdline.ml:243
 msgid "too many parameters, expecting ‘os-version’"
 msgstr ""
 
-#: builder/repository_main.ml:100
+#: builder/repository_main.ml:101
 msgid "too many parameters, only one path to repository is allowed"
 msgstr ""
 
@@ -3283,43 +3287,43 @@ msgstr ""
 msgid "unhandled checksum type ‘%s’"
 msgstr ""
 
-#: resize/resize.ml:264
+#: resize/resize.ml:268
 msgid "unknown --align-first option: use never|always|auto"
 msgstr ""
 
-#: resize/resize.ml:272
+#: resize/resize.ml:276
 msgid "unknown --unknown-filesystems: use ignore|warn|error"
 msgstr ""
 
-#. resize/resize.ml:878
-#: resize/resize.ml:966 resize/resize.ml:935 resize/resize.ml:896
+#. resize/resize.ml:919
+#: resize/resize.ml:1014 resize/resize.ml:980 resize/resize.ml:938
 msgid "unknown/unavailable method for expanding the %s filesystem on %s"
 msgstr ""
 
-#: sysprep/utils.ml:64
+#: sysprep/utils.ml:65
 msgid "updating the system CA store on this guest %s/%s is not supported"
 msgstr ""
 
 #. customize/customize_main.ml:83
-#: sysprep/main.ml:125 get-kernel/get_kernel.ml:58 drivers/drivers.ml:51
+#: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "uri"
 msgstr ""
 
-#: resize/resize.ml:308
+#: resize/resize.ml:312
 msgid "usage is: %s [--options] indisk outdisk"
 msgstr ""
 
-#: sparsify/cmdline.ml:134
+#: sparsify/cmdline.ml:135
 msgid "usage: %s [--options] indisk outdisk"
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:145
+#: sysprep/sysprep_operation_user_account.ml:149
 msgid ""
 "user-accounts: --keep-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
 
-#: sysprep/sysprep_operation_user_account.ml:147
+#: sysprep/sysprep_operation_user_account.ml:152
 msgid ""
 "user-accounts: --remove-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
@@ -3329,8 +3333,8 @@ msgstr ""
 msgid "user-accounts: empty user name"
 msgstr ""
 
-#. sysprep/sysprep_operation_user_account.ml:112
-#: sysprep/sysprep_operation_user_account.ml:127
+#. sysprep/sysprep_operation_user_account.ml:113
+#: sysprep/sysprep_operation_user_account.ml:130
 msgid "users"
 msgstr ""
 
@@ -3346,38 +3350,38 @@ msgid ""
 "%s"
 msgstr ""
 
-#: builder/cmdline.ml:272
+#: builder/cmdline.ml:277
 msgid ""
 "virt-builder --get-kernel image\n"
 "Missing ‘image’ (disk image file) argument"
 msgstr ""
 
-#: builder/cmdline.ml:256
+#: builder/cmdline.ml:259
 msgid ""
 "virt-builder --notes os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
 
-#: builder/cmdline.ml:239
+#: builder/cmdline.ml:240
 msgid ""
 "virt-builder os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
 
-#: builder/repository_main.ml:240
+#: builder/repository_main.ml:244
 msgid ""
 "virt-builder template images must have one and only one root file system, "
 "found %d"
 msgstr ""
 
-#: builder/repository_main.ml:96
+#: builder/repository_main.ml:97
 msgid ""
 "virt-builder-repository /path/to/repo\n"
 "\n"
 "Use ‘/path/to/repo’ to point to the repository folder."
 msgstr ""
 
-#: builder/builder.ml:166
+#: builder/builder.ml:173
 msgid "virt-resize is not installed (or does not work)"
 msgstr ""
 
@@ -3385,63 +3389,75 @@ msgstr ""
 msgid "xfs_growfs"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:95 drivers/drivers.ml:75
+#: drivers/drivers.ml:77
+msgid ""
+"you cannot give -a and -d options together.  Read virt-drivers(1) man page "
+"for further information."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:97
 msgid ""
 "you cannot give -a and -d options together.  Read virt-get-kernel(1) man "
 "page for further information."
 msgstr ""
 
-#: sysprep/main.ml:175
+#: sysprep/main.ml:178
 msgid ""
 "you cannot give -a and -d options together.  Read virt-sysprep(1) man page "
 "for further information."
 msgstr ""
 
-#: customize/customize_main.ml:136
+#: customize/customize_main.ml:137
 msgid ""
 "you cannot give -a and -d options together. Read virt-customize(1) man page "
 "for further information."
 msgstr ""
 
-#: sysprep/main.ml:79
+#: sysprep/main.ml:80
 msgid "you cannot pass an empty argument to --enable"
 msgstr ""
 
-#: sparsify/cmdline.ml:162
+#: sparsify/cmdline.ml:164
 msgid "you cannot use --in-place and --check-tmpdir options together"
 msgstr ""
 
-#: sparsify/cmdline.ml:165
+#: sparsify/cmdline.ml:168
 msgid "you cannot use --in-place and --compress options together"
 msgstr ""
 
-#: sparsify/cmdline.ml:168
+#: sparsify/cmdline.ml:171
 msgid "you cannot use --in-place and --convert options together"
 msgstr ""
 
-#: sparsify/cmdline.ml:174
+#: sparsify/cmdline.ml:177
 msgid "you cannot use --in-place and --tmp options together"
 msgstr ""
 
-#: sparsify/cmdline.ml:171
+#: sparsify/cmdline.ml:174
 msgid "you cannot use --in-place and -o options together"
 msgstr ""
 
-#: resize/resize.ml:797
+#: resize/resize.ml:830
 msgid "you cannot use options --expand and --shrink together"
 msgstr ""
 
-#: sparsify/cmdline.ml:140 resize/resize.ml:314
+#: sparsify/cmdline.ml:141 resize/resize.ml:318
 msgid "you cannot use the same disk image for input and output"
 msgstr ""
 
-#: get-kernel/get_kernel.ml:93 drivers/drivers.ml:73
+#: drivers/drivers.ml:74
+msgid ""
+"you must give either -a or -d options.  Read virt-drivers(1) man page for "
+"further information."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:94
 msgid ""
 "you must give either -a or -d options.  Read virt-get-kernel(1) man page for "
 "further information."
 msgstr ""
 
-#: sysprep/main.ml:164
+#: sysprep/main.ml:166
 msgid ""
 "you must give either -a or -d options.  Read virt-sysprep(1) man page for "
 "further information."
@@ -3453,11 +3469,11 @@ msgid ""
 "further information."
 msgstr ""
 
-#: builder/repository_main.ml:228
+#: builder/repository_main.ml:231
 msgid "‘%s’ is not a recognized osinfo OS id; using it anyway"
 msgstr ""
 
-#: builder/repository_main.ml:157
+#: builder/repository_main.ml:159
 msgid "‘xz’ command failed"
 msgstr ""
 

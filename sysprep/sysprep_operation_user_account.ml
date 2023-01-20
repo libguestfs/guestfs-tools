@@ -109,7 +109,9 @@ The \"root\" account is not removed.
 See the I<--remove-user-accounts> parameter for a way to specify
 how to remove only some users, or to not remove some others.");
     extra_args = [
-      { extra_argspec = [ L"remove-user-accounts" ], Getopt.String (s_"users", add_users remove_users), s_"Users to remove";
+      { extra_argspec = [ L"remove-user-accounts" ],
+                        Getopt.String (s_"users", add_users remove_users),
+                        s_"Users to remove";
         extra_pod_argval = Some "USERS";
         extra_pod_description = s_"\
 The user accounts to be removed from the guest.
@@ -124,7 +126,9 @@ would only remove the user accounts C<bob> and C<eve>.
 This option can be specified multiple times."
       };
 
-      { extra_argspec = [ L"keep-user-accounts" ], Getopt.String (s_"users", add_users keep_users), s_"Users to keep";
+      { extra_argspec = [ L"keep-user-accounts" ],
+                        Getopt.String (s_"users", add_users keep_users),
+                        s_"Users to keep";
         extra_pod_argval = Some "USERS";
         extra_pod_description = s_"\
 The user accounts to be kept in the guest.
@@ -142,9 +146,11 @@ This option can be specified multiple times."
     perform_on_filesystems = Some user_account_perform;
     not_enabled_check_args = fun () ->
       if not (StringSet.is_empty !keep_users) then
-        error (f_"user-accounts: --keep-user-accounts parameter was used, but the \"user-account\" operation is not enabled");
+        error (f_"user-accounts: --keep-user-accounts parameter was used, \
+                  but the \"user-account\" operation is not enabled");
       if not (StringSet.is_empty !remove_users) then
-        error (f_"user-accounts: --remove-user-accounts parameter was used, but the \"user-account\" operation is not enabled");
+        error (f_"user-accounts: --remove-user-accounts parameter was used, \
+                  but the \"user-account\" operation is not enabled");
 }
 
 let () = register_operation op

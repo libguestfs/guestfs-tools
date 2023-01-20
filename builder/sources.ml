@@ -45,7 +45,8 @@ let parse_conf file =
         let uri =
           try List.assoc ("uri", None) fields
           with Not_found as ex ->
-            eprintf (f_"%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n") prog n file;
+            eprintf (f_"%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n")
+              prog n file;
             raise ex in
         let gpgkey =
           let k =
@@ -121,7 +122,8 @@ let read_sources () =
       let files =
         try List.filter filter_filenames (Array.to_list (Sys.readdir dir))
         with Sys_error _ -> [] in
-      let files = List.filter (fun x -> StringSet.mem x !fnseen <> true) files in
+      let files =
+        List.filter (fun x -> StringSet.mem x !fnseen <> true) files in
       List.fold_left (
         fun acc file ->
           try (

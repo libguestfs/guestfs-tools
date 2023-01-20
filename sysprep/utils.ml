@@ -54,12 +54,14 @@ and update_system_ca_store_command g root =
   let typ = g#inspect_get_type root in
   let distro = g#inspect_get_distro root in
   match typ, distro with
-  | "linux", ("fedora"|"rhel"|"centos"|"scientificlinux"|"oraclelinux"|"redhat-based") ->
+  | "linux", ("fedora"|"rhel"|"centos"|"scientificlinux"|"oraclelinux"|
+              "redhat-based") ->
     Some [ "update-ca-trust"; "extract" ]
 
   | "linux", ("debian"|"ubuntu"|"kalilinux") ->
     Some [ "update-ca-certificates" ]
 
   | _, _ ->
-    warning (f_"updating the system CA store on this guest %s/%s is not supported") typ distro;
+    warning (f_"updating the system CA store on this guest %s/%s \
+                is not supported") typ distro;
     None

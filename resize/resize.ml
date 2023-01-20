@@ -170,7 +170,8 @@ let main () =
     let expand = ref "" in
     let set_expand s =
       if s = "" then error (f_"empty --expand option")
-      else if !expand <> "" then error (f_"--expand option given more than once")
+      else if !expand <> "" then
+        error (f_"--expand option given more than once")
       else expand := s
     in
     let expand_content = ref true in
@@ -185,7 +186,8 @@ let main () =
     let shrink = ref "" in
     let set_shrink s =
       if s = "" then error (f_"empty --shrink option")
-      else if !shrink <> "" then error (f_"--shrink option given more than once")
+      else if !shrink <> "" then
+        error (f_"--shrink option given more than once")
       else shrink := s
     in
     let sparse = ref true in
@@ -223,7 +225,8 @@ A short summary of the options is given below.  For detailed help please
 read the man page virt-resize(1).
 ")
         prog in
-    let opthandle = create_standard_options argspec ~anon_fun ~machine_readable:true usage_msg in
+    let opthandle = create_standard_options argspec ~anon_fun
+                      ~machine_readable:true usage_msg in
     Getopt.parse opthandle.getopt;
 
     if verbose () then (
@@ -244,7 +247,8 @@ read the man page virt-resize(1).
     let ignores = List.rev !ignores in
     let lv_expands = List.rev !lv_expands in
     let ntfsresize_force = !ntfsresize_force in
-    let output_format = match !output_format with "" -> None | str -> Some str in
+    let output_format =
+      match !output_format with "" -> None | str -> Some str in
     let resizes = List.rev !resizes in
     let resizes_force = List.rev !resizes_force in
     let shrink = match !shrink with "" -> None | str -> Some str in
@@ -317,14 +321,16 @@ read the man page virt-resize(1).
     let infile =
       try (infile, URI.parse_uri infile)
       with URI.Parse_failed ->
-        error (f_"error parsing URI ‘%s’. Look for error messages printed above.")
+        error (f_"error parsing URI ‘%s’. \
+                  Look for error messages printed above.")
           infile in
 
     (* outfile can be a URI. *)
     let outfile =
       try (outfile, URI.parse_uri outfile)
       with URI.Parse_failed ->
-        error (f_"error parsing URI ‘%s’. Look for error messages printed above.")
+        error (f_"error parsing URI ‘%s’. \
+                  Look for error messages printed above.")
           outfile in
 
     infile, outfile, align_first, alignment, copy_boot_loader,
@@ -333,7 +339,7 @@ read the man page virt-resize(1).
     lv_expands, ntfsresize_force, output_format,
     resizes, resizes_force, shrink, sparse, unknown_fs_mode in
 
-  (* Default to true, since NTFS/btrfs/XFS/f2fs support are usually available. *)
+  (* Default to true, since NTFS/btrfs/XFS/f2fs support are usually available.*)
   let ntfs_available = ref true in
   let btrfs_available = ref true in
   let xfs_available = ref true in
@@ -424,7 +430,8 @@ read the man page virt-resize(1).
     | "msdos" -> MBR, "msdos"
     | "gpt" -> GPT, "gpt"
     | _ ->
-      error (f_"%s: unknown partition table type\nvirt-resize only supports MBR (DOS) and GPT partition tables.")
+      error (f_"%s: unknown partition table type\n\
+                virt-resize only supports MBR (DOS) and GPT partition tables.")
         (fst infile) in
 
   let disk_guid =
@@ -635,15 +642,20 @@ read the man page virt-resize(1).
       let partition =
         try Hashtbl.find hash name
         with Not_found ->
-          error (f_"%s: partition not found in the source disk image (this error came from ‘%s’ option on the command line).  Try running this command: virt-filesystems --partitions --long -a %s")
+          error (f_"%s: partition not found in the source disk image \
+                    (this error came from ‘%s’ option on the command line).  \
+                    Try running this command: \
+                    virt-filesystems --partitions --long -a %s")
           name option (fst infile) in
 
       if partition.p_operation = OpIgnore then
-        error (f_"%s: partition already ignored, you cannot use it in ‘%s’ option")
+        error (f_"%s: partition already ignored, \
+                  you cannot use it in ‘%s’ option")
           name option;
 
       if partition.p_operation = OpDelete then
-        error (f_"%s: partition already deleted, you cannot use it in ‘%s’ option")
+        error (f_"%s: partition already deleted, \
+                  you cannot use it in ‘%s’ option")
           name option;
 
       partition in
@@ -692,18 +704,38 @@ read the man page virt-resize(1).
          *)
         match p.p_type with
         | ContentUnknown ->
-          error (f_"%s: This partition has unknown content which might be damaged by shrinking it.  If you want to shrink this partition, you need to use the ‘--resize-force’ option, but that could destroy any data on this partition.  (This error came from ‘%s’ option on the command line.)")
+          error (f_"%s: This partition has unknown content which might be \
+                    damaged by shrinking it.  If you want to shrink this \
+                    partition, you need to use the ‘--resize-force’ option, \
+                    but that could destroy any data on this partition.  \
+                    (This error came from ‘%s’ option on the command line.)")
             name option
         | ContentPV size when size > newsize ->
-          error (f_"%s: This partition contains an LVM physical volume which will be damaged by shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you want to shrink this partition, you need to use the ‘--resize-force’ option, but that could destroy any data on this partition.  (This error came from ‘%s‘ option on the command line.)")
+          error (f_"%s: This partition contains an LVM physical volume which \
+                    will be damaged by shrinking it below %Ld bytes (user \
+                    asked to shrink it to %Ld bytes).  If you want to shrink \
+                    this partition, you need to use the ‘--resize-force’ \
+                    option, but that could destroy any data on this \
+                    partition.  (This error came from ‘%s‘ option on the \
+                    command line.)")
             name size newsize option
         | ContentPV _ -> ()
         | ContentFS (fstype, size) when size > newsize ->
-          error (f_"%s: This partition contains a %s filesystem which will be damaged by shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you want to shrink this partition, you need to use the ‘--resize-force’ option, but that could destroy any data on this partition.  (This error came from ‘%s’ option on the command line.)")
+          error (f_"%s: This partition contains a %s filesystem which will \
+                    be damaged by shrinking it below %Ld bytes (user asked to \
+                    shrink it to %Ld bytes).  If you want to shrink this \
+                    partition, you need to use the ‘--resize-force’ option, \
+                    but that could destroy any data on this partition.  \
+                    (This error came from ‘%s’ option on the command line.)")
             name fstype size newsize option
         | ContentFS _ -> ()
         | ContentExtendedPartition ->
-          error (f_"%s: This extended partition contains logical partitions which might be damaged by shrinking it.  If you want to shrink this partition, you need to use the ‘--resize-force’ option, but that could destroy logical partitions within this partition.  (This error came from ‘%s’ option on the command line.)")
+          error (f_"%s: This extended partition contains logical partitions \
+                    which might be damaged by shrinking it.  If you want to \
+                    shrink this partition, you need to use the \
+                    ‘--resize-force’ option, but that could destroy logical \
+                    partitions within this partition.  (This error came from \
+                    ‘%s’ option on the command line.)")
             name option
         | ContentSwap -> ()
       );
@@ -764,7 +796,8 @@ read the man page virt-resize(1).
 
       (* Size of the unpartitioned space before the first partition. *)
       let start_overhead_sects =
-        maxl64 [gpt_start_sects; max_bootloader_sects; first_part_start_sects] in
+        maxl64 [gpt_start_sects; max_bootloader_sects;
+                first_part_start_sects] in
 
       (* Maximum space lost because of alignment of partitions. *)
       let alignment_sects = alignment *^ Int64.of_int (nr_partitions + 1) in
@@ -805,7 +838,9 @@ read the man page virt-resize(1).
      | None -> ()
      | Some dev ->
          if surplus < 0L then
-           error (f_"You cannot use --expand when there is no surplus space to expand into.  You need to make the target disk larger by at least %s.")
+           error (f_"You cannot use --expand when there is no surplus \
+                     space to expand into.  You need to make the target \
+                     disk larger by at least %s.")
              (human_size (Int64.neg surplus));
 
          let option = "--expand" in
@@ -817,7 +852,8 @@ read the man page virt-resize(1).
      | None -> ()
      | Some dev ->
          if surplus > 0L then
-           error (f_"You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-resize(1) man page).");
+           error (f_"You cannot use --shrink when there is no deficit \
+                     (see ‘deficit’ in the virt-resize(1) man page).");
 
          let option = "--shrink" in
          let p = find_partition ~option dev in
@@ -834,7 +870,9 @@ read the man page virt-resize(1).
 
     if surplus < 0L then (
       let deficit = Int64.neg surplus in
-      error (f_"There is a deficit of %Ld bytes (%s).  You need to make the target disk larger by at least this amount or adjust your resizing requests.")
+      error (f_"There is a deficit of %Ld bytes (%s).  You need to make the \
+                target disk larger by at least this amount or adjust your \
+                resizing requests.")
       deficit (human_size deficit)
     );
 
@@ -849,7 +887,10 @@ read the man page virt-resize(1).
       let lv =
         try Hashtbl.find hash name
         with Not_found ->
-          error (f_"%s: logical volume not found in the source disk image (this error came from ‘--lv-expand’ option on the command line).  Try running this command: virt-filesystems --logical-volumes --long -a %s")
+          error (f_"%s: logical volume not found in the source disk image \
+                    (this error came from ‘--lv-expand’ option on the \
+                    command line).  Try running this command: \
+                    virt-filesystems --logical-volumes --long -a %s")
             name (fst infile) in
       lv.lv_operation <- LVOpExpand
   ) lv_expands;
@@ -875,7 +916,8 @@ read the man page virt-resize(1).
             | ContentExtendedPartition
             | ContentSwap -> ()
             | ContentFS (fs, _) ->
-              error (f_"unknown/unavailable method for expanding the %s filesystem on %s")
+              error (f_"unknown/unavailable method for expanding the %s \
+                        filesystem on %s")
                 fs p.p_name
             );
           )
@@ -893,7 +935,8 @@ read the man page virt-resize(1).
             | ContentExtendedPartition
             | ContentSwap -> ()
             | ContentFS (fs, _) ->
-              error (f_"unknown/unavailable method for expanding the %s filesystem on %s")
+              error (f_"unknown/unavailable method for expanding the %s \
+                        filesystem on %s")
                 fs lv.lv_name;
             );
           )
@@ -913,14 +956,16 @@ read the man page virt-resize(1).
         | OpCopy ->
           sprintf (f_"%s: This partition will be left alone.") p.p_name
         | OpIgnore ->
-          sprintf (f_"%s: This partition will be created, but the contents will be ignored (ie. not copied to the target).") p.p_name
+          sprintf (f_"%s: This partition will be created, but the contents \
+                      will be ignored (ie. not copied to the target).") p.p_name
         | OpDelete ->
           sprintf (f_"%s: This partition will be deleted.") p.p_name
         | OpResize newsize ->
           sprintf (f_"%s: This partition will be resized from %s to %s.")
             p.p_name (human_size p.p_part.G.part_size) (human_size newsize) ^
             if can_expand_content p.p_type then (
-              sprintf (f_"  The %s on %s will be expanded using the ‘%s’ method.")
+              sprintf (f_"  The %s on %s will be expanded using the ‘%s’ \
+                          method.")
                 (string_of_partition_content_no_size p.p_type)
                 p.p_name
                 (string_of_expand_content_method
@@ -932,7 +977,8 @@ read the man page virt-resize(1).
               | ContentExtendedPartition
               | ContentSwap -> ()
               | ContentFS (fs, _) ->
-                warning (f_"unknown/unavailable method for expanding the %s filesystem on %s")
+                warning (f_"unknown/unavailable method for expanding the \
+                            %s filesystem on %s")
                   fs p.p_name;
               );
               ""
@@ -948,10 +994,12 @@ read the man page virt-resize(1).
         | LVOpNone -> ()
         | LVOpExpand ->
             let text =
-              sprintf (f_"%s: This logical volume will be expanded to maximum size.")
+              sprintf (f_"%s: This logical volume will be expanded to \
+                          maximum size.")
                 name ^
               if can_expand_content lv.lv_type then (
-                sprintf (f_"  The %s on %s will be expanded using the ‘%s’ method.")
+                sprintf (f_"  The %s on %s will be expanded using the \
+                            ‘%s’ method.")
                   (string_of_partition_content_no_size lv.lv_type)
                   name
                   (string_of_expand_content_method
@@ -963,7 +1011,8 @@ read the man page virt-resize(1).
                 | ContentExtendedPartition
                 | ContentSwap -> ()
                 | ContentFS (fs, _) ->
-                  warning (f_"unknown/unavailable method for expanding the %s filesystem on %s")
+                  warning (f_"unknown/unavailable method for expanding \
+                              the %s filesystem on %s")
                     fs name;
                 );
                 ""
@@ -979,9 +1028,11 @@ read the man page virt-resize(1).
           if surplus >= min_extra_partition then
             s_"  An extra partition will be created for the surplus."
           else
-            s_"  The surplus space is not large enough for an extra partition to be created and so it will just be ignored."
+            s_"  The surplus space is not large enough for an extra partition \
+               to be created and so it will just be ignored."
         ) else
-          s_"  The surplus space will be ignored.  Run a partitioning program in the guest to partition this extra space if you want." in
+          s_"  The surplus space will be ignored.  Run a partitioning program \
+             in the guest to partition this extra space if you want." in
 
       info "%s" (text ^ "\n")
     );
@@ -1038,7 +1089,10 @@ read the man page virt-resize(1).
 
     let g, ok = initialize_partition_table g 5 in
     if not ok then
-      error (f_"Failed to initialize the partition table on the target disk.  You need to wipe or recreate the target disk and then run virt-resize again.\n\nThe underlying error was: %s") !last_error;
+      error (f_"Failed to initialize the partition table on the target disk.  \
+                You need to wipe or recreate the target disk and then run \
+                virt-resize again.\n\nThe underlying error was: %s")
+        !last_error;
 
     g in
 
@@ -1214,7 +1268,8 @@ read the man page virt-resize(1).
 
       Option.may (g#part_set_name "/dev/sdb" p.p_target_partnum) p.p_label;
       Option.may (g#part_set_gpt_guid "/dev/sdb" p.p_target_partnum) p.p_guid;
-      Option.may (g#part_set_gpt_attributes "/dev/sdb" p.p_target_partnum) p.p_attributes;
+      Option.may (g#part_set_gpt_attributes "/dev/sdb" p.p_target_partnum)
+        p.p_attributes;
 
       match parttype, p.p_id with
       | GPT, GPT_Type gpt_type ->
@@ -1287,7 +1342,8 @@ read the man page virt-resize(1).
       (* Sanity check: it contains the NTFS magic. *)
       let magic = g#pread_device target 8 3L in
       if magic <> "NTFS    " then
-        warning (f_"first partition is NTFS but does not contain NTFS boot loader magic")
+        warning (f_"first partition is NTFS but does not contain \
+                    NTFS boot loader magic")
       else (
         message (f_"Fixing first NTFS partition boot record");
 
@@ -1441,8 +1497,8 @@ read the man page virt-resize(1).
   if not (quiet ()) then (
     print_newline ();
     info "%s" (s_"Resize operation completed with no errors.  Before deleting \
-               the old disk, carefully check that the resized disk boots and \
-               works correctly.");
+                  the old disk, carefully check that the resized disk boots \
+                  and works correctly.");
   )
 
 let () = run_main_and_handle_errors main

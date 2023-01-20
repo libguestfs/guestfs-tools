@@ -106,7 +106,9 @@ let run disk format ignores zeroes ks =
               with G.Error msg as exn ->
                 if g#last_errno () = G.Errno.errno_ENOTSUP then (
                   let vfs_type = try g#vfs_type fs with _ -> "unknown" in
-                  warning (f_"fstrim operation is not supported on %s (%s).  Suppress this warning using '--ignore %s', or use copying mode instead.")
+                  warning (f_"fstrim operation is not supported on %s (%s).  \
+                              Suppress this warning using '--ignore %s', \
+                              or use copying mode instead.")
                           fs vfs_type fs
                 )
                 else raise exn
@@ -131,7 +133,8 @@ let run disk format ignores zeroes ks =
                 let header = g#pread_device fs 4096 0L in
                 g#blkdiscard fs;
                 if g#pwrite_device fs header 0L <> 4096 then
-                  error (f_"pwrite: short write restoring swap partition header")
+                  error (f_"pwrite: short write restoring \
+                            swap partition header")
               )
             )
           );

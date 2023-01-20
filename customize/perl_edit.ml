@@ -19,7 +19,8 @@
 open Std_utils
 open Tools_utils
 
-external c_edit_file : verbose:bool -> Guestfs.t -> int64 -> string -> string -> unit
+external c_edit_file : verbose:bool -> Guestfs.t -> int64 -> string -> string
+                       -> unit
   = "virt_customize_edit_file_perl"
 let edit_file g file expr =
   (* Note we pass original 'g' even though it is not used by the

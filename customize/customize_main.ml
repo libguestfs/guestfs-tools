@@ -64,8 +64,8 @@ let main () =
     let uri =
       try URI.parse_uri arg
       with URI.Parse_failed ->
-        error (f_"error parsing URI '%s'. Look for error messages printed above.")
-          arg in
+        error (f_"error parsing URI '%s'. \
+                  Look for error messages printed above.") arg in
     let format = match !format with "auto" -> None | fmt -> Some fmt in
     List.push_front (uri, format) files;
     format_consumed := true
@@ -122,7 +122,8 @@ read the man page virt-customize(1).
   let add =
     match files, domain with
     | [], None ->
-      error (f_"you must give either -a or -d options. Read virt-customize(1) man page for further information.")
+      error (f_"you must give either -a or -d options. \
+                Read virt-customize(1) man page for further information.")
     | [], Some dom ->
       fun (g : Guestfs.guestfs) readonly ->
         let allowuuid = true in
@@ -133,7 +134,8 @@ read the man page virt-customize(1).
                   ?libvirturi ~allowuuid ~readonlydisk
                   dom)
     | _::_, Some _ ->
-      error (f_"you cannot give -a and -d options together. Read virt-customize(1) man page for further information.")
+      error (f_"you cannot give -a and -d options together. \
+                Read virt-customize(1) man page for further information.")
     | (_::_) as files, None ->
       fun g readonly ->
         List.iter (
@@ -164,8 +166,9 @@ read the man page virt-customize(1).
     Option.may g#set_memsize memsize;
     Option.may g#set_smp smp;
     (* [--no-network] from the command line takes precedence over the automatic
-     * network enablement for [--key ID:clevis], so here we intentionally don't check
-     * [key_store_requires_network opthandle.ks]. *)
+     * network enablement for [--key ID:clevis], so here we intentionally
+     * don't check [key_store_requires_network opthandle.ks].
+     *)
     g#set_network network;
 
     (* Add disks. *)

@@ -25,9 +25,12 @@ open Utils
 open Printf
 open Unix
 
-let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy } =
+let get_index ~downloader ~sigchecker ?(template = false)
+      { Sources.uri; proxy } =
   let corrupt_file () =
-    error (f_"The index file downloaded from ‘%s’ is corrupt.\nYou need to ask the supplier of this file to fix it and upload a fixed version.") uri
+    error (f_"The index file downloaded from ‘%s’ is corrupt.\n\
+              You need to ask the supplier of this file to fix it \
+              and upload a fixed version.") uri
   in
 
   let rec get_index () =
@@ -57,7 +60,9 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
       fun (n, arch) ->
         let id = n, arch in
         if Hashtbl.mem nseen id then (
-          eprintf (f_"%s: index is corrupt: os-version ‘%s’ with architecture ‘%s’ appears two or more times\n") prog n arch;
+          eprintf (f_"%s: index is corrupt: os-version ‘%s’ with \
+                      architecture ‘%s’ appears two or more times\n")
+            prog n arch;
           corrupt_file ()
         );
         Hashtbl.add nseen id true
@@ -73,9 +78,11 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
             if Hashtbl.mem fseen hashkey then (
               (match subkey with
               | Some value ->
-                eprintf (f_"%s: index is corrupt: %s: field ‘%s[%s]’ appears two or more times\n") prog n field value
+                eprintf (f_"%s: index is corrupt: %s: field ‘%s[%s]’ appears \
+                            two or more times\n") prog n field value
               | None ->
-                eprintf (f_"%s: index is corrupt: %s: field ‘%s’ appears two or more times\n") prog n field);
+                eprintf (f_"%s: index is corrupt: %s: field ‘%s’ appears \
+                            two or more times\n") prog n field);
               corrupt_file ()
             );
             Hashtbl.add fseen hashkey true
@@ -88,9 +95,11 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
         fun (n, fields) ->
           let fields = List.map (fun (k, sk, v) -> (k, sk), v) fields in
           let printable_name =
-            try Some (List.assoc ("name", None) fields) with Not_found -> None in
+            try Some (List.assoc ("name", None) fields)
+            with Not_found -> None in
           let osinfo =
-            try Some (List.assoc ("osinfo", None) fields) with Not_found -> None in
+            try Some (List.assoc ("osinfo", None) fields)
+            with Not_found -> None in
           let file_uri =
             try make_absolute_uri (List.assoc ("file", None) fields)
             with Not_found ->
@@ -106,7 +115,8 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
                 let roots = g#inspect_os () in
                 let nroots = Array.length roots in
                 if nroots <> 1 then (
-                  eprintf (f_"%s: no ‘arch’ entry for %s and failed to guess it\n") prog n;
+                  eprintf (f_"%s: no ‘arch’ entry for %s and failed to \
+                              guess it\n") prog n;
                   corrupt_file ()
                 );
                 let inspected_arch = g#inspect_get_arch (Array.get roots 0) in
@@ -132,7 +142,8 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
               eprintf (f_"%s: cannot parse ‘revision’ field for ‘%s’\n") prog n;
               corrupt_file () in
           let format =
-            try Some (List.assoc ("format", None) fields) with Not_found -> None in
+            try Some (List.assoc ("format", None) fields)
+            with Not_found -> None in
           let size =
             let get_image_size filepath =
               (* If a compressed image manages to reach this code, qemu-img just
@@ -142,7 +153,8 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
                 let infos = Utils.get_image_infos filepath in
                 JSON_parser.object_get_number "virtual-size" infos
               | `XZ | `GZip | `Tar | ` Zip ->
-                eprintf (f_"%s: cannot determine the virtual size of %s due to compression")
+                eprintf (f_"%s: cannot determine the virtual size of %s \
+                            due to compression")
                         prog filepath;
                 corrupt_file () in
 
@@ -163,7 +175,8 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
                 corrupt_file ()
               ) in
           let compressed_size =
-            try Some (Int64.of_string (List.assoc ("compressed_size", None) fields))
+            try Some (Int64.of_string (List.assoc ("compressed_size", None)
+                                         fields))
             with
             | Not_found ->
               None
@@ -172,9 +185,11 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
                 prog n;
               corrupt_file () in
           let expand =
-            try Some (List.assoc ("expand", None) fields) with Not_found -> None in
+            try Some (List.assoc ("expand", None) fields)
+            with Not_found -> None in
           let lvexpand =
-            try Some (List.assoc ("lvexpand", None) fields) with Not_found -> None in
+            try Some (List.assoc ("lvexpand", None) fields)
+            with Not_found -> None in
           let notes =
             let rec loop = function
               | [] -> []
@@ -247,7 +262,8 @@ let get_index ~downloader ~sigchecker ?(template = false) { Sources.uri; proxy }
       corrupt_file ()
     )
     else if path.[0] = '/' then (
-      eprintf (f_"%s: you must use relative paths (not ‘%s’) in the index file\n") prog path;
+      eprintf (f_"%s: you must use relative paths (not ‘%s’) \
+                  in the index file\n") prog path;
       corrupt_file ()
     )
     else (

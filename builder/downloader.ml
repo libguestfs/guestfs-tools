@@ -114,7 +114,8 @@ and download_to t ?(progress_bar = false) ~proxy uri filename =
 
     let lines = Curl.run curl_h in
     if List.length lines < 1 then
-      error (f_"unexpected output from curl command, enable debug and look at previous messages");
+      error (f_"unexpected output from curl command, \
+                enable debug and look at previous messages");
     let status_code = List.hd lines in
     let bad_status_code = function
       | "" -> true

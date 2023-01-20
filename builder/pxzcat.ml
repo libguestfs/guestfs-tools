@@ -17,4 +17,5 @@
  *)
 
 external pxzcat : string -> string -> unit = "virt_builder_pxzcat"
-external using_parallel_xzcat : unit -> bool = "virt_builder_using_parallel_xzcat" [@@noalloc]
+external using_parallel_xzcat : unit -> bool =
+  "virt_builder_using_parallel_xzcat" [@@noalloc]

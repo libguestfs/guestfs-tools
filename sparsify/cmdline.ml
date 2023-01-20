@@ -89,7 +89,8 @@ A short summary of the options is given below.  For detailed help please
 read the man page virt-sparsify(1).
 ")
       prog in
-  let opthandle = create_standard_options argspec ~anon_fun ~key_opts:true ~machine_readable:true usage_msg in
+  let opthandle = create_standard_options argspec ~anon_fun
+                    ~key_opts:true ~machine_readable:true usage_msg in
   Getopt.parse opthandle.getopt;
 
   (* Dereference the rest of the args. *)
@@ -146,7 +147,8 @@ read the man page virt-sparsify(1).
 
       (* Check the output is not a char special (RHBZ#1056290). *)
       if is_char_device outdisk then
-        error (f_"output ‘%s’ cannot be a character device, it must be a regular file")
+        error (f_"output ‘%s’ cannot be a character device, \
+                  it must be a regular file")
               outdisk;
 
       indisk,
@@ -159,7 +161,8 @@ read the man page virt-sparsify(1).
         | _ -> error "usage: %s --in-place [--options] indisk" prog in
 
       if check_tmpdir <> `Warn then
-        error (f_"you cannot use --in-place and --check-tmpdir options together");
+        error (f_"you cannot use --in-place and --check-tmpdir \
+                  options together");
 
       if compress then
         error (f_"you cannot use --in-place and --compress options together");

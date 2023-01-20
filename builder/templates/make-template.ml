@@ -54,7 +54,8 @@ let () =
   (* Check that the ./run script was used. *)
   (try ignore (Sys.getenv "VIRT_BUILDER_DIRS")
    with Not_found ->
-     eprintf "%s: you must use `../../run ./make-template.ml ...' to run this script\n"
+     eprintf "%s: you must use `../../run ./make-template.ml ...' \
+              to run this script\n"
              prog;
      exit 1
   );
@@ -166,7 +167,8 @@ let rec main () =
   let chan = open_out (filename_of_os os arch ".virt-install-cmd") in
   fprintf chan "# This is the virt-install command which was used to create\n";
   fprintf chan "# the virt-builder template '%s'\n" (string_of_os os arch);
-  fprintf chan "# NB: This file is generated for documentation purposes ONLY!\n";
+  fprintf chan "# NB: This file is generated for documentation \
+                purposes ONLY!\n";
   fprintf chan "# This script was never run, and is not intended to be run.\n";
   fprintf chan "\n";
   print_virt_install_command chan vi;
@@ -632,7 +634,8 @@ poweroff
 # Rerun dracut for the installed kernel (not the running kernel).
 # See commit 0fa52e4e45d80874bc5ea5f112f74be1d3f3472f and
 # https://www.redhat.com/archives/libguestfs/2014-June/thread.html#00045
-KERNEL_VERSION=\"$(rpm -q kernel --qf '%%{version}-%%{release}.%%{arch}\\n' | sort -V | tail -1)\"
+KERNEL_VERSION=\"$(rpm -q kernel --qf '%%{version}-%%{release}.%%{arch}\\n' |
+                   sort -V | tail -1)\"
 dracut -f /boot/initramfs-$KERNEL_VERSION.img $KERNEL_VERSION
 "
   in
@@ -854,7 +857,8 @@ and make_boot_media os arch =
   match os, arch with
   | Alma (major, minor), X86_64 ->
      (* UK mirror *)
-     Location (sprintf "http://mirror.cov.ukservers.com/almalinux/%d.%d/BaseOS/x86_64/kickstart/"
+     Location (sprintf "http://mirror.cov.ukservers.com/almalinux/\
+                        %d.%d/BaseOS/x86_64/kickstart/"
                  major minor)
 
   | CentOS (major, _), Aarch64 ->
@@ -877,10 +881,12 @@ and make_boot_media os arch =
      Location "https://vault.centos.org/8.5.2111/BaseOS/x86_64/kickstart/"
 
   | CentOSStream 8, X86_64 ->
-     Location (sprintf "http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os")
+     Location (sprintf "http://mirror.centos.org/centos/8-stream/BaseOS/\
+                        x86_64/os")
 
   | CentOSStream ver, X86_64 ->
-     Location (sprintf "http://mirror.stream.centos.org/%d-stream/BaseOS/x86_64/os" ver)
+     Location (sprintf "http://mirror.stream.centos.org/%d-stream/BaseOS/\
+                        x86_64/os" ver)
 
   | Debian (_, dist), arch ->
      Location (sprintf "http://deb.debian.org/debian/dists/%s/main/installer-%s"
@@ -888,82 +894,107 @@ and make_boot_media os arch =
 
   (* Fedora primary architectures. *)
   | Fedora ver, Armv7 ->
-     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/armhfp/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/\
+                        %d/Server/armhfp/os/" ver)
 
   | Fedora ver, X86_64 when ver < 21 ->
-     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/releases/%d/Fedora/x86_64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/\
+                        releases/%d/Fedora/x86_64/os/" ver)
 
   | Fedora ver, X86_64 ->
-     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/x86_64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/\
+                        %d/Server/x86_64/os/" ver)
 
   | Fedora ver, Aarch64 ->
-     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/%d/Server/aarch64/os/" ver)
+     Location (sprintf "https://lon.mirror.rackspace.com/fedora/releases/\
+                        %d/Server/aarch64/os/" ver)
 
   (* Fedora secondary architectures.
    * By using dl.fedoraproject.org we avoid randomly using mirrors
    * which might have incomplete copies.
    *)
   | Fedora ver, I686 ->
-     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/releases/%d/Server/i386/os/" ver)
+     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/\
+                        releases/%d/Server/i386/os/" ver)
 
   | Fedora ver, PPC64 ->
-     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/releases/%d/Server/ppc64/os/" ver)
+     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/\
+                        releases/%d/Server/ppc64/os/" ver)
 
   | Fedora ver, PPC64le ->
-     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/releases/%d/Server/ppc64le/os/" ver)
+     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/\
+                        releases/%d/Server/ppc64le/os/" ver)
 
   | Fedora ver, S390X ->
-     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/releases/%d/Server/s390x/os/" ver)
+     Location (sprintf "https://dl.fedoraproject.org/pub/fedora-secondary/\
+                        releases/%d/Server/s390x/os/" ver)
 
   | RHEL (3, minor), X86_64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-3/U%d/AS/x86_64/tree" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/RHEL-3/\
+                        U%d/AS/x86_64/tree" minor)
 
   | RHEL (4, minor), X86_64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-4/U%d/AS/x86_64/tree" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/RHEL-4/\
+                        U%d/AS/x86_64/tree" minor)
 
   | RHEL (5, minor), I686 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-5-Server/U%d/i386/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        RHEL-5-Server/U%d/i386/os" minor)
 
   | RHEL (5, minor), X86_64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-5-Server/U%d/x86_64/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        RHEL-5-Server/U%d/x86_64/os" minor)
 
   | RHEL (6, minor), I686 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-6/6.%d/Server/i386/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        RHEL-6/6.%d/Server/i386/os" minor)
 
   | RHEL (6, minor), X86_64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/RHEL-6/6.%d/Server/x86_64/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        RHEL-6/6.%d/Server/x86_64/os" minor)
 
   | RHEL (7, minor), X86_64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/x86_64/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/x86_64/os" minor)
 
   | RHEL (7, minor), PPC64 ->
-     Location (sprintf "http://download.devel.redhat.com/released/rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/ppc64/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/ppc64/os" minor)
 
   | RHEL (7, minor), PPC64le ->
-     Location (sprintf "http://download.devel.redhat.com/released/rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/ppc64le/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/ppc64le/os" minor)
 
   | RHEL (7, minor), S390X ->
-     Location (sprintf "http://download.devel.redhat.com/released/rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/s390x/os" minor)
+     Location (sprintf "http://download.devel.redhat.com/released/\
+                        rhel-6-7-8/rhel-7/RHEL-7/7.%d/Server/s390x/os" minor)
 
   | RHEL (7, minor), Aarch64 ->
-     Location (sprintf "http://download.eng.bos.redhat.com/released/RHEL-ALT-7/7.%d/Server/aarch64/os" minor)
+     Location (sprintf "http://download.eng.bos.redhat.com/released/\
+                        RHEL-ALT-7/7.%d/Server/aarch64/os" minor)
 
   | RHEL (8, minor), arch ->
-     Location (sprintf "http://download.eng.bos.redhat.com/released/rhel-6-7-8/rhel-8/RHEL-8/8.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
+     Location (sprintf "http://download.eng.bos.redhat.com/released/\
+                        rhel-6-7-8/rhel-8/RHEL-8/8.%d.0/BaseOS/%s/os"
+                 minor (string_of_arch arch))
 
   | RHEL (9, minor), arch ->
-     Location (sprintf "http://download.eng.bos.redhat.com/released/RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
+     Location (sprintf "http://download.eng.bos.redhat.com/released/\
+                        RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
 
   | Ubuntu (_, dist), X86_64 ->
-     Location (sprintf "http://archive.ubuntu.com/ubuntu/dists/%s/main/installer-amd64" dist)
+     Location (sprintf "http://archive.ubuntu.com/ubuntu/dists/\
+                        %s/main/installer-amd64" dist)
 
   | Ubuntu (_, dist), PPC64le ->
-     Location (sprintf "http://ports.ubuntu.com/ubuntu-ports/dists/%s/main/installer-ppc64el" dist)
+     Location (sprintf "http://ports.ubuntu.com/ubuntu-ports/dists/\
+                        %s/main/installer-ppc64el" dist)
 
   | FreeBSD (major, minor), X86_64 ->
      let iso = sprintf "FreeBSD-%d.%d-RELEASE-amd64-disc1.iso"
                        major minor in
-     let iso_xz = sprintf "ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/%d.%d/%s.xz"
+     let iso_xz = sprintf "ftp://ftp.freebsd.org/pub/FreeBSD/releases/\
+                           amd64/amd64/ISO-IMAGES/%d.%d/%s.xz"
                        major minor iso in
      let cmd = sprintf "wget -nc %s" (quote iso_xz) in
      if Sys.command cmd <> 0 then exit 1;
@@ -985,13 +1016,15 @@ and make_boot_media os arch =
        | 10, 0, Server, X86_64 -> (* Windows Server 2016 *)
           "en_windows_server_2016_updated_feb_2018_x64_dvd_11636692.iso"
        | _ ->
-          eprintf "%s: don't have an installer ISO for this version of Windows\n"
+          eprintf "%s: don't have an installer ISO for this version of \
+                   Windows\n"
                   prog;
           exit 1 in
      CDRom (windows_installers // iso_name)
 
   | _ ->
-     eprintf "%s: don't know how to calculate the --location for this OS and architecture\n" prog;
+     eprintf "%s: don't know how to calculate the --location for this OS \
+              and architecture\n" prog;
      exit 1
 
 and print_install_notes = function
@@ -1103,7 +1136,9 @@ and make_virt_install_command os arch ks tmpname tmpout tmpefivars
             * https://bugs.almalinux.org/view.php?id=127
             * Once this is fixed, do the same as CentOS below.
             *)
-           sprintf "inst.ks=file:/%s inst.repo=http://repo.almalinux.org/almalinux/%d/BaseOS/x86_64/os/" (Filename.basename ks) major
+           sprintf "inst.ks=file:/%s inst.repo=http://repo.almalinux.org/\
+                    almalinux/%d/BaseOS/x86_64/os/"
+             (Filename.basename ks) major
         | RHEL (n, _) | CentOS (n, _) | CentOSStream n when n >= 9 ->
            sprintf "inst.ks=file:/%s" (Filename.basename ks)
         | Fedora _ | RHEL _ | CentOS _ | CentOSStream _ ->
@@ -1252,7 +1287,8 @@ and kernel_cmdline_of_os os arch =
   | _, S390X ->
      "console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH"
   | _, Aarch64 ->
-     "console=ttyAMA0 earlyprintk=pl011,0x9000000 ignore_loglevel no_timer_check printk.time=1 rd_NO_PLYMOUTH"
+     "console=ttyAMA0 earlyprintk=pl011,0x9000000 ignore_loglevel \
+      no_timer_check printk.time=1 rd_NO_PLYMOUTH"
   | _, Armv7 ->
      "console=tty0 console=ttyAMA0,115200 rd_NO_PLYMOUTH"
   | (Debian _|Fedora _|Ubuntu _), (PPC64|PPC64le) ->
@@ -1491,14 +1527,16 @@ and notes_of_os os arch nvram =
    | CentOS _ ->
       add "This CentOS image contains only unmodified @Core group packages."
    | CentOSStream _ ->
-      add "This CentOS Stream image contains only unmodified @Core group packages."
+      add "This CentOS Stream image contains only unmodified @Core \
+           group packages."
    | Debian _ ->
       add "This is a minimal Debian install."
    | Fedora _ ->
       add "This Fedora image contains only unmodified @Core group packages.";
       add "";
       add "Fedora and the Infinity design logo are trademarks of Red Hat, Inc.";
-      add "Source and further information is available from http://fedoraproject.org/"
+      add "Source and further information is available from \
+           http://fedoraproject.org/"
    | RHEL _ -> assert false (* cannot happen, see caller *)
    | Ubuntu _ ->
       add "This is a minimal Ubuntu install."
@@ -1609,7 +1647,8 @@ and open_guest ?(mount = false) filename =
 
   let roots = g#inspect_os () in
   if Array.length roots = 0 then (
-    eprintf "%s: cannot inspect this guest - this may mean guest installation failed\n" prog;
+    eprintf "%s: cannot inspect this guest - \
+             this may mean guest installation failed\n" prog;
     exit 1
   );
 

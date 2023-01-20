@@ -29,7 +29,8 @@ let ipa_client_perform (g : Guestfs.guestfs) root side_effects =
                   "/etc/ipa/default.conf";
                   "/var/lib/ipa-client/sysrestore/*";
                   "/var/lib/ipa-client/pki/*" ] in
-    let paths = List.concat (List.map Array.to_list (List.map g#glob_expand paths)) in
+    let paths = List.concat (List.map Array.to_list
+                               (List.map g#glob_expand paths)) in
     List.iter (
       fun filename ->
         try g#rm filename with G.Error _ -> ()

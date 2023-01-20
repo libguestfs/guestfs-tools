@@ -43,7 +43,8 @@ let import_keyfile ~gpg ~gpghome ~tmpdir ?(trust = true) keyfile =
     (if verbose () then "" else " >/dev/null 2>&1") in
   let r = shell_command cmd in
   if r <> 0 then
-    error (f_"could not import public key\nUse the ‘-v’ option and look for earlier error messages.");
+    error (f_"could not import public key\n\
+              Use the ‘-v’ option and look for earlier error messages.");
   let status = read_whole_file status_file in
   let status = String.nsplit "\n" status in
   let key_id = ref "" in
@@ -62,12 +63,14 @@ let import_keyfile ~gpg ~gpghome ~tmpdir ?(trust = true) keyfile =
       (if verbose () then "" else " >/dev/null 2>&1") in
     let r = shell_command cmd in
     if r <> 0 then
-      error (f_"GPG failure: could not trust the imported key\nUse the ‘-v’ option and look for earlier error messages.");
+      error (f_"GPG failure: could not trust the imported key\n\
+                Use the ‘-v’ option and look for earlier error messages.");
   );
   let subkeys =
     (* --with-fingerprint is specified twice so gpg outputs the full
      * fingerprint of the subkeys. *)
-    let cmd = sprintf "%s --homedir %s --with-colons --with-fingerprint --with-fingerprint --list-keys %s%s"
+    let cmd = sprintf "%s --homedir %s --with-colons \
+                       --with-fingerprint --with-fingerprint --list-keys %s%s"
       gpg gpghome !fingerprint
       (if verbose () then "" else " 2>/dev/null") in
     let lines = external_command cmd in
@@ -108,7 +111,8 @@ let rec create ~gpg ~gpgkey ~check_signature ~tmpdir =
         gpg gpgtmpdir (if verbose () then "" else " >/dev/null 2>&1") in
       let r = shell_command cmd in
       if r <> 0 then
-        error (f_"GPG failure: could not run GPG the first time\nUse the ‘-v’ option and look for earlier error messages.");
+        error (f_"GPG failure: could not run GPG the first time\n\
+                  Use the ‘-v’ option and look for earlier error messages.");
       match gpgkey with
       | No_Key ->
         assert false
@@ -121,7 +125,8 @@ let rec create ~gpg ~gpgkey ~check_signature ~tmpdir =
           (if verbose () then "" else " >/dev/null 2>&1") in
         let r = shell_command cmd in
         if r <> 0 then
-          error (f_"could not export public key\nUse the ‘-v’ option and look for earlier error messages.");
+          error (f_"could not export public key\n\
+                    Use the ‘-v’ option and look for earlier error messages.");
         import_keyfile gpg gpgtmpdir tmpdir filename
     ) else
       "", [] in
@@ -171,7 +176,12 @@ and verify_detached t filename sigfile =
   if t.check_signature then (
     match sigfile with
     | None ->
-      error (f_"there is no detached signature file\nThis probably means the index file is missing a sig=... line.\nYou can use --no-check-signature to ignore this error, but that means you are susceptible to man-in-the-middle attacks.")
+      error (f_"there is no detached signature file\n\
+                This probably means the index file is missing a \
+                sig=... line.\n\
+                You can use --no-check-signature to ignore this error, \
+                but that means you are susceptible to \
+                man-in-the-middle attacks.")
     | Some sigfile ->
       let args = sprintf "%s %s" (quote sigfile) (quote filename) in
       do_verify t args
@@ -185,7 +195,8 @@ and verify_and_remove_signature t filename =
     let cmd = [ "cp"; filename; asc_file ] in
     if run_command cmd <> 0 then exit 1;
     let out_file = Filename.temp_file ~temp_dir:t.tmpdir "vbfile" "" in
-    let args = sprintf "--yes --output %s %s" (quote out_file) (quote filename) in
+    let args =
+      sprintf "--yes --output %s %s" (quote out_file) (quote filename) in
     do_verify ~verify_only:false t args;
     Some out_file
   ) else
@@ -201,7 +212,11 @@ and do_verify ?(verify_only = true) t args =
         (quote status_file) args in
   let r = shell_command cmd in
   if r <> 0 then
-    error (f_"GPG failure: could not verify digital signature of file\nTry:\n - Use the ‘-v’ option and look for earlier error messages.\n - Delete the cache: virt-builder --delete-cache\n - Check no one has tampered with the website or your network!");
+    error (f_"GPG failure: could not verify digital signature of file\n\
+              Try:\n - Use the ‘-v’ option and look \
+              for earlier error messages.\n\
+              - Delete the cache: virt-builder --delete-cache\n\
+              - Check no one has tampered with the website or your network!");
 
   (* Check the fingerprint is who it should be. *)
   let status = read_whole_file status_file in
@@ -217,6 +232,10 @@ and do_verify ?(verify_only = true) t args =
   ) status;
 
   if not (equal_fingerprints !fingerprint t.fingerprint) &&
-    not (List.exists (equal_fingerprints !fingerprint) t.subkeys_fingerprints) then
-    error (f_"fingerprint of signature does not match the expected fingerprint!\n  found fingerprint: %s\n  expected fingerprint: %s")
+    not (List.exists (equal_fingerprints !fingerprint)
+           t.subkeys_fingerprints) then
+    error (f_"fingerprint of signature does not match the \
+              expected fingerprint!\n\
+              found fingerprint: %s\n\
+              expected fingerprint: %s")
       !fingerprint t.fingerprint

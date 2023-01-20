@@ -41,7 +41,8 @@ let parse_cmdline () =
     let uri =
       try URI.parse_uri arg
       with URI.Parse_failed ->
-        error (f_"error parsing URI '%s'. Look for error messages printed above.") arg in
+        error (f_"error parsing URI '%s'. \
+                  Look for error messages printed above.") arg in
     file := Some uri
   and set_domain dom =
     if !domain <> None then
@@ -90,9 +91,11 @@ read the man page virt-get-kernel(1).
   let add =
     match file, domain with
     | None, None ->
-      error (f_"you must give either -a or -d options.  Read virt-get-kernel(1) man page for further information.")
+      error (f_"you must give either -a or -d options.  \
+                Read virt-get-kernel(1) man page for further information.")
     | Some _, Some _ ->
-      error (f_"you cannot give -a and -d options together.  Read virt-get-kernel(1) man page for further information.")
+      error (f_"you cannot give -a and -d options together.  \
+                Read virt-get-kernel(1) man page for further information.")
     | None, Some dom ->
       fun (g : Guestfs.guestfs) ->
         let readonlydisk = "ignore" (* ignore CDs, data drives *) in

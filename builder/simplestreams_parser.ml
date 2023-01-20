@@ -75,7 +75,8 @@ let get_index ~downloader ~sigchecker { Sources.uri; proxy } =
 
     let format = object_get_string "format" tree in
     if format <> "products:1.0" then
-      error (f_"%s is not a Simple Streams (products) v1.0 JSON file (format: %s)")
+      error (f_"%s is not a Simple Streams (products) \
+                v1.0 JSON file (format: %s)")
         uri format;
 
     let products = object_get_object "products" tree in
