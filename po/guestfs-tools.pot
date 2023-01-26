@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.49.9\n"
+"Project-Id-Version: guestfs-tools 1.49.10\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2023-01-19 18:27+0000\n"
+"POT-Creation-Date: 2023-01-26 21:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2476,6 +2476,14 @@ msgstr ""
 
 #: builder/builder.ml:142
 msgid "could not find cache directory. Is $HOME set?"
+msgstr ""
+
+#: common/mldrivers/windows_drivers.ml:91
+msgid ""
+"could not find registry entry "
+"HKEY_LOCAL_MACHINE\\SYSTEM\\DriverDatabase\\DeviceIds in this Windows "
+"guest.  It may be either a very old or very new version of Windows that we "
+"cannot process."
 msgstr ""
 
 #: common/mlcustomize/firstboot.ml:233
