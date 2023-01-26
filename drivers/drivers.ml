@@ -154,7 +154,10 @@ and do_detect_os g root firmware =
       g#aug_init "/" 1;
       let bootloader = do_detect_linux_bootloader g root firmware in
       List.push_back body bootloader
-   | _ -> () (* XXX TBD *)
+   | "windows" ->
+      let drivers = do_detect_windows_drivers g root in
+      List.push_back body drivers
+   | _ -> ()
   );
 
   g#umount_all ();
@@ -188,9 +191,8 @@ and kernel_info_to_xml { Linux_kernels.ki_name; ki_version;
   List.push_back body (e "version" [] [ PCData ki_version ]);
   List.push_back body (e "arch" []    [ PCData ki_arch ]);
   List.push_back body (e "vmlinuz" [] [ PCData ki_vmlinuz ]);
-  Option.may
-    (fun v -> List.push_back body (e "initrd" []  [ PCData v ]))
-    ki_initrd;
+  List.may_push_back body
+    (Option.map (fun v -> e "initrd" [] [ PCData v ]) ki_initrd);
   List.push_back body (e "modules_path" [] [ PCData ki_modpath ]);
   List.push_back body (e "modules" []
                          (List.map (fun m -> e "module" [] [ PCData m ])
@@ -211,11 +213,65 @@ and kernel_info_to_xml { Linux_kernels.ki_name; ki_version;
     List.push_back body (e "is_xen_pv_only_kernel" [] []);
   if ki_is_debug then
     List.push_back body (e "debug_kernel" [] []);
-  Option.may
-    (fun v -> List.push_back body (e "config_file" []  [ PCData v ]))
-    ki_config_file;
+  List.may_push_back body
+    (Option.map (fun v -> e "config_file" []  [ PCData v ]) ki_config_file);
 
   e "kernel" [] !body
+
+and do_detect_windows_drivers g root =
+  let drivers = Windows_drivers.detect_drivers g root in
+  let drivers = List.map windows_driver_to_xml drivers in
+  e "drivers" [] drivers
+
+and windows_driver_to_xml { Windows_drivers.name; hwassoc } =
+  e "driver" [] (
+    e "name" [] [PCData name] :: List.map windows_hardware_to_xml hwassoc
+  )
+
+and windows_hardware_to_xml = function
+  | Windows_drivers.PCI { pci_class; pci_vendor; pci_device;
+                          pci_subsys; pci_rev } ->
+     let attrs = ref [] in
+     List.may_push_back attrs
+       (Option.map (fun v -> ("class", sprintf "%06LX" v)) pci_class);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("vendor", sprintf "%04LX" v)) pci_vendor);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("device", sprintf "%04LX" v)) pci_device);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("subsystem", sprintf "%08LX" v)) pci_subsys);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("revision", sprintf "%02LX" v)) pci_rev);
+     e "pci" !attrs []
+
+  | HID { hid_vendor; hid_product; hid_rev; hid_col; hid_multi } ->
+     let attrs = ref [] in
+     List.may_push_back attrs
+       (Option.map (fun v -> ("vendor", sprintf "%04LX" v)) hid_vendor);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("product", sprintf "%04LX" v)) hid_product);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("revision", sprintf "%02LX" v)) hid_rev);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("collection", sprintf "%02LX" v)) hid_col);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("identifier", sprintf "%02LX" v)) hid_multi);
+     e "hid" !attrs []
+
+  | USB { usb_vendor; usb_product; usb_rev; usb_multi } ->
+     let attrs = ref [] in
+     List.may_push_back attrs
+       (Option.map (fun v -> ("vendor", sprintf "%04LX" v)) usb_vendor);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("product", sprintf "%04LX" v)) usb_product);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("revision", sprintf "%02LX" v)) usb_rev);
+     List.may_push_back attrs
+       (Option.map (fun v -> ("identifier", sprintf "%02LX" v)) usb_multi);
+     e "usb" !attrs []
+
+  | Other path ->
+     Comment (sprintf "unknown DeviceId: %s" (String.concat "\\" path))
 
 (* Main program. *)
 let main () =

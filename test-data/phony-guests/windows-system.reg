@@ -15,3 +15,15 @@
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters]
 "Hostname"=str(1):"windows.invalid"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase\DeviceIds]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase\DeviceIds\PCI]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase\DeviceIds\PCI\CC_0101]
+"mshdc.inf"=hex(3):01,ff,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase\DeviceIds\PCI\VEN_8086&DEV_0008]
+"machine.inf"=hex(3):01,ff,00,00

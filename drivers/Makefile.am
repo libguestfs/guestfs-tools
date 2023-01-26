@@ -20,8 +20,10 @@ include $(top_srcdir)/subdir-rules.mk
 EXTRA_DIST = \
 	$(SOURCES_MLI) $(SOURCES_ML) $(SOURCES_C) \
 	expected-fedora.xml \
-	test-virt-drivers.sh \
+	expected-windows.xml \
 	test-virt-drivers-docs.sh \
+	test-virt-drivers-linux.sh \
+	test-virt-drivers-windows.sh \
 	virt-drivers.pod
 
 SOURCES_MLI = \
@@ -118,8 +120,9 @@ virt_drivers_LINK = \
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
-	test-virt-drivers.sh \
-	test-virt-drivers-docs.sh
+	test-virt-drivers-docs.sh \
+	test-virt-drivers-linux.sh \
+	test-virt-drivers-windows.sh
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check

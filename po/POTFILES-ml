@@ -26,6 +26,7 @@ common/mldrivers/firmware.ml
 common/mldrivers/linux.ml
 common/mldrivers/linux_bootloaders.ml
 common/mldrivers/linux_kernels.ml
+common/mldrivers/windows_drivers.ml
 common/mlgettext/common_gettext.ml
 common/mlpcre/PCRE.ml
 common/mlprogress/progress.ml

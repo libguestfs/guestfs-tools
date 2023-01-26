@@ -22,10 +22,6 @@ OVF) alongside disk images to tell the hypervisor how to boot them.
 This tool is used when this metadata has not been provided.  Work with
 the supplier of the disk image to get them to provide proper metadata.
 
-This tool best supports Linux at present, and only has outline support
-for Windows.  Windows support will be enhanced in a future release of
-guestfs-tools.
-
 =head1 XML FORMAT
 
 The output is an XML document.  At the top level it lists the
@@ -61,8 +57,8 @@ the first partition of the first disk:
 =head2 E<lt>bootloaderE<gt> and E<lt>kernelE<gt>
 
 The E<lt>bootloaderE<gt> element shows the bootloader found in the
-guest.  If known, this may contain information about what OS kernels
-are provided.  For example:
+Linux guest.  If known, this may contain information about what Linux
+kernels are provided.  For example:
 
  <operatingsystems>
    <firmware type='bios'/>
@@ -88,6 +84,31 @@ Many more fields are usually available for Linux guests, including a
 complete list of kernel modules and information about support for
 virtio.  For a complete example see:
 L<https://github.com/rwmjones/guestfs-tools/tree/master/drivers>
+
+=head2 E<lt>driversE<gt>
+
+The E<lt>driversE<gt> element lists information about drivers found in
+Windows guests:
+
+ <operatingsystems>
+   <firmware type='bios'/>
+   <operatingsystem>
+     <root>/dev/sda2</root>
+     <name>windows</name>
+     ...
+     <drivers>
+       <driver>
+         <name>scsidev</name>
+         <pci vendor='1077' device='1216' subsystem='8471101E'/>
+         <pci vendor='1077' device='1216' subsystem='8493101E'/>
+       </driver>
+       ...
+     </drivers>
+
+The driver name (eg. C<scsidev>) corresponds to the Windows driver
+F<.INF> file (eg. F<scsidev.inf>).  The list of PCI, USB etc devices
+are the matching devices which would cause this driver to load at
+boot.
 
 =head1 OPTIONS
 
