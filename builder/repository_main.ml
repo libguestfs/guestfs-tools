@@ -207,7 +207,7 @@ let process_image acc_entries filename repo tmprepo index interactive
       value
   in
 
-  let re_valid_id = PCRE.compile ~anchored:true "[-a-zA-Z0-9_.]+" in
+  let re_valid_id = PCRE.compile "^[-a-zA-Z0-9_.]+$" in
   let rec ask_id default =
     let id = ask (s_"Identifier: ") ~default in
     if not (PCRE.matches re_valid_id id) then (
