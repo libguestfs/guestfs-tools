@@ -135,11 +135,7 @@ and do_detect_os g root firmware =
   addi g#inspect_get_minor_version      "minor_version";
   adds g#inspect_get_package_format     "package_format";
   adds g#inspect_get_package_management "package_management";
-  (* XXX build_id was added in libguestfs 1.49.8.  Wait until this is
-   * available in a stable release of libguestfs, ie. 1.50, before
-   * uncommenting this.
-   *)
-  (*adds g#inspect_get_build_id         "build_id";*)
+  adds g#inspect_get_build_id           "build_id";
   adds g#inspect_get_osinfo             "osinfo";
 
   (* Now mount up the disks in order to detect bootloader and kernels. *)
