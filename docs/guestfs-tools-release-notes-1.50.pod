@@ -1,0 +1,182 @@
+=head1 NAME
+
+guestfs-tools-release-notes - guestfs tools release Notes
+
+=head1 RELEASE NOTES FOR GUESTFS TOOLS 1.50
+
+These are the release notes for guestfs tools stable release 1.50.
+This describes the major changes since 1.48.
+
+Guestfs tools 1.50.0 was released on B<XXX February 2023>.
+
+=head2 Security
+
+=over 4
+
+=item CVE-2022-2211
+
+L<https://bugzilla.redhat.com/show_bug.cgi?id=2100862>
+
+A buffer overflow was found in the I<--key> option of several guestfs
+tools.  For more information on this low severity bug see the bug
+report above (Laszlo Ersek).
+
+=back
+
+=head2 New virt-drivers tool
+
+This new tool can examine a disk image to determine:
+
+=over 4
+
+=item *
+
+Whether it uses BIOS or UEFI for booting
+
+=item *
+
+What bootloader it uses (Linux only)
+
+=item *
+
+What kernels may be chosen at boot time (Linux only)
+
+=item *
+
+What device drivers (kernel modules) are installed
+
+=back
+
+This is useful for determining how (or if) a guest can boot on a
+virtualization hypervisor.
+
+=head2 virt-customize
+
+I<--selinux-customize> is now the default for SELinux guests.  You no
+longer need to specify this flag.  In the rare case where you don't
+want to relabel a guest after customizing it, you can use
+I<--no-selinux-relabel>.  Note this is not needed for non-SELinux
+guests, it will do the right thing automatically (Laszlo Ersek).
+
+New I<--inject-qemu-ga> and I<--inject-virtio-win> operations which
+respectively inject QEMU Guest Agent and virtio-win drivers into
+Windows guests.
+
+Rocky Linux guests are now supported (thanks Harry Benson).
+
+=head2 virt-inspector
+
+Virt-inspector now outputs the new E<lt>build_idE<gt> element
+containing the guest build ID, if using libguestfs E<ge> 1.50.
+
+=head2 virt-sysprep
+
+New C<lvm-system-devices> operation for removing LVM2's
+F<system.devices> file.  This avoids certain problems when cloning a
+VM (Laszlo Ersek).
+
+Virt-sysprep supports guests using LUKS logical volumes on top of LVM
+(Laszlo Ersek).
+
+=head2 Common changes
+
+All the tools supporting the I<--key> option can now use Clevis/Tang
+to decrypt full disk encryption using this network-based scheme
+(Laszlo Ersek).
+
+=head2 Build changes
+
+B<Note> that libguestfs now requires minimum OCaml 4.04.  It will not
+compile on RHEL 6.
+
+B<Note> that libosinfo is a new required dependency.
+
+OCaml 4.14 is now supported.
+
+C<./configure --disable-ocaml> and C<./configure --disable-perl> now
+disable the OCaml- and Perl-based tools respectively (thanks Simon
+Walter).
+
+Experimental support for compiling on macOS.
+
+When running C<make check-valgrind>, Valgrind logs are no longer
+written to separate files under F<tmp/>.  Instead the output is
+written to the normal F<I<test-name>.log> file.
+
+=begin comment
+
+=head2 Internals
+
+=end comment
+
+=head2 Bugs fixed
+
+=begin comment
+
+https_proxy= ./bugs-in-changelog.sh v1.48.0..
+
+=end comment
+
+=over 4
+
+=item L<https://bugzilla.redhat.com/2133443>
+
+RFE: Support Rocky Linux in virt-customize
+
+=item L<https://bugzilla.redhat.com/2106286>
+
+virt-sysprep: make an effort to support LUKS on LV
+
+=item L<https://bugzilla.redhat.com/2089748>
+
+Removal of "--selinux-relabel" option breaks existing scripts
+
+=item L<https://bugzilla.redhat.com/2075718>
+
+Having to use "--selinux-relabel" is not intuitive given Red Hat products default to selinux enabled.
+
+=item L<https://bugzilla.redhat.com/2072493>
+
+[RFE] Request to add lvm system.devices cleanup operation to virt-sysprep
+
+=item L<https://bugzilla.redhat.com/2059545>
+
+[RHEL 9.0][Nutanix] lvm partition "home" will lost with SCSI disk either in the new cloned VM or restored from a snapshot
+
+=item L<https://bugzilla.redhat.com/2028764>
+
+Install the qemu-guest-agent package during the conversion process
+
+=item L<https://bugzilla.redhat.com/1809453>
+
+[RFE] Add support for LUKS encrypted disks with Clevis & Tang
+
+=item L<https://bugzilla.redhat.com/1554735>
+
+RFE: customize --selinux-relabel should be the default, with --no-selinux-relabel used to opt out
+
+=back
+
+=head1 SEE ALSO
+
+L<http://libguestfs.org/>
+
+=head1 AUTHORS
+
+=begin comment
+
+git shortlog -s v1.48.0..
+
+=end comment
+
+=over 4
+
+=item Laszlo Ersek
+
+=item Richard W.M. Jones
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009-2023 Red Hat Inc.
