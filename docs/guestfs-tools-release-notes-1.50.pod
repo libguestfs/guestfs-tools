@@ -52,7 +52,7 @@ virtualization hypervisor.
 
 =head2 virt-customize
 
-I<--selinux-customize> is now the default for SELinux guests.  You no
+I<--selinux-relabel> is now the default for SELinux guests.  You no
 longer need to specify this flag.  In the rare case where you don't
 want to relabel a guest after customizing it, you can use
 I<--no-selinux-relabel>.  Note this is not needed for non-SELinux
