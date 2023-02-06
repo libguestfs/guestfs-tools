@@ -17,6 +17,7 @@
  *)
 
 open Tools_utils
+open Common_gettext.Gettext
 
 open Printf
 
@@ -31,7 +32,8 @@ let set_timezone (g : Guestfs.guestfs) root timezone =
   | "linux" ->
     let target = sprintf "/usr/share/zoneinfo/%s" timezone in
     if not (g#exists target) then
-      error "timezone '%s' does not exist, use a location like 'Europe/London'" timezone;
+      error (f_"timezone '%s' does not exist, use a location like \
+                'Europe/London'") timezone;
     g#ln_sf target "/etc/localtime";
     true
 
