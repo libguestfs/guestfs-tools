@@ -70,9 +70,11 @@ read the man page virt-drivers(1).
   let add =
     match file, domain with
     | None, None ->
-      error (f_"you must give either -a or -d options.  Read virt-get-kernel(1) man page for further information.")
+      error (f_"you must give either -a or -d options.  \
+                Read virt-drivers(1) man page for further information.")
     | Some _, Some _ ->
-      error (f_"you cannot give -a and -d options together.  Read virt-get-kernel(1) man page for further information.")
+      error (f_"you cannot give -a and -d options together.  \
+                Read virt-drivers(1) man page for further information.")
     | None, Some dom ->
       fun (g : Guestfs.guestfs) ->
         let readonlydisk = "ignore" (* ignore CDs, data drives *) in
