@@ -28,7 +28,6 @@ symlinks = \
 	virt-customize \
 	virt-diff \
 	virt-df \
-	virt-dib \
 	virt-drivers \
 	virt-edit \
 	virt-filesystems \
@@ -55,7 +54,7 @@ CLEANFILES += \
 # common options like -d is handled by this common script.  However
 # this script cannot deal with commands that use --ro/--rw
 # (eg. virt-rescue).  Those tools have to be handled individually.
-virt-builder virt-cat virt-customize virt-df virt-dib virt-diff virt-drivers \
+virt-builder virt-cat virt-customize virt-df virt-diff virt-drivers \
 virt-edit virt-filesystems virt-format virt-get-kernel virt-inspector \
 virt-log virt-ls \
 virt-resize virt-sparsify virt-sysprep \

@@ -60,7 +60,6 @@ SUBDIRS += get-kernel
 SUBDIRS += resize
 SUBDIRS += sparsify
 SUBDIRS += sysprep
-SUBDIRS += dib
 endif
 
 # bash-completion
@@ -121,7 +120,7 @@ po/POTFILES: configure.ac
 po/POTFILES-ml: configure.ac
 	rm -f $@ $@-t
 	cd $(srcdir); \
-	find builder common/ml* customize dib drivers get-kernel resize sparsify sysprep -name '*.ml' | \
+	find builder common/ml* customize drivers get-kernel resize sparsify sysprep -name '*.ml' | \
 	grep -v '^builder/templates/' | \
 	grep -v '^common/mlv2v/' | \
 	grep -v -E '.*_tests\.ml$$' | \

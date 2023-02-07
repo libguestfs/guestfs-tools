@@ -30,7 +30,6 @@ Makefile.in
 /bash/virt-cat
 /bash/virt-customize
 /bash/virt-df
-/bash/virt-dib
 /bash/virt-diff
 /bash/virt-drivers
 /bash/virt-edit
@@ -95,9 +94,6 @@ Makefile.in
 /customize/test-settings-*.sh
 /customize/virt-customize
 /df/virt-df
-/dib/.depend
-/dib/output_format_*.mli
-/dib/virt-dib
 /drivers/.depend
 /drivers/virt-drivers
 /diff/virt-diff
