@@ -7,7 +7,7 @@ For discussion, development, patches, etc. please use the mailing list:
 
   http://www.redhat.com/mailman/listinfo/libguestfs
 
-Copyright (C) 2009-2021 Red Hat Inc.
+Copyright (C) 2009-2023 Red Hat Inc.
 
 The programs are distributed under the GPLv2+.  Some parts are LGPLv2+
 licensed.  See individual files for license details, and COPYING and
