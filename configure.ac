@@ -136,7 +136,6 @@ AC_CONFIG_FILES([Makefile
                  customize/Makefile
                  docs/Makefile
                  df/Makefile
-                 dib/Makefile
                  diff/Makefile
                  drivers/Makefile
                  edit/Makefile

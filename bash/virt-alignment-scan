@@ -109,12 +109,6 @@ _virt_customize ()
 } &&
 complete -o default -F _virt_customize virt-customize
 
-_virt_dib ()
-{
-    _guestfs_virttools "virt-dib" 0
-} &&
-complete -o default -F _virt_dib virt-dib
-
 _virt_df ()
 {
     _guestfs_virttools "virt-df" 1
