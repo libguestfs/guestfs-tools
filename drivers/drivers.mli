@@ -1,4 +1,4 @@
-(* virt-get-kernel
+(* virt-drivers
  * Copyright (C) 2013-2023 Red Hat Inc.
  *
  * This program is free software; you can redistribute it and/or modify
