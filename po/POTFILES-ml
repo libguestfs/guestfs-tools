@@ -79,6 +79,8 @@ dib/output_format_tgz.ml
 dib/output_format_vhd.ml
 dib/utils.ml
 drivers/drivers.ml
+drivers/hwdata.ml
+drivers/hwdata_config.ml
 get-kernel/get_kernel.ml
 resize/resize.ml
 sparsify/cmdline.ml

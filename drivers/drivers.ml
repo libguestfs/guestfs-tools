@@ -235,8 +235,14 @@ and windows_hardware_to_xml = function
        (Option.map (fun v -> ("class", sprintf "%06LX" v)) pci_class);
      List.may_push_back attrs
        (Option.map (fun v -> ("vendor", sprintf "%04LX" v)) pci_vendor);
+     let vendorname = get_pci_vendor pci_vendor in
+     List.may_push_back attrs
+       (Option.map (fun v -> "vendorname", v) vendorname);
      List.may_push_back attrs
        (Option.map (fun v -> ("device", sprintf "%04LX" v)) pci_device);
+     let devicename = get_pci_device pci_vendor pci_device in
+     List.may_push_back attrs
+       (Option.map (fun v -> "devicename", v) devicename);
      List.may_push_back attrs
        (Option.map (fun v -> ("subsystem", sprintf "%08LX" v)) pci_subsys);
      List.may_push_back attrs
@@ -261,8 +267,14 @@ and windows_hardware_to_xml = function
      let attrs = ref [] in
      List.may_push_back attrs
        (Option.map (fun v -> ("vendor", sprintf "%04LX" v)) usb_vendor);
+     let vendorname = get_usb_vendor usb_vendor in
+     List.may_push_back attrs
+       (Option.map (fun v -> "vendorname", v) vendorname);
      List.may_push_back attrs
        (Option.map (fun v -> ("product", sprintf "%04LX" v)) usb_product);
+     let productname = get_usb_device usb_vendor usb_product in
+     List.may_push_back attrs
+       (Option.map (fun v -> "productname", v) productname);
      List.may_push_back attrs
        (Option.map (fun v -> ("revision", sprintf "%02LX" v)) usb_rev);
      List.may_push_back attrs
@@ -271,6 +283,25 @@ and windows_hardware_to_xml = function
 
   | Other path ->
      Comment (sprintf "unknown DeviceId: %s" (String.concat "\\" path))
+
+and get_pci_vendor v = get_hwdata'1 Hwdata.pci_vendor v
+and get_pci_device v d = get_hwdata'2 Hwdata.pci_device v d
+and get_usb_vendor v = get_hwdata'1 Hwdata.usb_vendor v
+and get_usb_device v d = get_hwdata'2 Hwdata.usb_device v d
+
+and get_hwdata'1 f = function
+  | Some i64 when i64 >= 0_L && i64 <= 0xffff_L ->
+     let i32 = Int64.to_int32 i64 in
+     f i32
+  | _ -> None
+
+and get_hwdata'2 f v d =
+  match v, d with
+  | Some v64, Some d64 when v64 >= 0_L && v64 <= 0xffff_L &&
+                            d64 >= 0_L && d64 <= 0xffff_L ->
+     let v32 = Int64.to_int32 v64 and d32 = Int64.to_int32 d64 in
+     f v32 d32
+  | _ -> None
 
 (* Main program. *)
 let main () =

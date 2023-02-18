@@ -27,9 +27,13 @@ EXTRA_DIST = \
 	virt-drivers.pod
 
 SOURCES_MLI = \
-	drivers.mli
+	drivers.mli \
+	hwdata_config.mli \
+	hwdata.mli
 
 SOURCES_ML = \
+	hwdata_config.ml \
+	hwdata.ml \
 	drivers.ml
 
 SOURCES_C = \

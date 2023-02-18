@@ -138,6 +138,7 @@ AC_CONFIG_FILES([Makefile
                  df/Makefile
                  diff/Makefile
                  drivers/Makefile
+                 drivers/hwdata_config.ml
                  edit/Makefile
                  format/Makefile
                  get-kernel/Makefile
