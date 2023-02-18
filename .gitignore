@@ -95,6 +95,7 @@ Makefile.in
 /customize/virt-customize
 /df/virt-df
 /drivers/.depend
+/drivers/hwdata_config.ml
 /drivers/virt-drivers
 /diff/virt-diff
 /edit/virt-edit

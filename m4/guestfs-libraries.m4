@@ -169,3 +169,6 @@ PKG_CHECK_MODULES([JANSSON], [jansson >= 2.7])
 
 dnl Check for libosinfo (mandatory)
 PKG_CHECK_MODULES([LIBOSINFO], [libosinfo-1.0])
+
+dnl Check for hwdata directory (containing pci.ids) (optional, for virt-drivers)
+PKG_CHECK_VAR([HWDATA_PKGDATADIR], [hwdata], [pkgdatadir])
