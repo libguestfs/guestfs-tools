@@ -197,7 +197,7 @@
    ocaml_pcre_globals
    Memcheck:Leak
    fun:malloc
-   fun:pcre_compile2
+   fun:pcre2_compile_8
    ...
 }
 
