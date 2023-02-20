@@ -43,7 +43,6 @@ common/mlutils
 common/mlvisit
 common/mlxml
 customize
-ocaml
 "
 
 # Output file is always created in the current directory.
