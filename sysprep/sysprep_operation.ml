@@ -190,8 +190,8 @@ let dump_pod () =
       if op.enabled_by_default then printf "*\n";
       printf "\n";
       printf "%s.\n\n" op.heading;
-      Option.may (printf "%s\n\n") op.pod_description;
-      Option.may (fun notes ->
+      Option.iter (printf "%s\n\n") op.pod_description;
+      Option.iter (fun notes ->
           printf "=head3 ";
           printf (f_"Notes on %s") op.name;
           printf "\n\n";

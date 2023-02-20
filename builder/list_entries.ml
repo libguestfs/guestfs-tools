@@ -47,7 +47,7 @@ and list_entries_short index =
       if not hidden then (
         printf "%-24s" name;
         printf " %-10s" (Index.string_of_arch arch);
-        Option.may (printf " %s") printable_name;
+        Option.iter (printf " %s") printable_name;
         printf "\n"
       )
   ) index
@@ -73,13 +73,13 @@ and list_entries_long ~sources index =
                  notes; aliases; hidden }) ->
       if not hidden then (
         printf "%-24s %s\n" "os-version:" name;
-        Option.may (printf "%-24s %s\n" (s_"Full name:")) printable_name;
+        Option.iter (printf "%-24s %s\n" (s_"Full name:")) printable_name;
         printf "%-24s %s\n" (s_"Architecture:") (Index.string_of_arch arch);
         printf "%-24s %s\n" (s_"Minimum/default size:") (human_size size);
-        Option.may (fun size ->
+        Option.iter (fun size ->
             printf "%-24s %s\n" (s_"Download size:") (human_size size)
         ) compressed_size;
-        Option.may (
+        Option.iter (
             fun l -> printf "%-24s %s\n" (s_"Aliases:") (String.concat " " l)
         ) aliases;
         let notes = Languages.find_notes langs notes in

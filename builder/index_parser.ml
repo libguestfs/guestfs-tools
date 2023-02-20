@@ -284,11 +284,11 @@ let write_entry chan (name, { Index.printable_name; file_uri; arch; osinfo;
                               aliases; hidden}) =
   let fp fs = fprintf chan fs in
   fp "[%s]\n" name;
-  Option.may (fp "name=%s\n") printable_name;
-  Option.may (fp "osinfo=%s\n") osinfo;
+  Option.iter (fp "name=%s\n") printable_name;
+  Option.iter (fp "osinfo=%s\n") osinfo;
   fp "file=%s\n" file_uri;
   fp "arch=%s\n" (Index.string_of_arch arch);
-  Option.may (fp "sig=%s\n") signature_uri;
+  Option.iter (fp "sig=%s\n") signature_uri;
   (match checksums with
   | None -> ()
   | Some checksums ->
@@ -299,11 +299,11 @@ let write_entry chan (name, { Index.printable_name; file_uri; arch; osinfo;
     ) checksums
   );
   fp "revision=%s\n" (string_of_revision revision);
-  Option.may (fp "format=%s\n") format;
+  Option.iter (fp "format=%s\n") format;
   fp "size=%Ld\n" size;
-  Option.may (fp "compressed_size=%Ld\n") compressed_size;
-  Option.may (fp "expand=%s\n") expand;
-  Option.may (fp "lvexpand=%s\n") lvexpand;
+  Option.iter (fp "compressed_size=%Ld\n") compressed_size;
+  Option.iter (fp "expand=%s\n") expand;
+  Option.iter (fp "lvexpand=%s\n") lvexpand;
 
   let format_notes notes =
     String.concat "\n " (String.nsplit "\n" notes) in
