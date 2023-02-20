@@ -163,8 +163,8 @@ read the man page virt-customize(1).
   (* Connect to libguestfs. *)
   let g =
     let g = open_guestfs () in
-    Option.may g#set_memsize memsize;
-    Option.may g#set_smp smp;
+    Option.iter g#set_memsize memsize;
+    Option.iter g#set_smp smp;
     (* [--no-network] from the command line takes precedence over the automatic
      * network enablement for [--key ID:clevis], so here we intentionally
      * don't check [key_store_requires_network opthandle.ks].

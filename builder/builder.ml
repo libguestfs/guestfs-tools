@@ -723,8 +723,8 @@ let main () =
   let g =
     let g = open_guestfs () in
 
-    Option.may g#set_memsize cmdline.memsize;
-    Option.may g#set_smp cmdline.smp;
+    Option.iter g#set_memsize cmdline.memsize;
+    Option.iter g#set_smp cmdline.smp;
     g#set_network cmdline.network;
 
     (* The output disk is being created, so use cache=unsafe here. *)
@@ -818,6 +818,6 @@ let main () =
   Pervasives.flush Pervasives.stdout;
   Pervasives.flush Pervasives.stderr;
 
-  Option.may print_string stats
+  Option.iter print_string stats
 
 let () = run_main_and_handle_errors main
