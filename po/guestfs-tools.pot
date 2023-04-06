@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.50.0\n"
+"Project-Id-Version: guestfs-tools 1.50.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2023-02-07 11:12+0000\n"
+"POT-Creation-Date: 2023-04-06 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,7 +186,7 @@ msgstr ""
 msgid "%s: cannot determine the virtual size of %s due to compression"
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:389
+#: common/mlcustomize/inject_virtio_win.ml:401
 msgid "%s: cannot open virtio-win ISO file: %s"
 msgstr ""
 
@@ -2741,7 +2741,7 @@ msgstr ""
 msgid "ignore|warn|error"
 msgstr ""
 
-#: common/mldrivers/linux_kernels.ml:328
+#: common/mldrivers/linux_kernels.ml:340
 msgid "ignoring kernel %s in bootloader, as it does not exist."
 msgstr ""
 
@@ -2901,11 +2901,11 @@ msgid ""
 "This is a failure of the source repository.  Use -v for more information."
 msgstr ""
 
-#: common/mldrivers/linux_kernels.ml:181
+#: common/mldrivers/linux_kernels.ml:193
 msgid "no initrd was found in /boot matching %s %s."
 msgstr ""
 
-#: common/mldrivers/linux_kernels.ml:303
+#: common/mldrivers/linux_kernels.ml:315
 msgid ""
 "no installed kernel packages were found.\n"
 "\n"
@@ -2916,7 +2916,7 @@ msgstr ""
 msgid "no kernel found in %s"
 msgstr ""
 
-#: common/mldrivers/linux_kernels.ml:340
+#: common/mldrivers/linux_kernels.ml:352
 msgid ""
 "no kernels were found in the bootloader configuration.\n"
 "\n"
@@ -3067,8 +3067,8 @@ msgstr ""
 msgid "resize2fs"
 msgstr ""
 
-#. common/mlcustomize/inject_virtio_win.ml:335
-#: common/mlcustomize/inject_virtio_win.ml:340
+#. common/mlcustomize/inject_virtio_win.ml:347
+#: common/mlcustomize/inject_virtio_win.ml:352
 msgid ""
 "root directory ‘/’ is missing from the virtio-win directory or ISO.\n"
 "\n"
@@ -3221,7 +3221,7 @@ msgstr ""
 msgid "the value of the key ‘%s’ is not an object"
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:168
+#: common/mlcustomize/inject_virtio_win.ml:175
 msgid ""
 "there are no virtio drivers available for this version of Windows (%d.%d %s "
 "%s %s).  virt-v2v looks for drivers in %s\n"
@@ -3237,7 +3237,7 @@ msgid ""
 "are susceptible to man-in-the-middle attacks."
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:191
+#: common/mlcustomize/inject_virtio_win.ml:197
 msgid ""
 "there is no virtio block device driver for this version of Windows (%d.%d "
 "%s).  virt-v2v looks for this driver in %s\n"
@@ -3245,7 +3245,7 @@ msgid ""
 "The guest will be configured to use a slower emulated device."
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:216
+#: common/mlcustomize/inject_virtio_win.ml:228
 msgid ""
 "there is no virtio network driver for this version of Windows (%d.%d %s).  "
 "virt-v2v looks for this driver in %s\n"
