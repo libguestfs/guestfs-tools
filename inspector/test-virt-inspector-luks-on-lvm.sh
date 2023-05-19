@@ -41,6 +41,11 @@ keys=(--key /dev/Volume-Group/Root:key:FEDORA-Root
       --key /dev/Volume-Group/Logical-Volume-2:key:FEDORA-LV2
       --key /dev/Volume-Group/Logical-Volume-3:key:FEDORA-LV3)
 
+keys_mapper=(--key /dev/mapper/Volume--Group-Root:key:FEDORA-Root
+             --key /dev/mapper/Volume--Group-Logical--Volume--1:key:FEDORA-LV1
+             --key /dev/mapper/Volume--Group-Logical--Volume--2:key:FEDORA-LV2
+             --key /dev/mapper/Volume--Group-Logical--Volume--3:key:FEDORA-LV3)
+
 # Ignore zero-sized file.
 if [ -s "$f" ]; then
     uuid_root=$(guestfish --ro -i -a "$f" "${keys[@]}" \
@@ -53,4 +58,10 @@ if [ -s "$f" ]; then
     # are any differences.
     sed -e "s/ROOTUUID/$uuid_root/" < "$srcdir/expected-$b.xml" \
     | diff -u - "actual-$b.xml"
+
+    # Re-run virt-inspector with keys using the /dev/mapper/VG-LV format; verify
+    # only that the XML output matches the output from the previous
+    # virt-inspector invocation (which used the /dev/VG/LV format).
+    $VG virt-inspector "${keys_mapper[@]}" --format=raw -a "$f" \
+    | diff -u "actual-$b.xml" -
 fi
