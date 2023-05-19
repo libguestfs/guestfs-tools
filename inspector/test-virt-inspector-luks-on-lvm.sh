@@ -36,14 +36,15 @@ if [ "$(guestfish version | grep minor | awk '{print $2}')" -lt 47 ]; then
 fi
 
 f=../test-data/phony-guests/fedora-luks-on-lvm.img
-keys=(--key /dev/VG/Root:key:FEDORA-Root
-      --key /dev/VG/LV1:key:FEDORA-LV1
-      --key /dev/VG/LV2:key:FEDORA-LV2
-      --key /dev/VG/LV3:key:FEDORA-LV3)
+keys=(--key /dev/Volume-Group/Root:key:FEDORA-Root
+      --key /dev/Volume-Group/Logical-Volume-1:key:FEDORA-LV1
+      --key /dev/Volume-Group/Logical-Volume-2:key:FEDORA-LV2
+      --key /dev/Volume-Group/Logical-Volume-3:key:FEDORA-LV3)
 
 # Ignore zero-sized file.
 if [ -s "$f" ]; then
-    uuid_root=$(guestfish --ro -i -a "$f" "${keys[@]}" luks-uuid /dev/VG/Root)
+    uuid_root=$(guestfish --ro -i -a "$f" "${keys[@]}" \
+                    luks-uuid /dev/Volume-Group/Root)
     b=$(basename "$f")
     $VG virt-inspector "${keys[@]}" --format=raw -a "$f" > "actual-$b.xml"
     # Check the generated output validate the schema.
