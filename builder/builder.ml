@@ -815,8 +815,8 @@ let main () =
   delete_output_file := false;
 
   (* Print the stats calculated above. *)
-  Pervasives.flush Pervasives.stdout;
-  Pervasives.flush Pervasives.stderr;
+  Stdlib.flush Stdlib.stdout;
+  Stdlib.flush Stdlib.stderr;
 
   Option.iter print_string stats
 

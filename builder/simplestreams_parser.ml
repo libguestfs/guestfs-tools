@@ -149,6 +149,6 @@ let get_index ~downloader ~sigchecker { Sources.uri; proxy } =
   let entries = List.flatten (List.map scan_product_list downloads) in
   if verbose () then (
     printf "simplestreams tree (%s) after parsing:\n" uri;
-    List.iter (Index.print_entry Pervasives.stdout) entries
+    List.iter (Index.print_entry Stdlib.stdout) entries
   );
   entries

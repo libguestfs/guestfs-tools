@@ -246,7 +246,7 @@ let get_index ~downloader ~sigchecker ?(template = false)
 
     if verbose () then (
       printf "index file (%s) after parsing (C parser):\n" uri;
-      List.iter (Index.print_entry Pervasives.stdout) entries
+      List.iter (Index.print_entry Stdlib.stdout) entries
     );
 
     entries
