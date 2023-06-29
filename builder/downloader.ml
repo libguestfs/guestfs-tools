@@ -95,7 +95,6 @@ and download_to t ?(progress_bar = false) ~proxy uri filename =
   | _ ->
     let common_args = [
       "location", None;         (* Follow 3xx redirects. *)
-      "url", Some uri;          (* URI to download. *)
     ] in
 
     let quiet_args = [ "silent", None; "show-error", None ] in
@@ -110,7 +109,7 @@ and download_to t ?(progress_bar = false) ~proxy uri filename =
         "write-out", Some "%{http_code}" (* HTTP status code to stdout. *)
       ];
 
-      Curl.create ~curl:t.curl ~tmpdir:t.tmpdir !curl_args in
+      Curl.create ~curl:t.curl ~tmpdir:t.tmpdir !curl_args uri in
 
     let lines = Curl.run curl_h in
     if List.length lines < 1 then
@@ -136,7 +135,7 @@ and download_to t ?(progress_bar = false) ~proxy uri filename =
         else List.push_back_list curl_args quiet_args
       );
 
-      Curl.create ~curl:t.curl ~tmpdir:t.tmpdir !curl_args in
+      Curl.create ~curl:t.curl ~tmpdir:t.tmpdir !curl_args uri in
 
     ignore (Curl.run curl_h)
   );
