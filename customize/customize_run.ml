@@ -153,15 +153,14 @@ let run (g : G.guestfs) root (ops : ops) =
       let mode = if String.is_prefix mode "0" then "0o" ^ mode else mode in
       g#chmod (int_of_string mode) path
 
-    | `Chown (uid_gid, path) ->
-       let uid, gid = String.split "." uid_gid in
+    | `Chown (uid, gid, path) ->
        let uid, gid =
          try int_of_string uid, int_of_string gid
          with Failure _ ->
-               error (f_"--chown: could not parse numeric UID.GID from \
-                         %s") uid_gid in
+               error (f_"--chown: could not parse numeric UID:GID from \
+                         %s:%s") uid gid in
 
-       message (f_"Changing owner of %s to %d.%d") path uid gid;
+       message (f_"Changing owner of %s to %d:%d") path uid gid;
        g#chown uid gid path
 
     | `Command cmd ->
