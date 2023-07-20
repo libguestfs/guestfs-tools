@@ -717,8 +717,20 @@ changed (guestfs_h *g1, struct file *file1,
     output_string ("changed:");
 #define COMPARE_STAT(n)						\
     if (file1->stat->n != file2->stat->n) output_string (#n)
-    COMPARE_STAT (st_dev);
-    COMPARE_STAT (st_ino);
+    /* Comparing st_dev and st_ino is disabled for now, see the longer
+     * discussion here:
+     * https://listman.redhat.com/archives/libguestfs/2023-July/032061.html
+     * Even if we fixed the libguestfs API to do translation of this
+     * field correctly, it seems unlikely that there would ever be a
+     * meaningful difference in the st_dev or st_ino fields.  We
+     * already know the fields refer to the same filename.  Is it
+     * interesting that the file might have moved to a different disk?
+     * Everything else is comparing the content or direct metadata of
+     * the file, but st_dev and st_ino represent the metadata of the
+     * filesystem which is (arguably) different.
+     */
+//    COMPARE_STAT (st_dev);
+//    COMPARE_STAT (st_ino);
     COMPARE_STAT (st_mode);
     COMPARE_STAT (st_nlink);
     COMPARE_STAT (st_uid);
