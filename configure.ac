@@ -15,7 +15,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-AC_INIT([guestfs-tools], [1.51.3])
+AC_INIT([guestfs-tools], [1.51.4])
 
 dnl The common/ subdirectory assumes this.  In libguestfs it contains
 dnl the --with-extra parameter.  Here we just define it to the version.
