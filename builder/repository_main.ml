@@ -551,14 +551,14 @@ let main () =
   | Some gpgkey ->
     message (f_"Signing index with the GPG key %s") gpgkey;
     let cmd = sprintf "%s --armor --output %s --export %s"
-                      (quote (cmdline.gpg // "index.gpg"))
-                      (quote tmprepo) (quote gpgkey) in
+                      (quote cmdline.gpg)
+                      (quote (tmprepo // "index.gpg")) (quote gpgkey) in
     if shell_command cmd <> 0 then
       error (f_"failed to export the GPG key %s") gpgkey;
 
     let cmd = sprintf "%s --armor --default-key %s --clearsign %s"
                        (quote cmdline.gpg) (quote gpgkey)
-                       (quote (tmprepo // "index" )) in
+                       (quote (tmprepo // "index")) in
     if shell_command cmd <> 0 then
       error (f_"failed to sign index");
   );
