@@ -322,6 +322,10 @@ let run (g : G.guestfs) root (ops : ops) =
       ) else
         warning (f_"SSH key could not be injected for this type of guest")
 
+    | `TarIn (tarfile, remotedir) ->
+      message (f_"Unpack tar file: %s to %s") tarfile remotedir;
+      g#tar_in tarfile remotedir
+
     | `Truncate path ->
       message (f_"Truncating: %s") path;
       g#truncate path
