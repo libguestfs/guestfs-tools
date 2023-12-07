@@ -36,6 +36,7 @@ if [ "$(guestfish version | grep minor | awk '{print $2}')" -lt 47 ]; then
 fi
 
 f=../test-data/phony-guests/fedora-luks-on-lvm.img
+
 keys=(--key /dev/Volume-Group/Root:key:FEDORA-Root
       --key /dev/Volume-Group/Logical-Volume-1:key:FEDORA-LV1
       --key /dev/Volume-Group/Logical-Volume-2:key:FEDORA-LV2
@@ -45,6 +46,11 @@ keys_mapper=(--key /dev/mapper/Volume--Group-Root:key:FEDORA-Root
              --key /dev/mapper/Volume--Group-Logical--Volume--1:key:FEDORA-LV1
              --key /dev/mapper/Volume--Group-Logical--Volume--2:key:FEDORA-LV2
              --key /dev/mapper/Volume--Group-Logical--Volume--3:key:FEDORA-LV3)
+
+keys_all=(--key all:key:FEDORA-Root
+	  --key all:key:FEDORA-LV1
+	  --key all:key:FEDORA-LV2
+	  --key all:key:FEDORA-LV3)
 
 # Ignore zero-sized file.
 if [ -s "$f" ]; then
@@ -63,5 +69,9 @@ if [ -s "$f" ]; then
     # only that the XML output matches the output from the previous
     # virt-inspector invocation (which used the /dev/VG/LV format).
     $VG virt-inspector "${keys_mapper[@]}" --format=raw -a "$f" \
+    | diff -u "actual-$b.xml" -
+
+    # Re-run using all:SELECTOR syntax.
+    $VG virt-inspector "${keys_all[@]}" --format=raw -a "$f" \
     | diff -u "actual-$b.xml" -
 fi
