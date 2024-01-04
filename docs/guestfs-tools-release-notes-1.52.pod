@@ -7,7 +7,7 @@ guestfs-tools-release-notes - guestfs tools release Notes
 These are the release notes for guestfs tools stable release 1.52.
 This describes the major changes since 1.50.
 
-Guestfs tools 1.52.0 was released on B<XXX XXX 2024>.
+Guestfs tools 1.52.0 was released on B<5 January 2024>.
 
 =begin comment
 
