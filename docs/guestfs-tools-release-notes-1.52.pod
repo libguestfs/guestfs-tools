@@ -110,6 +110,8 @@ git shortlog -s v1.50.0..
 
 =over 4
 
+=item Jürgen Hötzel
+
 =item Laszlo Ersek
 
 =item Richard W.M. Jones
