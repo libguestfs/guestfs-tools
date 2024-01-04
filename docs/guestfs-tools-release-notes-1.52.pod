@@ -1,0 +1,121 @@
+=head1 NAME
+
+guestfs-tools-release-notes - guestfs tools release Notes
+
+=head1 RELEASE NOTES FOR GUESTFS TOOLS 1.52
+
+These are the release notes for guestfs tools stable release 1.52.
+This describes the major changes since 1.50.
+
+Guestfs tools 1.52.0 was released on B<XXX XXX 2024>.
+
+=begin comment
+
+=head2 Security
+
+=end comment
+
+=head2 virt-dib was removed
+
+virt-dib, a tool that built disk images using diskimage-builder
+descriptions has been removed.  It only supported an older version of
+the diskimage-builder metadata.  See also:
+L<https://bugzilla.redhat.com/1910039>
+
+=head2 virt-builder
+
+L<virt-builder(1)> now prints better error messages when a specific
+URL cannot be downloaded.
+
+=head2 virt-builder-repository
+
+Fix GPG repository signing (thanks Allard Berends).
+
+=head2 virt-customize
+
+New L<virt-customize(1)> I<--chown> and I<--tar-in> options.  (Also
+available in virt-builder and virt-sysprep.)
+
+=head2 virt-diff
+
+L<virt-diff(1)> no longer considers C<st_dev> and C<st_ino> fields,
+which means that guests where a file has moved across a mountpoint but
+is otherwise identical (size, path, etc) will not show up as a
+difference.
+
+=head2 virt-drivers
+
+L<virt-drivers(1)> a tool which looks at the device drivers needed by
+a guest, can now look up vendor and device names using the PCI and USB
+IDs databases.
+
+=head2 Common changes
+
+The common I<--key> option now recognizes LVM names like
+F</dev/mapper/rhel boot--73--75--123-root> (Laszlo Ersek).
+
+The I<--key> option also supports a new S<I<--key all:...>> selector
+to try the same key on all devices.
+
+=head2 Build changes
+
+Support for OCaml 5, and OCaml E<ge> 4.07 is now the minimum (thanks
+Guillaume Munch-Maccagnoni, Jerry James, Josh Berdine, Jürgen Hötzel,
+Vincent Laviron).
+
+Fix compatibility issues with libxml2 2.12.
+
+=head2 Internals
+
+Fix an off-by-one error which caused very rare crashes in some of the
+virt tools.
+
+=head2 Bugs fixed
+
+=begin comment
+
+https_proxy= ./bugs-in-changelog.sh v1.50.0..
+
+=end comment
+
+=over 4
+
+=item L<https://bugzilla.redhat.com/2175703>
+
+virt-v2v failed to inspect RHEL9.2 guest due to kernel-core /
+kernel-modules-core subpackage split
+
+=item L<https://bugzilla.redhat.com/2168506>
+
+RFE: Virt-v2v should recognize partition names like '/dev/mapper/rhel
+boot--73--75--123-root' in related keys option
+
+=item L<https://bugzilla.redhat.com/1910039>
+
+virt-dib doesn't work with newer diskimage-builder version on RHEL8
+
+=back
+
+=head1 SEE ALSO
+
+L<http://libguestfs.org/>
+
+=head1 AUTHORS
+
+=begin comment
+
+git shortlog -s v1.50.0..
+
+=end comment
+
+=over 4
+
+=item Laszlo Ersek
+
+=item Richard W.M. Jones
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009-2024 Red Hat Inc.

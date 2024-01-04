@@ -19,14 +19,17 @@ include $(top_srcdir)/subdir-rules.mk
 
 EXTRA_DIST = \
 	guestfs-tools-release-notes-1.48.pod \
-	guestfs-tools-release-notes-1.50.pod
+	guestfs-tools-release-notes-1.50.pod \
+	guestfs-tools-release-notes-1.52.pod
 
 man_MANS = \
 	guestfs-tools-release-notes-1.48.1 \
-	guestfs-tools-release-notes-1.50.1
+	guestfs-tools-release-notes-1.50.1 \
+	guestfs-tools-release-notes-1.52.1
 noinst_DATA = \
 	$(top_builddir)/website/guestfs-tools-release-notes-1.48.1.html \
-	$(top_builddir)/website/guestfs-tools-release-notes-1.50.1.html
+	$(top_builddir)/website/guestfs-tools-release-notes-1.50.1.html \
+	$(top_builddir)/website/guestfs-tools-release-notes-1.52.1.html
 
 guestfs-tools-release-notes-1.48.1 guestfs-tools-release-notes-1.48.txt $(top_builddir)/website/guestfs-tools-release-notes-1.48.1.html: stamp-guestfs-tools-release-notes-1.48.pod
 
@@ -46,6 +49,17 @@ stamp-guestfs-tools-release-notes-1.50.pod: guestfs-tools-release-notes-1.50.pod
 	  --section 1 \
 	  --man guestfs-tools-release-notes-1.50.1 \
 	  --html $(top_builddir)/website/guestfs-tools-release-notes-1.50.1.html \
+	  --license GPLv2+ \
+	  $<
+	touch $@
+
+guestfs-tools-release-notes-1.52.1 guestfs-tools-release-notes-1.52.txt $(top_builddir)/website/guestfs-tools-release-notes-1.52.1.html: stamp-guestfs-tools-release-notes-1.52.pod
+
+stamp-guestfs-tools-release-notes-1.52.pod: guestfs-tools-release-notes-1.52.pod
+	$(PODWRAPPER) \
+	  --section 1 \
+	  --man guestfs-tools-release-notes-1.52.1 \
+	  --html $(top_builddir)/website/guestfs-tools-release-notes-1.52.1.html \
 	  --license GPLv2+ \
 	  $<
 	touch $@
