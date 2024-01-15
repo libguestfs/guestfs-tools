@@ -83,7 +83,7 @@ kernels are provided.  For example:
 Many more fields are usually available for Linux guests, including a
 complete list of kernel modules and information about support for
 virtio.  For a complete example see:
-L<https://github.com/rwmjones/guestfs-tools/tree/master/drivers>
+L<https://github.com/libguestfs/guestfs-tools/tree/master/drivers>
 
 =head2 E<lt>driversE<gt>
 
