@@ -489,6 +489,19 @@ visit_guest (guestfs_h *g)
   return t;
 }
 
+/* In visit_entry, GCC 14 falsely reports:
+ *
+ * diff.c: In function ‘visit_entry’:
+ * diff.c:565:16: error: pointer ‘old_files_95’ may be used after ‘realloc’ [-Werror=use-after-free]
+ *   565 |       t->files = old_files;
+ *       |       ~~~~~~~~~^~~~~~~~~~~
+ * diff.c:562:16: note: call to ‘realloc’ here
+ *   562 |     t->files = realloc (old_files, t->allocated * sizeof (struct file));
+ *       |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wuse-after-free"
+
 /* Visit each directory/file/etc entry in the tree.  This just stores
  * the data in the tree.  Note we don't store file content, but we
  * keep the guestfs handle open so we can pull that out later if we
@@ -582,6 +595,8 @@ visit_entry (const char *dir, const char *name,
   guestfs_free_xattr_list (xattrs);
   return -1;
 }
+
+#pragma GCC diagnostic pop
 
 static void deleted (guestfs_h *, struct file *);
 static void added (guestfs_h *, struct file *);
