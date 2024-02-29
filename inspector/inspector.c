@@ -764,14 +764,6 @@ do_xpath (const char *query)
       printf ("\n");
     break;
 
-  case XPATH_UNDEFINED: /* grrrrr ... switch-enum is a useless warning */
-  case XPATH_BOOLEAN:
-  case XPATH_NUMBER:
-  case XPATH_POINT:
-  case XPATH_RANGE:
-  case XPATH_LOCATIONSET:
-  case XPATH_USERS:
-  case XPATH_XSLT_TREE:
   default:
     r = (char *) xmlXPathCastToString (xpathObj);
     printf ("%s\n", r);
