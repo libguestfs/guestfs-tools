@@ -29,6 +29,23 @@ test "x$U" != "x" && AC_MSG_ERROR([Compiler not ANSI compliant])
 
 AM_PROG_CC_C_O
 
+AC_ARG_ENABLE([werror],
+    [AS_HELP_STRING([--enable-werror],
+                    [turn on lots of GCC warnings (for developers)])],
+     [case $enableval in
+      yes|no) ;;
+      *)      AC_MSG_ERROR([bad value $enableval for werror option]) ;;
+      esac
+      gcc_warnings=$enableval],
+      [gcc_warnings=no]
+)
+WARN_CFLAGS="-Wall"
+AC_SUBST([WARN_CFLAGS])
+if test "x$gcc_warnings" = "xyes"; then
+    WERROR_CFLAGS="-Werror"
+fi
+AC_SUBST([WERROR_CFLAGS])
+
 # Provide a global place to set CFLAGS.  (Note that setting AM_CFLAGS
 # is no use because it doesn't override target_CFLAGS).
 #---
