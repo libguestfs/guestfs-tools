@@ -457,7 +457,7 @@ estimate_input (const char *input, uint64_t *estimate_rtn, char **ifmt_rtn)
   }
   else {
     argv[0] = "file";
-    argv[1] = "-bsLz";
+    argv[1] = "-bsSLz";
     argv[2] = input;
     argv[3] = NULL;
 
