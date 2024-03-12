@@ -30,10 +30,8 @@ disk image to be writable as the non-root user running virt-sysprep.
 
 "Sysprep" stands for "system preparation" tool.  The name comes from
 the Microsoft program F<sysprep.exe> which is used to unconfigure
-Windows machines in preparation for cloning them.  Having said that,
-virt-sysprep does I<not> currently work on Microsoft Windows guests.
-We plan to support Windows sysprepping in a future version, and we
-already have code to do it.
+Windows machines in preparation for cloning them.  (Virt-sysprep does
+not work on Microsoft Windows guests.)
 
 =head1 OPTIONS
 
