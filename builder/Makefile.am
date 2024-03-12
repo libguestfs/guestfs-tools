@@ -412,8 +412,10 @@ test-console-%.sh:
 	chmod 0755 $@-t
 	mv $@-t $@
 
+DISTCLEANFILES += \
+	$(console_test_scripts)
+
 CLEANFILES += \
-	$(console_test_scripts) \
 	console-*.img \
 	console-*.out
 
