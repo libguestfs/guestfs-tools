@@ -285,9 +285,11 @@ test-settings-%.sh:
 	chmod 0755 $@-t
 	mv $@-t $@
 
-CLEANFILES += \
+DISTCLEANFILES += \
 	$(password_test_scripts) \
-	$(settings_test_scripts) \
+	$(settings_test_scripts)
+
+CLEANFILES += \
 	password-*.img \
 	password-*.log \
 	settings-*.img
