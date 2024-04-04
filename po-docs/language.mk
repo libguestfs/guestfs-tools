@@ -101,13 +101,16 @@ virt-sysprep.1: virt-sysprep.pod sysprep-extra-options.pod sysprep-operations.po
 # Remove both.
 # XXX Fix po4a so it doesn't do this.
 %.pod: $(srcdir)/../$(LINGUA).po
+	rm -f $@ $@-t
 	$(guestfs_am_v_po4a_translate)$(PO4A_TRANSLATE) \
 	  -f pod \
 	  -M utf-8 -L utf-8 \
 	  -k 0 \
 	  -m $(top_srcdir)/$(shell grep -E '/$(basename $@)(\.|$$)' $(top_srcdir)/po-docs/podfiles) \
 	  -p $< \
-	  | $(SED) '0,/^=encoding/d' > $@
+	  -l $@-t
+	$(SED) '0,/^=encoding/d' < $@-t > $@
+	rm $@-t
 
 # XXX Can automake do this properly?
 install-data-hook:
