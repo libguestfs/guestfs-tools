@@ -30,7 +30,6 @@ MANPAGES = \
 	virt-cat.1 \
 	virt-customize.1 \
 	virt-df.1 \
-	virt-dib.1 \
 	virt-diff.1 \
 	virt-edit.1 \
 	virt-filesystems.1 \
