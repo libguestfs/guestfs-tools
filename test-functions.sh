@@ -108,17 +108,6 @@ skip_unless_phony_guest ()
     fi
 }
 
-# Skip if test.iso was not created.
-skip_unless_test_iso ()
-{
-    local f="$abs_top_builddir/test-data/test.iso"
-    if ! test -f $f || ! test -s $f; then
-        echo "$(basename $0): test skipped because test-data/test.iso was not created"
-        echo "$(basename $0): try running: make -C test-data check"
-        exit 77
-    fi
-}
-
 # Skip if the current arch = $1.
 skip_if_arch ()
 {

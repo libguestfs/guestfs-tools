@@ -130,7 +130,6 @@ Makefile.in
 /sysprep/sysprep-operations.pod
 /sysprep/sysprep_operation_*.mli
 /sysprep/virt-sysprep
-/test-data/test.iso
 /test-data/blank-disks/blank-disk-*
 /test-data/fake-virtio-win/fake-virtio-win.iso
 /test-data/phony-guests/archlinux.img
