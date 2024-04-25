@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.52.0\n"
+"Project-Id-Version: guestfs-tools 1.53.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2024-01-04 17:06+0000\n"
+"POT-Creation-Date: 2024-04-25 13:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3953,12 +3953,12 @@ msgid ""
 "format=%s'.\n"
 msgstr ""
 
-#: diff/diff.c:787
+#: diff/diff.c:802
 #, c-format
 msgid "%s: external diff command failed\n"
 msgstr ""
 
-#: diff/diff.c:791
+#: diff/diff.c:806
 msgid "End of diff"
 msgstr ""
 
