@@ -155,7 +155,6 @@ AC_CONFIG_FILES([Makefile
                  test-data/Makefile
                  test-data/binaries/Makefile
                  test-data/blank-disks/Makefile
-                 test-data/files/Makefile
                  test-data/phony-guests/Makefile
                  test-data/phony-guests/guests.xml
                  win-reg/Makefile])
