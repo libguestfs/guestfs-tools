@@ -113,8 +113,8 @@ let run (g : G.guestfs) root (ops : ops) =
     Hashtbl.replace passwords user pw
   in
 
-  (* Helper function to convert --inject-qemu-ga/--inject-virtio-win
-   * method parameter into a virtio-win handle.
+  (* Helper function to convert --inject-blnsvr/--inject-qemu-ga/
+   * --inject-virtio-win method parameter into a virtio-win handle.
    *)
   let get_virtio_win_handle op meth =
     if g#inspect_get_type root <> "windows" then (
@@ -215,6 +215,15 @@ let run (g : G.guestfs) root (ops : ops) =
       message (f_"Setting the hostname: %s") hostname;
       if not (Hostname.set_hostname g root hostname) then
         warning (f_"hostname could not be set for this type of guest")
+
+    | `InjectBalloonServer meth ->
+       (match get_virtio_win_handle "--inject-blnsvr" meth with
+        | None -> ()
+        | Some t ->
+           if not (Inject_virtio_win.inject_blnsvr t) then
+             warning (f_"--inject-blnsvr: blnsvr.exe not found in \
+                         virtio-win source that you specified")
+       )
 
     | `InjectQemuGA meth ->
        (match get_virtio_win_handle "--inject-qemu-ga" meth with
