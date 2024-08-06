@@ -1,5 +1,5 @@
 # libguestfs
-# Copyright (C) 2009-2023 Red Hat Inc.
+# Copyright (C) 2009-2024 Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-AC_INIT([guestfs-tools], [1.53.1])
+AC_INIT([guestfs-tools], [1.53.2])
 
 dnl The common/ subdirectory assumes this.  In libguestfs it contains
 dnl the --with-extra parameter.  Here we just define it to the version.
