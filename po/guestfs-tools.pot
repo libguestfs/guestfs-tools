@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.53.2\n"
+"Project-Id-Version: guestfs-tools 1.53.3\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2024-08-06 09:03+0100\n"
+"POT-Creation-Date: 2024-08-20 12:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,11 +48,11 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: customize/customize_run.ml:435 common/mltools/tools_utils.ml:695
+#: common/mltools/tools_utils.ml:695 common/mlcustomize/customize_run.ml:435
 msgid "%s (ignored)"
 msgstr ""
 
-#: builder/builder.ml:330
+#: builder/builder.ml:329
 msgid ""
 "%s checksum of template did not match the expected checksum!\n"
 "  found checksum: %s\n"
@@ -67,11 +67,11 @@ msgstr ""
 msgid "%s did not return any output"
 msgstr ""
 
-#: customize/customize_run.ml:191
+#: common/mlcustomize/customize_run.ml:191
 msgid "%s does not exist in the guest"
 msgstr ""
 
-#: customize/customize_run.ml:121
+#: common/mlcustomize/customize_run.ml:121
 msgid "%s ignored for non-Windows guest"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "%s is not a Simple Streams (products) v1.0 JSON file (format: %s)"
 msgstr ""
 
-#: customize/customize_run.ml:194
+#: common/mlcustomize/customize_run.ml:194
 msgid "%s is not a regular file in the guest"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "%s: This partition will be resized from %s to %s."
 msgstr ""
 
-#: builder/cmdline.ml:178
+#: builder/cmdline.ml:176
 msgid ""
 "%s: build virtual machine images quickly\n"
 "\n"
@@ -202,7 +202,7 @@ msgstr ""
 msgid "%s: cannot use a URI (‘%s’) in the index file\n"
 msgstr ""
 
-#: customize/customize_run.ml:72
+#: common/mlcustomize/customize_run.ml:72
 msgid "%s: command exited with an error"
 msgstr ""
 
@@ -216,7 +216,7 @@ msgid ""
 "read the man page virt-builder-repository(1).\n"
 msgstr ""
 
-#: customize/customize_main.ml:98
+#: customize/customize_main.ml:96
 msgid ""
 "%s: customize a virtual machine\n"
 "\n"
@@ -364,7 +364,7 @@ msgid ""
 "read the man page virt-sparsify(1).\n"
 msgstr ""
 
-#: builder/builder.ml:339
+#: builder/builder.ml:338
 msgid ""
 "%s: template not downloaded or deleted.  You may have run ‘virt-builder --"
 "delete-cache’ in parallel."
@@ -400,9 +400,8 @@ msgstr ""
 msgid "%s: zero length path in the index file\n"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:379
 #. common/mlcustomize/customize_cmdline.ml:270
-#: customize/customize_cmdline.ml:379 customize/customize_cmdline.ml:270
+#: common/mlcustomize/customize_cmdline.ml:379
 msgid "'CMD+ARGS'"
 msgstr ""
 
@@ -410,17 +409,17 @@ msgstr ""
 msgid "--add option can only be given once"
 msgstr ""
 
-#: customize/customize_run.ml:141
+#: common/mlcustomize/customize_run.ml:141
 msgid ""
 "--append-line: line must not contain newline characters.  Use the --append-"
 "line option multiple times to add several lines."
 msgstr ""
 
-#: customize/customize_main.ml:116
+#: customize/customize_main.ml:114
 msgid "--attach-format parameter must appear before --attach parameter"
 msgstr ""
 
-#: builder/cmdline.ml:270
+#: builder/cmdline.ml:268
 msgid ""
 "--cache-all-templates/--print-cache/--delete-cache does not need any extra "
 "arguments"
@@ -430,7 +429,7 @@ msgstr ""
 msgid "--check-tmpdir: unknown argument ‘%s’"
 msgstr ""
 
-#: customize/customize_run.ml:160
+#: common/mlcustomize/customize_run.ml:160
 msgid "--chown: could not parse numeric UID:GID from %s:%s"
 msgstr ""
 
@@ -440,7 +439,7 @@ msgid ""
 "convert qcow2."
 msgstr ""
 
-#. customize/customize_main.ml:74
+#. customize/customize_main.ml:72
 #: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
 msgid "--domain option can only be given once"
 msgstr ""
@@ -457,36 +456,36 @@ msgstr ""
 msgid "--expand option given more than once"
 msgstr ""
 
-#: sysprep/main.ml:157 customize/customize_main.ml:113
+#: sysprep/main.ml:157 customize/customize_main.ml:111
 msgid "--format parameter must appear before -a parameter"
 msgstr ""
 
-#: builder/cmdline.ml:280
+#: builder/cmdline.ml:278
 msgid "--get-kernel: too many parameters"
 msgstr ""
 
-#: customize/customize_run.ml:224
+#: common/mlcustomize/customize_run.ml:224
 msgid ""
 "--inject-blnsvr: blnsvr.exe not found in virtio-win source that you specified"
 msgstr ""
 
-#: customize/customize_run.ml:233
+#: common/mlcustomize/customize_run.ml:233
 msgid ""
 "--inject-qemu-ga: QEMU Guest Agent MSI not found in virtio-win source that "
 "you specified"
 msgstr ""
 
-#: customize/customize_run.ml:249
+#: common/mlcustomize/customize_run.ml:249
 msgid ""
 "--inject-virtio-win: virtio drivers were not found for this Windows version "
 "in the virtio-win source that you specified"
 msgstr ""
 
-#: builder/cmdline.ml:247
+#: builder/cmdline.ml:245
 msgid "--list: use ‘--list-format’, not ‘--format’"
 msgstr ""
 
-#: builder/cmdline.ml:262
+#: builder/cmdline.ml:260
 msgid "--notes: too many parameters, expecting ‘os-version’"
 msgstr ""
 
@@ -527,17 +526,15 @@ msgstr ""
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
 msgstr ""
 
-#. customize/customize_main.ml:79
+#. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "Add disk image file"
 msgstr ""
 
-#: customize/customize_cmdline.ml:317
 #: common/mlcustomize/customize_cmdline.ml:317
 msgid "Add package(s) to install"
 msgstr ""
 
-#: customize/customize_cmdline.ml:282
 #: common/mlcustomize/customize_cmdline.ml:282
 msgid "Add package(s) to install at first boot"
 msgstr ""
@@ -562,12 +559,11 @@ msgstr ""
 msgid "Already existing image with id %s and architecture %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:187
 #: common/mlcustomize/customize_cmdline.ml:187
 msgid "Append line(s) to the file"
 msgstr ""
 
-#: customize/customize_run.ml:145
+#: common/mlcustomize/customize_run.ml:145
 msgid "Appending line to %s"
 msgstr ""
 
@@ -583,20 +579,19 @@ msgstr ""
 msgid "Ask the user about missing data"
 msgstr ""
 
-#: customize/customize_main.ml:80 builder/cmdline.ml:130
+#: customize/customize_main.ml:78 builder/cmdline.ml:128
 msgid "Attach data disk/ISO during install"
 msgstr ""
 
-#: customize/customize_cmdline.ml:397
 #: common/mlcustomize/customize_cmdline.ml:397
 msgid "Attach to a subscription-manager pool"
 msgstr ""
 
-#: customize/customize_run.ml:293
+#: common/mlcustomize/customize_run.ml:293
 msgid "Attaching to compatible subscriptions"
 msgstr ""
 
-#: customize/customize_run.ml:297
+#: common/mlcustomize/customize_run.ml:297
 msgid "Attaching to the pool %s"
 msgstr ""
 
@@ -631,25 +626,23 @@ msgstr ""
 msgid "Change filesystem UUIDs"
 msgstr ""
 
-#: customize/customize_cmdline.ml:209
 #: common/mlcustomize/customize_cmdline.ml:209
 msgid "Change the owner user and group ID of a file or directory"
 msgstr ""
 
-#: customize/customize_cmdline.ml:198
 #: common/mlcustomize/customize_cmdline.ml:198
 msgid "Change the permissions of a file"
 msgstr ""
 
-#: customize/customize_run.ml:163
+#: common/mlcustomize/customize_run.ml:163
 msgid "Changing owner of %s to %d:%d"
 msgstr ""
 
-#: customize/customize_run.ml:149
+#: common/mlcustomize/customize_run.ml:149
 msgid "Changing permissions of %s to %s"
 msgstr ""
 
-#: builder/cmdline.ml:138
+#: builder/cmdline.ml:136
 msgid "Check digital signatures"
 msgstr ""
 
@@ -667,7 +660,6 @@ msgstr ""
 msgid "Clearing Linux swap on %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:529
 #: common/mlcustomize/customize_cmdline.ml:529
 msgid "Compatibility option doing nothing"
 msgstr ""
@@ -676,30 +668,27 @@ msgstr ""
 msgid "Compressed output format"
 msgstr ""
 
-#: builder/builder.ml:710
+#: builder/builder.ml:709
 msgid "Converting %s to %s"
 msgstr ""
 
-#: builder/builder.ml:709
+#: builder/builder.ml:708
 msgid "Converting to %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:231
 #: common/mlcustomize/customize_cmdline.ml:231
 msgid "Copy files in disk image"
 msgstr ""
 
-#: customize/customize_cmdline.ml:438
 #: common/mlcustomize/customize_cmdline.ml:438
 msgid "Copy local files or directories from a tarball into image"
 msgstr ""
 
-#: customize/customize_cmdline.ml:242
 #: common/mlcustomize/customize_cmdline.ml:242
 msgid "Copy local files or directories into image"
 msgstr ""
 
-#: builder/builder.ml:643
+#: builder/builder.ml:642
 msgid "Copying"
 msgstr ""
 
@@ -707,15 +696,14 @@ msgstr ""
 msgid "Copying %s"
 msgstr ""
 
-#: customize/customize_run.ml:176
+#: common/mlcustomize/customize_run.ml:176
 msgid "Copying (in image): %s to %s"
 msgstr ""
 
-#: customize/customize_run.ml:180
+#: common/mlcustomize/customize_run.ml:180
 msgid "Copying: %s to %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:334
 #: common/mlcustomize/customize_cmdline.ml:334
 msgid "Create a directory"
 msgstr ""
@@ -728,7 +716,6 @@ msgstr ""
 msgid "Create overlay file in %s to protect source disk"
 msgstr ""
 
-#: customize/customize_cmdline.ml:328
 #: common/mlcustomize/customize_cmdline.ml:328
 msgid "Create symbolic links"
 msgstr ""
@@ -737,7 +724,6 @@ msgstr ""
 msgid "Creating index backup copy"
 msgstr ""
 
-#: customize/customize_cmdline.ml:539
 #: common/mlcustomize/customize_cmdline.ml:539
 msgid "Credentials for subscription-manager"
 msgstr ""
@@ -766,12 +752,10 @@ msgid ""
 "for installing packages, editing files and so on."
 msgstr ""
 
-#: customize/customize_cmdline.ml:333
 #: common/mlcustomize/customize_cmdline.ml:333
 msgid "DIR"
 msgstr ""
 
-#: customize/customize_cmdline.ml:248
 #: common/mlcustomize/customize_cmdline.ml:248
 msgid "Delete a file or directory"
 msgstr ""
@@ -780,15 +764,15 @@ msgstr ""
 msgid "Delete partition"
 msgstr ""
 
-#: builder/cmdline.ml:143
+#: builder/cmdline.ml:141
 msgid "Delete the template cache"
 msgstr ""
 
-#: customize/customize_run.ml:184 builder/builder.ml:139
+#: common/mlcustomize/customize_run.ml:184 builder/builder.ml:138
 msgid "Deleting: %s"
 msgstr ""
 
-#: customize/customize_main.ml:89 builder/cmdline.ml:158
+#: customize/customize_main.ml:87 builder/cmdline.ml:156
 msgid "Disable appliance network"
 msgstr ""
 
@@ -796,11 +780,11 @@ msgstr ""
 msgid "Disable appliance network (default)"
 msgstr ""
 
-#: builder/cmdline.ml:140
+#: builder/cmdline.ml:138
 msgid "Disable digital signatures"
 msgstr ""
 
-#: builder/cmdline.ml:134
+#: builder/cmdline.ml:132
 msgid "Disable template cache"
 msgstr ""
 
@@ -812,7 +796,7 @@ msgstr ""
 msgid "Display brief help"
 msgstr ""
 
-#: builder/cmdline.ml:159
+#: builder/cmdline.ml:157
 msgid "Display installation notes"
 msgstr ""
 
@@ -824,16 +808,15 @@ msgstr ""
 msgid "Display version and exit"
 msgstr ""
 
-#: builder/cmdline.ml:166
+#: builder/cmdline.ml:164
 msgid "Do not fsync output file on exit"
 msgstr ""
 
-#: customize/customize_cmdline.ml:523
 #: common/mlcustomize/customize_cmdline.ml:523
 msgid "Do not relabel files with correct SELinux labels"
 msgstr ""
 
-#: builder/cmdline.ml:168
+#: builder/cmdline.ml:166
 msgid "Do not warn if writing to a partition"
 msgstr ""
 
@@ -849,7 +832,7 @@ msgstr ""
 msgid "Don’t create extra partition"
 msgstr ""
 
-#: builder/cmdline.ml:145
+#: builder/cmdline.ml:143
 msgid "Don’t delete output file on failure"
 msgstr ""
 
@@ -869,7 +852,7 @@ msgstr ""
 msgid "Don’t turn off echo for passphrases"
 msgstr ""
 
-#: builder/cmdline.ml:136
+#: builder/cmdline.ml:134
 msgid "Download all templates to the cache"
 msgstr ""
 
@@ -877,16 +860,15 @@ msgstr ""
 msgid "Download size:"
 msgstr ""
 
-#: builder/builder.ml:315 builder/builder.ml:263
+#: builder/builder.ml:314 builder/builder.ml:262
 msgid "Downloading: %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:259
 #: common/mlcustomize/customize_cmdline.ml:259
 msgid "Edit file using Perl expression"
 msgstr ""
 
-#: customize/customize_run.ml:188
+#: common/mlcustomize/customize_run.ml:188
 msgid "Editing: %s"
 msgstr ""
 
@@ -894,7 +876,7 @@ msgstr ""
 msgid "Enable appliance network"
 msgstr ""
 
-#: customize/customize_main.ml:88 builder/cmdline.ml:157
+#: customize/customize_main.ml:86 builder/cmdline.ml:155
 msgid "Enable appliance network (default)"
 msgstr ""
 
@@ -926,7 +908,7 @@ msgstr ""
 msgid "Examining %s"
 msgstr ""
 
-#: sysprep/main.ml:213 customize/customize_main.ml:161
+#: sysprep/main.ml:213 customize/customize_main.ml:159
 msgid "Examining the guest ..."
 msgstr ""
 
@@ -958,35 +940,28 @@ msgstr ""
 msgid "Extracting data from the image..."
 msgstr ""
 
-#. customize/customize_cmdline.ml:385
-#. common/mlcustomize/customize_cmdline.ml:455
 #. common/mlcustomize/customize_cmdline.ml:449
 #. common/mlcustomize/customize_cmdline.ml:385
-#: customize/customize_cmdline.ml:455 customize/customize_cmdline.ml:449
+#: common/mlcustomize/customize_cmdline.ml:455
 msgid "FILE"
 msgstr ""
 
-#: customize/customize_cmdline.ml:496
 #: common/mlcustomize/customize_cmdline.ml:496
 msgid "FILE:CONTENT"
 msgstr ""
 
-#: customize/customize_cmdline.ml:485
 #: common/mlcustomize/customize_cmdline.ml:485
 msgid "FILE:DEST"
 msgstr ""
 
-#: customize/customize_cmdline.ml:254
 #: common/mlcustomize/customize_cmdline.ml:254
 msgid "FILE:EXPR"
 msgstr ""
 
-#: customize/customize_cmdline.ml:182
 #: common/mlcustomize/customize_cmdline.ml:182
 msgid "FILE:LINE"
 msgstr ""
 
-#: customize/customize_cmdline.ml:215
 #: common/mlcustomize/customize_cmdline.ml:215
 msgid "FILENAME"
 msgstr ""
@@ -1007,7 +982,7 @@ msgstr ""
 msgid "Fill free space in volgroup %s with zero"
 msgstr ""
 
-#: builder/cmdline.ml:147
+#: builder/cmdline.ml:145
 msgid "Fingerprint of valid signing key"
 msgstr ""
 
@@ -1015,7 +990,7 @@ msgstr ""
 msgid "Fingerprint: %s\n"
 msgstr ""
 
-#: customize/customize_main.ml:208 builder/builder.ml:797
+#: customize/customize_main.ml:206 builder/builder.ml:796
 msgid "Finishing off"
 msgstr ""
 
@@ -1066,7 +1041,7 @@ msgstr ""
 msgid "Found new images: %s"
 msgstr ""
 
-#: builder/builder.ml:787
+#: builder/builder.ml:786
 msgid "Free space"
 msgstr ""
 
@@ -1095,11 +1070,10 @@ msgid ""
 "- Check no one has tampered with the website or your network!"
 msgstr ""
 
-#: builder/cmdline.ml:150
+#: builder/cmdline.ml:148
 msgid "Get kernel from image"
 msgstr ""
 
-#: customize/customize_cmdline.ml:287
 #: common/mlcustomize/customize_cmdline.ml:287
 msgid "HOSTNAME"
 msgstr ""
@@ -1132,39 +1106,35 @@ msgstr ""
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
 
-#: customize/customize_cmdline.ml:427
 #: common/mlcustomize/customize_cmdline.ml:427
 msgid "Inject a public key into the guest"
 msgstr ""
 
-#: customize/customize_cmdline.ml:294
 #: common/mlcustomize/customize_cmdline.ml:294
 msgid "Inject the Balloon Server into a Windows guest"
 msgstr ""
 
-#: customize/customize_cmdline.ml:300
 #: common/mlcustomize/customize_cmdline.ml:300
 msgid "Inject the QEMU Guest Agent into a Windows guest"
 msgstr ""
 
-#: customize/customize_cmdline.ml:306
 #: common/mlcustomize/customize_cmdline.ml:306
 msgid "Inject virtio-win drivers into a Windows guest"
 msgstr ""
 
-#: customize/customize_run.ml:199
+#: common/mlcustomize/customize_run.ml:199
 msgid "Installing firstboot command: %s"
 msgstr ""
 
-#: customize/customize_run.ml:203
+#: common/mlcustomize/customize_run.ml:203
 msgid "Installing firstboot packages: %s"
 msgstr ""
 
-#: customize/customize_run.ml:210
+#: common/mlcustomize/customize_run.ml:210
 msgid "Installing firstboot script: %s"
 msgstr ""
 
-#: customize/customize_run.ml:256
+#: common/mlcustomize/customize_run.ml:256
 msgid "Installing packages: %s"
 msgstr ""
 
@@ -1172,16 +1142,15 @@ msgstr ""
 msgid "Key: %s\n"
 msgstr ""
 
-#: customize/customize_cmdline.ml:237
 #: common/mlcustomize/customize_cmdline.ml:237
 msgid "LOCALPATH:REMOTEDIR"
 msgstr ""
 
-#: customize/customize_run.ml:263
+#: common/mlcustomize/customize_run.ml:263
 msgid "Linking: %s -> %s"
 msgstr ""
 
-#: builder/cmdline.ml:152
+#: builder/cmdline.ml:150
 msgid "List available templates"
 msgstr ""
 
@@ -1189,11 +1158,9 @@ msgstr ""
 msgid "List supported operations"
 msgstr ""
 
-#. customize/customize_cmdline.ml:293
-#. common/mlcustomize/customize_cmdline.ml:305
 #. common/mlcustomize/customize_cmdline.ml:299
 #. common/mlcustomize/customize_cmdline.ml:293
-#: customize/customize_cmdline.ml:305 customize/customize_cmdline.ml:299
+#: common/mlcustomize/customize_cmdline.ml:305
 msgid "METHOD"
 msgstr ""
 
@@ -1201,7 +1168,7 @@ msgstr ""
 msgid "Make output machine readable"
 msgstr ""
 
-#: customize/customize_run.ml:268
+#: common/mlcustomize/customize_run.ml:268
 msgid "Making directory: %s"
 msgstr ""
 
@@ -1217,7 +1184,6 @@ msgstr ""
 msgid "Mount point on host"
 msgstr ""
 
-#: customize/customize_cmdline.ml:345
 #: common/mlcustomize/customize_cmdline.ml:345
 msgid "Move files in disk image"
 msgstr ""
@@ -1226,7 +1192,7 @@ msgstr ""
 msgid "Moving files to final destination"
 msgstr ""
 
-#: customize/customize_run.ml:272
+#: common/mlcustomize/customize_run.ml:272
 msgid "Moving: %s -> %s"
 msgstr ""
 
@@ -1283,7 +1249,7 @@ msgid ""
 "building rhsrvany (https://github.com/rwmjones/rhsrvany)"
 msgstr ""
 
-#: builder/builder.ml:722
+#: builder/builder.ml:721
 msgid "Opening the new disk"
 msgstr ""
 
@@ -1291,38 +1257,34 @@ msgstr ""
 msgid "Output directory"
 msgstr ""
 
-#: builder/builder.ml:782
+#: builder/builder.ml:781
 msgid "Output file"
 msgstr ""
 
-#: builder/builder.ml:784
+#: builder/builder.ml:783
 msgid "Output format"
 msgstr ""
 
-#: builder/cmdline.ml:148
+#: builder/cmdline.ml:146
 msgid "Output format (default: raw)"
 msgstr ""
 
-#: builder/builder.ml:783
+#: builder/builder.ml:782
 msgid "Output size"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:461
 #. common/mlcustomize/customize_cmdline.ml:247
-#: customize/customize_cmdline.ml:461 customize/customize_cmdline.ml:247
+#: common/mlcustomize/customize_cmdline.ml:461
 msgid "PATH"
 msgstr ""
 
-#: customize/customize_cmdline.ml:193
 #: common/mlcustomize/customize_cmdline.ml:193
 msgid "PERMISSIONS:FILE"
 msgstr ""
 
-#. customize/customize_cmdline.ml:277
-#. common/mlcustomize/customize_cmdline.ml:468
 #. common/mlcustomize/customize_cmdline.ml:312
 #. common/mlcustomize/customize_cmdline.ml:277
-#: customize/customize_cmdline.ml:468 customize/customize_cmdline.ml:312
+#: common/mlcustomize/customize_cmdline.ml:468
 msgid "PKG,PKG.."
 msgstr ""
 
@@ -1334,7 +1296,7 @@ msgstr ""
 msgid "POD notes for %s must not end with newline"
 msgstr ""
 
-#: sysprep/main.ml:129 customize/customize_main.ml:85
+#: sysprep/main.ml:129 customize/customize_main.ml:83
 msgid "Perform a dry run"
 msgstr ""
 
@@ -1342,7 +1304,7 @@ msgstr ""
 msgid "Performing %S ..."
 msgstr ""
 
-#: builder/builder.ml:578
+#: builder/builder.ml:577
 msgid "Planning how to build this image"
 msgstr ""
 
@@ -1354,11 +1316,10 @@ msgstr ""
 msgid "Preparing %s"
 msgstr ""
 
-#: builder/cmdline.ml:162
+#: builder/cmdline.ml:160
 msgid "Print info about template cache"
 msgstr ""
 
-#: customize/customize_cmdline.ml:220
 #: common/mlcustomize/customize_cmdline.ml:220
 msgid "Read customize commands from file"
 msgstr ""
@@ -1367,21 +1328,19 @@ msgstr ""
 msgid "Read passphrases from stdin"
 msgstr ""
 
-#: customize/customize_cmdline.ml:462
 #: common/mlcustomize/customize_cmdline.ml:462
 msgid "Recursively truncate all files in directory"
 msgstr ""
 
-#: customize/customize_run.ml:343
+#: common/mlcustomize/customize_run.ml:343
 msgid "Recursively truncating: %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:403
 #: common/mlcustomize/customize_cmdline.ml:403
 msgid "Register using subscription-manager"
 msgstr ""
 
-#: customize/customize_run.ml:303
+#: common/mlcustomize/customize_run.ml:303
 msgid "Registering with subscription-manager"
 msgstr ""
 
@@ -1434,7 +1393,6 @@ msgid ""
 "This operation does not run C<ipa-client>."
 msgstr ""
 
-#: customize/customize_cmdline.ml:409
 #: common/mlcustomize/customize_cmdline.ml:409
 msgid "Remove all the subscriptions"
 msgstr ""
@@ -1594,7 +1552,7 @@ msgstr ""
 msgid "Remove user at-jobs and cron-jobs"
 msgstr ""
 
-#: customize/customize_run.ml:318
+#: common/mlcustomize/customize_run.ml:318
 msgid "Removing all the subscriptions"
 msgstr ""
 
@@ -1608,11 +1566,11 @@ msgstr ""
 msgid "Resize partition"
 msgstr ""
 
-#: builder/builder.ml:668
+#: builder/builder.ml:667
 msgid "Resizing (using virt-resize) to expand the disk to %s"
 msgstr ""
 
-#: builder/builder.ml:695
+#: builder/builder.ml:694
 msgid "Resizing container (but not filesystems) to expand the disk to %s"
 msgstr ""
 
@@ -1620,22 +1578,18 @@ msgstr ""
 msgid "Run arbitrary scripts against the guest"
 msgstr ""
 
-#: customize/customize_cmdline.ml:271
 #: common/mlcustomize/customize_cmdline.ml:271
 msgid "Run command at first guest boot"
 msgstr ""
 
-#: customize/customize_cmdline.ml:380
 #: common/mlcustomize/customize_cmdline.ml:380
 msgid "Run command in disk image"
 msgstr ""
 
-#: customize/customize_cmdline.ml:265
 #: common/mlcustomize/customize_cmdline.ml:265
 msgid "Run script at first guest boot"
 msgstr ""
 
-#: customize/customize_cmdline.ml:374
 #: common/mlcustomize/customize_cmdline.ml:374
 msgid "Run script in disk image"
 msgstr ""
@@ -1650,49 +1604,45 @@ msgid ""
 "the full absolute path to the script."
 msgstr ""
 
-#: customize/customize_cmdline.ml:450
 #: common/mlcustomize/customize_cmdline.ml:450
 msgid "Run touch on a file"
 msgstr ""
 
-#: customize/customize_run.ml:352
+#: common/mlcustomize/customize_run.ml:352
 msgid "Running touch: %s"
 msgstr ""
 
-#: customize/customize_run.ml:282 customize/customize_run.ml:167
+#. common/mlcustomize/customize_run.ml:167
+#: common/mlcustomize/customize_run.ml:282
 msgid "Running: %s"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:373
 #. common/mlcustomize/customize_cmdline.ml:264
-#: customize/customize_cmdline.ml:373 customize/customize_cmdline.ml:264
+#: common/mlcustomize/customize_cmdline.ml:373
 msgid "SCRIPT"
 msgstr ""
 
-#. customize/customize_cmdline.ml:363
-#. common/mltools/tools_utils.ml:422
-#. common/mlcustomize/customize_cmdline.ml:535
 #. common/mlcustomize/customize_cmdline.ml:392
 #. common/mlcustomize/customize_cmdline.ml:363
-#: customize/customize_cmdline.ml:535 customize/customize_cmdline.ml:392
+#: common/mltools/tools_utils.ml:422
+#: common/mlcustomize/customize_cmdline.ml:535
 msgid "SELECTOR"
 msgstr ""
 
-#: customize/customize_run.ml:408
+#: common/mlcustomize/customize_run.ml:408
 msgid "SELinux relabelling"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:340
 #. common/mlcustomize/customize_cmdline.ml:226
-#: customize/customize_cmdline.ml:340 customize/customize_cmdline.ml:226
+#: common/mlcustomize/customize_cmdline.ml:340
 msgid "SOURCE:DEST"
 msgstr ""
 
-#: customize/customize_run.ml:332
+#: common/mlcustomize/customize_run.ml:332
 msgid "SSH key could not be injected for this type of guest"
 msgstr ""
 
-#: customize/customize_run.ml:329
+#: common/mlcustomize/customize_run.ml:329
 msgid "SSH key inject: %s"
 msgstr ""
 
@@ -1700,33 +1650,31 @@ msgstr ""
 msgid "Script or program to run on guest"
 msgstr ""
 
-#: customize/customize_cmdline.ml:386
 #: common/mlcustomize/customize_cmdline.ml:386
 msgid "Scrub a file"
 msgstr ""
 
-#: customize/customize_cmdline.ml:507
 #: common/mlcustomize/customize_cmdline.ml:507
 msgid "Scrub build log file"
 msgstr ""
 
-#: customize/customize_run.ml:419
+#: common/mlcustomize/customize_run.ml:419
 msgid "Scrubbing the log file"
 msgstr ""
 
-#: customize/customize_run.ml:287
+#: common/mlcustomize/customize_run.ml:287
 msgid "Scrubbing: %s"
 msgstr ""
 
-#: builder/repository_main.ml:52 builder/cmdline.ml:151
+#: builder/repository_main.ml:52 builder/cmdline.ml:149
 msgid "Set GPG binary/command"
 msgstr ""
 
-#: customize/customize_main.ml:82 builder/cmdline.ml:132
+#: customize/customize_main.ml:80 builder/cmdline.ml:130
 msgid "Set attach disk format"
 msgstr ""
 
-#: builder/cmdline.ml:141
+#: builder/cmdline.ml:139
 msgid "Set curl binary/command"
 msgstr ""
 
@@ -1734,21 +1682,21 @@ msgstr ""
 msgid "Set disk sector size"
 msgstr ""
 
-#: sysprep/main.ml:133 customize/customize_main.ml:86
+#: sysprep/main.ml:133 customize/customize_main.ml:84
 msgid "Set format (default: auto)"
 msgstr ""
 
-#. customize/customize_main.ml:83
+#. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "Set libvirt URI"
 msgstr ""
 
-#. customize/customize_main.ml:84
+#. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "Set libvirt guest name"
 msgstr ""
 
-#: customize/customize_main.ml:87 builder/cmdline.ml:156
+#: customize/customize_main.ml:85 builder/cmdline.ml:154
 msgid "Set memory size"
 msgstr ""
 
@@ -1756,15 +1704,15 @@ msgstr ""
 msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
 msgstr ""
 
-#: customize/customize_main.ml:90 builder/cmdline.ml:164
+#: customize/customize_main.ml:88 builder/cmdline.ml:162
 msgid "Set number of vCPUs"
 msgstr ""
 
-#: builder/cmdline.ml:163
+#: builder/cmdline.ml:161
 msgid "Set output disk size"
 msgstr ""
 
-#: builder/cmdline.ml:160
+#: builder/cmdline.ml:158
 msgid "Set output filename"
 msgstr ""
 
@@ -1772,7 +1720,6 @@ msgstr ""
 msgid "Set partition alignment (default: 128 sectors)"
 msgstr ""
 
-#: customize/customize_cmdline.ml:517
 #: common/mlcustomize/customize_cmdline.ml:517
 msgid "Set password crypto"
 msgstr ""
@@ -1781,16 +1728,15 @@ msgstr ""
 msgid "Set program name"
 msgstr ""
 
-#: customize/customize_cmdline.ml:368
 #: common/mlcustomize/customize_cmdline.ml:368
 msgid "Set root password"
 msgstr ""
 
-#: builder/cmdline.ml:165
+#: builder/cmdline.ml:163
 msgid "Set source URL"
 msgstr ""
 
-#: builder/cmdline.ml:133
+#: builder/cmdline.ml:131
 msgid "Set template cache dir"
 msgstr ""
 
@@ -1798,50 +1744,47 @@ msgstr ""
 msgid "Set temporary block device, directory or prebuilt file"
 msgstr ""
 
-#: customize/customize_cmdline.ml:444
 #: common/mlcustomize/customize_cmdline.ml:444
 msgid "Set the default timezone"
 msgstr ""
 
-#: builder/cmdline.ml:155
+#: builder/cmdline.ml:153
 msgid "Set the format for --list (default: short)"
 msgstr ""
 
-#: customize/customize_cmdline.ml:288
 #: common/mlcustomize/customize_cmdline.ml:288
 msgid "Set the hostname"
 msgstr ""
 
-#: builder/cmdline.ml:129
+#: builder/cmdline.ml:127
 msgid "Set the output architecture"
 msgstr ""
 
-#: customize/customize_cmdline.ml:357
 #: common/mlcustomize/customize_cmdline.ml:357
 msgid "Set user password"
 msgstr ""
 
-#: customize/customize_run.ml:83
+#: common/mlcustomize/customize_run.ml:83
 msgid "Setting a random seed"
 msgstr ""
 
-#: customize/customize_run.ml:399
+#: common/mlcustomize/customize_run.ml:399
 msgid "Setting passwords"
 msgstr ""
 
-#: customize/password.ml:113
+#: common/mlcustomize/password.ml:113
 msgid "Setting random password of %s to %s"
 msgstr ""
 
-#: customize/customize_run.ml:215
+#: common/mlcustomize/customize_run.ml:215
 msgid "Setting the hostname: %s"
 msgstr ""
 
-#: customize/customize_run.ml:98
+#: common/mlcustomize/customize_run.ml:98
 msgid "Setting the machine ID in %s"
 msgstr ""
 
-#: customize/customize_run.ml:347
+#: common/mlcustomize/customize_run.ml:347
 msgid "Setting the timezone: %s"
 msgstr ""
 
@@ -1849,7 +1792,7 @@ msgstr ""
 msgid "Setting up initial partition table on %s"
 msgstr ""
 
-#: builder/cmdline.ml:153
+#: builder/cmdline.ml:151
 msgid "Shortcut for --list-format long"
 msgstr ""
 
@@ -1885,17 +1828,14 @@ msgstr ""
 msgid "Specify a LUKS key"
 msgstr ""
 
-#: customize/customize_cmdline.ml:433
 #: common/mlcustomize/customize_cmdline.ml:433
 msgid "TARFILE:REMOTEDIR"
 msgstr ""
 
-#: customize/customize_cmdline.ml:323
 #: common/mlcustomize/customize_cmdline.ml:323
 msgid "TARGET:LINK[:LINK..]"
 msgstr ""
 
-#: customize/customize_cmdline.ml:443
 #: common/mlcustomize/customize_cmdline.ml:443
 msgid "TIMEZONE"
 msgstr ""
@@ -2025,7 +1965,7 @@ msgid ""
 "This option can be specified multiple times."
 msgstr ""
 
-#: builder/builder.ml:287
+#: builder/builder.ml:286
 msgid "There are no notes for %s\n"
 msgstr ""
 
@@ -2075,7 +2015,7 @@ msgstr ""
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
 msgstr ""
 
-#: builder/builder.ml:785
+#: builder/builder.ml:784
 msgid "Total usable space"
 msgstr ""
 
@@ -2083,12 +2023,11 @@ msgstr ""
 msgid "Trimming %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:456
 #: common/mlcustomize/customize_cmdline.ml:456
 msgid "Truncate a file to zero size"
 msgstr ""
 
-#: customize/customize_run.ml:339
+#: common/mlcustomize/customize_run.ml:339
 msgid "Truncating: %s"
 msgstr ""
 
@@ -2096,17 +2035,14 @@ msgstr ""
 msgid "Turn off sparse copying"
 msgstr ""
 
-#: customize/customize_cmdline.ml:204
 #: common/mlcustomize/customize_cmdline.ml:204
 msgid "UID:GID:PATH"
 msgstr ""
 
-#: customize/customize_cmdline.ml:351
 #: common/mlcustomize/customize_cmdline.ml:351
 msgid "USER:SELECTOR"
 msgstr ""
 
-#: customize/customize_cmdline.ml:421
 #: common/mlcustomize/customize_cmdline.ml:421
 msgid "USER[:SELECTOR]"
 msgstr ""
@@ -2115,47 +2051,43 @@ msgstr ""
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
 msgstr ""
 
-#: builder/builder.ml:656
+#: builder/builder.ml:655
 msgid "Uncompressing"
 msgstr ""
 
-#: customize/customize_cmdline.ml:473
 #: common/mlcustomize/customize_cmdline.ml:473
 msgid "Uninstall package(s)"
 msgstr ""
 
-#: customize/customize_run.ml:356
+#: common/mlcustomize/customize_run.ml:356
 msgid "Uninstalling packages: %s"
 msgstr ""
 
-#: customize/customize_run.ml:335
+#: common/mlcustomize/customize_run.ml:335
 msgid "Unpack tar file: %s to %s"
 msgstr ""
 
-#: customize/customize_cmdline.ml:415
 #: common/mlcustomize/customize_cmdline.ml:415
 msgid "Unregister using subscription-manager"
 msgstr ""
 
-#: customize/customize_run.ml:323
+#: common/mlcustomize/customize_run.ml:323
 msgid "Unregistering with subscription-manager"
 msgstr ""
 
-#: customize/customize_cmdline.ml:479
 #: common/mlcustomize/customize_cmdline.ml:479
 msgid "Update packages"
 msgstr ""
 
-#: customize/customize_run.ml:361
+#: common/mlcustomize/customize_run.ml:361
 msgid "Updating packages"
 msgstr ""
 
-#: customize/customize_cmdline.ml:490
 #: common/mlcustomize/customize_cmdline.ml:490
 msgid "Upload local file to destination"
 msgstr ""
 
-#: customize/customize_run.ml:366
+#: common/mlcustomize/customize_run.ml:366
 msgid "Uploading: %s to %s"
 msgstr ""
 
@@ -2183,12 +2115,11 @@ msgstr ""
 msgid "Wrap log messages even if not tty"
 msgstr ""
 
-#: customize/customize_cmdline.ml:501
 #: common/mlcustomize/customize_cmdline.ml:501
 msgid "Write file"
 msgstr ""
 
-#: customize/customize_run.ml:391
+#: common/mlcustomize/customize_run.ml:391
 msgid "Writing: %s"
 msgstr ""
 
@@ -2222,7 +2153,7 @@ msgstr ""
 msgid "alignment cannot be < 1"
 msgstr ""
 
-#: customize/append_line.ml:44
+#: common/mlcustomize/append_line.ml:44
 msgid "append_line: %s is not a file"
 msgstr ""
 
@@ -2234,7 +2165,7 @@ msgstr ""
 msgid "btrfs-filesystem-resize"
 msgstr ""
 
-#: builder/builder.ml:182
+#: builder/builder.ml:181
 msgid "cache %s: %s"
 msgstr ""
 
@@ -2250,7 +2181,7 @@ msgstr ""
 msgid "cannot detect input disk format; use the --format parameter"
 msgstr ""
 
-#: builder/builder.ml:100
+#: builder/builder.ml:99
 msgid ""
 "cannot find os-version ‘%s’ with architecture ‘%s’.\n"
 "Use --list to list available guest types."
@@ -2263,7 +2194,7 @@ msgid ""
 "at boot."
 msgstr ""
 
-#: builder/builder.ml:387
+#: builder/builder.ml:386
 msgid "cannot output to a character device or /dev/null"
 msgstr ""
 
@@ -2284,12 +2215,10 @@ msgid ""
 "the virt-customize(1) manual)."
 msgstr ""
 
-#: customize/customize_cmdline.ml:559
 #: common/mlcustomize/customize_cmdline.ml:559
 msgid "command '%s' cannot be used in command files, see the man page"
 msgstr ""
 
-#: customize/customize_cmdline.ml:576
 #: common/mlcustomize/customize_cmdline.ml:576
 msgid "command '%s' not valid, see the man page"
 msgstr ""
@@ -2312,7 +2241,7 @@ msgstr ""
 msgid "could not find bootloader mount point (%s): %s"
 msgstr ""
 
-#: builder/builder.ml:143
+#: builder/builder.ml:142
 msgid "could not find cache directory. Is $HOME set?"
 msgstr ""
 
@@ -2351,7 +2280,7 @@ msgstr ""
 msgid "cp (download) command failed copying ‘%s’"
 msgstr ""
 
-#: builder/builder.ml:168
+#: builder/builder.ml:167
 msgid "curl is not installed (or does not work)"
 msgstr ""
 
@@ -2379,7 +2308,7 @@ msgstr ""
 msgid "directory"
 msgstr ""
 
-#: builder/builder.ml:183
+#: builder/builder.ml:182
 msgid "disabling the cache"
 msgstr ""
 
@@ -2391,7 +2320,7 @@ msgstr ""
 msgid "discard/trim is not supported"
 msgstr ""
 
-#. customize/customize_main.ml:84
+#. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "domain"
 msgstr ""
@@ -2428,7 +2357,7 @@ msgstr ""
 msgid "empty --shrink option"
 msgstr ""
 
-#. customize/customize_main.ml:67
+#. customize/customize_main.ml:65
 #. builder/downloader.ml:72
 #: get-kernel/get_kernel.ml:44 drivers/drivers.ml:40
 msgid "error parsing URI '%s'. Look for error messages printed above."
@@ -2480,7 +2409,7 @@ msgstr ""
 msgid "failure: %s"
 msgstr ""
 
-#. customize/customize_main.ml:79
+#. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "file"
 msgstr ""
@@ -2506,7 +2435,7 @@ msgstr ""
 #. resize/resize.ml:205
 #. get-kernel/get_kernel.ml:61
 #. drivers/drivers.ml:54
-#. customize/customize_main.ml:86
+#. customize/customize_main.ml:84
 #: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
 msgid "format"
 msgstr ""
@@ -2525,11 +2454,11 @@ msgstr ""
 msgid "generated by %s %s"
 msgstr ""
 
-#: common/mlcustomize/firstboot.ml:361 common/mlcustomize/firstboot.ml:165
+#: common/mlcustomize/firstboot.ml:374 common/mlcustomize/firstboot.ml:165
 msgid "guest type %s is not supported"
 msgstr ""
 
-#: common/mlcustomize/firstboot.ml:388
+#: common/mlcustomize/firstboot.ml:401
 msgid "guest type %s/%s is not supported"
 msgstr ""
 
@@ -2537,14 +2466,14 @@ msgstr ""
 msgid "heading for %s must not end with newline or period"
 msgstr ""
 
-#: customize/customize_run.ml:53
+#: common/mlcustomize/customize_run.ml:53
 msgid ""
 "host cpu (%s) and guest arch (%s) are not compatible, so you cannot use "
 "command line options that involve running commands in the guest.  Use --"
 "firstboot scripts instead."
 msgstr ""
 
-#: customize/customize_run.ml:217
+#: common/mlcustomize/customize_run.ml:217
 msgid "hostname could not be set for this type of guest"
 msgstr ""
 
@@ -2560,13 +2489,13 @@ msgstr ""
 msgid "ignoring kernel %s in bootloader, as it does not exist."
 msgstr ""
 
-#: builder/builder.ml:412
+#: builder/builder.ml:411
 msgid ""
 "images cannot be shrunk, the output size is too small for this image.  "
 "Requested size = %s, minimum size = %s"
 msgstr ""
 
-#: builder/builder.ml:372
+#: builder/builder.ml:371
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
@@ -2594,11 +2523,9 @@ msgstr ""
 msgid "internal error: regular expression did not match ‘%s’"
 msgstr ""
 
-#. customize/customize_cmdline.ml:157
-#. common/mlcustomize/customize_cmdline.ml:173
 #. common/mlcustomize/customize_cmdline.ml:165
 #. common/mlcustomize/customize_cmdline.ml:157
-#: customize/customize_cmdline.ml:173 customize/customize_cmdline.ml:165
+#: common/mlcustomize/customize_cmdline.ml:173
 msgid "invalid format for '--%s' parameter, see the man page"
 msgstr ""
 
@@ -2618,19 +2545,19 @@ msgstr ""
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
-#: customize/password.ml:73
+#: common/mlcustomize/password.ml:73
 msgid "invalid password selector ‘%s’; see the man page"
 msgstr ""
 
-#: customize/subscription_manager.ml:54
+#: common/mlcustomize/subscription_manager.ml:54
 msgid "invalid sm-attach selector ‘%s’; see the man page"
 msgstr ""
 
-#: customize/subscription_manager.ml:41
+#: common/mlcustomize/subscription_manager.ml:41
 msgid "invalid sm-credentials selector ‘%s’; see the man page"
 msgstr ""
 
-#: customize/ssh_key.ml:45
+#: common/mlcustomize/ssh_key.ml:45
 msgid "invalid ssh-inject selector ‘%s’; see the man page"
 msgstr ""
 
@@ -2646,7 +2573,7 @@ msgstr ""
 msgid "libguestfs error: %s"
 msgstr ""
 
-#: customize/customize_run.ml:47
+#: common/mlcustomize/customize_run.ml:47
 msgid "log file %s: %s (ignored)"
 msgstr ""
 
@@ -2654,7 +2581,6 @@ msgstr ""
 msgid "lv"
 msgstr ""
 
-#: customize/customize_cmdline.ml:513
 #: common/mlcustomize/customize_cmdline.ml:513
 msgid "md5|sha256|sha512"
 msgstr ""
@@ -2679,7 +2605,7 @@ msgstr ""
 msgid "moving file ‘%s’ to ‘%s’ failed"
 msgstr ""
 
-#: customize/customize_run.ml:111
+#: common/mlcustomize/customize_run.ml:111
 msgid ""
 "multiple --root-password/--password options set the password for user ‘%s’ "
 "twice"
@@ -2689,7 +2615,7 @@ msgstr ""
 msgid "never|always|auto"
 msgstr ""
 
-#: builder/builder.ml:156
+#: builder/builder.ml:155
 msgid ""
 "no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
 "\n"
@@ -2704,15 +2630,15 @@ msgstr ""
 msgid "no bootloader detected"
 msgstr ""
 
-#: builder/builder.ml:257
+#: builder/builder.ml:256
 msgid "no cache directory"
 msgstr ""
 
-#: builder/builder.ml:250
+#: builder/builder.ml:249
 msgid "no cache directory\n"
 msgstr ""
 
-#: builder/builder.ml:750
+#: builder/builder.ml:749
 msgid ""
 "no guest operating systems or multiboot OS found in this disk image\n"
 "This is a failure of the source repository.  Use -v for more information."
@@ -2745,11 +2671,11 @@ msgstr ""
 msgid "no operating system found"
 msgstr ""
 
-#: sysprep/main.ml:230 customize/customize_main.ml:192
+#: sysprep/main.ml:230 customize/customize_main.ml:190
 msgid "no operating systems were found in the guest image"
 msgstr ""
 
-#: builder/builder.ml:583
+#: builder/builder.ml:582
 msgid ""
 "no plan could be found for making a disk image with\n"
 "the required size, format etc. This is a bug in libguestfs!\n"
@@ -2796,7 +2722,7 @@ msgstr ""
 msgid "osinfo short ID: "
 msgstr ""
 
-#: builder/builder.ml:301
+#: builder/builder.ml:300
 msgid ""
 "output device (%s) is a partition.  If you are writing to a USB key or "
 "external drive then you probably need to write to the whole device, not to a "
@@ -2804,7 +2730,7 @@ msgid ""
 "if-partition"
 msgstr ""
 
-#: builder/builder.ml:417
+#: builder/builder.ml:416
 msgid ""
 "output size is too large for this block device.  Requested size = %s, output "
 "block device = %s, output block device size = %s"
@@ -2823,20 +2749,20 @@ msgstr ""
 msgid "part=size"
 msgstr ""
 
-#: customize/password.ml:51
+#: common/mlcustomize/password.ml:51
 msgid ""
 "password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" "
 "or \"yescrypt\""
 msgstr ""
 
-#: customize/password.ml:196
+#: common/mlcustomize/password.ml:196
 msgid ""
 "password: using insecure md5 password encryption for guest of type %s "
 "version %d.%d.\n"
 "If this is incorrect, use --password-crypto option and file a bug."
 msgstr ""
 
-#: customize/customize_run.ml:404
+#: common/mlcustomize/customize_run.ml:404
 msgid "passwords could not be set for this type of guest"
 msgstr ""
 
@@ -2860,7 +2786,7 @@ msgstr ""
 msgid "quit (^C) at user request"
 msgstr ""
 
-#: customize/customize_run.ml:85
+#: common/mlcustomize/customize_run.ml:85
 msgid "random seed could not be set for this type of guest"
 msgstr ""
 
@@ -2944,27 +2870,27 @@ msgid ""
 "options instead (described in the virt-customize(1) manual)."
 msgstr ""
 
-#: builder/cmdline.ml:306
+#: builder/cmdline.ml:304
 msgid "source and fingerprint lists are not the same length"
 msgstr ""
 
-#: customize/ssh_key.ml:57
+#: common/mlcustomize/ssh_key.ml:57
 msgid "ssh-inject: $HOME environment variable is not set"
 msgstr ""
 
-#: customize/ssh_key.ml:93
+#: common/mlcustomize/ssh_key.ml:93
 msgid "ssh-inject: key is an empty string"
 msgstr ""
 
-#: customize/ssh_key.ml:66
+#: common/mlcustomize/ssh_key.ml:66
 msgid "ssh-inject: no public key file found in %s"
 msgstr ""
 
-#: customize/ssh_key.ml:83
+#: common/mlcustomize/ssh_key.ml:83
 msgid "ssh-inject: public key file (%s) is empty"
 msgstr ""
 
-#: customize/ssh_key.ml:112
+#: common/mlcustomize/ssh_key.ml:112
 msgid "ssh-inject: the user %s does not exist on the guest"
 msgstr ""
 
@@ -2972,11 +2898,11 @@ msgstr ""
 msgid "stopped by signal %d"
 msgstr ""
 
-#: customize/customize_run.ml:307
+#: common/mlcustomize/customize_run.ml:307
 msgid "subscription-manager credentials required for --sm-register"
 msgstr ""
 
-#: customize/customize_run.ml:67
+#: common/mlcustomize/customize_run.ml:67
 msgid ""
 "the command may have failed because the network is disabled.  Try either "
 "removing ‘--no-network’ or adding ‘--network’ on the command line."
@@ -3055,19 +2981,19 @@ msgid ""
 "The guest will be configured to use a slower emulated device."
 msgstr ""
 
-#: customize/timezone.ml:35
+#: common/mlcustomize/timezone.ml:35
 msgid "timezone '%s' does not exist, use a location like 'Europe/London'"
 msgstr ""
 
-#: customize/customize_run.ml:349
+#: common/mlcustomize/customize_run.ml:349
 msgid "timezone could not be set for this type of guest"
 msgstr ""
 
-#: builder/cmdline.ml:252
+#: builder/cmdline.ml:250
 msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
 msgstr ""
 
-#: builder/cmdline.ml:243
+#: builder/cmdline.ml:241
 msgid "too many parameters, expecting ‘os-version’"
 msgstr ""
 
@@ -3106,7 +3032,7 @@ msgstr ""
 msgid "updating the system CA store on this guest %s/%s is not supported"
 msgstr ""
 
-#. customize/customize_main.ml:83
+#. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "uri"
 msgstr ""
@@ -3140,19 +3066,19 @@ msgstr ""
 msgid "users"
 msgstr ""
 
-#: builder/cmdline.ml:277
+#: builder/cmdline.ml:275
 msgid ""
 "virt-builder --get-kernel image\n"
 "Missing ‘image’ (disk image file) argument"
 msgstr ""
 
-#: builder/cmdline.ml:259
+#: builder/cmdline.ml:257
 msgid ""
 "virt-builder --notes os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
 
-#: builder/cmdline.ml:240
+#: builder/cmdline.ml:238
 msgid ""
 "virt-builder os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
@@ -3171,7 +3097,7 @@ msgid ""
 "Use ‘/path/to/repo’ to point to the repository folder."
 msgstr ""
 
-#: builder/builder.ml:173
+#: builder/builder.ml:172
 msgid "virt-resize is not installed (or does not work)"
 msgstr ""
 
@@ -3197,7 +3123,7 @@ msgid ""
 "for further information."
 msgstr ""
 
-#: customize/customize_main.ml:137
+#: customize/customize_main.ml:135
 msgid ""
 "you cannot give -a and -d options together. Read virt-customize(1) man page "
 "for further information."
@@ -3253,7 +3179,7 @@ msgid ""
 "further information."
 msgstr ""
 
-#: customize/customize_main.ml:125
+#: customize/customize_main.ml:123
 msgid ""
 "you must give either -a or -d options. Read virt-customize(1) man page for "
 "further information."

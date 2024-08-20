@@ -12,6 +12,8 @@ cat/log.c
 cat/ls.c
 cat/tail.c
 common/edit/file-edit.c
+common/mlcustomize/crypt-c.c
+common/mlcustomize/perl_edit-c.c
 common/mlpcre/pcre-c.c
 common/mlprogress/progress-c.c
 common/mltools/JSON_parser-c.c
@@ -46,8 +48,6 @@ common/utils/stringlists-utils.c
 common/utils/utils.c
 common/visit/visit.c
 common/windows/windows.c
-customize/crypt-c.c
-customize/perl_edit-c.c
 df/df.c
 df/main.c
 df/output.c
