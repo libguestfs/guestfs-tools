@@ -28,7 +28,6 @@ open Planner
 open Utils
 
 open Cmdline
-open Customize_cmdline
 
 open Unix
 open Printf

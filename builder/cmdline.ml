@@ -23,8 +23,6 @@ open Tools_utils
 open Common_gettext.Gettext
 open Getopt.OptionName
 
-open Customize_cmdline
-
 open Utils
 
 module G = Guestfs
