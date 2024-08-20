@@ -22,7 +22,6 @@ EXTRA_DIST = \
 	test-virt-sparsify.sh \
 	test-virt-sparsify-docs.sh \
 	test-virt-sparsify-in-place.sh \
-	test-virt-sparsify-in-place-fstrim-unsupported.sh \
 	virt-sparsify.pod
 
 SOURCES_MLI = \
@@ -141,8 +140,7 @@ TESTS_ENVIRONMENT = $(top_builddir)/run --test
 TESTS = \
 	test-virt-sparsify-docs.sh \
 	test-virt-sparsify.sh \
-	test-virt-sparsify-in-place.sh \
-	test-virt-sparsify-in-place-fstrim-unsupported.sh
+	test-virt-sparsify-in-place.sh
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check
