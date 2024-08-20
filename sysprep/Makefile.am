@@ -159,7 +159,6 @@ OCAMLLINKFLAGS = \
 	mltools.$(MLARCHIVE) \
 	mlvisit.$(MLARCHIVE) \
 	mlcustomize.$(MLARCHIVE) \
-	customize.$(MLARCHIVE) \
 	$(LINK_CUSTOM_OCAMLC_ONLY)
 
 virt_sysprep_DEPENDENCIES = \
@@ -171,7 +170,6 @@ virt_sysprep_DEPENDENCIES = \
 	../common/mlxml/mlxml.$(MLARCHIVE) \
 	../common/mltools/mltools.$(MLARCHIVE) \
 	../common/mlcustomize/mlcustomize.$(MLARCHIVE) \
-	../customize/customize.$(MLARCHIVE) \
 	$(top_builddir)/ocaml-link.sh
 virt_sysprep_LINK = \
 	$(top_builddir)/ocaml-link.sh -cclib '$(OCAMLCLIBS)' -- \

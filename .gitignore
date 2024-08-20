@@ -88,8 +88,6 @@ Makefile.in
 /config.status
 /configure
 /customize/.depend
-/customize/customize_cmdline.ml
-/customize/customize_cmdline.mli
 /customize/test-password-*.sh
 /customize/test-settings-*.sh
 /customize/virt-customize

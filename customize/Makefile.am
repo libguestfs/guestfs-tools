@@ -19,7 +19,6 @@ include $(top_srcdir)/subdir-rules.mk
 
 EXTRA_DIST = \
 	$(SOURCES_MLI) $(SOURCES_ML) $(SOURCES_C) \
-	customize_main.ml \
 	test-password.pl \
 	test-settings.sh \
 	test-virt-customize.sh \
@@ -27,120 +26,12 @@ EXTRA_DIST = \
 	virt-customize.pod
 
 SOURCES_MLI = \
-	append_line.mli \
-	crypt.mli \
-	customize_cmdline.mli \
-	customize_main.mli \
-	customize_run.mli \
-	hostname.mli \
-	password.mli \
-	perl_edit.mli \
-	random_seed.mli \
-	ssh_key.mli \
-	subscription_manager.mli \
-	timezone.mli
+	customize_main.mli
 
-# This list must be in dependency order.
 SOURCES_ML = \
-	append_line.ml \
-	crypt.ml \
-	hostname.ml \
-	password.ml \
-	perl_edit.ml \
-	random_seed.ml \
-	ssh_key.ml \
-	subscription_manager.ml \
-	timezone.ml \
-	customize_cmdline.ml \
-	customize_run.ml
-
-SOURCES_C = \
-	../common/edit/file-edit.c \
-	../common/edit/file-edit.h \
-	crypt-c.c \
-	perl_edit-c.c
-
-BUILT_SOURCES = \
-	customize_cmdline.mli \
-	customize_cmdline.ml
-
-# These are created by the generator in common/mlcustomize and
-# need to be copied here.
-customize_cmdline.mli: $(top_srcdir)/common/mlcustomize/customize_cmdline.mli
-	rm -f $@
-	cp $< $@
-customize_cmdline.ml: $(top_srcdir)/common/mlcustomize/customize_cmdline.ml
-	rm -f $@
-	cp $< $@
+	customize_main.ml
 
 if HAVE_OCAML
-
-# Build the virt-customize objects into a library, since these are
-# reused by virt-builder and virt-sysprep.  We pretend we are building
-# a C library.  automake handles the compilation of C sources for us.
-# At the end we take the C objects and OCaml objects and link them
-# into the OCaml library.  This C library is never used.
-noinst_LIBRARIES = libcustomize.a
-
-if !HAVE_OCAMLOPT
-CUSTOMIZE_CMA = customize.cma
-else
-CUSTOMIZE_CMA = customize.cmxa
-endif
-
-noinst_DATA = $(CUSTOMIZE_CMA)
-
-libcustomize_a_SOURCES = $(SOURCES_C)
-libcustomize_a_CPPFLAGS = \
-	-DCAML_NAME_SPACE \
-	-I. \
-	-I$(top_builddir) \
-	-I$(top_srcdir)/gnulib/lib -I$(top_builddir)/gnulib/lib \
-	-I$(shell $(OCAMLC) -where) \
-	-I$(top_srcdir)/common/utils \
-	-I$(top_srcdir)/lib \
-	-I$(top_srcdir)/include \
-	-I$(top_srcdir)/common/edit
-libcustomize_a_CFLAGS = \
-	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
-	$(LIBGUESTFS_CFLAGS) \
-	$(LIBCRYPT_CFLAGS) \
-	$(LIBVIRT_CFLAGS) \
-	$(LIBXML2_CFLAGS) \
-	$(LIBOSINFO_CFLAGS) \
-	-fPIC
-
-BOBJECTS = $(SOURCES_ML:.ml=.cmo)
-XOBJECTS = $(BOBJECTS:.cmo=.cmx)
-
-if !HAVE_OCAMLOPT
-OBJECTS = $(BOBJECTS)
-else
-OBJECTS = $(XOBJECTS)
-endif
-
-OCAMLPACKAGES = \
-	-package str,unix,guestfs \
-	-I $(top_builddir)/common/utils/.libs \
-	-I $(top_builddir)/gnulib/lib/.libs \
-	-I $(top_builddir)/ocaml \
-	-I $(top_builddir)/common/mlstdutils \
-	-I $(top_builddir)/common/mlutils \
-	-I $(top_builddir)/common/mlgettext \
-	-I $(top_builddir)/common/mlpcre \
-	-I $(top_builddir)/common/mlxml \
-	-I $(top_builddir)/common/mltools \
-	-I $(top_builddir)/common/mlcustomize \
-	-I $(builddir)
-if HAVE_OCAML_PKG_GETTEXT
-OCAMLPACKAGES += -package gettext-stub
-endif
-
-libcustomize_a_DEPENDENCIES = $(OBJECTS)
-
-$(CUSTOMIZE_CMA): $(OBJECTS) libcustomize.a
-	$(OCAMLFIND) mklib $(OCAMLPACKAGES) \
-	    $(OBJECTS) $(libcustomize_a_OBJECTS) -o customize
 
 # Build the virt-customize program.
 bin_PROGRAMS = virt-customize
@@ -165,8 +56,24 @@ OCAMLLINKFLAGS = \
 	mlcutils.$(MLARCHIVE) \
 	mltools.$(MLARCHIVE) \
 	mlcustomize.$(MLARCHIVE) \
-	customize.$(MLARCHIVE) \
 	$(LINK_CUSTOM_OCAMLC_ONLY)
+
+OCAMLPACKAGES = \
+	-package str,unix,guestfs \
+	-I $(top_builddir)/common/utils/.libs \
+	-I $(top_builddir)/gnulib/lib/.libs \
+	-I $(top_builddir)/ocaml \
+	-I $(top_builddir)/common/mlstdutils \
+	-I $(top_builddir)/common/mlutils \
+	-I $(top_builddir)/common/mlgettext \
+	-I $(top_builddir)/common/mlpcre \
+	-I $(top_builddir)/common/mlxml \
+	-I $(top_builddir)/common/mltools \
+	-I $(top_builddir)/common/mlcustomize \
+	-I $(builddir)
+if HAVE_OCAML_PKG_GETTEXT
+OCAMLPACKAGES += -package gettext-stub
+endif
 
 OCAMLCLIBS = \
 	-pthread -lpthread \
@@ -186,7 +93,6 @@ virt_customize_DEPENDENCIES = \
 	$(top_builddir)/ocaml-link.sh \
 	$(CUSTOMIZE_THEOBJECTS) \
 	$(CUSTOMIZE_CMA) \
-	../common/mlcustomize/mlcustomize.$(MLARCHIVE) \
 	../common/mlutils/mlcutils.$(MLARCHIVE) \
 	../common/mlgettext/mlgettext.$(MLARCHIVE) \
 	../common/mlpcre/mlpcre.$(MLARCHIVE) \
@@ -200,7 +106,7 @@ virt_customize_LINK = \
 
 # Manual pages and HTML files for the website.
 man_MANS = virt-customize.1
-noinst_DATA += $(top_builddir)/website/virt-customize.1.html
+noinst_DATA = $(top_builddir)/website/virt-customize.1.html
 
 virt-customize.1 $(top_builddir)/website/virt-customize.1.html: stamp-virt-customize.pod
 
