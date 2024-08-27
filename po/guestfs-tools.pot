@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.52.0\n"
+"Project-Id-Version: guestfs-tools 1.52.1\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2024-01-04 17:06+0000\n"
+"POT-Creation-Date: 2024-08-27 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "%s (ignored)"
 msgstr ""
 
-#: builder/builder.ml:330
+#: builder/builder.ml:329
 msgid ""
 "%s checksum of template did not match the expected checksum!\n"
 "  found checksum: %s\n"
@@ -158,7 +158,7 @@ msgstr ""
 msgid "%s: This partition will be resized from %s to %s."
 msgstr ""
 
-#: builder/cmdline.ml:178
+#: builder/cmdline.ml:176
 msgid ""
 "%s: build virtual machine images quickly\n"
 "\n"
@@ -216,7 +216,7 @@ msgid ""
 "read the man page virt-builder-repository(1).\n"
 msgstr ""
 
-#: customize/customize_main.ml:98
+#: customize/customize_main.ml:96
 msgid ""
 "%s: customize a virtual machine\n"
 "\n"
@@ -364,7 +364,7 @@ msgid ""
 "read the man page virt-sparsify(1).\n"
 msgstr ""
 
-#: builder/builder.ml:339
+#: builder/builder.ml:338
 msgid ""
 "%s: template not downloaded or deleted.  You may have run ‘virt-builder --"
 "delete-cache’ in parallel."
@@ -416,11 +416,11 @@ msgid ""
 "line option multiple times to add several lines."
 msgstr ""
 
-#: customize/customize_main.ml:116
+#: customize/customize_main.ml:114
 msgid "--attach-format parameter must appear before --attach parameter"
 msgstr ""
 
-#: builder/cmdline.ml:270
+#: builder/cmdline.ml:268
 msgid ""
 "--cache-all-templates/--print-cache/--delete-cache does not need any extra "
 "arguments"
@@ -440,7 +440,7 @@ msgid ""
 "convert qcow2."
 msgstr ""
 
-#. customize/customize_main.ml:74
+#. customize/customize_main.ml:72
 #: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
 msgid "--domain option can only be given once"
 msgstr ""
@@ -457,11 +457,11 @@ msgstr ""
 msgid "--expand option given more than once"
 msgstr ""
 
-#: sysprep/main.ml:157 customize/customize_main.ml:113
+#: sysprep/main.ml:157 customize/customize_main.ml:111
 msgid "--format parameter must appear before -a parameter"
 msgstr ""
 
-#: builder/cmdline.ml:280
+#: builder/cmdline.ml:278
 msgid "--get-kernel: too many parameters"
 msgstr ""
 
@@ -477,11 +477,11 @@ msgid ""
 "in the virtio-win source that you specified"
 msgstr ""
 
-#: builder/cmdline.ml:247
+#: builder/cmdline.ml:245
 msgid "--list: use ‘--list-format’, not ‘--format’"
 msgstr ""
 
-#: builder/cmdline.ml:262
+#: builder/cmdline.ml:260
 msgid "--notes: too many parameters, expecting ‘os-version’"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr ""
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
 msgstr ""
 
-#. customize/customize_main.ml:79
+#. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "Add disk image file"
 msgstr ""
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Ask the user about missing data"
 msgstr ""
 
-#: customize/customize_main.ml:80 builder/cmdline.ml:130
+#: customize/customize_main.ml:78 builder/cmdline.ml:128
 msgid "Attach data disk/ISO during install"
 msgstr ""
 
@@ -644,7 +644,7 @@ msgstr ""
 msgid "Changing permissions of %s to %s"
 msgstr ""
 
-#: builder/cmdline.ml:138
+#: builder/cmdline.ml:136
 msgid "Check digital signatures"
 msgstr ""
 
@@ -671,11 +671,11 @@ msgstr ""
 msgid "Compressed output format"
 msgstr ""
 
-#: builder/builder.ml:710
+#: builder/builder.ml:709
 msgid "Converting %s to %s"
 msgstr ""
 
-#: builder/builder.ml:709
+#: builder/builder.ml:708
 msgid "Converting to %s"
 msgstr ""
 
@@ -694,7 +694,7 @@ msgstr ""
 msgid "Copy local files or directories into image"
 msgstr ""
 
-#: builder/builder.ml:643
+#: builder/builder.ml:642
 msgid "Copying"
 msgstr ""
 
@@ -775,15 +775,15 @@ msgstr ""
 msgid "Delete partition"
 msgstr ""
 
-#: builder/cmdline.ml:143
+#: builder/cmdline.ml:141
 msgid "Delete the template cache"
 msgstr ""
 
-#: customize/customize_run.ml:184 builder/builder.ml:139
+#: customize/customize_run.ml:184 builder/builder.ml:138
 msgid "Deleting: %s"
 msgstr ""
 
-#: customize/customize_main.ml:89 builder/cmdline.ml:158
+#: customize/customize_main.ml:87 builder/cmdline.ml:156
 msgid "Disable appliance network"
 msgstr ""
 
@@ -791,11 +791,11 @@ msgstr ""
 msgid "Disable appliance network (default)"
 msgstr ""
 
-#: builder/cmdline.ml:140
+#: builder/cmdline.ml:138
 msgid "Disable digital signatures"
 msgstr ""
 
-#: builder/cmdline.ml:134
+#: builder/cmdline.ml:132
 msgid "Disable template cache"
 msgstr ""
 
@@ -807,7 +807,7 @@ msgstr ""
 msgid "Display brief help"
 msgstr ""
 
-#: builder/cmdline.ml:159
+#: builder/cmdline.ml:157
 msgid "Display installation notes"
 msgstr ""
 
@@ -819,7 +819,7 @@ msgstr ""
 msgid "Display version and exit"
 msgstr ""
 
-#: builder/cmdline.ml:166
+#: builder/cmdline.ml:164
 msgid "Do not fsync output file on exit"
 msgstr ""
 
@@ -828,7 +828,7 @@ msgstr ""
 msgid "Do not relabel files with correct SELinux labels"
 msgstr ""
 
-#: builder/cmdline.ml:168
+#: builder/cmdline.ml:166
 msgid "Do not warn if writing to a partition"
 msgstr ""
 
@@ -844,7 +844,7 @@ msgstr ""
 msgid "Don’t create extra partition"
 msgstr ""
 
-#: builder/cmdline.ml:145
+#: builder/cmdline.ml:143
 msgid "Don’t delete output file on failure"
 msgstr ""
 
@@ -864,7 +864,7 @@ msgstr ""
 msgid "Don’t turn off echo for passphrases"
 msgstr ""
 
-#: builder/cmdline.ml:136
+#: builder/cmdline.ml:134
 msgid "Download all templates to the cache"
 msgstr ""
 
@@ -872,7 +872,7 @@ msgstr ""
 msgid "Download size:"
 msgstr ""
 
-#: builder/builder.ml:315 builder/builder.ml:263
+#: builder/builder.ml:314 builder/builder.ml:262
 msgid "Downloading: %s"
 msgstr ""
 
@@ -889,7 +889,7 @@ msgstr ""
 msgid "Enable appliance network"
 msgstr ""
 
-#: customize/customize_main.ml:88 builder/cmdline.ml:157
+#: customize/customize_main.ml:86 builder/cmdline.ml:155
 msgid "Enable appliance network (default)"
 msgstr ""
 
@@ -921,7 +921,7 @@ msgstr ""
 msgid "Examining %s"
 msgstr ""
 
-#: sysprep/main.ml:213 customize/customize_main.ml:161
+#: sysprep/main.ml:213 customize/customize_main.ml:159
 msgid "Examining the guest ..."
 msgstr ""
 
@@ -1002,7 +1002,7 @@ msgstr ""
 msgid "Fill free space in volgroup %s with zero"
 msgstr ""
 
-#: builder/cmdline.ml:147
+#: builder/cmdline.ml:145
 msgid "Fingerprint of valid signing key"
 msgstr ""
 
@@ -1010,7 +1010,7 @@ msgstr ""
 msgid "Fingerprint: %s\n"
 msgstr ""
 
-#: customize/customize_main.ml:208 builder/builder.ml:797
+#: customize/customize_main.ml:206 builder/builder.ml:796
 msgid "Finishing off"
 msgstr ""
 
@@ -1061,7 +1061,7 @@ msgstr ""
 msgid "Found new images: %s"
 msgstr ""
 
-#: builder/builder.ml:787
+#: builder/builder.ml:786
 msgid "Free space"
 msgstr ""
 
@@ -1090,7 +1090,7 @@ msgid ""
 "- Check no one has tampered with the website or your network!"
 msgstr ""
 
-#: builder/cmdline.ml:150
+#: builder/cmdline.ml:148
 msgid "Get kernel from image"
 msgstr ""
 
@@ -1171,7 +1171,7 @@ msgstr ""
 msgid "Linking: %s -> %s"
 msgstr ""
 
-#: builder/cmdline.ml:152
+#: builder/cmdline.ml:150
 msgid "List available templates"
 msgstr ""
 
@@ -1271,7 +1271,7 @@ msgid ""
 "building rhsrvany (https://github.com/rwmjones/rhsrvany)"
 msgstr ""
 
-#: builder/builder.ml:722
+#: builder/builder.ml:721
 msgid "Opening the new disk"
 msgstr ""
 
@@ -1279,19 +1279,19 @@ msgstr ""
 msgid "Output directory"
 msgstr ""
 
-#: builder/builder.ml:782
+#: builder/builder.ml:781
 msgid "Output file"
 msgstr ""
 
-#: builder/builder.ml:784
+#: builder/builder.ml:783
 msgid "Output format"
 msgstr ""
 
-#: builder/cmdline.ml:148
+#: builder/cmdline.ml:146
 msgid "Output format (default: raw)"
 msgstr ""
 
-#: builder/builder.ml:783
+#: builder/builder.ml:782
 msgid "Output size"
 msgstr ""
 
@@ -1322,7 +1322,7 @@ msgstr ""
 msgid "POD notes for %s must not end with newline"
 msgstr ""
 
-#: sysprep/main.ml:129 customize/customize_main.ml:85
+#: sysprep/main.ml:129 customize/customize_main.ml:83
 msgid "Perform a dry run"
 msgstr ""
 
@@ -1330,7 +1330,7 @@ msgstr ""
 msgid "Performing %S ..."
 msgstr ""
 
-#: builder/builder.ml:578
+#: builder/builder.ml:577
 msgid "Planning how to build this image"
 msgstr ""
 
@@ -1342,7 +1342,7 @@ msgstr ""
 msgid "Preparing %s"
 msgstr ""
 
-#: builder/cmdline.ml:162
+#: builder/cmdline.ml:160
 msgid "Print info about template cache"
 msgstr ""
 
@@ -1596,11 +1596,11 @@ msgstr ""
 msgid "Resize partition"
 msgstr ""
 
-#: builder/builder.ml:668
+#: builder/builder.ml:667
 msgid "Resizing (using virt-resize) to expand the disk to %s"
 msgstr ""
 
-#: builder/builder.ml:695
+#: builder/builder.ml:694
 msgid "Resizing container (but not filesystems) to expand the disk to %s"
 msgstr ""
 
@@ -1706,15 +1706,15 @@ msgstr ""
 msgid "Scrubbing: %s"
 msgstr ""
 
-#: builder/repository_main.ml:52 builder/cmdline.ml:151
+#: builder/repository_main.ml:52 builder/cmdline.ml:149
 msgid "Set GPG binary/command"
 msgstr ""
 
-#: customize/customize_main.ml:82 builder/cmdline.ml:132
+#: customize/customize_main.ml:80 builder/cmdline.ml:130
 msgid "Set attach disk format"
 msgstr ""
 
-#: builder/cmdline.ml:141
+#: builder/cmdline.ml:139
 msgid "Set curl binary/command"
 msgstr ""
 
@@ -1722,21 +1722,21 @@ msgstr ""
 msgid "Set disk sector size"
 msgstr ""
 
-#: sysprep/main.ml:133 customize/customize_main.ml:86
+#: sysprep/main.ml:133 customize/customize_main.ml:84
 msgid "Set format (default: auto)"
 msgstr ""
 
-#. customize/customize_main.ml:83
+#. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "Set libvirt URI"
 msgstr ""
 
-#. customize/customize_main.ml:84
+#. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "Set libvirt guest name"
 msgstr ""
 
-#: customize/customize_main.ml:87 builder/cmdline.ml:156
+#: customize/customize_main.ml:85 builder/cmdline.ml:154
 msgid "Set memory size"
 msgstr ""
 
@@ -1744,15 +1744,15 @@ msgstr ""
 msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
 msgstr ""
 
-#: customize/customize_main.ml:90 builder/cmdline.ml:164
+#: customize/customize_main.ml:88 builder/cmdline.ml:162
 msgid "Set number of vCPUs"
 msgstr ""
 
-#: builder/cmdline.ml:163
+#: builder/cmdline.ml:161
 msgid "Set output disk size"
 msgstr ""
 
-#: builder/cmdline.ml:160
+#: builder/cmdline.ml:158
 msgid "Set output filename"
 msgstr ""
 
@@ -1774,11 +1774,11 @@ msgstr ""
 msgid "Set root password"
 msgstr ""
 
-#: builder/cmdline.ml:165
+#: builder/cmdline.ml:163
 msgid "Set source URL"
 msgstr ""
 
-#: builder/cmdline.ml:133
+#: builder/cmdline.ml:131
 msgid "Set template cache dir"
 msgstr ""
 
@@ -1791,7 +1791,7 @@ msgstr ""
 msgid "Set the default timezone"
 msgstr ""
 
-#: builder/cmdline.ml:155
+#: builder/cmdline.ml:153
 msgid "Set the format for --list (default: short)"
 msgstr ""
 
@@ -1800,7 +1800,7 @@ msgstr ""
 msgid "Set the hostname"
 msgstr ""
 
-#: builder/cmdline.ml:129
+#: builder/cmdline.ml:127
 msgid "Set the output architecture"
 msgstr ""
 
@@ -1837,7 +1837,7 @@ msgstr ""
 msgid "Setting up initial partition table on %s"
 msgstr ""
 
-#: builder/cmdline.ml:153
+#: builder/cmdline.ml:151
 msgid "Shortcut for --list-format long"
 msgstr ""
 
@@ -2013,7 +2013,7 @@ msgid ""
 "This option can be specified multiple times."
 msgstr ""
 
-#: builder/builder.ml:287
+#: builder/builder.ml:286
 msgid "There are no notes for %s\n"
 msgstr ""
 
@@ -2063,7 +2063,7 @@ msgstr ""
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
 msgstr ""
 
-#: builder/builder.ml:785
+#: builder/builder.ml:784
 msgid "Total usable space"
 msgstr ""
 
@@ -2103,7 +2103,7 @@ msgstr ""
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
 msgstr ""
 
-#: builder/builder.ml:656
+#: builder/builder.ml:655
 msgid "Uncompressing"
 msgstr ""
 
@@ -2222,7 +2222,7 @@ msgstr ""
 msgid "btrfs-filesystem-resize"
 msgstr ""
 
-#: builder/builder.ml:182
+#: builder/builder.ml:181
 msgid "cache %s: %s"
 msgstr ""
 
@@ -2238,7 +2238,7 @@ msgstr ""
 msgid "cannot detect input disk format; use the --format parameter"
 msgstr ""
 
-#: builder/builder.ml:100
+#: builder/builder.ml:99
 msgid ""
 "cannot find os-version ‘%s’ with architecture ‘%s’.\n"
 "Use --list to list available guest types."
@@ -2251,7 +2251,7 @@ msgid ""
 "at boot."
 msgstr ""
 
-#: builder/builder.ml:387
+#: builder/builder.ml:386
 msgid "cannot output to a character device or /dev/null"
 msgstr ""
 
@@ -2300,7 +2300,7 @@ msgstr ""
 msgid "could not find bootloader mount point (%s): %s"
 msgstr ""
 
-#: builder/builder.ml:143
+#: builder/builder.ml:142
 msgid "could not find cache directory. Is $HOME set?"
 msgstr ""
 
@@ -2339,7 +2339,7 @@ msgstr ""
 msgid "cp (download) command failed copying ‘%s’"
 msgstr ""
 
-#: builder/builder.ml:168
+#: builder/builder.ml:167
 msgid "curl is not installed (or does not work)"
 msgstr ""
 
@@ -2367,7 +2367,7 @@ msgstr ""
 msgid "directory"
 msgstr ""
 
-#: builder/builder.ml:183
+#: builder/builder.ml:182
 msgid "disabling the cache"
 msgstr ""
 
@@ -2379,7 +2379,7 @@ msgstr ""
 msgid "discard/trim is not supported"
 msgstr ""
 
-#. customize/customize_main.ml:84
+#. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
 msgid "domain"
 msgstr ""
@@ -2416,7 +2416,7 @@ msgstr ""
 msgid "empty --shrink option"
 msgstr ""
 
-#. customize/customize_main.ml:67
+#. customize/customize_main.ml:65
 #. builder/downloader.ml:72
 #: get-kernel/get_kernel.ml:44 drivers/drivers.ml:40
 msgid "error parsing URI '%s'. Look for error messages printed above."
@@ -2468,7 +2468,7 @@ msgstr ""
 msgid "failure: %s"
 msgstr ""
 
-#. customize/customize_main.ml:79
+#. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
 msgid "file"
 msgstr ""
@@ -2494,7 +2494,7 @@ msgstr ""
 #. resize/resize.ml:205
 #. get-kernel/get_kernel.ml:61
 #. drivers/drivers.ml:54
-#. customize/customize_main.ml:86
+#. customize/customize_main.ml:84
 #: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
 msgid "format"
 msgstr ""
@@ -2548,13 +2548,13 @@ msgstr ""
 msgid "ignoring kernel %s in bootloader, as it does not exist."
 msgstr ""
 
-#: builder/builder.ml:412
+#: builder/builder.ml:411
 msgid ""
 "images cannot be shrunk, the output size is too small for this image.  "
 "Requested size = %s, minimum size = %s"
 msgstr ""
 
-#: builder/builder.ml:372
+#: builder/builder.ml:371
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
@@ -2677,7 +2677,7 @@ msgstr ""
 msgid "never|always|auto"
 msgstr ""
 
-#: builder/builder.ml:156
+#: builder/builder.ml:155
 msgid ""
 "no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
 "\n"
@@ -2692,15 +2692,15 @@ msgstr ""
 msgid "no bootloader detected"
 msgstr ""
 
-#: builder/builder.ml:257
+#: builder/builder.ml:256
 msgid "no cache directory"
 msgstr ""
 
-#: builder/builder.ml:250
+#: builder/builder.ml:249
 msgid "no cache directory\n"
 msgstr ""
 
-#: builder/builder.ml:750
+#: builder/builder.ml:749
 msgid ""
 "no guest operating systems or multiboot OS found in this disk image\n"
 "This is a failure of the source repository.  Use -v for more information."
@@ -2733,11 +2733,11 @@ msgstr ""
 msgid "no operating system found"
 msgstr ""
 
-#: sysprep/main.ml:230 customize/customize_main.ml:192
+#: sysprep/main.ml:230 customize/customize_main.ml:190
 msgid "no operating systems were found in the guest image"
 msgstr ""
 
-#: builder/builder.ml:583
+#: builder/builder.ml:582
 msgid ""
 "no plan could be found for making a disk image with\n"
 "the required size, format etc. This is a bug in libguestfs!\n"
@@ -2784,7 +2784,7 @@ msgstr ""
 msgid "osinfo short ID: "
 msgstr ""
 
-#: builder/builder.ml:301
+#: builder/builder.ml:300
 msgid ""
 "output device (%s) is a partition.  If you are writing to a USB key or "
 "external drive then you probably need to write to the whole device, not to a "
@@ -2792,7 +2792,7 @@ msgid ""
 "if-partition"
 msgstr ""
 
-#: builder/builder.ml:417
+#: builder/builder.ml:416
 msgid ""
 "output size is too large for this block device.  Requested size = %s, output "
 "block device = %s, output block device size = %s"
@@ -2931,7 +2931,7 @@ msgid ""
 "options instead (described in the virt-customize(1) manual)."
 msgstr ""
 
-#: builder/cmdline.ml:306
+#: builder/cmdline.ml:304
 msgid "source and fingerprint lists are not the same length"
 msgstr ""
 
@@ -3050,11 +3050,11 @@ msgstr ""
 msgid "timezone could not be set for this type of guest"
 msgstr ""
 
-#: builder/cmdline.ml:252
+#: builder/cmdline.ml:250
 msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
 msgstr ""
 
-#: builder/cmdline.ml:243
+#: builder/cmdline.ml:241
 msgid "too many parameters, expecting ‘os-version’"
 msgstr ""
 
@@ -3093,7 +3093,7 @@ msgstr ""
 msgid "updating the system CA store on this guest %s/%s is not supported"
 msgstr ""
 
-#. customize/customize_main.ml:83
+#. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
 msgid "uri"
 msgstr ""
@@ -3127,19 +3127,19 @@ msgstr ""
 msgid "users"
 msgstr ""
 
-#: builder/cmdline.ml:277
+#: builder/cmdline.ml:275
 msgid ""
 "virt-builder --get-kernel image\n"
 "Missing ‘image’ (disk image file) argument"
 msgstr ""
 
-#: builder/cmdline.ml:259
+#: builder/cmdline.ml:257
 msgid ""
 "virt-builder --notes os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
 
-#: builder/cmdline.ml:240
+#: builder/cmdline.ml:238
 msgid ""
 "virt-builder os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
@@ -3158,7 +3158,7 @@ msgid ""
 "Use ‘/path/to/repo’ to point to the repository folder."
 msgstr ""
 
-#: builder/builder.ml:173
+#: builder/builder.ml:172
 msgid "virt-resize is not installed (or does not work)"
 msgstr ""
 
@@ -3184,7 +3184,7 @@ msgid ""
 "for further information."
 msgstr ""
 
-#: customize/customize_main.ml:137
+#: customize/customize_main.ml:135
 msgid ""
 "you cannot give -a and -d options together. Read virt-customize(1) man page "
 "for further information."
@@ -3240,7 +3240,7 @@ msgid ""
 "further information."
 msgstr ""
 
-#: customize/customize_main.ml:125
+#: customize/customize_main.ml:123
 msgid ""
 "you must give either -a or -d options. Read virt-customize(1) man page for "
 "further information."
@@ -3953,12 +3953,12 @@ msgid ""
 "format=%s'.\n"
 msgstr ""
 
-#: diff/diff.c:787
+#: diff/diff.c:802
 #, c-format
 msgid "%s: external diff command failed\n"
 msgstr ""
 
-#: diff/diff.c:791
+#: diff/diff.c:806
 msgid "End of diff"
 msgstr ""
 
