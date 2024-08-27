@@ -216,6 +216,9 @@ let run (g : G.guestfs) root (ops : ops) =
       if not (Hostname.set_hostname g root hostname) then
         warning (f_"hostname could not be set for this type of guest")
 
+    | `InjectBalloonServer _ ->
+      error "injecting the balloon server is not supported in RHEL 9.4, use RHEL 9.5 or above"
+
     | `InjectQemuGA meth ->
        (match get_virtio_win_handle "--inject-qemu-ga" meth with
         | None -> ()
