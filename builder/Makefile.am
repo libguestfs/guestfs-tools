@@ -205,7 +205,7 @@ OCAMLCLIBS = \
 	$(LIBLZMA_LIBS) \
 	$(LIBXML2_LIBS) \
 	$(LIBOSINFO_LIBS) \
-	$(JANSSON_LIBS) \
+	$(JSON_C_LIBS) \
 	$(LIBINTL) \
 	-lgnu
 
