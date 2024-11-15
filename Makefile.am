@@ -122,7 +122,6 @@ po/POTFILES-ml: configure.ac
 	cd $(srcdir); \
 	find builder common/ml* customize drivers get-kernel resize sparsify sysprep -name '*.ml' | \
 	grep -v '^builder/templates/' | \
-	grep -v '^common/mlv2v/' | \
 	grep -v -E '.*_tests\.ml$$' | \
 	LC_ALL=C sort > $@-t
 	mv $@-t $@
@@ -190,7 +189,6 @@ maintainer-check-extra-dist:
 	  cd common; git ls-files | sed 's,^,common/,' ) | \
 	  grep -v '^common$$' | \
 	  grep -v '^common/errnostring/' | \
-	  grep -v '^common/mlv2v/' | \
 	  grep -v '^common/protocol/' | \
 	  grep -v '^common/qemuopts/' | \
 	  grep -v '^intltool-.*\.in' | \
