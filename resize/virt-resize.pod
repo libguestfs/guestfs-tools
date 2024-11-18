@@ -81,7 +81,7 @@ Locate the input disk image (ie. the file or device on the host
 containing the guest’s disk).  If the guest is managed by libvirt, you
 can use C<virsh dumpxml> like this to find the disk image name:
 
- # virsh dumpxml guestname | xpath /domain/devices/disk/source
+ # virsh dumpxml guestname | xpath -e /domain/devices/disk/source
  Found 1 nodes:
  -- NODE --
  <source dev="/dev/vg/lv_guest" />
