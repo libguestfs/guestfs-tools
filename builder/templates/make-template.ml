@@ -1,6 +1,6 @@
 #!/usr/bin/env ocaml
 (* libguestfs
- * Copyright (C) 2016-2023 Red Hat Inc.
+ * Copyright (C) 2016-2024 Red Hat Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -983,6 +983,14 @@ and make_boot_media os arch =
      Location (sprintf "http://download.eng.bos.redhat.com/released/\
                         RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
 
+  (* This is RHEL 10.0 Beta, will be replaced with RHEL 10.0 when
+   * that is released later.
+   *)
+  | RHEL (10, 0), arch ->
+     Location (sprintf "http://download.eng.bos.redhat.com/released/\
+                        rhel-10/RHEL-10/10.0-Beta-0/BaseOS/%s/os/"
+                 (string_of_arch arch))
+
   | Ubuntu (_, dist), X86_64 ->
      Location (sprintf "http://archive.ubuntu.com/ubuntu/dists/\
                         %s/main/installer-amd64" dist)
@@ -1263,6 +1271,7 @@ and os_variant_of_os ?(for_fedora = false) os arch =
     | RHEL (7, _), _ -> "rhel7.5" (* max version known in Fedora 29 *)
     | RHEL (8, _), _ -> "rhel8.5" (* max version known in Fedora 36 *)
     | RHEL (9, _), _ -> "rhel9.0" (* max version known in Fedora 37 *)
+    | RHEL (10, _), _ -> "rhel9.5" (* max version known in Fedora 42 *)
     | RHEL (major, minor), _ ->
        sprintf "rhel%d.%d" major minor
 
@@ -1327,7 +1336,7 @@ and make_rhel_yum_conf major minor arch =
   let buf = Buffer.create 4096 in
   let bpf fs = bprintf buf fs in
 
-  if major <= 9 then (
+  if major <= 10 then (
     let baseurl, srpms, optional =
       match major, arch with
       | 5, (I686|X86_64) ->
@@ -1370,6 +1379,15 @@ and make_rhel_yum_conf major minor arch =
          let topurl =
            sprintf "http://download.devel.redhat.com/released/RHEL-%d/%d.%d.0"
                    major major minor in
+         sprintf "%s/BaseOS/%s/os" topurl (string_of_arch arch),
+         sprintf "%s/BaseOS/source/tree" topurl,
+         Some ("AppStream",
+               sprintf "%s/AppStream/%s/os" topurl (string_of_arch arch),
+               sprintf "%s/AppStream/source/tree" topurl)
+      (* See note above about 10 Beta *)
+      | 10, arch ->
+         let topurl =
+           "http://download.devel.redhat.com/released/rhel-10/RHEL-10/10.0-Beta-0" in
          sprintf "%s/BaseOS/%s/os" topurl (string_of_arch arch),
          sprintf "%s/BaseOS/source/tree" topurl,
          Some ("AppStream",
@@ -1418,7 +1436,7 @@ keepcache=0
   major lc_name major lc_name optionalsrpms
     )
   ) else (
-    assert false (* not implemented for RHEL major >= 10 *)
+    assert false (* not implemented for RHEL major >= 11 *)
   );
 
   Buffer.contents buf
