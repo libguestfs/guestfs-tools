@@ -100,8 +100,12 @@ EXTRA_DIST = \
 #  po/POTFILES-pl - Perl files that don't end in *.pl, which need a
 #                   special xgettext option [not generated here]
 #  po/POTFILES-ml - OCaml files, which need a special tool to translate
+#  po-docs/guestfs-tools-docs.pot
+#                 - combined list of strings from documentation
 
 dist-hook: po/POTFILES po/POTFILES-ml
+	rm -f po-docs/guestfs-tools-docs.pot
+	$(MAKE) -C po-docs guestfs-tools-docs.pot
 
 # For more information about translations, see po/Makefile.am.
 po/POTFILES: configure.ac
