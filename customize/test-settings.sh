@@ -21,10 +21,10 @@
 # NB. 'test-settings.sh' runs the tests, but the various tests are
 # run via the 'test-settings-GUESTNAME.sh' wrappers.
 
+source ../tests/functions.sh
 set -e
 set -x
 
-$TEST_FUNCTIONS
 slow_test
 skip_if_skipped "$script"
 

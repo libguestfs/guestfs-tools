@@ -18,9 +18,10 @@
 
 # Test virt-format command.
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 rm -f test-virt-format.img

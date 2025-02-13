@@ -18,9 +18,12 @@
 
 set -e
 
-$TEST_FUNCTIONS
-slow_test
+source ../tests/functions.sh
+set -e
+set -x
+
 skip_if_skipped "$script"
+slow_test
 
 test_data=repository-testdata
 rm -rf $test_data

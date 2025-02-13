@@ -24,11 +24,12 @@
 # The script currently assumes a Linux guest.  We should test Windows,
 # FreeBSD in future (XXX).
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
-slow_test
 skip_if_skipped "$script"
+slow_test
 
 guestname="$1"
 if [ -z "$guestname" ]; then

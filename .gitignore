@@ -149,5 +149,6 @@ Makefile.in
 /test-data/phony-guests/windows.img
 /test-data/phony-guests/windows-software
 /test-data/phony-guests/windows-system
+/tests/functions.sh
 /website/*.html
 /win-reg/virt-win-reg

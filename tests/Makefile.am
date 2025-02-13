@@ -1,6 +1,5 @@
-#!/bin/bash -
-# libguestfs
-# Copyright (C) 2012 Red Hat Inc.
+# guestfs-tools
+# Copyright (C) 2009-2025 Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,16 +15,8 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-source ../tests/functions.sh
-# set -e    # command below fails
-set -x
+# This file is (almost) empty since this directory is only needed so
+# we have somewhere to put the tests/function.sh{,.in} file.  The
+# actual tests are placed into the directories of each tool.
 
-skip_if_skipped
-
-$VG virt-alignment-scan --format=raw -a ../test-data/phony-guests/fedora.img
-r=$?
-
-# 0, 2 and 3 are reasonable non-error exit codes.  Others are errors.
-if [ $r -ne 0 -a $r -ne 2 -a $r -ne 3 ]; then
-    exit $r
-fi
+include $(top_srcdir)/subdir-rules.mk

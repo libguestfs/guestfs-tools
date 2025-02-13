@@ -19,9 +19,10 @@
 # Regression test for virt-resize handling of logical volumes
 # https://bugzilla.redhat.com/1285847
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 skip_unless virt-resize --help
 

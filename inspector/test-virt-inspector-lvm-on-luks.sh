@@ -21,10 +21,10 @@
 #
 # Regression test for https://bugzilla.redhat.com/show_bug.cgi?id=1602353
 
+source ../tests/functions.sh
 set -e
 set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 f=../test-data/phony-guests/fedora-lvm-on-luks.img

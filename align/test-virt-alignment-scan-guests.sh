@@ -16,7 +16,10 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-$TEST_FUNCTIONS
+source ../tests/functions.sh
+# set -e    # command below fails
+set -x
+
 skip_if_skipped
 
 libvirt_uri="test://$abs_top_builddir/test-data/phony-guests/guests-all-good.xml"

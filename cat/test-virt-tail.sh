@@ -21,10 +21,10 @@
 # in the guestfish instance we append to the file, and we check that
 # the addenda are displayed by virt-tail.
 
+source ../tests/functions.sh
 set -e
 set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 # Libvirt screws with the SELinux labels, preventing guestfish from

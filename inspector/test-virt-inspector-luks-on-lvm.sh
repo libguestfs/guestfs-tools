@@ -21,10 +21,10 @@
 #
 # Regression test for https://bugzilla.redhat.com/show_bug.cgi?id=1658126
 
+source ../tests/functions.sh
 set -e
 set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 # This test requires libguestfs >= 1.47.3.  Just check the minor

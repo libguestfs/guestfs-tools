@@ -18,9 +18,12 @@
 
 set -e
 
-$TEST_FUNCTIONS
-slow_test
+source ../tests/functions.sh
+set -e
+set -x
+
 skip_if_skipped
+slow_test
 
 export XDG_CONFIG_HOME=
 export VIRT_BUILDER_DIRS="$abs_builddir/test-config"

@@ -47,6 +47,9 @@ endif
 # Data used by the tests.
 SUBDIRS += test-data
 
+# Not used but needed.
+SUBDIRS += tests
+
 # virt-tools in C.
 SUBDIRS += align cat diff df edit format inspector make-fs
 

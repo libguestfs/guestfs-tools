@@ -18,9 +18,10 @@
 
 # Run virt-df on the test guests.
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 libvirt_uri="test://$abs_top_builddir/test-data/phony-guests/guests.xml"

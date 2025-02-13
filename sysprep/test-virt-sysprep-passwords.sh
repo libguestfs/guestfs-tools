@@ -18,9 +18,10 @@
 
 # Test all the combinations of password options.
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 skip_unless_phony_guest fedora.img
 

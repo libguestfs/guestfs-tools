@@ -20,9 +20,10 @@
 # copied from the original Perl tool virt-make-fs, on the basis that
 # the new C tool should be able to pass the same tests.
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 # Check which filesystems are supported by the appliance.

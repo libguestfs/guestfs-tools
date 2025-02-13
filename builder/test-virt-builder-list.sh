@@ -18,9 +18,10 @@
 
 # Test the virt-builder --list [--long] options.
 
+source ../tests/functions.sh
 set -e
+set -x
 
-$TEST_FUNCTIONS
 skip_if_skipped
 
 export XDG_CONFIG_HOME=
