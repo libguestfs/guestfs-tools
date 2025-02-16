@@ -15,8 +15,6 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# This file is (almost) empty since this directory is only needed so
-# we have somewhere to put the tests/function.sh{,.in} file.  The
-# actual tests are placed into the directories of each tool.
+EXTRA_DIST = README.txt
 
 include $(top_srcdir)/subdir-rules.mk
