@@ -63,6 +63,11 @@ else {
 
 $| = 1;
 
+# The size of each partition, in MB and sectors.
+my $part_size_mb = 512;
+my $part_size_sectors = 1024 * 1024 * $part_size_mb / 512;
+
+# Create the handle.
 my $g = Sys::Guestfs->new ();
 my $backend = $g->get_backend ();
 
@@ -106,6 +111,7 @@ if ($expand && rand () < 0.5) {
 print "seed:           $seed\n";
 print "partition type: $part_type\n";
 print "nr partitions:  $nr_parts\n";
+print "partition size: ${part_size_mb}M ($part_size_sectors sectors)\n";
 print "expand:         $expand\n";
 print "no extra part:  $no_extra_partition\n";
 print "source format:  $source_format\n";
@@ -150,7 +156,7 @@ $parts[$i]->{expand_shrink} = 1;
 # Size of the source disk.  It's always roughly nr_parts * size of
 # each partition + a bit extra.  For btrfs we have to choose a large
 # partition size.
-my $source_size = (10 + $nr_parts * 512) * 1024 * 1024;
+my $source_size = (10 + $nr_parts * $part_size_mb) * 1024 * 1024;
 
 # Create the source disk.
 my $source_file = "test-virt-resize-source.img";
@@ -214,7 +220,7 @@ my $start = 2048;
 
 if ($part_type eq "gpt") {
     for (my $i = 1; $i <= $nr_parts; ++$i) {
-        my $end = $start + 1024*1024 - 1;
+        my $end = $start + $part_size_sectors - 1;
         $g->part_add ("/dev/sda", "primary", $start, $end);
         $start = $end+1;
     }
@@ -222,7 +228,7 @@ if ($part_type eq "gpt") {
     # MBR is nuts ...
     for ($i = 1; $i <= $nr_parts; ++$i) {
         if ($i <= 3) {
-            my $end = $start + 1024*1024 - 1;
+            my $end = $start + $part_size_sectors - 1;
             $g->part_add ("/dev/sda", "primary", $start, $end);
             $start = $end+1;
         }
@@ -237,7 +243,7 @@ if ($part_type eq "gpt") {
             # confusing thing about them is we have to take into
             # account the sector that contains the linked list of
             # logical partitions, hence -2/+2 below.
-            my $end = $start + 1024*1024 - 2;
+            my $end = $start + $part_size_sectors - 2;
             $g->part_add ("/dev/sda", "logical", $start, $end);
             $start = $end+2;
         }
@@ -298,7 +304,7 @@ for ($i = 1; $i <= $nr_parts; ++$i) {
             $target_size += 260;
         }
     } else {
-        $target_size += 512; # remain at original size
+        $target_size += $part_size_mb; # remain at original size
     }
 }
 $target_size += 10;
