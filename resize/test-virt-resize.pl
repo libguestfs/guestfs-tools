@@ -67,6 +67,9 @@ $| = 1;
 my $part_size_mb = 512;
 my $part_size_sectors = 1024 * 1024 * $part_size_mb / 512;
 
+my $expand_target_size_mb = 800;
+my $shrink_target_size_mb = 260;
+
 # Create the handle.
 my $g = Sys::Guestfs->new ();
 my $backend = $g->get_backend ();
@@ -258,22 +261,27 @@ for ($i = 1; $i <= $nr_parts; ++$i) {
         # do nothing - it's the extended partition
     } elsif ($content eq "lvm") {
         $g->pvcreate ($dev);
-        # If shrinking, shrink the PV to < 260MB.
+        # If shrinking, shrink the PV to < shrink size.
         if (!$expand) {
-            $g->pvresize_size ($dev, 256 * 1024 * 1024);
+            $g->pvresize_size ($dev, ($shrink_target_size_mb-4) * 1024 * 1024);
         }
     } else {
         $g->mkfs ($content, $dev);
-        # If shrinking, shrink the filesystem to < 260MB.
+        # If shrinking, shrink the filesystem to < shrink size.
         if (!$expand) {
             if ($content eq "ext2") {
-                $g->resize2fs_size ($dev, 256 * 1024 * 1024);
+                $g->resize2fs_size ($dev,
+                                    ($shrink_target_size_mb-4) * 1024 * 1024);
             } elsif ($content eq "btrfs") {
                 $g->mount ($dev, "/");
-                $g->btrfs_filesystem_resize ("/", size => 256 * 1024 * 1024);
+                $g->btrfs_filesystem_resize
+                    ("/",
+                     size => ($shrink_target_size_mb-4) * 1024 * 1024);
                 $g->umount_all ();
             } elsif ($content eq "ntfs") {
-                $g->ntfsresize ($dev, size => 256 * 1024 * 1024);
+                $g->ntfsresize
+                    ($dev,
+                     size => ($shrink_target_size_mb-4) * 1024 * 1024);
             } else {
                 die "internal error: content = $content";
             }
@@ -299,9 +307,9 @@ my $target_size = 0;
 for ($i = 1; $i <= $nr_parts; ++$i) {
     if ($parts[$i]->{resize} || $parts[$i]->{expand_shrink}) {
         if ($expand) {
-            $target_size += 800;
+            $target_size += $expand_target_size_mb;
         } else {
-            $target_size += 260;
+            $target_size += $shrink_target_size_mb;
         }
     } else {
         $target_size += $part_size_mb; # remain at original size
