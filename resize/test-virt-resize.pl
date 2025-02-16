@@ -64,11 +64,11 @@ else {
 $| = 1;
 
 # The size of each partition, in MB and sectors.
-my $part_size_mb = 512;
+my $part_size_mb = 1024;
 my $part_size_sectors = 1024 * 1024 * $part_size_mb / 512;
 
-my $expand_target_size_mb = 800;
-my $shrink_target_size_mb = 260;
+my $expand_target_size_mb = 1200;
+my $shrink_target_size_mb = 400;
 
 # Create the handle.
 my $g = Sys::Guestfs->new ();
