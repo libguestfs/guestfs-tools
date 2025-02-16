@@ -93,7 +93,6 @@ EXTRA_DIST = \
 	lib/guestfs-internal-all.h \
 	m4/.gitignore \
 	podcheck.pl \
-	test-functions.sh \
 	tmp/.gitignore \
 	valgrind-suppressions
 
