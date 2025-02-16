@@ -1603,7 +1603,7 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder-repository.pod:218
-msgid "Copyright (C) 2016-2023 SUSE Inc."
+msgid "Copyright (C) 2016-2025 SUSE Inc."
 msgstr ""
 
 #. type: textblock
@@ -5906,7 +5906,7 @@ msgstr ""
 #: cat/virt-cat.pod:293 cat/virt-filesystems.pod:403 cat/virt-log.pod:154
 #: inspector/virt-inspector.pod:520 make-fs/virt-make-fs.pod:245
 #: resize/virt-resize.pod:879
-msgid "Copyright (C) 2010-2023 Red Hat Inc."
+msgid "Copyright (C) 2010-2025 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
@@ -7416,7 +7416,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:130
 #: docs/guestfs-tools-release-notes-1.50.pod:182 drivers/virt-drivers.pod:250
 #: edit/virt-edit.pod:401
-msgid "Copyright (C) 2009-2023 Red Hat Inc."
+msgid "Copyright (C) 2009-2025 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
@@ -7596,7 +7596,7 @@ msgstr ""
 #: common/mlcustomize/v2v-customize-options.pod:9
 #, no-wrap
 msgid ""
-" Copyright (C) 2009-2023 Red Hat Inc.\n"
+" Copyright (C) 2009-2025 Red Hat Inc.\n"
 "\n"
 msgstr ""
 
@@ -9209,7 +9209,7 @@ msgstr ""
 #. type: textblock
 #: customize/virt-customize.pod:314 sparsify/virt-sparsify.pod:481
 #: sysprep/virt-sysprep.pod:634
-msgid "Copyright (C) 2011-2023 Red Hat Inc."
+msgid "Copyright (C) 2011-2025 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
@@ -10434,7 +10434,7 @@ msgstr ""
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.52.pod:123
-msgid "Copyright (C) 2009-2024 Red Hat Inc."
+msgid "Copyright (C) 2009-2025 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
@@ -11590,7 +11590,7 @@ msgstr ""
 
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:216
-msgid "Copyright (C) 2013-2023 Red Hat Inc."
+msgid "Copyright (C) 2013-2025 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
