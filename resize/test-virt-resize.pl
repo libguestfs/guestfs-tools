@@ -305,7 +305,13 @@ $g->close ();
 # will be resized.
 my $target_size = 0;
 for ($i = 1; $i <= $nr_parts; ++$i) {
-    if ($parts[$i]->{resize} || $parts[$i]->{expand_shrink}) {
+    if ($parts[$i]->{resize}) {
+        if ($expand) {
+            $target_size += $part_size_mb + 256;
+        } else {
+            $target_size += $part_size_mb - 256;
+        }
+    } elsif ($parts[$i]->{expand_shrink}) {
         if ($expand) {
             $target_size += $expand_target_size_mb;
         } else {
