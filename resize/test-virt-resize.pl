@@ -311,6 +311,7 @@ Sys::Guestfs->new ()->disk_create ($target_file, $target_format, $target_size);
 # Create the virt-resize command.
 my @command = (
     "virt-resize",
+    "--debug",
     "--format", $source_format,
     "--output-format", $target_format,
     );
