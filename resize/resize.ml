@@ -76,29 +76,29 @@ and partition_id =
   | GPT_Type of string           (* GPT UUID. *)
 
 let rec debug_partition ?(sectsize=512L) p =
-  printf "%s:\n" p.p_name;
-  printf "\tpartition data: %ld %Ld-%Ld (%Ld bytes)\n"
+  eprintf "%s:\n" p.p_name;
+  eprintf "\tpartition data: %ld %Ld-%Ld (%Ld bytes)\n"
     p.p_part.G.part_num p.p_part.G.part_start p.p_part.G.part_end
     p.p_part.G.part_size;
-  printf "\tpartition sector data: %Ld-%Ld (%Ld sectors)\n"
+  eprintf "\tpartition sector data: %Ld-%Ld (%Ld sectors)\n"
     (p.p_part.G.part_start /^ sectsize) (p.p_part.G.part_end /^ sectsize)
     ((p.p_part.G.part_end +^ 1L -^ p.p_part.G.part_start) /^ sectsize);
-  printf "\ttarget partition sector data: %Ld-%Ld (%Ld sectors)\n"
+  eprintf "\ttarget partition sector data: %Ld-%Ld (%Ld sectors)\n"
     p.p_target_start p.p_target_end (p.p_target_end +^ 1L -^ p.p_target_start);
-  printf "\tbootable: %b\n" p.p_bootable;
-  printf "\tpartition ID: %s\n"
+  eprintf "\tbootable: %b\n" p.p_bootable;
+  eprintf "\tpartition ID: %s\n"
     (match p.p_id with
     | No_ID -> "(none)"
     | MBR_ID i -> sprintf "0x%x" i
     | GPT_Type i -> i
     );
-  printf "\tcontent: %s\n" (string_of_partition_content p.p_type);
-  printf "\tlabel: %s\n"
+  eprintf "\tcontent: %s\n" (string_of_partition_content p.p_type);
+  eprintf "\tlabel: %s\n"
     (match p.p_label with
     | Some label -> label
     | None -> "(none)"
     );
-  printf "\tGUID: %s\n"
+  eprintf "\tGUID: %s\n"
     (match p.p_guid with
     | Some guid -> guid
     | None -> "(none)"
@@ -131,8 +131,8 @@ and logvol_operation =
   | LVOpExpand                   (* expand it *)
 
 let debug_logvol lv =
-  printf "%s:\n" lv.lv_name;
-  printf "\tcontent: %s\n" (string_of_partition_content lv.lv_type)
+  eprintf "%s:\n" lv.lv_name;
+  eprintf "\tcontent: %s\n" (string_of_partition_content lv.lv_type)
 
 type expand_content_method =
   | PVResize | Resize2fs | NTFSResize | BtrfsFilesystemResize | XFSGrowFS
@@ -230,9 +230,9 @@ read the man page virt-resize(1).
     Getopt.parse opthandle.getopt;
 
     if verbose () then (
-      printf "command line:";
-      List.iter (printf " %s") (Array.to_list Sys.argv);
-      print_newline ()
+      eprintf "command line:";
+      List.iter (eprintf " %s") (Array.to_list Sys.argv);
+      eprintf "\n%!";
     );
 
     (* Dereference the rest of the args. *)
@@ -530,7 +530,8 @@ read the man page virt-resize(1).
 
     if verbose () then (
       eprintf "%d partitions found\n" (List.length partitions);
-      List.iter debug_partition partitions
+      List.iter debug_partition partitions;
+      flush stderr
     );
 
     (* Check content isn't larger than partitions.  If it is then
@@ -581,8 +582,9 @@ read the man page virt-resize(1).
     ) lvs in
 
     if verbose () then (
-      printf "%d logical volumes found\n" (List.length lvs);
-      List.iter debug_logvol lvs
+      eprintf "%d logical volumes found\n" (List.length lvs);
+      List.iter debug_logvol lvs;
+      flush stderr
     );
 
     lvs in
@@ -1246,8 +1248,9 @@ read the man page virt-resize(1).
     loop 1 start partitions in
 
   if verbose () then (
-    printf "After calculate target partitions:\n";
-    List.iter (debug_partition ~sectsize) partitions
+    eprintf "After calculate target partitions:\n";
+    List.iter (debug_partition ~sectsize) partitions;
+    flush stderr
   );
 
   (* Now partition the target disk. *)
@@ -1349,7 +1352,7 @@ read the man page virt-resize(1).
 
         if verbose () then (
           let old_hidden = int_of_le32 (g#pread_device target 4 0x1c_L) in
-          debug "old hidden sectors value: 0x%Lx" old_hidden
+          eprintf "old hidden sectors value: 0x%Lx\n%!" old_hidden
         );
 
         let new_hidden = le32_of_int start in
