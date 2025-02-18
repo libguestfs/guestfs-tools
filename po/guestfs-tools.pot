@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.53.6\n"
+"Project-Id-Version: guestfs-tools 1.53.7\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2025-02-05 15:11+0000\n"
+"POT-Creation-Date: 2025-02-18 10:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,21 +18,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: resize/resize.ml:1029
+#: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
 msgstr ""
 
-#: resize/resize.ml:1001 resize/resize.ml:967
+#: resize/resize.ml:1003 resize/resize.ml:969
 msgid "  The %s on %s will be expanded using the ‘%s’ method."
 msgstr ""
 
-#: resize/resize.ml:1031
+#: resize/resize.ml:1033
 msgid ""
 "  The surplus space is not large enough for an extra partition to be created "
 "and so it will just be ignored."
 msgstr ""
 
-#: resize/resize.ml:1034
+#: resize/resize.ml:1036
 msgid ""
 "  The surplus space will be ignored.  Run a partitioning program in the "
 "guest to partition this extra space if you want."
@@ -101,7 +101,7 @@ msgid ""
 "%!"
 msgstr ""
 
-#: resize/resize.ml:733
+#: resize/resize.ml:735
 msgid ""
 "%s: This extended partition contains logical partitions which might be "
 "damaged by shrinking it.  If you want to shrink this partition, you need to "
@@ -110,11 +110,11 @@ msgid ""
 "line.)"
 msgstr ""
 
-#: resize/resize.ml:997
+#: resize/resize.ml:999
 msgid "%s: This logical volume will be expanded to maximum size."
 msgstr ""
 
-#: resize/resize.ml:724
+#: resize/resize.ml:726
 msgid ""
 "%s: This partition contains a %s filesystem which will be damaged by "
 "shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
@@ -123,7 +123,7 @@ msgid ""
 "‘%s’ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:714
+#: resize/resize.ml:716
 msgid ""
 "%s: This partition contains an LVM physical volume which will be damaged by "
 "shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
@@ -132,7 +132,7 @@ msgid ""
 "‘%s‘ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:707
+#: resize/resize.ml:709
 msgid ""
 "%s: This partition has unknown content which might be damaged by shrinking "
 "it.  If you want to shrink this partition, you need to use the ‘--resize-"
@@ -140,21 +140,21 @@ msgid ""
 "error came from ‘%s’ option on the command line.)"
 msgstr ""
 
-#: resize/resize.ml:959
+#: resize/resize.ml:961
 msgid ""
 "%s: This partition will be created, but the contents will be ignored (ie. "
 "not copied to the target)."
 msgstr ""
 
-#: resize/resize.ml:962
+#: resize/resize.ml:964
 msgid "%s: This partition will be deleted."
 msgstr ""
 
-#: resize/resize.ml:957
+#: resize/resize.ml:959
 msgid "%s: This partition will be left alone."
 msgstr ""
 
-#: resize/resize.ml:964
+#: resize/resize.ml:966
 msgid "%s: This partition will be resized from %s to %s."
 msgstr ""
 
@@ -266,18 +266,18 @@ msgid ""
 "more times\n"
 msgstr ""
 
-#: resize/resize.ml:890
+#: resize/resize.ml:892
 msgid ""
 "%s: logical volume not found in the source disk image (this error came from "
 "‘--lv-expand’ option on the command line).  Try running this command: virt-"
 "filesystems --logical-volumes --long -a %s"
 msgstr ""
 
-#: resize/resize.ml:757
+#: resize/resize.ml:759
 msgid "%s: missing size field in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:766
+#: resize/resize.ml:768
 msgid "%s: new partition size is zero or negative"
 msgstr ""
 
@@ -305,26 +305,26 @@ msgstr ""
 msgid "%s: operation timed out"
 msgstr ""
 
-#: resize/resize.ml:657
+#: resize/resize.ml:659
 msgid "%s: partition already deleted, you cannot use it in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:652
+#: resize/resize.ml:654
 msgid "%s: partition already ignored, you cannot use it in ‘%s’ option"
 msgstr ""
 
-#: resize/resize.ml:645
+#: resize/resize.ml:647
 msgid ""
 "%s: partition not found in the source disk image (this error came from ‘%s’ "
 "option on the command line).  Try running this command: virt-filesystems --"
 "partitions --long -a %s"
 msgstr ""
 
-#: resize/resize.ml:550
+#: resize/resize.ml:551
 msgid "%s: partition size %Ld < filesystem size %Ld"
 msgstr ""
 
-#: resize/resize.ml:545
+#: resize/resize.ml:546
 msgid "%s: partition size %Ld < physical volume size %Ld"
 msgstr ""
 
@@ -370,15 +370,15 @@ msgid ""
 "delete-cache’ in parallel."
 msgstr ""
 
-#: resize/resize.ml:692
+#: resize/resize.ml:694
 msgid "%s: this partition has already been ignored or deleted"
 msgstr ""
 
-#: resize/resize.ml:688
+#: resize/resize.ml:690
 msgid "%s: this partition has already been marked for resizing"
 msgstr ""
 
-#: resize/resize.ml:560
+#: resize/resize.ml:561
 msgid "%s: this partition overlaps the previous one"
 msgstr ""
 
@@ -692,7 +692,7 @@ msgstr ""
 msgid "Copying"
 msgstr ""
 
-#: resize/resize.ml:1301
+#: resize/resize.ml:1304
 msgid "Copying %s"
 msgstr ""
 
@@ -928,11 +928,11 @@ msgstr ""
 msgid "Expandable volume: "
 msgstr ""
 
-#: resize/resize.ml:1469
+#: resize/resize.ml:1472
 msgid "Expanding %s using the ‘%s’ method"
 msgstr ""
 
-#: resize/resize.ml:1450
+#: resize/resize.ml:1453
 msgid "Expanding %s%s using the ‘%s’ method"
 msgstr ""
 
@@ -966,7 +966,7 @@ msgstr ""
 msgid "FILENAME"
 msgstr ""
 
-#: resize/resize.ml:1092
+#: resize/resize.ml:1094
 msgid ""
 "Failed to initialize the partition table on the target disk.  You need to "
 "wipe or recreate the target disk and then run virt-resize again.\n"
@@ -994,7 +994,7 @@ msgstr ""
 msgid "Finishing off"
 msgstr ""
 
-#: resize/resize.ml:1348
+#: resize/resize.ml:1351
 msgid "Fixing first NTFS partition boot record"
 msgstr ""
 
@@ -1556,7 +1556,7 @@ msgstr ""
 msgid "Removing all the subscriptions"
 msgstr ""
 
-#: resize/resize.ml:1499
+#: resize/resize.ml:1502
 msgid ""
 "Resize operation completed with no errors.  Before deleting the old disk, "
 "carefully check that the resized disk boots and works correctly."
@@ -1788,7 +1788,7 @@ msgstr ""
 msgid "Setting the timezone: %s"
 msgstr ""
 
-#: resize/resize.ml:1068
+#: resize/resize.ml:1070
 msgid "Setting up initial partition table on %s"
 msgstr ""
 
@@ -1969,13 +1969,13 @@ msgstr ""
 msgid "There are no notes for %s\n"
 msgstr ""
 
-#: resize/resize.ml:873
+#: resize/resize.ml:875
 msgid ""
 "There is a deficit of %Ld bytes (%s).  You need to make the target disk "
 "larger by at least this amount or adjust your resizing requests."
 msgstr ""
 
-#: resize/resize.ml:1026
+#: resize/resize.ml:1028
 msgid "There is a surplus of %s."
 msgstr ""
 
@@ -2047,7 +2047,7 @@ msgstr ""
 msgid "USER[:SELECTOR]"
 msgstr ""
 
-#: resize/resize.ml:1437
+#: resize/resize.ml:1440
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
 msgstr ""
 
@@ -2123,13 +2123,13 @@ msgstr ""
 msgid "Writing: %s"
 msgstr ""
 
-#: resize/resize.ml:841
+#: resize/resize.ml:843
 msgid ""
 "You cannot use --expand when there is no surplus space to expand into.  You "
 "need to make the target disk larger by at least %s."
 msgstr ""
 
-#: resize/resize.ml:855
+#: resize/resize.ml:857
 msgid ""
 "You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-"
 "resize(1) man page)."
@@ -2325,16 +2325,12 @@ msgstr ""
 msgid "domain"
 msgstr ""
 
-#: common/mldrivers/linux.ml:176
+#: common/mldrivers/linux.ml:150
 msgid "don’t know how to find file owner using %s"
 msgstr ""
 
-#: common/mldrivers/linux.ml:129
+#: common/mldrivers/linux.ml:103
 msgid "don’t know how to get list of files from package using %s"
-msgstr ""
-
-#: common/mldrivers/linux.ml:56
-msgid "don’t know how to remove packages using %s: packages: %s"
 msgstr ""
 
 #: common/mltools/curl.ml:82
@@ -2421,7 +2417,7 @@ msgid ""
 "expected fingerprint: %s"
 msgstr ""
 
-#: resize/resize.ml:1345
+#: resize/resize.ml:1348
 msgid "first partition is NTFS but does not contain NTFS boot loader magic"
 msgstr ""
 
@@ -2511,11 +2507,11 @@ msgstr ""
 msgid "internal error: invalid argument: %s"
 msgstr ""
 
-#: common/mldrivers/linux.ml:146
+#: common/mldrivers/linux.ml:120
 msgid "internal error: is_file_owned: dpkg command returned no output"
 msgstr ""
 
-#: common/mldrivers/linux.ml:151
+#: common/mldrivers/linux.ml:125
 msgid "internal error: is_file_owned: unexpected output from dpkg command: %s"
 msgstr ""
 
@@ -2626,7 +2622,7 @@ msgid ""
 "vulnerable to Man-In-The-Middle attacks."
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:403
+#: common/mldrivers/linux_bootloaders.ml:402
 msgid "no bootloader detected"
 msgstr ""
 
@@ -2766,7 +2762,7 @@ msgstr ""
 msgid "passwords could not be set for this type of guest"
 msgstr ""
 
-#: resize/resize.ml:1131 resize/resize.ml:1107
+#: resize/resize.ml:1133 resize/resize.ml:1109
 msgid "pread-device: short read"
 msgstr ""
 
@@ -3023,8 +3019,8 @@ msgstr ""
 msgid "unknown --unknown-filesystems: use ignore|warn|error"
 msgstr ""
 
-#. resize/resize.ml:919
-#: resize/resize.ml:1014 resize/resize.ml:980 resize/resize.ml:938
+#. resize/resize.ml:921
+#: resize/resize.ml:1016 resize/resize.ml:982 resize/resize.ml:940
 msgid "unknown/unavailable method for expanding the %s filesystem on %s"
 msgstr ""
 
@@ -3153,7 +3149,7 @@ msgstr ""
 msgid "you cannot use --in-place and -o options together"
 msgstr ""
 
-#: resize/resize.ml:830
+#: resize/resize.ml:832
 msgid "you cannot use options --expand and --shrink together"
 msgstr ""
 
