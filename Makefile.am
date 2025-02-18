@@ -148,6 +148,11 @@ CLEANFILES += \
 	pod2htm?.tmp
 
 clean-local:
+	-rm -rf tmp/libguestfs??????
+	-rm -rf tmp/guestfs.*
+	-rm -rf tmp/.guestfs-*
+	-rm -rf tmp/null.*
+	-find tmp -type s -delete
 	-find . -name '*~' -delete
 
 # Tests.
