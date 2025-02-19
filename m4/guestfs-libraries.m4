@@ -19,9 +19,8 @@ dnl Any C libraries required by the libguestfs C library (not the daemon).
 
 dnl Of course we need libguestfs.
 dnl
-dnl We need libguestfs 1.49.8 for guestfs_inspect_get_build_id in
-dnl virt-drivers.
-PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.49.8])
+dnl We need libguestfs >= 1:1.54.0-4.el9_6 for guestfs_sh_out.
+PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.54.0])
 
 dnl Test if it's GNU or XSI strerror_r.
 AC_FUNC_STRERROR_R
