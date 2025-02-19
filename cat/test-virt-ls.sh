@@ -24,6 +24,7 @@ skip_if_skipped
 # Read out the test directory using virt-ls.
 if [ "$($VG virt-ls --format=raw -a ../test-data/phony-guests/fedora.img /bin)" != "ls
 rpm
+sh
 test1
 test2
 test3
