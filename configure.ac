@@ -26,10 +26,14 @@ AC_SUBST([PACKAGE_VERSION_FULL])
 
 # Headings within the configure script output.
 term_bold=""
+term_red=""
+term_green=""
 term_restore=""
 AS_CASE(["$TERM"],
         [xterm*|vt220*], [
           term_bold="$(printf "\e@<:@1m")"
+          term_red="$(printf "\e@<:@22;31m")"
+          term_green="$(printf "\e@<:@22;32m")"
           term_restore="$(printf "\e@<:@0m")"
 ])
 m4_define([HEADING],
@@ -191,10 +195,13 @@ feature ()
     feat="$1"
     shift
     if "$@"; then
+        printf "$term_green"
         print "$feat" "yes"
     else
+        printf "$term_red"
         print "$feat" "no"
     fi
+    printf "$term_restore"
 }
 
 feature "C-based virt tools"     true ;# always enabled
