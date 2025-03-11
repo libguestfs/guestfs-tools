@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.53.7\n"
+"Project-Id-Version: guestfs-tools 1.53.8\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2025-02-18 10:10+0000\n"
+"POT-Creation-Date: 2025-03-11 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1730,7 +1730,7 @@ msgstr ""
 #: builder/virt-builder.pod:62
 #, no-wrap
 msgid ""
-" virt-builder --notes fedora-27\n"
+" virt-builder --notes fedora-41\n"
 "\n"
 msgstr ""
 
@@ -1743,14 +1743,14 @@ msgstr ""
 #: builder/virt-builder.pod:66
 #, no-wrap
 msgid ""
-" virt-builder fedora-27\n"
+" virt-builder fedora-41\n"
 "\n"
 msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:68
 msgid ""
-"will build a Fedora 25 image for the same architecture as virt-builder (so "
+"will build a Fedora 41 image for the same architecture as virt-builder (so "
 "running it from an i686 installation will try to build an i686 image, if "
 "available).  This will have all default configuration (minimal size, no user "
 "accounts, random root password, only the bare minimum installed software, "
@@ -1773,7 +1773,7 @@ msgstr ""
 #: builder/virt-builder.pod:79
 msgid ""
 "The name of the output file is derived from the template name, so above it "
-"will be F<fedora-27.img>.  You can change the output filename using the "
+"will be F<fedora-41.img>.  You can change the output filename using the "
 "I<-o> option:"
 msgstr ""
 
@@ -1781,7 +1781,7 @@ msgstr ""
 #: builder/virt-builder.pod:83
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 -o mydisk.img\n"
+" virt-builder fedora-41 -o mydisk.img\n"
 "\n"
 msgstr ""
 
@@ -1796,20 +1796,20 @@ msgstr ""
 #: builder/virt-builder.pod:88
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --format qcow2\n"
+" virt-builder fedora-41 --format qcow2\n"
 "\n"
 msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:90
-msgid "As above, but write the output in qcow2 format to F<fedora-27.qcow2>."
+msgid "As above, but write the output in qcow2 format to F<fedora-41.qcow2>."
 msgstr ""
 
 #. type: verbatim
 #: builder/virt-builder.pod:92
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --size 20G\n"
+" virt-builder fedora-41 --size 20G\n"
 "\n"
 msgstr ""
 
@@ -1824,7 +1824,7 @@ msgstr ""
 #: builder/virt-builder.pod:98
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --arch i686\n"
+" virt-builder fedora-41 --arch i686\n"
 "\n"
 msgstr ""
 
@@ -1842,14 +1842,14 @@ msgstr ""
 #: builder/virt-builder.pod:104
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --root-password file:/tmp/rootpw\n"
+" virt-builder fedora-41 --root-password file:/tmp/rootpw\n"
 "\n"
 msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:106
 msgid ""
-"Create a Fedora 25 image.  The root password is taken from the file "
+"Create a Fedora 41 image.  The root password is taken from the file "
 "F</tmp/rootpw>."
 msgstr ""
 
@@ -1874,7 +1874,7 @@ msgstr ""
 #: builder/virt-builder.pod:116
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --hostname virt.example.com\n"
+" virt-builder fedora-41 --hostname virt.example.com\n"
 "\n"
 msgstr ""
 
@@ -1899,7 +1899,7 @@ msgstr ""
 #: builder/virt-builder.pod:125
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --install \"inkscape,@Xfce Desktop\"\n"
+" virt-builder fedora-41 --install \"inkscape,@Xfce Desktop\"\n"
 "\n"
 msgstr ""
 
@@ -1953,7 +1953,7 @@ msgstr ""
 #: builder/virt-builder.pod:150
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --firstboot /tmp/dnf-update.sh\n"
+" virt-builder fedora-41 --firstboot /tmp/dnf-update.sh\n"
 "\n"
 msgstr ""
 
@@ -1966,7 +1966,7 @@ msgstr ""
 #: builder/virt-builder.pod:154
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --firstboot-command 'dnf -y --best update'\n"
+" virt-builder fedora-41 --firstboot-command 'dnf -y --best update'\n"
 "\n"
 msgstr ""
 
@@ -1986,7 +1986,7 @@ msgstr ""
 #: builder/virt-builder.pod:161
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --edit '/etc/dnf/dnf.conf:\n"
 "             s/gpgcheck=1/gpgcheck=0/'\n"
 "\n"
@@ -2754,7 +2754,7 @@ msgstr ""
 #: builder/virt-builder.pod:562
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --install inkscape\n"
+" virt-builder fedora-41 --install inkscape\n"
 "\n"
 msgstr ""
 
@@ -2777,7 +2777,7 @@ msgstr ""
 #: builder/virt-builder.pod:571
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --update\n"
+" virt-builder fedora-41 --update\n"
 "\n"
 msgstr ""
 
@@ -2805,7 +2805,7 @@ msgstr ""
 #: builder/virt-builder.pod:583
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 --firstboot-install inkscape\n"
+" virt-builder fedora-41 --firstboot-install inkscape\n"
 "\n"
 msgstr ""
 
@@ -2913,7 +2913,7 @@ msgstr ""
 #: builder/virt-builder.pod:631
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --attach extra-packages.iso \\\n"
 "   --run /tmp/install.sh\n"
 "\n"
@@ -3085,7 +3085,7 @@ msgstr ""
 #: builder/virt-builder.pod:710
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --firstboot-command 'localectl set-keymap uk'\n"
 "\n"
 msgstr ""
@@ -3180,14 +3180,14 @@ msgstr ""
 
 #. type: =head3
 #: builder/virt-builder.pod:752
-msgid "Setting Japanese in Fedora 25"
+msgid "Setting Japanese in Fedora 41"
 msgstr ""
 
 #. type: verbatim
 #: builder/virt-builder.pod:754
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --size 20G \\\n"
 "   --update \\\n"
 "   --install @japanese-support \\\n"
@@ -3653,7 +3653,7 @@ msgstr ""
 #: builder/virt-builder.pod:1017
 #, no-wrap
 msgid ""
-" glance image-create --name fedora-27-image --file fedora-27.img \\\n"
+" glance image-create --name fedora-41-image --file fedora-41.img \\\n"
 "   --disk-format raw --container-format bare \\\n"
 "   --is-public True\n"
 "\n"
@@ -3672,7 +3672,7 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:1027
 msgid ""
-"You can use the S<C<glance image-show I<fedora-27-image>>> command to "
+"You can use the S<C<glance image-show I<fedora-41-image>>> command to "
 "display the properties of the image."
 msgstr ""
 
@@ -3685,7 +3685,7 @@ msgstr ""
 #: builder/virt-builder.pod:1032
 #, no-wrap
 msgid ""
-" nova boot fedora-27-server --image fedora-27-image \\\n"
+" nova boot fedora-41-server --image fedora-41-image \\\n"
 "   --flavor m1.medium\n"
 "\n"
 msgstr ""
@@ -3755,7 +3755,7 @@ msgstr ""
 #: builder/virt-builder.pod:1063
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --hostname client.example.com \\\n"
 "   --update \\\n"
 "   --install puppet \\\n"
@@ -4244,11 +4244,11 @@ msgstr ""
 #: builder/virt-builder.pod:1297
 #, no-wrap
 msgid ""
-" [fedora-18]\n"
-" name=Fedora® 18\n"
-" osinfo=fedora18\n"
+" [fedora-41]\n"
+" name=Fedora® 41\n"
+" osinfo=fedora41\n"
 " arch=x86_64\n"
-" file=fedora-18.xz\n"
+" file=fedora-41.xz\n"
 " checksum[sha512]=...\n"
 " format=raw\n"
 " size=6442450944\n"
@@ -4261,11 +4261,11 @@ msgstr ""
 #: builder/virt-builder.pod:1308
 #, no-wrap
 msgid ""
-" [fedora-19]\n"
-" name=Fedora® 19\n"
-" osinfo=fedora19\n"
+" [fedora-42]\n"
+" name=Fedora® 42\n"
+" osinfo=fedora42\n"
 " arch=x86_64\n"
-" file=fedora-19.xz\n"
+" file=fedora-42.xz\n"
 " checksum[sha512]=...\n"
 " revision=3\n"
 " format=raw\n"
@@ -4839,7 +4839,7 @@ msgstr ""
 #: builder/virt-builder.pod:1587
 #, no-wrap
 msgid ""
-" virt-builder fedora-27 \\\n"
+" virt-builder fedora-41 \\\n"
 "   --edit '/etc/yum.repos.d/fedora.repo:\n"
 "       s{.*baseurl=.*}{baseurl=http://example.com/mirror/};\n"
 "       s{.*metalink=.*}{};\n"
