@@ -1,3 +1,5 @@
+# NOTE this is just enough for commands like --list to work.
+# This does NOT contain installable templates.
 [libguestfs.org]
-uri=file://@abs_top_srcdir@/website/download/builder/index.asc
+uri=file://@abs_top_srcdir@/builder/templates/index.asc
 gpgkey=file://@abs_top_srcdir@/builder/libguestfs.gpg
