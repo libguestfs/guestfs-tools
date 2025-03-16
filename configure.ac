@@ -213,6 +213,7 @@ feature "GNU gettext for i18n"   test "x$HAVE_GNU_GETTEXT_TRUE" = "x"
 feature "OCaml-based virt tools" test "x$HAVE_OCAML_TRUE" = "x"
 feature "OCaml gettext"          test "x$OCAML_PKG_gettext" != "xno"
 feature "Perl-based virt tools"  test "x$HAVE_TOOLS_TRUE" = "x"
+feature "Bash tab completion"    test "x$HAVE_BASH_COMPLETION_TRUE" = "x"
 
 echo
 echo "If any optional component is configured 'no' when you expected 'yes'"
