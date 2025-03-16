@@ -211,6 +211,7 @@ feature ()
 feature "C-based virt tools"     true ;# always enabled
 feature "GNU gettext for i18n"   test "x$HAVE_GNU_GETTEXT_TRUE" = "x"
 feature "OCaml-based virt tools" test "x$HAVE_OCAML_TRUE" = "x"
+feature "OCaml gettext"          test "x$OCAML_PKG_gettext" != "xno"
 feature "Perl-based virt tools"  test "x$HAVE_TOOLS_TRUE" = "x"
 
 echo
