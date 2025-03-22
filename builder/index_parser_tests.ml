@@ -1,5 +1,6 @@
 (* builder
  * Copyright (C) 2017 SUSE Inc.
+ * Copyright (C) 2025 Red Hat
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,8 +20,6 @@
 (* This file tests the Index_parser module. *)
 
 open Printf
-
-open OUnit2
 
 open Std_utils
 open Unix_utils
@@ -68,6 +67,10 @@ let format_entries entries =
     read_file "out" in
   List.map format_entry entries
 
+let assert_equal ~printer a b =
+  if a <> b then
+    failwithf "FAIL: %s <> %s" (printer a) (printer b)
+
 let assert_equal_string = assert_equal ~printer:(fun x -> sprintf "\"%s\"" x)
 let assert_equal_list formatter =
   let printer = (
@@ -75,7 +78,7 @@ let assert_equal_list formatter =
   ) in
   assert_equal ~printer
 
-let test_write_complete ctx =
+let () =
   let entry =
     ("test-id", { Index.printable_name = Some "test_name";
            osinfo = Some "osinfo_data";
@@ -122,12 +125,3 @@ aliases=alias1 alias2
 
   let parsed_entries = parse_file "out" in
   assert_equal_list format_entries [entry] parsed_entries
-
-let suite =
-  "builder Index_parser" >:::
-    [
-      "write.complete" >:: test_write_complete;
-    ]
-
-let () =
-  run_test_tt_main suite

@@ -192,9 +192,6 @@ OCAMLPACKAGES_TESTS =
 if HAVE_OCAML_PKG_GETTEXT
 OCAMLPACKAGES += -package gettext-stub
 endif
-if HAVE_OCAML_PKG_OUNIT
-OCAMLPACKAGES_TESTS += -package ounit2
-endif
 
 OCAMLCLIBS = \
 	-pthread -lpthread \
@@ -358,17 +355,12 @@ TESTS = \
 	test-virt-builder-cacheall.sh \
 	test-virt-builder-list.sh \
 	test-virt-index-validate.sh \
-	$(SLOW_TESTS)
-check_PROGRAMS =
-
-TESTS += \
 	test-virt-builder-list-simplestreams.sh \
-	test-virt-builder.sh
-
-if HAVE_OCAML_PKG_OUNIT
-check_PROGRAMS += index_parser_tests
-TESTS += index_parser_tests
-endif
+	test-virt-builder.sh \
+	index_parser_tests \
+	$(SLOW_TESTS)
+check_PROGRAMS = \
+	index_parser_tests
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check
