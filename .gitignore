@@ -61,7 +61,6 @@ Makefile.in
 /builder/libguestfs.conf
 /builder/opensuse.conf
 /builder/osinfo_config.ml
-/builder/oUnit-*
 /builder/*.out
 /builder/*.qcow2
 /builder/repository-testdata
