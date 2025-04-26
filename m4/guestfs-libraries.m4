@@ -21,6 +21,7 @@ dnl Of course we need libguestfs.
 dnl
 dnl We need libguestfs 1.55.6 for guestfs_sh_out.
 PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.55.6])
+printf "libguestfs version is "; $PKG_CONFIG --modversion libguestfs
 
 dnl Test if it's GNU or XSI strerror_r.
 AC_FUNC_STRERROR_R
@@ -143,6 +144,7 @@ AS_IF([test "$with_libvirt" != "no"],[
         AC_SUBST([LIBVIRT_CFLAGS])
         AC_SUBST([LIBVIRT_LIBS])
         AC_DEFINE([HAVE_LIBVIRT],[1],[libvirt found at compile time.])
+        printf "libvirt version is "; $PKG_CONFIG --modversion libvirt
     ],[
         if test "$DEFAULT_BACKEND" = "libvirt"; then
             AC_MSG_ERROR([Please install the libvirt devel package])
@@ -158,6 +160,7 @@ AC_SUBST([libvirt_ro_uri])
 
 dnl libxml2 (required)
 PKG_CHECK_MODULES([LIBXML2], [libxml-2.0])
+printf "libxml2 version is "; $PKG_CONFIG --modversion libxml-2.0
 old_LIBS="$LIBS"
 LIBS="$LIBS $LIBXML2_LIBS"
 AC_CHECK_FUNCS([xmlBufferDetach])
@@ -165,9 +168,11 @@ LIBS="$old_LIBS"
 
 dnl Check for JSON-C library (required).
 PKG_CHECK_MODULES([JSON_C], [json-c >= 0.14])
+printf "json-c version is "; $PKG_CONFIG --modversion json-c
 
 dnl Check for libosinfo (mandatory)
 PKG_CHECK_MODULES([LIBOSINFO], [libosinfo-1.0])
+printf "libosinfo version is "; $PKG_CONFIG --modversion libosinfo-1.0
 
 dnl Check for hwdata directory (containing pci.ids) (optional, for virt-drivers)
 PKG_CHECK_VAR([HWDATA_PKGDATADIR], [hwdata], [pkgdatadir])
