@@ -70,7 +70,7 @@ HEADING([Checking for the C compiler environment])
 m4_include([m4/guestfs-c.m4])
 
 dnl Any C libraries required by the libguestfs C library (not the daemon).
-HEADING([Checking for libraries used by libguestfs])
+HEADING([Checking for libraries used by guestfs-tools])
 m4_include([m4/guestfs-libraries.m4])
 
 dnl OCaml is required to compile several tools.
