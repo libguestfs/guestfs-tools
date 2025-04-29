@@ -1053,7 +1053,7 @@ read the man page virt-resize(1).
    *
    * (1) The 'parted' library is stupid and broken.  In many ways.  In
    * this particular instance the stupid and broken bit is that it
-   * overwrites the whole boot sector when initializating a partition
+   * overwrites the whole boot sector when initializing a partition
    * table.  (Upstream don't consider this obvious problem to be a bug).
    *
    * (2) GPT has a backup partition table located at the end of the disk.

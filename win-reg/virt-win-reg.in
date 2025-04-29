@@ -287,7 +287,7 @@ if ($domname_or_image =~ m|://|) {
     my @args = ($1, @lib_args);
     $_ = $2;
     while (/\S/) {
-        die "$0: cound not parse remainder from '$_'"
+        die "$0: could not parse remainder from '$_'"
             unless $_ =~ /^\s*"([a-z]+):(.*?)"(.*)/;
         if ($1 ne "server") {
             push @args, $1, $2;
@@ -643,13 +643,13 @@ L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>.
 
 =head1 ENCODING
 
-C<virt-win-reg> expects that regedit files have already been reencoded
+C<virt-win-reg> expects that regedit files have already been re-encoded
 in the local encoding.  Usually on Linux hosts, this means UTF-8 with
 Unix-style line endings.  Since Windows regedit files are often in
-UTF-16LE with Windows-style line endings, you may need to reencode the
+UTF-16LE with Windows-style line endings, you may need to re-encode the
 whole file before or after processing.
 
-To reencode a file from Windows format to Linux (before processing it
+To re-encode a file from Windows format to Linux (before processing it
 with the I<--merge> option), you would do something like this:
 
  iconv -f utf-16le -t utf-8 < win.reg | dos2unix > linux.reg

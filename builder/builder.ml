@@ -63,7 +63,7 @@ let remove_duplicates index =
       try
         let rev = Hashtbl.find nseen (name, arch) in
         (* Take the first occurrency with the higher revision,
-         * removing it from the hash so the other occurrencies
+         * removing it from the hash so the other occurrences
          * are ignored.
          *)
         if revision = rev then (
@@ -453,7 +453,7 @@ let main () =
      *
      * Copies and moves across different local filesystems are
      * cheaper than copies within the same filesystem.  The
-     * theory because less bandwith is available if both source
+     * theory because less bandwidth is available if both source
      * and destination hit the same device (except in the special
      * case of moving within a filesystem which is free).
      *

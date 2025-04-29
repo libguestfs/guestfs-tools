@@ -55,7 +55,7 @@ The file value needs to match the image name extended with the C<.xz>
 suffix if the I<--no-compression> parameter is not provided or the
 image name if no compression is involved. Other optional data can be
 prefilled. Default values are computed by inspecting the disk image.
-For more informations, see
+For more information, see
 L<virt-builder(1)/Creating and signing the index file>.
 
 =head2 Update images in an existing repository

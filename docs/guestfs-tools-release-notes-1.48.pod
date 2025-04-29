@@ -46,7 +46,7 @@ and the libguestfs library that it is linked with.
 
 All OCaml tools now suppress line wrapping when output is redirected
 to a file (to make it easier to parse logs with external programs).
-There is a new I<--wrap> option which can be used to reenable line
+There is a new I<--wrap> option which can be used to re-enable line
 wrapping to files if needed (Laszlo Ersek).
 
 =head2 Build changes
