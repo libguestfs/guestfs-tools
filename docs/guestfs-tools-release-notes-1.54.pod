@@ -1,0 +1,143 @@
+=head1 NAME
+
+guestfs-tools-release-notes - guestfs tools release Notes
+
+=head1 RELEASE NOTES FOR GUESTFS TOOLS 1.54
+
+These are the release notes for guestfs tools stable release 1.54.
+This describes the major changes since 1.52.
+
+Guestfs tools 1.54.0 was released on B<XXX XXX 2025>.
+
+=begin comment
+
+=head2 Security
+
+=end comment
+
+=head2 New repository location
+
+The upstream git repository is now:
+L<https://github.com/libguestfs/guestfs-tools>
+
+=head2 virt-customize
+
+New I<--inject-blnsvr> which can be used to inject the Windows memory
+balloon server into guests.
+
+=head2 virt-drivers
+
+Handle large output of the L<rpm(1)> command when listing drivers in
+some SUSE guests.
+
+=head2 virt-make-fs
+
+Use the L<file(1)> I<-S> option to disable seccomp protection when we
+also use the L<file(1)> I<-z> option, as the two options are
+incompatible and cause crashes on some Linux distros.
+
+=head2 virt-resize
+
+Correct the calculation of the target disk.  In some cases with the
+I<--resize> option it was not calculated correctly and partition
+creation on the target would fail with a confusing error.
+
+We now use stderr consistently for debug messages.
+
+=head2 Common changes
+
+Add support for LoongArch (liuxiang from Loongson).
+
+Fix OCaml bytecode builds (Jerry James, Ilya Leoshkevich).
+
+Allow C<nbd+unix://> URIs in I<-a> parameters to several tools.
+
+Add a git-publish profile (Kashyap Chamarthy).
+
+=head2 Build changes
+
+json-c is now required.  This replaces Jansson which was previously
+used for parsing JSON input files.
+
+OCaml E<ge> 4.08 is now required.
+
+OCaml oUnit is no longer used.
+
+We now assume that C<__attribute__((cleanup))> always works.  This
+requires gcc or Clang.
+
+Add support for GCC 14 and 15.
+
+Some deprecated autoconf macros are no longer used.
+
+Fix some issues when building on macOS (Mohamed Akram).
+
+=head2 Internals
+
+The tests were modified to use a set of common functions and remove
+use of the weird C<$TEST_FUNCTIONS> macro, similar to how we do it in
+nbdkit.
+
+=head2 Bugs fixed
+
+=begin comment
+
+./bugs-in-changelog.sh v1.52.0..
+
+=end comment
+
+=over 4
+
+=item L<https://issues.redhat.com/browse/RHEL-32099>
+
+Harden grub2-mkconfig to avoid overwriting /boot/efi/EFI/redhat/grub.cfg
+
+=item L<https://issues.redhat.com/browse/RHEL-67560>
+
+Improve the error info when virt-customize options are used for incompatible guest OS [rhel-9.7]
+
+=item L<https://issues.redhat.com/browse/RHEL-67565>
+
+Improve the error info when virt-customize options are used for incompatible guest OS [rhel-10.1]
+
+=item L<https://issues.redhat.com/browse/RHEL-77989>
+
+CentOS 9 Migration from VMWare to Openshift Virt fails [rhel-9.6]
+
+=item L<https://issues.redhat.com/browse/RHEL-80214>
+
+virt-drivers fails on opensuse guest if kernel-source is installed
+
+=item L<https://github.com/libguestfs/guestfs-tools/issues/16>
+
+Issues building on macOS
+
+=back
+
+=head1 SEE ALSO
+
+L<http://libguestfs.org/>
+
+=head1 AUTHORS
+
+=begin comment
+
+git shortlog -s v1.52.0..
+
+=end comment
+
+=over 4
+
+=item Jerry James
+
+=item Kashyap Chamarthy
+
+=item Richard W.M. Jones
+
+=item liuxiang
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009-2025 Red Hat Inc.
