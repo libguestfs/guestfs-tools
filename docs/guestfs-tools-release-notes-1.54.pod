@@ -25,6 +25,12 @@ L<https://github.com/libguestfs/guestfs-tools>
 New I<--inject-blnsvr> which can be used to inject the Windows memory
 balloon server into guests.
 
+I<--inject-virtio-win> no longer supports the C<osinfo> method (use
+libosinfo for virtio-win driver information), as it is no longer
+maintained and had got quite out of date.  The default method using
+virtio-win directory names is more reliable and preferred in all
+instances (Cole Robinson).
+
 =head2 virt-drivers
 
 Handle large output of the L<rpm(1)> command when listing drivers in
