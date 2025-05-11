@@ -407,7 +407,7 @@ let process_image acc_entries filename repo tmprepo index interactive
 let unsafe_remove_directory_prefix parent path =
   if path = parent then
     ""
-  else if String.is_prefix path (parent // "") then (
+  else if String.starts_with (parent // "") path then (
     let len = String.length parent in
     String.sub path (len+1) (String.length path - len-1)
   ) else

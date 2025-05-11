@@ -80,7 +80,7 @@ let run indisk outdisk check_tmpdir compress convert
     | None -> Directory (Filename.get_temp_dir_name ()) (* $TMPDIR or /tmp *)
     | Some dir when is_directory dir -> Directory dir
     | Some dev when is_block_device dev -> Block_device dev
-    | Some file when String.is_prefix file "prebuilt:" ->
+    | Some file when String.starts_with "prebuilt:" file ->
       let file = String.sub file 9 (String.length file - 9) in
       if not (Sys.file_exists file) then
         error (f_"--tmp prebuilt:file: %s: file does not exist") file;

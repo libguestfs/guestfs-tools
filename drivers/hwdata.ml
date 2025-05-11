@@ -57,7 +57,7 @@ let load filename =
       | "" :: lines ->
          loop (lineno+1) acc lines
       (* Note that # only starts a comment at the beginning of the line. *)
-      | comment :: lines when String.is_prefix comment "#" ->
+      | comment :: lines when String.starts_with "#" comment ->
          loop (lineno+1) acc lines
       (* Otherwise its some data. *)
       | line :: lines ->

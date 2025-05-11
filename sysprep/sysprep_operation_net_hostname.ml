@@ -37,8 +37,8 @@ let net_hostname_perform (g : Guestfs.guestfs) root side_effects =
         let lines = Array.to_list (g#read_lines filename) in
         let lines = List.filter (
           fun line ->
-            not (String.is_prefix line "HOSTNAME=") &&
-            not (String.is_prefix line "DHCP_HOSTNAME=")
+            not (String.starts_with "HOSTNAME=" line) &&
+            not (String.starts_with "DHCP_HOSTNAME=" line)
         ) lines in
         let file = String.concat "\n" lines ^ "\n" in
         g#write filename file;

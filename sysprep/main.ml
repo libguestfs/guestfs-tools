@@ -96,7 +96,7 @@ let main () =
       let opset = List.fold_left (
         fun opset op_name ->
           let op =
-            if String.is_prefix op_name "-" then
+            if String.starts_with "-" op_name then
               `Remove (String.sub op_name 1 (String.length op_name - 1))
             else
               `Add op_name in
