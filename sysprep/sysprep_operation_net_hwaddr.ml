@@ -36,7 +36,7 @@ let net_hwaddr_perform (g : Guestfs.guestfs) root side_effects =
         (* Replace HWADDR=... entry. *)
         let lines = Array.to_list (g#read_lines filename) in
         let lines = List.filter (
-          fun line -> not (String.starts_with "HWADDR=" line)
+          Fun.negate (String.starts_with ~prefix:"HWADDR=")
         ) lines in
         let file = String.concat "\n" lines ^ "\n" in
         g#write filename file;
