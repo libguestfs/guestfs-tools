@@ -37,7 +37,7 @@ let is_4_digit_hex id =
   Char.isxdigit id.[1] &&
   Char.isxdigit id.[2] &&
   Char.isxdigit id.[3]
-let hex_to_int32 id = sscanf id "%lx" identity
+let hex_to_int32 id = sscanf id "%lx" Fun.id
 
 (* Loads one of the [*.ids] files, returning the entries as a
  * 3 level map.  Returns [None] if the file could not be opened
