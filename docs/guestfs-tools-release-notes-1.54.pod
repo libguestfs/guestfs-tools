@@ -84,6 +84,9 @@ The tests were modified to use a set of common functions and remove
 use of the weird C<$TEST_FUNCTIONS> macro, similar to how we do it in
 nbdkit.
 
+Some internal OCaml List and String functions that we used have been
+replaced by ones from the OCaml stdlib, reducing code maintenance.
+
 =head2 Bugs fixed
 
 =begin comment
