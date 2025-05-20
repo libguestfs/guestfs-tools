@@ -87,6 +87,8 @@ nbdkit.
 Some internal OCaml List and String functions that we used have been
 replaced by ones from the OCaml stdlib, reducing code maintenance.
 
+Fix compatibility with GNU gettext 0.25.
+
 =head2 Bugs fixed
 
 =begin comment
