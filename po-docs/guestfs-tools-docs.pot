@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.53.9\n"
+"Project-Id-Version: guestfs-tools 1.54.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2025-04-03 11:01+0100\n"
+"POT-Creation-Date: 2025-05-20 22:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,8 @@ msgstr ""
 #: df/virt-df.pod:1 diff/virt-diff.pod:1
 #: docs/guestfs-tools-release-notes-1.48.pod:1
 #: docs/guestfs-tools-release-notes-1.50.pod:1
-#: docs/guestfs-tools-release-notes-1.52.pod:1 drivers/virt-drivers.pod:1
+#: docs/guestfs-tools-release-notes-1.52.pod:1
+#: docs/guestfs-tools-release-notes-1.54.pod:1 drivers/virt-drivers.pod:1
 #: edit/virt-edit.pod:1 format/virt-format.pod:1
 #: get-kernel/virt-get-kernel.pod:1 inspector/virt-inspector.pod:1
 #: make-fs/virt-make-fs.pod:1 resize/virt-resize.pod:1
@@ -1023,8 +1024,8 @@ msgstr ""
 #: cat/virt-tail.pod:222 cat/virt-tail.pod:226
 #: common/mlcustomize/customize-options.pod:73
 #: common/mlcustomize/customize-options.pod:78
-#: common/mlcustomize/customize-options.pod:387
-#: common/mlcustomize/customize-options.pod:391
+#: common/mlcustomize/customize-options.pod:381
+#: common/mlcustomize/customize-options.pod:385
 #: common/mlcustomize/v2v-customize-options.pod:73
 #: common/mlcustomize/v2v-customize-options.pod:78
 #: common/mlcustomize/v2v-customize-options.pod:327
@@ -1046,8 +1047,8 @@ msgstr ""
 #: sparsify/virt-sparsify.pod:145 sparsify/virt-sparsify.pod:150
 #: sparsify/virt-sparsify.pod:289 sparsify/virt-sparsify.pod:294
 #: sparsify/virt-sparsify.pod:299 sysprep/sysprep-extra-options.pod:48
-#: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:436
-#: sysprep/sysprep-extra-options.pod:440 sysprep/virt-sysprep.pod:325
+#: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:430
+#: sysprep/sysprep-extra-options.pod:434 sysprep/virt-sysprep.pod:325
 #: sysprep/virt-sysprep.pod:329 sysprep/virt-sysprep.pod:333
 #: sysprep/virt-sysprep.pod:337 sysprep/virt-sysprep.pod:352
 #: sysprep/virt-sysprep.pod:356 sysprep/virt-sysprep.pod:360
@@ -1113,7 +1114,8 @@ msgstr ""
 #: df/virt-df.pod:258 diff/virt-diff.pod:249
 #: docs/guestfs-tools-release-notes-1.48.pod:102
 #: docs/guestfs-tools-release-notes-1.50.pod:160
-#: docs/guestfs-tools-release-notes-1.52.pod:99 drivers/virt-drivers.pod:234
+#: docs/guestfs-tools-release-notes-1.52.pod:99
+#: docs/guestfs-tools-release-notes-1.54.pod:128 drivers/virt-drivers.pod:234
 #: edit/virt-edit.pod:384 format/virt-format.pod:187
 #: get-kernel/virt-get-kernel.pod:201 inspector/virt-inspector.pod:494
 #: make-fs/virt-make-fs.pod:225 resize/virt-resize.pod:848
@@ -1162,7 +1164,8 @@ msgstr ""
 #: df/virt-df.pod:271 diff/virt-diff.pod:263
 #: docs/guestfs-tools-release-notes-1.48.pod:128
 #: docs/guestfs-tools-release-notes-1.50.pod:180
-#: docs/guestfs-tools-release-notes-1.52.pod:121 drivers/virt-drivers.pod:248
+#: docs/guestfs-tools-release-notes-1.52.pod:121
+#: docs/guestfs-tools-release-notes-1.54.pod:152 drivers/virt-drivers.pod:248
 #: edit/virt-edit.pod:399 format/virt-format.pod:201
 #: get-kernel/virt-get-kernel.pod:214 inspector/virt-inspector.pod:518
 #: make-fs/virt-make-fs.pod:243 resize/virt-resize.pod:877
@@ -1291,8 +1294,8 @@ msgid ""
 "The file value needs to match the image name extended with the C<.xz> suffix "
 "if the I<--no-compression> parameter is not provided or the image name if no "
 "compression is involved. Other optional data can be prefilled. Default "
-"values are computed by inspecting the disk image.  For more informations, "
-"see L<virt-builder(1)/Creating and signing the index file>."
+"values are computed by inspecting the disk image.  For more information, see "
+"L<virt-builder(1)/Creating and signing the index file>."
 msgstr ""
 
 #. type: =head2
@@ -7415,7 +7418,8 @@ msgstr ""
 #: cat/virt-ls.pod:535 df/virt-df.pod:273 diff/virt-diff.pod:265
 #: docs/guestfs-tools-release-notes-1.48.pod:130
 #: docs/guestfs-tools-release-notes-1.50.pod:182
-#: docs/guestfs-tools-release-notes-1.52.pod:123 drivers/virt-drivers.pod:250
+#: docs/guestfs-tools-release-notes-1.52.pod:123
+#: docs/guestfs-tools-release-notes-1.54.pod:154 drivers/virt-drivers.pod:250
 #: edit/virt-edit.pod:401
 msgid "Copyright (C) 2009-2025 Red Hat Inc."
 msgstr ""
@@ -7576,6 +7580,12 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.52.pod:79
 #: docs/guestfs-tools-release-notes-1.52.pod:105
 #: docs/guestfs-tools-release-notes-1.52.pod:109
+#: docs/guestfs-tools-release-notes-1.54.pod:12
+#: docs/guestfs-tools-release-notes-1.54.pod:16
+#: docs/guestfs-tools-release-notes-1.54.pod:94
+#: docs/guestfs-tools-release-notes-1.54.pod:98
+#: docs/guestfs-tools-release-notes-1.54.pod:134
+#: docs/guestfs-tools-release-notes-1.54.pod:138
 msgid "comment"
 msgstr ""
 
@@ -7876,12 +7886,12 @@ msgstr ""
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:118
 #: common/mlcustomize/customize-options.pod:125
-#: common/mlcustomize/customize-options.pod:283
+#: common/mlcustomize/customize-options.pod:277
 #: common/mlcustomize/v2v-customize-options.pod:118
 #: common/mlcustomize/v2v-customize-options.pod:125
 #: common/mlcustomize/v2v-customize-options.pod:223
 #: sysprep/sysprep-extra-options.pod:95 sysprep/sysprep-extra-options.pod:103
-#: sysprep/sysprep-extra-options.pod:288
+#: sysprep/sysprep-extra-options.pod:282
 msgid "Wildcards cannot be used."
 msgstr ""
 
@@ -8073,10 +8083,10 @@ msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:188
-#: common/mlcustomize/customize-options.pod:262
+#: common/mlcustomize/customize-options.pod:256
 #: common/mlcustomize/v2v-customize-options.pod:188
 #: common/mlcustomize/v2v-customize-options.pod:202
-#: sysprep/sysprep-extra-options.pod:171 sysprep/sysprep-extra-options.pod:250
+#: sysprep/sysprep-extra-options.pod:171 sysprep/sysprep-extra-options.pod:244
 msgid ""
 "For an overview on the different ways to install packages, see "
 "L<virt-builder(1)/INSTALLING PACKAGES>."
@@ -8121,9 +8131,9 @@ msgstr ""
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:204
 #: common/mlcustomize/customize-options.pod:218
-#: common/mlcustomize/customize-options.pod:252
+#: common/mlcustomize/customize-options.pod:246
 #: sysprep/sysprep-extra-options.pod:189 sysprep/sysprep-extra-options.pod:204
-#: sysprep/sysprep-extra-options.pod:239
+#: sysprep/sysprep-extra-options.pod:233
 msgid ""
 "Note that to do a full conversion of a Windows guest from a foreign "
 "hypervisor like VMware (which involves many other operations)  you should "
@@ -8195,29 +8205,15 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:244
-#: sysprep/sysprep-extra-options.pod:231
-msgid "B<\"osinfo\">"
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:246
-#: sysprep/sysprep-extra-options.pod:233
-msgid ""
-"The literal string C<\"osinfo\"> means to use the libosinfo database to "
-"locate the drivers.  (See L<osinfo-query(1)>."
-msgstr ""
-
-#. type: =item
-#: common/mlcustomize/customize-options.pod:256
+#: common/mlcustomize/customize-options.pod:250
 #: common/mlcustomize/v2v-customize-options.pod:196
 msgid "B<--install> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:258
+#: common/mlcustomize/customize-options.pod:252
 #: common/mlcustomize/v2v-customize-options.pod:198
-#: sysprep/sysprep-extra-options.pod:246
+#: sysprep/sysprep-extra-options.pod:240
 msgid ""
 "Install the named packages (a comma-separated list).  These are installed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -8225,72 +8221,72 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:265
+#: common/mlcustomize/customize-options.pod:259
 #: common/mlcustomize/v2v-customize-options.pod:205
-#: sysprep/sysprep-extra-options.pod:253
+#: sysprep/sysprep-extra-options.pod:247
 msgid "See also I<--update>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:267
+#: common/mlcustomize/customize-options.pod:261
 #: common/mlcustomize/v2v-customize-options.pod:207
 msgid "B<--link> TARGET:LINK[:LINK..]"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:269
+#: common/mlcustomize/customize-options.pod:263
 #: common/mlcustomize/v2v-customize-options.pod:209
-#: sysprep/sysprep-extra-options.pod:272
+#: sysprep/sysprep-extra-options.pod:266
 msgid ""
 "Create symbolic link(s) in the guest, starting at C<LINK> and pointing at "
 "C<TARGET>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:272
+#: common/mlcustomize/customize-options.pod:266
 #: common/mlcustomize/v2v-customize-options.pod:212
 msgid "B<--mkdir> DIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:274
+#: common/mlcustomize/customize-options.pod:268
 #: common/mlcustomize/v2v-customize-options.pod:214
-#: sysprep/sysprep-extra-options.pod:278
+#: sysprep/sysprep-extra-options.pod:272
 msgid "Create a directory in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:276
+#: common/mlcustomize/customize-options.pod:270
 #: common/mlcustomize/v2v-customize-options.pod:216
-#: sysprep/sysprep-extra-options.pod:280
+#: sysprep/sysprep-extra-options.pod:274
 msgid ""
 "This uses S<C<mkdir -p>> so any intermediate directories are created, and it "
 "also works if the directory already exists."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:279
+#: common/mlcustomize/customize-options.pod:273
 #: common/mlcustomize/v2v-customize-options.pod:219
 msgid "B<--move> SOURCE:DEST"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:281
+#: common/mlcustomize/customize-options.pod:275
 #: common/mlcustomize/v2v-customize-options.pod:221
-#: sysprep/sysprep-extra-options.pod:286
+#: sysprep/sysprep-extra-options.pod:280
 msgid "Move files or directories inside the guest."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:285
+#: common/mlcustomize/customize-options.pod:279
 #: common/mlcustomize/v2v-customize-options.pod:225
 msgid "B<--no-logfile>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:287
+#: common/mlcustomize/customize-options.pod:281
 #: common/mlcustomize/v2v-customize-options.pod:227
-#: sysprep/sysprep-extra-options.pod:293
+#: sysprep/sysprep-extra-options.pod:287
 msgid ""
 "Scrub C<builder.log> (log file from build commands) from the image after "
 "building is complete.  If you don't want to reveal precisely how the image "
@@ -8298,29 +8294,29 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:291
+#: common/mlcustomize/customize-options.pod:285
 #: common/mlcustomize/v2v-customize-options.pod:231
-#: sysprep/sysprep-extra-options.pod:297
+#: sysprep/sysprep-extra-options.pod:291
 msgid "See also: L</LOG FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:293
+#: common/mlcustomize/customize-options.pod:287
 #: common/mlcustomize/v2v-customize-options.pod:233
 msgid "B<--no-selinux-relabel>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:295
+#: common/mlcustomize/customize-options.pod:289
 #: common/mlcustomize/v2v-customize-options.pod:235
-#: sysprep/sysprep-extra-options.pod:302
+#: sysprep/sysprep-extra-options.pod:296
 msgid "Do not attempt to correct the SELinux labels of files in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:297
+#: common/mlcustomize/customize-options.pod:291
 #: common/mlcustomize/v2v-customize-options.pod:237
-#: sysprep/sysprep-extra-options.pod:304
+#: sysprep/sysprep-extra-options.pod:298
 msgid ""
 "In such guests that support SELinux, customization automatically relabels "
 "files so that they have the correct SELinux label.  (The relabeling is "
@@ -8331,75 +8327,75 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:304
+#: common/mlcustomize/customize-options.pod:298
 #: common/mlcustomize/v2v-customize-options.pod:244
-#: sysprep/sysprep-extra-options.pod:311
+#: sysprep/sysprep-extra-options.pod:305
 msgid "The option is a no-op for guests that do not support SELinux."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:306
+#: common/mlcustomize/customize-options.pod:300
 #: common/mlcustomize/v2v-customize-options.pod:246
 msgid "B<--password> USER:SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:308
+#: common/mlcustomize/customize-options.pod:302
 #: common/mlcustomize/v2v-customize-options.pod:248
-#: sysprep/sysprep-extra-options.pod:316
+#: sysprep/sysprep-extra-options.pod:310
 msgid ""
 "Set the password for C<USER>.  (Note this option does I<not> create the user "
 "account)."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:311
-#: common/mlcustomize/customize-options.pod:340
+#: common/mlcustomize/customize-options.pod:305
+#: common/mlcustomize/customize-options.pod:334
 #: common/mlcustomize/v2v-customize-options.pod:251
 #: common/mlcustomize/v2v-customize-options.pod:280
-#: sysprep/sysprep-extra-options.pod:319 sysprep/sysprep-extra-options.pod:364
+#: sysprep/sysprep-extra-options.pod:313 sysprep/sysprep-extra-options.pod:358
 msgid ""
 "See L<virt-builder(1)/USERS AND PASSWORDS> for the format of the C<SELECTOR> "
 "field, and also how to set up user accounts."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:314
+#: common/mlcustomize/customize-options.pod:308
 #: common/mlcustomize/v2v-customize-options.pod:254
 msgid "B<--password-crypto> md5|sha256|sha512"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:316
+#: common/mlcustomize/customize-options.pod:310
 #: common/mlcustomize/v2v-customize-options.pod:256
-#: sysprep/sysprep-extra-options.pod:325
+#: sysprep/sysprep-extra-options.pod:319
 msgid ""
 "When the virt tools change or set a password in the guest, this option sets "
 "the password encryption of that password to C<md5>, C<sha256> or C<sha512>."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:320
+#: common/mlcustomize/customize-options.pod:314
 #: common/mlcustomize/v2v-customize-options.pod:260
-#: sysprep/sysprep-extra-options.pod:329
+#: sysprep/sysprep-extra-options.pod:323
 msgid ""
 "C<sha256> and C<sha512> require glibc E<ge> 2.7 (check crypt(3) inside the "
 "guest)."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:323
+#: common/mlcustomize/customize-options.pod:317
 #: common/mlcustomize/v2v-customize-options.pod:263
-#: sysprep/sysprep-extra-options.pod:332
+#: sysprep/sysprep-extra-options.pod:326
 msgid ""
 "C<md5> will work with relatively old Linux guests (eg. RHEL 3), but is not "
 "secure against modern attacks."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:326
+#: common/mlcustomize/customize-options.pod:320
 #: common/mlcustomize/v2v-customize-options.pod:266
-#: sysprep/sysprep-extra-options.pod:335
+#: sysprep/sysprep-extra-options.pod:329
 msgid ""
 "The default is C<sha512> unless libguestfs detects an old guest that didn't "
 "have support for SHA-512, in which case it will use C<md5>.  You can "
@@ -8407,9 +8403,9 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:330
+#: common/mlcustomize/customize-options.pod:324
 #: common/mlcustomize/v2v-customize-options.pod:270
-#: sysprep/sysprep-extra-options.pod:339
+#: sysprep/sysprep-extra-options.pod:333
 msgid ""
 "Note this does not change the default password encryption used by the guest "
 "when you create new user accounts inside the guest.  If you want to do that, "
@@ -8419,37 +8415,37 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:336
+#: common/mlcustomize/customize-options.pod:330
 #: common/mlcustomize/v2v-customize-options.pod:276
 msgid "B<--root-password> SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:338
+#: common/mlcustomize/customize-options.pod:332
 #: common/mlcustomize/v2v-customize-options.pod:278
-#: sysprep/sysprep-extra-options.pod:362
+#: sysprep/sysprep-extra-options.pod:356
 msgid "Set the root password."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:343
+#: common/mlcustomize/customize-options.pod:337
 #: common/mlcustomize/v2v-customize-options.pod:283
-#: sysprep/sysprep-extra-options.pod:367
+#: sysprep/sysprep-extra-options.pod:361
 msgid ""
 "Note: In virt-builder, if you I<don't> set I<--root-password> then the guest "
 "is given a I<random> root password."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:346
+#: common/mlcustomize/customize-options.pod:340
 #: common/mlcustomize/v2v-customize-options.pod:286
 msgid "B<--run> SCRIPT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:348
+#: common/mlcustomize/customize-options.pod:342
 #: common/mlcustomize/v2v-customize-options.pod:288
-#: sysprep/sysprep-extra-options.pod:373
+#: sysprep/sysprep-extra-options.pod:367
 msgid ""
 "Run the shell script (or any program) called C<SCRIPT> on the disk image.  "
 "The script runs virtualized inside a small appliance, chrooted into the "
@@ -8457,18 +8453,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:352
+#: common/mlcustomize/customize-options.pod:346
 #: common/mlcustomize/v2v-customize-options.pod:292
-#: sysprep/sysprep-extra-options.pod:377
+#: sysprep/sysprep-extra-options.pod:371
 msgid "The script is automatically chmod +x."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:354
-#: common/mlcustomize/customize-options.pod:370
+#: common/mlcustomize/customize-options.pod:348
+#: common/mlcustomize/customize-options.pod:364
 #: common/mlcustomize/v2v-customize-options.pod:294
 #: common/mlcustomize/v2v-customize-options.pod:310
-#: sysprep/sysprep-extra-options.pod:379 sysprep/sysprep-extra-options.pod:396
+#: sysprep/sysprep-extra-options.pod:373 sysprep/sysprep-extra-options.pod:390
 msgid ""
 "If libguestfs supports it then a limited network connection is available but "
 "it only allows outgoing network connections.  You can also attach data disks "
@@ -8478,211 +8474,211 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:360
+#: common/mlcustomize/customize-options.pod:354
 #: common/mlcustomize/v2v-customize-options.pod:300
-#: sysprep/sysprep-extra-options.pod:385
+#: sysprep/sysprep-extra-options.pod:379
 msgid ""
 "You can have multiple I<--run> options.  They run in the same order that "
 "they appear on the command line."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:363
-#: common/mlcustomize/customize-options.pod:379
+#: common/mlcustomize/customize-options.pod:357
+#: common/mlcustomize/customize-options.pod:373
 #: common/mlcustomize/v2v-customize-options.pod:303
 #: common/mlcustomize/v2v-customize-options.pod:319
-#: sysprep/sysprep-extra-options.pod:388 sysprep/sysprep-extra-options.pod:405
+#: sysprep/sysprep-extra-options.pod:382 sysprep/sysprep-extra-options.pod:399
 msgid "See also: I<--firstboot>, I<--attach>, I<--upload>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:365
+#: common/mlcustomize/customize-options.pod:359
 #: common/mlcustomize/v2v-customize-options.pod:305
 msgid "B<--run-command> 'CMD+ARGS'"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:367
+#: common/mlcustomize/customize-options.pod:361
 #: common/mlcustomize/v2v-customize-options.pod:307
-#: sysprep/sysprep-extra-options.pod:393
+#: sysprep/sysprep-extra-options.pod:387
 msgid ""
 "Run the command and arguments on the disk image.  The command runs "
 "virtualized inside a small appliance, chrooted into the guest filesystem."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:376
+#: common/mlcustomize/customize-options.pod:370
 #: common/mlcustomize/v2v-customize-options.pod:316
-#: sysprep/sysprep-extra-options.pod:402
+#: sysprep/sysprep-extra-options.pod:396
 msgid ""
 "You can have multiple I<--run-command> options.  They run in the same order "
 "that they appear on the command line."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:381
+#: common/mlcustomize/customize-options.pod:375
 #: common/mlcustomize/v2v-customize-options.pod:321
 msgid "B<--scrub> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:383
+#: common/mlcustomize/customize-options.pod:377
 #: common/mlcustomize/v2v-customize-options.pod:323
-#: sysprep/sysprep-extra-options.pod:432
+#: sysprep/sysprep-extra-options.pod:426
 msgid "Scrub a file from the guest.  This is like I<--delete> except that:"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:389
+#: common/mlcustomize/customize-options.pod:383
 #: common/mlcustomize/v2v-customize-options.pod:329
-#: sysprep/sysprep-extra-options.pod:438
+#: sysprep/sysprep-extra-options.pod:432
 msgid "It scrubs the data so a guest could not recover it."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:393
+#: common/mlcustomize/customize-options.pod:387
 #: common/mlcustomize/v2v-customize-options.pod:333
-#: sysprep/sysprep-extra-options.pod:442
+#: sysprep/sysprep-extra-options.pod:436
 msgid "It cannot delete directories, only regular files."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:397
+#: common/mlcustomize/customize-options.pod:391
 #: common/mlcustomize/v2v-customize-options.pod:337
 msgid "B<--selinux-relabel>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:399
+#: common/mlcustomize/customize-options.pod:393
 #: common/mlcustomize/v2v-customize-options.pod:339
-#: sysprep/sysprep-extra-options.pod:449
+#: sysprep/sysprep-extra-options.pod:443
 msgid "This is a compatibility option that does nothing."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:401
+#: common/mlcustomize/customize-options.pod:395
 #: common/mlcustomize/v2v-customize-options.pod:341
 msgid "B<--sm-attach> SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:403
+#: common/mlcustomize/customize-options.pod:397
 #: common/mlcustomize/v2v-customize-options.pod:343
-#: sysprep/sysprep-extra-options.pod:454
+#: sysprep/sysprep-extra-options.pod:448
 msgid "Attach to a pool using C<subscription-manager>."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:405
-#: common/mlcustomize/customize-options.pod:412
+#: common/mlcustomize/customize-options.pod:399
+#: common/mlcustomize/customize-options.pod:406
 #: common/mlcustomize/v2v-customize-options.pod:345
 #: common/mlcustomize/v2v-customize-options.pod:352
-#: sysprep/sysprep-extra-options.pod:456 sysprep/sysprep-extra-options.pod:464
+#: sysprep/sysprep-extra-options.pod:450 sysprep/sysprep-extra-options.pod:458
 msgid ""
 "See L<virt-builder(1)/SUBSCRIPTION-MANAGER> for the format of the "
 "C<SELECTOR> field."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:408
+#: common/mlcustomize/customize-options.pod:402
 #: common/mlcustomize/v2v-customize-options.pod:348
 msgid "B<--sm-credentials> SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:410
+#: common/mlcustomize/customize-options.pod:404
 #: common/mlcustomize/v2v-customize-options.pod:350
-#: sysprep/sysprep-extra-options.pod:462
+#: sysprep/sysprep-extra-options.pod:456
 msgid "Set the credentials for C<subscription-manager>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:415
+#: common/mlcustomize/customize-options.pod:409
 #: common/mlcustomize/v2v-customize-options.pod:355
 msgid "B<--sm-register>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:417
+#: common/mlcustomize/customize-options.pod:411
 #: common/mlcustomize/v2v-customize-options.pod:357
-#: sysprep/sysprep-extra-options.pod:470
+#: sysprep/sysprep-extra-options.pod:464
 msgid "Register the guest using C<subscription-manager>."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:419
+#: common/mlcustomize/customize-options.pod:413
 #: common/mlcustomize/v2v-customize-options.pod:359
-#: sysprep/sysprep-extra-options.pod:472
+#: sysprep/sysprep-extra-options.pod:466
 msgid "This requires credentials being set using I<--sm-credentials>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:421
+#: common/mlcustomize/customize-options.pod:415
 #: common/mlcustomize/v2v-customize-options.pod:361
 msgid "B<--sm-remove>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:423
+#: common/mlcustomize/customize-options.pod:417
 #: common/mlcustomize/v2v-customize-options.pod:363
-#: sysprep/sysprep-extra-options.pod:477
+#: sysprep/sysprep-extra-options.pod:471
 msgid "Remove all the subscriptions from the guest using C<subscription-manager>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:426
+#: common/mlcustomize/customize-options.pod:420
 #: common/mlcustomize/v2v-customize-options.pod:366
 msgid "B<--sm-unregister>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:428
+#: common/mlcustomize/customize-options.pod:422
 #: common/mlcustomize/v2v-customize-options.pod:368
-#: sysprep/sysprep-extra-options.pod:483
+#: sysprep/sysprep-extra-options.pod:477
 msgid "Unregister the guest using C<subscription-manager>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:430
+#: common/mlcustomize/customize-options.pod:424
 #: common/mlcustomize/v2v-customize-options.pod:370
 msgid "B<--ssh-inject> USER[:SELECTOR]"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:432
+#: common/mlcustomize/customize-options.pod:426
 #: common/mlcustomize/v2v-customize-options.pod:372
-#: sysprep/sysprep-extra-options.pod:488
+#: sysprep/sysprep-extra-options.pod:482
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:436
+#: common/mlcustomize/customize-options.pod:430
 #: common/mlcustomize/v2v-customize-options.pod:376
-#: sysprep/sysprep-extra-options.pod:492
+#: sysprep/sysprep-extra-options.pod:486
 msgid "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:439
+#: common/mlcustomize/customize-options.pod:433
 #: common/mlcustomize/v2v-customize-options.pod:379
-#: sysprep/sysprep-extra-options.pod:495
+#: sysprep/sysprep-extra-options.pod:489
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:442
+#: common/mlcustomize/customize-options.pod:436
 #: common/mlcustomize/v2v-customize-options.pod:382
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:444
+#: common/mlcustomize/customize-options.pod:438
 #: common/mlcustomize/v2v-customize-options.pod:384
-#: sysprep/sysprep-extra-options.pod:501
+#: sysprep/sysprep-extra-options.pod:495
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -8691,71 +8687,71 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:450
+#: common/mlcustomize/customize-options.pod:444
 #: common/mlcustomize/v2v-customize-options.pod:390
 msgid "B<--timezone> TIMEZONE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:452
+#: common/mlcustomize/customize-options.pod:446
 #: common/mlcustomize/v2v-customize-options.pod:392
-#: sysprep/sysprep-extra-options.pod:510
+#: sysprep/sysprep-extra-options.pod:504
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:455
+#: common/mlcustomize/customize-options.pod:449
 #: common/mlcustomize/v2v-customize-options.pod:395
 msgid "B<--touch> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:457
+#: common/mlcustomize/customize-options.pod:451
 #: common/mlcustomize/v2v-customize-options.pod:397
-#: sysprep/sysprep-extra-options.pod:516
+#: sysprep/sysprep-extra-options.pod:510
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:459
+#: common/mlcustomize/customize-options.pod:453
 #: common/mlcustomize/v2v-customize-options.pod:399
 msgid "B<--truncate> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:461
+#: common/mlcustomize/customize-options.pod:455
 #: common/mlcustomize/v2v-customize-options.pod:401
-#: sysprep/sysprep-extra-options.pod:521
+#: sysprep/sysprep-extra-options.pod:515
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:464
+#: common/mlcustomize/customize-options.pod:458
 #: common/mlcustomize/v2v-customize-options.pod:404
 msgid "B<--truncate-recursive> PATH"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:466
+#: common/mlcustomize/customize-options.pod:460
 #: common/mlcustomize/v2v-customize-options.pod:406
-#: sysprep/sysprep-extra-options.pod:527
+#: sysprep/sysprep-extra-options.pod:521
 msgid "This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:468
+#: common/mlcustomize/customize-options.pod:462
 #: common/mlcustomize/v2v-customize-options.pod:408
 msgid "B<--uninstall> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:470
+#: common/mlcustomize/customize-options.pod:464
 #: common/mlcustomize/v2v-customize-options.pod:410
-#: sysprep/sysprep-extra-options.pod:532
+#: sysprep/sysprep-extra-options.pod:526
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -8764,22 +8760,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:475
+#: common/mlcustomize/customize-options.pod:469
 #: common/mlcustomize/v2v-customize-options.pod:415
-#: sysprep/sysprep-extra-options.pod:537
+#: sysprep/sysprep-extra-options.pod:531
 msgid "See also I<--install>, I<--update>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:477
+#: common/mlcustomize/customize-options.pod:471
 #: common/mlcustomize/v2v-customize-options.pod:417
 msgid "B<--update>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:479
+#: common/mlcustomize/customize-options.pod:473
 #: common/mlcustomize/v2v-customize-options.pod:419
-#: sysprep/sysprep-extra-options.pod:542
+#: sysprep/sysprep-extra-options.pod:536
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -8787,22 +8783,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:483
+#: common/mlcustomize/customize-options.pod:477
 #: common/mlcustomize/v2v-customize-options.pod:423
-#: sysprep/sysprep-extra-options.pod:546
+#: sysprep/sysprep-extra-options.pod:540
 msgid "See also I<--install>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:485
+#: common/mlcustomize/customize-options.pod:479
 #: common/mlcustomize/v2v-customize-options.pod:425
 msgid "B<--upload> FILE:DEST"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:487
+#: common/mlcustomize/customize-options.pod:481
 #: common/mlcustomize/v2v-customize-options.pod:427
-#: sysprep/sysprep-extra-options.pod:551
+#: sysprep/sysprep-extra-options.pod:545
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -8810,18 +8806,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:491
+#: common/mlcustomize/customize-options.pod:485
 #: common/mlcustomize/v2v-customize-options.pod:431
-#: sysprep/sysprep-extra-options.pod:555
+#: sysprep/sysprep-extra-options.pod:549
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:494
+#: common/mlcustomize/customize-options.pod:488
 #: common/mlcustomize/v2v-customize-options.pod:434
-#: sysprep/sysprep-extra-options.pod:558
+#: sysprep/sysprep-extra-options.pod:552
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -8829,22 +8825,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:498
+#: common/mlcustomize/customize-options.pod:492
 #: common/mlcustomize/v2v-customize-options.pod:438
-#: sysprep/sysprep-extra-options.pod:562
+#: sysprep/sysprep-extra-options.pod:556
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:500
+#: common/mlcustomize/customize-options.pod:494
 #: common/mlcustomize/v2v-customize-options.pod:440
 msgid "B<--write> FILE:CONTENT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:502
+#: common/mlcustomize/customize-options.pod:496
 #: common/mlcustomize/v2v-customize-options.pod:442
-#: sysprep/sysprep-extra-options.pod:567
+#: sysprep/sysprep-extra-options.pod:561
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr ""
 
@@ -9203,6 +9199,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:106
 #: docs/guestfs-tools-release-notes-1.50.pod:164
 #: docs/guestfs-tools-release-notes-1.52.pod:103
+#: docs/guestfs-tools-release-notes-1.54.pod:132
 #: inspector/virt-inspector.pod:504 sysprep/virt-sysprep.pod:626
 msgid "AUTHORS"
 msgstr ""
@@ -9721,6 +9718,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:3
 #: docs/guestfs-tools-release-notes-1.50.pod:3
 #: docs/guestfs-tools-release-notes-1.52.pod:3
+#: docs/guestfs-tools-release-notes-1.54.pod:3
 msgid "guestfs-tools-release-notes - guestfs tools release Notes"
 msgstr ""
 
@@ -9764,6 +9762,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:21
 #: docs/guestfs-tools-release-notes-1.50.pod:53
 #: docs/guestfs-tools-release-notes-1.52.pod:34
+#: docs/guestfs-tools-release-notes-1.54.pod:23
 msgid "virt-customize"
 msgstr ""
 
@@ -9821,6 +9820,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:45
 #: docs/guestfs-tools-release-notes-1.50.pod:81
 #: docs/guestfs-tools-release-notes-1.52.pod:52
+#: docs/guestfs-tools-release-notes-1.54.pod:53
 msgid "Common changes"
 msgstr ""
 
@@ -9829,14 +9829,15 @@ msgstr ""
 msgid ""
 "All OCaml tools now suppress line wrapping when output is redirected to a "
 "file (to make it easier to parse logs with external programs).  There is a "
-"new I<--wrap> option which can be used to reenable line wrapping to files if "
-"needed (Laszlo Ersek)."
+"new I<--wrap> option which can be used to re-enable line wrapping to files "
+"if needed (Laszlo Ersek)."
 msgstr ""
 
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.48.pod:52
 #: docs/guestfs-tools-release-notes-1.50.pod:87
 #: docs/guestfs-tools-release-notes-1.52.pod:60
+#: docs/guestfs-tools-release-notes-1.54.pod:63
 msgid "Build changes"
 msgstr ""
 
@@ -9865,6 +9866,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:63
 #: docs/guestfs-tools-release-notes-1.50.pod:108
 #: docs/guestfs-tools-release-notes-1.52.pod:68
+#: docs/guestfs-tools-release-notes-1.54.pod:81
 msgid "Internals"
 msgstr ""
 
@@ -9879,6 +9881,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:68
 #: docs/guestfs-tools-release-notes-1.50.pod:112
 #: docs/guestfs-tools-release-notes-1.52.pod:73
+#: docs/guestfs-tools-release-notes-1.54.pod:92
 msgid "Bugs fixed"
 msgstr ""
 
@@ -9960,6 +9963,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:104
 #: docs/guestfs-tools-release-notes-1.50.pod:162
 #: docs/guestfs-tools-release-notes-1.52.pod:101
+#: docs/guestfs-tools-release-notes-1.54.pod:130
 msgid "L<http://libguestfs.org/>"
 msgstr ""
 
@@ -9989,6 +9993,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:122
 #: docs/guestfs-tools-release-notes-1.50.pod:176
 #: docs/guestfs-tools-release-notes-1.52.pod:117
+#: docs/guestfs-tools-release-notes-1.54.pod:146
 msgid "Richard W.M. Jones"
 msgstr ""
 
@@ -10017,6 +10022,7 @@ msgstr ""
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.50.pod:12
 #: docs/guestfs-tools-release-notes-1.52.pod:14
+#: docs/guestfs-tools-release-notes-1.54.pod:14
 msgid "Security"
 msgstr ""
 
@@ -10339,6 +10345,7 @@ msgstr ""
 
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.52.pod:46
+#: docs/guestfs-tools-release-notes-1.54.pod:34
 msgid "virt-drivers"
 msgstr ""
 
@@ -10431,6 +10438,257 @@ msgstr ""
 #. type: =item
 #: docs/guestfs-tools-release-notes-1.52.pod:113
 msgid "Jürgen Hötzel"
+msgstr ""
+
+#. type: =head1
+#: docs/guestfs-tools-release-notes-1.54.pod:5
+msgid "RELEASE NOTES FOR GUESTFS TOOLS 1.54"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:7
+msgid ""
+"These are the release notes for guestfs tools stable release 1.54.  This "
+"describes the major changes since 1.52."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:10
+msgid "Guestfs tools 1.54.0 was released on B<21st May 2025>."
+msgstr ""
+
+#. type: =head2
+#: docs/guestfs-tools-release-notes-1.54.pod:18
+msgid "New repository location"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:20
+msgid ""
+"The upstream git repository is now: "
+"L<https://github.com/libguestfs/guestfs-tools>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:25
+msgid ""
+"New I<--inject-blnsvr> which can be used to inject the Windows memory "
+"balloon server into guests."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:28
+msgid ""
+"I<--inject-virtio-win> no longer supports the C<osinfo> method (use "
+"libosinfo for virtio-win driver information), as it is no longer maintained "
+"and had got quite out of date.  The default method using virtio-win "
+"directory names is more reliable and preferred in all instances (Cole "
+"Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:36
+msgid ""
+"Handle large output of the L<rpm(1)> command when listing drivers in some "
+"SUSE guests."
+msgstr ""
+
+#. type: =head2
+#: docs/guestfs-tools-release-notes-1.54.pod:39
+msgid "virt-make-fs"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:41
+msgid ""
+"Use the L<file(1)> I<-S> option to disable seccomp protection when we also "
+"use the L<file(1)> I<-z> option, as the two options are incompatible and "
+"cause crashes on some Linux distros."
+msgstr ""
+
+#. type: =head2
+#: docs/guestfs-tools-release-notes-1.54.pod:45
+msgid "virt-resize"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:47
+msgid ""
+"Correct the calculation of the target disk.  In some cases with the "
+"I<--resize> option it was not calculated correctly and partition creation on "
+"the target would fail with a confusing error."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:51
+msgid "We now use stderr consistently for debug messages."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:55
+msgid "Add support for LoongArch (liuxiang from Loongson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:57
+msgid "Fix OCaml bytecode builds (Jerry James, Ilya Leoshkevich)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:59
+msgid "Allow C<nbd+unix://> URIs in I<-a> parameters to several tools."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:61
+msgid "Add a git-publish profile (Kashyap Chamarthy)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:65
+msgid ""
+"json-c is now required.  This replaces Jansson which was previously used for "
+"parsing JSON input files."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:68
+msgid "OCaml E<ge> 4.08 is now required."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:70
+msgid "OCaml oUnit is no longer used."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:72
+msgid ""
+"We now assume that C<__attribute__((cleanup))> always works.  This requires "
+"gcc or Clang."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:75
+msgid "Add support for GCC 14 and 15."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:77
+msgid "Some deprecated autoconf macros are no longer used."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:79
+msgid "Fix some issues when building on macOS (Mohamed Akram)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:83
+msgid ""
+"The tests were modified to use a set of common functions and remove use of "
+"the weird C<$TEST_FUNCTIONS> macro, similar to how we do it in nbdkit."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:87
+msgid ""
+"Some internal OCaml List and String functions that we used have been "
+"replaced by ones from the OCaml stdlib, reducing code maintenance."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:90
+msgid "Fix compatibility with GNU gettext 0.25."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:96
+msgid "./bugs-in-changelog.sh v1.52.0.."
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:102
+msgid "L<https://issues.redhat.com/browse/RHEL-32099>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:104
+msgid "Harden grub2-mkconfig to avoid overwriting /boot/efi/EFI/redhat/grub.cfg"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:106
+msgid "L<https://issues.redhat.com/browse/RHEL-67560>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:108
+msgid ""
+"Improve the error info when virt-customize options are used for incompatible "
+"guest OS [rhel-9.7]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:110
+msgid "L<https://issues.redhat.com/browse/RHEL-67565>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:112
+msgid ""
+"Improve the error info when virt-customize options are used for incompatible "
+"guest OS [rhel-10.1]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:114
+msgid "L<https://issues.redhat.com/browse/RHEL-77989>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:116
+msgid "CentOS 9 Migration from VMWare to Openshift Virt fails [rhel-9.6]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:118
+msgid "L<https://issues.redhat.com/browse/RHEL-80214>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:120
+msgid "virt-drivers fails on opensuse guest if kernel-source is installed"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:122
+msgid "L<https://github.com/libguestfs/guestfs-tools/issues/16>"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:124
+msgid "Issues building on macOS"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:136
+msgid "git shortlog -s v1.52.0.."
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:142
+msgid "Jerry James"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:144
+msgid "Kashyap Chamarthy"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.54.pod:148
+msgid "liuxiang"
 msgstr ""
 
 #. type: textblock
@@ -15072,17 +15330,17 @@ msgid "B<--inject-virtio-win> METHOD (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:243
+#: sysprep/sysprep-extra-options.pod:237
 msgid "B<--install> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:255
+#: sysprep/sysprep-extra-options.pod:249
 msgid "B<--keep-user-accounts> USERS (see C<user-account> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:258
+#: sysprep/sysprep-extra-options.pod:252
 msgid ""
 "The user accounts to be kept in the guest.  The value of this option is a "
 "list of user names separated by comma, where specifying an user means it is "
@@ -15090,7 +15348,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/sysprep-extra-options.pod:263
+#: sysprep/sysprep-extra-options.pod:257
 #, no-wrap
 msgid ""
 " --keep-user-accounts mary\n"
@@ -15098,57 +15356,57 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:265
+#: sysprep/sysprep-extra-options.pod:259
 msgid "would keep the user account C<mary>."
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:267 sysprep/sysprep-extra-options.pod:357
+#: sysprep/sysprep-extra-options.pod:261 sysprep/sysprep-extra-options.pod:351
 msgid "This option can be specified multiple times."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:269
+#: sysprep/sysprep-extra-options.pod:263
 msgid "B<--link> TARGET:LINK[:LINK..] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:275
+#: sysprep/sysprep-extra-options.pod:269
 msgid "B<--mkdir> DIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:283
+#: sysprep/sysprep-extra-options.pod:277
 msgid "B<--move> SOURCE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:290
+#: sysprep/sysprep-extra-options.pod:284
 msgid "B<--no-logfile> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:299
+#: sysprep/sysprep-extra-options.pod:293
 msgid "B<--no-selinux-relabel> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:313
+#: sysprep/sysprep-extra-options.pod:307
 msgid "B<--password> USER:SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:322
+#: sysprep/sysprep-extra-options.pod:316
 msgid "B<--password-crypto> md5|sha256|sha512 (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:345
+#: sysprep/sysprep-extra-options.pod:339
 msgid "B<--remove-user-accounts> USERS (see C<user-account> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:348
+#: sysprep/sysprep-extra-options.pod:342
 msgid ""
 "The user accounts to be removed from the guest.  The value of this option is "
 "a list of user names separated by comma, where specifying an user means it "
@@ -15156,7 +15414,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/sysprep-extra-options.pod:353
+#: sysprep/sysprep-extra-options.pod:347
 #, no-wrap
 msgid ""
 " --remove-user-accounts bob,eve\n"
@@ -15164,32 +15422,32 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:355
+#: sysprep/sysprep-extra-options.pod:349
 msgid "would only remove the user accounts C<bob> and C<eve>."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:359
+#: sysprep/sysprep-extra-options.pod:353
 msgid "B<--root-password> SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:370
+#: sysprep/sysprep-extra-options.pod:364
 msgid "B<--run> SCRIPT (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:390
+#: sysprep/sysprep-extra-options.pod:384
 msgid "B<--run-command> 'CMD+ARGS' (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:407
+#: sysprep/sysprep-extra-options.pod:401
 msgid "B<--script> SCRIPT (see C<script> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:410
+#: sysprep/sysprep-extra-options.pod:404
 msgid ""
 "Run the named C<SCRIPT> (a shell script or program) against the guest.  The "
 "script can be any program on the host.  The script’s current directory will "
@@ -15197,19 +15455,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:414
+#: sysprep/sysprep-extra-options.pod:408
 msgid ""
 "B<Note:> If the script is not on the $PATH, then you must give the full "
 "absolute path to the script."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:417
+#: sysprep/sysprep-extra-options.pod:411
 msgid "B<--scriptdir> SCRIPTDIR (see C<script> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:420
+#: sysprep/sysprep-extra-options.pod:414
 msgid ""
 "The mount point (an empty directory on the host) used when the C<script> "
 "operation is enabled and one or more scripts are specified using I<--script> "
@@ -15217,99 +15475,99 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:424
+#: sysprep/sysprep-extra-options.pod:418
 msgid "B<Note:> C<SCRIPTDIR> B<must> be an absolute path."
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:426
+#: sysprep/sysprep-extra-options.pod:420
 msgid ""
 "If I<--scriptdir> is not specified then a temporary mountpoint will be "
 "created."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:429
+#: sysprep/sysprep-extra-options.pod:423
 msgid "B<--scrub> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:446
+#: sysprep/sysprep-extra-options.pod:440
 msgid "B<--selinux-relabel> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:451
+#: sysprep/sysprep-extra-options.pod:445
 msgid "B<--sm-attach> SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:459
+#: sysprep/sysprep-extra-options.pod:453
 msgid "B<--sm-credentials> SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:467
+#: sysprep/sysprep-extra-options.pod:461
 msgid "B<--sm-register> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:474
+#: sysprep/sysprep-extra-options.pod:468
 msgid "B<--sm-remove> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:480
+#: sysprep/sysprep-extra-options.pod:474
 msgid "B<--sm-unregister> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:485
+#: sysprep/sysprep-extra-options.pod:479
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:498
+#: sysprep/sysprep-extra-options.pod:492
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:507
+#: sysprep/sysprep-extra-options.pod:501
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:513
+#: sysprep/sysprep-extra-options.pod:507
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:518
+#: sysprep/sysprep-extra-options.pod:512
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:524
+#: sysprep/sysprep-extra-options.pod:518
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:529
+#: sysprep/sysprep-extra-options.pod:523
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:539
+#: sysprep/sysprep-extra-options.pod:533
 msgid "B<--update> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:548
+#: sysprep/sysprep-extra-options.pod:542
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:564
+#: sysprep/sysprep-extra-options.pod:558
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr ""
 
@@ -17704,17 +17962,17 @@ msgstr ""
 #. type: textblock
 #: win-reg/virt-win-reg.in:646
 msgid ""
-"C<virt-win-reg> expects that regedit files have already been reencoded in "
+"C<virt-win-reg> expects that regedit files have already been re-encoded in "
 "the local encoding.  Usually on Linux hosts, this means UTF-8 with "
 "Unix-style line endings.  Since Windows regedit files are often in UTF-16LE "
-"with Windows-style line endings, you may need to reencode the whole file "
+"with Windows-style line endings, you may need to re-encode the whole file "
 "before or after processing."
 msgstr ""
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:652
 msgid ""
-"To reencode a file from Windows format to Linux (before processing it with "
+"To re-encode a file from Windows format to Linux (before processing it with "
 "the I<--merge> option), you would do something like this:"
 msgstr ""
 
