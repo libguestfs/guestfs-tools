@@ -1043,7 +1043,7 @@ following could be used to boot the virtual machine:
 
  qemu-system-x86_64 \
    -machine accel=kvm:tcg \
-   -cpu host \
+   -cpu max \
    -m 2048 \
    -drive file=disk.img,format=raw,if=virtio
 
