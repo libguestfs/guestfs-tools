@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.54.0\n"
+"Project-Id-Version: guestfs-tools 1.55.1\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2025-05-20 22:01+0100\n"
+"POT-Creation-Date: 2025-08-15 10:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3719,7 +3719,7 @@ msgstr ""
 msgid ""
 " qemu-system-x86_64 \\\n"
 "   -machine accel=kvm:tcg \\\n"
-"   -cpu host \\\n"
+"   -cpu max \\\n"
 "   -m 2048 \\\n"
 "   -drive file=disk.img,format=raw,if=virtio\n"
 "\n"
@@ -9866,7 +9866,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.48.pod:63
 #: docs/guestfs-tools-release-notes-1.50.pod:108
 #: docs/guestfs-tools-release-notes-1.52.pod:68
-#: docs/guestfs-tools-release-notes-1.54.pod:81
+#: docs/guestfs-tools-release-notes-1.54.pod:83
 msgid "Internals"
 msgstr ""
 
@@ -10584,22 +10584,22 @@ msgid "Fix some issues when building on macOS (Mohamed Akram)."
 msgstr ""
 
 #. type: textblock
-#: docs/guestfs-tools-release-notes-1.54.pod:83
+#: docs/guestfs-tools-release-notes-1.54.pod:81
+msgid "Fix compatibility with GNU gettext 0.25."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.54.pod:85
 msgid ""
 "The tests were modified to use a set of common functions and remove use of "
 "the weird C<$TEST_FUNCTIONS> macro, similar to how we do it in nbdkit."
 msgstr ""
 
 #. type: textblock
-#: docs/guestfs-tools-release-notes-1.54.pod:87
+#: docs/guestfs-tools-release-notes-1.54.pod:89
 msgid ""
 "Some internal OCaml List and String functions that we used have been "
 "replaced by ones from the OCaml stdlib, reducing code maintenance."
-msgstr ""
-
-#. type: textblock
-#: docs/guestfs-tools-release-notes-1.54.pod:90
-msgid "Fix compatibility with GNU gettext 0.25."
 msgstr ""
 
 #. type: textblock
