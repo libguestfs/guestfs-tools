@@ -81,7 +81,7 @@ let rec script_perform (g : Guestfs.guestfs) root side_effects =
 and run_scripts mp scripts =
   let sh = "/bin/bash" in
   let cmd =
-    sprintf "\
+    sprintf {|
 set -e
 #set -x
 cleanup ()
@@ -91,7 +91,8 @@ cleanup ()
   guestunmount %s ||:
   exit $status
 }
-trap cleanup INT TERM QUIT EXIT ERR\n"
+trap cleanup INT TERM QUIT EXIT ERR
+|}
       (Filename.quote mp) ^
       String.concat "\n" scripts in
   let args = [| sh; "-c"; cmd |] in

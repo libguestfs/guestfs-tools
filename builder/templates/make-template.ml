@@ -535,8 +535,7 @@ and make_kickstart_common ks_filename os arch =
    | _ -> bpf "install\n";
   );
 
-  bpf "\
-text
+  bpf {|text
 reboot
 lang en_US.UTF-8
 keyboard us
@@ -544,7 +543,7 @@ network --bootproto dhcp
 rootpw builder
 firewall --enabled --ssh
 timezone --utc America/New_York
-";
+|};
 
   (match os with
    | RHEL (ver, _) when ver <= 4 ->
@@ -586,19 +585,19 @@ mouse generic
    | CentOS ((3|4|5|6) as major, _) | RHEL ((3|4|5|6) as major, _) ->
       let bootfs = if major <= 5 then "ext2" else "ext4" in
       let rootfs = if major <= 4 then "ext3" else "ext4" in
-      bpf "\
+      bpf {|
 zerombr
 clearpart --all --initlabel
 part /boot --fstype=%s   --size=512         --asprimary
 part swap                --size=1024        --asprimary
 part /     --fstype=%s   --size=1024 --grow --asprimary
-" bootfs rootfs;
+|} bootfs rootfs;
    | Alma _ | CentOS _ | CentOSStream _ | RHEL _ | Fedora _ ->
-      bpf "\
+      bpf {|
 zerombr
 clearpart --all --initlabel --disklabel=gpt
 autopart --type=plain
-";
+|};
    | _ -> assert false (* cannot happen, see caller *)
   );
   bpf "\n";
@@ -753,16 +752,16 @@ and make_unattend_iso os arch =
    * file called \Windows\Panther\Setupact.log (NB:
    * not \Windows\Setupact.log)
    *)
-  fprintf chan "
-<unattend xmlns=\"urn:schemas-microsoft-com:unattend\"
-          xmlns:ms=\"urn:schemas-microsoft-com:asm.v3\"
-          xmlns:wcm=\"http://schemas.microsoft.com/WMIConfig/2002/State\">
-  <settings pass=\"windowsPE\">
-    <component name=\"Microsoft-Windows-Setup\"
-               publicKeyToken=\"31bf3856ad364e35\"
-               language=\"neutral\"
-               versionScope=\"nonSxS\"
-               processorArchitecture=\"%s\">
+  fprintf chan {|
+<unattend xmlns="urn:schemas-microsoft-com:unattend"
+          xmlns:ms="urn:schemas-microsoft-com:asm.v3"
+          xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+  <settings pass="windowsPE">
+    <component name="Microsoft-Windows-Setup"
+               publicKeyToken="31bf3856ad364e35"
+               language="neutral"
+               versionScope="nonSxS"
+               processorArchitecture="%s">
       <UserData>
         <AcceptEula>true</AcceptEula>
         <ProductKey>
@@ -772,18 +771,18 @@ and make_unattend_iso os arch =
       </UserData>
 
       <DiskConfiguration>
-        <Disk wcm:action=\"add\">
+        <Disk wcm:action="add">
           <DiskID>0</DiskID>
           <WillWipeDisk>true</WillWipeDisk>
           <CreatePartitions>
             <!-- System partition -->
-            <CreatePartition wcm:action=\"add\">
+            <CreatePartition wcm:action="add">
               <Order>1</Order>
               <Type>Primary</Type>
               <Size>300</Size>
             </CreatePartition>
             <!-- Windows partition -->
-            <CreatePartition wcm:action=\"add\">
+            <CreatePartition wcm:action="add">
               <Order>2</Order>
               <Type>Primary</Type>
               <Extend>true</Extend>
@@ -791,7 +790,7 @@ and make_unattend_iso os arch =
           </CreatePartitions>
           <ModifyPartitions>
             <!-- System partition -->
-            <ModifyPartition wcm:action=\"add\">
+            <ModifyPartition wcm:action="add">
               <Order>1</Order>
               <PartitionID>1</PartitionID>
               <Label>System</Label>
@@ -799,7 +798,7 @@ and make_unattend_iso os arch =
               <Active>true</Active>
             </ModifyPartition>
             <!-- Windows partition -->
-            <ModifyPartition wcm:action=\"add\">
+            <ModifyPartition wcm:action="add">
               <Order>2</Order>
               <PartitionID>2</PartitionID>
               <Label>Windows</Label>
@@ -828,11 +827,11 @@ and make_unattend_iso os arch =
       </ImageInstall>
     </component>
 
-    <component name=\"Microsoft-Windows-International-Core-WinPE\"
-               publicKeyToken=\"31bf3856ad364e35\"
-               language=\"neutral\"
-               versionScope=\"nonSxS\"
-               processorArchitecture=\"%s\">
+    <component name="Microsoft-Windows-International-Core-WinPE"
+               publicKeyToken="31bf3856ad364e35"
+               language="neutral"
+               versionScope="nonSxS"
+               processorArchitecture="%s">
       <SetupUILanguage>
         <UILanguage>en-US</UILanguage>
       </SetupUILanguage>
@@ -841,7 +840,7 @@ and make_unattend_iso os arch =
       <UserLocale>en-US</UserLocale>
     </component>
   </settings>
-</unattend>"
+</unattend>|}
           arch product_key arch;
   close_out chan;
 
@@ -1411,14 +1410,13 @@ baseurl=%s
 enabled=0
 gpgcheck=0
 keepcache=0
-" major major baseurl major major srpms;
+|} major major baseurl major major srpms;
 
     (match optional with
      | None -> ()
      | Some (name, optionalbaseurl, optionalsrpms) ->
         let lc_name = String.lowercase_ascii name in
-        bpf "\
-
+        bpf {|
 [rhel%d-%s]
 name=RHEL %d Server %s
 baseurl=%s
@@ -1432,7 +1430,7 @@ baseurl=%s
 enabled=0
 gpgcheck=0
 keepcache=0
-" major lc_name major lc_name optionalbaseurl
+|} major lc_name major lc_name optionalbaseurl
   major lc_name major lc_name optionalsrpms
     )
   ) else (
