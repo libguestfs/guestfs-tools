@@ -2,6 +2,7 @@
 *.1
 *.a
 *.annot
+*.bak
 *.cmi
 *.cmo
 *.cmx
