@@ -374,7 +374,7 @@ and os_of_string os ver =
      eprintf "%s: unknown or unsupported OS (%s, %s)\n" prog os ver; exit 1
 
 and parse_major_minor ver =
-  let rex = Str.regexp "^\\([0-9]+\\)\\.\\([0-9]+\\)$" in
+  let rex = Str.regexp {|^\([0-9]+\)\.\([0-9]+\)$|} in
   if Str.string_match rex ver 0 then (
     int_of_string (Str.matched_group 1 ver),
     int_of_string (Str.matched_group 2 ver)
@@ -1631,7 +1631,7 @@ and read_revision filename =
   | None -> `No_file
   | Some chan ->
      let r = ref `No_revision in
-     let rex = Str.regexp "^revision=\\([0-9]+\\)$" in
+     let rex = Str.regexp {|^revision=\([0-9]+\)$|} in
      (try
        let rec loop () =
          let line = input_line chan in
