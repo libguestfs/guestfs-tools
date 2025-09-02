@@ -24,7 +24,9 @@
  * shell scripts located in libguestfs.git/builder/website.
  *)
 
+#directory "+str";;
 #load "str.cma";;
+#directory "+unix";;
 #load "unix.cma";;
 #directory "+guestfs";; (* use globally installed guestfs *)
 #load "mlguestfs.cma";;
