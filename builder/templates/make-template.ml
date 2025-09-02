@@ -1394,7 +1394,7 @@ and make_rhel_yum_conf major minor arch =
                sprintf "%s/AppStream/source/tree" topurl)
       | _ -> assert false in
 
-    bpf "\
+    bpf {|
 # Yum configuration pointing to Red Hat servers.
 
 [rhel%d]
