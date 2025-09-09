@@ -85,6 +85,7 @@ endif
 EXTRA_DIST = \
 	HACKING \
 	README \
+	.github/workflows/main.yml \
 	.gitignore \
 	.gitpublish \
 	bugs-in-changelog.sh \
