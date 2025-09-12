@@ -46,7 +46,7 @@ let remove_duplicates index =
    * (name, arch) tuples, so it possible to ignore duplicates,
    * and versions with a lower revision.
    *)
-  let nseen = Hashtbl.create 13 in
+  let nseen = Hashtbl.create 16 in
   List.iter (
     fun (name, { Index.arch; revision }) ->
       let id = name, arch in
