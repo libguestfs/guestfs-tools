@@ -630,7 +630,7 @@ read the man page virt-resize(1).
    * that the user has asked to be ignored or deleted.
    *)
   let find_partition =
-    let hash = Hashtbl.create 13 in
+    let hash = Hashtbl.create 16 in
     List.iter (fun ({ p_name = name } as p) -> Hashtbl.add hash name p)
       partitions;
     fun ~option name ->
@@ -881,7 +881,7 @@ read the man page virt-resize(1).
     surplus in
 
   (* Mark the --lv-expand LVs. *)
-  let hash = Hashtbl.create 13 in
+  let hash = Hashtbl.create 16 in
   List.iter (fun ({ lv_name = name } as lv) -> Hashtbl.add hash name lv) lvs;
 
   List.iter (

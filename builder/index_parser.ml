@@ -55,7 +55,7 @@ let get_index ~downloader ~sigchecker ?(template = false)
         in
         n, (find_arch fields)
     ) sections in
-    let nseen = Hashtbl.create 13 in
+    let nseen = Hashtbl.create 16 in
     List.iter (
       fun (n, arch) ->
         let id = n, arch in
@@ -71,7 +71,7 @@ let get_index ~downloader ~sigchecker ?(template = false)
     (* Check for repeated fields. *)
     List.iter (
       fun (n, fields) ->
-        let fseen = Hashtbl.create 13 in
+        let fseen = Hashtbl.create 16 in
         List.iter (
           fun (field, subkey, _) ->
             let hashkey = (field, subkey) in
