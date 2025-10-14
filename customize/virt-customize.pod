@@ -248,6 +248,14 @@ existing ones.
 
 For further details, see L<virt-builder(1)/SELINUX>.
 
+=head1 DEPRECATED OPTIONS
+
+In version 1.56 the subscription-manager options were removed:
+B<--sm-credentials>, B<--sm-register>, B<--sm-unregister>,
+B<--sm-attach>, B<--sm-remove>
+
+For further details, see L<virt-builder(1)/DEPRECATED OPTIONS>.
+
 =head1 EXIT STATUS
 
 This program returns 0 on success, or 1 if there was an error.
