@@ -203,7 +203,18 @@ my $pod_options_checked = 0;
 
 my %pod_options = ();
 $pod_options{$_} = 1 foreach ( $content =~ /^=item.*B<(-[-\w]+)(?:=.*)?>/gm );
-foreach (sort keys %pod_options) {
+
+my %pod_option_exists = ();
+$pod_option_exists{$_} = 1 foreach keys %pod_options;
+
+# Removed from the tool but we still document them
+delete $pod_option_exists{"--sm-credentials"};
+delete $pod_option_exists{"--sm-register"};
+delete $pod_option_exists{"--sm-unregister"};
+delete $pod_option_exists{"--sm-remove"};
+delete $pod_option_exists{"--sm-attach"};
+
+foreach (sort keys %pod_option_exists) {
     unless ($ignore{$_}) {
         $pod_options_checked++;
         unless (exists $tool_option_exists{$_}) {
