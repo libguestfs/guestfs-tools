@@ -30,7 +30,6 @@ common/mlcustomize/password.ml
 common/mlcustomize/perl_edit.ml
 common/mlcustomize/random_seed.ml
 common/mlcustomize/ssh_key.ml
-common/mlcustomize/subscription_manager.ml
 common/mlcustomize/timezone.ml
 common/mldrivers/firmware.ml
 common/mldrivers/linux.ml
