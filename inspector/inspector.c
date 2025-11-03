@@ -697,6 +697,8 @@ output_applications (xmlTextWriterPtr xo, char *root)
           single_element ("summary", apps->val[i].app2_summary);
         if (apps->val[i].app2_description && apps->val[i].app2_description[0])
           single_element ("description", apps->val[i].app2_description);
+        if (apps->val[i].app2_class && apps->val[i].app2_class[0])
+          single_element ("class", apps->val[i].app2_class);
       } end_element ();
     }
   } end_element ();
