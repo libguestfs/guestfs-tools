@@ -439,6 +439,9 @@ output_root (xmlTextWriterPtr xo, char *root)
     if (str)
       single_element ("windows_current_control_set", str);
     free (str);
+    i = guestfs_inspect_get_windows_group_policy (g, root);
+    if (i > 0)
+      empty_element ("windows_group_policy");
     guestfs_pop_error_handler (g);
 
     str = guestfs_inspect_get_hostname (g, root);
