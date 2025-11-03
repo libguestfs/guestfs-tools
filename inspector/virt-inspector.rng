@@ -35,6 +35,7 @@
             <element name="minor_version"><text/></element>
             <optional><element name="windows_systemroot"><text/></element></optional>
             <optional><element name="windows_current_control_set"><text/></element></optional>
+            <optional><element name="windows_group_policy"><empty/></element></optional>
             <optional><ref name="ospackageformat"/></optional>
             <optional><ref name="ospackagemanagement"/></optional>
             <optional><element name="hostname"><text/></element></optional>
