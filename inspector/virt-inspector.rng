@@ -212,6 +212,7 @@
           <optional><element name="source_package"><text/></element></optional>
           <optional><element name="summary"><text/></element></optional>
           <optional><element name="description"><text/></element></optional>
+          <optional><element name="class"><text/></element></optional>
         </element>
       </zeroOrMore>
     </element>
