@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.55.2\n"
+"Project-Id-Version: guestfs-tools 1.55.3\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2025-10-16 17:46+0100\n"
+"POT-Creation-Date: 2025-11-04 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4024,37 +4024,37 @@ msgstr ""
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
 msgstr ""
 
-#: inspector/inspector.c:720
+#: inspector/inspector.c:725
 #, c-format
 msgid "unable to parse XML from stdin"
 msgstr ""
 
-#: inspector/inspector.c:724
+#: inspector/inspector.c:729
 #, c-format
 msgid "unable to create new XPath context"
 msgstr ""
 
-#: inspector/inspector.c:728
+#: inspector/inspector.c:733
 #, c-format
 msgid "unable to evaluate XPath expression"
 msgstr ""
 
-#: inspector/inspector.c:739
+#: inspector/inspector.c:744
 #, c-format
 msgid "xmlSaveToFd failed"
 msgstr ""
 
-#: inspector/inspector.c:744
+#: inspector/inspector.c:749
 #, c-format
 msgid "xmlNewDoc failed"
 msgstr ""
 
-#: inspector/inspector.c:747
+#: inspector/inspector.c:752
 #, c-format
 msgid "xmlCopyNode failed"
 msgstr ""
 
-#: inspector/inspector.c:752
+#: inspector/inspector.c:757
 #, c-format
 msgid "xmlSaveDoc failed"
 msgstr ""
