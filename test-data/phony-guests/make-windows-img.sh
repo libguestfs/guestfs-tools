@@ -37,7 +37,7 @@ fi
 
 # Create a disk image.
 guestfish <<EOF
-sparse windows.img-t 512M
+sparse windows.img-t 2G
 run
 
 # Format the disk.
