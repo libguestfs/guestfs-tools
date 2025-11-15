@@ -1,0 +1,20 @@
+# This is the virt-install command which was used to create
+# the virt-builder template 'debian-13'
+# NB: This file is generated for documentation purposes ONLY!
+# This script was never run, and is not intended to be run.
+
+'virt-install' \
+    '--transient' \
+    '--name=tmp-f9uvnjv8' \
+    '--ram=4096' \
+    '--arch=x86_64' \
+    '--cpu=host' \
+    '--vcpus=4' \
+    '--os-variant=debian8' \
+    '--initrd-inject=/tmp/x2gzcgar.tmp/preseed.cfg' \
+    '--extra-args=auto mirror/http/proxy= console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-f9uvnjv8.img,size=6,format=raw' \
+    '--location=http://deb.debian.org/debian/dists/trixie/main/installer-amd64' \
+    '--serial=pty' \
+    '--nographics' 
+
