@@ -256,7 +256,6 @@ parse_indexes (value filenamev, int fd)
   lzma_index *combined_index = NULL;
   lzma_index *this_index = NULL;
   lzma_vli stream_padding = 0;
-  size_t nr_streams = 0;
   CLEANUP_FREE uint8_t *buf = NULL;
 
   footer = malloc (sizeof (uint8_t) * LZMA_STREAM_HEADER_SIZE);
@@ -295,7 +294,6 @@ parse_indexes (value filenamev, int fd)
     }
 
     pos -= LZMA_STREAM_HEADER_SIZE;
-    nr_streams++;
 
     debug ("decode stream footer at pos = %" PRIu64, (uint64_t) pos);
 
