@@ -71,7 +71,8 @@ operations = \
 	tmp_files \
 	udev_persistent_net \
 	user_account \
-	utmp yum_uuid
+	utmp yum_uuid \
+	zsh_history
 
 SOURCES_MLI = \
 	main.mli \
