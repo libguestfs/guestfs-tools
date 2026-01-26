@@ -175,7 +175,14 @@
         <element name="filesystem">
           <attribute name="dev"><text/></attribute>
           <interleave>
-            <optional><element name="type"><text/></element></optional>
+            <optional>
+              <element name="type">
+                <optional>
+                  <attribute name="version"><text/></attribute>
+                </optional>
+                <text/>
+              </element>
+            </optional>
             <optional><element name="label"><text/></element></optional>
             <optional><element name="uuid"><text/></element></optional>
           </interleave>

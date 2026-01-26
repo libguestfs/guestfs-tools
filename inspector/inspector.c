@@ -569,6 +569,42 @@ output_mountpoints (xmlTextWriterPtr xo, char *root)
   } end_element ();
 }
 
+static const char *
+get_filesystem_version (const char *dev, const char *fs_type)
+{
+  const char *version = NULL;
+
+#ifdef GUESTFS_HAVE_XFS_INFO2
+  /* For type=xfs, try to guess the filesystem version. */
+  if (STREQ (fs_type, "xfs")) {
+    CLEANUP_FREE_STRING_LIST char **hash = NULL;
+    size_t i;
+
+    guestfs_push_error_handler (g, NULL, NULL);
+
+    hash = guestfs_xfs_info2 (g, dev);
+    if (hash) {
+      for (i = 0; hash[i] != NULL; i += 2) {
+        if (STREQ (hash[i], "meta-data.crc")) {
+          if (STREQ (hash[i+1], "0"))
+            version = "4";
+          else if (STREQ (hash[i+1], "1"))
+            version = "5";
+          break;
+        }
+        /* If new XFS versions are added in future then we can test
+         * for new fields here ...
+         */
+      }
+    }
+
+    guestfs_pop_error_handler (g);
+  }
+#endif /* GUESTFS_HAVE_XFS_INFO2 */
+
+  return version;
+}
+
 static void
 output_filesystems (xmlTextWriterPtr xo, char *root)
 {
@@ -586,19 +622,25 @@ output_filesystems (xmlTextWriterPtr xo, char *root)
 
   start_element ("filesystems") {
     for (i = 0; filesystems[i] != NULL; ++i) {
-      str = guestfs_canonical_device_name (g, filesystems[i]);
-      if (!str)
+      CLEANUP_FREE char *dev =
+        guestfs_canonical_device_name (g, filesystems[i]);
+      if (!dev)
         exit (EXIT_FAILURE);
 
       start_element ("filesystem") {
-        attribute ("dev", str);
-        free (str);
+        attribute ("dev", dev);
 
         guestfs_push_error_handler (g, NULL, NULL);
 
         str = guestfs_vfs_type (g, filesystems[i]);
-        if (str && str[0])
-          single_element ("type", str);
+        if (str && str[0]) {
+          const char *version = get_filesystem_version (dev, str);
+          start_element ("type") {
+            if (version)
+              attribute ("version", version);
+            string (str);
+          } end_element ();
+        }
         free (str);
 
         str = guestfs_vfs_label (g, filesystems[i]);
