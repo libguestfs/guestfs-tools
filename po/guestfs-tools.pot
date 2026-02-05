@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.55.4\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2026-01-21 12:28+0000\n"
+"POT-Creation-Date: 2025-04-29 19:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3139,9 +3139,9 @@ msgstr ""
 msgid "‘xz’ command failed"
 msgstr ""
 
-#: align/scan.c:80 cat/cat.c:59 cat/filesystems.c:92 cat/log.c:69 cat/ls.c:97
-#: cat/tail.c:67 df/main.c:72 diff/diff.c:105 edit/edit.c:67
-#: inspector/inspector.c:84 make-fs/make-fs.c:82
+#: align/scan.c:80 cat/cat.c:59 df/main.c:72 diff/diff.c:105 edit/edit.c:67
+#: filesystems/filesystems.c:92 inspector/inspector.c:84 log/log.c:69
+#: ls/ls.c:97 make-fs/make-fs.c:82 tail/tail.c:67
 #, c-format
 msgid "Try ‘%s --help’ for more information.\n"
 msgstr ""
@@ -3171,10 +3171,10 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157
-#: cat/filesystems.c:252 cat/log.c:160 cat/ls.c:255 cat/tail.c:166
-#: df/main.c:169 diff/diff.c:289 edit/edit.c:169 format/format.c:192
-#: inspector/inspector.c:187 make-fs/make-fs.c:157
+#: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157 df/main.c:169
+#: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:252
+#: format/format.c:192 inspector/inspector.c:187 log/log.c:160 ls/ls.c:255
+#: make-fs/make-fs.c:157 tail/tail.c:166
 #, c-format
 msgid "unknown long option: %s (%d)"
 msgstr ""
@@ -3272,207 +3272,10 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/cat.c:245 cat/filesystems.c:349 cat/log.c:217 cat/ls.c:369
-#: cat/tail.c:231 diff/diff.c:343 edit/edit.c:269 inspector/inspector.c:287
+#: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:349
+#: inspector/inspector.c:287 log/log.c:217 ls/ls.c:369 tail/tail.c:231
 #, c-format
 msgid "%s: error: you must specify at least one -a or -d option.\n"
-msgstr ""
-
-#: cat/filesystems.c:95
-#, c-format
-msgid ""
-"%s: list filesystems, partitions, block devices, LVM in a VM\n"
-"Copyright (C) 2010 Red Hat Inc.\n"
-"Usage:\n"
-"  %s [--options] -d domname\n"
-"  %s [--options] -a disk.img [-a disk.img ...]\n"
-"Options:\n"
-"  -a|--add image       Add image\n"
-"  --all                Display everything\n"
-"  --blkdevs|--block-devices\n"
-"                       Display block devices\n"
-"  --blocksize[=512|4096]\n"
-"                       Set sector size of the disk for -a option\n"
-"  -c|--connect uri     Specify libvirt URI for -d option\n"
-"  --csv                Output as Comma-Separated Values\n"
-"  -d|--domain guest    Add disks from libvirt guest\n"
-"  --echo-keys          Don't turn off echo for passphrases\n"
-"  --extra              Display swap and data filesystems\n"
-"  --filesystems        Display mountable filesystems\n"
-"  --format[=raw|..]    Force disk format for -a option\n"
-"  -h|--human-readable  Human-readable sizes in --long output\n"
-"  --help               Display brief help\n"
-"  --keys-from-stdin    Read passphrases from stdin\n"
-"  -l|--long            Long output\n"
-"  --lvs|--logvols|--logical-volumes\n"
-"                       Display LVM logical volumes\n"
-"  --no-title           No title in --long output\n"
-"  --parts|--partitions Display partitions\n"
-"  --pvs|--physvols|--physical-volumes\n"
-"                       Display LVM physical volumes\n"
-"  --uuid|--uuids       Add UUIDs to --long output\n"
-"  -v|--verbose         Verbose messages\n"
-"  -V|--version         Display version and exit\n"
-"  --vgs|--volgroups|--volume-groups\n"
-"                       Display LVM volume groups\n"
-"  -x                   Trace libguestfs API calls\n"
-"For more information, see the manpage %s(1).\n"
-msgstr ""
-
-#: cat/filesystems.c:305 cat/log.c:205 inspector/inspector.c:262
-#, c-format
-msgid ""
-"%s: error: extra argument ‘%s’ on command line.\n"
-"Make sure to specify the argument for --format like '--format=%s'.\n"
-msgstr ""
-
-#: cat/filesystems.c:320 cat/ls.c:361 df/main.c:266 diff/diff.c:357
-#, c-format
-msgid "you cannot use -h and --csv options together."
-msgstr ""
-
-#: cat/filesystems.c:498
-#, c-format
-msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
-msgstr ""
-
-#: cat/log.c:72
-#, c-format
-msgid ""
-"%s: display log files in a virtual machine\n"
-"Copyright (C) 2010-2025 Red Hat Inc.\n"
-"Usage:\n"
-"  %s [--options] -d domname\n"
-"  %s [--options] -a disk.img [-a disk.img ...]\n"
-"Options:\n"
-"  -a|--add image       Add image\n"
-"  --blocksize[=512|4096]\n"
-"                       Set sector size of the disk for -a option\n"
-"  -c|--connect uri     Specify libvirt URI for -d option\n"
-"  -d|--domain guest    Add disks from libvirt guest\n"
-"  --echo-keys          Don't turn off echo for passphrases\n"
-"  --format[=raw|..]    Force disk format for -a option\n"
-"  --help               Display brief help\n"
-"  --key selector       Specify a LUKS key\n"
-"  --keys-from-stdin    Read passphrases from stdin\n"
-"  -v|--verbose         Verbose messages\n"
-"  -V|--version         Display version and exit\n"
-"  -x                   Trace libguestfs API calls\n"
-"For more information, see the manpage %s(1).\n"
-msgstr ""
-
-#: cat/log.c:273
-#, c-format
-msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
-msgstr ""
-
-#: cat/log.c:381
-#, c-format
-msgid "%s: could not format journal entry timestamp\n"
-msgstr ""
-
-#: cat/log.c:447
-#, c-format
-msgid ""
-"%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
-"in order to parse Windows Event Logs.  If you cannot install this, then\n"
-"use virt-copy-out(1) to copy the contents of /Windows/System32/winevt/Logs\n"
-"from this guest, and examine in a binary file viewer.\n"
-msgstr ""
-
-#: cat/log.c:466
-#, c-format
-msgid "%s: Windows Event Log file (%s) not found\n"
-msgstr ""
-
-#: cat/ls.c:100
-#, c-format
-msgid ""
-"%s: list files in a virtual machine\n"
-"Copyright (C) 2010-2025 Red Hat Inc.\n"
-"Usage:\n"
-"  %s [--options] -d domname dir [dir ...]\n"
-"  %s [--options] -a disk.img [-a disk.img ...] dir [dir ...]\n"
-"Options:\n"
-"  -a|--add image       Add image\n"
-"  --blocksize[=512|4096]\n"
-"                       Set sector size of the disk for -a option\n"
-"  --checksum[=...]     Display file checksums\n"
-"  -c|--connect uri     Specify libvirt URI for -d option\n"
-"  --csv                Comma-Separated Values output\n"
-"  -d|--domain guest    Add disks from libvirt guest\n"
-"  --echo-keys          Don't turn off echo for passphrases\n"
-"  --extra-stats        Display extra stats\n"
-"  --format[=raw|..]    Force disk format for -a option\n"
-"  --help               Display brief help\n"
-"  -h|--human-readable  Human-readable sizes in output\n"
-"  --key selector       Specify a LUKS key\n"
-"  --keys-from-stdin    Read passphrases from stdin\n"
-"  -l|--long            Long listing\n"
-"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
-"                       Mount dev on mnt (if omitted, /)\n"
-"  -R|--recursive       Recursive listing\n"
-"  --times              Display file times\n"
-"  --time-days          Display file times as days before now\n"
-"  --time-relative      Display file times as seconds before now\n"
-"  --time-t             Display file times as time_t's\n"
-"  --uids               Display UID, GID\n"
-"  -v|--verbose         Verbose messages\n"
-"  -V|--version         Display version and exit\n"
-"  -x                   Trace libguestfs API calls\n"
-"For more information, see the manpage %s(1).\n"
-msgstr ""
-
-#: cat/ls.c:354
-#, c-format
-msgid ""
-"used a flag which can only be combined with -lR mode\n"
-"For more information, read the virt-ls(1) man page."
-msgstr ""
-
-#: cat/tail.c:70
-#, c-format
-msgid ""
-"%s: follow (tail) files in a virtual machine\n"
-"Copyright (C) 2016 Red Hat Inc.\n"
-"Usage:\n"
-"  %s [--options] -d domname file [file ...]\n"
-"  %s [--options] -a disk.img [-a disk.img ...] file [file ...]\n"
-"Options:\n"
-"  -a|--add image       Add image\n"
-"  --blocksize[=512|4096]\n"
-"                       Set sector size of the disk for -a option\n"
-"  -c|--connect uri     Specify libvirt URI for -d option\n"
-"  -d|--domain guest    Add disks from libvirt guest\n"
-"  --echo-keys          Don't turn off echo for passphrases\n"
-"  -f|--follow          Ignored for compatibility with tail\n"
-"  --format[=raw|..]    Force disk format for -a option\n"
-"  --help               Display brief help\n"
-"  --key selector       Specify a LUKS key\n"
-"  --keys-from-stdin    Read passphrases from stdin\n"
-"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
-"                       Mount dev on mnt (if omitted, /)\n"
-"  -v|--verbose         Verbose messages\n"
-"  -V|--version         Display version and exit\n"
-"  -x                   Trace libguestfs API calls\n"
-"For more information, see the manpage %s(1).\n"
-msgstr ""
-
-#: cat/tail.c:220
-#, c-format
-msgid ""
-"%s: error: missing filenames on command line.\n"
-"Please specify at least one file to follow.\n"
-msgstr ""
-
-#: cat/tail.c:427
-#, c-format
-msgid "%s: error: none of the files were found in the disk image\n"
-msgstr ""
-
-#: cat/tail.c:432
-#, c-format
-msgid "%s: all files deleted, exiting\n"
 msgstr ""
 
 #: common/mltools/getopt-c.c:68
@@ -3735,6 +3538,11 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
+#: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:320 ls/ls.c:361
+#, c-format
+msgid "you cannot use -h and --csv options together."
+msgstr ""
+
 #: df/main.c:281
 #, c-format
 msgid "compiled without support for libvirt."
@@ -3886,6 +3694,59 @@ msgstr ""
 msgid "-e option given multiple times"
 msgstr ""
 
+#: filesystems/filesystems.c:95
+#, c-format
+msgid ""
+"%s: list filesystems, partitions, block devices, LVM in a VM\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --all                Display everything\n"
+"  --blkdevs|--block-devices\n"
+"                       Display block devices\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Output as Comma-Separated Values\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --extra              Display swap and data filesystems\n"
+"  --filesystems        Display mountable filesystems\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  -h|--human-readable  Human-readable sizes in --long output\n"
+"  --help               Display brief help\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -l|--long            Long output\n"
+"  --lvs|--logvols|--logical-volumes\n"
+"                       Display LVM logical volumes\n"
+"  --no-title           No title in --long output\n"
+"  --parts|--partitions Display partitions\n"
+"  --pvs|--physvols|--physical-volumes\n"
+"                       Display LVM physical volumes\n"
+"  --uuid|--uuids       Add UUIDs to --long output\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  --vgs|--volgroups|--volume-groups\n"
+"                       Display LVM volume groups\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: filesystems/filesystems.c:305 inspector/inspector.c:262 log/log.c:205
+#, c-format
+msgid ""
+"%s: error: extra argument ‘%s’ on command line.\n"
+"Make sure to specify the argument for --format like '--format=%s'.\n"
+msgstr ""
+
+#: filesystems/filesystems.c:498
+#, c-format
+msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
+msgstr ""
+
 #: format/format.c:68
 msgid "IMPORTANT NOTE: This program ERASES ALL DATA on disks."
 msgstr ""
@@ -4024,39 +3885,133 @@ msgstr ""
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
 msgstr ""
 
-#: inspector/inspector.c:725
+#: inspector/inspector.c:767
 #, c-format
 msgid "unable to parse XML from stdin"
 msgstr ""
 
-#: inspector/inspector.c:729
+#: inspector/inspector.c:771
 #, c-format
 msgid "unable to create new XPath context"
 msgstr ""
 
-#: inspector/inspector.c:733
+#: inspector/inspector.c:775
 #, c-format
 msgid "unable to evaluate XPath expression"
 msgstr ""
 
-#: inspector/inspector.c:744
+#: inspector/inspector.c:786
 #, c-format
 msgid "xmlSaveToFd failed"
 msgstr ""
 
-#: inspector/inspector.c:749
+#: inspector/inspector.c:791
 #, c-format
 msgid "xmlNewDoc failed"
 msgstr ""
 
-#: inspector/inspector.c:752
+#: inspector/inspector.c:794
 #, c-format
 msgid "xmlCopyNode failed"
 msgstr ""
 
-#: inspector/inspector.c:757
+#: inspector/inspector.c:799
 #, c-format
 msgid "xmlSaveDoc failed"
+msgstr ""
+
+#: log/log.c:72
+#, c-format
+msgid ""
+"%s: display log files in a virtual machine\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: log/log.c:273
+#, c-format
+msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
+msgstr ""
+
+#: log/log.c:381
+#, c-format
+msgid "%s: could not format journal entry timestamp\n"
+msgstr ""
+
+#: log/log.c:447
+#, c-format
+msgid ""
+"%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
+"in order to parse Windows Event Logs.  If you cannot install this, then\n"
+"use virt-copy-out(1) to copy the contents of /Windows/System32/winevt/Logs\n"
+"from this guest, and examine in a binary file viewer.\n"
+msgstr ""
+
+#: log/log.c:466
+#, c-format
+msgid "%s: Windows Event Log file (%s) not found\n"
+msgstr ""
+
+#: ls/ls.c:100
+#, c-format
+msgid ""
+"%s: list files in a virtual machine\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname dir [dir ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] dir [dir ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  --checksum[=...]     Display file checksums\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Comma-Separated Values output\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --extra-stats        Display extra stats\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  -h|--human-readable  Human-readable sizes in output\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -l|--long            Long listing\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                       Mount dev on mnt (if omitted, /)\n"
+"  -R|--recursive       Recursive listing\n"
+"  --times              Display file times\n"
+"  --time-days          Display file times as days before now\n"
+"  --time-relative      Display file times as seconds before now\n"
+"  --time-t             Display file times as time_t's\n"
+"  --uids               Display UID, GID\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: ls/ls.c:354
+#, c-format
+msgid ""
+"used a flag which can only be combined with -lR mode\n"
+"For more information, read the virt-ls(1) man page."
 msgstr ""
 
 #: make-fs/make-fs.c:85
@@ -4127,6 +4082,51 @@ msgstr ""
 #: make-fs/make-fs.c:868
 #, c-format
 msgid "%s: subprocess failed\n"
+msgstr ""
+
+#: tail/tail.c:70
+#, c-format
+msgid ""
+"%s: follow (tail) files in a virtual machine\n"
+"Copyright (C) 2016 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname file [file ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] file [file ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  -f|--follow          Ignored for compatibility with tail\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                       Mount dev on mnt (if omitted, /)\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: tail/tail.c:220
+#, c-format
+msgid ""
+"%s: error: missing filenames on command line.\n"
+"Please specify at least one file to follow.\n"
+msgstr ""
+
+#: tail/tail.c:427
+#, c-format
+msgid "%s: error: none of the files were found in the disk image\n"
+msgstr ""
+
+#: tail/tail.c:432
+#, c-format
+msgid "%s: all files deleted, exiting\n"
 msgstr ""
 
 #: win-reg/virt-win-reg.in:261
