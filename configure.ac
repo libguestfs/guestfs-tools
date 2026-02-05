@@ -157,10 +157,13 @@ AC_CONFIG_FILES([Makefile
                  drivers/Makefile
                  drivers/hwdata_config.ml
                  edit/Makefile
+                 filesystems/Makefile
                  format/Makefile
                  get-kernel/Makefile
                  gnulib/lib/Makefile
                  inspector/Makefile
+                 log/Makefile
+                 ls/Makefile
                  make-fs/Makefile
                  po-docs/Makefile
                  po-docs/ja/Makefile
@@ -169,6 +172,7 @@ AC_CONFIG_FILES([Makefile
                  resize/Makefile
                  sparsify/Makefile
                  sysprep/Makefile
+                 tail/Makefile
                  test-data/Makefile
                  test-data/binaries/Makefile
                  test-data/blank-disks/Makefile
