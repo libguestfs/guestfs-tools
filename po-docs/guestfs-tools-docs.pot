@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.55.4\n"
+"Project-Id-Version: guestfs-tools 1.55.5\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-02-05 12:50+0000\n"
+"POT-Creation-Date: 2026-02-05 13:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -600,7 +600,7 @@ msgstr ""
 
 #. type: =item
 #: align/virt-alignment-scan.pod:186 df/virt-df.pod:175
-#: filesystems/virt-filesystems.pod:258
+#: filesystems/virt-filesystems.pod:268
 msgid "B<--uuid>"
 msgstr ""
 
@@ -624,7 +624,7 @@ msgstr ""
 #: builder/virt-builder.pod:518 cat/virt-cat.pod:166
 #: customize/virt-customize.pod:215 df/virt-df.pod:185 diff/virt-diff.pod:198
 #: drivers/virt-drivers.pod:200 edit/virt-edit.pod:198
-#: filesystems/virt-filesystems.pod:264 format/virt-format.pod:155
+#: filesystems/virt-filesystems.pod:274 format/virt-format.pod:155
 #: get-kernel/virt-get-kernel.pod:149 inspector/virt-inspector.pod:140
 #: log/virt-log.pod:114 ls/virt-ls.pod:456 make-fs/virt-make-fs.pod:207
 #: resize/virt-resize.pod:622 sparsify/virt-sparsify.pod:308
@@ -637,7 +637,7 @@ msgstr ""
 #: builder/virt-builder.pod:520 cat/virt-cat.pod:168
 #: customize/virt-customize.pod:217 df/virt-df.pod:187 diff/virt-diff.pod:200
 #: drivers/virt-drivers.pod:202 edit/virt-edit.pod:200
-#: filesystems/virt-filesystems.pod:266 format/virt-format.pod:157
+#: filesystems/virt-filesystems.pod:276 format/virt-format.pod:157
 #: get-kernel/virt-get-kernel.pod:151 inspector/virt-inspector.pod:142
 #: log/virt-log.pod:116 ls/virt-ls.pod:458 make-fs/virt-make-fs.pod:209
 #: resize/virt-resize.pod:624 sparsify/virt-sparsify.pod:310
@@ -649,7 +649,7 @@ msgstr ""
 #: align/virt-alignment-scan.pod:199 cat/virt-cat.pod:170
 #: customize/virt-customize.pod:219 df/virt-df.pod:189 diff/virt-diff.pod:202
 #: drivers/virt-drivers.pod:204 edit/virt-edit.pod:202
-#: filesystems/virt-filesystems.pod:268 format/virt-format.pod:159
+#: filesystems/virt-filesystems.pod:278 format/virt-format.pod:159
 #: get-kernel/virt-get-kernel.pod:153 inspector/virt-inspector.pod:144
 #: log/virt-log.pod:118 ls/virt-ls.pod:460 sparsify/virt-sparsify.pod:312
 #: sysprep/virt-sysprep.pod:257 tail/virt-tail.pod:172
@@ -661,7 +661,7 @@ msgstr ""
 #: builder/virt-builder.pod:527 builder/virt-index-validate.pod:66
 #: cat/virt-cat.pod:172 customize/virt-customize.pod:221 df/virt-df.pod:191
 #: diff/virt-diff.pod:204 drivers/virt-drivers.pod:206 edit/virt-edit.pod:204
-#: filesystems/virt-filesystems.pod:270 format/virt-format.pod:161
+#: filesystems/virt-filesystems.pod:280 format/virt-format.pod:161
 #: get-kernel/virt-get-kernel.pod:155 inspector/virt-inspector.pod:146
 #: log/virt-log.pod:120 ls/virt-ls.pod:462 make-fs/virt-make-fs.pod:213
 #: resize/virt-resize.pod:628 sparsify/virt-sparsify.pod:314
@@ -674,7 +674,7 @@ msgstr ""
 #: builder/virt-builder.pod:529 builder/virt-index-validate.pod:68
 #: cat/virt-cat.pod:174 customize/virt-customize.pod:223 df/virt-df.pod:193
 #: diff/virt-diff.pod:206 drivers/virt-drivers.pod:208 edit/virt-edit.pod:206
-#: filesystems/virt-filesystems.pod:272 format/virt-format.pod:163
+#: filesystems/virt-filesystems.pod:282 format/virt-format.pod:163
 #: get-kernel/virt-get-kernel.pod:157 inspector/virt-inspector.pod:148
 #: log/virt-log.pod:122 ls/virt-ls.pod:464 make-fs/virt-make-fs.pod:215
 #: resize/virt-resize.pod:630 sparsify/virt-sparsify.pod:316
@@ -688,7 +688,7 @@ msgstr ""
 #: builder/virt-builder.pod:531 builder/virt-index-validate.pod:70
 #: cat/virt-cat.pod:176 customize/virt-customize.pod:225 df/virt-df.pod:195
 #: diff/virt-diff.pod:208 drivers/virt-drivers.pod:210 edit/virt-edit.pod:208
-#: filesystems/virt-filesystems.pod:274 format/virt-format.pod:165
+#: filesystems/virt-filesystems.pod:284 format/virt-format.pod:165
 #: get-kernel/virt-get-kernel.pod:159 inspector/virt-inspector.pod:150
 #: log/virt-log.pod:124 ls/virt-ls.pod:466 make-fs/virt-make-fs.pod:217
 #: resize/virt-resize.pod:632 sparsify/virt-sparsify.pod:318
@@ -702,7 +702,7 @@ msgstr ""
 #: builder/virt-builder.pod:539 cat/virt-cat.pod:178
 #: customize/virt-customize.pod:233 df/virt-df.pod:197 diff/virt-diff.pod:210
 #: drivers/virt-drivers.pod:218 edit/virt-edit.pod:210
-#: filesystems/virt-filesystems.pod:284 format/virt-format.pod:177
+#: filesystems/virt-filesystems.pod:294 format/virt-format.pod:177
 #: get-kernel/virt-get-kernel.pod:167 inspector/virt-inspector.pod:152
 #: log/virt-log.pod:126 ls/virt-ls.pod:468 make-fs/virt-make-fs.pod:219
 #: resize/virt-resize.pod:640 sparsify/virt-sparsify.pod:326
@@ -715,7 +715,7 @@ msgstr ""
 #: builder/virt-builder.pod:541 cat/virt-cat.pod:180
 #: customize/virt-customize.pod:235 df/virt-df.pod:199 diff/virt-diff.pod:212
 #: drivers/virt-drivers.pod:220 edit/virt-edit.pod:212
-#: filesystems/virt-filesystems.pod:286 format/virt-format.pod:179
+#: filesystems/virt-filesystems.pod:296 format/virt-format.pod:179
 #: get-kernel/virt-get-kernel.pod:169 inspector/virt-inspector.pod:154
 #: log/virt-log.pod:128 ls/virt-ls.pod:470 resize/virt-resize.pod:642
 #: sparsify/virt-sparsify.pod:328 sysprep/virt-sysprep.pod:273
@@ -994,7 +994,7 @@ msgstr ""
 #: builder/virt-builder.pod:1834 builder/virt-index-validate.pod:74
 #: cat/virt-cat.pod:271 customize/virt-customize.pod:259 df/virt-df.pod:253
 #: diff/virt-diff.pod:244 drivers/virt-drivers.pod:229 edit/virt-edit.pod:379
-#: filesystems/virt-filesystems.pod:380 format/virt-format.pod:183
+#: filesystems/virt-filesystems.pod:390 format/virt-format.pod:183
 #: get-kernel/virt-get-kernel.pod:196 inspector/virt-inspector.pod:489
 #: log/virt-log.pod:132 ls/virt-ls.pod:514 resize/virt-resize.pod:843
 #: sparsify/virt-sparsify.pod:451 sysprep/virt-sysprep.pod:569
@@ -1114,7 +1114,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:160
 #: docs/guestfs-tools-release-notes-1.52.pod:99
 #: docs/guestfs-tools-release-notes-1.54.pod:128 drivers/virt-drivers.pod:234
-#: edit/virt-edit.pod:384 filesystems/virt-filesystems.pod:385
+#: edit/virt-edit.pod:384 filesystems/virt-filesystems.pod:395
 #: format/virt-format.pod:187 get-kernel/virt-get-kernel.pod:201
 #: inspector/virt-inspector.pod:494 log/virt-log.pod:137 ls/virt-ls.pod:519
 #: make-fs/virt-make-fs.pod:225 resize/virt-resize.pod:848
@@ -1135,7 +1135,7 @@ msgstr ""
 #: builder/virt-builder.pod:1860 builder/virt-index-validate.pod:84
 #: cat/virt-cat.pod:287 df/virt-df.pod:267 diff/virt-diff.pod:259
 #: drivers/virt-drivers.pod:244 edit/virt-edit.pod:395
-#: filesystems/virt-filesystems.pod:397 format/virt-format.pod:197
+#: filesystems/virt-filesystems.pod:407 format/virt-format.pod:197
 #: get-kernel/virt-get-kernel.pod:210 log/virt-log.pod:148 ls/virt-ls.pod:529
 #: make-fs/virt-make-fs.pod:239 resize/virt-resize.pod:873
 #: sparsify/virt-sparsify.pod:475 tail/virt-tail.pod:248
@@ -1148,7 +1148,7 @@ msgstr ""
 #: builder/virt-index-validate.pod:86 cat/virt-cat.pod:289
 #: customize/virt-customize.pod:318 df/virt-df.pod:269 diff/virt-diff.pod:261
 #: drivers/virt-drivers.pod:246 edit/virt-edit.pod:397
-#: filesystems/virt-filesystems.pod:399 format/virt-format.pod:199
+#: filesystems/virt-filesystems.pod:409 format/virt-format.pod:199
 #: get-kernel/virt-get-kernel.pod:212 inspector/virt-inspector.pod:510
 #: log/virt-log.pod:150 ls/virt-ls.pod:531 make-fs/virt-make-fs.pod:241
 #: resize/virt-resize.pod:875 sparsify/virt-sparsify.pod:477
@@ -1165,7 +1165,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:180
 #: docs/guestfs-tools-release-notes-1.52.pod:121
 #: docs/guestfs-tools-release-notes-1.54.pod:152 drivers/virt-drivers.pod:248
-#: edit/virt-edit.pod:399 filesystems/virt-filesystems.pod:401
+#: edit/virt-edit.pod:399 filesystems/virt-filesystems.pod:411
 #: format/virt-format.pod:201 get-kernel/virt-get-kernel.pod:214
 #: inspector/virt-inspector.pod:518 log/virt-log.pod:152 ls/virt-ls.pod:533
 #: make-fs/virt-make-fs.pod:243 resize/virt-resize.pod:877
@@ -1588,7 +1588,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:204 builder/virt-builder.pod:1836
 #: cat/virt-cat.pod:273 df/virt-df.pod:255 diff/virt-diff.pod:246
 #: drivers/virt-drivers.pod:231 edit/virt-edit.pod:381
-#: filesystems/virt-filesystems.pod:382 get-kernel/virt-get-kernel.pod:198
+#: filesystems/virt-filesystems.pod:392 get-kernel/virt-get-kernel.pod:198
 #: inspector/virt-inspector.pod:491 log/virt-log.pod:134 ls/virt-ls.pod:516
 #: resize/virt-resize.pod:845 tail/virt-tail.pod:234
 msgid "This program returns 0 if successful, or non-zero if there was an error."
@@ -5606,7 +5606,7 @@ msgstr ""
 #. type: textblock
 #: cat/virt-cat.pod:128 customize/virt-customize.pod:143 diff/virt-diff.pod:173
 #: drivers/virt-drivers.pod:192 edit/virt-edit.pod:160
-#: filesystems/virt-filesystems.pod:206 get-kernel/virt-get-kernel.pod:102
+#: filesystems/virt-filesystems.pod:214 get-kernel/virt-get-kernel.pod:102
 #: inspector/virt-inspector.pod:124 log/virt-log.pod:112 ls/virt-ls.pod:359
 #: sparsify/virt-sparsify.pod:235 sysprep/virt-sysprep.pod:189
 #: tail/virt-tail.pod:130
@@ -5875,7 +5875,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: cat/virt-cat.pod:293 filesystems/virt-filesystems.pod:403
+#: cat/virt-cat.pod:293 filesystems/virt-filesystems.pod:413
 #: inspector/virt-inspector.pod:520 log/virt-log.pod:154
 #: make-fs/virt-make-fs.pod:245 resize/virt-resize.pod:879
 msgid "Copyright (C) 2010-2025 Red Hat Inc."
@@ -7659,13 +7659,13 @@ msgstr ""
 
 #. type: =item
 #: df/virt-df.pod:145 diff/virt-diff.pod:165
-#: filesystems/virt-filesystems.pod:200 ls/virt-ls.pod:348
+#: filesystems/virt-filesystems.pod:208 ls/virt-ls.pod:348
 msgid "B<-h>"
 msgstr ""
 
 #. type: =item
 #: df/virt-df.pod:147 diff/virt-diff.pod:167
-#: filesystems/virt-filesystems.pod:202 ls/virt-ls.pod:350
+#: filesystems/virt-filesystems.pod:210 ls/virt-ls.pod:350
 msgid "B<--human-readable>"
 msgstr ""
 
@@ -7769,13 +7769,13 @@ msgstr ""
 
 #. type: =head1
 #: df/virt-df.pod:229 diff/virt-diff.pod:220
-#: filesystems/virt-filesystems.pod:356 ls/virt-ls.pod:490
+#: filesystems/virt-filesystems.pod:366 ls/virt-ls.pod:490
 msgid "NOTE ABOUT CSV FORMAT"
 msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:231 diff/virt-diff.pod:222
-#: filesystems/virt-filesystems.pod:358 ls/virt-ls.pod:492
+#: filesystems/virt-filesystems.pod:368 ls/virt-ls.pod:492
 msgid ""
 "Comma-separated values (CSV) is a deceptive format.  It I<seems> like it "
 "should be easy to parse, but it is definitely not easy to parse."
@@ -7783,7 +7783,7 @@ msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:234 diff/virt-diff.pod:225
-#: filesystems/virt-filesystems.pod:361 ls/virt-ls.pod:495
+#: filesystems/virt-filesystems.pod:371 ls/virt-ls.pod:495
 msgid ""
 "Myth: Just split fields at commas.  Reality: This does I<not> work "
 "reliably.  This example has two columns:"
@@ -7791,7 +7791,7 @@ msgstr ""
 
 #. type: verbatim
 #: df/virt-df.pod:237 diff/virt-diff.pod:228
-#: filesystems/virt-filesystems.pod:364 ls/virt-ls.pod:498
+#: filesystems/virt-filesystems.pod:374 ls/virt-ls.pod:498
 #, no-wrap
 msgid ""
 " \"foo,bar\",baz\n"
@@ -7800,7 +7800,7 @@ msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:239 diff/virt-diff.pod:230
-#: filesystems/virt-filesystems.pod:366 ls/virt-ls.pod:500
+#: filesystems/virt-filesystems.pod:376 ls/virt-ls.pod:500
 msgid ""
 "Myth: Read the file one line at a time.  Reality: This does I<not> work "
 "reliably.  This example has one row:"
@@ -7808,7 +7808,7 @@ msgstr ""
 
 #. type: verbatim
 #: df/virt-df.pod:242 diff/virt-diff.pod:233
-#: filesystems/virt-filesystems.pod:369 ls/virt-ls.pod:503
+#: filesystems/virt-filesystems.pod:379 ls/virt-ls.pod:503
 #, no-wrap
 msgid ""
 " \"foo\n"
@@ -7818,7 +7818,7 @@ msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:245 diff/virt-diff.pod:236
-#: filesystems/virt-filesystems.pod:372 ls/virt-ls.pod:506
+#: filesystems/virt-filesystems.pod:382 ls/virt-ls.pod:506
 msgid ""
 "For shell scripts, use C<csvtool> (L<https://github.com/Chris00/ocaml-csv> "
 "also packaged in major Linux distributions)."
@@ -7826,7 +7826,7 @@ msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:248 diff/virt-diff.pod:239
-#: filesystems/virt-filesystems.pod:375 ls/virt-ls.pod:509
+#: filesystems/virt-filesystems.pod:385 ls/virt-ls.pod:509
 msgid ""
 "For other languages, use a CSV processing library (eg. C<Text::CSV> for Perl "
 "or Python’s built-in csv library)."
@@ -7834,7 +7834,7 @@ msgstr ""
 
 #. type: textblock
 #: df/virt-df.pod:251 diff/virt-diff.pod:242
-#: filesystems/virt-filesystems.pod:378 ls/virt-ls.pod:512
+#: filesystems/virt-filesystems.pod:388 ls/virt-ls.pod:512
 msgid "Most spreadsheets and databases can import CSV directly."
 msgstr ""
 
@@ -10142,33 +10142,51 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: =item
+#: filesystems/virt-filesystems.pod:200
+msgid "B<--fs-version>"
+msgstr ""
+
+#. type: =item
+#: filesystems/virt-filesystems.pod:202
+msgid "B<--fs-versions>"
+msgstr ""
+
 #. type: textblock
 #: filesystems/virt-filesystems.pod:204
-msgid "In I<--long> mode, display sizes in human-readable format."
-msgstr ""
-
-#. type: =item
-#: filesystems/virt-filesystems.pod:208 ls/virt-ls.pod:397
-msgid "B<-l>"
-msgstr ""
-
-#. type: =item
-#: filesystems/virt-filesystems.pod:210 ls/virt-ls.pod:399
-msgid "B<--long>"
+msgid ""
+"In I<--long> mode, display the filesystem version.  Currently this only has "
+"any effect for XFS, displaying either C<4> (for XFS v4) or C<5> (for XFS "
+"v5).  XFS v4 support will be removed from Linux in 2030."
 msgstr ""
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:212
+msgid "In I<--long> mode, display sizes in human-readable format."
+msgstr ""
+
+#. type: =item
+#: filesystems/virt-filesystems.pod:216 ls/virt-ls.pod:397
+msgid "B<-l>"
+msgstr ""
+
+#. type: =item
+#: filesystems/virt-filesystems.pod:218 ls/virt-ls.pod:399
+msgid "B<--long>"
+msgstr ""
+
+#. type: textblock
+#: filesystems/virt-filesystems.pod:220
 msgid "Display extra columns of data (\"long format\")."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:214
+#: filesystems/virt-filesystems.pod:222
 msgid "A title row is added unless you also specify I<--no-title>."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:216
+#: filesystems/virt-filesystems.pod:224
 msgid ""
 "The extra columns displayed depend on what output you select, and the "
 "ordering of columns may change in future versions.  Use the title row, "
@@ -10177,51 +10195,56 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:221
+#: filesystems/virt-filesystems.pod:229
 msgid ""
 "Use I<-h> if you want sizes to be displayed in human-readable format.  The "
 "default is to show raw numbers of I<bytes>."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:224
-msgid "Use I<--uuid> to display UUIDs too."
+#: filesystems/virt-filesystems.pod:232
+msgid "Use I<--fs-version> to display filesystem versions."
+msgstr ""
+
+#. type: textblock
+#: filesystems/virt-filesystems.pod:234
+msgid "Use I<--uuid> to display UUIDs."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:226
+#: filesystems/virt-filesystems.pod:236
 msgid "B<--lvs>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:228
+#: filesystems/virt-filesystems.pod:238
 msgid "B<--logvols>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:230
+#: filesystems/virt-filesystems.pod:240
 msgid "B<--logical-volumes>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:232
+#: filesystems/virt-filesystems.pod:242
 msgid ""
 "Display LVM logical volumes.  In this mode, these are displayed irrespective "
 "of whether the LVs contain filesystems."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:235
+#: filesystems/virt-filesystems.pod:245
 msgid "B<--no-title>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:237
+#: filesystems/virt-filesystems.pod:247
 msgid "In I<--long> mode, don’t add a title row."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:239
+#: filesystems/virt-filesystems.pod:249
 msgid ""
 "Note that the order of the columns is not fixed, and may change in future "
 "versions of virt-filesystems, so using this option may give you unexpected "
@@ -10229,96 +10252,96 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:243
+#: filesystems/virt-filesystems.pod:253
 msgid "B<--parts>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:245
+#: filesystems/virt-filesystems.pod:255
 msgid "B<--partitions>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:247
+#: filesystems/virt-filesystems.pod:257
 msgid ""
 "Display partitions.  In this mode, these are displayed irrespective of "
 "whether the partitions contain filesystems."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:250
+#: filesystems/virt-filesystems.pod:260
 msgid "B<--pvs>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:252
+#: filesystems/virt-filesystems.pod:262
 msgid "B<--physvols>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:254
+#: filesystems/virt-filesystems.pod:264
 msgid "B<--physical-volumes>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:256
+#: filesystems/virt-filesystems.pod:266
 msgid "Display LVM physical volumes."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:260
+#: filesystems/virt-filesystems.pod:270
 msgid "B<--uuids>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:262
+#: filesystems/virt-filesystems.pod:272
 msgid "In I<--long> mode, display UUIDs as well."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:276
+#: filesystems/virt-filesystems.pod:286
 msgid "B<--vgs>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:278
+#: filesystems/virt-filesystems.pod:288
 msgid "B<--volgroups>"
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:280
+#: filesystems/virt-filesystems.pod:290
 msgid "B<--volume-groups>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:282
+#: filesystems/virt-filesystems.pod:292
 msgid "Display LVM volume groups."
 msgstr ""
 
 #. type: =head1
-#: filesystems/virt-filesystems.pod:290
+#: filesystems/virt-filesystems.pod:300
 msgid "COLUMNS"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:292
+#: filesystems/virt-filesystems.pod:302
 msgid ""
 "Note that columns in the output are subject to reordering and change in "
 "future versions of this tool."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:297
+#: filesystems/virt-filesystems.pod:307
 msgid "B<Name>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:299
+#: filesystems/virt-filesystems.pod:309
 msgid "The filesystem, partition, block device or LVM name."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:301
+#: filesystems/virt-filesystems.pod:311
 msgid ""
 "For device and partition names these are displayed as canonical libguestfs "
 "names, so that for example F</dev/sda2> is the second partition on the first "
@@ -10326,53 +10349,53 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:305
+#: filesystems/virt-filesystems.pod:315
 msgid ""
 "If the I<--long> option is B<not> specified, then only the name column is "
 "shown in the output."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:308
+#: filesystems/virt-filesystems.pod:318
 msgid "B<Type>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:310
+#: filesystems/virt-filesystems.pod:320
 msgid "The object type, for example C<filesystem>, C<lv>, C<device> etc."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:312
+#: filesystems/virt-filesystems.pod:322
 msgid "B<VFS>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:314
+#: filesystems/virt-filesystems.pod:324
 msgid ""
 "If there is a filesystem, then this column displays the filesystem type if "
 "one could be detected, eg. C<ext4>."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:317
+#: filesystems/virt-filesystems.pod:327
 msgid "B<Label>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:319
+#: filesystems/virt-filesystems.pod:329
 msgid ""
 "If the object has a label (used for identifying and mounting filesystems) "
 "then this column contains the label."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:322
+#: filesystems/virt-filesystems.pod:332
 msgid "B<MBR>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:324
+#: filesystems/virt-filesystems.pod:334
 msgid ""
 "The partition type byte, displayed as a two digit hexadecimal number.  A "
 "comprehensive list of partition types can be found here: "
@@ -10380,34 +10403,34 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:328
+#: filesystems/virt-filesystems.pod:338
 msgid "This is only applicable for DOS (MBR) partitions."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:330
+#: filesystems/virt-filesystems.pod:340
 msgid "B<Size>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:332
+#: filesystems/virt-filesystems.pod:342
 msgid ""
 "The size of the object in bytes.  If the I<--human> option is used then the "
 "size is displayed in a human-readable form."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:335
+#: filesystems/virt-filesystems.pod:345
 msgid "B<Parent>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:337
+#: filesystems/virt-filesystems.pod:347
 msgid "The parent column records the parent relationship between objects."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:339
+#: filesystems/virt-filesystems.pod:349
 msgid ""
 "For example, if the object is a partition, then this column contains the "
 "name of the containing device.  If the object is a logical volume, then this "
@@ -10415,31 +10438,31 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:343
+#: filesystems/virt-filesystems.pod:353
 msgid ""
 "If there is more than one parent, then this column is (internal to the "
 "column) a comma-separated list, eg. C</dev/sda,/dev/sdb>."
 msgstr ""
 
 #. type: =item
-#: filesystems/virt-filesystems.pod:346
+#: filesystems/virt-filesystems.pod:356
 msgid "B<UUID>"
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:348
+#: filesystems/virt-filesystems.pod:358
 msgid ""
 "If the object has a UUID (used for identifying and mounting filesystems and "
 "block devices) then this column contains the UUID as a string."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:352
+#: filesystems/virt-filesystems.pod:362
 msgid "The UUID is only displayed if the I<--uuid> option is given."
 msgstr ""
 
 #. type: textblock
-#: filesystems/virt-filesystems.pod:387
+#: filesystems/virt-filesystems.pod:397
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-df(1)>, "
 "L<virt-drivers(1)>, L<virt-list-filesystems(1)>, L<virt-list-partitions(1)>, "

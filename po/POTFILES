@@ -50,6 +50,7 @@ df/output.c
 diff/diff.c
 edit/edit.c
 filesystems/filesystems.c
+filesystems/utils.c
 format/format.c
 inspector/inspector.c
 log/log.c

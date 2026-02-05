@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.55.4\n"
+"Project-Id-Version: guestfs-tools 1.55.5\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
@@ -724,6 +724,13 @@ msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the ssh files removed."
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:42
+msgid ""
+"Currently this only looks in C</root> and C</home/*> for\n"
+"home directories, so users with home directories in other\n"
+"locations won't have the zsh history removed."
 msgstr ""
 
 #: sysprep/sysprep_operation_customize.ml:43
@@ -1503,6 +1510,16 @@ msgstr ""
 
 #: sysprep/sysprep_operation_yum_uuid.ml:34
 msgid "Remove the yum UUID"
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:38
+msgid "Remove the zsh history in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:39
+msgid ""
+"Remove the zsh history of user \"root\" and any other users\n"
+"who have a C<.zsh_history> file in their home directory."
 msgstr ""
 
 #: sysprep/sysprep_operation_udev_persistent_net.ml:35
@@ -3140,7 +3157,7 @@ msgid "‘xz’ command failed"
 msgstr ""
 
 #: align/scan.c:80 cat/cat.c:59 df/main.c:72 diff/diff.c:105 edit/edit.c:67
-#: filesystems/filesystems.c:92 inspector/inspector.c:84 log/log.c:69
+#: filesystems/filesystems.c:94 inspector/inspector.c:85 log/log.c:69
 #: ls/ls.c:97 make-fs/make-fs.c:82 tail/tail.c:67
 #, c-format
 msgid "Try ‘%s --help’ for more information.\n"
@@ -3172,8 +3189,8 @@ msgid ""
 msgstr ""
 
 #: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157 df/main.c:169
-#: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:252
-#: format/format.c:192 inspector/inspector.c:187 log/log.c:160 ls/ls.c:255
+#: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:262
+#: format/format.c:192 inspector/inspector.c:188 log/log.c:160 ls/ls.c:255
 #: make-fs/make-fs.c:157 tail/tail.c:166
 #, c-format
 msgid "unknown long option: %s (%d)"
@@ -3272,8 +3289,8 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:349
-#: inspector/inspector.c:287 log/log.c:217 ls/ls.c:369 tail/tail.c:231
+#: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:361
+#: inspector/inspector.c:288 log/log.c:217 ls/ls.c:369 tail/tail.c:231
 #, c-format
 msgid "%s: error: you must specify at least one -a or -d option.\n"
 msgstr ""
@@ -3538,7 +3555,7 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:320 ls/ls.c:361
+#: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:330 ls/ls.c:361
 #, c-format
 msgid "you cannot use -h and --csv options together."
 msgstr ""
@@ -3694,7 +3711,7 @@ msgstr ""
 msgid "-e option given multiple times"
 msgstr ""
 
-#: filesystems/filesystems.c:95
+#: filesystems/filesystems.c:97
 #, c-format
 msgid ""
 "%s: list filesystems, partitions, block devices, LVM in a VM\n"
@@ -3716,6 +3733,8 @@ msgid ""
 "  --extra              Display swap and data filesystems\n"
 "  --filesystems        Display mountable filesystems\n"
 "  --format[=raw|..]    Force disk format for -a option\n"
+"  --fs-version|--fs-versions\n"
+"                       Add filesystem version to --long output\n"
 "  -h|--human-readable  Human-readable sizes in --long output\n"
 "  --help               Display brief help\n"
 "  --keys-from-stdin    Read passphrases from stdin\n"
@@ -3735,14 +3754,14 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: filesystems/filesystems.c:305 inspector/inspector.c:262 log/log.c:205
+#: filesystems/filesystems.c:315 inspector/inspector.c:263 log/log.c:205
 #, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format like '--format=%s'.\n"
 msgstr ""
 
-#: filesystems/filesystems.c:498
+#: filesystems/filesystems.c:520
 #, c-format
 msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
 msgstr ""
@@ -3825,7 +3844,7 @@ msgstr ""
 msgid "cannot parse --lvm option (%s)"
 msgstr ""
 
-#: inspector/inspector.c:87
+#: inspector/inspector.c:88
 #, c-format
 msgid ""
 "%s: display information about a virtual machine\n"
@@ -3853,12 +3872,12 @@ msgid ""
 "For more information, see the manpage %s(1).\n"
 msgstr ""
 
-#: inspector/inspector.c:278
+#: inspector/inspector.c:279
 #, c-format
 msgid "cannot use --xpath together with other options."
 msgstr ""
 
-#: inspector/inspector.c:318
+#: inspector/inspector.c:319
 #, c-format
 msgid ""
 "no operating system could be detected inside this disk image.\n"
@@ -3875,47 +3894,47 @@ msgid ""
 "information about the disk image as possible.\n"
 msgstr ""
 
-#: inspector/inspector.c:334
+#: inspector/inspector.c:335
 #, c-format
 msgid "xmlOutputBufferCreateFd: failed to open stdout"
 msgstr ""
 
-#: inspector/inspector.c:340
+#: inspector/inspector.c:341
 #, c-format
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
 msgstr ""
 
-#: inspector/inspector.c:767
+#: inspector/inspector.c:732
 #, c-format
 msgid "unable to parse XML from stdin"
 msgstr ""
 
-#: inspector/inspector.c:771
+#: inspector/inspector.c:736
 #, c-format
 msgid "unable to create new XPath context"
 msgstr ""
 
-#: inspector/inspector.c:775
+#: inspector/inspector.c:740
 #, c-format
 msgid "unable to evaluate XPath expression"
 msgstr ""
 
-#: inspector/inspector.c:786
+#: inspector/inspector.c:751
 #, c-format
 msgid "xmlSaveToFd failed"
 msgstr ""
 
-#: inspector/inspector.c:791
+#: inspector/inspector.c:756
 #, c-format
 msgid "xmlNewDoc failed"
 msgstr ""
 
-#: inspector/inspector.c:794
+#: inspector/inspector.c:759
 #, c-format
 msgid "xmlCopyNode failed"
 msgstr ""
 
-#: inspector/inspector.c:799
+#: inspector/inspector.c:764
 #, c-format
 msgid "xmlSaveDoc failed"
 msgstr ""
