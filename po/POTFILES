@@ -7,10 +7,6 @@ builder/index-validate.c
 builder/pxzcat-c.c
 builder/setlocale-c.c
 cat/cat.c
-cat/filesystems.c
-cat/log.c
-cat/ls.c
-cat/tail.c
 common/edit/file-edit.c
 common/mlcustomize/crypt-c.c
 common/mlcustomize/perl_edit-c.c
@@ -53,6 +49,10 @@ df/main.c
 df/output.c
 diff/diff.c
 edit/edit.c
+filesystems/filesystems.c
 format/format.c
 inspector/inspector.c
+log/log.c
+ls/ls.c
 make-fs/make-fs.c
+tail/tail.c

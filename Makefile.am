@@ -51,7 +51,8 @@ SUBDIRS += test-data
 SUBDIRS += tests
 
 # virt-tools in C.
-SUBDIRS += align cat diff df edit format inspector make-fs
+SUBDIRS += align cat diff df edit filesystems format inspector
+SUBDIRS += log ls make-fs tail
 
 if HAVE_OCAML
 # OCaml tools.  Note 'common/ml*' and 'customize' contain shared code

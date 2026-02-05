@@ -22,5 +22,5 @@ set -x
 
 skip_if_skipped
 
-$top_srcdir/podcheck.pl "$srcdir/virt-cat.pod" virt-cat \
+$top_srcdir/podcheck.pl "$srcdir/virt-log.pod" virt-log \
                         --path $top_srcdir/common/options

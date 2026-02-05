@@ -1,4 +1,4 @@
-# libguestfs virt-cat
+# libguestfs virt-filesystems
 # Copyright (C) 2010-2026 Red Hat Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -19,15 +19,15 @@ include $(top_srcdir)/subdir-rules.mk
 
 EXTRA_DIST = \
 	test-docs.sh \
-	test-virt-cat.sh \
-	virt-cat.pod \
+	test-virt-filesystems.sh \
+	virt-filesystems.pod \
 	$(NULL)
 
-bin_PROGRAMS = virt-cat
+bin_PROGRAMS = virt-filesystems
 
-virt_cat_SOURCES = cat.c
+virt_filesystems_SOURCES = filesystems.c
 
-virt_cat_CPPFLAGS = \
+virt_filesystems_CPPFLAGS = \
 	-DGUESTFS_NO_DEPRECATED=1 \
 	-DLOCALEBASEDIR=\""$(datadir)/locale"\" \
 	-I$(top_srcdir)/common/utils -I$(top_builddir)/common/utils \
@@ -38,12 +38,12 @@ virt_cat_CPPFLAGS = \
 	-I$(top_srcdir)/common/windows -I$(top_builddir)/common/windows \
 	-I$(srcdir)/../gnulib/lib -I../gnulib/lib
 
-virt_cat_CFLAGS = \
+virt_filesystems_CFLAGS = \
 	$(WARN_CFLAGS) $(WERROR_CFLAGS) \
 	$(LIBXML2_CFLAGS) \
 	$(LIBGUESTFS_CFLAGS)
 
-virt_cat_LDADD = \
+virt_filesystems_LDADD = \
 	$(top_builddir)/common/options/liboptions.la \
 	$(top_builddir)/common/windows/libwindows.la \
 	$(top_builddir)/common/structs/libstructs.la \
@@ -55,30 +55,34 @@ virt_cat_LDADD = \
 	../gnulib/lib/libgnu.la
 
 # Manual pages and HTML files for the website.
-man_MANS = virt-cat.1
+man_MANS = virt-filesystems.1
 
-noinst_DATA = $(top_builddir)/website/virt-cat.1.html
+noinst_DATA = $(top_builddir)/website/virt-filesystems.1.html
 
-virt-cat.1 $(top_builddir)/website/virt-cat.1.html: stamp-virt-cat.pod
+virt-filesystems.1 $(top_builddir)/website/virt-filesystems.1.html: stamp-virt-filesystems.pod
 
-stamp-virt-cat.pod: virt-cat.pod
+stamp-virt-filesystems.pod: virt-filesystems.pod
 	$(PODWRAPPER) \
-	  --man virt-cat.1 \
-	  --html $(top_builddir)/website/virt-cat.1.html \
+	  --man virt-filesystems.1 \
+	  --html $(top_builddir)/website/virt-filesystems.1.html \
 	  --path $(top_srcdir)/common/options \
 	  --license GPLv2+ \
 	  --warning safe \
 	  $<
 	touch $@
-
 # Tests.
 
 TESTS_ENVIRONMENT = $(top_builddir)/run --test
 
 TESTS = \
 	test-docs.sh \
-	test-virt-cat.sh \
+	test-virt-filesystems.sh \
 	$(NULL)
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check
+
+check-valgrind-local-guests:
+	for g in $(GUESTS); do \
+	  $(top_builddir)/run --test @VG@ virt-filesystems -c "$(libvirt_ro_uri)" -d "$$g" --all --long -h --uuid || exit $$?; \
+	done

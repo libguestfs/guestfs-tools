@@ -22,5 +22,6 @@ set -x
 
 skip_if_skipped
 
-$top_srcdir/podcheck.pl "$srcdir/virt-cat.pod" virt-cat \
-                        --path $top_srcdir/common/options
+$top_srcdir/podcheck.pl "$srcdir/virt-ls.pod" virt-ls \
+                        --path $top_srcdir/common/options \
+                        --ignore=--checksums,--extra-stat,--time,--uid
