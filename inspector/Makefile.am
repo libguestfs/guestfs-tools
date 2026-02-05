@@ -48,7 +48,10 @@ dist_doc_DATA = \
 bin_PROGRAMS = virt-inspector
 
 virt_inspector_SOURCES = \
-	inspector.c
+	../filesystems/utils.c \
+	../filesystems/utils.h \
+	inspector.c \
+	$(NULL)
 
 virt_inspector_CPPFLAGS = \
 	-DGUESTFS_NO_DEPRECATED=1 \
@@ -56,6 +59,7 @@ virt_inspector_CPPFLAGS = \
 	-I$(top_srcdir)/common/utils -I$(top_builddir)/common/utils \
 	-I$(top_srcdir)/common/structs -I$(top_builddir)/common/structs \
 	-I$(top_srcdir)/lib -I$(top_builddir)/lib \
+	-I$(top_srcdir)/filesystems -I$(top_builddir)/filesystems \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/common/options -I$(top_builddir)/common/options \
 	-I$(top_srcdir)/fish \
