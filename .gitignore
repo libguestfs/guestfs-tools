@@ -18,6 +18,7 @@
 stamp-*.pod
 
 .deps
+.dirstamp
 .libs
 Makefile
 Makefile.in

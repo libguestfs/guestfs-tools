@@ -25,7 +25,11 @@ EXTRA_DIST = \
 
 bin_PROGRAMS = virt-filesystems
 
-virt_filesystems_SOURCES = filesystems.c
+virt_filesystems_SOURCES = \
+	filesystems.c \
+	utils.c \
+	utils.h \
+	$(NULL)
 
 virt_filesystems_CPPFLAGS = \
 	-DGUESTFS_NO_DEPRECATED=1 \

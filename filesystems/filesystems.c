@@ -39,6 +39,7 @@
 #include "structs-cleanups.h"
 #include "options.h"
 #include "display-options.h"
+#include "utils.h"
 
 /* These globals are shared with options.c. */
 guestfs_h *g;
@@ -75,7 +76,8 @@ static int output = 0;
 #define COLUMN_SIZE              32 /* bytes, or human-readable if -h */
 #define COLUMN_PARENTS           64
 #define COLUMN_UUID             128 /* if --uuid */
-#define NR_COLUMNS                8
+#define COLUMN_FS_VERSION       256 /* if --fs-version */
+#define NR_COLUMNS                9
 static int columns;
 
 static void do_output_title (void);
@@ -111,6 +113,8 @@ usage (int status)
               "  --extra              Display swap and data filesystems\n"
               "  --filesystems        Display mountable filesystems\n"
               "  --format[=raw|..]    Force disk format for -a option\n"
+              "  --fs-version|--fs-versions\n"
+              "                       Add filesystem version to --long output\n"
               "  -h|--human-readable  Human-readable sizes in --long output\n"
               "  --help               Display brief help\n"
               "  --keys-from-stdin    Read passphrases from stdin\n"
@@ -157,6 +161,8 @@ main (int argc, char *argv[])
     { "extra", 0, 0, 0 },
     { "filesystems", 0, 0, 0 },
     { "format", 2, 0, 0 },
+    { "fs-version", 0, 0, 0 },
+    { "fs-versions", 0, 0, 0 },
     { "help", 0, 0, HELP_OPTION },
     { "human-readable", 0, 0, 'h' },
     { "keys-from-stdin", 0, 0, 0 },
@@ -191,6 +197,7 @@ main (int argc, char *argv[])
   int no_title = 0;             /* --no-title */
   int long_mode = 0;            /* --long|-l */
   int uuid = 0;                 /* --uuid */
+  int fs_version = 0;           /* --fs-version */
   int title;
 
   g = guestfs_create ();
@@ -227,6 +234,9 @@ main (int argc, char *argv[])
         output |= OUTPUT_FILESYSTEMS_EXTRA;
       } else if (STREQ (long_options[option_index].name, "filesystems")) {
         output |= OUTPUT_FILESYSTEMS;
+      } else if (STREQ (long_options[option_index].name, "fs-version") ||
+                 STREQ (long_options[option_index].name, "fs-versions")) {
+        fs_version = 1;
       } else if (STREQ (long_options[option_index].name, "logical-volumes") ||
                  STREQ (long_options[option_index].name, "logvols") ||
                  STREQ (long_options[option_index].name, "lvs")) {
@@ -337,6 +347,8 @@ main (int argc, char *argv[])
       columns |= COLUMN_MBR;
     if (uuid)
       columns |= COLUMN_UUID;
+    if (fs_version)
+      columns |= COLUMN_FS_VERSION;
   }
 
   /* Display title by default only in long mode. */
@@ -379,7 +391,7 @@ static void do_output_pvs (void);
 static void do_output_partitions (void);
 static void do_output_blockdevs (void);
 
-static void write_row (const char *name, const char *type, const char *vfs_type, const char *vfs_label, int mbr_id, int64_t size, char **parents, const char *uuid);
+static void write_row (const char *name, const char *type, const char *vfs_type, const char *vfs_label, int mbr_id, int64_t size, char **parents, const char *uuid, const char *fs_version);
 static void write_row_strings (char **strings, size_t len);
 
 static char **no_parents (void);
@@ -410,6 +422,8 @@ do_output_title (void)
     headings[len++] = "Parent";
   if ((columns & COLUMN_UUID))
     headings[len++] = "UUID";
+  if ((columns & COLUMN_FS_VERSION))
+    headings[len++] = "FSVersion";
   assert (len <= NR_COLUMNS);
 
   write_row_strings ((char **) headings, len);
@@ -450,13 +464,15 @@ do_output_filesystems (void)
     exit (EXIT_FAILURE);
 
   for (i = 0; fses[i] != NULL; i += 2) {
+    const char *fs_type = fses[i+1];
     CLEANUP_FREE char *dev = NULL, *vfs_label = NULL, *vfs_uuid = NULL;
+    CLEANUP_FREE char *fs_version = NULL;
     CLEANUP_FREE_STRING_LIST char **parents = NULL;
     int64_t size = -1;
 
     /* Skip swap and unknown, unless --extra flag was given. */
     if (!(output & OUTPUT_FILESYSTEMS_EXTRA) &&
-        (STREQ (fses[i+1], "swap") || STREQ (fses[i+1], "unknown")))
+        (STREQ (fs_type, "swap") || STREQ (fs_type, "unknown")))
       continue;
 
     dev = guestfs_canonical_device_name (g, fses[i]);
@@ -485,6 +501,12 @@ do_output_filesystems (void)
         if (!vfs_uuid)
           error (EXIT_FAILURE, errno, "strdup");
       }
+    }
+    if ((columns & COLUMN_FS_VERSION)) {
+      const char *version = get_filesystem_version (g, fses[i], fs_type);
+      fs_version = strdup (version ? version : "");
+      if (fs_version == NULL)
+        error (EXIT_FAILURE, errno, "strdup");
     }
     if ((columns & COLUMN_SIZE)) {
       CLEANUP_FREE char *device = guestfs_mountable_device (g, fses[i]);
@@ -533,7 +555,7 @@ do_output_filesystems (void)
       parents = no_parents ();
 
     write_row (dev, "filesystem",
-               fses[i+1], vfs_label, -1, size, parents, vfs_uuid);
+               fs_type, vfs_label, -1, size, parents, vfs_uuid, fs_version);
   }
 }
 
@@ -573,7 +595,7 @@ do_output_lvs (void)
     }
 
     write_row (lvs[i], "lv",
-               NULL, NULL, -1, size, (char **) parents, uuid);
+               NULL, NULL, -1, size, (char **) parents, uuid, NULL);
   }
 }
 
@@ -601,7 +623,8 @@ do_output_vgs (void)
     parents = parents_of_vg (vgs->val[i].vg_name);
 
     write_row (name, "vg",
-               NULL, NULL, -1, (int64_t) vgs->val[i].vg_size, parents, uuid);
+               NULL, NULL, -1, (int64_t) vgs->val[i].vg_size, parents, uuid,
+               NULL);
   }
 }
 
@@ -649,7 +672,7 @@ do_output_pvs (void)
     uuid[32] = '\0';
     write_row (dev, "pv",
                NULL, NULL, -1, (int64_t) pvs->val[i].pv_size,
-               (char **) parents, uuid);
+               (char **) parents, uuid, NULL);
   }
 }
 
@@ -715,7 +738,7 @@ do_output_partitions (void)
     }
 
     write_row (dev, "partition",
-               NULL, NULL, mbr_id, size, (char **) parents, NULL);
+               NULL, NULL, mbr_id, size, (char **) parents, NULL, NULL);
   }
 }
 
@@ -749,7 +772,7 @@ do_output_blockdevs (void)
       parents = no_parents ();
 
     write_row (dev, "device",
-               NULL, NULL, -1, size, parents, NULL);
+               NULL, NULL, -1, size, parents, NULL, NULL);
   }
 }
 
@@ -882,7 +905,8 @@ parents_of_vg (char *vg)
 static void
 write_row (const char *name, const char *type,
            const char *vfs_type, const char *vfs_label, int mbr_id,
-           int64_t size, char **parents, const char *uuid)
+           int64_t size, char **parents, const char *uuid,
+           const char *fs_version)
 {
   const char *strings[NR_COLUMNS];
   CLEANUP_FREE char *parents_str = NULL;
@@ -930,6 +954,8 @@ write_row (const char *name, const char *type,
   }
   if ((columns & COLUMN_UUID))
     strings[len++] = uuid;
+  if ((columns & COLUMN_FS_VERSION))
+    strings[len++] = fs_version;
   assert (len <= NR_COLUMNS);
 
   write_row_strings ((char **) strings, len);

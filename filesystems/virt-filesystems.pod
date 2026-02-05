@@ -197,6 +197,14 @@ If you have untrusted raw-format guest disk images, you should use
 this option to specify the disk format.  This avoids a possible
 security problem with malicious guests (CVE-2010-3851).
 
+=item B<--fs-version>
+
+=item B<--fs-versions>
+
+In I<--long> mode, display the filesystem version.  Currently this
+only has any effect for XFS, displaying either C<4> (for XFS v4) or
+C<5> (for XFS v5).  XFS v4 support will be removed from Linux in 2030.
+
 =item B<-h>
 
 =item B<--human-readable>
@@ -221,7 +229,9 @@ external programs.
 Use I<-h> if you want sizes to be displayed in human-readable format.
 The default is to show raw numbers of I<bytes>.
 
-Use I<--uuid> to display UUIDs too.
+Use I<--fs-version> to display filesystem versions.
+
+Use I<--uuid> to display UUIDs.
 
 =item B<--lvs>
 
