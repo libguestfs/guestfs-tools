@@ -81,9 +81,9 @@ Makefile.in
 /cat/virt-ls
 /cat/virt-tail
 /config.cache
-/config.log
 /config.h
 /config.h.in
+/config.log
 /config.sh
 /config.status
 /configure
@@ -112,8 +112,8 @@ Makefile.in
 /ocaml-dep.sh
 /ocaml-link.sh
 /po-docs/*/*.pod
-/podwrapper.pl
 /po/*.gmo
+/podwrapper.pl
 /resize/.depend
 /resize/virt-resize
 /run
