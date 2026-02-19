@@ -54,6 +54,12 @@ AC_SUBST([WERROR_CFLAGS])
 # deal with CPU architectures that do not exist.
 CFLAGS="-fno-strict-overflow -Wno-strict-overflow $CFLAGS"
 
+# Without this, builds on fedora fail:
+#   /usr/bin/ld: virt_builder-index-scan.o:
+#   relocation R_X86_64_32S against `.rodata' can not be used
+#   when making a PIE object; recompile with -fPIE
+CFLAGS="-fPIC $CFLAGS"
+
 dnl Work out how to specify the linker script to the linker.
 VERSION_SCRIPT_FLAGS=-Wl,--version-script=
 `/usr/bin/ld --help 2>&1 | grep -- --version-script >/dev/null` || \
