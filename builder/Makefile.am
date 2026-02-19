@@ -17,7 +17,7 @@
 
 include $(top_srcdir)/subdir-rules.mk
 
-AM_YFLAGS = -d
+AM_YFLAGS = -d -Wno-yacc
 
 EXTRA_DIST = \
 	$(SOURCES_MLI) $(SOURCES_ML) $(SOURCES_C) \
