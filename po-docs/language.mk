@@ -102,6 +102,8 @@ virt-sysprep.1: virt-sysprep.pod sysprep-extra-options.pod sysprep-operations.po
 %.pod: $(srcdir)/../$(LINGUA).po
 	rm -f $@ $@-t
 	$(guestfs_am_v_po4a_translate)$(PO4A_TRANSLATE) \
+	  --no-deprecation \
+	  -o no-warn-simple \
 	  -f pod \
 	  -M utf-8 -L utf-8 \
 	  -k 0 \
