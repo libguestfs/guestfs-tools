@@ -93,7 +93,7 @@ typedef void *yyscan_t;
 %type <field>   fields field
 %type <str>     continuations
 
-%pure-parser
+%define api.pure
 
 %lex-param   { yyscan_t scanner }
 %parse-param { yyscan_t scanner }
