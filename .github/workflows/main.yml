@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - master
+      - 'ci/**'  # Allow automatic CI testing on ci/* branches
   pull_request:
     branches:
       - master
+  workflow_dispatch:  # Allow manual triggering on any branch
 
 # Runs basic configure, make and make check.
 jobs:
@@ -75,11 +77,11 @@ jobs:
       fail-fast: false
       matrix:
         release:
-         - 43
+          - 43
 
     container:
       image: quay.io/fedora/fedora:${{ matrix.release }}
-      options: --security-opt seccomp=unconfined
+      options: --privileged
 
     steps:
       - name: Identify the system
@@ -88,42 +90,36 @@ jobs:
 
       - name: Install build dependencies
         run: |
-          dnf builddep -y guestfs-tools
+          dnf builddep -y guestfs-tools libguestfs
+          dnf install -y git kernel sqlite
 
-      - name: Install extra dependencies
-        run: |
-          # Git is needed to run git submodule command.
-          dnf install -y git
+          # Hides 'multiple definition' warnings
+          dnf remove -y ocaml-libguestfs\*
 
       - name: Checkout sources
         uses: actions/checkout@v5
 
-      - name: Create user
+      - name: Checkout and build libguestfs
         run: |
-          useradd -m -s /bin/bash -G wheel guestfs
-          tail /etc/passwd
-
-      - name: Make checkout directory editable by the sscg user
-        run: |
-          chown -R guestfs:wheel ${GITHUB_WORKSPACE}
-
-      - name: Checkout submodule
-        run: |
-          su -c 'git submodule update --init' guestfs
+            git clone --depth=1 https://github.com/libguestfs/libguestfs
+            cd libguestfs
+            git submodule update --init
+            autoreconf -fiv
+            ./configure CFLAGS="-fPIC -g -O2" --enable-werror
+            make -j
+            cd ..
 
       - name: Compile the code
         run: |
-          su -c '
-            autoreconf -fiv &&
-            ./configure CFLAGS="-fPIC -g -O2" --enable-werror &&
-            make -j
-          ' guestfs
+            git config --global --add safe.directory $PWD
+            git submodule update --init
+            autoreconf -fiv
+            ./libguestfs/run ./configure CFLAGS="-fPIC -g -O2" --enable-werror
+            ./libguestfs/run make -j
 
-      # - name: Run the full tests
-      #   run: |
-      #     # We have to set $HOME since su -p won't set it below.
-      #     export HOME=/home/guestfs
-      #     if ! su -p -c 'make check' guestfs; then
-      #         find -name test-suite.log -exec cat {} \;
-      #         exit 1
-      #     fi
+      - name: Run the full tests
+        run: |
+            if ! ./libguestfs/run make check; then
+                find -name test-suite.log -exec cat {} \;
+                exit 1
+            fi
