@@ -175,7 +175,6 @@ AC_CONFIG_FILES([Makefile
                  tail/Makefile
                  test-data/Makefile
                  test-data/binaries/Makefile
-                 test-data/blank-disks/Makefile
                  test-data/phony-guests/Makefile
                  test-data/phony-guests/guests.xml
                  tests/Makefile
