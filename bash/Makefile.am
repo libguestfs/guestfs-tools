@@ -70,7 +70,7 @@ bashcompletiondir = $(BASH_COMPLETIONS_DIR)
 #bashcompletion_DATA = $(scripts)
 
 all-local: $(scripts) $(symlinks)
-	-test $(srcdir) != $(builddir) && cd $(srcdir) && cp $(scripts) $(abs_builddir)/
+	$(AM_V_at)test $(srcdir) = $(builddir) || { cd $(srcdir) && cp $(scripts) $(abs_builddir)/; }
 
 install-data-local:
 	$(mkdir_p) $(DESTDIR)$(bashcompletiondir)
