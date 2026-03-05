@@ -69,7 +69,7 @@ AC_DEFINE_UNQUOTED([XZCAT],["$XZCAT"],[Name of xzcat program.])
 
 dnl (f)lex and bison for virt-builder (required).
 dnl XXX Could be optional with some work.
-AC_PROG_LEX
+AC_PROG_LEX([noyywrap])
 AC_PROG_YACC
 dnl These macros don't fail, instead they set some useless defaults.
 if test "x$LEX" = "x:"; then
