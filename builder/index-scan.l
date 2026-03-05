@@ -74,8 +74,8 @@ extern void scanner_destroy (yyscan_t scanner);
   /* Ignore comments - '#' MUST appear at the start of a line. */
 ^"#".*\n                { yyextra->seen_comments++; }
 
-  /* An empty line is significant. */
-^\n                                     { return EMPTY_LINE; }
+  /* Ignore blank lines */
+^\n                                     {}
 
   /* [...] marks beginning of a section. */
 ^"["[-A-Za-z0-9._]+"]"[[:blank:]]*\n {

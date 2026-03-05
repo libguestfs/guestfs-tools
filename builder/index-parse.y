@@ -84,7 +84,6 @@ typedef void *yyscan_t;
 %token <str>   SECTION_HEADER
 %token <field> FIELD
 %token <str>   VALUE_CONT
-%token         EMPTY_LINE
 %token         PGP_PROLOGUE
 %token         PGP_EPILOGUE
 %token         UNKNOWN_LINE
@@ -105,18 +104,18 @@ typedef void *yyscan_t;
 %%
 
 index:
-      sections
+      /* empty */
+        {}
+    | sections
         { context->parsed_index = $1; }
     | PGP_PROLOGUE sections PGP_EPILOGUE
         { context->parsed_index = $2; }
 
 sections:
-      emptylines section emptylines
-        { $$ = $2; }
-    | emptylines section EMPTY_LINE emptylines sections
-        { $$ = $2; $$->next = $5; }
-    | emptylines
-        { $$ = NULL; }
+      section
+        { $$ = $1; }
+    | section sections
+        { $$ = $1; $$->next = $2; }
 
 section:
       SECTION_HEADER fields
@@ -145,12 +144,6 @@ continuations:
         { $$ = concat_newline ($1, $2);
           free ($1);
           free ($2); }
-
-emptylines:
-      /* empty */
-        {}
-    | EMPTY_LINE emptylines
-        {}
 
 %%
 
