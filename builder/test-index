@@ -1,11 +1,18 @@
+
 [phony-debian]
 name=Phony Debian
+
 arch=x86_64
 file=debian.xz
+
 format=raw
 size=536870912
+
+
 expand=/dev/sda2
 lvexpand=/dev/debian/root
+
+# there's a comment here, make sure I'm ignored
 notes=Phony Debian look-alike used for testing.
 
 [phony-fedora]
@@ -17,6 +24,7 @@ size=1073741824
 expand=/dev/sda2
 lvexpand=/dev/VG/Root
 notes=Phony Fedora look-alike used for testing.
+ with multiline notes
 
 [phony-fedora-qcow2]
 name=Phony Fedora qcow2
@@ -27,7 +35,6 @@ size=1073741824
 expand=/dev/sda2
 lvexpand=/dev/VG/Root
 notes=Phony Fedora look-alike used for testing.
-
 [phony-fedora-qcow2-uncompressed]
 name=Phony Fedora qcow2 uncompressed
 arch=x86_64
@@ -56,6 +63,7 @@ size=536870912
 expand=/dev/sda2
 notes=Phony Ubuntu look-alike used for testing.
 
+
 [phony-windows]
 name=Phony Windows
 arch=x86_64
@@ -64,3 +72,6 @@ format=raw
 size=536870912
 expand=/dev/sda2
 notes=Phony Windows look-alike used for testing.
+
+
+

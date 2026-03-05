@@ -1,4 +1,25 @@
 # Empty lines before the first section
 
+# Multiple sections
 [foo]
 key=value
+
+[bar]
+key=value
+[wibble]
+t=v
+# embedded space doesn't matter
+
+g=f
+
+
+
+# trailing whitespace
+[baz]
+key=foo
+notes=multi
+ line
+ notes
+a=b
+
+

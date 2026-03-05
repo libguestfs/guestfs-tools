@@ -62,6 +62,7 @@ Minimum/default size:    1.0G
 Notes:
 
 Phony Fedora look-alike used for testing.
+with multiline notes
 
 os-version:              phony-fedora-qcow2
 Full name:               Phony Fedora qcow2
@@ -138,7 +139,7 @@ if [ "$json_list" != "{
       \"arch\": \"x86_64\",
       \"size\": 1073741824,
       \"notes\": {
-        \"C\": \"Phony Fedora look-alike used for testing.\"
+        \"C\": \"Phony Fedora look-alike used for testing.\nwith multiline notes\"
       },
       \"hidden\": false
     },
