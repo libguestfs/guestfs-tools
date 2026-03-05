@@ -1,0 +1,7 @@
+# Multiline comment but doesn't indent it
+[foo]
+key=value
+notes=foo
+bar
+ baz
+k=v
