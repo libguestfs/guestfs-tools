@@ -19,7 +19,7 @@
 export LANG=C
 set -e
 
-! $VG virt-index-validate "$srcdir/test-virt-index-validate-bad-1"
+$VG virt-index-validate "$srcdir/test-virt-index-validate-bad-1" && exit 1
 $VG virt-index-validate "$srcdir/test-virt-index-validate-good-1"
 $VG virt-index-validate "$srcdir/test-virt-index-validate-good-2"
 $VG virt-index-validate "$srcdir/test-virt-index-validate-good-3"
