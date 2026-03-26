@@ -93,6 +93,7 @@ EXTRA_DIST = \
 	check-mli.sh \
 	common/.gitignore \
 	common/README \
+	common/update-submodule.sh \
 	lib/guestfs-internal-all.h \
 	m4/.gitignore \
 	podcheck.pl \
