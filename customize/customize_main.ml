@@ -25,6 +25,8 @@ open Printf
 
 module G = Guestfs
 
+type root_choice = AllRoots | SingleRoot | FirstRoot | RootDev of string
+
 let () = Random.self_init ()
 
 let main () =
@@ -54,6 +56,15 @@ let main () =
   (* Note that [--key ID:clevis] depends on this default. See more below, near
    * [g#set_network network]. *)
   let network = ref true in
+
+  let root_choice = ref AllRoots in
+  let set_root_choice = function
+    | "all" -> root_choice := AllRoots
+    | "single" -> root_choice := SingleRoot
+    | "first" -> root_choice := FirstRoot
+    | dev when String.starts_with "/dev/" dev -> root_choice := RootDev dev
+    | s -> error (f_"unknown --root option: %s") s
+  in
 
   let smp = ref None in
   let set_smp arg = smp := Some arg in
@@ -85,6 +96,8 @@ let main () =
     [ S 'm'; L"memsize" ],        Getopt.Int ("mb", set_memsize),        s_"Set memory size";
     [ L"network" ], Getopt.Set network,           s_"Enable appliance network (default)";
     [ L"no-network" ], Getopt.Clear network,      s_"Disable appliance network";
+    [ L"root" ],    Getopt.String ("all|single|first|dev", set_root_choice),
+                                             s_"Choose root filesystem for multi-boot guests";
     [ L"smp" ],     Getopt.Int ("vcpus", set_smp),            s_"Set number of vCPUs";
   ] in
   let customize_argspec, get_customize_ops = Customize_cmdline.argspec () in
@@ -152,6 +165,7 @@ read the man page virt-customize(1).
   let dryrun = !dryrun in
   let memsize = !memsize in
   let network = !network in
+  let root_choice = !root_choice in
   let smp = !smp in
 
   let ops = get_customize_ops () in
@@ -189,6 +203,32 @@ read the man page virt-customize(1).
   | [] ->
     error (f_"no operating systems were found in the guest image")
   | roots ->
+    (* Choose which root(s) to customize based on --root option. *)
+    let roots =
+      match root_choice with
+      | AllRoots -> roots
+      | SingleRoot ->
+        (match roots with
+         | [_] -> roots
+         | _ ->
+           error (f_"multi-boot operating systems found. Use the --root \
+                     option to choose the root filesystem to customize, \
+                     or use '--root all' to customize all of them.")
+        )
+      | FirstRoot ->
+        let root = List.hd roots in
+        info (f_"Picked %s because '--root first' was used.") root;
+        [root]
+      | RootDev dev ->
+        if List.mem dev roots then (
+          info (f_"Picked %s because '--root %s' was used.") dev dev;
+          [dev]
+        )
+        else
+          error (f_"root device %s not found. Roots found were: %s")
+            dev (String.concat " " roots)
+    in
+
     List.iter (
       fun root ->
         (* Mount up the disks, like guestfish -i.
