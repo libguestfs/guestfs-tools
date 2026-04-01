@@ -23,6 +23,7 @@ EXTRA_DIST = \
 	test-settings.sh \
 	test-virt-customize.sh \
 	test-virt-customize-docs.sh \
+	test-virt-customize-root.sh \
 	virt-customize.pod
 
 SOURCES_MLI = \
@@ -129,6 +130,7 @@ TESTS_ENVIRONMENT = $(top_builddir)/run --test
 TESTS = \
 	test-virt-customize-docs.sh \
 	test-virt-customize.sh \
+	test-virt-customize-root.sh \
 	$(SLOW_TESTS)
 
 check-valgrind:
