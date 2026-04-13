@@ -5,7 +5,7 @@
 
 'virt-install' \
     '--transient' \
-    '--name=tmp-8k3o2og1' \
+    '--name=tmp-5l8223px' \
     '--ram=4096' \
     '--arch=x86_64' \
     '--cpu=host' \
@@ -13,8 +13,8 @@
     '--os-variant=rhel9.5' \
     '--initrd-inject=rhel-10.0.ks' \
     '--extra-args=inst.ks=file:/rhel-10.0.ks  console=tty0 console=ttyS0,115200 rd_NO_PLYMOUTH' \
-    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-8k3o2og1.img,size=6,format=raw' \
-    '--location=http://download.eng.bos.redhat.com/released/rhel-10/RHEL-10/10.0-Beta-0/BaseOS/x86_64/os/' \
+    '--disk=/home/rjones/d/guestfs-tools/builder/templates/tmp-5l8223px.img,size=6,format=raw' \
+    '--location=http://download.eng.brq.redhat.com/released/rhel-10/RHEL-10/10.0/BaseOS/x86_64/os/' \
     '--serial=pty' \
     '--nographics' 
 
