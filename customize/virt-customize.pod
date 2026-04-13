@@ -10,7 +10,8 @@ virt-customize - Customize a virtual machine
     [ -c URI | --connect URI ] [ -n | --dry-run ]
     [ --format FORMAT] [ -m MB | --memsize MB ]
     [ --network | --no-network ]
-    [ -q | --quiet ] [--smp N] [ -v | --verbose ] [-x]
+    [ -q | --quiet ] [--root all|single|first|dev]
+    [--smp N] [ -v | --verbose ] [-x]
 __CUSTOMIZE_SYNOPSIS__
 
  virt-customize [ -V | --version ]
@@ -199,6 +200,35 @@ L</SECURITY> below).
 You don’t have a host network (eg. in secure/restricted environments).
 
 =back
+
+=item B<--root all>
+
+=item B<--root single>
+
+=item B<--root first>
+
+=item B<--root /dev/sdX>
+
+Choose which root filesystem to customize in a multi-boot guest.
+
+With I<--root all> (the default), all root filesystems found in the
+guest are customized.  This was the behaviour in E<lt> 1.55 before
+the I<--root> option was added.
+
+With I<--root single>, the customization fails if there are multiple
+root filesystems found.  Virt-customize will give an error if the
+guest is multi-boot.
+
+With I<--root first>, only the first root filesystem found is
+customized.
+
+With I<--root /dev/sdX>, only the named root filesystem is
+customized.  For example, I<--root /dev/sda2>.
+
+This option is useful when the guest is a dual-boot or multi-boot
+system, and you want to customize only one of the operating systems
+installed.  Without this option, virt-customize applies the
+customization to all operating systems found.
 
 =item B<-q>
 
