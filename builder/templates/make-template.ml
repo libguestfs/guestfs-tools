@@ -982,8 +982,9 @@ and make_boot_media os arch =
                  minor (string_of_arch arch))
 
   | RHEL (9, minor), arch ->
-     Location (sprintf "http://download.eng.bos.redhat.com/released/\
-                        RHEL-9/9.%d.0/BaseOS/%s/os" minor (string_of_arch arch))
+     Location (sprintf "http://download.eng.brq.redhat.com/released/\
+                        rhel-9/RHEL-9/9.%d.0/BaseOS/%s/os"
+                 minor (string_of_arch arch))
 
   (* This is RHEL 10.0 Beta, will be replaced with RHEL 10.0 when
    * that is released later.
