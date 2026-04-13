@@ -39,6 +39,7 @@ EXTRA_DIST = \
 	test-virt-builder-repository.sh \
 	test-virt-index-validate.sh \
 	test-virt-index-validate-bad-1 \
+	test-virt-index-validate-bad-2 \
 	test-virt-index-validate-good-1 \
 	test-virt-index-validate-good-2 \
 	test-virt-index-validate-good-3 \
