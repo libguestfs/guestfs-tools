@@ -79,12 +79,6 @@ _guestfs_virttools ()
     esac
 }
 
-_guestunmount ()
-{
-    _guestfs_virttools "guestunmount" 1
-} &&
-complete -o default -F _guestunmount guestunmount
-
 _virt_alignment_scan ()
 {
     _guestfs_virttools "virt-alignment-scan" 1
