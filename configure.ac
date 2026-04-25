@@ -218,6 +218,8 @@ feature "OCaml-based virt tools" test "x$HAVE_OCAML_TRUE" = "x"
 feature "OCaml gettext"          test "x$OCAML_PKG_gettext" != "xno"
 feature "Perl-based virt tools"  test "x$HAVE_TOOLS_TRUE" = "x"
 feature "Bash tab completion"    test "x$HAVE_BASH_COMPLETION_TRUE" = "x"
+AS_IF([test "x$HAVE_BASH_COMPLETION_TRUE" = "x"],
+[print   "Bash completions dir"  "$BASH_COMPLETIONS_DIR"])
 
 echo
 echo "If any optional component is configured 'no' when you expected 'yes'"
