@@ -22,7 +22,8 @@ dnl
 dnl We need libguestfs 1.57.1 for guestfs_setfiles.
 dnl We need libguestfs 1.57.6 for guestfs_inspect_get_applications2 app2_class.
 dnl We need libguestfs 1.57.6 for guestfs_inspect_get_windows_group_policy
-PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.57.6])
+dnl We need libguestfs 1.59.7 for text: and base64: prefix in LUKS funcs.
+PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.59.7])
 printf "libguestfs version is "; $PKG_CONFIG --modversion libguestfs
 
 dnl Test if it's GNU or XSI strerror_r.
