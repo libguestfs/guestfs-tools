@@ -873,6 +873,15 @@ F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed to by the
 C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in
 default will be used (something like F</usr/share/virt-tools>).
 
+On Windows guests, firstboot scripts are executed by a dedicated
+C<firstboot.bat> script which manages the execution flow.
+
+This script monitors the exit code of each firstboot task. Any exit
+code other than B<249> is considered a success, and the script moves
+on to the next task. If a script returns B<249>, it is treated as a 
+failure, and the system will attempt to run that script again on the
+next boot.
+
 The output of the first boot scripts is available in the guest as
 F<C:\Program Files\Guestfs\Firstboot\log.txt>.
 
