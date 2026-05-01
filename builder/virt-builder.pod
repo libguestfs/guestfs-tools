@@ -874,13 +874,30 @@ C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in
 default will be used (something like F</usr/share/virt-tools>).
 
 On Windows guests, firstboot scripts are executed by a dedicated
-C<firstboot.bat> script which manages the execution flow.
+C<firstboot.bat> script which manages the execution flow. It monitors
+the exit code of each firstboot script:
 
-This script monitors the exit code of each firstboot task. Any exit
-code other than B<249> is considered a success, and the script moves
-on to the next task. If a script returns B<249>, it is treated as a 
-failure, and the system will attempt to run that script again on the
-next boot.
+=over 4
+
+=item * B<250>
+
+The script indicates that a system reboot is not required at
+this stage. The C<firstboot.bat> script will continue
+immediately to the next script in the sequence without
+initiating a shutdown.
+
+=item * B<249>
+
+The script is treated as a failure. The C<firstboot.bat> script
+stops execution, and the system will attempt to run this script
+again on the next boot.
+
+=item * B<Any other code>
+
+The script is considered a success. The C<firstboot.bat> script
+proceeds to the next script in the sequence.
+
+=back
 
 The output of the first boot scripts is available in the guest as
 F<C:\Program Files\Guestfs\Firstboot\log.txt>.
