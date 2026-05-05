@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.55.7\n"
+"Project-Id-Version: guestfs-tools 1.55.8\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-04-29 11:55+0100\n"
+"POT-Creation-Date: 2026-05-05 17:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:11 inspector/virt-inspector.pod:17
 #: log/virt-log.pod:11 ls/virt-ls.pod:17 make-fs/virt-make-fs.pod:13
 #: resize/virt-resize.pod:11 sparsify/virt-sparsify.pod:11
-#: sysprep/virt-sysprep.pod:11 tail/virt-tail.pod:11 win-reg/virt-win-reg.in:60
+#: sysprep/virt-sysprep.pod:20 tail/virt-tail.pod:11 win-reg/virt-win-reg.in:60
 msgid "DESCRIPTION"
 msgstr ""
 
@@ -282,7 +282,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:23 inspector/virt-inspector.pod:55
 #: log/virt-log.pod:35 ls/virt-ls.pod:249 make-fs/virt-make-fs.pod:117
 #: resize/virt-resize.pod:268 sparsify/virt-sparsify.pod:114
-#: sysprep/virt-sysprep.pod:36 tail/virt-tail.pod:46 win-reg/virt-win-reg.in:93
+#: sysprep/virt-sysprep.pod:45 tail/virt-tail.pod:46 win-reg/virt-win-reg.in:93
 msgid "OPTIONS"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:27 inspector/virt-inspector.pod:59
 #: log/virt-log.pod:39 ls/virt-ls.pod:253 make-fs/virt-make-fs.pod:121
 #: resize/virt-resize.pod:272 sparsify/virt-sparsify.pod:118
-#: sysprep/virt-sysprep.pod:40 tail/virt-tail.pod:50
+#: sysprep/virt-sysprep.pod:49 tail/virt-tail.pod:50
 #: win-reg/virt-win-reg.in:101
 msgid "B<--help>"
 msgstr ""
@@ -306,7 +306,7 @@ msgstr ""
 #: edit/virt-edit.pod:60 filesystems/virt-filesystems.pod:95
 #: format/virt-format.pod:63 inspector/virt-inspector.pod:61
 #: log/virt-log.pod:41 ls/virt-ls.pod:255 make-fs/virt-make-fs.pod:123
-#: sysprep/virt-sysprep.pod:42 tail/virt-tail.pod:52
+#: sysprep/virt-sysprep.pod:51 tail/virt-tail.pod:52
 #: win-reg/virt-win-reg.in:103
 msgid "Display brief help."
 msgstr ""
@@ -317,7 +317,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:121 edit/virt-edit.pod:62
 #: filesystems/virt-filesystems.pod:97 format/virt-format.pod:65
 #: get-kernel/virt-get-kernel.pod:31 inspector/virt-inspector.pod:63
-#: log/virt-log.pod:43 ls/virt-ls.pod:257 sysprep/virt-sysprep.pod:44
+#: log/virt-log.pod:43 ls/virt-ls.pod:257 sysprep/virt-sysprep.pod:53
 #: tail/virt-tail.pod:54
 msgid "B<-a> file"
 msgstr ""
@@ -328,7 +328,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:123 edit/virt-edit.pod:64
 #: filesystems/virt-filesystems.pod:99 format/virt-format.pod:67
 #: get-kernel/virt-get-kernel.pod:33 inspector/virt-inspector.pod:65
-#: log/virt-log.pod:45 ls/virt-ls.pod:259 sysprep/virt-sysprep.pod:46
+#: log/virt-log.pod:45 ls/virt-ls.pod:259 sysprep/virt-sysprep.pod:55
 #: tail/virt-tail.pod:56
 msgid "B<--add> file"
 msgstr ""
@@ -336,7 +336,7 @@ msgstr ""
 #. type: textblock
 #: align/virt-alignment-scan.pod:113 customize/virt-customize.pod:44
 #: drivers/virt-drivers.pod:125 get-kernel/virt-get-kernel.pod:35
-#: sysprep/virt-sysprep.pod:48
+#: sysprep/virt-sysprep.pod:57
 msgid "Add I<file> which should be a disk image from a virtual machine."
 msgstr ""
 
@@ -389,7 +389,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:154 edit/virt-edit.pod:95
 #: filesystems/virt-filesystems.pod:131 get-kernel/virt-get-kernel.pod:64
 #: inspector/virt-inspector.pod:82 log/virt-log.pod:62 ls/virt-ls.pod:287
-#: sysprep/virt-sysprep.pod:69 tail/virt-tail.pod:73
+#: sysprep/virt-sysprep.pod:78 tail/virt-tail.pod:73
 msgid "B<-c> URI"
 msgstr ""
 
@@ -399,7 +399,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:156 edit/virt-edit.pod:97
 #: filesystems/virt-filesystems.pod:133 get-kernel/virt-get-kernel.pod:66
 #: inspector/virt-inspector.pod:84 log/virt-log.pod:64 ls/virt-ls.pod:289
-#: sysprep/virt-sysprep.pod:71 tail/virt-tail.pod:75
+#: sysprep/virt-sysprep.pod:80 tail/virt-tail.pod:75
 msgid "B<--connect> URI"
 msgstr ""
 
@@ -409,7 +409,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:158 edit/virt-edit.pod:99
 #: filesystems/virt-filesystems.pod:135 get-kernel/virt-get-kernel.pod:68
 #: inspector/virt-inspector.pod:86 log/virt-log.pod:66 ls/virt-ls.pod:291
-#: sysprep/virt-sysprep.pod:73 tail/virt-tail.pod:77
+#: sysprep/virt-sysprep.pod:82 tail/virt-tail.pod:77
 #: win-reg/virt-win-reg.in:129
 msgid ""
 "If using libvirt, connect to the given I<URI>.  If omitted, then we connect "
@@ -421,7 +421,7 @@ msgstr ""
 #: customize/virt-customize.pod:93 df/virt-df.pod:105 diff/virt-diff.pod:96
 #: drivers/virt-drivers.pod:161 filesystems/virt-filesystems.pod:138
 #: get-kernel/virt-get-kernel.pod:71 log/virt-log.pod:69 ls/virt-ls.pod:294
-#: sysprep/virt-sysprep.pod:76 tail/virt-tail.pod:80
+#: sysprep/virt-sysprep.pod:85 tail/virt-tail.pod:80
 msgid ""
 "If you specify guest block devices directly (I<-a>), then libvirt is not "
 "used at all."
@@ -432,7 +432,7 @@ msgstr ""
 #: customize/virt-customize.pod:96 df/virt-df.pod:114 diff/virt-diff.pod:117
 #: drivers/virt-drivers.pod:164 filesystems/virt-filesystems.pod:147
 #: get-kernel/virt-get-kernel.pod:74 inspector/virt-inspector.pod:93
-#: log/virt-log.pod:72 ls/virt-ls.pod:303 sysprep/virt-sysprep.pod:79
+#: log/virt-log.pod:72 ls/virt-ls.pod:303 sysprep/virt-sysprep.pod:88
 #: tail/virt-tail.pod:83
 msgid "B<-d> guest"
 msgstr ""
@@ -442,7 +442,7 @@ msgstr ""
 #: customize/virt-customize.pod:98 df/virt-df.pod:116 diff/virt-diff.pod:119
 #: drivers/virt-drivers.pod:166 filesystems/virt-filesystems.pod:149
 #: get-kernel/virt-get-kernel.pod:76 inspector/virt-inspector.pod:95
-#: log/virt-log.pod:74 ls/virt-ls.pod:305 sysprep/virt-sysprep.pod:81
+#: log/virt-log.pod:74 ls/virt-ls.pod:305 sysprep/virt-sysprep.pod:90
 #: tail/virt-tail.pod:85
 msgid "B<--domain> guest"
 msgstr ""
@@ -453,7 +453,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:168 edit/virt-edit.pod:109
 #: filesystems/virt-filesystems.pod:151 get-kernel/virt-get-kernel.pod:78
 #: inspector/virt-inspector.pod:97 log/virt-log.pod:76 ls/virt-ls.pod:307
-#: sysprep/virt-sysprep.pod:83 tail/virt-tail.pod:87
+#: sysprep/virt-sysprep.pod:92 tail/virt-tail.pod:87
 msgid ""
 "Add all the disks from the named libvirt guest.  Domain UUIDs can be used "
 "instead of names."
@@ -497,7 +497,7 @@ msgstr ""
 #: edit/virt-edit.pod:143 filesystems/virt-filesystems.pod:185
 #: format/virt-format.pod:102 inspector/virt-inspector.pod:350
 #: log/virt-log.pod:95 ls/virt-ls.pod:333 sysprep/sysprep-extra-options.pod:59
-#: sysprep/virt-sysprep.pod:172 sysprep/virt-sysprep.pod:222
+#: sysprep/virt-sysprep.pod:181 sysprep/virt-sysprep.pod:231
 #: tail/virt-tail.pod:113
 msgid "For example:"
 msgstr ""
@@ -515,7 +515,7 @@ msgstr ""
 #: customize/virt-customize.pod:130 df/virt-df.pod:134 diff/virt-diff.pod:154
 #: edit/virt-edit.pod:147 filesystems/virt-filesystems.pod:189
 #: format/virt-format.pod:106 log/virt-log.pod:99 ls/virt-ls.pod:337
-#: sysprep/virt-sysprep.pod:176 tail/virt-tail.pod:117
+#: sysprep/virt-sysprep.pod:185 tail/virt-tail.pod:117
 msgid "forces raw format (no auto-detection) for F<disk.img>."
 msgstr ""
 
@@ -532,7 +532,7 @@ msgstr ""
 #: customize/virt-customize.pod:134 df/virt-df.pod:138 diff/virt-diff.pod:158
 #: edit/virt-edit.pod:151 filesystems/virt-filesystems.pod:193
 #: format/virt-format.pod:110 log/virt-log.pod:103 ls/virt-ls.pod:341
-#: sysprep/virt-sysprep.pod:180 tail/virt-tail.pod:121
+#: sysprep/virt-sysprep.pod:189 tail/virt-tail.pod:121
 msgid ""
 "forces raw format (no auto-detection) for F<disk.img> and reverts to "
 "auto-detection for F<another.img>."
@@ -544,7 +544,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:186 edit/virt-edit.pod:154
 #: filesystems/virt-filesystems.pod:196 format/virt-format.pod:113
 #: get-kernel/virt-get-kernel.pod:96 log/virt-log.pod:106 ls/virt-ls.pod:344
-#: sysprep/virt-sysprep.pod:183 tail/virt-tail.pod:124
+#: sysprep/virt-sysprep.pod:192 tail/virt-tail.pod:124
 msgid ""
 "If you have untrusted raw-format guest disk images, you should use this "
 "option to specify the disk format.  This avoids a possible security problem "
@@ -578,7 +578,7 @@ msgstr ""
 #: builder/virt-builder.pod:471 customize/virt-customize.pod:203
 #: drivers/virt-drivers.pod:194 get-kernel/virt-get-kernel.pod:132
 #: resize/virt-resize.pod:530 sparsify/virt-sparsify.pod:259
-#: sysprep/virt-sysprep.pod:232
+#: sysprep/virt-sysprep.pod:241
 msgid "B<-q>"
 msgstr ""
 
@@ -587,7 +587,7 @@ msgstr ""
 #: builder/virt-builder.pod:473 customize/virt-customize.pod:205
 #: drivers/virt-drivers.pod:196 get-kernel/virt-get-kernel.pod:134
 #: resize/virt-resize.pod:532 sparsify/virt-sparsify.pod:261
-#: sysprep/virt-sysprep.pod:234
+#: sysprep/virt-sysprep.pod:243
 msgid "B<--quiet>"
 msgstr ""
 
@@ -628,7 +628,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:149 inspector/virt-inspector.pod:140
 #: log/virt-log.pod:114 ls/virt-ls.pod:456 make-fs/virt-make-fs.pod:207
 #: resize/virt-resize.pod:622 sparsify/virt-sparsify.pod:308
-#: sysprep/virt-sysprep.pod:253 tail/virt-tail.pod:168
+#: sysprep/virt-sysprep.pod:262 tail/virt-tail.pod:168
 msgid "B<-v>"
 msgstr ""
 
@@ -641,7 +641,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:151 inspector/virt-inspector.pod:142
 #: log/virt-log.pod:116 ls/virt-ls.pod:458 make-fs/virt-make-fs.pod:209
 #: resize/virt-resize.pod:624 sparsify/virt-sparsify.pod:310
-#: sysprep/virt-sysprep.pod:255 tail/virt-tail.pod:170
+#: sysprep/virt-sysprep.pod:264 tail/virt-tail.pod:170
 msgid "B<--verbose>"
 msgstr ""
 
@@ -652,7 +652,7 @@ msgstr ""
 #: filesystems/virt-filesystems.pod:278 format/virt-format.pod:159
 #: get-kernel/virt-get-kernel.pod:153 inspector/virt-inspector.pod:144
 #: log/virt-log.pod:118 ls/virt-ls.pod:460 sparsify/virt-sparsify.pod:312
-#: sysprep/virt-sysprep.pod:257 tail/virt-tail.pod:172
+#: sysprep/virt-sysprep.pod:266 tail/virt-tail.pod:172
 msgid "Enable verbose messages for debugging."
 msgstr ""
 
@@ -665,7 +665,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:155 inspector/virt-inspector.pod:146
 #: log/virt-log.pod:120 ls/virt-ls.pod:462 make-fs/virt-make-fs.pod:213
 #: resize/virt-resize.pod:628 sparsify/virt-sparsify.pod:314
-#: sysprep/virt-sysprep.pod:259 tail/virt-tail.pod:174
+#: sysprep/virt-sysprep.pod:268 tail/virt-tail.pod:174
 msgid "B<-V>"
 msgstr ""
 
@@ -678,7 +678,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:157 inspector/virt-inspector.pod:148
 #: log/virt-log.pod:122 ls/virt-ls.pod:464 make-fs/virt-make-fs.pod:215
 #: resize/virt-resize.pod:630 sparsify/virt-sparsify.pod:316
-#: sysprep/virt-sysprep.pod:261 tail/virt-tail.pod:176
+#: sysprep/virt-sysprep.pod:270 tail/virt-tail.pod:176
 #: win-reg/virt-win-reg.in:109
 msgid "B<--version>"
 msgstr ""
@@ -692,7 +692,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:159 inspector/virt-inspector.pod:150
 #: log/virt-log.pod:124 ls/virt-ls.pod:466 make-fs/virt-make-fs.pod:217
 #: resize/virt-resize.pod:632 sparsify/virt-sparsify.pod:318
-#: sysprep/virt-sysprep.pod:263 tail/virt-tail.pod:178
+#: sysprep/virt-sysprep.pod:272 tail/virt-tail.pod:178
 #: win-reg/virt-win-reg.in:111
 msgid "Display version number and exit."
 msgstr ""
@@ -706,7 +706,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:167 inspector/virt-inspector.pod:152
 #: log/virt-log.pod:126 ls/virt-ls.pod:468 make-fs/virt-make-fs.pod:219
 #: resize/virt-resize.pod:640 sparsify/virt-sparsify.pod:326
-#: sysprep/virt-sysprep.pod:271 tail/virt-tail.pod:180
+#: sysprep/virt-sysprep.pod:280 tail/virt-tail.pod:180
 msgid "B<-x>"
 msgstr ""
 
@@ -718,7 +718,7 @@ msgstr ""
 #: filesystems/virt-filesystems.pod:296 format/virt-format.pod:179
 #: get-kernel/virt-get-kernel.pod:169 inspector/virt-inspector.pod:154
 #: log/virt-log.pod:128 ls/virt-ls.pod:470 resize/virt-resize.pod:642
-#: sparsify/virt-sparsify.pod:328 sysprep/virt-sysprep.pod:273
+#: sparsify/virt-sparsify.pod:328 sysprep/virt-sysprep.pod:282
 #: tail/virt-tail.pod:182
 msgid "Enable tracing of libguestfs API calls."
 msgstr ""
@@ -991,13 +991,13 @@ msgstr ""
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:352 builder/virt-builder-repository.pod:202
-#: builder/virt-builder.pod:1839 builder/virt-index-validate.pod:74
-#: cat/virt-cat.pod:271 customize/virt-customize.pod:259 df/virt-df.pod:253
+#: builder/virt-builder.pod:1799 builder/virt-index-validate.pod:74
+#: cat/virt-cat.pod:271 customize/virt-customize.pod:339 df/virt-df.pod:253
 #: diff/virt-diff.pod:244 drivers/virt-drivers.pod:229 edit/virt-edit.pod:379
 #: filesystems/virt-filesystems.pod:390 format/virt-format.pod:183
 #: get-kernel/virt-get-kernel.pod:196 inspector/virt-inspector.pod:489
 #: log/virt-log.pod:132 ls/virt-ls.pod:514 resize/virt-resize.pod:843
-#: sparsify/virt-sparsify.pod:451 sysprep/virt-sysprep.pod:569
+#: sparsify/virt-sparsify.pod:451 sysprep/virt-sysprep.pod:366
 #: tail/virt-tail.pod:232
 msgid "EXIT STATUS"
 msgstr ""
@@ -1010,24 +1010,24 @@ msgstr ""
 #. type: =item
 #: align/virt-alignment-scan.pod:358 align/virt-alignment-scan.pod:364
 #: align/virt-alignment-scan.pod:370 align/virt-alignment-scan.pod:377
-#: builder/virt-builder.pod:887 builder/virt-builder.pod:894
-#: builder/virt-builder.pod:898 builder/virt-builder.pod:902
-#: builder/virt-builder.pod:907 builder/virt-builder.pod:911
-#: builder/virt-builder.pod:915 builder/virt-builder.pod:920
-#: builder/virt-builder.pod:1094 builder/virt-builder.pod:1099
-#: builder/virt-builder.pod:1677 builder/virt-builder.pod:1681
-#: builder/virt-builder.pod:1685 builder/virt-index-validate.pod:32
+#: builder/virt-builder.pod:847 builder/virt-builder.pod:854
+#: builder/virt-builder.pod:858 builder/virt-builder.pod:862
+#: builder/virt-builder.pod:867 builder/virt-builder.pod:871
+#: builder/virt-builder.pod:875 builder/virt-builder.pod:880
+#: builder/virt-builder.pod:1054 builder/virt-builder.pod:1059
+#: builder/virt-builder.pod:1637 builder/virt-builder.pod:1641
+#: builder/virt-builder.pod:1645 builder/virt-index-validate.pod:32
 #: builder/virt-index-validate.pod:37 builder/virt-index-validate.pod:51
 #: builder/virt-index-validate.pod:56 cat/virt-cat.pod:217 cat/virt-cat.pod:222
 #: cat/virt-cat.pod:227 cat/virt-cat.pod:238 cat/virt-cat.pod:242
 #: common/mlcustomize/customize-options.pod:73
 #: common/mlcustomize/customize-options.pod:78
-#: common/mlcustomize/customize-options.pod:381
-#: common/mlcustomize/customize-options.pod:385
+#: common/mlcustomize/customize-options.pod:375
+#: common/mlcustomize/customize-options.pod:379
 #: common/mlcustomize/v2v-customize-options.pod:73
 #: common/mlcustomize/v2v-customize-options.pod:78
-#: common/mlcustomize/v2v-customize-options.pod:327
-#: common/mlcustomize/v2v-customize-options.pod:331
+#: common/mlcustomize/v2v-customize-options.pod:321
+#: common/mlcustomize/v2v-customize-options.pod:325
 #: docs/guestfs-tools-release-notes-1.50.pod:32
 #: docs/guestfs-tools-release-notes-1.50.pod:36
 #: docs/guestfs-tools-release-notes-1.50.pod:40
@@ -1045,20 +1045,14 @@ msgstr ""
 #: sparsify/virt-sparsify.pod:145 sparsify/virt-sparsify.pod:150
 #: sparsify/virt-sparsify.pod:289 sparsify/virt-sparsify.pod:294
 #: sparsify/virt-sparsify.pod:299 sysprep/sysprep-extra-options.pod:48
-#: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:430
-#: sysprep/sysprep-extra-options.pod:434 sysprep/virt-sysprep.pod:325
-#: sysprep/virt-sysprep.pod:329 sysprep/virt-sysprep.pod:333
-#: sysprep/virt-sysprep.pod:337 sysprep/virt-sysprep.pod:352
-#: sysprep/virt-sysprep.pod:356 sysprep/virt-sysprep.pod:360
-#: sysprep/virt-sysprep.pod:364 sysprep/virt-sysprep.pod:368
-#: sysprep/virt-sysprep.pod:421 sysprep/virt-sysprep.pod:433
-#: sysprep/virt-sysprep.pod:437 sysprep/virt-sysprep.pod:445
-#: sysprep/virt-sysprep.pod:451 tail/virt-tail.pod:25 tail/virt-tail.pod:29
-#: tail/virt-tail.pod:34 tail/virt-tail.pod:201 tail/virt-tail.pod:206
-#: tail/virt-tail.pod:211 tail/virt-tail.pod:222 tail/virt-tail.pod:226
-#: win-reg/virt-win-reg.in:194 win-reg/virt-win-reg.in:199
-#: win-reg/virt-win-reg.in:205 win-reg/virt-win-reg.in:774
-#: win-reg/virt-win-reg.in:780 win-reg/virt-win-reg.in:786
+#: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:424
+#: sysprep/sysprep-extra-options.pod:428 tail/virt-tail.pod:25
+#: tail/virt-tail.pod:29 tail/virt-tail.pod:34 tail/virt-tail.pod:201
+#: tail/virt-tail.pod:206 tail/virt-tail.pod:211 tail/virt-tail.pod:222
+#: tail/virt-tail.pod:226 win-reg/virt-win-reg.in:194
+#: win-reg/virt-win-reg.in:199 win-reg/virt-win-reg.in:205
+#: win-reg/virt-win-reg.in:774 win-reg/virt-win-reg.in:780
+#: win-reg/virt-win-reg.in:786
 msgid "*"
 msgstr ""
 
@@ -1108,8 +1102,8 @@ msgstr ""
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:386 builder/virt-builder-repository.pod:207
-#: builder/virt-builder.pod:1844 builder/virt-index-validate.pod:79
-#: cat/virt-cat.pod:276 customize/virt-customize.pod:299 df/virt-df.pod:258
+#: builder/virt-builder.pod:1804 builder/virt-index-validate.pod:79
+#: cat/virt-cat.pod:276 customize/virt-customize.pod:379 df/virt-df.pod:258
 #: diff/virt-diff.pod:249 docs/guestfs-tools-release-notes-1.48.pod:102
 #: docs/guestfs-tools-release-notes-1.50.pod:160
 #: docs/guestfs-tools-release-notes-1.52.pod:99
@@ -1118,7 +1112,7 @@ msgstr ""
 #: format/virt-format.pod:187 get-kernel/virt-get-kernel.pod:201
 #: inspector/virt-inspector.pod:494 log/virt-log.pod:137 ls/virt-ls.pod:519
 #: make-fs/virt-make-fs.pod:225 resize/virt-resize.pod:848
-#: sparsify/virt-sparsify.pod:462 sysprep/virt-sysprep.pod:609
+#: sparsify/virt-sparsify.pod:462 sysprep/virt-sysprep.pod:406
 #: tail/virt-tail.pod:237 win-reg/virt-win-reg.in:805
 msgid "SEE ALSO"
 msgstr ""
@@ -1132,7 +1126,7 @@ msgstr ""
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:395 builder/virt-builder-repository.pod:212
-#: builder/virt-builder.pod:1865 builder/virt-index-validate.pod:84
+#: builder/virt-builder.pod:1825 builder/virt-index-validate.pod:84
 #: cat/virt-cat.pod:287 df/virt-df.pod:267 diff/virt-diff.pod:259
 #: drivers/virt-drivers.pod:244 edit/virt-edit.pod:395
 #: filesystems/virt-filesystems.pod:407 format/virt-format.pod:197
@@ -1144,23 +1138,23 @@ msgid "AUTHOR"
 msgstr ""
 
 #. type: textblock
-#: align/virt-alignment-scan.pod:397 builder/virt-builder.pod:1867
+#: align/virt-alignment-scan.pod:397 builder/virt-builder.pod:1827
 #: builder/virt-index-validate.pod:86 cat/virt-cat.pod:289
-#: customize/virt-customize.pod:318 df/virt-df.pod:269 diff/virt-diff.pod:261
+#: customize/virt-customize.pod:398 df/virt-df.pod:269 diff/virt-diff.pod:261
 #: drivers/virt-drivers.pod:246 edit/virt-edit.pod:397
 #: filesystems/virt-filesystems.pod:409 format/virt-format.pod:199
 #: get-kernel/virt-get-kernel.pod:212 inspector/virt-inspector.pod:510
 #: log/virt-log.pod:150 ls/virt-ls.pod:531 make-fs/virt-make-fs.pod:241
 #: resize/virt-resize.pod:875 sparsify/virt-sparsify.pod:477
-#: sysprep/virt-sysprep.pod:628 tail/virt-tail.pod:250
+#: sysprep/virt-sysprep.pod:425 tail/virt-tail.pod:250
 #: win-reg/virt-win-reg.in:822
 msgid "Richard W.M. Jones L<http://people.redhat.com/~rjones/>"
 msgstr ""
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:399 builder/virt-builder-repository.pod:216
-#: builder/virt-builder.pod:1869 builder/virt-index-validate.pod:88
-#: cat/virt-cat.pod:291 customize/virt-customize.pod:320 df/virt-df.pod:271
+#: builder/virt-builder.pod:1829 builder/virt-index-validate.pod:88
+#: cat/virt-cat.pod:291 customize/virt-customize.pod:400 df/virt-df.pod:271
 #: diff/virt-diff.pod:263 docs/guestfs-tools-release-notes-1.48.pod:128
 #: docs/guestfs-tools-release-notes-1.50.pod:180
 #: docs/guestfs-tools-release-notes-1.52.pod:121
@@ -1169,7 +1163,7 @@ msgstr ""
 #: format/virt-format.pod:201 get-kernel/virt-get-kernel.pod:214
 #: inspector/virt-inspector.pod:518 log/virt-log.pod:152 ls/virt-ls.pod:533
 #: make-fs/virt-make-fs.pod:243 resize/virt-resize.pod:877
-#: sparsify/virt-sparsify.pod:479 sysprep/virt-sysprep.pod:632
+#: sparsify/virt-sparsify.pod:479 sysprep/virt-sysprep.pod:429
 #: tail/virt-tail.pod:252 win-reg/virt-win-reg.in:824
 msgid "COPYRIGHT"
 msgstr ""
@@ -1475,7 +1469,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:142 builder/virt-builder.pod:238
 #: customize/virt-customize.pod:77 drivers/virt-drivers.pod:145
 #: get-kernel/virt-get-kernel.pod:55 resize/virt-resize.pod:332
-#: sparsify/virt-sparsify.pod:158 sysprep/virt-sysprep.pod:60
+#: sparsify/virt-sparsify.pod:158 sysprep/virt-sysprep.pod:69
 msgid "B<--colors>"
 msgstr ""
 
@@ -1483,7 +1477,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:144 builder/virt-builder.pod:240
 #: customize/virt-customize.pod:79 drivers/virt-drivers.pod:147
 #: get-kernel/virt-get-kernel.pod:57 resize/virt-resize.pod:334
-#: sparsify/virt-sparsify.pod:160 sysprep/virt-sysprep.pod:62
+#: sparsify/virt-sparsify.pod:160 sysprep/virt-sysprep.pod:71
 msgid "B<--colours>"
 msgstr ""
 
@@ -1491,7 +1485,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:146 builder/virt-builder.pod:242
 #: customize/virt-customize.pod:81 drivers/virt-drivers.pod:149
 #: get-kernel/virt-get-kernel.pod:59 resize/virt-resize.pod:336
-#: sparsify/virt-sparsify.pod:162 sysprep/virt-sysprep.pod:64
+#: sparsify/virt-sparsify.pod:162 sysprep/virt-sysprep.pod:73
 msgid ""
 "Use ANSI colour sequences to colourize messages.  This is the default when "
 "the output is a tty.  If the output of the program is redirected to a file, "
@@ -1520,7 +1514,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:172 builder/virt-builder.pod:533
 #: customize/virt-customize.pod:227 drivers/virt-drivers.pod:212
 #: get-kernel/virt-get-kernel.pod:161 resize/virt-resize.pod:634
-#: sparsify/virt-sparsify.pod:320 sysprep/virt-sysprep.pod:265
+#: sparsify/virt-sparsify.pod:320 sysprep/virt-sysprep.pod:274
 msgid "B<--wrap>"
 msgstr ""
 
@@ -1528,7 +1522,7 @@ msgstr ""
 #: builder/virt-builder-repository.pod:174 builder/virt-builder.pod:535
 #: customize/virt-customize.pod:229 drivers/virt-drivers.pod:214
 #: get-kernel/virt-get-kernel.pod:163 resize/virt-resize.pod:636
-#: sparsify/virt-sparsify.pod:322 sysprep/virt-sysprep.pod:267
+#: sparsify/virt-sparsify.pod:322 sysprep/virt-sysprep.pod:276
 msgid ""
 "Wrap error, warning, and informative messages.  This is the default when the "
 "output is a tty.  If the output of the program is redirected to a file, "
@@ -1536,7 +1530,7 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder-repository.pod:184 builder/virt-builder.pod:1751
+#: builder/virt-builder-repository.pod:184 builder/virt-builder.pod:1711
 #: get-kernel/virt-get-kernel.pod:173 resize/virt-resize.pod:646
 #: sparsify/virt-sparsify.pod:360
 msgid "MACHINE READABLE OUTPUT"
@@ -1567,7 +1561,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder-repository.pod:196 builder/virt-builder.pod:1768
+#: builder/virt-builder-repository.pod:196 builder/virt-builder.pod:1728
 #: get-kernel/virt-get-kernel.pod:185 resize/virt-resize.pod:664
 #: sparsify/virt-sparsify.pod:376
 msgid ""
@@ -1576,7 +1570,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder-repository.pod:199 builder/virt-builder.pod:1771
+#: builder/virt-builder-repository.pod:199 builder/virt-builder.pod:1731
 #: get-kernel/virt-get-kernel.pod:188 resize/virt-resize.pod:698
 #: sparsify/virt-sparsify.pod:410
 msgid ""
@@ -1585,7 +1579,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder-repository.pod:204 builder/virt-builder.pod:1841
+#: builder/virt-builder-repository.pod:204 builder/virt-builder.pod:1801
 #: cat/virt-cat.pod:273 df/virt-df.pod:255 diff/virt-diff.pod:246
 #: drivers/virt-drivers.pod:231 edit/virt-edit.pod:381
 #: filesystems/virt-filesystems.pod:392 get-kernel/virt-get-kernel.pod:198
@@ -1643,7 +1637,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:23 builder/virt-builder.pod:1510
+#: builder/virt-builder.pod:23 builder/virt-builder.pod:1470
 #, no-wrap
 msgid ""
 " virt-builder --print-cache\n"
@@ -1651,7 +1645,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:25 builder/virt-builder.pod:1518
+#: builder/virt-builder.pod:25 builder/virt-builder.pod:1478
 #, no-wrap
 msgid ""
 " virt-builder --cache-all-templates\n"
@@ -1659,7 +1653,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:27 builder/virt-builder.pod:1514
+#: builder/virt-builder.pod:27 builder/virt-builder.pod:1474
 #, no-wrap
 msgid ""
 " virt-builder --delete-cache\n"
@@ -2437,19 +2431,19 @@ msgstr ""
 
 #. type: =item
 #: builder/virt-builder.pod:384 customize/virt-customize.pod:157
-#: sysprep/virt-sysprep.pod:240
+#: sysprep/virt-sysprep.pod:249
 msgid "B<--network>"
 msgstr ""
 
 #. type: =item
 #: builder/virt-builder.pod:386 customize/virt-customize.pod:159
-#: sysprep/virt-sysprep.pod:242
+#: sysprep/virt-sysprep.pod:251
 msgid "B<--no-network>"
 msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:388 customize/virt-customize.pod:161
-#: sysprep/virt-sysprep.pod:244
+#: sysprep/virt-sysprep.pod:253
 msgid "Enable or disable network access from the guest during the installation."
 msgstr ""
 
@@ -2488,7 +2482,7 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:407 builder/virt-builder.pod:941
+#: builder/virt-builder.pod:407 builder/virt-builder.pod:901
 #: customize/virt-customize.pod:180 resize/virt-resize.pod:29
 #: resize/virt-resize.pod:674 resize/virt-resize.pod:790
 #: sparsify/virt-sparsify.pod:386
@@ -2503,7 +2497,7 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:412 builder/virt-builder.pod:946
+#: builder/virt-builder.pod:412 builder/virt-builder.pod:906
 #: customize/virt-customize.pod:185 resize/virt-resize.pod:43
 #: resize/virt-resize.pod:681 resize/virt-resize.pod:808
 #: sparsify/virt-sparsify.pod:393
@@ -2518,7 +2512,7 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:417 builder/virt-builder.pod:956
+#: builder/virt-builder.pod:417 builder/virt-builder.pod:916
 #: customize/virt-customize.pod:190 resize/virt-resize.pod:51
 #: resize/virt-resize.pod:687 sparsify/virt-sparsify.pod:399
 msgid "3."
@@ -3352,157 +3346,82 @@ msgstr ""
 
 #. type: =head2
 #: builder/virt-builder.pod:841
-msgid "FIRST BOOT SCRIPTS"
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:843
-msgid ""
-"The I<--firstboot> and I<--firstboot-command> options allow you to execute "
-"commands at the first boot of the guest.  To do so, an init script for the "
-"guest init system is installed, which takes care of running all the added "
-"scripts and commands."
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:848
-msgid "Supported operating systems are:"
-msgstr ""
-
-#. type: =item
-#: builder/virt-builder.pod:852
-msgid "Linux"
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:854
-msgid ""
-"Init systems supported are: systemd, System-V init (known also as sysvinit), "
-"and Upstart (using the System-V scripts)."
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:857
-msgid ""
-"Note that usually init scripts run as root, but with a more limited "
-"environment than what could be available from a normal shell: for example, "
-"C<$HOME> may be unset or empty."
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:861
-msgid ""
-"The output of the first boot scripts is available in the guest as "
-"F<~root/virt-sysprep-firstboot.log>."
-msgstr ""
-
-#. type: =item
-#: builder/virt-builder.pod:864
-msgid "Windows"
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:866
-msgid ""
-"F<rhsrvany.exe>, available from sources at "
-"L<https://github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with "
-"SUSE VMDP is installed to run the first boot scripts.  It is required, and "
-"the setup of first boot scripts will fail if it is not present."
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:872
-msgid ""
-"F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed to by "
-"the C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in "
-"default will be used (something like F</usr/share/virt-tools>)."
-msgstr ""
-
-#. type: textblock
-#: builder/virt-builder.pod:876
-msgid ""
-"The output of the first boot scripts is available in the guest as "
-"F<C:\\Program Files\\Guestfs\\Firstboot\\log.txt>."
-msgstr ""
-
-#. type: =head2
-#: builder/virt-builder.pod:881
 msgid "INSTALLATION PROCESS"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:883
+#: builder/virt-builder.pod:843
 msgid "When you invoke virt-builder, installation proceeds as follows:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:889
+#: builder/virt-builder.pod:849
 msgid "The template image is downloaded."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:891
+#: builder/virt-builder.pod:851
 msgid ""
 "If the template image is present in the cache, the cached version is used "
 "instead.  (See L</CACHING>)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:896
+#: builder/virt-builder.pod:856
 msgid "The template signature is checked."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:900
+#: builder/virt-builder.pod:860
 msgid "The template is uncompressed to a tmp file."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:904
+#: builder/virt-builder.pod:864
 msgid "The template image is resized into the destination, using L<virt-resize(1)>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:909
+#: builder/virt-builder.pod:869
 msgid "Extra disks are attached (I<--attach>)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:913
+#: builder/virt-builder.pod:873
 msgid "A new random seed is generated for the guest."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:917
+#: builder/virt-builder.pod:877
 msgid ""
 "Guest customization is performed, in the order specified on the command "
 "line."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:922
+#: builder/virt-builder.pod:882
 msgid "SELinux relabelling is done unless disabled with I<--no-selinux-relabel>."
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:926
+#: builder/virt-builder.pod:886
 msgid "IMPORTING THE DISK IMAGE"
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:928
+#: builder/virt-builder.pod:888
 msgid "Importing into libvirt"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:930
+#: builder/virt-builder.pod:890
 msgid ""
 "Import the disk image into libvirt using L<virt-install(1)> I<--import> "
 "option."
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:933
+#: builder/virt-builder.pod:893
 #, no-wrap
 msgid ""
 " virt-install --import \\\n"
@@ -3512,19 +3431,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:937 win-reg/virt-win-reg.in:770
+#: builder/virt-builder.pod:897 win-reg/virt-win-reg.in:770
 msgid "Notes:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:943
+#: builder/virt-builder.pod:903
 msgid ""
 "You I<must> specify the correct format.  The format is C<raw> unless you "
 "used virt-builder’s I<--format> option."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:948
+#: builder/virt-builder.pod:908
 msgid ""
 "I<--os-variant> is highly recommended, because it will present optimum "
 "devices to enable the guest to run most efficiently.  To get a list of all "
@@ -3532,7 +3451,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:952
+#: builder/virt-builder.pod:912
 #, no-wrap
 msgid ""
 " osinfo-query os\n"
@@ -3540,12 +3459,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:954
+#: builder/virt-builder.pod:914
 msgid "The above tool is provided by libosinfo package."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:958
+#: builder/virt-builder.pod:918
 msgid ""
 "You can run virt-install as root or non-root.  Each works slightly "
 "differently because libvirt manages a different set of virtual machines for "
@@ -3555,17 +3474,17 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:966
+#: builder/virt-builder.pod:926
 msgid "Importing into OpenStack"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:968
+#: builder/virt-builder.pod:928
 msgid "Import the image into Glance (the OpenStack image store) by doing:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:970
+#: builder/virt-builder.pod:930
 #, no-wrap
 msgid ""
 " glance image-create --name fedora-41-image --file fedora-41.img \\\n"
@@ -3575,7 +3494,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:974
+#: builder/virt-builder.pod:934
 msgid ""
 "The I<--file> parameter is the virt-builder-generated disk image.  It should "
 "match virt-builder’s I<--output> option.  The I<--disk-format> parameter "
@@ -3585,19 +3504,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:980
+#: builder/virt-builder.pod:940
 msgid ""
 "You can use the S<C<glance image-show I<fedora-41-image>>> command to "
 "display the properties of the image."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:983
+#: builder/virt-builder.pod:943
 msgid "To boot up an instance of your image on a Nova compute node, do:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:985
+#: builder/virt-builder.pod:945
 #, no-wrap
 msgid ""
 " nova boot fedora-41-server --image fedora-41-image \\\n"
@@ -3606,19 +3525,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:988
+#: builder/virt-builder.pod:948
 msgid ""
 "Use S<C<nova flavor-list>> to list possible machine flavors.  Use S<C<nova "
 "list>> to list running instances."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:991
+#: builder/virt-builder.pod:951
 msgid "Booting directly using qemu or KVM"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:993
+#: builder/virt-builder.pod:953
 msgid ""
 "The qemu command line is not very stable or easy to use, hence libvirt "
 "should be used if possible.  However a command line similar to the following "
@@ -3626,7 +3545,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:997
+#: builder/virt-builder.pod:957
 #, no-wrap
 msgid ""
 " qemu-system-x86_64 \\\n"
@@ -3638,36 +3557,36 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1003
+#: builder/virt-builder.pod:963
 msgid ""
 "As with libvirt, it is very important that the correct format is chosen.  It "
 "will be C<raw> unless the I<--format> option was used."
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1006
+#: builder/virt-builder.pod:966
 msgid "CONFIGURATION MANAGEMENT"
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1008
+#: builder/virt-builder.pod:968
 msgid "Puppet"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1010
+#: builder/virt-builder.pod:970
 msgid ""
 "To enable the Puppet agent in a guest, install the package, point the "
 "configuration at your Puppetmaster, and ensure the agent runs at boot."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1014
+#: builder/virt-builder.pod:974
 msgid "A typical virt-builder command would be:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1016
+#: builder/virt-builder.pod:976
 #, no-wrap
 msgid ""
 " virt-builder fedora-41 \\\n"
@@ -3682,26 +3601,26 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1024
+#: builder/virt-builder.pod:984
 msgid ""
 "The precise instructions vary according to the Linux distro.  For further "
 "information see: L<https://docs.puppet.com/puppet/latest/install_pre.html>"
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1028
+#: builder/virt-builder.pod:988
 msgid "DEBUGGING BUILDS"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1030
+#: builder/virt-builder.pod:990
 msgid ""
 "If virt-builder itself fails, then enable debugging (I<-v>) and report a bug "
 "(see L</BUGS> below)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1033
+#: builder/virt-builder.pod:993
 msgid ""
 "If virt-builder fails because some script or package it is installing fails, "
 "try using I<--no-delete-on-failure> to preserve the output file, and "
@@ -3709,24 +3628,24 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1037
+#: builder/virt-builder.pod:997
 msgid ""
 "If virt-builder is successful but the image doesn't work, here are some "
 "things to try:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1042
+#: builder/virt-builder.pod:1002
 msgid "Use virt-rescue"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1044
+#: builder/virt-builder.pod:1004
 msgid "Run L<virt-rescue(1)> on the disk image:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1046
+#: builder/virt-builder.pod:1006
 #, no-wrap
 msgid ""
 " virt-rescue -a disk.img\n"
@@ -3734,7 +3653,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1048
+#: builder/virt-builder.pod:1008
 msgid ""
 "This gives you a rescue shell.  You can mount the filesystems from the disk "
 "image on F</sysroot> and examine them using ordinary Linux commands.  You "
@@ -3743,17 +3662,17 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1054
+#: builder/virt-builder.pod:1014
 msgid "Use guestfish"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1056
+#: builder/virt-builder.pod:1016
 msgid "Run L<guestfish(1)> on the disk image:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1058
+#: builder/virt-builder.pod:1018
 #, no-wrap
 msgid ""
 " guestfish -a disk.img -i\n"
@@ -3761,24 +3680,24 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1060
+#: builder/virt-builder.pod:1020
 msgid ""
 "Use guestfish commands like C<ll /directory> and C<cat /file> to examine "
 "directories and files."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1063
+#: builder/virt-builder.pod:1023
 msgid "Use guestmount"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1065
+#: builder/virt-builder.pod:1025
 msgid "Mount the disk image safely on the host using FUSE and L<guestmount(1)>:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1067
+#: builder/virt-builder.pod:1027
 #, no-wrap
 msgid ""
 " mkdir /tmp/mp\n"
@@ -3788,12 +3707,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1071
+#: builder/virt-builder.pod:1031
 msgid "To unmount the disk image do:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1073
+#: builder/virt-builder.pod:1033
 #, no-wrap
 msgid ""
 " fusermount -u /tmp/mp\n"
@@ -3801,12 +3720,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1075
+#: builder/virt-builder.pod:1035
 msgid "Add a serial console"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1077
+#: builder/virt-builder.pod:1037
 msgid ""
 "If the guest hangs during boot, it can be helpful to add a serial console to "
 "the guest, and direct kernel messages to the serial console.  Adding the "
@@ -3816,7 +3735,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1083
+#: builder/virt-builder.pod:1043
 #, no-wrap
 msgid ""
 " console=tty0 console=ttyS0,115200\n"
@@ -3824,26 +3743,26 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1087
+#: builder/virt-builder.pod:1047
 msgid "SOURCES OF TEMPLATES"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1089
+#: builder/virt-builder.pod:1049
 msgid ""
 "virt-builder reads the available sources from configuration files, with the "
 "I<.conf> extension and located in the following paths:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1096
+#: builder/virt-builder.pod:1056
 msgid ""
 "$XDG_CONFIG_HOME/virt-builder/repos.d/ (C<$XDG_CONFIG_HOME> is "
 "F<$HOME/.config> if not set)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1101
+#: builder/virt-builder.pod:1061
 msgid ""
 "$VIRT_BUILDER_DIRS/virt-builder/repos.d/ (where C<$VIRT_BUILDER_DIRS> means "
 "any of the directories in that environment variable, or just F</etc> if not "
@@ -3851,14 +3770,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1107
+#: builder/virt-builder.pod:1067
 msgid ""
 "Each I<.conf> file in those paths has a simple text format like the "
 "following:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1110
+#: builder/virt-builder.pod:1070
 #, no-wrap
 msgid ""
 " [libguestfs.org]\n"
@@ -3868,39 +3787,39 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1114
+#: builder/virt-builder.pod:1074
 msgid ""
 "The part in square brackets is the repository identifier, which is used as "
 "unique identifier."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1117 builder/virt-builder.pod:1293
+#: builder/virt-builder.pod:1077 builder/virt-builder.pod:1253
 msgid "The following fields can appear:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1121
+#: builder/virt-builder.pod:1081
 msgid "C<uri=URI>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1123
+#: builder/virt-builder.pod:1083
 msgid "The URI of the index file which this repository refers to."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1125 builder/virt-builder.pod:1382
+#: builder/virt-builder.pod:1085 builder/virt-builder.pod:1342
 msgid "This field is required."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1127
+#: builder/virt-builder.pod:1087
 msgid "C<gpgkey=URI>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1129
+#: builder/virt-builder.pod:1089
 msgid ""
 "This optional field represents the URI (although only I<file://> URIs are "
 "accepted) of the key used to sign the index file.  If not present, the index "
@@ -3908,116 +3827,116 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1133
+#: builder/virt-builder.pod:1093
 msgid "C<proxy=MODE>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1135
+#: builder/virt-builder.pod:1095
 msgid ""
 "This optional field specifies the proxy mode, to be used when downloading "
 "the index file of this repository.  The possible values are:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1140
+#: builder/virt-builder.pod:1100
 msgid "B<no>, B<off>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1142
+#: builder/virt-builder.pod:1102
 msgid "No proxy is being used at all, even overriding the system configuration."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1144
+#: builder/virt-builder.pod:1104
 msgid "B<system>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1146
+#: builder/virt-builder.pod:1106
 msgid "The proxy used is the system one."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1148
+#: builder/virt-builder.pod:1108
 msgid "I<anything else>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1150
+#: builder/virt-builder.pod:1110
 msgid ""
 "Specifies the actual proxy configuration to be used, overriding the system "
 "configuration."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1155
+#: builder/virt-builder.pod:1115
 msgid ""
 "If not present, the assumed value is to respect the proxy settings of the "
 "system (i.e. as if B<system> would be specified)."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1158
+#: builder/virt-builder.pod:1118
 msgid "C<format=FORMAT>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1160
+#: builder/virt-builder.pod:1120
 msgid ""
 "This optional field specifies the format of the repository.  The possible "
 "values are:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1165
+#: builder/virt-builder.pod:1125
 msgid "B<native>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1167
+#: builder/virt-builder.pod:1127
 msgid ""
 "The native format of the C<virt-builder> repository.  See also L</Creating "
 "and signing the index file> below."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1170
+#: builder/virt-builder.pod:1130
 msgid "B<simplestreams>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1172
+#: builder/virt-builder.pod:1132
 msgid "The URI represents the root of a Simple Streams v1.0 tree of metadata."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1174
+#: builder/virt-builder.pod:1134
 msgid ""
 "For more information about Simple Streams, see also "
 "L<https://launchpad.net/simplestreams>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1179
+#: builder/virt-builder.pod:1139
 msgid "If not present, the assumed value is C<native>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1183
+#: builder/virt-builder.pod:1143
 msgid ""
 "For serious virt-builder use, you may want to create your own repository of "
 "templates."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1186
+#: builder/virt-builder.pod:1146
 msgid "Libguestfs.org repository"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1188
+#: builder/virt-builder.pod:1148
 msgid ""
 "Out of the box, virt-builder downloads the file "
 "L<http://libguestfs.org/download/builder/index.asc> which is an index of "
@@ -4027,7 +3946,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1194
+#: builder/virt-builder.pod:1154
 msgid ""
 "The templates hosted on libguestfs.org were created using shell scripts, "
 "kickstart files and preseed files which can be found in the libguestfs "
@@ -4035,12 +3954,12 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1198
+#: builder/virt-builder.pod:1158
 msgid "Setting up the repository"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1200
+#: builder/virt-builder.pod:1160
 msgid ""
 "You can set up your own site containing an index file and some templates, "
 "and then point virt-builder at the site by creating a I<.conf> file pointing "
@@ -4048,7 +3967,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1204
+#: builder/virt-builder.pod:1164
 msgid ""
 "Note that if your index is signed, you will need to properly fill "
 "I<gpgkey=..> in your I<.conf> file, making sure to deploy also the GPG key "
@@ -4056,7 +3975,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1208
+#: builder/virt-builder.pod:1168
 #, no-wrap
 msgid ""
 " virt-builder --source https://example.com/builder/index.asc \\\n"
@@ -4066,19 +3985,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1212
+#: builder/virt-builder.pod:1172
 msgid ""
 "You can host this on any web or FTP server, or a local or network "
 "filesystem."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1215
+#: builder/virt-builder.pod:1175
 msgid "Setting up a GPG key"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1217
+#: builder/virt-builder.pod:1177
 msgid ""
 "If you don’t have a GnuPG key, you will need to set one up.  (Strictly "
 "speaking this is optional, but if your index and template files are not "
@@ -4087,19 +4006,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1222
+#: builder/virt-builder.pod:1182
 msgid ""
 "To create a key, see the GPG manual "
 "L<http://www.gnupg.org/gph/en/manual.html>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1225
+#: builder/virt-builder.pod:1185
 msgid "Export your GPG public key:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1227
+#: builder/virt-builder.pod:1187
 #, no-wrap
 msgid ""
 " gpg --export -a \"you@example.com\" > pubkey\n"
@@ -4107,12 +4026,12 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1229
+#: builder/virt-builder.pod:1189
 msgid "Create the templates"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1231
+#: builder/virt-builder.pod:1191
 msgid ""
 "There are many ways to create the templates.  For example you could clone "
 "existing guests (see L<virt-sysprep(1)>), or you could install a guest by "
@@ -4121,7 +4040,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1236
+#: builder/virt-builder.pod:1196
 msgid ""
 "Virt-builder supports any image format (e.g. raw, qcow2, etc) as template, "
 "both as-is, and compressed as XZ.  This way, existing images (e.g. cleaned "
@@ -4129,14 +4048,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1240
+#: builder/virt-builder.pod:1200
 msgid ""
 "For best results when compressing the templates, use the following xz "
 "options (see L<nbdkit-xz-plugin(1)> for further explanation):"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1243
+#: builder/virt-builder.pod:1203
 #, no-wrap
 msgid ""
 " xz --best --block-size=16777216 disk\n"
@@ -4144,19 +4063,19 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1245
+#: builder/virt-builder.pod:1205
 msgid "Creating and signing the index file"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1247
+#: builder/virt-builder.pod:1207
 msgid ""
 "The index file has a simple text format (shown here without the digital "
 "signature):"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1250
+#: builder/virt-builder.pod:1210
 #, no-wrap
 msgid ""
 " [fedora-41]\n"
@@ -4173,7 +4092,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1261
+#: builder/virt-builder.pod:1221
 #, no-wrap
 msgid ""
 " [fedora-42]\n"
@@ -4191,14 +4110,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1273
+#: builder/virt-builder.pod:1233
 msgid ""
 "The part in square brackets is the C<os-version>, which is the same string "
 "that is used on the virt-builder command line to build that OS."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1276
+#: builder/virt-builder.pod:1236
 msgid ""
 "Note that newlines in the index file are not significant.  Blank lines "
 "between sections are optional and are only included for readability.  You "
@@ -4206,21 +4125,21 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1281
+#: builder/virt-builder.pod:1241
 msgid ""
 "The index file creation and signature can be eased with the "
 "L<virt-builder-repository(1)> tool."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1284
+#: builder/virt-builder.pod:1244
 msgid ""
 "After preparing the C<index> file in the correct format, clearsign it using "
 "the following command:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1287
+#: builder/virt-builder.pod:1247
 #, no-wrap
 msgid ""
 " gpg --clearsign --armor index\n"
@@ -4228,7 +4147,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1289
+#: builder/virt-builder.pod:1249
 msgid ""
 "This will create the final file called F<index.asc> which can be uploaded to "
 "the server (and is the I<uri=..> URL).  As noted above, signing the index "
@@ -4236,53 +4155,53 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1297
+#: builder/virt-builder.pod:1257
 msgid "C<name=NAME>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1299
+#: builder/virt-builder.pod:1259
 msgid ""
 "The user-friendly name of this template.  This is displayed in the I<--list> "
 "output but is otherwise not significant."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1302
+#: builder/virt-builder.pod:1262
 msgid "C<osinfo=ID>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1304
+#: builder/virt-builder.pod:1264
 msgid ""
 "This optional field maps the operating system to the associated libosinfo "
 "ID.  Virt-builder does not use it (yet)."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1307
+#: builder/virt-builder.pod:1267
 msgid "C<arch=ARCH>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1309
+#: builder/virt-builder.pod:1269
 msgid ""
 "The architecture of the operating system installed within the template. This "
 "field is required."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1312
+#: builder/virt-builder.pod:1272
 msgid "C<file=PATH>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1314
+#: builder/virt-builder.pod:1274
 msgid "The path (relative to the index) of the xz-compressed template."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1316 builder/virt-builder.pod:1327
+#: builder/virt-builder.pod:1276 builder/virt-builder.pod:1287
 msgid ""
 "Note that absolute paths or URIs are B<not> permitted here.  This is because "
 "virt-builder has a \"same origin\" policy for templates so they cannot come "
@@ -4290,29 +4209,29 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1320
+#: builder/virt-builder.pod:1280
 msgid "C<sig=PATH>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1322
+#: builder/virt-builder.pod:1282
 msgid "B<This option is deprecated>.  Use the checksum field instead."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1324
+#: builder/virt-builder.pod:1284
 msgid ""
 "The path (relative to the index) of the GPG detached signature of the xz "
 "file."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1331
+#: builder/virt-builder.pod:1291
 msgid "The file can be created as follows:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1333
+#: builder/virt-builder.pod:1293
 #, no-wrap
 msgid ""
 " gpg --detach-sign --armor -o disk.xz.sig disk.xz\n"
@@ -4320,19 +4239,19 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1335
+#: builder/virt-builder.pod:1295
 msgid "C<checksum[sha512]=7b882fe9b82eb0fef...>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1337
+#: builder/virt-builder.pod:1297
 msgid ""
 "The SHA-512 checksum of the file specified in I<file=..> is checked after it "
 "is downloaded.  To work out the signature, do:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1340
+#: builder/virt-builder.pod:1300
 #, no-wrap
 msgid ""
 " sha512sum disk.xz\n"
@@ -4340,24 +4259,24 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1342
+#: builder/virt-builder.pod:1302
 msgid ""
 "Note if you use this, you don’t need to sign the file, ie. don’t use "
 "C<sig>.  This option overrides C<sig>."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1345
+#: builder/virt-builder.pod:1305
 msgid "C<checksum=7b882fe9b82eb0fef...>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1347
+#: builder/virt-builder.pod:1307
 msgid "C<checksum> is an alias for C<checksum[sha512]>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1349
+#: builder/virt-builder.pod:1309
 msgid ""
 "If you need to interoperate with virt-builder = 1.24.0 then you have to use "
 "C<checksum> because that version would give a parse error with square "
@@ -4366,12 +4285,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1354
+#: builder/virt-builder.pod:1314
 msgid "C<revision=N>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1356
+#: builder/virt-builder.pod:1316
 msgid ""
 "The revision is an integer which is used to control the template cache.  "
 "Increasing the revision number causes clients to download the template again "
@@ -4379,22 +4298,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1360
+#: builder/virt-builder.pod:1320
 msgid "The revision number is optional.  If omitted it defaults to C<1>."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1362
+#: builder/virt-builder.pod:1322
 msgid "C<format=raw>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1364
+#: builder/virt-builder.pod:1324
 msgid "C<format=qcow2>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1366
+#: builder/virt-builder.pod:1326
 msgid ""
 "Specify the format of the disk image; in case it is compressed, that is the "
 "format before the compression.  If not given, the format is autodetected, "
@@ -4402,7 +4321,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1371
+#: builder/virt-builder.pod:1331
 msgid ""
 "Note this is the source format, which is different from the I<--format> "
 "option (requested output format).  Virt-builder does on-the-fly conversion "
@@ -4410,12 +4329,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1376
+#: builder/virt-builder.pod:1336
 msgid "C<size=NNN>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1378
+#: builder/virt-builder.pod:1338
 msgid ""
 "The virtual size of the image in bytes.  This is the size of the image when "
 "uncompressed.  If using a non-raw format such as qcow2 then it means the "
@@ -4423,7 +4342,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1384
+#: builder/virt-builder.pod:1344
 msgid ""
 "Virt-builder also uses this as the minimum size that users can request via "
 "the I<--size> option, or as the default size if there is no I<--size> "
@@ -4431,12 +4350,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1388
+#: builder/virt-builder.pod:1348
 msgid "C<compressed_size=NNN>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1390
+#: builder/virt-builder.pod:1350
 msgid ""
 "The actual size of the disk image in bytes, i.e. what was specified in "
 "I<file=..>.  This is just used for information (when using C<long>, and "
@@ -4444,12 +4363,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1394
+#: builder/virt-builder.pod:1354
 msgid "C<expand=/dev/sdaX>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1396
+#: builder/virt-builder.pod:1356
 msgid ""
 "When expanding the image to its final size, instruct L<virt-resize(1)> to "
 "expand the named partition in the guest image to fill up all available "
@@ -4457,12 +4376,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1400
+#: builder/virt-builder.pod:1360
 msgid "You should usually put the device name of the guest’s root filesystem here."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1402
+#: builder/virt-builder.pod:1362
 msgid ""
 "It’s a good idea to use this, but not required.  If the field is omitted "
 "then virt-resize will create an extra partition at the end of the disk to "
@@ -4470,12 +4389,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1406
+#: builder/virt-builder.pod:1366
 msgid "C<lvexpand=/dev/VolGroup/LogVol>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1408
+#: builder/virt-builder.pod:1368
 msgid ""
 "When expanding the image to its final size, instruct L<virt-resize(1)> to "
 "expand the named logical volume in the guest image to fill up all available "
@@ -4483,7 +4402,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1412
+#: builder/virt-builder.pod:1372
 msgid ""
 "If the guest uses LVM2 you should usually put the LV of the guest’s root "
 "filesystem here.  If the guest does not use LVM2 or its root filesystem is "
@@ -4491,31 +4410,31 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1416
+#: builder/virt-builder.pod:1376
 msgid "C<notes=NOTES>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1418
+#: builder/virt-builder.pod:1378
 msgid ""
 "Any notes that go with this image, especially notes describing what packages "
 "are in the image, how the image was prepared, and licensing information."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1422
+#: builder/virt-builder.pod:1382
 msgid "This information is shown in the I<--notes> and I<--list> I<--long> modes."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1424
+#: builder/virt-builder.pod:1384
 msgid ""
 "You can use multi-line notes here by indenting each new line with at least "
 "one character of whitespace (even on blank lines):"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1427
+#: builder/virt-builder.pod:1387
 #, no-wrap
 msgid ""
 " notes=This image was prepared using\n"
@@ -4527,12 +4446,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1433
+#: builder/virt-builder.pod:1393
 msgid "C<hidden=true>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1435
+#: builder/virt-builder.pod:1395
 msgid ""
 "Using the hidden flag prevents the template from being listed by the "
 "I<--list> option (but it is still installable).  This is used for test "
@@ -4540,12 +4459,12 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1439
+#: builder/virt-builder.pod:1399
 msgid "C<aliases=ALIAS1 ALIAS2 ...>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1441
+#: builder/virt-builder.pod:1401
 msgid ""
 "This optional field specifies a list of aliases, separated by spaces, for "
 "the image.  For example, an alias could be used to always point to the "
@@ -4554,12 +4473,12 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1449
+#: builder/virt-builder.pod:1409
 msgid "Running virt-builder against multiple sources"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1451
+#: builder/virt-builder.pod:1411
 msgid ""
 "It is possible to use multiple sources with virt-builder.  The recommended "
 "way is to deploy I<.conf> files pointing to the index files. Another way is "
@@ -4568,7 +4487,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1456
+#: builder/virt-builder.pod:1416
 #, no-wrap
 msgid ""
 " virt-builder \\\n"
@@ -4578,7 +4497,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1460
+#: builder/virt-builder.pod:1420
 msgid ""
 "You can provide N or 1 fingerprints.  In the case where you provide N "
 "fingerprints, N = number of sources and there is a 1-1 correspondence "
@@ -4586,7 +4505,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1464
+#: builder/virt-builder.pod:1424
 #, no-wrap
 msgid ""
 " virt-builder \\\n"
@@ -4596,24 +4515,24 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1468
+#: builder/virt-builder.pod:1428
 msgid ""
 "In the case where you provide 1 fingerprint, the same fingerprint is used "
 "for all sources."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1471
+#: builder/virt-builder.pod:1431
 msgid "You C<must> provide at least 1 fingerprint."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1473
+#: builder/virt-builder.pod:1433
 msgid "Licensing of templates"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1475
+#: builder/virt-builder.pod:1435
 msgid ""
 "You should be aware of the licensing of images that you distribute.  For "
 "open source guests, provide a link to the source code in the C<notes> field "
@@ -4621,12 +4540,12 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1480
+#: builder/virt-builder.pod:1440
 msgid "Formal specification of the index file"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1482
+#: builder/virt-builder.pod:1442
 msgid ""
 "The index file format has a formal specification defined by the flex scanner "
 "and bison parser used to parse the file.  This can be found in the following "
@@ -4634,7 +4553,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1486
+#: builder/virt-builder.pod:1446
 #, no-wrap
 msgid ""
 " builder/index-scan.l\n"
@@ -4643,84 +4562,84 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1489
+#: builder/virt-builder.pod:1449
 msgid ""
 "A tool called L<virt-index-validate(1)> is available to validate the index "
 "file to ensure it is correct."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1492
+#: builder/virt-builder.pod:1452
 msgid ""
 "Note that the parser and tool can work on either the signed or unsigned "
 "index file (ie. F<index> or F<index.asc>)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1495
+#: builder/virt-builder.pod:1455
 msgid "The index is always encoded in UTF-8."
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1497
+#: builder/virt-builder.pod:1457
 msgid "CACHING"
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1499
+#: builder/virt-builder.pod:1459
 msgid "Caching templates"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1501
+#: builder/virt-builder.pod:1461
 msgid ""
 "Since the templates are usually very large, downloaded templates are cached "
 "in the user’s home directory."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1504
+#: builder/virt-builder.pod:1464
 msgid ""
 "The location of the cache is F<$XDG_CACHE_HOME/virt-builder/> or "
 "F<$HOME/.cache/virt-builder>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1507
+#: builder/virt-builder.pod:1467
 msgid ""
 "You can print out information about the cache directory, including which "
 "guests are currently cached, by doing:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1512
+#: builder/virt-builder.pod:1472
 msgid "The cache can be deleted if you want to save space by doing:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1516
+#: builder/virt-builder.pod:1476
 msgid "You can download all (current) templates to the local cache by doing:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1520
+#: builder/virt-builder.pod:1480
 msgid "To disable the template cache, use I<--no-cache>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1522
+#: builder/virt-builder.pod:1482
 msgid ""
 "Only templates are cached.  The index and detached digital signatures are "
 "not cached."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1525
+#: builder/virt-builder.pod:1485
 msgid "Caching packages"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1527
+#: builder/virt-builder.pod:1487
 msgid ""
 "Virt-builder uses L<curl(1)> to download files and it also uses the current "
 "C<http_proxy> (etc) settings when installing packages (I<--install>, "
@@ -4728,7 +4647,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1531
+#: builder/virt-builder.pod:1491
 msgid ""
 "You may therefore want to set those environment variables in order to "
 "maximize the amount of local caching that happens.  See L</ENVIRONMENT "
@@ -4736,12 +4655,12 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1535
+#: builder/virt-builder.pod:1495
 msgid "Local mirrors"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1537
+#: builder/virt-builder.pod:1497
 msgid ""
 "To increase both speed and reliability of installing packages, you can set "
 "up a local mirror of the target distribution, and point the guest package "
@@ -4749,17 +4668,17 @@ msgid ""
 msgstr ""
 
 #. type: =head4
-#: builder/virt-builder.pod:1541
+#: builder/virt-builder.pod:1501
 msgid "Using a local mirror with Fedora"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1543
+#: builder/virt-builder.pod:1503
 msgid "To install a Fedora guest using a local mirror:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1545
+#: builder/virt-builder.pod:1505
 #, no-wrap
 msgid ""
 " virt-builder fedora-41 \\\n"
@@ -4777,12 +4696,12 @@ msgid ""
 msgstr ""
 
 #. type: =head4
-#: builder/virt-builder.pod:1557
+#: builder/virt-builder.pod:1517
 msgid "Using a local mirror with Debian"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1559
+#: builder/virt-builder.pod:1519
 msgid ""
 "Assuming that you are using C<apt-proxy> to mirror the repository, you "
 "should create a new F<sources.list> file to point to your proxy (see "
@@ -4790,7 +4709,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1563
+#: builder/virt-builder.pod:1523
 #, no-wrap
 msgid ""
 " virt-builder debian-8 \\\n"
@@ -4801,24 +4720,24 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1568
+#: builder/virt-builder.pod:1528
 msgid "DIGITAL SIGNATURES"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1570
+#: builder/virt-builder.pod:1530
 msgid ""
 "Virt-builder uses GNU Privacy Guard (GnuPG or gpg) to verify that the index "
 "and templates have not been tampered with."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1573
+#: builder/virt-builder.pod:1533
 msgid "The source points to an index file, which is optionally signed."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1575
+#: builder/virt-builder.pod:1535
 msgid ""
 "Virt-builder downloads the index and checks that the signature is valid and "
 "the signer’s fingerprint matches the specified fingerprint (ie. the one "
@@ -4827,7 +4746,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1580
+#: builder/virt-builder.pod:1540
 msgid ""
 "For checking against the built-in public key/fingerprint, this requires "
 "importing the public key into the user’s local gpg keyring (that’s just the "
@@ -4835,12 +4754,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1584
+#: builder/virt-builder.pod:1544
 msgid "When a template is downloaded, its signature is checked in the same way."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1587
+#: builder/virt-builder.pod:1547
 msgid ""
 "Although the signatures are optional, if you don’t have them then "
 "virt-builder users will have to use I<--no-check-signature> on the command "
@@ -4851,19 +4770,19 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1594
+#: builder/virt-builder.pod:1554
 msgid "ARCHITECTURE"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1596
+#: builder/virt-builder.pod:1556
 msgid ""
 "Virt-builder can build a guest for any architecture no matter what the host "
 "architecture is.  For example an x86-64 guest on an ARM host."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1599
+#: builder/virt-builder.pod:1559
 msgid ""
 "However certain options may not work, specifically options that require "
 "running commands in the guest during the build process: I<--install>, "
@@ -4872,26 +4791,26 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1604
+#: builder/virt-builder.pod:1564
 msgid ""
 "An x86-64 host building 32 bit i686 guests should work without any special "
 "steps."
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1607 sysprep/virt-sysprep.pod:518
+#: builder/virt-builder.pod:1567 sysprep/virt-sysprep.pod:313
 msgid "SECURITY"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1609
+#: builder/virt-builder.pod:1569
 msgid ""
 "Virt-builder does not need to run as root (in fact, should not be run as "
 "root), and doesn't use setuid, C<sudo> or any similar mechanism."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1612
+#: builder/virt-builder.pod:1572
 msgid ""
 "I<--install>, I<--update>, I<--run> and I<--run-command> are implemented "
 "using an appliance (a small virtual machine) so these commands do not run on "
@@ -4901,7 +4820,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1618
+#: builder/virt-builder.pod:1578
 msgid ""
 "However these options will have access to the host’s network and since the "
 "template may contain untrusted code, the code might try to access host "
@@ -4910,14 +4829,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1623
+#: builder/virt-builder.pod:1583
 msgid ""
 "Firstboot commands run in the context of the guest when it is booted, and so "
 "the security of your hypervisor / cloud should be considered."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1626
+#: builder/virt-builder.pod:1586
 msgid ""
 "Virt-builder injects a random seed into every guest which it builds.  This "
 "helps to ensure that TCP sequence numbers, UUIDs, ssh host keys etc are "
@@ -4925,17 +4844,17 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1630
+#: builder/virt-builder.pod:1590
 msgid "You should check digital signatures and not ignore any signing errors."
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1632
+#: builder/virt-builder.pod:1592
 msgid "CLONES"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1634
+#: builder/virt-builder.pod:1594
 msgid ""
 "If you wish to create many new guests of the same type, it is tempting to "
 "run virt-builder once and then copy the output file.  You should B<not> do "
@@ -4943,7 +4862,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1639
+#: builder/virt-builder.pod:1599
 msgid ""
 "The reason is that each clone needs to have (at least) a separate random "
 "seed, and possibly other unique features (such as filesystem UUIDs) in "
@@ -4951,7 +4870,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1643
+#: builder/virt-builder.pod:1603
 msgid ""
 "Another thing you should I<not> do is to boot the guest, then clone the "
 "booted disk image.  The reason is that some guests create unique machine "
@@ -4960,17 +4879,17 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1648
+#: builder/virt-builder.pod:1608
 msgid "See also: L<virt-sysprep(1)>."
 msgstr ""
 
 #. type: =head2
-#: builder/virt-builder.pod:1650
+#: builder/virt-builder.pod:1610
 msgid "PERFORMANCE"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1652
+#: builder/virt-builder.pod:1612
 msgid ""
 "The most important aspect of getting good performance is caching.  Templates "
 "gets downloaded into the cache the first time they are used, or if you use "
@@ -4979,7 +4898,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1657
+#: builder/virt-builder.pod:1617
 msgid ""
 "Packages required for the I<--install> and I<--update> options are "
 "downloaded using the host network connection.  Setting the C<http_proxy>, "
@@ -4990,51 +4909,51 @@ msgid ""
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1665
+#: builder/virt-builder.pod:1625
 msgid "Using I<--no-sync>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1667
+#: builder/virt-builder.pod:1627
 msgid ""
 "Use I<--no-sync>.  However read the caveats in the L</OPTIONS> section "
 "above, since this can cause disk corruption if not used correctly."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1670
+#: builder/virt-builder.pod:1630
 msgid "Skipping virt-resize"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1672
+#: builder/virt-builder.pod:1632
 msgid ""
 "Virt-builder can skip the virt-resize step under certain conditions.  This "
 "makes virt-builder much faster.  The conditions are:"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1679
+#: builder/virt-builder.pod:1639
 msgid "the output must be a regular file (not a block device), B<and>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1683
+#: builder/virt-builder.pod:1643
 msgid "the user did B<not> use the I<--size> option, B<and>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1687
+#: builder/virt-builder.pod:1647
 msgid "the output format is the same as the template format (usually raw)."
 msgstr ""
 
 #. type: =head3
-#: builder/virt-builder.pod:1691
+#: builder/virt-builder.pod:1651
 msgid "pxzcat"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1693
+#: builder/virt-builder.pod:1653
 msgid ""
 "Virt-builder uses an internal implementation of pxzcat (parallel xzcat) if "
 "liblzma was found at build time.  If liblzma was not found at build time, "
@@ -5042,56 +4961,55 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1697 customize/virt-customize.pod:243
-#: sysprep/virt-sysprep.pod:556
+#: builder/virt-builder.pod:1657 customize/virt-customize.pod:323
 msgid "SELINUX"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1699
+#: builder/virt-builder.pod:1659
 msgid ""
 "Guests which use SELinux (such as Fedora and Red Hat Enterprise Linux)  "
 "require that each file has a correct SELinux label."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1702
+#: builder/virt-builder.pod:1662
 msgid ""
 "Virt-builder does not know how to give new files a label, so there are two "
 "possible strategies it can use to ensure correct labelling:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1707
+#: builder/virt-builder.pod:1667
 msgid "Automatic relabeling"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1709
+#: builder/virt-builder.pod:1669
 msgid ""
 "This runs L<setfiles(8)> just before finalizing the guest, which sets "
 "SELinux labels correctly in the disk image."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1712
+#: builder/virt-builder.pod:1672
 msgid "This is the recommended method."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1714
+#: builder/virt-builder.pod:1674
 msgid "Using I<--no-selinux-relabel> I<--touch> F</.autorelabel>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1716
+#: builder/virt-builder.pod:1676
 msgid ""
 "Guest templates may already contain a file called F</.autorelabel> or you "
 "may touch it."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1719
+#: builder/virt-builder.pod:1679
 msgid ""
 "For guests that use SELinux, this causes L<restorecon(8)> to run at first "
 "boot.  Guests will reboot themselves once the first time you use them, which "
@@ -5099,62 +5017,62 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1725 customize/virt-customize.pod:251
+#: builder/virt-builder.pod:1685 customize/virt-customize.pod:331
 msgid "DEPRECATED OPTIONS"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1727
+#: builder/virt-builder.pod:1687
 msgid "In version 1.56 the subscription-manager options were removed."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1731
+#: builder/virt-builder.pod:1691
 msgid "B<--sm-credentials>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1733
+#: builder/virt-builder.pod:1693
 msgid "B<--sm-register>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1735
+#: builder/virt-builder.pod:1695
 msgid "Use --run='subscription-manager register --username=USER --password=PASS'"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1737
+#: builder/virt-builder.pod:1697
 msgid "B<--sm-unregister>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1739
+#: builder/virt-builder.pod:1699
 msgid "Use --run='subscription-manager unregister'"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1741
+#: builder/virt-builder.pod:1701
 msgid "B<--sm-attach>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1743
+#: builder/virt-builder.pod:1703
 msgid "Use --run='subscription-manager attach ...'"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1745
+#: builder/virt-builder.pod:1705
 msgid "B<--sm-remove>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1747
+#: builder/virt-builder.pod:1707
 msgid "Use --run='subscription-manager remove --all'"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1753
+#: builder/virt-builder.pod:1713
 msgid ""
 "The I<--machine-readable> option can be used to make the output more machine "
 "friendly, which is useful when calling virt-builder from other programs, "
@@ -5162,14 +5080,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1757
+#: builder/virt-builder.pod:1717
 msgid ""
 "Use the option on its own to query the capabilities of the virt-builder "
 "binary.  Typical output looks like this:"
 msgstr ""
 
 #. type: verbatim
-#: builder/virt-builder.pod:1760
+#: builder/virt-builder.pod:1720
 #, no-wrap
 msgid ""
 " $ virt-builder --machine-readable\n"
@@ -5183,15 +5101,15 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1774 customize/virt-customize.pod:263
+#: builder/virt-builder.pod:1734 customize/virt-customize.pod:343
 #: drivers/virt-drivers.pod:224 edit/virt-edit.pod:366
 #: get-kernel/virt-get-kernel.pod:191 sparsify/virt-sparsify.pod:418
-#: sysprep/virt-sysprep.pod:573
+#: sysprep/virt-sysprep.pod:370
 msgid "ENVIRONMENT VARIABLES"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1776 drivers/virt-drivers.pod:226
+#: builder/virt-builder.pod:1736 drivers/virt-drivers.pod:226
 #: get-kernel/virt-get-kernel.pod:193
 msgid ""
 "For other environment variables which affect all libguestfs programs, see "
@@ -5199,76 +5117,76 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1781
+#: builder/virt-builder.pod:1741
 msgid "C<http_proxy>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1783
+#: builder/virt-builder.pod:1743
 msgid "C<https_proxy>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1785
+#: builder/virt-builder.pod:1745
 msgid "C<no_proxy>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1787
+#: builder/virt-builder.pod:1747
 msgid ""
 "Set the proxy for downloads.  These environment variables (and more)  are "
 "actually interpreted by L<curl(1)>, not virt-builder."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1790
+#: builder/virt-builder.pod:1750
 msgid "C<HOME>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1792
+#: builder/virt-builder.pod:1752
 msgid ""
 "Used to determine the location of the template cache, and the location of "
 "the user' sources.  See L</CACHING> and L</SOURCES OF TEMPLATES>."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1795 customize/virt-customize.pod:267
-#: sysprep/virt-sysprep.pod:577
+#: builder/virt-builder.pod:1755 customize/virt-customize.pod:347
+#: sysprep/virt-sysprep.pod:374
 msgid "C<VIRT_TOOLS_DATA_DIR>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1797 customize/virt-customize.pod:269
-#: sysprep/virt-sysprep.pod:579
+#: builder/virt-builder.pod:1757 customize/virt-customize.pod:349
+#: sysprep/virt-sysprep.pod:376
 msgid ""
 "This can point to the directory containing data files used for Windows "
 "firstboot installation."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1800 customize/virt-customize.pod:272
-#: sysprep/virt-sysprep.pod:582
+#: builder/virt-builder.pod:1760 customize/virt-customize.pod:352
+#: sysprep/virt-sysprep.pod:379
 msgid ""
 "Normally you do not need to set this.  If not set, a compiled-in default "
 "will be used (something like F</usr/share/virt-tools>)."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1803 customize/virt-customize.pod:275
-#: sysprep/virt-sysprep.pod:585
+#: builder/virt-builder.pod:1763 customize/virt-customize.pod:355
+#: sysprep/virt-sysprep.pod:382
 msgid "This directory may contain the following files:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1807 customize/virt-customize.pod:279
-#: sysprep/virt-sysprep.pod:589
+#: builder/virt-builder.pod:1767 customize/virt-customize.pod:359
+#: sysprep/virt-sysprep.pod:386
 msgid "F<rhsrvany.exe>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1809 customize/virt-customize.pod:281
-#: sysprep/virt-sysprep.pod:591
+#: builder/virt-builder.pod:1769 customize/virt-customize.pod:361
+#: sysprep/virt-sysprep.pod:388
 msgid ""
 "This is the RHSrvAny Windows binary, used to install a \"firstboot\" script "
 "in Windows guests.  It is required if you intend to use the I<--firstboot> "
@@ -5276,20 +5194,20 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1813 customize/virt-customize.pod:285
-#: sysprep/virt-sysprep.pod:595
+#: builder/virt-builder.pod:1773 customize/virt-customize.pod:365
+#: sysprep/virt-sysprep.pod:392
 msgid "See also: C<https://github.com/rwmjones/rhsrvany>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1815 customize/virt-customize.pod:287
-#: sysprep/virt-sysprep.pod:597
+#: builder/virt-builder.pod:1775 customize/virt-customize.pod:367
+#: sysprep/virt-sysprep.pod:394
 msgid "F<pvvxsvc.exe>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1817 customize/virt-customize.pod:289
-#: sysprep/virt-sysprep.pod:599
+#: builder/virt-builder.pod:1777 customize/virt-customize.pod:369
+#: sysprep/virt-sysprep.pod:396
 msgid ""
 "This is a Windows binary shipped with SUSE VMDP, used to install a "
 "\"firstboot\" script in Windows guests.  It is required if you intend to use "
@@ -5297,41 +5215,41 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1823
+#: builder/virt-builder.pod:1783
 msgid "C<XDG_CACHE_HOME>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1825
+#: builder/virt-builder.pod:1785
 msgid "Used to determine the location of the template cache.  See L</CACHING>."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1827
+#: builder/virt-builder.pod:1787
 msgid "C<XDG_CONFIG_HOME>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1829
+#: builder/virt-builder.pod:1789
 msgid ""
 "Used to determine the location of the user' sources.  See L</SOURCES OF "
 "TEMPLATES>."
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1832
+#: builder/virt-builder.pod:1792
 msgid "C<VIRT_BUILDER_DIRS>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1834
+#: builder/virt-builder.pod:1794
 msgid ""
 "Used to determine the location of the system sources.  See L</SOURCES OF "
 "TEMPLATES>."
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1846
+#: builder/virt-builder.pod:1806
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, "
 "L<virt-builder-repository(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, "
@@ -5342,7 +5260,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1871 builder/virt-index-validate.pod:90
+#: builder/virt-builder.pod:1831 builder/virt-index-validate.pod:90
 msgid "Copyright (C) 2013 Red Hat Inc."
 msgstr ""
 
@@ -5572,7 +5490,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:171 edit/virt-edit.pod:112
 #: filesystems/virt-filesystems.pod:154 get-kernel/virt-get-kernel.pod:81
 #: inspector/virt-inspector.pod:100 log/virt-log.pod:79 ls/virt-ls.pod:310
-#: sparsify/virt-sparsify.pod:195 sysprep/virt-sysprep.pod:156
+#: sparsify/virt-sparsify.pod:195 sysprep/virt-sysprep.pod:165
 #: tail/virt-tail.pod:90
 msgid "B<--echo-keys>"
 msgstr ""
@@ -5607,7 +5525,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:190 edit/virt-edit.pod:158
 #: get-kernel/virt-get-kernel.pod:100 inspector/virt-inspector.pod:122
 #: log/virt-log.pod:110 ls/virt-ls.pod:357 sparsify/virt-sparsify.pod:233
-#: sysprep/virt-sysprep.pod:187 tail/virt-tail.pod:128
+#: sysprep/virt-sysprep.pod:196 tail/virt-tail.pod:128
 msgid "__INCLUDE:key-option.pod__"
 msgstr ""
 
@@ -5616,7 +5534,7 @@ msgstr ""
 #: drivers/virt-drivers.pod:192 edit/virt-edit.pod:160
 #: filesystems/virt-filesystems.pod:214 get-kernel/virt-get-kernel.pod:102
 #: inspector/virt-inspector.pod:124 log/virt-log.pod:112 ls/virt-ls.pod:359
-#: sparsify/virt-sparsify.pod:235 sysprep/virt-sysprep.pod:189
+#: sparsify/virt-sparsify.pod:235 sysprep/virt-sysprep.pod:198
 #: tail/virt-tail.pod:130
 msgid "__INCLUDE:keys-from-stdin-option.pod__"
 msgstr ""
@@ -6214,12 +6132,12 @@ msgstr ""
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:118
 #: common/mlcustomize/customize-options.pod:125
-#: common/mlcustomize/customize-options.pod:277
+#: common/mlcustomize/customize-options.pod:271
 #: common/mlcustomize/v2v-customize-options.pod:118
 #: common/mlcustomize/v2v-customize-options.pod:125
-#: common/mlcustomize/v2v-customize-options.pod:223
+#: common/mlcustomize/v2v-customize-options.pod:217
 #: sysprep/sysprep-extra-options.pod:95 sysprep/sysprep-extra-options.pod:103
-#: sysprep/sysprep-extra-options.pod:282
+#: sysprep/sysprep-extra-options.pod:276
 msgid "Wildcards cannot be used."
 msgstr ""
 
@@ -6349,10 +6267,10 @@ msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:161
-#: common/mlcustomize/customize-options.pod:174
+#: common/mlcustomize/customize-options.pod:171
 #: common/mlcustomize/v2v-customize-options.pod:161
-#: common/mlcustomize/v2v-customize-options.pod:174
-#: sysprep/sysprep-extra-options.pod:142 sysprep/sysprep-extra-options.pod:156
+#: common/mlcustomize/v2v-customize-options.pod:171
+#: sysprep/sysprep-extra-options.pod:142 sysprep/sysprep-extra-options.pod:153
 msgid ""
 "You can have multiple I<--firstboot> options.  They run in the same order "
 "that they appear on the command line."
@@ -6360,49 +6278,38 @@ msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:164
-#: common/mlcustomize/customize-options.pod:177
+#: common/mlcustomize/customize-options.pod:174
 #: common/mlcustomize/v2v-customize-options.pod:164
-#: common/mlcustomize/v2v-customize-options.pod:177
-#: sysprep/sysprep-extra-options.pod:145 sysprep/sysprep-extra-options.pod:159
-msgid ""
-"Please take a look at L<virt-builder(1)/FIRST BOOT SCRIPTS> for more "
-"information and caveats about the first boot scripts."
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:167
-#: common/mlcustomize/customize-options.pod:180
-#: common/mlcustomize/v2v-customize-options.pod:167
-#: common/mlcustomize/v2v-customize-options.pod:180
-#: sysprep/sysprep-extra-options.pod:148 sysprep/sysprep-extra-options.pod:162
-msgid "See also I<--run>."
+#: common/mlcustomize/v2v-customize-options.pod:174
+#: sysprep/sysprep-extra-options.pod:145 sysprep/sysprep-extra-options.pod:156
+msgid "See also: L<virt-customize(1)/FIRSTBOOT>, I<--run>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:169
-#: common/mlcustomize/v2v-customize-options.pod:169
+#: common/mlcustomize/customize-options.pod:166
+#: common/mlcustomize/v2v-customize-options.pod:166
 msgid "B<--firstboot-command> 'CMD+ARGS'"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:171
-#: common/mlcustomize/v2v-customize-options.pod:171
-#: sysprep/sysprep-extra-options.pod:153
+#: common/mlcustomize/customize-options.pod:168
+#: common/mlcustomize/v2v-customize-options.pod:168
+#: sysprep/sysprep-extra-options.pod:150
 msgid ""
 "Run command (and arguments) inside the guest when the guest first boots up "
 "(as root, late in the boot process)."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:182
-#: common/mlcustomize/v2v-customize-options.pod:182
+#: common/mlcustomize/customize-options.pod:176
+#: common/mlcustomize/v2v-customize-options.pod:176
 msgid "B<--firstboot-install> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:184
-#: common/mlcustomize/v2v-customize-options.pod:184
-#: sysprep/sysprep-extra-options.pod:167
+#: common/mlcustomize/customize-options.pod:178
+#: common/mlcustomize/v2v-customize-options.pod:178
+#: sysprep/sysprep-extra-options.pod:161
 msgid ""
 "Install the named packages (a comma-separated list).  These are installed "
 "when the guest first boots using the guest’s package manager (eg. apt, yum, "
@@ -6410,39 +6317,39 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:188
-#: common/mlcustomize/customize-options.pod:256
-#: common/mlcustomize/v2v-customize-options.pod:188
-#: common/mlcustomize/v2v-customize-options.pod:202
-#: sysprep/sysprep-extra-options.pod:171 sysprep/sysprep-extra-options.pod:244
+#: common/mlcustomize/customize-options.pod:182
+#: common/mlcustomize/customize-options.pod:250
+#: common/mlcustomize/v2v-customize-options.pod:182
+#: common/mlcustomize/v2v-customize-options.pod:196
+#: sysprep/sysprep-extra-options.pod:165 sysprep/sysprep-extra-options.pod:238
 msgid ""
 "For an overview on the different ways to install packages, see "
 "L<virt-builder(1)/INSTALLING PACKAGES>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:191
-#: common/mlcustomize/v2v-customize-options.pod:191
+#: common/mlcustomize/customize-options.pod:185
+#: common/mlcustomize/v2v-customize-options.pod:185
 msgid "B<--hostname> HOSTNAME"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:193
-#: common/mlcustomize/v2v-customize-options.pod:193
-#: sysprep/sysprep-extra-options.pod:177
+#: common/mlcustomize/customize-options.pod:187
+#: common/mlcustomize/v2v-customize-options.pod:187
+#: sysprep/sysprep-extra-options.pod:171
 msgid ""
 "Set the hostname of the guest to C<HOSTNAME>.  You can use a dotted "
 "hostname.domainname (FQDN) if you want."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:196
+#: common/mlcustomize/customize-options.pod:190
 msgid "B<--inject-blnsvr> METHOD"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:198
-#: sysprep/sysprep-extra-options.pod:183
+#: common/mlcustomize/customize-options.pod:192
+#: sysprep/sysprep-extra-options.pod:177
 msgid ""
 "Inject the Balloon Server (F<blnsvr.exe>) into a Windows guest.  This "
 "operation also injects a firstboot script so that the Balloon Server is "
@@ -6450,18 +6357,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:202
-#: common/mlcustomize/customize-options.pod:216
-#: sysprep/sysprep-extra-options.pod:187 sysprep/sysprep-extra-options.pod:202
+#: common/mlcustomize/customize-options.pod:196
+#: common/mlcustomize/customize-options.pod:210
+#: sysprep/sysprep-extra-options.pod:181 sysprep/sysprep-extra-options.pod:196
 msgid "The parameter is the same as used by the I<--inject-virtio-win> operation."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:204
-#: common/mlcustomize/customize-options.pod:218
-#: common/mlcustomize/customize-options.pod:246
-#: sysprep/sysprep-extra-options.pod:189 sysprep/sysprep-extra-options.pod:204
-#: sysprep/sysprep-extra-options.pod:233
+#: common/mlcustomize/customize-options.pod:198
+#: common/mlcustomize/customize-options.pod:212
+#: common/mlcustomize/customize-options.pod:240
+#: sysprep/sysprep-extra-options.pod:183 sysprep/sysprep-extra-options.pod:198
+#: sysprep/sysprep-extra-options.pod:227
 msgid ""
 "Note that to do a full conversion of a Windows guest from a foreign "
 "hypervisor like VMware (which involves many other operations)  you should "
@@ -6469,13 +6376,13 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:208
+#: common/mlcustomize/customize-options.pod:202
 msgid "B<--inject-qemu-ga> METHOD"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:210
-#: sysprep/sysprep-extra-options.pod:196
+#: common/mlcustomize/customize-options.pod:204
+#: sysprep/sysprep-extra-options.pod:190
 msgid ""
 "Inject the QEMU Guest Agent into a Windows guest.  The guest agent "
 "communicates with qemu through a socket in order to provide enhanced "
@@ -6484,13 +6391,13 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:222
+#: common/mlcustomize/customize-options.pod:216
 msgid "B<--inject-virtio-win> METHOD"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:224
-#: sysprep/sysprep-extra-options.pod:211
+#: common/mlcustomize/customize-options.pod:218
+#: sysprep/sysprep-extra-options.pod:205
 msgid ""
 "Inject virtio-win drivers into a Windows guest.  These drivers add virtio "
 "accelerated drivers suitable when running on top of a hypervisor that "
@@ -6499,49 +6406,49 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:230
-#: sysprep/sysprep-extra-options.pod:217
+#: common/mlcustomize/customize-options.pod:224
+#: sysprep/sysprep-extra-options.pod:211
 msgid "The parameter can be one of:"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:234
-#: sysprep/sysprep-extra-options.pod:221
+#: common/mlcustomize/customize-options.pod:228
+#: sysprep/sysprep-extra-options.pod:215
 msgid "ISO"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:236
-#: sysprep/sysprep-extra-options.pod:223
+#: common/mlcustomize/customize-options.pod:230
+#: sysprep/sysprep-extra-options.pod:217
 msgid ""
 "The path to the ISO image containing the virtio-win drivers "
 "(eg. F</usr/share/virtio-win/virtio-win.iso>)."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:239
-#: sysprep/sysprep-extra-options.pod:226
+#: common/mlcustomize/customize-options.pod:233
+#: sysprep/sysprep-extra-options.pod:220
 msgid "DIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:241
-#: sysprep/sysprep-extra-options.pod:228
+#: common/mlcustomize/customize-options.pod:235
+#: sysprep/sysprep-extra-options.pod:222
 msgid ""
 "The directory containing the unpacked virtio-win drivers "
 "(eg. F</usr/share/virtio-win>)."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:250
-#: common/mlcustomize/v2v-customize-options.pod:196
+#: common/mlcustomize/customize-options.pod:244
+#: common/mlcustomize/v2v-customize-options.pod:190
 msgid "B<--install> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:252
-#: common/mlcustomize/v2v-customize-options.pod:198
-#: sysprep/sysprep-extra-options.pod:240
+#: common/mlcustomize/customize-options.pod:246
+#: common/mlcustomize/v2v-customize-options.pod:192
+#: sysprep/sysprep-extra-options.pod:234
 msgid ""
 "Install the named packages (a comma-separated list).  These are installed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -6549,72 +6456,72 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:259
-#: common/mlcustomize/v2v-customize-options.pod:205
-#: sysprep/sysprep-extra-options.pod:247
+#: common/mlcustomize/customize-options.pod:253
+#: common/mlcustomize/v2v-customize-options.pod:199
+#: sysprep/sysprep-extra-options.pod:241
 msgid "See also I<--update>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:261
-#: common/mlcustomize/v2v-customize-options.pod:207
+#: common/mlcustomize/customize-options.pod:255
+#: common/mlcustomize/v2v-customize-options.pod:201
 msgid "B<--link> TARGET:LINK[:LINK..]"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:263
-#: common/mlcustomize/v2v-customize-options.pod:209
-#: sysprep/sysprep-extra-options.pod:266
+#: common/mlcustomize/customize-options.pod:257
+#: common/mlcustomize/v2v-customize-options.pod:203
+#: sysprep/sysprep-extra-options.pod:260
 msgid ""
 "Create symbolic link(s) in the guest, starting at C<LINK> and pointing at "
 "C<TARGET>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:266
-#: common/mlcustomize/v2v-customize-options.pod:212
+#: common/mlcustomize/customize-options.pod:260
+#: common/mlcustomize/v2v-customize-options.pod:206
 msgid "B<--mkdir> DIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:268
-#: common/mlcustomize/v2v-customize-options.pod:214
-#: sysprep/sysprep-extra-options.pod:272
+#: common/mlcustomize/customize-options.pod:262
+#: common/mlcustomize/v2v-customize-options.pod:208
+#: sysprep/sysprep-extra-options.pod:266
 msgid "Create a directory in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:270
-#: common/mlcustomize/v2v-customize-options.pod:216
-#: sysprep/sysprep-extra-options.pod:274
+#: common/mlcustomize/customize-options.pod:264
+#: common/mlcustomize/v2v-customize-options.pod:210
+#: sysprep/sysprep-extra-options.pod:268
 msgid ""
 "This uses S<C<mkdir -p>> so any intermediate directories are created, and it "
 "also works if the directory already exists."
 msgstr ""
 
 #. type: =item
+#: common/mlcustomize/customize-options.pod:267
+#: common/mlcustomize/v2v-customize-options.pod:213
+msgid "B<--move> SOURCE:DEST"
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:269
+#: common/mlcustomize/v2v-customize-options.pod:215
+#: sysprep/sysprep-extra-options.pod:274
+msgid "Move files or directories inside the guest."
+msgstr ""
+
+#. type: =item
 #: common/mlcustomize/customize-options.pod:273
 #: common/mlcustomize/v2v-customize-options.pod:219
-msgid "B<--move> SOURCE:DEST"
+msgid "B<--no-logfile>"
 msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:275
 #: common/mlcustomize/v2v-customize-options.pod:221
-#: sysprep/sysprep-extra-options.pod:280
-msgid "Move files or directories inside the guest."
-msgstr ""
-
-#. type: =item
-#: common/mlcustomize/customize-options.pod:279
-#: common/mlcustomize/v2v-customize-options.pod:225
-msgid "B<--no-logfile>"
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:281
-#: common/mlcustomize/v2v-customize-options.pod:227
-#: sysprep/sysprep-extra-options.pod:287
+#: sysprep/sysprep-extra-options.pod:281
 msgid ""
 "Scrub C<builder.log> (log file from build commands) from the image after "
 "building is complete.  If you don't want to reveal precisely how the image "
@@ -6622,29 +6529,29 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:285
-#: common/mlcustomize/v2v-customize-options.pod:231
-#: sysprep/sysprep-extra-options.pod:291
+#: common/mlcustomize/customize-options.pod:279
+#: common/mlcustomize/v2v-customize-options.pod:225
+#: sysprep/sysprep-extra-options.pod:285
 msgid "See also: L</LOG FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:287
-#: common/mlcustomize/v2v-customize-options.pod:233
+#: common/mlcustomize/customize-options.pod:281
+#: common/mlcustomize/v2v-customize-options.pod:227
 msgid "B<--no-selinux-relabel>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:289
-#: common/mlcustomize/v2v-customize-options.pod:235
-#: sysprep/sysprep-extra-options.pod:296
+#: common/mlcustomize/customize-options.pod:283
+#: common/mlcustomize/v2v-customize-options.pod:229
+#: sysprep/sysprep-extra-options.pod:290
 msgid "Do not attempt to correct the SELinux labels of files in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:291
-#: common/mlcustomize/v2v-customize-options.pod:237
-#: sysprep/sysprep-extra-options.pod:298
+#: common/mlcustomize/customize-options.pod:285
+#: common/mlcustomize/v2v-customize-options.pod:231
+#: sysprep/sysprep-extra-options.pod:292
 msgid ""
 "In such guests that support SELinux, customization automatically relabels "
 "files so that they have the correct SELinux label.  (The relabeling is "
@@ -6655,51 +6562,69 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:298
-#: common/mlcustomize/v2v-customize-options.pod:244
-#: sysprep/sysprep-extra-options.pod:305
+#: common/mlcustomize/customize-options.pod:292
+#: common/mlcustomize/v2v-customize-options.pod:238
+#: sysprep/sysprep-extra-options.pod:299
 msgid "The option is a no-op for guests that do not support SELinux."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:300
-#: common/mlcustomize/v2v-customize-options.pod:246
+#: common/mlcustomize/customize-options.pod:294
+#: common/mlcustomize/v2v-customize-options.pod:240
 msgid "B<--password> USER:SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:302
-#: common/mlcustomize/v2v-customize-options.pod:248
-#: sysprep/sysprep-extra-options.pod:310
+#: common/mlcustomize/customize-options.pod:296
+#: common/mlcustomize/v2v-customize-options.pod:242
+#: sysprep/sysprep-extra-options.pod:304
 msgid ""
 "Set the password for C<USER>.  (Note this option does I<not> create the user "
 "account)."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:305
-#: common/mlcustomize/customize-options.pod:334
-#: common/mlcustomize/v2v-customize-options.pod:251
-#: common/mlcustomize/v2v-customize-options.pod:280
-#: sysprep/sysprep-extra-options.pod:313 sysprep/sysprep-extra-options.pod:358
+#: common/mlcustomize/customize-options.pod:299
+#: common/mlcustomize/customize-options.pod:328
+#: common/mlcustomize/v2v-customize-options.pod:245
+#: common/mlcustomize/v2v-customize-options.pod:274
+#: sysprep/sysprep-extra-options.pod:307 sysprep/sysprep-extra-options.pod:352
 msgid ""
 "See L<virt-builder(1)/USERS AND PASSWORDS> for the format of the C<SELECTOR> "
 "field, and also how to set up user accounts."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:308
-#: common/mlcustomize/v2v-customize-options.pod:254
+#: common/mlcustomize/customize-options.pod:302
+#: common/mlcustomize/v2v-customize-options.pod:248
 msgid "B<--password-crypto> md5|sha256|sha512"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:310
-#: common/mlcustomize/v2v-customize-options.pod:256
-#: sysprep/sysprep-extra-options.pod:319
+#: common/mlcustomize/customize-options.pod:304
+#: common/mlcustomize/v2v-customize-options.pod:250
+#: sysprep/sysprep-extra-options.pod:313
 msgid ""
 "When the virt tools change or set a password in the guest, this option sets "
 "the password encryption of that password to C<md5>, C<sha256> or C<sha512>."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:308
+#: common/mlcustomize/v2v-customize-options.pod:254
+#: sysprep/sysprep-extra-options.pod:317
+msgid ""
+"C<sha256> and C<sha512> require glibc E<ge> 2.7 (check crypt(3) inside the "
+"guest)."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:311
+#: common/mlcustomize/v2v-customize-options.pod:257
+#: sysprep/sysprep-extra-options.pod:320
+msgid ""
+"C<md5> will work with relatively old Linux guests (eg. RHEL 3), but is not "
+"secure against modern attacks."
 msgstr ""
 
 #. type: textblock
@@ -6707,33 +6632,15 @@ msgstr ""
 #: common/mlcustomize/v2v-customize-options.pod:260
 #: sysprep/sysprep-extra-options.pod:323
 msgid ""
-"C<sha256> and C<sha512> require glibc E<ge> 2.7 (check crypt(3) inside the "
-"guest)."
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:317
-#: common/mlcustomize/v2v-customize-options.pod:263
-#: sysprep/sysprep-extra-options.pod:326
-msgid ""
-"C<md5> will work with relatively old Linux guests (eg. RHEL 3), but is not "
-"secure against modern attacks."
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:320
-#: common/mlcustomize/v2v-customize-options.pod:266
-#: sysprep/sysprep-extra-options.pod:329
-msgid ""
 "The default is C<sha512> unless libguestfs detects an old guest that didn't "
 "have support for SHA-512, in which case it will use C<md5>.  You can "
 "override libguestfs by specifying this option."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:324
-#: common/mlcustomize/v2v-customize-options.pod:270
-#: sysprep/sysprep-extra-options.pod:333
+#: common/mlcustomize/customize-options.pod:318
+#: common/mlcustomize/v2v-customize-options.pod:264
+#: sysprep/sysprep-extra-options.pod:327
 msgid ""
 "Note this does not change the default password encryption used by the guest "
 "when you create new user accounts inside the guest.  If you want to do that, "
@@ -6743,37 +6650,37 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:330
-#: common/mlcustomize/v2v-customize-options.pod:276
+#: common/mlcustomize/customize-options.pod:324
+#: common/mlcustomize/v2v-customize-options.pod:270
 msgid "B<--root-password> SELECTOR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:332
-#: common/mlcustomize/v2v-customize-options.pod:278
-#: sysprep/sysprep-extra-options.pod:356
+#: common/mlcustomize/customize-options.pod:326
+#: common/mlcustomize/v2v-customize-options.pod:272
+#: sysprep/sysprep-extra-options.pod:350
 msgid "Set the root password."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:337
-#: common/mlcustomize/v2v-customize-options.pod:283
-#: sysprep/sysprep-extra-options.pod:361
+#: common/mlcustomize/customize-options.pod:331
+#: common/mlcustomize/v2v-customize-options.pod:277
+#: sysprep/sysprep-extra-options.pod:355
 msgid ""
 "Note: In virt-builder, if you I<don't> set I<--root-password> then the guest "
 "is given a I<random> root password."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:340
-#: common/mlcustomize/v2v-customize-options.pod:286
+#: common/mlcustomize/customize-options.pod:334
+#: common/mlcustomize/v2v-customize-options.pod:280
 msgid "B<--run> SCRIPT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:342
-#: common/mlcustomize/v2v-customize-options.pod:288
-#: sysprep/sysprep-extra-options.pod:367
+#: common/mlcustomize/customize-options.pod:336
+#: common/mlcustomize/v2v-customize-options.pod:282
+#: sysprep/sysprep-extra-options.pod:361
 msgid ""
 "Run the shell script (or any program) called C<SCRIPT> on the disk image.  "
 "The script runs virtualized inside a small appliance, chrooted into the "
@@ -6781,18 +6688,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:346
-#: common/mlcustomize/v2v-customize-options.pod:292
-#: sysprep/sysprep-extra-options.pod:371
+#: common/mlcustomize/customize-options.pod:340
+#: common/mlcustomize/v2v-customize-options.pod:286
+#: sysprep/sysprep-extra-options.pod:365
 msgid "The script is automatically chmod +x."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:348
-#: common/mlcustomize/customize-options.pod:364
-#: common/mlcustomize/v2v-customize-options.pod:294
-#: common/mlcustomize/v2v-customize-options.pod:310
-#: sysprep/sysprep-extra-options.pod:373 sysprep/sysprep-extra-options.pod:390
+#: common/mlcustomize/customize-options.pod:342
+#: common/mlcustomize/customize-options.pod:358
+#: common/mlcustomize/v2v-customize-options.pod:288
+#: common/mlcustomize/v2v-customize-options.pod:304
+#: sysprep/sysprep-extra-options.pod:367 sysprep/sysprep-extra-options.pod:384
 msgid ""
 "If libguestfs supports it then a limited network connection is available but "
 "it only allows outgoing network connections.  You can also attach data disks "
@@ -6802,128 +6709,128 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:354
-#: common/mlcustomize/v2v-customize-options.pod:300
-#: sysprep/sysprep-extra-options.pod:379
+#: common/mlcustomize/customize-options.pod:348
+#: common/mlcustomize/v2v-customize-options.pod:294
+#: sysprep/sysprep-extra-options.pod:373
 msgid ""
 "You can have multiple I<--run> options.  They run in the same order that "
 "they appear on the command line."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:357
-#: common/mlcustomize/customize-options.pod:373
-#: common/mlcustomize/v2v-customize-options.pod:303
-#: common/mlcustomize/v2v-customize-options.pod:319
-#: sysprep/sysprep-extra-options.pod:382 sysprep/sysprep-extra-options.pod:399
+#: common/mlcustomize/customize-options.pod:351
+#: common/mlcustomize/customize-options.pod:367
+#: common/mlcustomize/v2v-customize-options.pod:297
+#: common/mlcustomize/v2v-customize-options.pod:313
+#: sysprep/sysprep-extra-options.pod:376 sysprep/sysprep-extra-options.pod:393
 msgid "See also: I<--firstboot>, I<--attach>, I<--upload>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:359
-#: common/mlcustomize/v2v-customize-options.pod:305
+#: common/mlcustomize/customize-options.pod:353
+#: common/mlcustomize/v2v-customize-options.pod:299
 msgid "B<--run-command> 'CMD+ARGS'"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:361
-#: common/mlcustomize/v2v-customize-options.pod:307
-#: sysprep/sysprep-extra-options.pod:387
+#: common/mlcustomize/customize-options.pod:355
+#: common/mlcustomize/v2v-customize-options.pod:301
+#: sysprep/sysprep-extra-options.pod:381
 msgid ""
 "Run the command and arguments on the disk image.  The command runs "
 "virtualized inside a small appliance, chrooted into the guest filesystem."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:370
-#: common/mlcustomize/v2v-customize-options.pod:316
-#: sysprep/sysprep-extra-options.pod:396
+#: common/mlcustomize/customize-options.pod:364
+#: common/mlcustomize/v2v-customize-options.pod:310
+#: sysprep/sysprep-extra-options.pod:390
 msgid ""
 "You can have multiple I<--run-command> options.  They run in the same order "
 "that they appear on the command line."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:375
-#: common/mlcustomize/v2v-customize-options.pod:321
+#: common/mlcustomize/customize-options.pod:369
+#: common/mlcustomize/v2v-customize-options.pod:315
 msgid "B<--scrub> FILE"
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:371
+#: common/mlcustomize/v2v-customize-options.pod:317
+#: sysprep/sysprep-extra-options.pod:420
+msgid "Scrub a file from the guest.  This is like I<--delete> except that:"
 msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:377
 #: common/mlcustomize/v2v-customize-options.pod:323
 #: sysprep/sysprep-extra-options.pod:426
-msgid "Scrub a file from the guest.  This is like I<--delete> except that:"
+msgid "It scrubs the data so a guest could not recover it."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:383
-#: common/mlcustomize/v2v-customize-options.pod:329
-#: sysprep/sysprep-extra-options.pod:432
-msgid "It scrubs the data so a guest could not recover it."
+#: common/mlcustomize/customize-options.pod:381
+#: common/mlcustomize/v2v-customize-options.pod:327
+#: sysprep/sysprep-extra-options.pod:430
+msgid "It cannot delete directories, only regular files."
+msgstr ""
+
+#. type: =item
+#: common/mlcustomize/customize-options.pod:385
+#: common/mlcustomize/v2v-customize-options.pod:331
+msgid "B<--selinux-relabel>"
 msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:387
 #: common/mlcustomize/v2v-customize-options.pod:333
-#: sysprep/sysprep-extra-options.pod:436
-msgid "It cannot delete directories, only regular files."
-msgstr ""
-
-#. type: =item
-#: common/mlcustomize/customize-options.pod:391
-#: common/mlcustomize/v2v-customize-options.pod:337
-msgid "B<--selinux-relabel>"
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:393
-#: common/mlcustomize/v2v-customize-options.pod:339
-#: sysprep/sysprep-extra-options.pod:443
+#: sysprep/sysprep-extra-options.pod:437
 msgid "This is a compatibility option that does nothing."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:395
-#: common/mlcustomize/v2v-customize-options.pod:341
+#: common/mlcustomize/customize-options.pod:389
+#: common/mlcustomize/v2v-customize-options.pod:335
 msgid "B<--ssh-inject> USER[:SELECTOR]"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:397
-#: common/mlcustomize/v2v-customize-options.pod:343
-#: sysprep/sysprep-extra-options.pod:448
+#: common/mlcustomize/customize-options.pod:391
+#: common/mlcustomize/v2v-customize-options.pod:337
+#: sysprep/sysprep-extra-options.pod:442
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:401
-#: common/mlcustomize/v2v-customize-options.pod:347
-#: sysprep/sysprep-extra-options.pod:452
+#: common/mlcustomize/customize-options.pod:395
+#: common/mlcustomize/v2v-customize-options.pod:341
+#: sysprep/sysprep-extra-options.pod:446
 msgid "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:404
-#: common/mlcustomize/v2v-customize-options.pod:350
-#: sysprep/sysprep-extra-options.pod:455
+#: common/mlcustomize/customize-options.pod:398
+#: common/mlcustomize/v2v-customize-options.pod:344
+#: sysprep/sysprep-extra-options.pod:449
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:407
-#: common/mlcustomize/v2v-customize-options.pod:353
+#: common/mlcustomize/customize-options.pod:401
+#: common/mlcustomize/v2v-customize-options.pod:347
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:409
-#: common/mlcustomize/v2v-customize-options.pod:355
-#: sysprep/sysprep-extra-options.pod:461
+#: common/mlcustomize/customize-options.pod:403
+#: common/mlcustomize/v2v-customize-options.pod:349
+#: sysprep/sysprep-extra-options.pod:455
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -6932,71 +6839,71 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:415
-#: common/mlcustomize/v2v-customize-options.pod:361
+#: common/mlcustomize/customize-options.pod:409
+#: common/mlcustomize/v2v-customize-options.pod:355
 msgid "B<--timezone> TIMEZONE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:417
-#: common/mlcustomize/v2v-customize-options.pod:363
-#: sysprep/sysprep-extra-options.pod:470
+#: common/mlcustomize/customize-options.pod:411
+#: common/mlcustomize/v2v-customize-options.pod:357
+#: sysprep/sysprep-extra-options.pod:464
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:420
-#: common/mlcustomize/v2v-customize-options.pod:366
+#: common/mlcustomize/customize-options.pod:414
+#: common/mlcustomize/v2v-customize-options.pod:360
 msgid "B<--touch> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:422
-#: common/mlcustomize/v2v-customize-options.pod:368
-#: sysprep/sysprep-extra-options.pod:476
+#: common/mlcustomize/customize-options.pod:416
+#: common/mlcustomize/v2v-customize-options.pod:362
+#: sysprep/sysprep-extra-options.pod:470
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:424
-#: common/mlcustomize/v2v-customize-options.pod:370
+#: common/mlcustomize/customize-options.pod:418
+#: common/mlcustomize/v2v-customize-options.pod:364
 msgid "B<--truncate> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:426
-#: common/mlcustomize/v2v-customize-options.pod:372
-#: sysprep/sysprep-extra-options.pod:481
+#: common/mlcustomize/customize-options.pod:420
+#: common/mlcustomize/v2v-customize-options.pod:366
+#: sysprep/sysprep-extra-options.pod:475
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:429
-#: common/mlcustomize/v2v-customize-options.pod:375
+#: common/mlcustomize/customize-options.pod:423
+#: common/mlcustomize/v2v-customize-options.pod:369
 msgid "B<--truncate-recursive> PATH"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:431
-#: common/mlcustomize/v2v-customize-options.pod:377
-#: sysprep/sysprep-extra-options.pod:487
+#: common/mlcustomize/customize-options.pod:425
+#: common/mlcustomize/v2v-customize-options.pod:371
+#: sysprep/sysprep-extra-options.pod:481
 msgid "This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:433
-#: common/mlcustomize/v2v-customize-options.pod:379
+#: common/mlcustomize/customize-options.pod:427
+#: common/mlcustomize/v2v-customize-options.pod:373
 msgid "B<--uninstall> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:435
-#: common/mlcustomize/v2v-customize-options.pod:381
-#: sysprep/sysprep-extra-options.pod:492
+#: common/mlcustomize/customize-options.pod:429
+#: common/mlcustomize/v2v-customize-options.pod:375
+#: sysprep/sysprep-extra-options.pod:486
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -7005,22 +6912,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:440
-#: common/mlcustomize/v2v-customize-options.pod:386
-#: sysprep/sysprep-extra-options.pod:497
+#: common/mlcustomize/customize-options.pod:434
+#: common/mlcustomize/v2v-customize-options.pod:380
+#: sysprep/sysprep-extra-options.pod:491
 msgid "See also I<--install>, I<--update>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:442
-#: common/mlcustomize/v2v-customize-options.pod:388
+#: common/mlcustomize/customize-options.pod:436
+#: common/mlcustomize/v2v-customize-options.pod:382
 msgid "B<--update>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:444
-#: common/mlcustomize/v2v-customize-options.pod:390
-#: sysprep/sysprep-extra-options.pod:502
+#: common/mlcustomize/customize-options.pod:438
+#: common/mlcustomize/v2v-customize-options.pod:384
+#: sysprep/sysprep-extra-options.pod:496
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -7028,22 +6935,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:448
-#: common/mlcustomize/v2v-customize-options.pod:394
-#: sysprep/sysprep-extra-options.pod:506
+#: common/mlcustomize/customize-options.pod:442
+#: common/mlcustomize/v2v-customize-options.pod:388
+#: sysprep/sysprep-extra-options.pod:500
 msgid "See also I<--install>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:450
-#: common/mlcustomize/v2v-customize-options.pod:396
+#: common/mlcustomize/customize-options.pod:444
+#: common/mlcustomize/v2v-customize-options.pod:390
 msgid "B<--upload> FILE:DEST"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:452
-#: common/mlcustomize/v2v-customize-options.pod:398
-#: sysprep/sysprep-extra-options.pod:511
+#: common/mlcustomize/customize-options.pod:446
+#: common/mlcustomize/v2v-customize-options.pod:392
+#: sysprep/sysprep-extra-options.pod:505
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -7051,18 +6958,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:456
-#: common/mlcustomize/v2v-customize-options.pod:402
-#: sysprep/sysprep-extra-options.pod:515
+#: common/mlcustomize/customize-options.pod:450
+#: common/mlcustomize/v2v-customize-options.pod:396
+#: sysprep/sysprep-extra-options.pod:509
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:459
-#: common/mlcustomize/v2v-customize-options.pod:405
-#: sysprep/sysprep-extra-options.pod:518
+#: common/mlcustomize/customize-options.pod:453
+#: common/mlcustomize/v2v-customize-options.pod:399
+#: sysprep/sysprep-extra-options.pod:512
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -7070,22 +6977,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:463
-#: common/mlcustomize/v2v-customize-options.pod:409
-#: sysprep/sysprep-extra-options.pod:522
+#: common/mlcustomize/customize-options.pod:457
+#: common/mlcustomize/v2v-customize-options.pod:403
+#: sysprep/sysprep-extra-options.pod:516
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:465
-#: common/mlcustomize/v2v-customize-options.pod:411
+#: common/mlcustomize/customize-options.pod:459
+#: common/mlcustomize/v2v-customize-options.pod:405
 msgid "B<--write> FILE:CONTENT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:467
-#: common/mlcustomize/v2v-customize-options.pod:413
-#: sysprep/sysprep-extra-options.pod:527
+#: common/mlcustomize/customize-options.pod:461
+#: common/mlcustomize/v2v-customize-options.pod:407
+#: sysprep/sysprep-extra-options.pod:521
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr ""
 
@@ -7279,7 +7186,7 @@ msgstr ""
 
 #. type: textblock
 #: customize/virt-customize.pod:46 drivers/virt-drivers.pod:127
-#: get-kernel/virt-get-kernel.pod:37 sysprep/virt-sysprep.pod:50
+#: get-kernel/virt-get-kernel.pod:37 sysprep/virt-sysprep.pod:59
 msgid ""
 "The format of the disk image is auto-detected.  To override this and force a "
 "particular format use the I<--format> option."
@@ -7289,7 +7196,7 @@ msgstr ""
 #: customize/virt-customize.pod:49 df/virt-df.pod:90 diff/virt-diff.pod:54
 #: drivers/virt-drivers.pod:130 edit/virt-edit.pod:73 format/virt-format.pod:76
 #: get-kernel/virt-get-kernel.pod:40 inspector/virt-inspector.pod:74
-#: sysprep/virt-sysprep.pod:53
+#: sysprep/virt-sysprep.pod:62
 msgid "B<-a> URI"
 msgstr ""
 
@@ -7297,13 +7204,13 @@ msgstr ""
 #: customize/virt-customize.pod:51 df/virt-df.pod:92 diff/virt-diff.pod:56
 #: drivers/virt-drivers.pod:132 edit/virt-edit.pod:75 format/virt-format.pod:78
 #: get-kernel/virt-get-kernel.pod:42 inspector/virt-inspector.pod:76
-#: sysprep/virt-sysprep.pod:55
+#: sysprep/virt-sysprep.pod:64
 msgid "B<--add> URI"
 msgstr ""
 
 #. type: textblock
 #: customize/virt-customize.pod:53 drivers/virt-drivers.pod:134
-#: get-kernel/virt-get-kernel.pod:44 sysprep/virt-sysprep.pod:57
+#: get-kernel/virt-get-kernel.pod:44 sysprep/virt-sysprep.pod:66
 msgid ""
 "Add a remote disk.  The URI format is compatible with guestfish.  See "
 "L<guestfish(1)/ADDING REMOTE STORAGE>."
@@ -7318,18 +7225,18 @@ msgstr ""
 
 #. type: =item
 #: customize/virt-customize.pod:103 resize/virt-resize.pod:470
-#: sysprep/virt-sysprep.pod:86
+#: sysprep/virt-sysprep.pod:95
 msgid "B<-n>"
 msgstr ""
 
 #. type: =item
 #: customize/virt-customize.pod:105 resize/virt-resize.pod:472
-#: sysprep/virt-sysprep.pod:88
+#: sysprep/virt-sysprep.pod:97
 msgid "B<--dry-run>"
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:107 sysprep/virt-sysprep.pod:90
+#: customize/virt-customize.pod:107 sysprep/virt-sysprep.pod:99
 msgid ""
 "Perform a read-only \"dry run\" on the guest.  This runs the sysprep "
 "operation, but throws away any changes to the disk at the end."
@@ -7346,18 +7253,18 @@ msgstr ""
 
 #. type: =item
 #: customize/virt-customize.pod:117 drivers/virt-drivers.pod:178
-#: get-kernel/virt-get-kernel.pod:88 sysprep/virt-sysprep.pod:163
+#: get-kernel/virt-get-kernel.pod:88 sysprep/virt-sysprep.pod:172
 msgid "B<--format> raw|qcow2|.."
 msgstr ""
 
 #. type: =item
 #: customize/virt-customize.pod:119 drivers/virt-drivers.pod:180
-#: get-kernel/virt-get-kernel.pod:90 sysprep/virt-sysprep.pod:165
+#: get-kernel/virt-get-kernel.pod:90 sysprep/virt-sysprep.pod:174
 msgid "B<--format> auto"
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:121 sysprep/virt-sysprep.pod:167
+#: customize/virt-customize.pod:121 sysprep/virt-sysprep.pod:176
 msgid ""
 "The default for the I<-a> option is to auto-detect the format of the disk "
 "image.  Using this forces the disk format for I<-a> options which follow on "
@@ -7398,29 +7305,183 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:207 sysprep/virt-sysprep.pod:236
+#: customize/virt-customize.pod:207 sysprep/virt-sysprep.pod:245
 msgid "Don’t print log messages."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:209 sysprep/virt-sysprep.pod:238
+#: customize/virt-customize.pod:209 sysprep/virt-sysprep.pod:247
 msgid "To enable detailed logging of individual file operations, use I<-x>."
 msgstr ""
 
+#. type: =head1
+#: customize/virt-customize.pod:243
+msgid "FIRSTBOOT"
+msgstr ""
+
 #. type: textblock
-#: customize/virt-customize.pod:245 sysprep/virt-sysprep.pod:558
+#: customize/virt-customize.pod:245
+msgid ""
+"The I<--firstboot> and I<--firstboot-command> options allow you to execute "
+"commands at the first boot of the guest.  To do so, an init script for the "
+"guest init system is installed, which takes care of running all the added "
+"scripts and commands."
+msgstr ""
+
+#. type: =head2
+#: customize/virt-customize.pod:250
+msgid "Log file"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:252
+msgid ""
+"On Linux, output from the scripts is written to "
+"S<F<~root/virt-sysprep-firstboot.log>> inside the guest."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:255
+msgid ""
+"On Windows, output is written to S<F<C:\\Program "
+"Files\\Guestfs\\Firstboot\\log.txt>> inside the guest."
+msgstr ""
+
+#. type: =head2
+#: customize/virt-customize.pod:258
+msgid "Windows firstboot batch file exit codes"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:260
+msgid ""
+"On Windows guests (only) the exit code of batch files controls the execution "
+"flow and whether Windows will reboot between each script:"
+msgstr ""
+
+#. type: =item
+#: customize/virt-customize.pod:265
+msgid "* 249"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:267
+msgid ""
+"The batch file is treated as a failure.  The batch file will be run again on "
+"next reboot.  (Be careful that batch files do not continuously give this "
+"exit code, otherwise Windows will boot loop.)"
+msgstr ""
+
+#. type: =item
+#: customize/virt-customize.pod:271
+msgid "* 250"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:273
+msgid ""
+"The script indicates that a system reboot is not required at this stage.  "
+"The next script in the sequence will run without initiating a reboot."
+msgstr ""
+
+#. type: =item
+#: customize/virt-customize.pod:277
+msgid "* Any other code"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:279
+msgid ""
+"This script is considered successful.  Windows will reboot and run the next "
+"script."
+msgstr ""
+
+#. type: =head2
+#: customize/virt-customize.pod:284
+msgid "Auxiliary tools"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:286
+msgid ""
+"On Windows guests, F<rhsrvany.exe>, available from sources at "
+"L<https://github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with "
+"SUSE VMDP, is installed to run the first boot scripts.  One of these is "
+"required, and the setup of first boot scripts will fail if not present."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:292
+msgid ""
+"F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed to by "
+"the C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in "
+"default will be used (something like F</usr/share/virt-tools>)."
+msgstr ""
+
+#. type: =head2
+#: customize/virt-customize.pod:297
+msgid "I<--firstboot> vs I<--script>"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:299
+msgid ""
+"The two options I<--firstboot> and I<--script> both supply shell scripts "
+"that are run against the guest.  However these two options are significantly "
+"different."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:303
+msgid ""
+"I<--firstboot script> uploads the file C<script> into the guest and arranges "
+"that it will run, in the guest, when the guest is next booted."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:307
+msgid ""
+"I<--script> runs the shell script I<on the host>, with its current directory "
+"inside the guest filesystem."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:310
+msgid ""
+"If you needed, for example, to C<yum install> new packages, then you I<must "
+"not> use I<--script> for this, since that would (a) run the C<yum> command "
+"on the host and (b) wouldn't have access to the same resources "
+"(repositories, keys, etc.) as the guest.  Any command that needs to run on "
+"the guest I<must> be run via I<--firstboot>."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:316
+msgid ""
+"On the other hand if you need to make adjustments to the guest filesystem "
+"(eg. copying in files), then I<--script> is ideal since (a)  it has access "
+"to the host filesystem and (b) you will get immediate feedback on errors."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:321
+msgid "Either or both options can be used multiple times on the command line."
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:325 sysprep/virt-sysprep.pod:355
 msgid ""
 "For guests which make use of SELinux, special handling for them might be "
 "needed when using operations which create new files or alter existing ones."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:249 sysprep/virt-sysprep.pod:562
+#: customize/virt-customize.pod:329 sysprep/virt-sysprep.pod:359
 msgid "For further details, see L<virt-builder(1)/SELINUX>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:253
+#: customize/virt-customize.pod:333
 msgid ""
 "In version 1.56 the subscription-manager options were removed: "
 "B<--sm-credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, "
@@ -7428,23 +7489,23 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:257
+#: customize/virt-customize.pod:337
 msgid "For further details, see L<virt-builder(1)/DEPRECATED OPTIONS>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:261 sysprep/virt-sysprep.pod:571
+#: customize/virt-customize.pod:341 sysprep/virt-sysprep.pod:368
 msgid "This program returns 0 on success, or 1 if there was an error."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:297 sparsify/virt-sparsify.pod:449
-#: sysprep/virt-sysprep.pod:607
+#: customize/virt-customize.pod:377 sparsify/virt-sparsify.pod:449
+#: sysprep/virt-sysprep.pod:404
 msgid "For other environment variables, see L<guestfs(3)/ENVIRONMENT VARIABLES>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:301
+#: customize/virt-customize.pod:381
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, "
 "L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, "
@@ -7453,18 +7514,18 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: customize/virt-customize.pod:316
+#: customize/virt-customize.pod:396
 #: docs/guestfs-tools-release-notes-1.48.pod:106
 #: docs/guestfs-tools-release-notes-1.50.pod:164
 #: docs/guestfs-tools-release-notes-1.52.pod:103
 #: docs/guestfs-tools-release-notes-1.54.pod:132
-#: inspector/virt-inspector.pod:504 sysprep/virt-sysprep.pod:626
+#: inspector/virt-inspector.pod:504 sysprep/virt-sysprep.pod:423
 msgid "AUTHORS"
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:322 sparsify/virt-sparsify.pod:481
-#: sysprep/virt-sysprep.pod:634
+#: customize/virt-customize.pod:402 sparsify/virt-sparsify.pod:481
+#: sysprep/virt-sysprep.pod:431
 msgid "Copyright (C) 2011-2025 Red Hat Inc."
 msgstr ""
 
@@ -14114,7 +14175,7 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: resize/virt-resize.pod:701
+#: resize/virt-resize.pod:701 sysprep/virt-sysprep.pod:351
 msgid "NOTES"
 msgstr ""
 
@@ -14220,7 +14281,7 @@ msgstr ""
 
 #. type: =head2
 #: resize/virt-resize.pod:756 sparsify/virt-sparsify.pod:413
-#: sysprep/virt-sysprep.pod:564 win-reg/virt-win-reg.in:638
+#: win-reg/virt-win-reg.in:638
 msgid "WINDOWS 8"
 msgstr ""
 
@@ -15098,47 +15159,47 @@ msgid "B<--firstboot> SCRIPT (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:150
+#: sysprep/sysprep-extra-options.pod:147
 msgid "B<--firstboot-command> 'CMD+ARGS' (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:164
+#: sysprep/sysprep-extra-options.pod:158
 msgid "B<--firstboot-install> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:174
+#: sysprep/sysprep-extra-options.pod:168
 msgid "B<--hostname> HOSTNAME (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:180
+#: sysprep/sysprep-extra-options.pod:174
 msgid "B<--inject-blnsvr> METHOD (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:193
+#: sysprep/sysprep-extra-options.pod:187
 msgid "B<--inject-qemu-ga> METHOD (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:208
+#: sysprep/sysprep-extra-options.pod:202
 msgid "B<--inject-virtio-win> METHOD (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:237
+#: sysprep/sysprep-extra-options.pod:231
 msgid "B<--install> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:249
+#: sysprep/sysprep-extra-options.pod:243
 msgid "B<--keep-user-accounts> USERS (see C<user-account> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:252
+#: sysprep/sysprep-extra-options.pod:246
 msgid ""
 "The user accounts to be kept in the guest.  The value of this option is a "
 "list of user names separated by comma, where specifying an user means it is "
@@ -15146,7 +15207,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/sysprep-extra-options.pod:257
+#: sysprep/sysprep-extra-options.pod:251
 #, no-wrap
 msgid ""
 " --keep-user-accounts mary\n"
@@ -15154,57 +15215,57 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:259
+#: sysprep/sysprep-extra-options.pod:253
 msgid "would keep the user account C<mary>."
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:261 sysprep/sysprep-extra-options.pod:351
+#: sysprep/sysprep-extra-options.pod:255 sysprep/sysprep-extra-options.pod:345
 msgid "This option can be specified multiple times."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:263
+#: sysprep/sysprep-extra-options.pod:257
 msgid "B<--link> TARGET:LINK[:LINK..] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:269
+#: sysprep/sysprep-extra-options.pod:263
 msgid "B<--mkdir> DIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:277
+#: sysprep/sysprep-extra-options.pod:271
 msgid "B<--move> SOURCE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:284
+#: sysprep/sysprep-extra-options.pod:278
 msgid "B<--no-logfile> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:293
+#: sysprep/sysprep-extra-options.pod:287
 msgid "B<--no-selinux-relabel> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:307
+#: sysprep/sysprep-extra-options.pod:301
 msgid "B<--password> USER:SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:316
+#: sysprep/sysprep-extra-options.pod:310
 msgid "B<--password-crypto> md5|sha256|sha512 (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:339
+#: sysprep/sysprep-extra-options.pod:333
 msgid "B<--remove-user-accounts> USERS (see C<user-account> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:342
+#: sysprep/sysprep-extra-options.pod:336
 msgid ""
 "The user accounts to be removed from the guest.  The value of this option is "
 "a list of user names separated by comma, where specifying an user means it "
@@ -15212,7 +15273,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/sysprep-extra-options.pod:347
+#: sysprep/sysprep-extra-options.pod:341
 #, no-wrap
 msgid ""
 " --remove-user-accounts bob,eve\n"
@@ -15220,32 +15281,32 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:349
+#: sysprep/sysprep-extra-options.pod:343
 msgid "would only remove the user accounts C<bob> and C<eve>."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:353
+#: sysprep/sysprep-extra-options.pod:347
 msgid "B<--root-password> SELECTOR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:364
+#: sysprep/sysprep-extra-options.pod:358
 msgid "B<--run> SCRIPT (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:384
+#: sysprep/sysprep-extra-options.pod:378
 msgid "B<--run-command> 'CMD+ARGS' (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:401
+#: sysprep/sysprep-extra-options.pod:395
 msgid "B<--script> SCRIPT (see C<script> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:404
+#: sysprep/sysprep-extra-options.pod:398
 msgid ""
 "Run the named C<SCRIPT> (a shell script or program) against the guest.  The "
 "script can be any program on the host.  The script’s current directory will "
@@ -15253,19 +15314,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:408
+#: sysprep/sysprep-extra-options.pod:402
 msgid ""
 "B<Note:> If the script is not on the $PATH, then you must give the full "
 "absolute path to the script."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:411
+#: sysprep/sysprep-extra-options.pod:405
 msgid "B<--scriptdir> SCRIPTDIR (see C<script> below)"
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:414
+#: sysprep/sysprep-extra-options.pod:408
 msgid ""
 "The mount point (an empty directory on the host) used when the C<script> "
 "operation is enabled and one or more scripts are specified using I<--script> "
@@ -15273,74 +15334,74 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:418
+#: sysprep/sysprep-extra-options.pod:412
 msgid "B<Note:> C<SCRIPTDIR> B<must> be an absolute path."
 msgstr ""
 
 #. type: textblock
-#: sysprep/sysprep-extra-options.pod:420
+#: sysprep/sysprep-extra-options.pod:414
 msgid ""
 "If I<--scriptdir> is not specified then a temporary mountpoint will be "
 "created."
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:423
+#: sysprep/sysprep-extra-options.pod:417
 msgid "B<--scrub> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:440
+#: sysprep/sysprep-extra-options.pod:434
 msgid "B<--selinux-relabel> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:445
+#: sysprep/sysprep-extra-options.pod:439
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:458
+#: sysprep/sysprep-extra-options.pod:452
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:467
+#: sysprep/sysprep-extra-options.pod:461
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:473
+#: sysprep/sysprep-extra-options.pod:467
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:478
+#: sysprep/sysprep-extra-options.pod:472
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:484
+#: sysprep/sysprep-extra-options.pod:478
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:489
+#: sysprep/sysprep-extra-options.pod:483
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:499
+#: sysprep/sysprep-extra-options.pod:493
 msgid "B<--update> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:508
+#: sysprep/sysprep-extra-options.pod:502
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:524
+#: sysprep/sysprep-extra-options.pod:518
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr ""
 
@@ -16601,39 +16662,60 @@ msgstr ""
 #: sysprep/virt-sysprep.pod:7
 #, no-wrap
 msgid ""
-" virt-sysprep [--options] -d domname\n"
+" virt-sysprep [--colors] [--colours] [-c URI] [--connect URI]\n"
+"    [-n] [--dry-run] [--enable OPERATIONS] [--operations OPERATIONS]\n"
+"    [--echo-keys] [--format raw|qcow2] [--key SELECTOR]\n"
+"    [--keys-from-stdin] [--mount-options] [-q] [--quiet]\n"
+"    [--network] [--no-network] [-v] [--verbose] [--wrap] [-x]\n"
+"    -d domname | -a disk.img [-a disk.img ...]\n"
 "\n"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:9
+#: sysprep/virt-sysprep.pod:14
 #, no-wrap
 msgid ""
-" virt-sysprep [--options] -a disk.img [-a disk.img ...]\n"
+"  virt-sysprep --list-operations\n"
+"\n"
+msgstr ""
+
+#. type: verbatim
+#: sysprep/virt-sysprep.pod:16
+#, no-wrap
+msgid ""
+"  virt-sysprep --version\n"
+"\n"
+msgstr ""
+
+#. type: verbatim
+#: sysprep/virt-sysprep.pod:18
+#, no-wrap
+msgid ""
+"  virt-sysprep -V\n"
 "\n"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:13
+#: sysprep/virt-sysprep.pod:22
 msgid ""
 "Virt-sysprep can reset or unconfigure a virtual machine so that clones can "
-"be made from it.  Steps in this process include removing SSH host keys, "
-"removing persistent network MAC configuration, and removing user accounts.  "
+"be made from it, or to prepare a template from which clones can be made "
+"later on.  Steps in this process include removing SSH host keys, removing "
+"persistent network MAC configuration, and removing user accounts.  "
 "Virt-sysprep can also customize a virtual machine, for instance by adding "
 "SSH keys, users or logos.  Each step can be enabled or disabled as required."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:20
+#: sysprep/virt-sysprep.pod:30
 msgid ""
 "Virt-sysprep modifies the guest or disk image I<in place>.  The guest must "
 "be shut down.  If you want to preserve the existing contents of the guest, "
-"I<you must snapshot, copy or clone the disk first>.  See L</COPYING AND "
-"CLONING> below."
+"I<you must snapshot, copy or clone the disk first>."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:25
+#: sysprep/virt-sysprep.pod:34
 msgid ""
 "You do I<not> need to run virt-sysprep as root.  In fact we'd generally "
 "recommend that you don't.  The time you might want to run it as root is when "
@@ -16643,7 +16725,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:31
+#: sysprep/virt-sysprep.pod:40
 msgid ""
 "\"Sysprep\" stands for \"system preparation\" tool.  The name comes from the "
 "Microsoft program F<sysprep.exe> which is used to unconfigure Windows "
@@ -16652,19 +16734,19 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: sysprep/virt-sysprep.pod:93
+#: sysprep/virt-sysprep.pod:102
 msgid "B<--enable> operations"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:95 sysprep/virt-sysprep.pod:119
+#: sysprep/virt-sysprep.pod:104 sysprep/virt-sysprep.pod:128
 msgid ""
 "Choose which sysprep operations to perform.  Give a comma-separated list of "
 "operations, for example:"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:98
+#: sysprep/virt-sysprep.pod:107
 #, no-wrap
 msgid ""
 " --enable ssh-hostkeys,udev-persistent-net\n"
@@ -16672,48 +16754,48 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:100 sysprep/virt-sysprep.pod:124
+#: sysprep/virt-sysprep.pod:109 sysprep/virt-sysprep.pod:133
 msgid "would enable ONLY C<ssh-hostkeys> and C<udev-persistent-net> operations."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:102
+#: sysprep/virt-sysprep.pod:111
 msgid ""
 "If the I<--enable> option is not given, then we default to trying most "
 "sysprep operations (see I<--list-operations> to show which are enabled)."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:106
+#: sysprep/virt-sysprep.pod:115
 msgid ""
 "Regardless of the I<--enable> option, sysprep operations are skipped for "
 "some guest types."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:109 sysprep/virt-sysprep.pod:150
+#: sysprep/virt-sysprep.pod:118 sysprep/virt-sysprep.pod:159
 msgid ""
 "Use I<--list-operations> to list operations supported by a particular "
 "version of virt-sysprep."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:112 sysprep/virt-sysprep.pod:153
+#: sysprep/virt-sysprep.pod:121 sysprep/virt-sysprep.pod:162
 msgid "See L</OPERATIONS> below for a list and an explanation of each operation."
 msgstr ""
 
 #. type: =item
-#: sysprep/virt-sysprep.pod:115
+#: sysprep/virt-sysprep.pod:124
 msgid "B<--operation> operations"
 msgstr ""
 
 #. type: =item
-#: sysprep/virt-sysprep.pod:117
+#: sysprep/virt-sysprep.pod:126
 msgid "B<--operations> operations"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:122
+#: sysprep/virt-sysprep.pod:131
 #, no-wrap
 msgid ""
 " --operations ssh-hostkeys,udev-persistent-net\n"
@@ -16721,7 +16803,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:126
+#: sysprep/virt-sysprep.pod:135
 msgid ""
 "I<--operations> allows you to enable and disable any operation, including "
 "the default ones (which would be tried when specifying neither "
@@ -16733,7 +16815,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:134
+#: sysprep/virt-sysprep.pod:143
 #, no-wrap
 msgid ""
 " --operations firewall-rules,defaults,-tmp-files\n"
@@ -16741,7 +16823,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:136
+#: sysprep/virt-sysprep.pod:145
 msgid ""
 "would enable the C<firewall-rules> operation (regardless whether it is "
 "enabled by default), all the default ones, and disable the C<tmp-files> "
@@ -16749,7 +16831,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:139
+#: sysprep/virt-sysprep.pod:148
 msgid ""
 "I<--operations> can be specified multiple times; the first time the set of "
 "enabled operations is empty, while any further I<--operations> affects the "
@@ -16757,21 +16839,21 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:143
+#: sysprep/virt-sysprep.pod:152
 msgid ""
 "If the I<--operations> option is not given, then we default to trying most "
 "sysprep operations (see I<--list-operations> to show which are enabled)."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:147
+#: sysprep/virt-sysprep.pod:156
 msgid ""
 "Regardless of the I<--operations> option, sysprep operations are skipped for "
 "some guest types."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:158
+#: sysprep/virt-sysprep.pod:167
 msgid ""
 "When prompting for keys and passphrases, virt-sysprep normally turns echoing "
 "off so you cannot see what you are typing.  If you are not worried about "
@@ -16780,7 +16862,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:174
+#: sysprep/virt-sysprep.pod:183
 #, no-wrap
 msgid ""
 " virt-sysprep --format raw -a disk.img\n"
@@ -16788,7 +16870,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:178
+#: sysprep/virt-sysprep.pod:187
 #, no-wrap
 msgid ""
 " virt-sysprep --format raw -a disk.img --format auto -a another.img\n"
@@ -16796,24 +16878,24 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: sysprep/virt-sysprep.pod:191
+#: sysprep/virt-sysprep.pod:200
 msgid "B<--list-operations>"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:193
+#: sysprep/virt-sysprep.pod:202
 msgid "List the operations supported by the virt-sysprep program."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:195
+#: sysprep/virt-sysprep.pod:204
 msgid ""
 "These are listed one per line, with one or more single-space-separated "
 "fields, eg:"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:198
+#: sysprep/virt-sysprep.pod:207
 #, no-wrap
 msgid ""
 " $ virt-sysprep --list-operations\n"
@@ -16826,7 +16908,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:205
+#: sysprep/virt-sysprep.pod:214
 msgid ""
 "The first field is the operation name, which can be supplied to "
 "I<--enable>.  The second field is a C<*> character if the operation is "
@@ -16835,19 +16917,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:210
+#: sysprep/virt-sysprep.pod:219
 msgid ""
 "Before libguestfs 1.17.33 only the first (operation name) field was shown "
 "and all operations were enabled by default."
 msgstr ""
 
 #. type: =item
-#: sysprep/virt-sysprep.pod:213
+#: sysprep/virt-sysprep.pod:222
 msgid "B<--mount-options> mp:opts[;mp:opts;...]"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:215
+#: sysprep/virt-sysprep.pod:224
 msgid ""
 "Set the mount options used when libguestfs opens the disk image.  Note this "
 "has no effect on the guest.  It is used when opening certain guests such as "
@@ -16855,14 +16937,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:219
+#: sysprep/virt-sysprep.pod:228
 msgid ""
 "Use a semicolon-separated list of C<mountpoint:options> pairs.  You may need "
 "to quote this list to protect it from the shell."
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:224
+#: sysprep/virt-sysprep.pod:233
 #, no-wrap
 msgid ""
 " --mount-options \"/:noatime\"\n"
@@ -16870,12 +16952,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:226
+#: sysprep/virt-sysprep.pod:235
 msgid "will mount the root directory with C<notime>.  This example:"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:228
+#: sysprep/virt-sysprep.pod:237
 #, no-wrap
 msgid ""
 " --mount-options \"/:noatime;/var:rw,nodiratime\"\n"
@@ -16883,12 +16965,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:230
+#: sysprep/virt-sysprep.pod:239
 msgid "will do the same, plus mount F</var> with C<rw,nodiratime>."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:246
+#: sysprep/virt-sysprep.pod:255
 msgid ""
 "In virt-sysprep, the network is I<disabled> by default.  You must use "
 "I<--network> to enable it, in order that options such as I<--install> or "
@@ -16896,31 +16978,31 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:250
+#: sysprep/virt-sysprep.pod:259
 msgid ""
 "L<virt-builder(1)> has more information about the security advantages of "
 "disabling the network."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:275
+#: sysprep/virt-sysprep.pod:284
 msgid "__EXTRA_OPTIONS__"
 msgstr ""
 
 #. type: =head1
-#: sysprep/virt-sysprep.pod:279
+#: sysprep/virt-sysprep.pod:288
 msgid "OPERATIONS"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:281
+#: sysprep/virt-sysprep.pod:290
 msgid ""
 "If the I<--enable>/I<--operations> option is I<not> given, then most sysprep "
 "operations are enabled."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:284
+#: sysprep/virt-sysprep.pod:293
 msgid ""
 "Use C<virt-sysprep --list-operations> to list all operations for your "
 "virt-sysprep binary.  The ones which are enabled by default are marked with "
@@ -16929,14 +17011,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:289
+#: sysprep/virt-sysprep.pod:298
 msgid ""
 "Operations can be individually enabled using the I<--enable>/I<--operations> "
 "options.  Use a comma-separated list, for example:"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:293
+#: sysprep/virt-sysprep.pod:302
 #, no-wrap
 msgid ""
 " virt-sysprep --operations ssh-hostkeys,udev-persistent-net [etc..]\n"
@@ -16944,7 +17026,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:295
+#: sysprep/virt-sysprep.pod:304
 msgid ""
 "Future versions of virt-sysprep may add more operations.  If you are using "
 "virt-sysprep and want predictable behaviour, specify only the operations "
@@ -16952,380 +17034,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:299
+#: sysprep/virt-sysprep.pod:308
 msgid ""
 "C<*> = enabled by default when no I<--enable>/I<--operations> option is "
 "given."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:302
+#: sysprep/virt-sysprep.pod:311
 msgid "__OPERATIONS__"
 msgstr ""
 
-#. type: =head1
-#: sysprep/virt-sysprep.pod:304
-msgid "COPYING AND CLONING"
-msgstr ""
-
 #. type: textblock
-#: sysprep/virt-sysprep.pod:306
-msgid ""
-"Virt-sysprep can be used as part of a process of cloning guests, or to "
-"prepare a template from which guests can be cloned.  There are many "
-"different ways to achieve this using the virt tools, and this section is "
-"just an introduction."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:311
-msgid "A virtual machine (when switched off) consists of two parts:"
-msgstr ""
-
-#. type: =item
 #: sysprep/virt-sysprep.pod:315
-msgid "I<configuration>"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:317
-msgid ""
-"The configuration or description of the guest.  eg. The libvirt XML (see "
-"C<virsh dumpxml>), the running configuration of the guest, or another "
-"external format like OVF."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:321
-msgid "Some configuration items that might need to be changed:"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:327
-msgid "name"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:331 sysprep/virt-sysprep.pod:358
-msgid "UUID"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:335
-msgid "path to block device(s)"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:339
-msgid "network card MAC address"
-msgstr ""
-
-#. type: =item
-#: sysprep/virt-sysprep.pod:343
-msgid "I<block device(s)>"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:345
-msgid ""
-"One or more hard disk images, themselves containing files, directories, "
-"applications, kernels, configuration, etc."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:348
-msgid "Some things inside the block devices that might need to be changed:"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:354
-msgid "hostname and other net configuration"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:362
-msgid "SSH host keys"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:366
-msgid "Windows unique security ID (SID)"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:370
-msgid "Puppet registration"
-msgstr ""
-
-#. type: =head2
-#: sysprep/virt-sysprep.pod:376
-msgid "COPYING THE BLOCK DEVICE"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:378
-msgid ""
-"Starting with an original guest, you probably wish to copy the guest block "
-"device and its configuration to make a template.  Then once you are happy "
-"with the template, you will want to make many clones from it."
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:383
-#, no-wrap
-msgid ""
-"                        virt-sysprep\n"
-"                             |\n"
-"                             v\n"
-" original guest --------> template ---------->\n"
-"                                      \\------> cloned\n"
-"                                       \\-----> guests\n"
-"                                        \\---->\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:391
-msgid ""
-"You can, of course, just copy the block device on the host using L<cp(1)> or "
-"L<dd(1)>."
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:394
-#, no-wrap
-msgid ""
-"                   dd                 dd\n"
-" original guest --------> template ---------->\n"
-"                                      \\------> cloned\n"
-"                                       \\-----> guests\n"
-"                                        \\---->\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:400
-msgid "There are some smarter (and faster) ways too:"
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:402
-#, no-wrap
-msgid ""
-"                          snapshot\n"
-"                template ---------->\n"
-"                            \\------> cloned\n"
-"                             \\-----> guests\n"
-"                              \\---->\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:408
-msgid ""
-"You may want to run virt-sysprep twice, once to reset the guest (to make a "
-"template) and a second time to customize the guest for a specific user:"
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:412
-#, no-wrap
-msgid ""
-"                    virt-sysprep        virt-sysprep\n"
-"                      (reset)      (add user, keys, logos)\n"
-"                         |                   |\n"
-"                 dd      v          dd       v\n"
-" original guest ----> template ---------> copied ------> custom\n"
-"                                          template       guest\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:423
-msgid "Create a snapshot using qemu-img:"
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:425
-#, no-wrap
-msgid ""
-" qemu-img create -f qcow2 -o backing_file=original snapshot.qcow\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:427
-msgid ""
-"The advantage is that you don’t need to copy the original (very fast)  and "
-"only changes are stored (less storage required)."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:430
-msgid ""
-"Note that writing to the backing file once you have created guests on top of "
-"it is not possible: you will corrupt the guests."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:435
-msgid "Create a snapshot using C<lvcreate --snapshot>."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:439
-msgid ""
-"Other ways to create snapshots include using filesystems-level tools (for "
-"filesystems such as btrfs)."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:442
-msgid ""
-"Most Network Attached Storage (NAS) devices can also create cheap snapshots "
-"from files or LUNs."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:447
-msgid ""
-"Get your NAS to duplicate the LUN.  Most NAS devices can also duplicate LUNs "
-"very cheaply (they copy them on-demand in the background)."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:453
-msgid "Prepare your template using L<virt-sparsify(1)>.  See below."
-msgstr ""
-
-#. type: =head2
-#: sysprep/virt-sysprep.pod:457
-msgid "VIRT-CLONE"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:459
-msgid ""
-"A separate tool, L<virt-clone(1)>, can be used to duplicate the block device "
-"and/or modify the external libvirt configuration of a guest.  It will reset "
-"the name, UUID and MAC address of the guest in the libvirt XML."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:464
-msgid ""
-"L<virt-clone(1)> does not use libguestfs and cannot look inside the disk "
-"image.  This was the original motivation to write virt-sysprep."
-msgstr ""
-
-#. type: =head2
-#: sysprep/virt-sysprep.pod:467
-msgid "SPARSIFY"
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:469
-#, no-wrap
-msgid ""
-"              virt-sparsify\n"
-" original guest --------> template\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:472
-msgid ""
-"L<virt-sparsify(1)> can be used to make the cloning template smaller, making "
-"it easier to compress and/or faster to copy."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:475
-msgid ""
-"Notice that since virt-sparsify also copies the image, you can use it to "
-"make the initial copy (instead of C<dd>)."
-msgstr ""
-
-#. type: =head2
-#: sysprep/virt-sysprep.pod:478
-msgid "RESIZE"
-msgstr ""
-
-#. type: verbatim
-#: sysprep/virt-sysprep.pod:480
-#, no-wrap
-msgid ""
-"                         virt-resize\n"
-"                template ---------->\n"
-"                            \\------> cloned\n"
-"                             \\-----> guests\n"
-"                              \\---->\n"
-"\n"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:486
-msgid ""
-"If you want to give people cloned guests, but let them pick the size of the "
-"guest themselves (eg. depending on how much they are prepared to pay for "
-"disk space), then instead of copying the template, you can run "
-"L<virt-resize(1)>.  Virt-resize performs a copy and resize, and thus is "
-"ideal for cloning guests from a template."
-msgstr ""
-
-#. type: =head1
-#: sysprep/virt-sysprep.pod:492
-msgid "FIRSTBOOT VS SCRIPT"
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:494
-msgid ""
-"The two options I<--firstboot> and I<--script> both supply shell scripts "
-"that are run against the guest.  However these two options are significantly "
-"different."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:498
-msgid ""
-"I<--firstboot script> uploads the file C<script> into the guest and arranges "
-"that it will run, in the guest, when the guest is next booted.  (The script "
-"will only run once, at the \"first boot\")."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:502
-msgid ""
-"I<--script script> runs the shell C<script> I<on the host>, with its current "
-"directory inside the guest filesystem."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:505
-msgid ""
-"If you needed, for example, to C<yum install> new packages, then you I<must "
-"not> use I<--script> for this, since that would (a) run the C<yum> command "
-"on the host and (b) wouldn't have access to the same resources "
-"(repositories, keys, etc.) as the guest.  Any command that needs to run on "
-"the guest I<must> be run via I<--firstboot>."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:511
-msgid ""
-"On the other hand if you need to make adjustments to the guest filesystem "
-"(eg. copying in files), then I<--script> is ideal since (a)  it has access "
-"to the host filesystem and (b) you will get immediate feedback on errors."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:516
-msgid "Either or both options can be used multiple times on the command line."
-msgstr ""
-
-#. type: textblock
-#: sysprep/virt-sysprep.pod:520
 msgid ""
 "Virtual machines that employ full disk encryption I<internally to the guest> "
 "should not be considered for cloning and distribution, as it provides "
@@ -17336,7 +17057,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:527
+#: sysprep/virt-sysprep.pod:322
 msgid ""
 "Although virt-sysprep removes some sensitive information from the guest, it "
 "does not pretend to remove all of it.  You should examine the L</OPERATIONS> "
@@ -17344,7 +17065,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:531
+#: sysprep/virt-sysprep.pod:326
 msgid ""
 "Sensitive files are simply removed.  The data they contained may still exist "
 "on the disk, easily recovered with a hex editor or undelete tool.  The "
@@ -17355,24 +17076,24 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: sysprep/virt-sysprep.pod:538
-msgid "RANDOM SEED"
+#: sysprep/virt-sysprep.pod:333
+msgid "Random seed"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:540
+#: sysprep/virt-sysprep.pod:335
 msgid "I<(This section applies to Linux guests only)>"
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:542
+#: sysprep/virt-sysprep.pod:337
 msgid ""
 "For supported guests, virt-sysprep writes a few bytes of randomness from the "
 "host into the guest’s random seed file."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:545
+#: sysprep/virt-sysprep.pod:340
 msgid ""
 "If this is just done once and the guest is cloned from the same template, "
 "then each guest will start with the same entropy, and things like SSH host "
@@ -17380,14 +17101,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:549
+#: sysprep/virt-sysprep.pod:344
 msgid ""
 "Therefore you should arrange to add more randomness I<after> cloning from a "
 "template too, which can be done by enabling just the customize module:"
 msgstr ""
 
 #. type: verbatim
-#: sysprep/virt-sysprep.pod:553
+#: sysprep/virt-sysprep.pod:348
 #, no-wrap
 msgid ""
 " cp template.img newguest.img\n"
@@ -17395,15 +17116,25 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: =head2
+#: sysprep/virt-sysprep.pod:353
+msgid "SELinux"
+msgstr ""
+
+#. type: =head2
+#: sysprep/virt-sysprep.pod:361
+msgid "Windows E<ge> 8"
+msgstr ""
+
 #. type: textblock
-#: sysprep/virt-sysprep.pod:566
+#: sysprep/virt-sysprep.pod:363
 msgid ""
 "Windows 8 \"fast startup\" can prevent virt-sysprep from working.  See "
 "L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:611
+#: sysprep/virt-sysprep.pod:408
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, "
 "L<virt-customize(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, "
@@ -17412,12 +17143,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:630
+#: sysprep/virt-sysprep.pod:427
 msgid "Wanlong Gao, Fujitsu Ltd."
 msgstr ""
 
 #. type: textblock
-#: sysprep/virt-sysprep.pod:636
+#: sysprep/virt-sysprep.pod:433
 msgid "Copyright (C) 2012 Fujitsu Ltd."
 msgstr ""
 
