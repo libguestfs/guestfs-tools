@@ -4,9 +4,18 @@ virt-sysprep - Reset, unconfigure or customize a virtual machine so clones can b
 
 =head1 SYNOPSIS
 
- virt-sysprep [--options] -d domname
+ virt-sysprep [--colors] [--colours] [-c URI] [--connect URI]
+    [-n] [--dry-run] [--enable OPERATIONS] [--operations OPERATIONS]
+    [--echo-keys] [--format raw|qcow2] [--key SELECTOR]
+    [--keys-from-stdin] [--mount-options] [-q] [--quiet]
+    [--network] [--no-network] [-v] [--verbose] [--wrap] [-x]
+    -d domname | -a disk.img [-a disk.img ...]
 
- virt-sysprep [--options] -a disk.img [-a disk.img ...]
+  virt-sysprep --list-operations
+
+  virt-sysprep --version
+
+  virt-sysprep -V
 
 =head1 DESCRIPTION
 
