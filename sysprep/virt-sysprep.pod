@@ -19,12 +19,13 @@ virt-sysprep - Reset, unconfigure or customize a virtual machine so clones can b
 
 =head1 DESCRIPTION
 
-Virt-sysprep can reset or unconfigure a virtual machine so that
-clones can be made from it.  Steps in this process include removing
-SSH host keys, removing persistent network MAC configuration, and
-removing user accounts.  Virt-sysprep can also customize a virtual
-machine, for instance by adding SSH keys, users or logos.  Each step
-can be enabled or disabled as required.
+Virt-sysprep can reset or unconfigure a virtual machine so that clones
+can be made from it, or to prepare a template from which clones can be
+made later on.  Steps in this process include removing SSH host keys,
+removing persistent network MAC configuration, and removing user
+accounts.  Virt-sysprep can also customize a virtual machine, for
+instance by adding SSH keys, users or logos.  Each step can be enabled
+or disabled as required.
 
 Virt-sysprep modifies the guest or disk image I<in place>.  The guest
 must be shut down.  If you want to preserve the existing contents of
@@ -355,7 +356,7 @@ just deleting them.  L<virt-sparsify(1)> is another way to remove this
 content.  See also the L<scrub(1)> command to get rid of deleted
 content in directory entries and inodes.
 
-=head2 RANDOM SEED
+=head2 Random seed
 
 I<(This section applies to Linux guests only)>
 
@@ -373,7 +374,9 @@ module:
  cp template.img newguest.img
  virt-sysprep --enable customize -a newguest.img
 
-=head1 SELINUX
+=head1 NOTES
+
+=head2 SELinux
 
 For guests which make use of SELinux, special handling for them might
 be needed when using operations which create new files or alter
@@ -381,7 +384,7 @@ existing ones.
 
 For further details, see L<virt-builder(1)/SELINUX>.
 
-=head1 WINDOWS 8
+=head2 Windows E<ge> 8
 
 Windows 8 "fast startup" can prevent virt-sysprep from working.
 See L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>.
