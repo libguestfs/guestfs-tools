@@ -242,16 +242,70 @@ __CUSTOMIZE_OPTIONS__
 
 =head1 FIRSTBOOT
 
+The I<--firstboot> and I<--firstboot-command> options allow you to
+execute commands at the first boot of the guest.  To do so, an init
+script for the guest init system is installed, which takes care of
+running all the added scripts and commands.
+
+=head2 Log file
+
+On Linux, output from the scripts is written to
+S<F<~root/virt-sysprep-firstboot.log>> inside the guest.
+
+On Windows, output is written to
+S<F<C:\Program Files\Guestfs\Firstboot\log.txt>> inside the guest.
+
+=head2 Windows firstboot batch file exit codes
+
+On Windows guests (only) the exit code of batch files controls the
+execution flow and whether Windows will reboot between each script:
+
+=over 4
+
+=item * 249
+
+The batch file is treated as a failure.  The batch file will be run
+again on next reboot.  (Be careful that batch files do not
+continuously give this exit code, otherwise Windows will boot loop.)
+
+=item * 250
+
+The script indicates that a system reboot is not required at this
+stage.  The next script in the sequence will run without initiating a
+reboot.
+
+=item * Any other code
+
+This script is considered successful.  Windows will reboot and run the
+next script.
+
+=back
+
+=head2 Auxiliary tools
+
+On Windows guests, F<rhsrvany.exe>, available from sources at
+L<https://github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available
+with SUSE VMDP, is installed to run the first boot scripts.  One of
+these is required, and the setup of first boot scripts will fail if
+not present.
+
+F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed
+to by the C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a
+compiled-in default will be used (something like
+F</usr/share/virt-tools>).
+
+=head2 I<--firstboot> vs I<--script>
+
 The two options I<--firstboot> and I<--script> both supply shell
 scripts that are run against the guest.  However these two options are
 significantly different.
 
-I<--firstboot script> uploads the file C<script> into the guest
-and arranges that it will run, in the guest, when the guest is
-next booted.  (The script will only run once, at the "first boot").
+I<--firstboot script> uploads the file C<script> into the guest and
+arranges that it will run, in the guest, when the guest is next
+booted.
 
-I<--script script> runs the shell C<script> I<on the host>, with its
-current directory inside the guest filesystem.
+I<--script> runs the shell script I<on the host>, with its current
+directory inside the guest filesystem.
 
 If you needed, for example, to C<yum install> new packages, then you
 I<must not> use I<--script> for this, since that would (a) run the
