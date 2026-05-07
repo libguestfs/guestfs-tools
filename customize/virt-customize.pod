@@ -281,6 +281,15 @@ next script.
 
 =back
 
+=head2 Windows sentinel file
+
+On Windows guests (only) a sentinel file is written into the guest
+once all firstboot scripts have finished running.  You can use this to
+detect if the Windows guest is ready (eg. has finished a
+L<virt-v2v(1)> conversion).  The default location for this file is:
+
+ C:\Program Files\Guestfs\Firstboot\complete
+
 =head2 Auxiliary tools
 
 On Windows guests, F<rhsrvany.exe>, available from sources at
