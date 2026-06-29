@@ -21,18 +21,24 @@ EXTRA_DIST = \
 	guestfs-tools-release-notes-1.48.pod \
 	guestfs-tools-release-notes-1.50.pod \
 	guestfs-tools-release-notes-1.52.pod \
-	guestfs-tools-release-notes-1.54.pod
+	guestfs-tools-release-notes-1.54.pod \
+	guestfs-tools-release-notes-1.56.pod \
+	$(NULL)
 
 man_MANS = \
 	guestfs-tools-release-notes-1.48.1 \
 	guestfs-tools-release-notes-1.50.1 \
 	guestfs-tools-release-notes-1.52.1 \
-	guestfs-tools-release-notes-1.54.1
+	guestfs-tools-release-notes-1.54.1 \
+	guestfs-tools-release-notes-1.56.1 \
+	$(NULL)
 noinst_DATA = \
 	$(top_builddir)/website/guestfs-tools-release-notes-1.48.1.html \
 	$(top_builddir)/website/guestfs-tools-release-notes-1.50.1.html \
 	$(top_builddir)/website/guestfs-tools-release-notes-1.52.1.html \
-	$(top_builddir)/website/guestfs-tools-release-notes-1.54.1.html
+	$(top_builddir)/website/guestfs-tools-release-notes-1.54.1.html \
+	$(top_builddir)/website/guestfs-tools-release-notes-1.56.1.html \
+	$(NULL)
 
 guestfs-tools-release-notes-1.48.1 guestfs-tools-release-notes-1.48.txt $(top_builddir)/website/guestfs-tools-release-notes-1.48.1.html: stamp-guestfs-tools-release-notes-1.48.pod
 
@@ -74,6 +80,17 @@ stamp-guestfs-tools-release-notes-1.54.pod: guestfs-tools-release-notes-1.54.pod
 	  --section 1 \
 	  --man guestfs-tools-release-notes-1.54.1 \
 	  --html $(top_builddir)/website/guestfs-tools-release-notes-1.54.1.html \
+	  --license GPLv2+ \
+	  $<
+	touch $@
+
+guestfs-tools-release-notes-1.56.1 guestfs-tools-release-notes-1.56.txt $(top_builddir)/website/guestfs-tools-release-notes-1.56.1.html: stamp-guestfs-tools-release-notes-1.56.pod
+
+stamp-guestfs-tools-release-notes-1.56.pod: guestfs-tools-release-notes-1.56.pod
+	$(PODWRAPPER) \
+	  --section 1 \
+	  --man guestfs-tools-release-notes-1.56.1 \
+	  --html $(top_builddir)/website/guestfs-tools-release-notes-1.56.1.html \
 	  --license GPLv2+ \
 	  $<
 	touch $@

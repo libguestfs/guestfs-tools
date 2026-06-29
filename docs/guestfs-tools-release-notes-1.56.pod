@@ -1,0 +1,152 @@
+=head1 NAME
+
+guestfs-tools-release-notes - guestfs tools release Notes
+
+=head1 RELEASE NOTES FOR GUESTFS TOOLS 1.56
+
+These are the release notes for guestfs tools stable release 1.56.
+This describes the major changes since 1.54.
+
+Guestfs tools 1.56.0 was released on B<XXX July 2026>.
+
+=begin comment
+
+=head2 Security
+
+=end comment
+
+=head2 virt-builder
+
+Fix building of C<debian-13> template (pulsarrush).
+
+Use HTTPS to fetch templates (Xiang Hua Chen).
+
+=head2 virt-customize
+
+Fix SELinux relabelling of "split /usr" guests.
+
+Fix Windows Update and C<pnputil /e> command in Windows guests after
+virtio-win drivers are injected (Cole Robinson).
+
+When injecting virtio-win drivers in Windows guests, install
+blnsvr.exe (the balloon server) (Cole Robinson).
+
+Fix installation of Windows Vista and Windows 2008 Server R1 drivers
+(Cole Robinson).
+
+Remove the RHEL subscription-manager feature (Cole Robinson).
+
+In firstboot scripts, print Windows C<%USERNAME%> and C<%USERDOMAIN%>
+which can be used to diagnose failures caused by insufficient
+permissions.
+
+Windows firstboot scripts may now exit with code 250, meaning that no
+reboot is required after the script.  The next script in sequence runs
+immediately (Srihari Parimi).
+
+On Windows, a sentinel file is created after all firstboot scripts
+have run, which may be used to indicate that firstboot has completed.
+
+=head2 virt-inspector
+
+Add C<E<lt>windows_group_policy/E<gt>> if Windows Group Policy was
+detected inside a guest.
+
+New C<E<lt>classE<gt>> element used to indicate the category of
+applications, such as antivirus.
+
+For XFS filesystems, new C<E<lt>type version="4|5"E<gt>> to indicate
+XFSv4 or XFSv5.  (This is also displayed in L<virt-filesystems(1)>
+output.)
+
+Add support for Kylin, NeoKylin and Anolis Linux (grass lu).
+
+=head2 virt-sysprep
+
+Add a new operation to clean zsh history files (Fazle Arefin).
+
+=head2 Common changes
+
+Some bash completion scripts that were no longer used by guestfs-tools
+were removed.  Also new C<./configure --with-bash-completion> and
+C<./configure --with-bash-completion-dir> options were added
+(Christopher Byrne).
+
+All tools taking a LUKS key file now allow a binary file to be used.
+
+=head2 Documentation
+
+Use qemu option I<-cpu max> in documentation about running
+virt-builder guests.
+
+All information related to firstboot scripts was moved to and
+consolidated in L<virt-customize(1)/FIRSTBOOT> (Srihari Parimi).
+
+Removed a lot of obsolete documentation in the L<virt-sysprep(1)> man
+page.
+
+=head2 Build changes
+
+Fixes for OCaml 5.
+
+Add github CI (Cole Robinson).
+
+Remove C<AM_GNU_GETTEXT> macro and replace it with simpler C<LIBINTL>
+checks (Cole Robinson).
+
+Build Bison-based parser with I<-Wno-yacc> to reduce yacc
+compatibility warnings that we don't care about (Cole Robinson).
+
+Various build warnings were cleaned up (Cole Robinson).
+
+C<CFLAGS> is now prepended to the default, allowing default flags to
+be overridden.  In addition I<-fPIC> is added to the default flags
+(Cole Robinson).
+
+Many memory leaks identified by Claude Code were fixed (shivanayak).
+
+=head2 Internals
+
+OCaml quoted string literals (C<{|..|}>) are used throughout the code
+to make it easier to include verbatim scripts, code, regexps etc.
+
+The sources for L<virt-cat(1)>, L<virt-filesystems(1)>,
+L<virt-log(1)>, L<virt-ls(1)> and L<virt-tail(1)> previously used a
+single source directory (F<cat/>) for no particular reason.  These
+were moved to separate directories.
+
+=head2 Bugs fixed
+
+=begin comment
+
+./bugs-in-changelog.sh v1.54.0..
+
+=end comment
+
+=over 4
+
+
+
+=back
+
+=head1 SEE ALSO
+
+L<http://libguestfs.org/>
+
+=head1 AUTHORS
+
+=begin comment
+
+git shortlog -s v1.54.0..
+
+=end comment
+
+=over 4
+
+
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009-2026 Red Hat Inc.

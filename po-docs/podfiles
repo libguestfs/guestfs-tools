@@ -17,6 +17,7 @@ docs/guestfs-tools-release-notes-1.48.pod
 docs/guestfs-tools-release-notes-1.50.pod
 docs/guestfs-tools-release-notes-1.52.pod
 docs/guestfs-tools-release-notes-1.54.pod
+docs/guestfs-tools-release-notes-1.56.pod
 drivers/virt-drivers.pod
 edit/virt-edit.pod
 filesystems/virt-filesystems.pod
