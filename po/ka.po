@@ -1,0 +1,4208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Red Hat Inc.
+# This file is distributed under the same license as the guestfs-tools package.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: guestfs-tools 1.55.8\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
+"POT-Creation-Date: 2025-04-29 19:08+0100\n"
+"PO-Revision-Date: 2026-07-01 08:17+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
+"libguestfs/guestfs-tools-master/ka/>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
+
+#: resize/resize.ml:1031
+msgid "  An extra partition will be created for the surplus."
+msgstr ""
+
+#: resize/resize.ml:1003 resize/resize.ml:969
+msgid "  The %s on %s will be expanded using the ‘%s’ method."
+msgstr ""
+
+#: resize/resize.ml:1033
+msgid ""
+"  The surplus space is not large enough for an extra partition to be created "
+"and so it will just be ignored."
+msgstr ""
+
+#: resize/resize.ml:1036
+msgid ""
+"  The surplus space will be ignored.  Run a partitioning program in the "
+"guest to partition this extra space if you want."
+msgstr ""
+
+#: common/mltools/tools_utils.ml:238
+msgid "%s"
+msgstr "%s"
+
+#: common/mltools/getopt.ml:73
+msgid ""
+"%s\n"
+"Options:\n"
+msgstr ""
+"%s\n"
+"პარამეტრები:\n"
+
+#: common/mltools/tools_utils.ml:698 common/mlcustomize/customize_run.ml:390
+msgid "%s (ignored)"
+msgstr "%s (იგნორირებულია)"
+
+#: builder/builder.ml:329
+msgid ""
+"%s checksum of template did not match the expected checksum!\n"
+"  found checksum: %s\n"
+"  expected checksum: %s\n"
+"Try:\n"
+" - Use the ‘-v’ option and look for earlier error messages.\n"
+" - Delete the cache: virt-builder --delete-cache\n"
+" - Check no one has tampered with the website or your network!"
+msgstr ""
+
+#: common/mltools/checksums.ml:71
+msgid "%s did not return any output"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:183
+msgid "%s does not exist in the guest"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:113
+msgid "%s ignored for non-Windows guest"
+msgstr ""
+
+#: builder/simplestreams_parser.ml:59
+msgid "%s is not a Simple Streams (index) v1.0 JSON file (format: %s)"
+msgstr ""
+
+#: builder/simplestreams_parser.ml:78
+msgid "%s is not a Simple Streams (products) v1.0 JSON file (format: %s)"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:186
+msgid "%s is not a regular file in the guest"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:234 common/mltools/tools_utils.ml:202
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: common/mltools/tools_utils.ml:236
+msgid "%s: %s: %s"
+msgstr "%s: %s: %s"
+
+#: common/mltools/on_exit.ml:77
+msgid ""
+"%s: Exiting on signal %s\n"
+"%!"
+msgstr ""
+
+#: resize/resize.ml:735
+msgid ""
+"%s: This extended partition contains logical partitions which might be "
+"damaged by shrinking it.  If you want to shrink this partition, you need to "
+"use the ‘--resize-force’ option, but that could destroy logical partitions "
+"within this partition.  (This error came from ‘%s’ option on the command "
+"line.)"
+msgstr ""
+
+#: resize/resize.ml:999
+msgid "%s: This logical volume will be expanded to maximum size."
+msgstr ""
+
+#: resize/resize.ml:726
+msgid ""
+"%s: This partition contains a %s filesystem which will be damaged by "
+"shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
+"want to shrink this partition, you need to use the ‘--resize-force’ option, "
+"but that could destroy any data on this partition.  (This error came from "
+"‘%s’ option on the command line.)"
+msgstr ""
+
+#: resize/resize.ml:716
+msgid ""
+"%s: This partition contains an LVM physical volume which will be damaged by "
+"shrinking it below %Ld bytes (user asked to shrink it to %Ld bytes).  If you "
+"want to shrink this partition, you need to use the ‘--resize-force’ option, "
+"but that could destroy any data on this partition.  (This error came from "
+"‘%s‘ option on the command line.)"
+msgstr ""
+
+#: resize/resize.ml:709
+msgid ""
+"%s: This partition has unknown content which might be damaged by shrinking "
+"it.  If you want to shrink this partition, you need to use the ‘--resize-"
+"force’ option, but that could destroy any data on this partition.  (This "
+"error came from ‘%s’ option on the command line.)"
+msgstr ""
+
+#: resize/resize.ml:961
+msgid ""
+"%s: This partition will be created, but the contents will be ignored (ie. "
+"not copied to the target)."
+msgstr ""
+
+#: resize/resize.ml:964
+msgid "%s: This partition will be deleted."
+msgstr ""
+
+#: resize/resize.ml:959
+msgid "%s: This partition will be left alone."
+msgstr ""
+
+#: resize/resize.ml:966
+msgid "%s: This partition will be resized from %s to %s."
+msgstr ""
+
+#: builder/cmdline.ml:176
+msgid ""
+"%s: build virtual machine images quickly\n"
+"\n"
+" virt-builder OS-VERSION\n"
+" virt-builder -l\n"
+" virt-builder --notes OS-VERSION\n"
+" virt-builder --print-cache\n"
+" virt-builder --cache-all-templates\n"
+" virt-builder --delete-cache\n"
+" virt-builder --get-kernel IMAGE\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-builder(1).\n"
+msgstr ""
+
+#: builder/index_parser.ml:156
+msgid "%s: cannot determine the virtual size of %s due to compression"
+msgstr ""
+
+#: common/mlcustomize/inject_virtio_win.ml:411
+msgid "%s: cannot open virtio-win ISO file: %s"
+msgstr ""
+
+#: builder/index_parser.ml:184
+msgid "%s: cannot parse ‘compressed_size’ field for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:211
+msgid "%s: cannot parse ‘hidden’ field for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:142
+msgid "%s: cannot parse ‘revision’ field for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:174
+msgid "%s: cannot parse ‘size’ field for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:261
+msgid "%s: cannot use a URI (‘%s’) in the index file\n"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:64
+msgid "%s: command exited with an error"
+msgstr ""
+
+#: builder/repository_main.ml:62
+msgid ""
+"%s: create a repository for virt-builder\n"
+"\n"
+"  virt-builder-repository REPOSITORY_PATH\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-builder-repository(1).\n"
+msgstr ""
+
+#: customize/customize_main.ml:96
+msgid ""
+"%s: customize a virtual machine\n"
+"\n"
+" virt-customize [--options] -d domname\n"
+"\n"
+" virt-customize [--options] -a disk.img [-a disk.img ...]\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-customize(1).\n"
+msgstr ""
+
+#: drivers/drivers.ml:57
+msgid ""
+"%s: detect bootloader, kernel and drivers inside guest\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-drivers(1).\n"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:172
+msgid "%s: error: %s"
+msgstr "%s: შეცდომა: %s"
+
+#: get-kernel/get_kernel.ml:67
+msgid ""
+"%s: extract kernel and ramdisk from a guest\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-get-kernel(1).\n"
+msgstr ""
+
+#: resize/resize.ml:421 resize/resize.ml:418
+msgid "%s: file is too small to be a disk image (%Ld bytes)"
+msgstr ""
+
+#: builder/index_parser.ml:81
+msgid "%s: index is corrupt: %s: field ‘%s[%s]’ appears two or more times\n"
+msgstr ""
+
+#: builder/index_parser.ml:84
+msgid "%s: index is corrupt: %s: field ‘%s’ appears two or more times\n"
+msgstr ""
+
+#: builder/index_parser.ml:63
+msgid ""
+"%s: index is corrupt: os-version ‘%s’ with architecture ‘%s’ appears two or "
+"more times\n"
+msgstr ""
+
+#: resize/resize.ml:892
+msgid ""
+"%s: logical volume not found in the source disk image (this error came from "
+"‘--lv-expand’ option on the command line).  Try running this command: virt-"
+"filesystems --logical-volumes --long -a %s"
+msgstr ""
+
+#: resize/resize.ml:759
+msgid "%s: missing size field in ‘%s’ option"
+msgstr ""
+
+#: resize/resize.ml:768
+msgid "%s: new partition size is zero or negative"
+msgstr ""
+
+#: builder/index_parser.ml:118
+msgid "%s: no ‘arch’ entry for %s and failed to guess it\n"
+msgstr ""
+
+#: builder/index_parser.ml:126
+msgid "%s: no ‘arch’ entry for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:106
+msgid "%s: no ‘file’ (URI) entry for ‘%s’\n"
+msgstr ""
+
+#: builder/index_parser.ml:167
+msgid "%s: no ‘size’ field for ‘%s’\n"
+msgstr ""
+
+#: builder/sources.ml:48
+msgid "%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:729
+msgid "%s: operation timed out"
+msgstr ""
+
+#: resize/resize.ml:659
+msgid "%s: partition already deleted, you cannot use it in ‘%s’ option"
+msgstr ""
+
+#: resize/resize.ml:654
+msgid "%s: partition already ignored, you cannot use it in ‘%s’ option"
+msgstr ""
+
+#: resize/resize.ml:647
+msgid ""
+"%s: partition not found in the source disk image (this error came from ‘%s’ "
+"option on the command line).  Try running this command: virt-filesystems --"
+"partitions --long -a %s"
+msgstr ""
+
+#: resize/resize.ml:551
+msgid "%s: partition size %Ld < filesystem size %Ld"
+msgstr ""
+
+#: resize/resize.ml:546
+msgid "%s: partition size %Ld < physical volume size %Ld"
+msgstr ""
+
+#: resize/resize.ml:457
+msgid "%s: physical volume not returned by pvs_full"
+msgstr ""
+
+#: sysprep/main.ml:142
+msgid ""
+"%s: reset or unconfigure a virtual machine so clones can be made\n"
+"\n"
+" virt-sysprep [--options] -d domname\n"
+"\n"
+" virt-sysprep [--options] -a disk.img [-a disk.img ...]\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-sysprep(1).\n"
+msgstr ""
+
+#: resize/resize.ml:221
+msgid ""
+"%s: resize a virtual machine disk\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-resize(1).\n"
+msgstr ""
+
+#: sparsify/cmdline.ml:81
+msgid ""
+"%s: sparsify a virtual machine disk\n"
+"\n"
+" virt-sparsify [--options] indisk outdisk\n"
+"\n"
+" virt-sparsify [--options] --in-place disk\n"
+"\n"
+"A short summary of the options is given below.  For detailed help please\n"
+"read the man page virt-sparsify(1).\n"
+msgstr ""
+
+#: builder/builder.ml:338
+msgid ""
+"%s: template not downloaded or deleted.  You may have run ‘virt-builder --"
+"delete-cache’ in parallel."
+msgstr ""
+
+#: resize/resize.ml:694
+msgid "%s: this partition has already been ignored or deleted"
+msgstr ""
+
+#: resize/resize.ml:690
+msgid "%s: this partition has already been marked for resizing"
+msgstr ""
+
+#: resize/resize.ml:561
+msgid "%s: this partition overlaps the previous one"
+msgstr ""
+
+#: resize/resize.ml:433
+msgid ""
+"%s: unknown partition table type\n"
+"virt-resize only supports MBR (DOS) and GPT partition tables."
+msgstr ""
+
+#: common/mltools/tools_utils.ml:191
+msgid "%s: warning: %s"
+msgstr "%s: გაფრთხილება: %s"
+
+#: builder/index_parser.ml:265
+msgid "%s: you must use relative paths (not ‘%s’) in the index file\n"
+msgstr ""
+
+#: builder/index_parser.ml:257
+msgid "%s: zero length path in the index file\n"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:258
+#: common/mlcustomize/customize_cmdline.ml:367
+msgid "'CMD+ARGS'"
+msgstr "'ბრძნბ+არგ-ები'"
+
+#: get-kernel/get_kernel.ml:40 drivers/drivers.ml:36
+msgid "--add option can only be given once"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:133
+msgid ""
+"--append-line: line must not contain newline characters.  Use the --append-"
+"line option multiple times to add several lines."
+msgstr ""
+
+#: customize/customize_main.ml:114
+msgid "--attach-format parameter must appear before --attach parameter"
+msgstr ""
+
+#: builder/cmdline.ml:268
+msgid ""
+"--cache-all-templates/--print-cache/--delete-cache does not need any extra "
+"arguments"
+msgstr ""
+
+#: sparsify/cmdline.ml:55
+msgid "--check-tmpdir: unknown argument ‘%s’"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:152
+msgid "--chown: could not parse numeric UID:GID from %s:%s"
+msgstr ""
+
+#: sparsify/copying.ml:74
+msgid ""
+"--compress cannot be used for raw output.  Remove this option or use --"
+"convert qcow2."
+msgstr ""
+
+#. customize/customize_main.ml:72
+#: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
+msgid "--domain option can only be given once"
+msgstr ""
+
+#: sysprep/main.ml:78
+msgid "--enable option can only be given once"
+msgstr ""
+
+#: sysprep/main.ml:86
+msgid "--enable: ‘%s’ is not a known operation"
+msgstr ""
+
+#: resize/resize.ml:174
+msgid "--expand option given more than once"
+msgstr ""
+
+#: sysprep/main.ml:157 customize/customize_main.ml:111
+msgid "--format parameter must appear before -a parameter"
+msgstr ""
+
+#: builder/cmdline.ml:278
+msgid "--get-kernel: too many parameters"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:216
+msgid ""
+"--inject-blnsvr: blnsvr.exe not found in virtio-win source that you specified"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:225
+msgid ""
+"--inject-qemu-ga: QEMU Guest Agent MSI not found in virtio-win source that "
+"you specified"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:241
+msgid ""
+"--inject-virtio-win: virtio drivers were not found for this Windows version "
+"in the virtio-win source that you specified"
+msgstr ""
+
+#: builder/cmdline.ml:245
+msgid "--list: use ‘--list-format’, not ‘--format’"
+msgstr ""
+
+#: builder/cmdline.ml:260
+msgid "--notes: too many parameters, expecting ‘os-version’"
+msgstr ""
+
+#: sysprep/main.ml:105
+msgid "--operations: empty operation name"
+msgstr ""
+
+#: sysprep/main.ml:117
+msgid "--operations: ‘%s’ is not a known operation"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:53
+msgid "--prefix option can only be given once"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:35
+msgid "--scriptdir cannot be used more than once"
+msgstr ""
+
+#: resize/resize.ml:190
+msgid "--shrink option given more than once"
+msgstr ""
+
+#: sparsify/copying.ml:95
+msgid ""
+"--tmp parameter must point to a directory, block device or prebuilt file"
+msgstr ""
+
+#: sparsify/copying.ml:86
+msgid "--tmp prebuilt:file: %s: file does not exist"
+msgstr ""
+
+#: sparsify/copying.ml:91
+msgid "--tmp prebuilt:file: %s: file does not have backing file"
+msgstr ""
+
+#: sparsify/copying.ml:89
+msgid "--tmp prebuilt:file: %s: file format is not qcow2"
+msgstr ""
+
+#. customize/customize_main.ml:77
+#: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
+msgid "Add disk image file"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:305
+msgid "Add package(s) to install"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:270
+msgid "Add package(s) to install at first boot"
+msgstr ""
+
+#: sparsify/cmdline.ml:74
+msgid "Add qemu-img options"
+msgstr ""
+
+#: builder/list_entries.ml:83
+msgid "Aliases:"
+msgstr "ფსევდონიმები:"
+
+#: resize/resize.ml:197
+msgid "Align first partition (default: auto)"
+msgstr ""
+
+#: builder/repository_main.ml:216
+msgid "Allowed characters are letters, digits, - _ and ."
+msgstr ""
+
+#: builder/repository_main.ml:282
+msgid "Already existing image with id %s and architecture %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:175
+msgid "Append line(s) to the file"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:137
+msgid "Appending line to %s"
+msgstr ""
+
+#: builder/list_entries.ml:77
+msgid "Architecture:"
+msgstr "არქიტექტურა:"
+
+#: builder/repository_main.ml:224
+msgid "Architecture: "
+msgstr "არქიტექტურა: "
+
+#: builder/repository_main.ml:55
+msgid "Ask the user about missing data"
+msgstr ""
+
+#: customize/customize_main.ml:78 builder/cmdline.ml:128
+msgid "Attach data disk/ISO during install"
+msgstr ""
+
+#: sparsify/copying.ml:348
+msgid ""
+"Before deleting the old disk, carefully check that the target disk boots and "
+"works correctly."
+msgstr ""
+
+#: resize/resize.ml:216
+msgid "Behaviour on expand unknown filesystems (default: warn)"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:105
+msgid ""
+"By default remove all the user accounts and their home directories.\n"
+"The \"root\" account is not removed.\n"
+"\n"
+"See the I<--remove-user-accounts> parameter for a way to specify\n"
+"how to remove only some users, or to not remove some others."
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:83
+msgid "Cannot get the home directory for %s"
+msgstr ""
+
+#: sysprep/sysprep_operation_lvm_uuids.ml:84
+msgid "Change LVM2 PV and VG UUIDs"
+msgstr ""
+
+#: sysprep/sysprep_operation_fs_uuids.ml:48
+msgid "Change filesystem UUIDs"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:197
+msgid "Change the owner user and group ID of a file or directory"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:186
+msgid "Change the permissions of a file"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:155
+msgid "Changing owner of %s to %d:%d"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:141
+msgid "Changing permissions of %s to %s"
+msgstr ""
+
+#: builder/cmdline.ml:136
+msgid "Check digital signatures"
+msgstr ""
+
+#: sparsify/cmdline.ml:68
+msgid "Check there is enough space in $TMPDIR"
+msgstr ""
+
+#: builder/repository_main.ml:202
+msgid ""
+"Choose one from the list below:\n"
+" %s\n"
+msgstr ""
+
+#: sparsify/in_place.ml:127 sparsify/copying.ml:279
+msgid "Clearing Linux swap on %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:488
+msgid "Compatibility option doing nothing"
+msgstr ""
+
+#: sparsify/cmdline.ml:69
+msgid "Compressed output format"
+msgstr ""
+
+#: builder/builder.ml:709
+msgid "Converting %s to %s"
+msgstr ""
+
+#: builder/builder.ml:708
+msgid "Converting to %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:219
+msgid "Copy files in disk image"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:397
+msgid "Copy local files or directories from a tarball into image"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:230
+msgid "Copy local files or directories into image"
+msgstr ""
+
+#: builder/builder.ml:642
+msgid "Copying"
+msgstr "კოპირება"
+
+#: resize/resize.ml:1304
+msgid "Copying %s"
+msgstr "%s-ის კოპირება"
+
+#: common/mlcustomize/customize_run.ml:168
+msgid "Copying (in image): %s to %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:172
+msgid "Copying: %s to %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:322
+msgid "Create a directory"
+msgstr "საქაღალდის შექმნა"
+
+#: sparsify/copying.ml:152
+msgid "Create overlay device %s to protect source disk"
+msgstr ""
+
+#: sparsify/copying.ml:150
+msgid "Create overlay file in %s to protect source disk"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:316
+msgid "Create symbolic links"
+msgstr ""
+
+#: builder/repository_main.ml:566
+msgid "Creating index backup copy"
+msgstr ""
+
+#: sysprep/sysprep_operation_bash_history.ml:42
+msgid ""
+"Currently this only looks in C</root> and C</home/*> for\n"
+"home directories, so users with home directories in other\n"
+"locations won't have the bash history removed."
+msgstr ""
+
+#: sysprep/sysprep_operation_ssh_userdir.ml:42
+msgid ""
+"Currently this only looks in C</root> and C</home/*> for\n"
+"home directories, so users with home directories in other\n"
+"locations won't have the ssh files removed."
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:42
+msgid ""
+"Currently this only looks in C</root> and C</home/*> for\n"
+"home directories, so users with home directories in other\n"
+"locations won't have the zsh history removed."
+msgstr ""
+
+#: sysprep/sysprep_operation_customize.ml:43
+msgid "Customize the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_customize.ml:44
+msgid ""
+"Customize the guest by providing L<virt-customize(1)> options\n"
+"for installing packages, editing files and so on."
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:321
+msgid "DIR"
+msgstr "საქაღალდე"
+
+#: common/mlcustomize/customize_cmdline.ml:236
+msgid "Delete a file or directory"
+msgstr ""
+
+#: resize/resize.ml:201
+msgid "Delete partition"
+msgstr "დანაყოფის წაშლა"
+
+#: builder/cmdline.ml:141
+msgid "Delete the template cache"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:176 builder/builder.ml:138
+msgid "Deleting: %s"
+msgstr "იშლება: %s"
+
+#: customize/customize_main.ml:87 builder/cmdline.ml:156
+msgid "Disable appliance network"
+msgstr ""
+
+#: sysprep/main.ml:137
+msgid "Disable appliance network (default)"
+msgstr ""
+
+#: builder/cmdline.ml:138
+msgid "Disable digital signatures"
+msgstr ""
+
+#: builder/cmdline.ml:132
+msgid "Disable template cache"
+msgstr ""
+
+#: sparsify/in_place.ml:163
+msgid "Discard space in volgroup %s"
+msgstr ""
+
+#: common/mltools/getopt.ml:225
+msgid "Display brief help"
+msgstr ""
+
+#: builder/cmdline.ml:157
+msgid "Display installation notes"
+msgstr ""
+
+#: builder/repository_main.ml:290
+msgid "Display name: "
+msgstr "საჩვენებელი სახელი: "
+
+#: common/mltools/tools_utils.ml:388
+msgid "Display version and exit"
+msgstr "ვერსიის ჩვენება და გამოსვლა"
+
+#: builder/cmdline.ml:164
+msgid "Do not fsync output file on exit"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:482
+msgid "Do not relabel files with correct SELinux labels"
+msgstr ""
+
+#: builder/cmdline.ml:166
+msgid "Do not warn if writing to a partition"
+msgstr ""
+
+#: builder/repository_main.ml:56
+msgid "Don’t compress the new images in the index"
+msgstr ""
+
+#: resize/resize.ml:199
+msgid "Don’t copy boot loader"
+msgstr ""
+
+#: resize/resize.ml:204
+msgid "Don’t create extra partition"
+msgstr ""
+
+#: builder/cmdline.ml:143
+msgid "Don’t delete output file on failure"
+msgstr ""
+
+#: resize/resize.ml:203
+msgid "Don’t expand content"
+msgstr ""
+
+#: resize/resize.ml:208
+msgid "Don’t perform changes"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:392
+msgid "Don’t print progress messages"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:423
+msgid "Don’t turn off echo for passphrases"
+msgstr ""
+
+#: builder/cmdline.ml:134
+msgid "Download all templates to the cache"
+msgstr ""
+
+#: builder/list_entries.ml:80
+msgid "Download size:"
+msgstr "გადმოწერის ზომა:"
+
+#: builder/builder.ml:314 builder/builder.ml:262
+msgid "Downloading: %s"
+msgstr "გადმოწერა: %s"
+
+#: common/mlcustomize/customize_cmdline.ml:247
+msgid "Edit file using Perl expression"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:180
+msgid "Editing: %s"
+msgstr "ჩასწორება: %s"
+
+#: sysprep/main.ml:136
+msgid "Enable appliance network"
+msgstr ""
+
+#: customize/customize_main.ml:86 builder/cmdline.ml:155
+msgid "Enable appliance network (default)"
+msgstr ""
+
+#: resize/resize.ml:200
+msgid "Enable debugging messages"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:389
+msgid "Enable libguestfs debugging messages"
+msgstr ""
+
+#: sysprep/main.ml:132
+msgid "Enable specific operations"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:390
+msgid "Enable tracing of libguestfs calls"
+msgstr ""
+
+#: sysprep/main.ml:138
+msgid "Enable/disable specific operations"
+msgstr ""
+
+#: sparsify/copying.ml:180
+msgid "Examine source disk"
+msgstr ""
+
+#: resize/resize.ml:385
+msgid "Examining %s"
+msgstr "%s-ის გამოცდა"
+
+#: sysprep/main.ml:213 customize/customize_main.ml:159
+msgid "Examining the guest ..."
+msgstr ""
+
+#: resize/resize.ml:207
+msgid "Expand logical volume"
+msgstr ""
+
+#: resize/resize.ml:202
+msgid "Expand partition"
+msgstr "დანაყოფის გაფართოება"
+
+#: builder/repository_main.ml:318 builder/repository_main.ml:311
+msgid "Expandable partition: "
+msgstr "გაფართოებადი დანაყოფი: "
+
+#: builder/repository_main.ml:337 builder/repository_main.ml:330
+msgid "Expandable volume: "
+msgstr ""
+
+#: resize/resize.ml:1472
+msgid "Expanding %s using the ‘%s’ method"
+msgstr ""
+
+#: resize/resize.ml:1453
+msgid "Expanding %s%s using the ‘%s’ method"
+msgstr ""
+
+#: builder/repository_main.ml:236
+msgid "Extracting data from the image..."
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:408
+#. common/mlcustomize/customize_cmdline.ml:373
+#: common/mlcustomize/customize_cmdline.ml:414
+msgid "FILE"
+msgstr "FILE"
+
+#: common/mlcustomize/customize_cmdline.ml:455
+msgid "FILE:CONTENT"
+msgstr "ფაილი:შემცველობა"
+
+#: common/mlcustomize/customize_cmdline.ml:444
+msgid "FILE:DEST"
+msgstr "ფაილი:სამიზნე"
+
+#: common/mlcustomize/customize_cmdline.ml:242
+msgid "FILE:EXPR"
+msgstr "ფაილი:გამოს"
+
+#: common/mlcustomize/customize_cmdline.ml:170
+msgid "FILE:LINE"
+msgstr "ფაილი:ხაზი"
+
+#: common/mlcustomize/customize_cmdline.ml:203
+msgid "FILENAME"
+msgstr "ფაილის სახელი"
+
+#: resize/resize.ml:1094
+msgid ""
+"Failed to initialize the partition table on the target disk.  You need to "
+"wipe or recreate the target disk and then run virt-resize again.\n"
+"\n"
+"The underlying error was: %s"
+msgstr ""
+
+#: sparsify/copying.ml:264
+msgid "Fill free space in %s with zero"
+msgstr ""
+
+#: sparsify/copying.ml:312
+msgid "Fill free space in volgroup %s with zero"
+msgstr ""
+
+#: builder/cmdline.ml:145
+msgid "Fingerprint of valid signing key"
+msgstr ""
+
+#: builder/list_entries.ml:64
+msgid "Fingerprint: %s\n"
+msgstr ""
+
+#: customize/customize_main.ml:206 builder/builder.ml:796
+msgid "Finishing off"
+msgstr ""
+
+#: resize/resize.ml:1351
+msgid "Fixing first NTFS partition boot record"
+msgstr ""
+
+#: sysprep/sysprep_operation_flag_reconfiguration.ml:35
+msgid "Flag the system for reconfiguration"
+msgstr ""
+
+#. sysprep/sysprep_operation_net_hostname.ml:56
+#: sysprep/sysprep_operation_net_hwaddr.ml:53
+msgid ""
+"For Fedora and Red Hat Enterprise Linux,\n"
+"this is removed from C<ifcfg-*> files."
+msgstr ""
+
+#: sysprep/sysprep_operation_flag_reconfiguration.ml:36
+msgid ""
+"For Linux guests, this touches C</.unconfigured>, which causes\n"
+"the first boot to interactively query the user for settings such\n"
+"as the root password and timezone."
+msgstr ""
+
+#: resize/resize.ml:209
+msgid "Force ntfsresize"
+msgstr ""
+
+#: resize/resize.ml:212
+msgid "Forcefully resize partition"
+msgstr ""
+
+#. drivers/drivers.ml:54
+#: sparsify/cmdline.ml:71 resize/resize.ml:205 get-kernel/get_kernel.ml:61
+msgid "Format of input disk"
+msgstr ""
+
+#: resize/resize.ml:210
+msgid "Format of output disk"
+msgstr ""
+
+#: sparsify/cmdline.ml:70
+msgid "Format of output disk (default: same as input)"
+msgstr ""
+
+#: builder/repository_main.ml:501
+msgid "Found new images: %s"
+msgstr ""
+
+#: builder/builder.ml:786
+msgid "Free space"
+msgstr "თავისუფალი ადგილი"
+
+#: builder/list_entries.ml:76
+msgid "Full name:"
+msgstr "სრული სახელი:"
+
+#: builder/sigchecker.ml:114
+msgid ""
+"GPG failure: could not run GPG the first time\n"
+"Use the ‘-v’ option and look for earlier error messages."
+msgstr ""
+
+#: builder/sigchecker.ml:66
+msgid ""
+"GPG failure: could not trust the imported key\n"
+"Use the ‘-v’ option and look for earlier error messages."
+msgstr ""
+
+#: builder/sigchecker.ml:215
+msgid ""
+"GPG failure: could not verify digital signature of file\n"
+"Try:\n"
+" - Use the ‘-v’ option and look for earlier error messages.\n"
+"- Delete the cache: virt-builder --delete-cache\n"
+"- Check no one has tampered with the website or your network!"
+msgstr ""
+
+#: builder/cmdline.ml:148
+msgid "Get kernel from image"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:275
+msgid "HOSTNAME"
+msgstr "ჰოსტის სახელი"
+
+#: builder/repository_main.ml:54
+msgid "ID of the GPG key to sign the repo with"
+msgstr ""
+
+#: builder/repository_main.ml:214
+msgid "Identifier: "
+msgstr "იდენტიფიკატორი: "
+
+#: common/mltools/tools_utils.ml:177
+msgid ""
+"If reporting bugs, run %s with debugging enabled and include the complete "
+"output:\n"
+"\n"
+"  %s -v -x [...]"
+msgstr ""
+
+#: sparsify/cmdline.ml:72
+msgid "Ignore filesystem"
+msgstr ""
+
+#: resize/resize.ml:206
+msgid "Ignore partition"
+msgstr ""
+
+#: sysprep/sysprep_operation_ca_certificates.ml:56
+msgid "In case any certificate is removed, the system CA store is updated."
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:386
+msgid "Inject a public key into the guest"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:282
+msgid "Inject the Balloon Server into a Windows guest"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:288
+msgid "Inject the QEMU Guest Agent into a Windows guest"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:294
+msgid "Inject virtio-win drivers into a Windows guest"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:191
+msgid "Installing firstboot command: %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:195
+msgid "Installing firstboot packages: %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:202
+msgid "Installing firstboot script: %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:248
+msgid "Installing packages: %s"
+msgstr ""
+
+#: builder/list_entries.ml:66
+msgid "Key: %s\n"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:225
+msgid "LOCALPATH:REMOTEDIR"
+msgstr "ლოკალურიბილიკი:დაშორებულისაქაღალდე"
+
+#: common/mlcustomize/customize_run.ml:255
+msgid "Linking: %s -> %s"
+msgstr ""
+
+#: builder/cmdline.ml:150
+msgid "List available templates"
+msgstr ""
+
+#: sysprep/main.ml:134
+msgid "List supported operations"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:287
+#. common/mlcustomize/customize_cmdline.ml:281
+#: common/mlcustomize/customize_cmdline.ml:293
+msgid "METHOD"
+msgstr "მეთოდი"
+
+#: common/mltools/tools_utils.ml:429
+msgid "Make output machine readable"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:260
+msgid "Making directory: %s"
+msgstr ""
+
+#: builder/list_entries.ml:78
+msgid "Minimum/default size:"
+msgstr ""
+
+#: sparsify/cmdline.ml:73
+msgid "Modify the disk image in-place"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:138
+msgid "Mount point on host"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:333
+msgid "Move files in disk image"
+msgstr ""
+
+#: builder/repository_main.ml:575
+msgid "Moving files to final destination"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:264
+msgid "Moving: %s -> %s"
+msgstr ""
+
+#: builder/repository_main.ml:497
+msgid "No new image found"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:196
+msgid "Notes on %s"
+msgstr ""
+
+#: builder/list_entries.ml:89
+msgid ""
+"Notes:\n"
+"\n"
+"%s\n"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_nmconn.ml:38
+msgid "On Fedora and Red Hat Enterprise Linux, remove the C<"
+msgstr ""
+
+#: sysprep/sysprep_operation_lvm_uuids.ml:85
+msgid ""
+"On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
+"(VGs),\n"
+"new random UUIDs are generated and assigned to those PVs and VGs."
+msgstr ""
+
+#: sysprep/sysprep_operation_lvm_system_devices.ml:36
+msgid ""
+"On Linux guests, LVM2's scanning for physical volumes (PVs) may be "
+"restricted to those block devices whose WWIDs are listed in C<"
+msgstr ""
+
+#. sysprep/sysprep_operation_logfiles.ml:149
+#: sysprep/sysprep_operation_passwd_backups.ml:48
+msgid ""
+"On Linux the following files are removed:\n"
+"\n"
+"%s"
+msgstr ""
+
+#: sysprep/sysprep_operation_fs_uuids.ml:49
+msgid ""
+"On guests and filesystem types where this is supported,\n"
+"new random UUIDs are generated and assigned to filesystems."
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:268
+msgid ""
+"One of rhsrvany.exe or pvvxsvc.exe is missing in %s.  One of them is "
+"required in order to install Windows firstboot scripts.  You can get one by "
+"building rhsrvany (https://github.com/rwmjones/rhsrvany)"
+msgstr ""
+
+#: builder/builder.ml:721
+msgid "Opening the new disk"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:62
+msgid "Output directory"
+msgstr "გამოტანის საქაღალდე"
+
+#: builder/builder.ml:781
+msgid "Output file"
+msgstr "გამოტანის ფაილი"
+
+#: builder/builder.ml:783
+msgid "Output format"
+msgstr "გამოტანის ფორმატი"
+
+#: builder/cmdline.ml:146
+msgid "Output format (default: raw)"
+msgstr ""
+
+#: builder/builder.ml:782
+msgid "Output size"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:235
+#: common/mlcustomize/customize_cmdline.ml:420
+msgid "PATH"
+msgstr "ბილიკი"
+
+#: common/mlcustomize/customize_cmdline.ml:181
+msgid "PERMISSIONS:FILE"
+msgstr "წვდომები:ფაილი"
+
+#. common/mlcustomize/customize_cmdline.ml:300
+#. common/mlcustomize/customize_cmdline.ml:265
+#: common/mlcustomize/customize_cmdline.ml:427
+msgid "PKG,PKG.."
+msgstr "პკტ,პკტ.."
+
+#: sysprep/sysprep_operation.ml:162
+msgid "POD for %s must not end with newline"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:171
+msgid "POD notes for %s must not end with newline"
+msgstr ""
+
+#: sysprep/main.ml:129 customize/customize_main.ml:83
+msgid "Perform a dry run"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:319 sysprep/sysprep_operation.ml:298
+msgid "Performing %S ..."
+msgstr ""
+
+#: builder/builder.ml:577
+msgid "Planning how to build this image"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:64
+msgid "Prefix for files"
+msgstr ""
+
+#: builder/repository_main.ml:186
+msgid "Preparing %s"
+msgstr "%s-ის მომზადება"
+
+#: builder/cmdline.ml:160
+msgid "Print info about template cache"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:208
+msgid "Read customize commands from file"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:424
+msgid "Read passphrases from stdin"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:421
+msgid "Recursively truncate all files in directory"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:298
+msgid "Recursively truncating: %s"
+msgstr ""
+
+#: sysprep/sysprep_operation_ssh_userdir.ml:38
+msgid "Remove \".ssh\" directories in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_passwd_backups.ml:46
+msgid "Remove /etc/passwd- and similar backup files"
+msgstr ""
+
+#: sysprep/sysprep_operation_ca_certificates.ml:55
+msgid "Remove CA certificates in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_dhcp_client_state.ml:36
+msgid "Remove DHCP client leases"
+msgstr ""
+
+#: sysprep/sysprep_operation_dhcp_server_state.ml:31
+msgid "Remove DHCP server leases"
+msgstr ""
+
+#: sysprep/sysprep_operation_dovecot_data.ml:37
+msgid "Remove Dovecot (mail server) data"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_hostname.ml:54
+msgid "Remove HOSTNAME and DHCP_HOSTNAME in network interface configuration"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_hwaddr.ml:52
+msgid "Remove HWADDR (hard-coded MAC address) configuration"
+msgstr ""
+
+#: sysprep/sysprep_operation_kerberos_data.ml:43
+msgid "Remove Kerberos data in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_lvm_system_devices.ml:34
+msgid "Remove LVM2 system.devices file"
+msgstr ""
+
+#: sysprep/sysprep_operation_ipa_client.ml:58
+msgid ""
+"Remove all the files related to an IPA (Identity, Policy, Audit) system.\n"
+"This effectively unenrolls the guest from an IPA server without interacting\n"
+"with it.\n"
+"\n"
+"This operation does not run C<ipa-client>."
+msgstr ""
+
+#: sysprep/sysprep_operation_blkid_tab.ml:47
+msgid "Remove blkid tab in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_backup_files.ml:81
+msgid "Remove editor backup files from the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_mail_spool.ml:36
+msgid "Remove email from the local mail spool directory"
+msgstr ""
+
+#: sysprep/sysprep_operation_rpm_db.ml:38
+msgid "Remove host-specific RPM database files"
+msgstr ""
+
+#: sysprep/sysprep_operation_rpm_db.ml:39
+msgid ""
+"Remove host-specific RPM database files and locks.  RPM will\n"
+"recreate these files automatically if needed."
+msgstr ""
+
+#: sysprep/sysprep_operation_logfiles.ml:147
+msgid "Remove many log files from the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_package_manager_cache.ml:46
+msgid "Remove package manager cache"
+msgstr ""
+
+#: sysprep/sysprep_operation_net_nmconn.ml:36
+msgid "Remove system-local NetworkManager connection profiles (keyfiles)"
+msgstr ""
+
+#: sysprep/sysprep_operation_tmp_files.ml:50
+msgid "Remove temporary files"
+msgstr "დროებითი ფაილების წაშლა"
+
+#: sysprep/sysprep_operation_ssh_userdir.ml:39
+msgid ""
+"Remove the C<.ssh> directory of user \"root\" and any other\n"
+"users who have a C<.ssh> directory in their home directory."
+msgstr ""
+
+#: sysprep/sysprep_operation_ipa_client.ml:57
+msgid "Remove the IPA files"
+msgstr ""
+
+#: sysprep/sysprep_operation_kerberos_hostkeytab.ml:34
+msgid "Remove the Kerberos host keytab file in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_pam_data.ml:44
+msgid "Remove the PAM data in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_rh_subscription_manager.ml:38
+msgid "Remove the RH subscription manager files"
+msgstr ""
+
+#: sysprep/sysprep_operation_rhn_systemid.ml:38
+msgid "Remove the RHN system ID"
+msgstr ""
+
+#: sysprep/sysprep_operation_ssh_hostkeys.ml:35
+msgid "Remove the SSH host keys in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_smolt_uuid.ml:39
+msgid "Remove the Smolt hardware UUID"
+msgstr ""
+
+#: sysprep/sysprep_operation_abrt_data.ml:38
+msgid ""
+"Remove the automatically generated ABRT crash data in\n"
+"C</var/spool/abrt/>."
+msgstr ""
+
+#: sysprep/sysprep_operation_crash_data.ml:40
+msgid "Remove the automatically generated kdump kernel crash data."
+msgstr ""
+
+#: sysprep/sysprep_operation_bash_history.ml:38
+msgid "Remove the bash history in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_bash_history.ml:39
+msgid ""
+"Remove the bash history of user \"root\" and any other users\n"
+"who have a C<.bash_history> file in their home directory."
+msgstr ""
+
+#: sysprep/sysprep_operation_abrt_data.ml:37
+msgid "Remove the crash data generated by ABRT"
+msgstr ""
+
+#: sysprep/sysprep_operation_crash_data.ml:39
+msgid "Remove the crash data generated by kexec-tools"
+msgstr ""
+
+#: sysprep/sysprep_operation_puppet_data_log.ml:44
+msgid "Remove the data and log files of puppet"
+msgstr ""
+
+#: sysprep/sysprep_operation_samba_db_log.ml:45
+msgid "Remove the database and log files of Samba"
+msgstr ""
+
+#: sysprep/sysprep_operation_sssd_db_log.ml:43
+msgid "Remove the database and log files of sssd"
+msgstr ""
+
+#: sysprep/sysprep_operation_firewall_rules.ml:44
+msgid "Remove the firewall rules"
+msgstr ""
+
+#: sysprep/sysprep_operation_machine_id.ml:37
+msgid "Remove the local machine ID"
+msgstr ""
+
+#: sysprep/sysprep_operation_pacct_log.ml:57
+msgid "Remove the process accounting log files"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:104
+msgid "Remove the user accounts in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_utmp.ml:35
+msgid "Remove the utmp file"
+msgstr ""
+
+#: sysprep/sysprep_operation_yum_uuid.ml:34
+msgid "Remove the yum UUID"
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:38
+msgid "Remove the zsh history in the guest"
+msgstr ""
+
+#: sysprep/sysprep_operation_zsh_history.ml:39
+msgid ""
+"Remove the zsh history of user \"root\" and any other users\n"
+"who have a C<.zsh_history> file in their home directory."
+msgstr ""
+
+#: sysprep/sysprep_operation_udev_persistent_net.ml:35
+msgid "Remove udev persistent net rules"
+msgstr ""
+
+#: sysprep/sysprep_operation_udev_persistent_net.ml:36
+msgid ""
+"Remove udev persistent net rules which map the guest’s existing MAC\n"
+"address to a fixed ethernet device (eg. eth0).\n"
+"\n"
+"After a guest is cloned, the MAC address usually changes.  Since the\n"
+"old MAC address occupies the old name (eg. eth0), this means the fresh\n"
+"MAC address is assigned to a new name (eg. eth1) and this is usually\n"
+"undesirable.  Erasing the udev persistent net rules avoids this."
+msgstr ""
+
+#: sysprep/sysprep_operation_cron_spool.ml:55
+msgid "Remove user at-jobs and cron-jobs"
+msgstr ""
+
+#: resize/resize.ml:1502
+msgid ""
+"Resize operation completed with no errors.  Before deleting the old disk, "
+"carefully check that the resized disk boots and works correctly."
+msgstr ""
+
+#: resize/resize.ml:211
+msgid "Resize partition"
+msgstr ""
+
+#: builder/builder.ml:667
+msgid "Resizing (using virt-resize) to expand the disk to %s"
+msgstr ""
+
+#: builder/builder.ml:694
+msgid "Resizing container (but not filesystems) to expand the disk to %s"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:111
+msgid "Run arbitrary scripts against the guest"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:259
+msgid "Run command at first guest boot"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:368
+msgid "Run command in disk image"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:253
+msgid "Run script at first guest boot"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:362
+msgid "Run script in disk image"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:155
+msgid ""
+"Run the named C<SCRIPT> (a shell script or program) against the\n"
+"guest.  The script can be any program on the host.  The script’s\n"
+"current directory will be the guest’s root directory.\n"
+"\n"
+"B<Note:> If the script is not on the $PATH, then you must give\n"
+"the full absolute path to the script."
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:409
+msgid "Run touch on a file"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:307
+msgid "Running touch: %s"
+msgstr ""
+
+#. common/mlcustomize/customize_run.ml:159
+#: common/mlcustomize/customize_run.ml:274
+msgid "Running: %s"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:252
+#: common/mlcustomize/customize_cmdline.ml:361
+msgid "SCRIPT"
+msgstr "სკრიპტი"
+
+#: common/mltools/tools_utils.ml:425
+#: common/mlcustomize/customize_cmdline.ml:351
+msgid "SELECTOR"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:363
+msgid "SELinux relabelling"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:214
+#: common/mlcustomize/customize_cmdline.ml:328
+msgid "SOURCE:DEST"
+msgstr "წყარო:სამიზნე"
+
+#: common/mlcustomize/customize_run.ml:287
+msgid "SSH key could not be injected for this type of guest"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:284
+msgid "SSH key inject: %s"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:153
+msgid "Script or program to run on guest"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:374
+msgid "Scrub a file"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:466
+msgid "Scrub build log file"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:374
+msgid "Scrubbing the log file"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:279
+msgid "Scrubbing: %s"
+msgstr ""
+
+#: builder/repository_main.ml:52 builder/cmdline.ml:149
+msgid "Set GPG binary/command"
+msgstr ""
+
+#: customize/customize_main.ml:80 builder/cmdline.ml:130
+msgid "Set attach disk format"
+msgstr ""
+
+#: builder/cmdline.ml:139
+msgid "Set curl binary/command"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:58 drivers/drivers.ml:51
+msgid "Set disk sector size"
+msgstr ""
+
+#: sysprep/main.ml:133 customize/customize_main.ml:84
+msgid "Set format (default: auto)"
+msgstr ""
+
+#. customize/customize_main.ml:81
+#: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+msgid "Set libvirt URI"
+msgstr ""
+
+#. customize/customize_main.ml:82
+#: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
+msgid "Set libvirt guest name"
+msgstr ""
+
+#: customize/customize_main.ml:85 builder/cmdline.ml:154
+msgid "Set memory size"
+msgstr ""
+
+#: sysprep/main.ml:135
+msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
+msgstr ""
+
+#: customize/customize_main.ml:88 builder/cmdline.ml:162
+msgid "Set number of vCPUs"
+msgstr ""
+
+#: builder/cmdline.ml:161
+msgid "Set output disk size"
+msgstr ""
+
+#: builder/cmdline.ml:158
+msgid "Set output filename"
+msgstr ""
+
+#: resize/resize.ml:198
+msgid "Set partition alignment (default: 128 sectors)"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:476
+msgid "Set password crypto"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:433
+msgid "Set program name"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:356
+msgid "Set root password"
+msgstr "Root-ის პაროლის დაყენება"
+
+#: builder/cmdline.ml:163
+msgid "Set source URL"
+msgstr "წყარო URL-ის დაყენება"
+
+#: builder/cmdline.ml:131
+msgid "Set template cache dir"
+msgstr ""
+
+#: sparsify/cmdline.ml:75
+msgid "Set temporary block device, directory or prebuilt file"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:403
+msgid "Set the default timezone"
+msgstr ""
+
+#: builder/cmdline.ml:153
+msgid "Set the format for --list (default: short)"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:276
+msgid "Set the hostname"
+msgstr ""
+
+#: builder/cmdline.ml:127
+msgid "Set the output architecture"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:345
+msgid "Set user password"
+msgstr "მომხმარებლის პაროლის დაყენება"
+
+#: common/mlcustomize/customize_run.ml:75
+msgid "Setting a random seed"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:354
+msgid "Setting passwords"
+msgstr ""
+
+#: common/mlcustomize/password.ml:113
+msgid "Setting random password of %s to %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:207
+msgid "Setting the hostname: %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:90
+msgid "Setting the machine ID in %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:302
+msgid "Setting the timezone: %s"
+msgstr ""
+
+#: resize/resize.ml:1070
+msgid "Setting up initial partition table on %s"
+msgstr ""
+
+#: builder/cmdline.ml:151
+msgid "Shortcut for --list-format long"
+msgstr ""
+
+#: resize/resize.ml:213
+msgid "Shrink partition"
+msgstr "დანაყოფის შემცირება"
+
+#: builder/repository_main.ml:552
+msgid "Signing index with the GPG key %s"
+msgstr ""
+
+#: sparsify/copying.ml:260
+msgid "Skipping %s, as it is a read-only btrfs snapshot."
+msgstr ""
+
+#: sparsify/copying.ml:262
+msgid "Skipping %s, as it is a read-only device."
+msgstr ""
+
+#: builder/list_entries.ml:60
+msgid "Source URI: %s\n"
+msgstr ""
+
+#: sparsify/in_place.ml:186
+msgid "Sparsify in-place operation completed with no errors"
+msgstr ""
+
+#: sparsify/copying.ml:346
+msgid "Sparsify operation completed with no errors."
+msgstr ""
+
+#: common/mltools/tools_utils.ml:425
+msgid "Specify a LUKS key"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:392
+msgid "TARFILE:REMOTEDIR"
+msgstr "ტარფაილი:დაშსაქაღალდე"
+
+#: common/mlcustomize/customize_cmdline.ml:311
+msgid "TARGET:LINK[:LINK..]"
+msgstr "სამიზნე:ბმული[:ბმული..]"
+
+#: common/mlcustomize/customize_cmdline.ml:402
+msgid "TIMEZONE"
+msgstr "დროის სარტყელი"
+
+#: sysprep/sysprep_operation_script.ml:112
+msgid ""
+"The C<script> module lets you run arbitrary shell scripts or programs\n"
+"against the guest.\n"
+"\n"
+"Note this feature requires FUSE support.  You may have to enable\n"
+"this in your host, for example by adding the current user to the\n"
+"C<fuse> group, or by loading a kernel module.\n"
+"\n"
+"Use one or more I<--script> parameters to specify scripts or programs\n"
+"that will be run against the guest.\n"
+"\n"
+"The script or program is run with its current directory being the\n"
+"guest’s root directory, so relative paths should be used.  For\n"
+"example: C<rm etc/resolv.conf> in the script would remove a Linux\n"
+"guest’s DNS configuration file, but C<rm /etc/resolv.conf> would\n"
+"(try to) remove the host’s file.\n"
+"\n"
+"Normally a temporary mount point for the guest is used, but you\n"
+"can choose a specific one by using the I<--scriptdir> parameter.\n"
+"\n"
+"B<Note:> This is different from I<--firstboot> scripts (which run\n"
+"in the context of the guest when it is booting first time).\n"
+"I<--script> scripts run on the host, not in the guest."
+msgstr ""
+
+#: sysprep/sysprep_operation_ssh_hostkeys.ml:36
+msgid ""
+"The SSH host keys are regenerated (differently) next time the guest is\n"
+"booted.\n"
+"\n"
+"If, after cloning, the guest gets the same IP address, ssh will give\n"
+"you a stark warning about the host key changing:\n"
+"\n"
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+" @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\n"
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+" IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!"
+msgstr ""
+
+#: sysprep/sysprep_operation_backup_files.ml:83
+msgid ""
+"The following files are removed from anywhere in the guest\n"
+"filesystem:\n"
+"\n"
+"%s\n"
+"\n"
+"On Linux and Unix operating systems, only the following filesystems\n"
+"will be examined:\n"
+"\n"
+"%s"
+msgstr ""
+
+#: sysprep/sysprep_operation_fs_uuids.ml:52
+msgid ""
+"The fs-uuids operation is disabled by default because it does\n"
+"not yet find and update all the places in the guest that use\n"
+"the UUIDs.  For example C</etc/fstab> or the bootloader.\n"
+"Enabling this operation is more likely than not to make your\n"
+"guest unbootable.\n"
+"\n"
+"See: L<https://bugzilla.redhat.com/show_bug.cgi?id=991641>"
+msgstr ""
+
+#: builder/index_parser.ml:31
+msgid ""
+"The index file downloaded from ‘%s’ is corrupt.\n"
+"You need to ask the supplier of this file to fix it and upload a fixed "
+"version."
+msgstr ""
+
+#: sysprep/sysprep_operation_machine_id.ml:38
+msgid ""
+"The machine ID is usually generated from a random source during system\n"
+"installation and stays constant for all subsequent boots.  Optionally,\n"
+"for stateless systems it is generated during runtime at boot if it is\n"
+"found to be empty."
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:140
+msgid ""
+"The mount point (an empty directory on the host) used when\n"
+"the C<script> operation is enabled and one or more scripts\n"
+"are specified using I<--script> parameter(s).\n"
+"\n"
+"B<Note:> C<SCRIPTDIR> B<must> be an absolute path.\n"
+"\n"
+"If I<--scriptdir> is not specified then a temporary mountpoint\n"
+"will be created."
+msgstr ""
+
+#: sysprep/sysprep_operation_pacct_log.ml:58
+msgid ""
+"The system wide process accounting will store to the pacct\n"
+"log files if the process accounting is on."
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:133
+msgid ""
+"The user accounts to be kept in the guest.\n"
+"The value of this option is a list of user names separated by comma,\n"
+"where specifying an user means it is going to be kept.\n"
+"For example:\n"
+"\n"
+" --keep-user-accounts mary\n"
+"\n"
+"would keep the user account C<mary>.\n"
+"\n"
+"This option can be specified multiple times."
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:116
+msgid ""
+"The user accounts to be removed from the guest.\n"
+"The value of this option is a list of user names separated by comma,\n"
+"where specifying an user means it is going to be removed.\n"
+"For example:\n"
+"\n"
+" --remove-user-accounts bob,eve\n"
+"\n"
+"would only remove the user accounts C<bob> and C<eve>.\n"
+"\n"
+"This option can be specified multiple times."
+msgstr ""
+
+#: builder/builder.ml:286
+msgid "There are no notes for %s\n"
+msgstr ""
+
+#: resize/resize.ml:875
+msgid ""
+"There is a deficit of %Ld bytes (%s).  You need to make the target disk "
+"larger by at least this amount or adjust your resizing requests."
+msgstr ""
+
+#: resize/resize.ml:1028
+msgid "There is a surplus of %s."
+msgstr ""
+
+#: sparsify/copying.ml:112
+msgid ""
+"There may not be enough free space on %s.\n"
+"You may need to set TMPDIR to point to a directory with more free space.\n"
+"\n"
+"Max needed: %s.  Free: %s.  May need another %s.\n"
+"\n"
+"Note this is an overestimate.  If the guest disk is full of data\n"
+"then not as much free space would be required.\n"
+"\n"
+"You can ignore this warning or change it to a hard failure using the\n"
+"--check-tmpdir=(ignore|continue|warn|fail) option.  See virt-sparsify(1).\n"
+"\n"
+"%!"
+msgstr ""
+
+#: sysprep/sysprep_operation_utmp.ml:36
+msgid ""
+"This file records who is currently logged in on a machine.  In modern\n"
+"Linux distros it is stored in a ramdisk and hence not part of the\n"
+"virtual machine’s disk, but it was stored on disk in older distros."
+msgstr ""
+
+#: sysprep/sysprep_operation_firewall_rules.ml:45
+msgid ""
+"This removes custom firewall rules by removing C</etc/sysconfig/iptables>\n"
+"or custom firewalld configuration in C</etc/firewalld/*/*>.\n"
+"\n"
+"Note this is I<not> enabled by default since it may expose guests to\n"
+"exploits.  Use with care."
+msgstr ""
+
+#: sysprep/sysprep_operation_tmp_files.ml:51
+msgid "This removes temporary files under C</tmp> and C</var/tmp>."
+msgstr ""
+
+#: builder/builder.ml:784
+msgid "Total usable space"
+msgstr ""
+
+#: sparsify/in_place.ml:103
+msgid "Trimming %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:415
+msgid "Truncate a file to zero size"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:294
+msgid "Truncating: %s"
+msgstr ""
+
+#: resize/resize.ml:214
+msgid "Turn off sparse copying"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:192
+msgid "UID:GID:PATH"
+msgstr "UID:GID:ბილიკი"
+
+#: common/mlcustomize/customize_cmdline.ml:339
+msgid "USER:SELECTOR"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:380
+msgid "USER[:SELECTOR]"
+msgstr ""
+
+#: resize/resize.ml:1440
+msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
+msgstr ""
+
+#: builder/builder.ml:655
+msgid "Uncompressing"
+msgstr "გაშლა"
+
+#: common/mlcustomize/customize_cmdline.ml:432
+msgid "Uninstall package(s)"
+msgstr "პაკეტების წაშლა"
+
+#: common/mlcustomize/customize_run.ml:311
+msgid "Uninstalling packages: %s"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:290
+msgid "Unpack tar file: %s to %s"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:438
+msgid "Update packages"
+msgstr "პაკეტების განახლება"
+
+#: common/mlcustomize/customize_run.ml:316
+msgid "Updating packages"
+msgstr "პაკეტების განახლება"
+
+#: common/mlcustomize/customize_cmdline.ml:449
+msgid "Upload local file to destination"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:321
+msgid "Uploading: %s to %s"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:394
+msgid "Use ANSI colour sequences even if not tty"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:63
+msgid "Use unversioned names for files"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:131
+msgid "Users to keep"
+msgstr "შესანარჩუნებელი მომხმარებლები"
+
+#: sysprep/sysprep_operation_user_account.ml:114
+msgid "Users to remove"
+msgstr "წასაშლელი მომხმარებლები"
+
+#: sparsify/copying.ml:154
+msgid "Using prebuilt file %s as overlay"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:395
+msgid "Wrap log messages even if not tty"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:460
+msgid "Write file"
+msgstr "ფაილში ჩაწერა"
+
+#: common/mlcustomize/customize_run.ml:346
+msgid "Writing: %s"
+msgstr "იწერება: %s"
+
+#: resize/resize.ml:843
+msgid ""
+"You cannot use --expand when there is no surplus space to expand into.  You "
+"need to make the target disk larger by at least %s."
+msgstr ""
+
+#: resize/resize.ml:857
+msgid ""
+"You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-"
+"resize(1) man page)."
+msgstr ""
+
+#: sysprep/sysprep_operation_yum_uuid.ml:35
+msgid ""
+"Yum creates a fresh UUID the next time it runs when it notices that the\n"
+"original UUID has been erased."
+msgstr ""
+
+#: sparsify/cmdline.ml:76
+msgid "Zero filesystem"
+msgstr "ფაილური სისტემის განულება"
+
+#: sparsify/in_place.ml:92 sparsify/copying.ml:250
+msgid "Zeroing %s"
+msgstr "ნულდება %s"
+
+#: resize/resize.ml:259
+msgid "alignment cannot be < 1"
+msgstr ""
+
+#: common/mlcustomize/append_line.ml:44
+msgid "append_line: %s is not a file"
+msgstr "append_line: %s ფაილი არაა"
+
+#: sparsify/cmdline.ml:75
+msgid "block|dir|prebuilt:file"
+msgstr ""
+
+#: resize/resize.ml:145
+msgid "btrfs-filesystem-resize"
+msgstr "btrfs-filesystem-resize"
+
+#: builder/builder.ml:181
+msgid "cache %s: %s"
+msgstr "კეში %s: %s"
+
+#: builder/cache.ml:54
+msgid "cache directory: %s\n"
+msgstr "კეშის საქაღალდე: %s\n"
+
+#: builder/cache.ml:60
+msgid "cached"
+msgstr "დაკეშილია"
+
+#: sparsify/copying.ml:68
+msgid "cannot detect input disk format; use the --format parameter"
+msgstr ""
+
+#: builder/builder.ml:99
+msgid ""
+"cannot find os-version ‘%s’ with architecture ‘%s’.\n"
+"Use --list to list available guest types."
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:235
+msgid ""
+"cannot finish firstboot installation by running ‘%s’ because host cpu (%s) "
+"and guest arch (%s) are not compatible.  The firstboot service may not run "
+"at boot."
+msgstr ""
+
+#: builder/builder.ml:386
+msgid "cannot output to a character device or /dev/null"
+msgstr ""
+
+#: sysprep/sysprep_operation_fs_uuids.ml:39
+msgid "cannot set random UUID on filesystem %s type %s: %s"
+msgstr ""
+
+#: common/mlcustomize/guest_packages.ml:29
+msgid ""
+"cannot use ‘%s’ because no package manager has been detected for this guest "
+"OS.\n"
+"\n"
+"If this guest OS is a common one with ordinary package management then this "
+"may have been caused by a failure of libguestfs inspection.\n"
+"\n"
+"For OSes such as Windows that lack package management, this is not "
+"possible.  Try using one of the ‘--firstboot*’ flags instead (described in "
+"the virt-customize(1) manual)."
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:508
+msgid "command '%s' cannot be used in command files, see the man page"
+msgstr ""
+
+#: common/mlcustomize/customize_cmdline.ml:525
+msgid "command '%s' not valid, see the man page"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:318
+msgid "could not add grub2 serial console (ignored)"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:221
+msgid "could not determine a way to update the configuration of Grub2"
+msgstr ""
+
+#: builder/sigchecker.ml:128
+msgid ""
+"could not export public key\n"
+"Use the ‘-v’ option and look for earlier error messages."
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:376
+msgid "could not find bootloader mount point (%s): %s"
+msgstr ""
+
+#: builder/builder.ml:142
+msgid "could not find cache directory. Is $HOME set?"
+msgstr ""
+
+#: common/mldrivers/windows_drivers.ml:91
+msgid ""
+"could not find registry entry "
+"HKEY_LOCAL_MACHINE\\SYSTEM\\DriverDatabase\\DeviceIds in this Windows "
+"guest.  It may be either a very old or very new version of Windows that we "
+"cannot process."
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:232
+msgid ""
+"could not finish firstboot installation by running ‘%s’ because the command "
+"failed: %s"
+msgstr ""
+
+#: builder/sigchecker.ml:46
+msgid ""
+"could not import public key\n"
+"Use the ‘-v’ option and look for earlier error messages."
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:336
+msgid ""
+"could not rebuild grub2 configuration file (%s).  This may mean that grub "
+"output will not be sent to the serial port, but otherwise should be "
+"harmless.  Original error message: %s"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:320
+msgid "could not remove grub2 serial console (ignored)"
+msgstr ""
+
+#: builder/downloader.ml:92
+msgid "cp (download) command failed copying ‘%s’"
+msgstr ""
+
+#: builder/builder.ml:167
+msgid "curl is not installed (or does not work)"
+msgstr ""
+
+#: common/mltools/registry.ml:93
+msgid ""
+"decode_utf16le: Windows UTF16-LE string contains non-7-bit characters.  This "
+"is a bug in %s, please report it."
+msgstr ""
+
+#: common/mltools/registry.ml:87
+msgid ""
+"decode_utf16le: Windows string does not appear to be in UTF16-LE encoding.  "
+"This could be a bug in %s."
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:126
+msgid "didn't find grub entry for kernel %s"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:137
+msgid "dir"
+msgstr "dir"
+
+#: get-kernel/get_kernel.ml:62
+msgid "directory"
+msgstr "საქაღალდე"
+
+#: builder/builder.ml:182
+msgid "disabling the cache"
+msgstr "კეშის გათიშვა"
+
+#: sysprep/sysprep_operation.ml:148
+msgid "disallowed character (%c) in operation name"
+msgstr ""
+
+#: sparsify/in_place.ml:68
+msgid "discard/trim is not supported"
+msgstr "discard/trim მხარდაჭერილი არაა"
+
+#. customize/customize_main.ml:82
+#: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
+msgid "domain"
+msgstr "დომენი"
+
+#: common/mldrivers/linux.ml:158
+msgid "don’t know how to find file owner using %s"
+msgstr ""
+
+#: common/mldrivers/linux.ml:89
+msgid "don’t know how to get list of files from package using %s"
+msgstr ""
+
+#: common/mltools/curl.ml:82
+msgid "downloading %s"
+msgstr "%s-ის გადმოწერა"
+
+#: get-kernel/get_kernel.ml:192
+msgid "dual/multi-boot images are not supported by this tool"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:136
+msgid "duplicate operation name (%s)"
+msgstr "დუბლირებული ოპერაციის სახელი (%s)"
+
+#: resize/resize.ml:172
+msgid "empty --expand option"
+msgstr "ცარიელი პარამეტრი --expand"
+
+#: resize/resize.ml:188
+msgid "empty --shrink option"
+msgstr "ცარიელი პარამეტრი --shrink"
+
+#. customize/customize_main.ml:65
+#. builder/downloader.ml:72
+#: get-kernel/get_kernel.ml:44 drivers/drivers.ml:40
+msgid "error parsing URI '%s'. Look for error messages printed above."
+msgstr ""
+
+#: sysprep/main.ml:61 resize/resize.ml:332 resize/resize.ml:324
+msgid "error parsing URI ‘%s’. Look for error messages printed above."
+msgstr ""
+
+#: common/mltools/tools_utils.ml:251
+msgid "exception: %s"
+msgstr "გამონაკლისი: %s"
+
+#: common/mltools/tools_utils.ml:458
+msgid "exited with error %d"
+msgstr "დასრულდა შეცდომით %d"
+
+#: common/mltools/xpath_helpers.ml:36
+msgid ""
+"expecting XML expression to return an integer (expression: %s, matching "
+"string: %s)"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:443
+msgid "external command"
+msgstr "გარე ბრძანება"
+
+#: sparsify/copying.ml:343
+msgid "external command failed: %s"
+msgstr "გარე ბრძანების ჩავარდა: %s"
+
+#: builder/downloader.ml:126
+msgid "failed to download %s: HTTP status code %s"
+msgstr ""
+
+#: builder/repository_main.ml:557
+msgid "failed to export the GPG key %s"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:208
+msgid "failed to find grub2-mkconfig binary (but Grub2 was detected on guest)"
+msgstr ""
+
+#: builder/repository_main.ml:563
+msgid "failed to sign index"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:242
+msgid "failure: %s"
+msgstr "შეცდომა: %s"
+
+#. customize/customize_main.ml:77
+#: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
+msgid "file"
+msgstr "ფაილი"
+
+#: builder/sigchecker.ml:237
+msgid ""
+"fingerprint of signature does not match the expected fingerprint!\n"
+"found fingerprint: %s\n"
+"expected fingerprint: %s"
+msgstr ""
+
+#: resize/resize.ml:1348
+msgid "first partition is NTFS but does not contain NTFS boot loader magic"
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:143
+msgid ""
+"firstboot: unknown version for old firstboot.service file %s (md5=%s), it "
+"will not be removed"
+msgstr ""
+
+#. resize/resize.ml:210
+#. resize/resize.ml:205
+#. get-kernel/get_kernel.ml:61
+#. drivers/drivers.ml:54
+#. customize/customize_main.ml:84
+#: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
+msgid "format"
+msgstr "ფორმატი"
+
+#: sparsify/cmdline.ml:76 sparsify/cmdline.ml:72
+msgid "fs"
+msgstr "ფწმ"
+
+#: sparsify/in_place.ml:109
+msgid ""
+"fstrim operation is not supported on %s (%s).  Suppress this warning using "
+"'--ignore %s', or use copying mode instead."
+msgstr ""
+
+#: common/mltools/tools_utils.ml:261
+msgid "generated by %s %s"
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:391 common/mlcustomize/firstboot.ml:164
+msgid "guest type %s is not supported"
+msgstr ""
+
+#: common/mlcustomize/firstboot.ml:418
+msgid "guest type %s/%s is not supported"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:154
+msgid "heading for %s must not end with newline or period"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:752
+msgid ""
+"host (%s/%s) and guest (%s/%s) are not compatible, so you cannot use command "
+"line options that involve running commands in the guest.  Use --firstboot "
+"scripts instead."
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:209
+msgid "hostname could not be set for this type of guest"
+msgstr ""
+
+#: drivers/hwdata.ml:138
+msgid "hwdata: %s: %s"
+msgstr ""
+
+#: resize/resize.ml:215
+msgid "ignore|warn|error"
+msgstr "ignore|warn|error"
+
+#: common/mldrivers/linux_kernels.ml:342
+msgid "ignoring kernel %s in bootloader, as it does not exist."
+msgstr ""
+
+#: builder/builder.ml:411
+msgid ""
+"images cannot be shrunk, the output size is too small for this image.  "
+"Requested size = %s, minimum size = %s"
+msgstr ""
+
+#: builder/builder.ml:371
+msgid "input file (%s) has an unsupported type"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:249
+msgid "internal error: Not_found exception was thrown"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:246
+msgid "internal error: assertion failed at %s, line %d, char %d"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:244
+msgid "internal error: invalid argument: %s"
+msgstr ""
+
+#: common/mldrivers/linux.ml:128
+msgid "internal error: is_file_owned: dpkg command returned no output"
+msgstr ""
+
+#: common/mldrivers/linux.ml:133
+msgid "internal error: is_file_owned: unexpected output from dpkg command: %s"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:130
+msgid "internal error: regular expression did not match ‘%s’"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:153
+#. common/mlcustomize/customize_cmdline.ml:145
+#: common/mlcustomize/customize_cmdline.ml:161
+msgid "invalid format for '--%s' parameter, see the man page"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:362
+msgid "invalid format string for --machine-readable: %s"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:377
+msgid "invalid output fd for --machine-readable: %s"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:379
+msgid "invalid output for --machine-readable: %s"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:371
+msgid "invalid output stream for --machine-readable: %s"
+msgstr ""
+
+#: common/mlcustomize/password.ml:73
+msgid "invalid password selector ‘%s’; see the man page"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:45
+msgid "invalid ssh-inject selector ‘%s’; see the man page"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:114
+msgid "kernel %s is not under grub tree %s"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:542 common/mltools/tools_utils.ml:461
+msgid "killed by signal %d"
+msgstr "მოკვდა სიგნალით %d"
+
+#: common/mltools/tools_utils.ml:240
+msgid "libguestfs error: %s"
+msgstr "libguestfs-ის შეცდომა: %s"
+
+#: common/mlcustomize/customize_run.ml:47
+msgid "log file %s: %s (ignored)"
+msgstr ""
+
+#: resize/resize.ml:207
+msgid "lv"
+msgstr "lv"
+
+#: common/mlcustomize/customize_cmdline.ml:472
+msgid "md5|sha256|sha512"
+msgstr "md5|sha256|sha512"
+
+#: common/mlcustomize/customize_run.ml:119
+msgid "method '%s' is no longer supported"
+msgstr ""
+
+#: builder/repository_main.ml:262
+msgid "missing image identifier"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:39
+msgid "missing value for the key ‘%s’"
+msgstr ""
+
+#: resize/resize.ml:147
+msgid "mkswap"
+msgstr "mkswap"
+
+#: common/mltools/JSON_parser.ml:34
+msgid "more than value for the key ‘%s’"
+msgstr ""
+
+#: builder/repository_main.ml:116
+msgid "moving file ‘%s’ to ‘%s’ failed"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:103
+msgid ""
+"multiple --root-password/--password options set the password for user ‘%s’ "
+"twice"
+msgstr ""
+
+#: resize/resize.ml:197
+msgid "never|always|auto"
+msgstr "never|always|auto"
+
+#: builder/builder.ml:155
+msgid ""
+"no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
+"\n"
+"Either gpg v1 or v2 can be installed to check signatures.  Virt-builder "
+"looks for a binary called either ‘gpg2’ or ‘gpg‘ on the $PATH.  You can also "
+"specify a binary using the ‘--gpg’ option.  If you don't want to check "
+"signatures, use ’--no-check-signature’ but note that this may make you "
+"vulnerable to Man-In-The-Middle attacks."
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:402
+msgid "no bootloader detected"
+msgstr ""
+
+#: builder/builder.ml:256
+msgid "no cache directory"
+msgstr "კეშის საქაღალდის გარეშე"
+
+#: builder/builder.ml:249
+msgid "no cache directory\n"
+msgstr "კეშის საქაღალდის გარეშე\n"
+
+#: builder/builder.ml:749
+msgid ""
+"no guest operating systems or multiboot OS found in this disk image\n"
+"This is a failure of the source repository.  Use -v for more information."
+msgstr ""
+
+#: common/mldrivers/linux_kernels.ml:194
+msgid "no initrd was found in /boot matching %s %s."
+msgstr ""
+
+#: common/mldrivers/linux_kernels.ml:317
+msgid ""
+"no installed kernel packages were found.\n"
+"\n"
+"This probably indicates that %s was unable to inspect this guest properly."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:164
+msgid "no kernel found in %s"
+msgstr ""
+
+#: common/mldrivers/linux_kernels.ml:354
+msgid ""
+"no kernels were found in the bootloader configuration.\n"
+"\n"
+"This probably indicates that %s was unable to parse the bootloader "
+"configuration of this guest."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:190
+msgid "no operating system found"
+msgstr ""
+
+#: sysprep/main.ml:230 customize/customize_main.ml:190
+msgid "no operating systems were found in the guest image"
+msgstr ""
+
+#: builder/builder.ml:582
+msgid ""
+"no plan could be found for making a disk image with\n"
+"the required size, format etc. This is a bug in libguestfs!\n"
+"Please file a bug, giving the command line arguments you used."
+msgstr ""
+
+#: resize/resize.ml:144
+msgid "ntfsresize"
+msgstr "ntfsresize"
+
+#: get-kernel/get_kernel.ml:131
+msgid "operating system ‘%s’ not supported"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:160
+msgid "operation %s has no POD"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:169
+msgid "operation %s has no POD notes"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:152
+msgid "operation %s has no heading"
+msgstr ""
+
+#: sysprep/sysprep_operation.ml:143
+msgid "operation name is an empty string"
+msgstr ""
+
+#: sysprep/main.ml:138 sysprep/main.ml:132
+msgid "operations"
+msgstr "ოპერაციები"
+
+#: sparsify/cmdline.ml:74
+msgid "option"
+msgstr "მდებარეობა"
+
+#: sysprep/main.ml:135
+msgid "opts"
+msgstr "opts"
+
+#: builder/repository_main.ml:228
+msgid "osinfo short ID: "
+msgstr "osinfo-ის მოკლე ID: "
+
+#: builder/builder.ml:300
+msgid ""
+"output device (%s) is a partition.  If you are writing to a USB key or "
+"external drive then you probably need to write to the whole device, not to a "
+"partition.  If this warning is wrong then you can disable it with --no-warn-"
+"if-partition"
+msgstr ""
+
+#: builder/builder.ml:416
+msgid ""
+"output size is too large for this block device.  Requested size = %s, output "
+"block device = %s, output block device size = %s"
+msgstr ""
+
+#: sparsify/cmdline.ml:150
+msgid "output ‘%s’ cannot be a character device, it must be a regular file"
+msgstr ""
+
+#. resize/resize.ml:201
+#: resize/resize.ml:213 resize/resize.ml:206 resize/resize.ml:202
+msgid "part"
+msgstr "part"
+
+#: resize/resize.ml:212 resize/resize.ml:211
+msgid "part=size"
+msgstr "part=size"
+
+#: common/mlcustomize/password.ml:51
+msgid ""
+"password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" "
+"or \"yescrypt\""
+msgstr ""
+
+#: common/mlcustomize/password.ml:197
+msgid ""
+"password: using insecure md5 password encryption for guest of type %s "
+"version %d.%d.\n"
+"If this is incorrect, use --password-crypto option and file a bug."
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:359
+msgid "passwords could not be set for this type of guest"
+msgstr ""
+
+#: resize/resize.ml:1133 resize/resize.ml:1109
+msgid "pread-device: short read"
+msgstr ""
+
+#: get-kernel/get_kernel.ml:64
+msgid "prefix"
+msgstr "პრეფიქსი"
+
+#: resize/resize.ml:142
+msgid "pvresize"
+msgstr "pvresize"
+
+#: sparsify/in_place.ml:136 sparsify/copying.ml:288
+msgid "pwrite: short write restoring swap partition header"
+msgstr ""
+
+#: sparsify/in_place.ml:190
+msgid "quit (^C) at user request"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:77
+msgid "random seed could not be set for this type of guest"
+msgstr ""
+
+#: builder/repository_main.ml:424
+msgid "repository folder ‘%s’ doesn’t exist"
+msgstr ""
+
+#: resize/resize.ml:148
+msgid "resize.f2fs"
+msgstr "resize.f2fs"
+
+#: resize/resize.ml:143
+msgid "resize2fs"
+msgstr "resize2fs"
+
+#. common/mlcustomize/inject_virtio_win.ml:357
+#. common/mlcustomize/inject_virtio_win.ml:352
+#: common/mlcustomize/inject_virtio_win.ml:362
+msgid ""
+"root directory ‘/’ is missing from the virtio-win directory or ISO.\n"
+"\n"
+"This should not happen and may indicate that virtio-win or virt-v2v is "
+"broken in some way.  Please report this as a bug with a full debug log."
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:152
+msgid "script"
+msgstr "სკრიპტი"
+
+#: sysprep/sysprep_operation_script.ml:75
+msgid "script failed"
+msgstr "სკრიპტის შეცდომა"
+
+#: sysprep/sysprep_operation_script.ml:65
+msgid "script: failed (code %d)"
+msgstr ""
+
+#: sysprep/sysprep_operation_script.ml:69
+msgid "script: killed by signal (%d)"
+msgstr ""
+
+#: resize/resize.ml:198
+msgid "sectors"
+msgstr "სექტორი"
+
+#: common/mltools/tools_utils.ml:420 common/options/keys.c:306
+#, c-format
+msgid "selector '%s': invalid TYPE"
+msgstr "სელექტორი '%s': არასწორი TYPE"
+
+#: common/mltools/tools_utils.ml:412 common/options/keys.c:296
+#, c-format
+msgid "selector '%s': missing FILENAME, or too many fields"
+msgstr "სელექტორი '%s': აკლია FILENAME ან მეტისმეტად ბევრი ველი"
+
+#: common/mltools/tools_utils.ml:402 common/options/keys.c:274
+#, c-format
+msgid "selector '%s': missing ID"
+msgstr "სელექტორი '%s': აკლია ID"
+
+#: common/mltools/tools_utils.ml:407 common/options/keys.c:287
+#, c-format
+msgid "selector '%s': missing KEY_STRING, or too many fields"
+msgstr "სელექტორი '%s': აკლია KEY_STRING ან მეტისმეტად ბევრი ველი"
+
+#: common/mltools/tools_utils.ml:404 common/options/keys.c:281
+#, c-format
+msgid "selector '%s': missing TYPE"
+msgstr "სელექტორი '%s': აკლია TYPE"
+
+#: common/mltools/tools_utils.ml:416 common/options/keys.c:304
+#, c-format
+msgid "selector '%s': too many fields"
+msgstr "სელექტორი '%s': მეტისმეტად ბევრი ველი"
+
+#: common/mlcustomize/guest_packages.ml:40
+msgid ""
+"sorry, ‘%s’ with the ‘%s’ package manager has not been implemented yet.\n"
+"\n"
+"You can work around this by using one of the ‘--run*’ or ‘--firstboot*’ "
+"options instead (described in the virt-customize(1) manual)."
+msgstr ""
+
+#: builder/cmdline.ml:304
+msgid "source and fingerprint lists are not the same length"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:57
+msgid "ssh-inject: $HOME environment variable is not set"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:93
+msgid "ssh-inject: key is an empty string"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:66
+msgid "ssh-inject: no public key file found in %s"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:83
+msgid "ssh-inject: public key file (%s) is empty"
+msgstr ""
+
+#: common/mlcustomize/ssh_key.ml:112
+msgid "ssh-inject: the user %s does not exist on the guest"
+msgstr ""
+
+#: common/mltools/tools_utils.ml:545 common/mltools/tools_utils.ml:464
+msgid "stopped by signal %d"
+msgstr "გაჩერდა სიგნალით %d"
+
+#: common/mlcustomize/customize_run.ml:59
+msgid ""
+"the command may have failed because the network is disabled.  Try either "
+"removing ‘--no-network’ or adding ‘--network’ on the command line."
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:84
+msgid "the key ‘%s’ was not found in a list of objects"
+msgstr ""
+
+#: builder/repository_main.ml:460
+msgid ""
+"the repository must contain an index file when running in automated mode"
+msgstr ""
+
+#: resize/resize.ml:484
+msgid "the source disk has no partitions"
+msgstr "წყარო დისკს დანაყოფები არ აქვს"
+
+#: common/mltools/JSON_parser.ml:78
+msgid "the value for key ‘%s’ is not a string as expected"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:50
+msgid "the value for the key ‘%s’ is not a bool"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:45
+msgid "the value for the key ‘%s’ is not a string"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:70
+msgid "the value for the key ‘%s’ is not an integer"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:55
+msgid "the value for the key ‘%s’ is not an object"
+msgstr ""
+
+#: common/mltools/JSON_parser.ml:59
+msgid "the value is not an object"
+msgstr "მნიშვნელობა ობიექტი არაა"
+
+#: common/mltools/JSON_parser.ml:35
+msgid "the value of the key ‘%s’ is not an object"
+msgstr ""
+
+#: common/mlcustomize/inject_virtio_win.ml:153
+msgid ""
+"there are no virtio drivers available for this version of Windows (%d.%d %s "
+"%s %s).  virt-v2v looks for drivers in %s\n"
+"\n"
+"The guest will be configured to use slower emulated devices."
+msgstr ""
+
+#: builder/sigchecker.ml:179
+msgid ""
+"there is no detached signature file\n"
+"This probably means the index file is missing a sig=... line.\n"
+"You can use --no-check-signature to ignore this error, but that means you "
+"are susceptible to man-in-the-middle attacks."
+msgstr ""
+
+#: common/mlcustomize/inject_virtio_win.ml:175
+msgid ""
+"there is no virtio block device driver for this version of Windows (%d.%d "
+"%s).  virt-v2v looks for this driver in %s\n"
+"\n"
+"The guest will be configured to use a slower emulated device."
+msgstr ""
+
+#: common/mlcustomize/inject_virtio_win.ml:206
+msgid ""
+"there is no virtio network driver for this version of Windows (%d.%d %s).  "
+"virt-v2v looks for this driver in %s\n"
+"\n"
+"The guest will be configured to use a slower emulated device."
+msgstr ""
+
+#: common/mlcustomize/timezone.ml:35
+msgid "timezone '%s' does not exist, use a location like 'Europe/London'"
+msgstr ""
+
+#: common/mlcustomize/customize_run.ml:304
+msgid "timezone could not be set for this type of guest"
+msgstr ""
+
+#: builder/cmdline.ml:250
+msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
+msgstr ""
+
+#: builder/cmdline.ml:241
+msgid "too many parameters, expecting ‘os-version’"
+msgstr ""
+
+#: builder/repository_main.ml:101
+msgid "too many parameters, only one path to repository is allowed"
+msgstr ""
+
+#: common/mltools/urandom.ml:37
+msgid "unexpected end of file while reading /dev/urandom"
+msgstr ""
+
+#: builder/downloader.ml:116
+msgid ""
+"unexpected output from curl command, enable debug and look at previous "
+"messages"
+msgstr ""
+
+#: common/mltools/checksums.ml:58
+msgid "unhandled checksum type ‘%s’"
+msgstr ""
+
+#: resize/resize.ml:268
+msgid "unknown --align-first option: use never|always|auto"
+msgstr ""
+
+#: resize/resize.ml:276
+msgid "unknown --unknown-filesystems: use ignore|warn|error"
+msgstr ""
+
+#. resize/resize.ml:921
+#: resize/resize.ml:1016 resize/resize.ml:982 resize/resize.ml:940
+msgid "unknown/unavailable method for expanding the %s filesystem on %s"
+msgstr ""
+
+#: sysprep/utils.ml:65
+msgid "updating the system CA store on this guest %s/%s is not supported"
+msgstr ""
+
+#. customize/customize_main.ml:81
+#: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+msgid "uri"
+msgstr "uri"
+
+#: resize/resize.ml:312
+msgid "usage is: %s [--options] indisk outdisk"
+msgstr ""
+
+#: sparsify/cmdline.ml:135
+msgid "usage: %s [--options] indisk outdisk"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:149
+msgid ""
+"user-accounts: --keep-user-accounts parameter was used, but the \"user-"
+"account\" operation is not enabled"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:152
+msgid ""
+"user-accounts: --remove-user-accounts parameter was used, but the \"user-"
+"account\" operation is not enabled"
+msgstr ""
+
+#: sysprep/sysprep_operation_user_account.ml:38
+msgid "user-accounts: empty user name"
+msgstr ""
+
+#. sysprep/sysprep_operation_user_account.ml:113
+#: sysprep/sysprep_operation_user_account.ml:130
+msgid "users"
+msgstr "მომხმარებლები"
+
+#: builder/cmdline.ml:275
+msgid ""
+"virt-builder --get-kernel image\n"
+"Missing ‘image’ (disk image file) argument"
+msgstr ""
+
+#: builder/cmdline.ml:257
+msgid ""
+"virt-builder --notes os-version\n"
+"Missing ‘os-version’. Use ‘--list’ to list available template names."
+msgstr ""
+
+#: builder/cmdline.ml:238
+msgid ""
+"virt-builder os-version\n"
+"Missing ‘os-version’. Use ‘--list’ to list available template names."
+msgstr ""
+
+#: builder/repository_main.ml:244
+msgid ""
+"virt-builder template images must have one and only one root file system, "
+"found %d"
+msgstr ""
+
+#: builder/repository_main.ml:97
+msgid ""
+"virt-builder-repository /path/to/repo\n"
+"\n"
+"Use ‘/path/to/repo’ to point to the repository folder."
+msgstr ""
+
+#: builder/builder.ml:172
+msgid "virt-resize is not installed (or does not work)"
+msgstr ""
+
+#: resize/resize.ml:146
+msgid "xfs_growfs"
+msgstr "xfs_growfs"
+
+#: drivers/drivers.ml:77
+msgid ""
+"you cannot give -a and -d options together.  Read virt-drivers(1) man page "
+"for further information."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:97
+msgid ""
+"you cannot give -a and -d options together.  Read virt-get-kernel(1) man "
+"page for further information."
+msgstr ""
+
+#: sysprep/main.ml:178
+msgid ""
+"you cannot give -a and -d options together.  Read virt-sysprep(1) man page "
+"for further information."
+msgstr ""
+
+#: customize/customize_main.ml:135
+msgid ""
+"you cannot give -a and -d options together. Read virt-customize(1) man page "
+"for further information."
+msgstr ""
+
+#: sysprep/main.ml:80
+msgid "you cannot pass an empty argument to --enable"
+msgstr ""
+
+#: sparsify/cmdline.ml:164
+msgid "you cannot use --in-place and --check-tmpdir options together"
+msgstr ""
+
+#: sparsify/cmdline.ml:168
+msgid "you cannot use --in-place and --compress options together"
+msgstr ""
+
+#: sparsify/cmdline.ml:171
+msgid "you cannot use --in-place and --convert options together"
+msgstr ""
+
+#: sparsify/cmdline.ml:177
+msgid "you cannot use --in-place and --tmp options together"
+msgstr ""
+
+#: sparsify/cmdline.ml:174
+msgid "you cannot use --in-place and -o options together"
+msgstr ""
+
+#: resize/resize.ml:832
+msgid "you cannot use options --expand and --shrink together"
+msgstr ""
+
+#: sparsify/cmdline.ml:141 resize/resize.ml:318
+msgid "you cannot use the same disk image for input and output"
+msgstr ""
+
+#: drivers/drivers.ml:74
+msgid ""
+"you must give either -a or -d options.  Read virt-drivers(1) man page for "
+"further information."
+msgstr ""
+
+#: get-kernel/get_kernel.ml:94
+msgid ""
+"you must give either -a or -d options.  Read virt-get-kernel(1) man page for "
+"further information."
+msgstr ""
+
+#: sysprep/main.ml:166
+msgid ""
+"you must give either -a or -d options.  Read virt-sysprep(1) man page for "
+"further information."
+msgstr ""
+
+#: customize/customize_main.ml:123
+msgid ""
+"you must give either -a or -d options. Read virt-customize(1) man page for "
+"further information."
+msgstr ""
+
+#: builder/repository_main.ml:231
+msgid "‘%s’ is not a recognized osinfo OS id; using it anyway"
+msgstr ""
+
+#: builder/repository_main.ml:159
+msgid "‘xz’ command failed"
+msgstr "‘xz’ ბრძანება ჩავარდა"
+
+#: align/scan.c:80 cat/cat.c:59 df/main.c:72 diff/diff.c:105 edit/edit.c:67
+#: filesystems/filesystems.c:94 inspector/inspector.c:85 log/log.c:69
+#: ls/ls.c:97 make-fs/make-fs.c:82 tail/tail.c:67
+#, c-format
+msgid "Try ‘%s --help’ for more information.\n"
+msgstr ""
+
+#: align/scan.c:83
+#, c-format
+msgid ""
+"%s: check alignment of virtual machine partitions\n"
+"Copyright (C) 2011 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  -P nr_threads        Use at most nr_threads\n"
+"  -q|--quiet           No output, just exit code\n"
+"  --uuid               Print UUIDs instead of names\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157 df/main.c:169
+#: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:262
+#: format/format.c:192 inspector/inspector.c:188 log/log.c:160 ls/ls.c:255
+#: make-fs/make-fs.c:157 tail/tail.c:166
+#, c-format
+msgid "unknown long option: %s (%d)"
+msgstr ""
+
+#: align/scan.c:185 df/main.c:195
+#, c-format
+msgid "-P option is not numeric"
+msgstr "-P პარამეტრი რიცხვითი არაა"
+
+#: align/scan.c:240
+#, c-format
+msgid "compiled without support for libvirt"
+msgstr ""
+
+#: align/scan.c:244
+#, c-format
+msgid "--uuid option cannot be used with -a or -d"
+msgstr ""
+
+#: align/scan.c:343
+msgid "alignment < 4K"
+msgstr "სწორება < 4K"
+
+#: align/scan.c:346
+msgid "alignment < 64K"
+msgstr "სწორება < 64K"
+
+#: builder/index-validate.c:117
+#, c-format
+msgid "%s: %s: error closing input file: %m (ignored)\n"
+msgstr ""
+
+#: builder/index-validate.c:124
+#, c-format
+msgid "‘%s’ could not be validated, see errors above"
+msgstr ""
+
+#: builder/index-validate.c:130
+#, c-format
+msgid "%s contains comments which will not work with virt-builder 1.24.1"
+msgstr ""
+
+#: builder/index-validate.c:143
+#, c-format
+msgid ""
+"%s: section [%s] has invalid characters which will not work with virt-"
+"builder 1.24.0"
+msgstr ""
+
+#: builder/index-validate.c:154
+#, c-format
+msgid ""
+"%s: section [%s], field ‘%s’ has invalid characters which will not work with "
+"virt-builder 1.24.0"
+msgstr ""
+
+#: builder/index-validate.c:163
+#, c-format
+msgid ""
+"%s: section [%s], field ‘%s’ has invalid characters which will not work with "
+"virt-builder 1.24.1"
+msgstr ""
+
+#: builder/index-validate.c:174
+#, c-format
+msgid ""
+"%s: section [%s] is missing a ‘sig’ field which will not work with virt-"
+"builder 1.24.0"
+msgstr ""
+
+#: cat/cat.c:62
+#, c-format
+msgid ""
+"%s: display files in a virtual machine\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname file [file ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] file [file ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                       Mount dev on mnt (if omitted, /)\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:361
+#: inspector/inspector.c:288 log/log.c:217 ls/ls.c:369 tail/tail.c:231
+#, c-format
+msgid "%s: error: you must specify at least one -a or -d option.\n"
+msgstr ""
+
+#: common/mltools/getopt-c.c:68
+#, c-format
+msgid "Try ‘%s --help’ or consult %s(1) for more information.\n"
+msgstr ""
+
+#: common/mltools/getopt-c.c:187
+#, c-format
+msgid "%s: ‘%s’ is not a numeric value.\n"
+msgstr ""
+
+#: common/mltools/getopt-c.c:193
+#, c-format
+msgid "%s: %s: integer out of range\n"
+msgstr "%s: %s: მთელი მნიშვნელობა დიაპაზონს გარეთაა\n"
+
+#: common/mltools/getopt-c.c:383
+#, c-format
+msgid "%s: ‘%s’ is not allowed for -%c; allowed values are:\n"
+msgstr ""
+
+#: common/mltools/getopt-c.c:386
+#, c-format
+msgid "%s: ‘%s’ is not allowed for %s%s; allowed values are:\n"
+msgstr ""
+
+#: common/mltools/getopt-c.c:421
+#, c-format
+msgid "Extra parameter on the command line: ‘%s’.\n"
+msgstr ""
+
+#: common/options/config.c:72
+#, c-format
+msgid "%s: line %d: error parsing configuration file: %s"
+msgstr "%s: ხაზი %d: შეცდომა კონფიგურაციის ფაილის დამუშავებისას: %s"
+
+#: common/options/decrypt.c:52
+#, c-format
+msgid "string size overflow"
+msgstr "სტრიქონის ზომის გადავსება"
+
+#: common/options/decrypt.c:170
+#, c-format
+msgid ""
+"'clevis_luks_unlock', needed for decrypting %s, is unavailable in this "
+"libguestfs version"
+msgstr ""
+"'clevis_luks_unlock', რომელიც საჭიროა %s-ის გაშიფვრისთვის, libguestfs -ის ამ "
+"ვერსიაში ხელმიუწვდომელია"
+
+#: common/options/decrypt.c:184
+#, c-format
+msgid ""
+"could not find key to open LUKS encrypted %s.\n"
+"\n"
+"Try using --key on the command line.\n"
+"\n"
+"Original error: %s (%d)"
+msgstr ""
+
+#: common/options/inspect.c:78
+#, c-format
+msgid ""
+"%s: no operating system was found on this disk\n"
+"\n"
+"If using guestfish ‘-i’ option, remove this option and instead\n"
+"use the commands ‘run’ followed by ‘list-filesystems’.\n"
+"You can then mount filesystems you want by hand using the\n"
+"‘mount’ or ‘mount-ro’ command.\n"
+"\n"
+"If using guestmount ‘-i’, remove this option and choose the\n"
+"filesystem(s) you want to see by manually adding ‘-m’ option(s).\n"
+"Use ‘virt-filesystems’ to see what filesystems are available.\n"
+"\n"
+"If using other virt tools, this disk image won’t work\n"
+"with these tools.  Use the guestfish equivalent commands\n"
+"(see the virt tool manual page).\n"
+msgstr ""
+
+#: common/options/inspect.c:99
+#, c-format
+msgid ""
+"%s: multi-boot operating systems are not supported\n"
+"\n"
+"If using guestfish ‘-i’ option, remove this option and instead\n"
+"use the commands ‘run’ followed by ‘list-filesystems’.\n"
+"You can then mount filesystems you want by hand using the\n"
+"‘mount’ or ‘mount-ro’ command.\n"
+"\n"
+"If using guestmount ‘-i’, remove this option and choose the\n"
+"filesystem(s) you want to see by manually adding ‘-m’ option(s).\n"
+"Use ‘virt-filesystems’ to see what filesystems are available.\n"
+"\n"
+"If using other virt tools, multi-boot operating systems won’t work\n"
+"with these tools.  Use the guestfish equivalent commands\n"
+"(see the virt tool manual page).\n"
+msgstr ""
+
+#: common/options/inspect.c:161
+#, c-format
+msgid "%s: some filesystems could not be mounted (ignored)\n"
+msgstr "%s: ზოგიერთი ფაილური სისტემის მიმაგრება შეუძლებელია (იგნორირება)\n"
+
+#: common/options/inspect.c:178
+#, c-format
+msgid "Operating system: %s\n"
+msgstr "ოპერაციული სისტემა: %s\n"
+
+#: common/options/inspect.c:196
+#, c-format
+msgid "%s mounted on %s\n"
+msgstr "%s მიმაგრებულია %s-ზე\n"
+
+#: common/options/keys.c:69
+#, c-format
+msgid "Enter key or passphrase (\"%s\"): "
+msgstr "შეიყვანეთ გასაღები ან საკვანძო ფრაზა (\"%s\"): "
+
+#: common/options/keys.c:189
+#, c-format
+msgid "size_t overflow"
+msgstr "size_t -ის გადავსება"
+
+#: common/options/keys.c:235
+#, c-format
+msgid "could not read key from user"
+msgstr "მომხმარებლიდან გასაღების წაკითხვის შეცდომა"
+
+#: common/options/options.c:283
+#, c-format
+msgid "%s: ‘%s’ could not be mounted.\n"
+msgstr "%s: ‘%s’ მიმაგრების შეცდომა.\n"
+
+#: common/options/options.c:287
+#, c-format
+msgid ""
+"%s: Check mount(8) man page to ensure options ‘%s’\n"
+"%s: are supported by the filesystem that is being mounted.\n"
+msgstr ""
+
+#: common/options/options.c:291
+#, c-format
+msgid "%s: Did you mean to mount one of these filesystems?\n"
+msgstr "%s: გულისხმობდით ამ ფაილური სისტემებიდან ერთ ერთის მიმაგრებას?\n"
+
+#: common/options/options.c:304
+#, c-format
+msgid "cannot determine the subvolume for %s: %s (%d)"
+msgstr "%s-ის ქვეტომის აღმოჩენის შეცდომა: %s (%d)"
+
+#: common/options/uri.c:119
+#, c-format
+msgid "%s: --add: could not parse URI ‘%s’\n"
+msgstr "%s: --add: URI ‘%s’-ის დამუშავების შეცდომა\n"
+
+#: common/options/uri.c:130
+#, c-format
+msgid "%s: %s: scheme of URI is NULL or empty\n"
+msgstr "%s: %s: URI-ის სქემა NULL ან ცარიელია\n"
+
+#: common/options/uri.c:138
+#, c-format
+msgid "%s: %s: cannot have both a server name and a socket query parameter\n"
+msgstr ""
+"%s: %s: ორივეს, სერვერის სახელის და სოკეტის მოთხოვნის პარამეტრის ქონა "
+"შეუძლებელია\n"
+
+#: common/parallel/domains.c:106
+#, c-format
+msgid "could not connect to libvirt (code %d, domain %d): %s"
+msgstr "libvirt-თან მიერთების შეცდომა (კოდი %d, დომენი %d): %s"
+
+#: common/parallel/domains.c:114
+#, c-format
+msgid "could not get number of running domains (code %d, domain %d): %s"
+msgstr "გაშვებული დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
+
+#: common/parallel/domains.c:125
+#, c-format
+msgid "could not list running domains (code %d, domain %d): %s"
+msgstr "გაშვებული დომენების ჩამოთვლის შეცდომა (კოდი %d, დომენი %d): %s"
+
+#: common/parallel/domains.c:135
+#, c-format
+msgid "could not get number of inactive domains (code %d, domain %d): %s"
+msgstr ""
+"არააქტიური დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
+
+#: common/parallel/domains.c:146
+#, c-format
+msgid "could not list inactive domains (code %d, domain %d): %s"
+msgstr "არააქტიური დომენების ჩამოთვლის შეცდომა (კოდი %d, დომენი %d): %s"
+
+#: common/utils/utils.c:107
+#, c-format
+msgid "%s exited successfully"
+msgstr "%s წარმატებით დასრულდა"
+
+#: common/utils/utils.c:110
+#, c-format
+msgid "%s exited with error status %d"
+msgstr "%s დასრულდა შეცდომის კოდით %d"
+
+#: common/utils/utils.c:114
+#, c-format
+msgid "%s killed by signal %d (%s)"
+msgstr "%s მოკვდა სიგნალით %d (%s)"
+
+#: common/utils/utils.c:118
+#, c-format
+msgid "%s stopped by signal %d (%s)"
+msgstr "%s გაჩერდა სიგნალით %d (%s)"
+
+#: common/utils/utils.c:122
+#, c-format
+msgid "%s exited for an unknown reason (status %d)"
+msgstr "%s გავიდა უცნობი მიზეზით (სტატუსი %d)"
+
+#: common/visit/visit.c:133
+#, c-format
+msgid "%s: error getting extended attrs for %s %s\n"
+msgstr "%s: შეცდომა გაფართოებული ატრიბუტების მიღებისას სამიზნისთვის %s %s\n"
+
+#: common/visit/visit.c:147
+#, c-format
+msgid "%s: error: cannot parse xattr count for %s %s\n"
+msgstr ""
+"%s: შეცდომა: xattr -ის რაოდენობის დამუშავების შეცდომა სამიზნისთვის %s %s\n"
+
+#: common/windows/windows.c:139
+#, c-format
+msgid "to use Windows drive letters, this must be a Windows guest"
+msgstr ""
+"იმისთვის, რომ Windows-ის დისკის სიმბოლოები გამოიყენოთ, ეს Windows-ის სტუმარს "
+"უნდა წარმოადგენდეს"
+
+#: common/windows/windows.c:150
+#, c-format
+msgid "drive '%c:' not found."
+msgstr "დისკი '%c:' ვერ ვიპოვე."
+
+#: df/main.c:75
+#, c-format
+msgid ""
+"%s: display free space on virtual filesystems\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Output as Comma-Separated Values\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  -h|--human-readable  Print sizes in human-readable format\n"
+"  --help               Display brief help\n"
+"  -i|--inodes          Display inodes\n"
+"  --one-per-guest      Separate appliance per guest\n"
+"  -P nr_threads        Use at most nr_threads\n"
+"  --uuid               Print UUIDs instead of names\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:330 ls/ls.c:361
+#, c-format
+msgid "you cannot use -h and --csv options together."
+msgstr ""
+
+#: df/main.c:281
+#, c-format
+msgid "compiled without support for libvirt."
+msgstr "აგებულია libvirt-ის მხარდაჭერის გარეშე."
+
+#: df/output.c:48
+msgid "VirtualMachine"
+msgstr "ვირტუალურიმანქანა"
+
+#: df/output.c:49
+msgid "Filesystem"
+msgstr "ფაილური სისტემა"
+
+#: df/output.c:52
+msgid "1K-blocks"
+msgstr "1K-ბლოკები"
+
+#: df/output.c:54
+msgid "Size"
+msgstr "ზომა"
+
+#: df/output.c:55
+msgid "Used"
+msgstr "გამოყენებულია"
+
+#: df/output.c:56
+msgid "Available"
+msgstr "ხელმისაწვდომია"
+
+#: df/output.c:57
+msgid "Use%"
+msgstr "გამოყენების%"
+
+#: df/output.c:59
+msgid "Inodes"
+msgstr "Iკვანძები"
+
+#: df/output.c:60
+msgid "IUsed"
+msgstr "Iგამოყენებული"
+
+#: df/output.c:61
+msgid "IFree"
+msgstr "Iთავისუფალი"
+
+#: df/output.c:62
+msgid "IUse%"
+msgstr "Iგამოყენების%"
+
+#: diff/diff.c:108
+#, c-format
+msgid ""
+"%s: list differences between virtual machines\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domain1 -D domain2\n"
+"  %s [--options] -a disk1.img -A disk2.img [-a|-A ...]\n"
+"Options:\n"
+"  -a|--add image       Add image from first guest\n"
+"  --all                Same as: --extra-stats --times --uids --xattrs\n"
+"  --atime              Don't ignore access time changes\n"
+"  -A image             Add image from second guest\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a or -A option\n"
+"  --checksum[=...]     Use checksum of file content\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Comma-Separated Values output\n"
+"  --dir-links          Don't ignore directory nlink changes\n"
+"  --dir-times          Don't ignore directory time changes\n"
+"  -d|--domain guest    Add disks from first libvirt guest\n"
+"  -D guest             Add disks from second libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --extra-stats        Display extra stats\n"
+"  --format[=raw|..]    Force disk format for -a or -A option\n"
+"  --help               Display brief help\n"
+"  -h|--human-readable  Human-readable sizes in output\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  --times              Display file times\n"
+"  --time-days          Display file times as days before now\n"
+"  --time-relative      Display file times as seconds before now\n"
+"  --time-t             Display file times as time_t's\n"
+"  --uids               Display UID, GID\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"  --xattrs             Display extended attributes\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: diff/diff.c:348
+#, c-format
+msgid "%s: error: you must specify at least one -A or -D option.\n"
+msgstr ""
+
+#: diff/diff.c:360
+#, c-format
+msgid ""
+"%s: error: extra argument ‘%s’ on command line.\n"
+"Make sure to specify the argument for --checksum or --format like '--"
+"format=%s'.\n"
+msgstr ""
+
+#: diff/diff.c:802
+#, c-format
+msgid "%s: external diff command failed\n"
+msgstr ""
+
+#: diff/diff.c:806
+msgid "End of diff"
+msgstr "სხვაობის ბოლო"
+
+#: edit/edit.c:70
+#, c-format
+msgid ""
+"%s: Edit a file in a virtual machine\n"
+"Copyright (C) 2009-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname file [file ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] file [file ...]\n"
+"Options:\n"
+"  -a|--add image        Add image\n"
+"  -b|--backup .ext      Backup original as original.ext\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri      Specify libvirt URI for -d option\n"
+"  -d|--domain guest     Add disks from libvirt guest\n"
+"  --echo-keys           Don't turn off echo for passphrases\n"
+"  -e|--edit|--expr expr Non-interactive editing using Perl expr\n"
+"  --format[=raw|..]     Force disk format for -a option\n"
+"  --help                Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin     Read passphrases from stdin\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                        Mount dev on mnt (if omitted, /)\n"
+"  -v|--verbose          Verbose messages\n"
+"  -V|--version          Display version and exit\n"
+"  -x                    Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: edit/edit.c:179
+#, c-format
+msgid "-b option given multiple times"
+msgstr "-b პარამეტრი ერთზე მეტჯერაა მითითებული"
+
+#: edit/edit.c:193
+#, c-format
+msgid "-e option given multiple times"
+msgstr "-e პარამეტრი ერთზე მეტჯერაა მითითებული"
+
+#: filesystems/filesystems.c:97
+#, c-format
+msgid ""
+"%s: list filesystems, partitions, block devices, LVM in a VM\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --all                Display everything\n"
+"  --blkdevs|--block-devices\n"
+"                       Display block devices\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Output as Comma-Separated Values\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --extra              Display swap and data filesystems\n"
+"  --filesystems        Display mountable filesystems\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --fs-version|--fs-versions\n"
+"                       Add filesystem version to --long output\n"
+"  -h|--human-readable  Human-readable sizes in --long output\n"
+"  --help               Display brief help\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -l|--long            Long output\n"
+"  --lvs|--logvols|--logical-volumes\n"
+"                       Display LVM logical volumes\n"
+"  --no-title           No title in --long output\n"
+"  --parts|--partitions Display partitions\n"
+"  --pvs|--physvols|--physical-volumes\n"
+"                       Display LVM physical volumes\n"
+"  --uuid|--uuids       Add UUIDs to --long output\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  --vgs|--volgroups|--volume-groups\n"
+"                       Display LVM volume groups\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: filesystems/filesystems.c:315 inspector/inspector.c:263 log/log.c:205
+#, c-format
+msgid ""
+"%s: error: extra argument ‘%s’ on command line.\n"
+"Make sure to specify the argument for --format like '--format=%s'.\n"
+msgstr ""
+
+#: filesystems/filesystems.c:520
+#, c-format
+msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
+msgstr ""
+
+#: format/format.c:68
+msgid "IMPORTANT NOTE: This program ERASES ALL DATA on disks."
+msgstr ""
+
+#: format/format.c:71
+#, c-format
+msgid ""
+"Try ‘%s --help’ for more information.\n"
+"%s\n"
+msgstr ""
+
+#: format/format.c:74
+#, c-format
+msgid ""
+"%s: erase and make a blank disk\n"
+"Copyright (C) 2012 Red Hat Inc.\n"
+"\n"
+"%s\n"
+"\n"
+"Usage:\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  --filesystem=..      Create empty filesystem\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --label=..           Set filesystem label\n"
+"  --lvm=..             Create Linux LVM2 logical volume\n"
+"  --partition=..       Create / set partition type\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  --wipe               Write zeroes over whole disk\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+"\n"
+"%s\n"
+"\n"
+msgstr ""
+
+#: format/format.c:162
+#, c-format
+msgid "no filesystem was specified"
+msgstr "ფაილური სისტემა მითითებული არაა"
+
+#: format/format.c:168
+#, c-format
+msgid "--lvm option cannot be given multiple times"
+msgstr "--lvm პარამეტრი, მხოლოდ, ერთხელ შეგიძლიათ, მიუთითოთ"
+
+#: format/format.c:234
+#, c-format
+msgid ""
+"%s: error: extra argument ‘%s’ on command line.\n"
+"Make sure to specify the argument for --format, --lvm or --partition like '--"
+"format=%s'.\n"
+msgstr ""
+
+#: format/format.c:246
+#, c-format
+msgid "%s: error: you must specify at least one -a option.\n"
+msgstr ""
+
+#: format/format.c:288
+#, c-format
+msgid ""
+"failed to rescan the disks after two attempts.  This\n"
+"may mean there is some sort of partition table or disk\n"
+"data which we are unable to remove.  If you think this\n"
+"is a bug, please file a bug at http://libguestfs.org/\n"
+msgstr ""
+
+#: format/format.c:326
+#, c-format
+msgid "cannot parse --lvm option (%s)"
+msgstr ""
+
+#: inspector/inspector.c:88
+#, c-format
+msgid ""
+"%s: display information about a virtual machine\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  --no-applications    Do not output the installed applications\n"
+"  --no-icon            Do not output the guest icon\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"  --xpath query        Perform an XPath query\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: inspector/inspector.c:279
+#, c-format
+msgid "cannot use --xpath together with other options."
+msgstr ""
+
+#: inspector/inspector.c:319
+#, c-format
+msgid ""
+"no operating system could be detected inside this disk image.\n"
+"\n"
+"This may be because the file is not a disk image, or is not a virtual "
+"machine\n"
+"image, or because the OS type is not understood by libguestfs.\n"
+"\n"
+"NOTE for Red Hat Enterprise Linux 6 users: for Windows guest support you "
+"must\n"
+"install the separate libguestfs-winsupport package.\n"
+"\n"
+"If you feel this is an error, please file a bug report including as much\n"
+"information about the disk image as possible.\n"
+msgstr ""
+
+#: inspector/inspector.c:335
+#, c-format
+msgid "xmlOutputBufferCreateFd: failed to open stdout"
+msgstr ""
+
+#: inspector/inspector.c:341
+#, c-format
+msgid "xmlNewTextWriter: failed to create libxml2 writer"
+msgstr ""
+
+#: inspector/inspector.c:732
+#, c-format
+msgid "unable to parse XML from stdin"
+msgstr ""
+
+#: inspector/inspector.c:736
+#, c-format
+msgid "unable to create new XPath context"
+msgstr ""
+
+#: inspector/inspector.c:740
+#, c-format
+msgid "unable to evaluate XPath expression"
+msgstr ""
+
+#: inspector/inspector.c:751
+#, c-format
+msgid "xmlSaveToFd failed"
+msgstr "xmlSaveToFd ჩავარდა"
+
+#: inspector/inspector.c:756
+#, c-format
+msgid "xmlNewDoc failed"
+msgstr "xmlNewDoc ჩავარდა"
+
+#: inspector/inspector.c:759
+#, c-format
+msgid "xmlCopyNode failed"
+msgstr "xmlCopyNode ჩავარდა"
+
+#: inspector/inspector.c:764
+#, c-format
+msgid "xmlSaveDoc failed"
+msgstr "xmlSaveDoc ჩავარდა"
+
+#: log/log.c:72
+#, c-format
+msgid ""
+"%s: display log files in a virtual machine\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname\n"
+"  %s [--options] -a disk.img [-a disk.img ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: log/log.c:273
+#, c-format
+msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
+msgstr ""
+
+#: log/log.c:381
+#, c-format
+msgid "%s: could not format journal entry timestamp\n"
+msgstr ""
+
+#: log/log.c:447
+#, c-format
+msgid ""
+"%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
+"in order to parse Windows Event Logs.  If you cannot install this, then\n"
+"use virt-copy-out(1) to copy the contents of /Windows/System32/winevt/Logs\n"
+"from this guest, and examine in a binary file viewer.\n"
+msgstr ""
+
+#: log/log.c:466
+#, c-format
+msgid "%s: Windows Event Log file (%s) not found\n"
+msgstr ""
+
+#: ls/ls.c:100
+#, c-format
+msgid ""
+"%s: list files in a virtual machine\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname dir [dir ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] dir [dir ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  --checksum[=...]     Display file checksums\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  --csv                Comma-Separated Values output\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  --extra-stats        Display extra stats\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  -h|--human-readable  Human-readable sizes in output\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -l|--long            Long listing\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                       Mount dev on mnt (if omitted, /)\n"
+"  -R|--recursive       Recursive listing\n"
+"  --times              Display file times\n"
+"  --time-days          Display file times as days before now\n"
+"  --time-relative      Display file times as seconds before now\n"
+"  --time-t             Display file times as time_t's\n"
+"  --uids               Display UID, GID\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: ls/ls.c:354
+#, c-format
+msgid ""
+"used a flag which can only be combined with -lR mode\n"
+"For more information, read the virt-ls(1) man page."
+msgstr ""
+
+#: make-fs/make-fs.c:85
+#, c-format
+msgid ""
+"%s: make a filesystem from a tar archive or files\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] input.tar output.img\n"
+"  %s [--options] input.tar.gz output.img\n"
+"  %s [--options] directory output.img\n"
+"Options:\n"
+"  --blocksize=512|4096     Set sector size of the output disk\n"
+"  --floppy                 Make a virtual floppy disk\n"
+"  -F|--format=raw|qcow2|.. Set output format\n"
+"  --help                   Display brief help\n"
+"  --label=label            Filesystem label\n"
+"  --partition=mbr|gpt|..   Set partition type\n"
+"  -s|--size=size|+size     Set size of output disk\n"
+"  -t|--type=ext4|..        Set filesystem type\n"
+"  -v|--verbose             Verbose messages\n"
+"  -V|--version             Display version and exit\n"
+"  -x                       Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: make-fs/make-fs.c:154
+#, c-format
+msgid "--blocksize option is not numeric"
+msgstr ""
+
+#: make-fs/make-fs.c:195
+#, c-format
+msgid "%s: missing input and output arguments on the command line\n"
+msgstr ""
+
+#: make-fs/make-fs.c:214
+#, c-format
+msgid "%s: NTFS support was disabled when libguestfs was compiled\n"
+msgstr ""
+
+#: make-fs/make-fs.c:264 make-fs/make-fs.c:328
+#, c-format
+msgid "%s: %s command failed\n"
+msgstr "%s: %s ბრძანება ჩავარდა\n"
+
+#: make-fs/make-fs.c:453
+#, c-format
+msgid "%s: cannot parse the output of ‘du’ command: %s\n"
+msgstr ""
+
+#: make-fs/make-fs.c:488
+#, c-format
+msgid ""
+"%s: %s: input is not a directory, tar archive or compressed tar archive\n"
+msgstr ""
+
+#: make-fs/make-fs.c:519
+#, c-format
+msgid "%s: %s: unknown compressed input format (%s)\n"
+msgstr ""
+
+#: make-fs/make-fs.c:642
+#, c-format
+msgid "%s: %s: invalid size parameter ‘%s’ (%s returned %u)\n"
+msgstr ""
+
+#: make-fs/make-fs.c:868
+#, c-format
+msgid "%s: subprocess failed\n"
+msgstr "%s: ქვეპროცესი ჩავარდა\n"
+
+#: tail/tail.c:70
+#, c-format
+msgid ""
+"%s: follow (tail) files in a virtual machine\n"
+"Copyright (C) 2016 Red Hat Inc.\n"
+"Usage:\n"
+"  %s [--options] -d domname file [file ...]\n"
+"  %s [--options] -a disk.img [-a disk.img ...] file [file ...]\n"
+"Options:\n"
+"  -a|--add image       Add image\n"
+"  --blocksize[=512|4096]\n"
+"                       Set sector size of the disk for -a option\n"
+"  -c|--connect uri     Specify libvirt URI for -d option\n"
+"  -d|--domain guest    Add disks from libvirt guest\n"
+"  --echo-keys          Don't turn off echo for passphrases\n"
+"  -f|--follow          Ignored for compatibility with tail\n"
+"  --format[=raw|..]    Force disk format for -a option\n"
+"  --help               Display brief help\n"
+"  --key selector       Specify a LUKS key\n"
+"  --keys-from-stdin    Read passphrases from stdin\n"
+"  -m|--mount dev[:mnt[:opts[:fstype]]]\n"
+"                       Mount dev on mnt (if omitted, /)\n"
+"  -v|--verbose         Verbose messages\n"
+"  -V|--version         Display version and exit\n"
+"  -x                   Trace libguestfs API calls\n"
+"For more information, see the manpage %s(1).\n"
+msgstr ""
+
+#: tail/tail.c:220
+#, c-format
+msgid ""
+"%s: error: missing filenames on command line.\n"
+"Please specify at least one file to follow.\n"
+msgstr ""
+
+#: tail/tail.c:427
+#, c-format
+msgid "%s: error: none of the files were found in the disk image\n"
+msgstr ""
+
+#: tail/tail.c:432
+#, c-format
+msgid "%s: all files deleted, exiting\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:261
+msgid "no libvirt domain name or disk image given\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:317
+#, perl-brace-format
+msgid ""
+"{prog}: No operating system could be detected inside this disk image.\n"
+"\n"
+"This may be because the file is not a disk image, or is not a virtual "
+"machine\n"
+"image, or because the OS type is not understood by libguestfs.\n"
+"\n"
+"If you feel this is an error, please file a bug report including as much\n"
+"information about the disk image as possible.\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:321
+#, perl-brace-format
+msgid "{prog}: multiboot operating systems are not supported.\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:343
+msgid ""
+"expecting 1 or 2 more parameters, subkey path and optionally the value to "
+"export\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:503
+#, perl-brace-format
+msgid "virt-win-reg: {p}: cannot find user directory\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:508
+#, perl-brace-format
+msgid "virt-win-reg: {p}: not a supported Windows Registry path\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:581
+#, perl-brace-format
+msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
+msgstr ""
+
+#: win-reg/virt-win-reg.in:598
+#, perl-brace-format
+msgid "virt-win-reg: {p}: could not upload registry file: {err}\n"
+msgstr ""
