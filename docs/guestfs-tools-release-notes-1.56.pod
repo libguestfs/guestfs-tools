@@ -29,7 +29,7 @@ Fix Windows Update and C<pnputil /e> command in Windows guests after
 virtio-win drivers are injected (Cole Robinson).
 
 When injecting virtio-win drivers in Windows guests, install
-blnsvr.exe (the balloon server) (Cole Robinson).
+F<blnsvr.exe> (the balloon server) (Cole Robinson).
 
 Fix installation of Windows Vista and Windows 2008 Server R1 drivers
 (Cole Robinson).
@@ -86,6 +86,8 @@ Removed a lot of obsolete documentation in the L<virt-sysprep(1)> man
 page.
 
 =head2 Build changes
+
+Fix Weblate (i18n) web hooks (Rafael Fontenelle).
 
 Fixes for OCaml 5.
 
