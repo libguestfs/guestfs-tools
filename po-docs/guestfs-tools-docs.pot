@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.55.8\n"
+"Project-Id-Version: guestfs-tools 1.55.9\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-05-05 17:54+0100\n"
+"POT-Creation-Date: 2026-07-03 09:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,8 @@ msgstr ""
 #: diff/virt-diff.pod:1 docs/guestfs-tools-release-notes-1.48.pod:1
 #: docs/guestfs-tools-release-notes-1.50.pod:1
 #: docs/guestfs-tools-release-notes-1.52.pod:1
-#: docs/guestfs-tools-release-notes-1.54.pod:1 drivers/virt-drivers.pod:1
+#: docs/guestfs-tools-release-notes-1.54.pod:1
+#: docs/guestfs-tools-release-notes-1.56.pod:1 drivers/virt-drivers.pod:1
 #: edit/virt-edit.pod:1 filesystems/virt-filesystems.pod:1
 #: format/virt-format.pod:1 get-kernel/virt-get-kernel.pod:1
 #: inspector/virt-inspector.pod:1 log/virt-log.pod:1 ls/virt-ls.pod:1
@@ -992,7 +993,7 @@ msgstr ""
 #. type: =head1
 #: align/virt-alignment-scan.pod:352 builder/virt-builder-repository.pod:202
 #: builder/virt-builder.pod:1799 builder/virt-index-validate.pod:74
-#: cat/virt-cat.pod:271 customize/virt-customize.pod:339 df/virt-df.pod:253
+#: cat/virt-cat.pod:271 customize/virt-customize.pod:348 df/virt-df.pod:253
 #: diff/virt-diff.pod:244 drivers/virt-drivers.pod:229 edit/virt-edit.pod:379
 #: filesystems/virt-filesystems.pod:390 format/virt-format.pod:183
 #: get-kernel/virt-get-kernel.pod:196 inspector/virt-inspector.pod:489
@@ -1103,11 +1104,12 @@ msgstr ""
 #. type: =head1
 #: align/virt-alignment-scan.pod:386 builder/virt-builder-repository.pod:207
 #: builder/virt-builder.pod:1804 builder/virt-index-validate.pod:79
-#: cat/virt-cat.pod:276 customize/virt-customize.pod:379 df/virt-df.pod:258
+#: cat/virt-cat.pod:276 customize/virt-customize.pod:388 df/virt-df.pod:258
 #: diff/virt-diff.pod:249 docs/guestfs-tools-release-notes-1.48.pod:102
 #: docs/guestfs-tools-release-notes-1.50.pod:160
 #: docs/guestfs-tools-release-notes-1.52.pod:99
-#: docs/guestfs-tools-release-notes-1.54.pod:128 drivers/virt-drivers.pod:234
+#: docs/guestfs-tools-release-notes-1.54.pod:128
+#: docs/guestfs-tools-release-notes-1.56.pod:134 drivers/virt-drivers.pod:234
 #: edit/virt-edit.pod:384 filesystems/virt-filesystems.pod:395
 #: format/virt-format.pod:187 get-kernel/virt-get-kernel.pod:201
 #: inspector/virt-inspector.pod:494 log/virt-log.pod:137 ls/virt-ls.pod:519
@@ -1140,7 +1142,7 @@ msgstr ""
 #. type: textblock
 #: align/virt-alignment-scan.pod:397 builder/virt-builder.pod:1827
 #: builder/virt-index-validate.pod:86 cat/virt-cat.pod:289
-#: customize/virt-customize.pod:398 df/virt-df.pod:269 diff/virt-diff.pod:261
+#: customize/virt-customize.pod:407 df/virt-df.pod:269 diff/virt-diff.pod:261
 #: drivers/virt-drivers.pod:246 edit/virt-edit.pod:397
 #: filesystems/virt-filesystems.pod:409 format/virt-format.pod:199
 #: get-kernel/virt-get-kernel.pod:212 inspector/virt-inspector.pod:510
@@ -1154,11 +1156,12 @@ msgstr ""
 #. type: =head1
 #: align/virt-alignment-scan.pod:399 builder/virt-builder-repository.pod:216
 #: builder/virt-builder.pod:1829 builder/virt-index-validate.pod:88
-#: cat/virt-cat.pod:291 customize/virt-customize.pod:400 df/virt-df.pod:271
+#: cat/virt-cat.pod:291 customize/virt-customize.pod:409 df/virt-df.pod:271
 #: diff/virt-diff.pod:263 docs/guestfs-tools-release-notes-1.48.pod:128
 #: docs/guestfs-tools-release-notes-1.50.pod:180
 #: docs/guestfs-tools-release-notes-1.52.pod:121
-#: docs/guestfs-tools-release-notes-1.54.pod:152 drivers/virt-drivers.pod:248
+#: docs/guestfs-tools-release-notes-1.54.pod:152
+#: docs/guestfs-tools-release-notes-1.56.pod:152 drivers/virt-drivers.pod:248
 #: edit/virt-edit.pod:399 filesystems/virt-filesystems.pod:411
 #: format/virt-format.pod:201 get-kernel/virt-get-kernel.pod:214
 #: inspector/virt-inspector.pod:518 log/virt-log.pod:152 ls/virt-ls.pod:533
@@ -4961,7 +4964,7 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1657 customize/virt-customize.pod:323
+#: builder/virt-builder.pod:1657 customize/virt-customize.pod:332
 msgid "SELINUX"
 msgstr ""
 
@@ -5017,7 +5020,7 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1685 customize/virt-customize.pod:331
+#: builder/virt-builder.pod:1685 customize/virt-customize.pod:340
 msgid "DEPRECATED OPTIONS"
 msgstr ""
 
@@ -5101,7 +5104,7 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: builder/virt-builder.pod:1734 customize/virt-customize.pod:343
+#: builder/virt-builder.pod:1734 customize/virt-customize.pod:352
 #: drivers/virt-drivers.pod:224 edit/virt-edit.pod:366
 #: get-kernel/virt-get-kernel.pod:191 sparsify/virt-sparsify.pod:418
 #: sysprep/virt-sysprep.pod:370
@@ -5151,13 +5154,13 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1755 customize/virt-customize.pod:347
+#: builder/virt-builder.pod:1755 customize/virt-customize.pod:356
 #: sysprep/virt-sysprep.pod:374
 msgid "C<VIRT_TOOLS_DATA_DIR>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1757 customize/virt-customize.pod:349
+#: builder/virt-builder.pod:1757 customize/virt-customize.pod:358
 #: sysprep/virt-sysprep.pod:376
 msgid ""
 "This can point to the directory containing data files used for Windows "
@@ -5165,7 +5168,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1760 customize/virt-customize.pod:352
+#: builder/virt-builder.pod:1760 customize/virt-customize.pod:361
 #: sysprep/virt-sysprep.pod:379
 msgid ""
 "Normally you do not need to set this.  If not set, a compiled-in default "
@@ -5173,19 +5176,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1763 customize/virt-customize.pod:355
+#: builder/virt-builder.pod:1763 customize/virt-customize.pod:364
 #: sysprep/virt-sysprep.pod:382
 msgid "This directory may contain the following files:"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1767 customize/virt-customize.pod:359
+#: builder/virt-builder.pod:1767 customize/virt-customize.pod:368
 #: sysprep/virt-sysprep.pod:386
 msgid "F<rhsrvany.exe>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1769 customize/virt-customize.pod:361
+#: builder/virt-builder.pod:1769 customize/virt-customize.pod:370
 #: sysprep/virt-sysprep.pod:388
 msgid ""
 "This is the RHSrvAny Windows binary, used to install a \"firstboot\" script "
@@ -5194,19 +5197,19 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1773 customize/virt-customize.pod:365
+#: builder/virt-builder.pod:1773 customize/virt-customize.pod:374
 #: sysprep/virt-sysprep.pod:392
 msgid "See also: C<https://github.com/rwmjones/rhsrvany>"
 msgstr ""
 
 #. type: =item
-#: builder/virt-builder.pod:1775 customize/virt-customize.pod:367
+#: builder/virt-builder.pod:1775 customize/virt-customize.pod:376
 #: sysprep/virt-sysprep.pod:394
 msgid "F<pvvxsvc.exe>"
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:1777 customize/virt-customize.pod:369
+#: builder/virt-builder.pod:1777 customize/virt-customize.pod:378
 #: sysprep/virt-sysprep.pod:396
 msgid ""
 "This is a Windows binary shipped with SUSE VMDP, used to install a "
@@ -5832,6 +5835,12 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.54.pod:98
 #: docs/guestfs-tools-release-notes-1.54.pod:134
 #: docs/guestfs-tools-release-notes-1.54.pod:138
+#: docs/guestfs-tools-release-notes-1.56.pod:12
+#: docs/guestfs-tools-release-notes-1.56.pod:16
+#: docs/guestfs-tools-release-notes-1.56.pod:122
+#: docs/guestfs-tools-release-notes-1.56.pod:126
+#: docs/guestfs-tools-release-notes-1.56.pod:140
+#: docs/guestfs-tools-release-notes-1.56.pod:144
 msgid "comment"
 msgstr ""
 
@@ -7398,11 +7407,33 @@ msgstr ""
 
 #. type: =head2
 #: customize/virt-customize.pod:284
-msgid "Auxiliary tools"
+msgid "Windows sentinel file"
 msgstr ""
 
 #. type: textblock
 #: customize/virt-customize.pod:286
+msgid ""
+"On Windows guests (only) a sentinel file is written into the guest once all "
+"firstboot scripts have finished running.  You can use this to detect if the "
+"Windows guest is ready (eg. has finished a L<virt-v2v(1)> conversion).  The "
+"default location for this file is:"
+msgstr ""
+
+#. type: verbatim
+#: customize/virt-customize.pod:291
+#, no-wrap
+msgid ""
+" C:\\Program Files\\Guestfs\\Firstboot\\complete\n"
+"\n"
+msgstr ""
+
+#. type: =head2
+#: customize/virt-customize.pod:293
+msgid "Auxiliary tools"
+msgstr ""
+
+#. type: textblock
+#: customize/virt-customize.pod:295
 msgid ""
 "On Windows guests, F<rhsrvany.exe>, available from sources at "
 "L<https://github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with "
@@ -7411,7 +7442,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:292
+#: customize/virt-customize.pod:301
 msgid ""
 "F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed to by "
 "the C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in "
@@ -7419,12 +7450,12 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: customize/virt-customize.pod:297
+#: customize/virt-customize.pod:306
 msgid "I<--firstboot> vs I<--script>"
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:299
+#: customize/virt-customize.pod:308
 msgid ""
 "The two options I<--firstboot> and I<--script> both supply shell scripts "
 "that are run against the guest.  However these two options are significantly "
@@ -7432,21 +7463,21 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:303
+#: customize/virt-customize.pod:312
 msgid ""
 "I<--firstboot script> uploads the file C<script> into the guest and arranges "
 "that it will run, in the guest, when the guest is next booted."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:307
+#: customize/virt-customize.pod:316
 msgid ""
 "I<--script> runs the shell script I<on the host>, with its current directory "
 "inside the guest filesystem."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:310
+#: customize/virt-customize.pod:319
 msgid ""
 "If you needed, for example, to C<yum install> new packages, then you I<must "
 "not> use I<--script> for this, since that would (a) run the C<yum> command "
@@ -7456,7 +7487,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:316
+#: customize/virt-customize.pod:325
 msgid ""
 "On the other hand if you need to make adjustments to the guest filesystem "
 "(eg. copying in files), then I<--script> is ideal since (a)  it has access "
@@ -7464,24 +7495,24 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:321
+#: customize/virt-customize.pod:330
 msgid "Either or both options can be used multiple times on the command line."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:325 sysprep/virt-sysprep.pod:355
+#: customize/virt-customize.pod:334 sysprep/virt-sysprep.pod:355
 msgid ""
 "For guests which make use of SELinux, special handling for them might be "
 "needed when using operations which create new files or alter existing ones."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:329 sysprep/virt-sysprep.pod:359
+#: customize/virt-customize.pod:338 sysprep/virt-sysprep.pod:359
 msgid "For further details, see L<virt-builder(1)/SELINUX>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:333
+#: customize/virt-customize.pod:342
 msgid ""
 "In version 1.56 the subscription-manager options were removed: "
 "B<--sm-credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, "
@@ -7489,23 +7520,23 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:337
+#: customize/virt-customize.pod:346
 msgid "For further details, see L<virt-builder(1)/DEPRECATED OPTIONS>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:341 sysprep/virt-sysprep.pod:368
+#: customize/virt-customize.pod:350 sysprep/virt-sysprep.pod:368
 msgid "This program returns 0 on success, or 1 if there was an error."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:377 sparsify/virt-sparsify.pod:449
+#: customize/virt-customize.pod:386 sparsify/virt-sparsify.pod:449
 #: sysprep/virt-sysprep.pod:404
 msgid "For other environment variables, see L<guestfs(3)/ENVIRONMENT VARIABLES>."
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:381
+#: customize/virt-customize.pod:390
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, "
 "L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, "
@@ -7514,17 +7545,18 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: customize/virt-customize.pod:396
+#: customize/virt-customize.pod:405
 #: docs/guestfs-tools-release-notes-1.48.pod:106
 #: docs/guestfs-tools-release-notes-1.50.pod:164
 #: docs/guestfs-tools-release-notes-1.52.pod:103
 #: docs/guestfs-tools-release-notes-1.54.pod:132
+#: docs/guestfs-tools-release-notes-1.56.pod:138
 #: inspector/virt-inspector.pod:504 sysprep/virt-sysprep.pod:423
 msgid "AUTHORS"
 msgstr ""
 
 #. type: textblock
-#: customize/virt-customize.pod:402 sparsify/virt-sparsify.pod:481
+#: customize/virt-customize.pod:411 sparsify/virt-sparsify.pod:481
 #: sysprep/virt-sysprep.pod:431
 msgid "Copyright (C) 2011-2025 Red Hat Inc."
 msgstr ""
@@ -8238,6 +8270,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:3
 #: docs/guestfs-tools-release-notes-1.52.pod:3
 #: docs/guestfs-tools-release-notes-1.54.pod:3
+#: docs/guestfs-tools-release-notes-1.56.pod:3
 msgid "guestfs-tools-release-notes - guestfs tools release Notes"
 msgstr ""
 
@@ -8261,6 +8294,7 @@ msgstr ""
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.48.pod:12
 #: docs/guestfs-tools-release-notes-1.52.pod:25
+#: docs/guestfs-tools-release-notes-1.56.pod:18
 msgid "virt-builder"
 msgstr ""
 
@@ -8282,6 +8316,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:53
 #: docs/guestfs-tools-release-notes-1.52.pod:34
 #: docs/guestfs-tools-release-notes-1.54.pod:23
+#: docs/guestfs-tools-release-notes-1.56.pod:24
 msgid "virt-customize"
 msgstr ""
 
@@ -8293,6 +8328,7 @@ msgstr ""
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.48.pod:26
 #: docs/guestfs-tools-release-notes-1.50.pod:67
+#: docs/guestfs-tools-release-notes-1.56.pod:50
 msgid "virt-inspector"
 msgstr ""
 
@@ -8313,6 +8349,7 @@ msgstr ""
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.48.pod:35
 #: docs/guestfs-tools-release-notes-1.50.pod:72
+#: docs/guestfs-tools-release-notes-1.56.pod:64
 msgid "virt-sysprep"
 msgstr ""
 
@@ -8340,6 +8377,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:81
 #: docs/guestfs-tools-release-notes-1.52.pod:52
 #: docs/guestfs-tools-release-notes-1.54.pod:53
+#: docs/guestfs-tools-release-notes-1.56.pod:68
 msgid "Common changes"
 msgstr ""
 
@@ -8357,6 +8395,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:87
 #: docs/guestfs-tools-release-notes-1.52.pod:60
 #: docs/guestfs-tools-release-notes-1.54.pod:63
+#: docs/guestfs-tools-release-notes-1.56.pod:88
 msgid "Build changes"
 msgstr ""
 
@@ -8386,6 +8425,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:108
 #: docs/guestfs-tools-release-notes-1.52.pod:68
 #: docs/guestfs-tools-release-notes-1.54.pod:83
+#: docs/guestfs-tools-release-notes-1.56.pod:110
 msgid "Internals"
 msgstr ""
 
@@ -8401,6 +8441,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:112
 #: docs/guestfs-tools-release-notes-1.52.pod:73
 #: docs/guestfs-tools-release-notes-1.54.pod:92
+#: docs/guestfs-tools-release-notes-1.56.pod:120
 msgid "Bugs fixed"
 msgstr ""
 
@@ -8483,6 +8524,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:162
 #: docs/guestfs-tools-release-notes-1.52.pod:101
 #: docs/guestfs-tools-release-notes-1.54.pod:130
+#: docs/guestfs-tools-release-notes-1.56.pod:136
 msgid "L<http://libguestfs.org/>"
 msgstr ""
 
@@ -8542,6 +8584,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:12
 #: docs/guestfs-tools-release-notes-1.52.pod:14
 #: docs/guestfs-tools-release-notes-1.54.pod:14
+#: docs/guestfs-tools-release-notes-1.56.pod:14
 msgid "Security"
 msgstr ""
 
@@ -9208,6 +9251,232 @@ msgstr ""
 #. type: =item
 #: docs/guestfs-tools-release-notes-1.54.pod:148
 msgid "liuxiang"
+msgstr ""
+
+#. type: =head1
+#: docs/guestfs-tools-release-notes-1.56.pod:5
+msgid "RELEASE NOTES FOR GUESTFS TOOLS 1.56"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:7
+msgid ""
+"These are the release notes for guestfs tools stable release 1.56.  This "
+"describes the major changes since 1.54."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:10
+msgid "Guestfs tools 1.56.0 was released on B<XXX July 2026>."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:20
+msgid "Fix building of C<debian-13> template (pulsarrush)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:22
+msgid "Use HTTPS to fetch templates (Xiang Hua Chen)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:26
+msgid "Fix SELinux relabelling of \"split /usr\" guests."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:28
+msgid ""
+"Fix Windows Update and C<pnputil /e> command in Windows guests after "
+"virtio-win drivers are injected (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:31
+msgid ""
+"When injecting virtio-win drivers in Windows guests, install F<blnsvr.exe> "
+"(the balloon server) (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:34
+msgid ""
+"Fix installation of Windows Vista and Windows 2008 Server R1 drivers (Cole "
+"Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:37
+msgid "Remove the RHEL subscription-manager feature (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:39
+msgid ""
+"In firstboot scripts, print Windows C<%USERNAME%> and C<%USERDOMAIN%> which "
+"can be used to diagnose failures caused by insufficient permissions."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:43
+msgid ""
+"Windows firstboot scripts may now exit with code 250, meaning that no reboot "
+"is required after the script.  The next script in sequence runs immediately "
+"(Srihari Parimi)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:47
+msgid ""
+"On Windows, a sentinel file is created after all firstboot scripts have run, "
+"which may be used to indicate that firstboot has completed."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:52
+msgid ""
+"Add C<E<lt>windows_group_policy/E<gt>> if Windows Group Policy was detected "
+"inside a guest."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:55
+msgid ""
+"New C<E<lt>classE<gt>> element used to indicate the category of "
+"applications, such as antivirus."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:58
+msgid ""
+"For XFS filesystems, new C<E<lt>type version=\"4|5\"E<gt>> to indicate XFSv4 "
+"or XFSv5.  (This is also displayed in L<virt-filesystems(1)> output.)"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:62
+msgid "Add support for Kylin, NeoKylin and Anolis Linux (grass lu)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:66
+msgid "Add a new operation to clean zsh history files (Fazle Arefin)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:70
+msgid ""
+"Some bash completion scripts that were no longer used by guestfs-tools were "
+"removed.  Also new C<./configure --with-bash-completion> and C<./configure "
+"--with-bash-completion-dir> options were added (Christopher Byrne)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:75
+msgid "All tools taking a LUKS key file now allow a binary file to be used."
+msgstr ""
+
+#. type: =head2
+#: docs/guestfs-tools-release-notes-1.56.pod:77
+msgid "Documentation"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:79
+msgid ""
+"Use qemu option I<-cpu max> in documentation about running virt-builder "
+"guests."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:82
+msgid ""
+"All information related to firstboot scripts was moved to and consolidated "
+"in L<virt-customize(1)/FIRSTBOOT> (Srihari Parimi)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:85
+msgid "Removed a lot of obsolete documentation in the L<virt-sysprep(1)> man page."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:90
+msgid "Fix Weblate (i18n) web hooks (Rafael Fontenelle)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:92
+msgid "Fixes for OCaml 5."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:94
+msgid "Add github CI (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:96
+msgid ""
+"Remove C<AM_GNU_GETTEXT> macro and replace it with simpler C<LIBINTL> checks "
+"(Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:99
+msgid ""
+"Build Bison-based parser with I<-Wno-yacc> to reduce yacc compatibility "
+"warnings that we don't care about (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:102
+msgid "Various build warnings were cleaned up (Cole Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:104
+msgid ""
+"C<CFLAGS> is now prepended to the default, allowing default flags to be "
+"overridden.  In addition I<-fPIC> is added to the default flags (Cole "
+"Robinson)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:108
+msgid "Many memory leaks identified by Claude Code were fixed (shivanayak)."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:112
+msgid ""
+"OCaml quoted string literals (C<{|..|}>) are used throughout the code to "
+"make it easier to include verbatim scripts, code, regexps etc."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:115
+msgid ""
+"The sources for L<virt-cat(1)>, L<virt-filesystems(1)>, L<virt-log(1)>, "
+"L<virt-ls(1)> and L<virt-tail(1)> previously used a single source directory "
+"(F<cat/>) for no particular reason.  These were moved to separate "
+"directories."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:124
+msgid "./bugs-in-changelog.sh v1.54.0.."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:142
+msgid "git shortlog -s v1.54.0.."
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:154
+msgid "Copyright (C) 2009-2026 Red Hat Inc."
 msgstr ""
 
 #. type: textblock
