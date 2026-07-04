@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.55.8\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
-"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
+"component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
 "PO-Revision-Date: 2026-07-03 08:46+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
@@ -3473,7 +3473,8 @@ msgstr "libvirt-თან მიერთების შეცდომა (კ
 #: common/parallel/domains.c:114
 #, c-format
 msgid "could not get number of running domains (code %d, domain %d): %s"
-msgstr "გაშვებული დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
+msgstr ""
+"გაშვებული დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
 
 #: common/parallel/domains.c:125
 #, c-format
