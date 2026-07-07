@@ -7,13 +7,14 @@
 # Luis Bazán <lbazan@fedoraproject.org>, 2011
 # Javier Blanco <javi.deb@gmail.com>, 2018. #zanata
 # Weblate <noreply-mt-weblate@weblate.org>, 2026.
+# "Fco. Javier F. Serrador" <fserrador@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-07-03 09:00+0100\n"
 "PO-Revision-Date: 2026-07-07 09:17+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/es/>\n"
 "Language: es\n"
@@ -6735,6 +6736,9 @@ msgid ""
 "The script runs virtualized inside a small appliance, chrooted into the "
 "guest filesystem."
 msgstr ""
+"Ejecute el script de consola (o cualquier programa) llamado C<SCRIPT> en la "
+"imagen de disco. El guion se ejecuta virtualizado dentro de un pequeño "
+"instrumento, conectado al sistema de archivos invitado."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:340
@@ -6789,6 +6793,9 @@ msgid ""
 "Run the command and arguments on the disk image.  The command runs "
 "virtualized inside a small appliance, chrooted into the guest filesystem."
 msgstr ""
+"Ejecute la instrucción y los argumentos en la imagen de disco.  La "
+"instrucción se ejecuta virtualizada dentro de un pequeño instrumento, con "
+"chroot en el sistema de archivos invitado."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:364
@@ -7161,7 +7168,7 @@ msgid ""
 "networking will be automatically enabled for the libguestfs appliance."
 msgstr ""
 "Nota que si cualquier opción está presente en la línea de instrucción, el "
-"usuario QEMU de red será habilitado automáticamente para la aplicación de "
+"usuario QEMU de red será habilitado automáticamente para el instrumento de "
 "libguestfs."
 
 #. type: =item
