@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.55.8\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2026-07-03 08:46+0000\n"
+"PO-Revision-Date: 2026-07-07 09:18+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ka/>\n"
@@ -1614,7 +1614,7 @@ msgstr "სკრიპტი"
 #: common/mltools/tools_utils.ml:425
 #: common/mlcustomize/customize_cmdline.ml:351
 msgid "SELECTOR"
-msgstr ""
+msgstr "ამრჩევი"
 
 #: common/mlcustomize/customize_run.ml:363
 msgid "SELinux relabelling"
@@ -2028,11 +2028,11 @@ msgstr "UID:GID:ბილიკი"
 
 #: common/mlcustomize/customize_cmdline.ml:339
 msgid "USER:SELECTOR"
-msgstr ""
+msgstr "მომხმარებელი:ამრჩევი"
 
 #: common/mlcustomize/customize_cmdline.ml:380
 msgid "USER[:SELECTOR]"
-msgstr ""
+msgstr "მომხმარებელი[:ამრჩევი]"
 
 #: resize/resize.ml:1440
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
@@ -2138,7 +2138,7 @@ msgstr "append_line: %s ფაილი არაა"
 
 #: sparsify/cmdline.ml:75
 msgid "block|dir|prebuilt:file"
-msgstr ""
+msgstr "block|dir|prebuilt:file"
 
 #: resize/resize.ml:145
 msgid "btrfs-filesystem-resize"
