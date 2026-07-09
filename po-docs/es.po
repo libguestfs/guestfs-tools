@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-07-03 09:00+0100\n"
+"POT-Creation-Date: 2026-07-09 11:24+0100\n"
 "PO-Revision-Date: 2026-07-07 09:17+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
@@ -1137,7 +1137,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:160
 #: docs/guestfs-tools-release-notes-1.52.pod:99
 #: docs/guestfs-tools-release-notes-1.54.pod:128
-#: docs/guestfs-tools-release-notes-1.56.pod:134 drivers/virt-drivers.pod:234
+#: docs/guestfs-tools-release-notes-1.56.pod:164 drivers/virt-drivers.pod:234
 #: edit/virt-edit.pod:384 filesystems/virt-filesystems.pod:395
 #: format/virt-format.pod:187 get-kernel/virt-get-kernel.pod:201
 #: inspector/virt-inspector.pod:494 log/virt-log.pod:137 ls/virt-ls.pod:519
@@ -1189,7 +1189,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:180
 #: docs/guestfs-tools-release-notes-1.52.pod:121
 #: docs/guestfs-tools-release-notes-1.54.pod:152
-#: docs/guestfs-tools-release-notes-1.56.pod:152 drivers/virt-drivers.pod:248
+#: docs/guestfs-tools-release-notes-1.56.pod:200 drivers/virt-drivers.pod:248
 #: edit/virt-edit.pod:399 filesystems/virt-filesystems.pod:411
 #: format/virt-format.pod:201 get-kernel/virt-get-kernel.pod:214
 #: inspector/virt-inspector.pod:518 log/virt-log.pod:152 ls/virt-ls.pod:533
@@ -5877,8 +5877,8 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.56.pod:16
 #: docs/guestfs-tools-release-notes-1.56.pod:122
 #: docs/guestfs-tools-release-notes-1.56.pod:126
-#: docs/guestfs-tools-release-notes-1.56.pod:140
-#: docs/guestfs-tools-release-notes-1.56.pod:144
+#: docs/guestfs-tools-release-notes-1.56.pod:170
+#: docs/guestfs-tools-release-notes-1.56.pod:174
 msgid "comment"
 msgstr ""
 
@@ -7604,7 +7604,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:164
 #: docs/guestfs-tools-release-notes-1.52.pod:103
 #: docs/guestfs-tools-release-notes-1.54.pod:132
-#: docs/guestfs-tools-release-notes-1.56.pod:138
+#: docs/guestfs-tools-release-notes-1.56.pod:168
 #: inspector/virt-inspector.pod:504 sysprep/virt-sysprep.pod:423
 msgid "AUTHORS"
 msgstr ""
@@ -8605,7 +8605,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:162
 #: docs/guestfs-tools-release-notes-1.52.pod:101
 #: docs/guestfs-tools-release-notes-1.54.pod:130
-#: docs/guestfs-tools-release-notes-1.56.pod:136
+#: docs/guestfs-tools-release-notes-1.56.pod:166
 msgid "L<http://libguestfs.org/>"
 msgstr ""
 
@@ -8636,6 +8636,7 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.50.pod:176
 #: docs/guestfs-tools-release-notes-1.52.pod:117
 #: docs/guestfs-tools-release-notes-1.54.pod:146
+#: docs/guestfs-tools-release-notes-1.56.pod:190
 msgid "Richard W.M. Jones"
 msgstr ""
 
@@ -9421,7 +9422,7 @@ msgstr ""
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:10
-msgid "Guestfs tools 1.56.0 was released on B<XXX July 2026>."
+msgid "Guestfs tools 1.56.0 was released on B<9 July 2026>."
 msgstr ""
 
 #. type: textblock
@@ -9469,7 +9470,8 @@ msgstr ""
 #: docs/guestfs-tools-release-notes-1.56.pod:39
 msgid ""
 "In firstboot scripts, print Windows C<%USERNAME%> and C<%USERDOMAIN%> which "
-"can be used to diagnose failures caused by insufficient permissions."
+"can be used to diagnose failures caused by insufficient permissions (Ming "
+"Xie)."
 msgstr ""
 
 #. type: textblock
@@ -9624,13 +9626,179 @@ msgstr ""
 msgid "./bugs-in-changelog.sh v1.54.0.."
 msgstr ""
 
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:130
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-100682>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
 #. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:132
+msgid ""
+"Installing drivers on firstboot sometimes fail with PnP service not "
+"available [rhel-9.7]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:134
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-108174>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:136
+msgid ""
+"selinux-relabel doesn't work across filesystem boundaries (because setfiles "
+"doesn't) [rhel-9.7]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:138
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-125955>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:140
+msgid "virt-inspector detect if AV/GPOs are present in a VM [guestfs tools]"
+msgstr ""
+
+#. type: =item
 #: docs/guestfs-tools-release-notes-1.56.pod:142
-msgid "git shortlog -s v1.54.0.."
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-144074>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:144
+msgid "Expose XFS version in virt-filesystems"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:146
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-170706>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:148
+msgid ""
+"Virt-customize firstboot scripts (on Windows) should be able to skip reboots"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:150
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-170708>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:152
+msgid ""
+"Document that exit code 249 means we retry the firstboot script (Windows "
+"only)"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:154
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-171896>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:156
+msgid "virt-v2v failing with binary LUKS keys [guestfs-tools]"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:158
+#, fuzzy
+#| msgid ""
+#| "For more details see L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+msgid "L<https://issues.redhat.com/browse/RHEL-94873>"
+msgstr ""
+"Para más detalle vea L<https://bugzilla.redhat.com/show_bug.cgi?id=599503>"
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:160
+msgid ""
+"Need to update uri to https:// for conf file in /etc/virt-builder/repos.d "
+"[rhel-10.1]"
 msgstr ""
 
 #. type: textblock
-#: docs/guestfs-tools-release-notes-1.56.pod:154
+#: docs/guestfs-tools-release-notes-1.56.pod:172
+msgid "git shortlog -s v1.54.0.."
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:178
+msgid "Christopher Byrne"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:180
+msgid "Cole Robinson"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:182
+msgid "Fazle Arefin"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:184
+msgid "Fco. Javier F. Serrador"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:186
+msgid "pulsarrush"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:188
+msgid "Rafael Fontenelle"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:192
+msgid "Srihari Parimi"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:194
+msgid "Temuri Doghonadze"
+msgstr ""
+
+#. type: =item
+#: docs/guestfs-tools-release-notes-1.56.pod:196
+msgid "Yuri Chornoivan"
+msgstr ""
+
+#. type: textblock
+#: docs/guestfs-tools-release-notes-1.56.pod:202
 msgid "Copyright (C) 2009-2026 Red Hat Inc."
 msgstr ""
 
