@@ -7,7 +7,7 @@ guestfs-tools-release-notes - guestfs tools release Notes
 These are the release notes for guestfs tools stable release 1.56.
 This describes the major changes since 1.54.
 
-Guestfs tools 1.56.0 was released on B<XXX July 2026>.
+Guestfs tools 1.56.0 was released on B<9 July 2026>.
 
 =begin comment
 
@@ -38,7 +38,7 @@ Remove the RHEL subscription-manager feature (Cole Robinson).
 
 In firstboot scripts, print Windows C<%USERNAME%> and C<%USERDOMAIN%>
 which can be used to diagnose failures caused by insufficient
-permissions.
+permissions (Ming Xie).
 
 Windows firstboot scripts may now exit with code 250, meaning that no
 reboot is required after the script.  The next script in sequence runs
@@ -127,7 +127,37 @@ were moved to separate directories.
 
 =over 4
 
+=item L<https://issues.redhat.com/browse/RHEL-100682>
 
+Installing drivers on firstboot sometimes fail with PnP service not available [rhel-9.7]
+
+=item L<https://issues.redhat.com/browse/RHEL-108174>
+
+selinux-relabel doesn't work across filesystem boundaries (because setfiles doesn't) [rhel-9.7]
+
+=item L<https://issues.redhat.com/browse/RHEL-125955>
+
+virt-inspector detect if AV/GPOs are present in a VM [guestfs tools]
+
+=item L<https://issues.redhat.com/browse/RHEL-144074>
+
+Expose XFS version in virt-filesystems
+
+=item L<https://issues.redhat.com/browse/RHEL-170706>
+
+Virt-customize firstboot scripts (on Windows) should be able to skip reboots
+
+=item L<https://issues.redhat.com/browse/RHEL-170708>
+
+Document that exit code 249 means we retry the firstboot script (Windows only)
+
+=item L<https://issues.redhat.com/browse/RHEL-171896>
+
+virt-v2v failing with binary LUKS keys [guestfs-tools]
+
+=item L<https://issues.redhat.com/browse/RHEL-94873>
+
+Need to update uri to https:// for conf file in /etc/virt-builder/repos.d [rhel-10.1]
 
 =back
 
@@ -145,7 +175,25 @@ git shortlog -s v1.54.0..
 
 =over 4
 
+=item Christopher Byrne
 
+=item Cole Robinson
+
+=item Fazle Arefin
+
+=item Fco. Javier F. Serrador
+
+=item pulsarrush
+
+=item Rafael Fontenelle
+
+=item Richard W.M. Jones
+
+=item Srihari Parimi
+
+=item Temuri Doghonadze
+
+=item Yuri Chornoivan
 
 =back
 
