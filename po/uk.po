@@ -13,10 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2026-07-01 08:18+0000\n"
+"PO-Revision-Date: 2026-07-11 10:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/uk/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.6.1\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
@@ -1709,7 +1709,7 @@ msgstr ""
 
 #: customize/customize_main.ml:85 builder/cmdline.ml:154
 msgid "Set memory size"
-msgstr ""
+msgstr "Встановити розмір пам'яті"
 
 #: sysprep/main.ml:135
 msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
@@ -1717,7 +1717,7 @@ msgstr ""
 
 #: customize/customize_main.ml:88 builder/cmdline.ml:162
 msgid "Set number of vCPUs"
-msgstr ""
+msgstr "Встановити кількість віртуальних процесорів"
 
 #: builder/cmdline.ml:161
 msgid "Set output disk size"
@@ -2594,7 +2594,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_run.ml:119
 msgid "method '%s' is no longer supported"
-msgstr ""
+msgstr "підтримку методу «%s» припинено"
 
 #: builder/repository_main.ml:262
 msgid "missing image identifier"
