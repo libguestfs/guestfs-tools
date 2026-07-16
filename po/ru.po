@@ -4,57 +4,65 @@
 #
 # Translators:
 # Stanislav Hanzhin <hanzhin.stas@gmail.com>, 2012
+# Andrei Stepanov <adem4ik@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2015-02-21 10:52+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/libguestfs/"
-"language/ru/)\n"
+"PO-Revision-Date: 2026-07-16 21:19+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/"
+"libguestfs/guestfs-tools-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
-msgstr ""
+msgstr "  Для избыточного пространства будет создан дополнительный раздел."
 
 #: resize/resize.ml:1003 resize/resize.ml:969
 msgid "  The %s on %s will be expanded using the ‘%s’ method."
-msgstr ""
+msgstr "  %s на %s будет расширен с использованием метода «%s»."
 
 #: resize/resize.ml:1033
 msgid ""
 "  The surplus space is not large enough for an extra partition to be created "
 "and so it will just be ignored."
 msgstr ""
+"  Избыточное пространство недостаточно велико для создания дополнительного "
+"раздела, поэтому оно будет просто проигнорировано."
 
 #: resize/resize.ml:1036
 msgid ""
 "  The surplus space will be ignored.  Run a partitioning program in the "
 "guest to partition this extra space if you want."
 msgstr ""
+"  Избыточное пространство будет проигнорировано. При желании запустите "
+"программу разбиения диска в гостевой системе, чтобы разбить это "
+"дополнительное пространство."
 
 #: common/mltools/tools_utils.ml:238
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: common/mltools/getopt.ml:73
 msgid ""
 "%s\n"
 "Options:\n"
 msgstr ""
+"%s\n"
+"Параметры:\n"
 
 #: common/mltools/tools_utils.ml:698 common/mlcustomize/customize_run.ml:390
 msgid "%s (ignored)"
-msgstr ""
+msgstr "%s (игнорируется)"
 
 #: builder/builder.ml:329
 msgid ""
@@ -66,44 +74,54 @@ msgid ""
 " - Delete the cache: virt-builder --delete-cache\n"
 " - Check no one has tampered with the website or your network!"
 msgstr ""
+"Контрольная сумма %s шаблона не совпадает с ожидаемой!\n"
+"  найденная контрольная сумма: %s\n"
+"  ожидаемая контрольная сумма: %s\n"
+"Попробуйте:\n"
+" - Использовать параметр «-v» и просмотреть предыдущие сообщения об "
+"ошибках.\n"
+" - Удалить кэш: virt-builder --delete-cache\n"
+" - Проверить, не было ли вмешательства в веб-сайт или вашу сеть!"
 
 #: common/mltools/checksums.ml:71
 msgid "%s did not return any output"
-msgstr ""
+msgstr "%s не вернул никакого вывода"
 
 #: common/mlcustomize/customize_run.ml:183
 msgid "%s does not exist in the guest"
-msgstr ""
+msgstr "%s не существует в гостевой системе"
 
 #: common/mlcustomize/customize_run.ml:113
 msgid "%s ignored for non-Windows guest"
-msgstr ""
+msgstr "%s игнорируется для гостевой системы не Windows"
 
 #: builder/simplestreams_parser.ml:59
 msgid "%s is not a Simple Streams (index) v1.0 JSON file (format: %s)"
-msgstr ""
+msgstr "%s не является файлом JSON Simple Streams (индекс) v1.0 (формат: %s)"
 
 #: builder/simplestreams_parser.ml:78
 msgid "%s is not a Simple Streams (products) v1.0 JSON file (format: %s)"
-msgstr ""
+msgstr "%s не является файлом JSON Simple Streams (продукты) v1.0 (формат: %s)"
 
 #: common/mlcustomize/customize_run.ml:186
 msgid "%s is not a regular file in the guest"
-msgstr ""
+msgstr "%s не является обычным файлом в гостевой системе"
 
 #: common/mltools/tools_utils.ml:234 common/mltools/tools_utils.ml:202
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: common/mltools/tools_utils.ml:236
 msgid "%s: %s: %s"
-msgstr ""
+msgstr "%s: %s: %s"
 
 #: common/mltools/on_exit.ml:77
 msgid ""
 "%s: Exiting on signal %s\n"
 "%!"
 msgstr ""
+"%s: Выход по сигналу %s\n"
+"%!"
 
 #: resize/resize.ml:735
 msgid ""
@@ -113,10 +131,15 @@ msgid ""
 "within this partition.  (This error came from ‘%s’ option on the command "
 "line.)"
 msgstr ""
+"%s: Этот расширенный раздел содержит логические разделы, которые могут быть "
+"повреждены при его уменьшении. Если вы хотите уменьшить этот раздел, вам "
+"нужно использовать параметр «--resize-force», но это может уничтожить "
+"логические разделы внутри этого раздела. (Эта ошибка возникла из-за "
+"параметра «%s» в командной строке.)"
 
 #: resize/resize.ml:999
 msgid "%s: This logical volume will be expanded to maximum size."
-msgstr ""
+msgstr "%s: Этот логический том будет расширен до максимального размера."
 
 #: resize/resize.ml:726
 msgid ""
@@ -126,6 +149,11 @@ msgid ""
 "but that could destroy any data on this partition.  (This error came from "
 "‘%s’ option on the command line.)"
 msgstr ""
+"%s: Этот раздел содержит файловую систему %s, которая будет повреждена при "
+"уменьшении ниже %Ld байт (пользователь запросил уменьшение до %Ld байт). "
+"Если вы хотите уменьшить этот раздел, вам нужно использовать параметр «--"
+"resize-force», но это может уничтожить все данные на этом разделе. (Эта "
+"ошибка возникла из-за параметра «%s» в командной строке.)"
 
 #: resize/resize.ml:716
 msgid ""
@@ -135,6 +163,11 @@ msgid ""
 "but that could destroy any data on this partition.  (This error came from "
 "‘%s‘ option on the command line.)"
 msgstr ""
+"%s: Этот раздел содержит физический том LVM, который будет повреждён при "
+"уменьшении ниже %Ld байт (пользователь запросил уменьшение до %Ld байт). "
+"Если вы хотите уменьшить этот раздел, вам нужно использовать параметр «--"
+"resize-force», но это может уничтожить все данные на этом разделе. (Эта "
+"ошибка возникла из-за параметра «%s» в командной строке.)"
 
 #: resize/resize.ml:709
 msgid ""
@@ -143,24 +176,30 @@ msgid ""
 "force’ option, but that could destroy any data on this partition.  (This "
 "error came from ‘%s’ option on the command line.)"
 msgstr ""
+"%s: Этот раздел имеет неизвестное содержимое, которое может быть повреждено "
+"при уменьшении. Если вы хотите уменьшить этот раздел, вам нужно использовать "
+"параметр «--resize-force», но это может уничтожить все данные на этом "
+"разделе. (Эта ошибка возникла из-за параметра «%s» в командной строке.)"
 
 #: resize/resize.ml:961
 msgid ""
 "%s: This partition will be created, but the contents will be ignored (ie. "
 "not copied to the target)."
 msgstr ""
+"%s: Этот раздел будет создан, но его содержимое будет проигнорировано (т.е. "
+"не скопировано в целевой образ)."
 
 #: resize/resize.ml:964
 msgid "%s: This partition will be deleted."
-msgstr ""
+msgstr "%s: Этот раздел будет удалён."
 
 #: resize/resize.ml:959
 msgid "%s: This partition will be left alone."
-msgstr ""
+msgstr "%s: Этот раздел останется без изменений."
 
 #: resize/resize.ml:966
 msgid "%s: This partition will be resized from %s to %s."
-msgstr ""
+msgstr "%s: Этот раздел будет изменён с %s на %s."
 
 #: builder/cmdline.ml:176
 msgid ""
@@ -177,38 +216,50 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-builder(1).\n"
 msgstr ""
+"%s: быстрое создание образов виртуальных машин\n"
+"\n"
+" virt-builder ОС-ВЕРСИЯ\n"
+" virt-builder -l\n"
+" virt-builder --notes ОС-ВЕРСИЯ\n"
+" virt-builder --print-cache\n"
+" virt-builder --cache-all-templates\n"
+" virt-builder --delete-cache\n"
+" virt-builder --get-kernel ОБРАЗ\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-builder(1).\n"
 
 #: builder/index_parser.ml:156
 msgid "%s: cannot determine the virtual size of %s due to compression"
-msgstr ""
+msgstr "%s: не удаётся определить виртуальный размер %s из-за сжатия"
 
 #: common/mlcustomize/inject_virtio_win.ml:411
 msgid "%s: cannot open virtio-win ISO file: %s"
-msgstr ""
+msgstr "%s: не удалось открыть ISO-файл virtio-win: %s"
 
 #: builder/index_parser.ml:184
 msgid "%s: cannot parse ‘compressed_size’ field for ‘%s’\n"
-msgstr ""
+msgstr "%s: не удаётся разобрать поле «compressed_size» для «%s»\n"
 
 #: builder/index_parser.ml:211
 msgid "%s: cannot parse ‘hidden’ field for ‘%s’\n"
-msgstr ""
+msgstr "%s: не удаётся разобрать поле «hidden» для «%s»\n"
 
 #: builder/index_parser.ml:142
 msgid "%s: cannot parse ‘revision’ field for ‘%s’\n"
-msgstr ""
+msgstr "%s: не удаётся разобрать поле «revision» для «%s»\n"
 
 #: builder/index_parser.ml:174
 msgid "%s: cannot parse ‘size’ field for ‘%s’\n"
-msgstr ""
+msgstr "%s: не удаётся разобрать поле «size» для «%s»\n"
 
 #: builder/index_parser.ml:261
 msgid "%s: cannot use a URI (‘%s’) in the index file\n"
-msgstr ""
+msgstr "%s: нельзя использовать URI («%s») в файле индекса\n"
 
 #: common/mlcustomize/customize_run.ml:64
 msgid "%s: command exited with an error"
-msgstr ""
+msgstr "%s: команда завершилась с ошибкой"
 
 #: builder/repository_main.ml:62
 msgid ""
@@ -219,6 +270,12 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-builder-repository(1).\n"
 msgstr ""
+"%s: создание репозитория для virt-builder\n"
+"\n"
+"  virt-builder-repository ПУТЬ_К_РЕПОЗИТОРИЮ\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-builder-repository(1).\n"
 
 #: customize/customize_main.ml:96
 msgid ""
@@ -231,6 +288,14 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-customize(1).\n"
 msgstr ""
+"%s: настройка виртуальной машины\n"
+"\n"
+" virt-customize [--параметры] -d имя_домена\n"
+"\n"
+" virt-customize [--параметры] -a диск.img [-a диск.img ...]\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-customize(1).\n"
 
 #: drivers/drivers.ml:57
 msgid ""
@@ -239,10 +304,14 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-drivers(1).\n"
 msgstr ""
+"%s: обнаружение загрузчика, ядра и драйверов внутри гостевой системы\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-drivers(1).\n"
 
 #: common/mltools/tools_utils.ml:172
 msgid "%s: error: %s"
-msgstr ""
+msgstr "%s: ошибка: %s"
 
 #: get-kernel/get_kernel.ml:67
 msgid ""
@@ -251,24 +320,30 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-get-kernel(1).\n"
 msgstr ""
+"%s: извлечение ядра и ramdisk из гостевой системы\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-get-kernel(1).\n"
 
 #: resize/resize.ml:421 resize/resize.ml:418
 msgid "%s: file is too small to be a disk image (%Ld bytes)"
-msgstr ""
+msgstr "%s: файл слишком мал для образа диска (%Ld байт)"
 
 #: builder/index_parser.ml:81
 msgid "%s: index is corrupt: %s: field ‘%s[%s]’ appears two or more times\n"
-msgstr ""
+msgstr "%s: индекс повреждён: %s: поле «%s[%s]» встречается два или более раз\n"
 
 #: builder/index_parser.ml:84
 msgid "%s: index is corrupt: %s: field ‘%s’ appears two or more times\n"
-msgstr ""
+msgstr "%s: индекс повреждён: %s: поле «%s» встречается два или более раз\n"
 
 #: builder/index_parser.ml:63
 msgid ""
 "%s: index is corrupt: os-version ‘%s’ with architecture ‘%s’ appears two or "
 "more times\n"
 msgstr ""
+"%s: индекс повреждён: os-version «%s» с архитектурой «%s» встречается два "
+"или более раз\n"
 
 #: resize/resize.ml:892
 msgid ""
@@ -276,46 +351,51 @@ msgid ""
 "‘--lv-expand’ option on the command line).  Try running this command: virt-"
 "filesystems --logical-volumes --long -a %s"
 msgstr ""
+"%s: логический том не найден в исходном образе диска (эта ошибка возникла из-"
+"за параметра «--lv-expand» в командной строке). Попробуйте выполнить "
+"команду: virt-filesystems --logical-volumes --long -a %s"
 
 #: resize/resize.ml:759
 msgid "%s: missing size field in ‘%s’ option"
-msgstr ""
+msgstr "%s: отсутствует поле размера в параметре «%s»"
 
 #: resize/resize.ml:768
 msgid "%s: new partition size is zero or negative"
-msgstr ""
+msgstr "%s: новый размер раздела равен нулю или отрицателен"
 
 #: builder/index_parser.ml:118
 msgid "%s: no ‘arch’ entry for %s and failed to guess it\n"
 msgstr ""
+"%s: нет записи «arch» для %s, и не удалось определить её автоматически\n"
 
 #: builder/index_parser.ml:126
 msgid "%s: no ‘arch’ entry for ‘%s’\n"
-msgstr ""
+msgstr "%s: нет записи «arch» для «%s»\n"
 
 #: builder/index_parser.ml:106
 msgid "%s: no ‘file’ (URI) entry for ‘%s’\n"
-msgstr ""
+msgstr "%s: нет записи «file» (URI) для «%s»\n"
 
 #: builder/index_parser.ml:167
 msgid "%s: no ‘size’ field for ‘%s’\n"
-msgstr ""
+msgstr "%s: нет поля «size» для «%s»\n"
 
 #: builder/sources.ml:48
 msgid "%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n"
-msgstr ""
+msgstr "%s: нет записи «uri» для «%s» в %s, пропускаем\n"
 
 #: common/mltools/tools_utils.ml:729
 msgid "%s: operation timed out"
-msgstr ""
+msgstr "%s: время операции истекло"
 
 #: resize/resize.ml:659
 msgid "%s: partition already deleted, you cannot use it in ‘%s’ option"
-msgstr ""
+msgstr "%s: раздел уже удалён, вы не можете использовать его в параметре «%s»"
 
 #: resize/resize.ml:654
 msgid "%s: partition already ignored, you cannot use it in ‘%s’ option"
 msgstr ""
+"%s: раздел уже проигнорирован, вы не можете использовать его в параметре «%s»"
 
 #: resize/resize.ml:647
 msgid ""
@@ -323,18 +403,21 @@ msgid ""
 "option on the command line).  Try running this command: virt-filesystems --"
 "partitions --long -a %s"
 msgstr ""
+"%s: раздел не найден в исходном образе диска (эта ошибка возникла из-за "
+"параметра «%s» в командной строке). Попробуйте выполнить команду: virt-"
+"filesystems --partitions --long -a %s"
 
 #: resize/resize.ml:551
 msgid "%s: partition size %Ld < filesystem size %Ld"
-msgstr ""
+msgstr "%s: размер раздела %Ld < размер файловой системы %Ld"
 
 #: resize/resize.ml:546
 msgid "%s: partition size %Ld < physical volume size %Ld"
-msgstr ""
+msgstr "%s: размер раздела %Ld < размер физического тома %Ld"
 
 #: resize/resize.ml:457
 msgid "%s: physical volume not returned by pvs_full"
-msgstr ""
+msgstr "%s: физический том не возвращён pvs_full"
 
 #: sysprep/main.ml:142
 msgid ""
@@ -347,6 +430,14 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-sysprep(1).\n"
 msgstr ""
+"%s: сброс или удаление конфигурации виртуальной машины для создания клонов\n"
+"\n"
+" virt-sysprep [--параметры] -d имя_домена\n"
+"\n"
+" virt-sysprep [--параметры] -a диск.img [-a диск.img ...]\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-sysprep(1).\n"
 
 #: resize/resize.ml:221
 msgid ""
@@ -355,6 +446,10 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-resize(1).\n"
 msgstr ""
+"%s: изменение размера диска виртуальной машины\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-resize(1).\n"
 
 #: sparsify/cmdline.ml:81
 msgid ""
@@ -367,237 +462,305 @@ msgid ""
 "A short summary of the options is given below.  For detailed help please\n"
 "read the man page virt-sparsify(1).\n"
 msgstr ""
+"%s: разрежение диска виртуальной машины\n"
+"\n"
+" virt-sparsify [--параметры] входной_диск выходной_диск\n"
+"\n"
+" virt-sparsify [--параметры] --in-place диск\n"
+"\n"
+"Краткая сводка параметров приведена ниже. Подробную справку см. в\n"
+"справочной странице virt-sparsify(1).\n"
 
 #: builder/builder.ml:338
 msgid ""
 "%s: template not downloaded or deleted.  You may have run ‘virt-builder --"
 "delete-cache’ in parallel."
 msgstr ""
+"%s: шаблон не загружен или удалён. Возможно, вы параллельно запустили «virt-"
+"builder --delete-cache»."
 
 #: resize/resize.ml:694
 msgid "%s: this partition has already been ignored or deleted"
-msgstr ""
+msgstr "%s: этот раздел уже был проигнорирован или удалён"
 
 #: resize/resize.ml:690
+#, fuzzy
 msgid "%s: this partition has already been marked for resizing"
-msgstr ""
+msgstr "%s: этот раздел уже отмечен для изменения размера"
 
 #: resize/resize.ml:561
+#, fuzzy
 msgid "%s: this partition overlaps the previous one"
-msgstr ""
+msgstr "%s: этот раздел перекрывается с предыдущим"
 
 #: resize/resize.ml:433
+#, fuzzy
 msgid ""
 "%s: unknown partition table type\n"
 "virt-resize only supports MBR (DOS) and GPT partition tables."
 msgstr ""
+"%s: неизвестный тип таблицы разделов\n"
+"virt-resize поддерживает только таблицы разделов MBR (DOS) и GPT."
 
 #: common/mltools/tools_utils.ml:191
 msgid "%s: warning: %s"
-msgstr ""
+msgstr "%s: предупреждение: %s"
 
 #: builder/index_parser.ml:265
+#, fuzzy
 msgid "%s: you must use relative paths (not ‘%s’) in the index file\n"
 msgstr ""
+"%s: вы должны использовать относительные пути (не «%s») в файле индекса\n"
 
 #: builder/index_parser.ml:257
+#, fuzzy
 msgid "%s: zero length path in the index file\n"
-msgstr ""
+msgstr "%s: нулевая длина пути в файле индекса\n"
 
 #. common/mlcustomize/customize_cmdline.ml:258
 #: common/mlcustomize/customize_cmdline.ml:367
 msgid "'CMD+ARGS'"
-msgstr ""
+msgstr "'КОМАНДА+АРГУМЕНТЫ'"
 
 #: get-kernel/get_kernel.ml:40 drivers/drivers.ml:36
+#, fuzzy
 msgid "--add option can only be given once"
-msgstr ""
+msgstr "параметр --add можно указать только один раз"
 
 #: common/mlcustomize/customize_run.ml:133
 msgid ""
 "--append-line: line must not contain newline characters.  Use the --append-"
 "line option multiple times to add several lines."
 msgstr ""
+"--append-line: строка не должна содержать символы новой строки. Используйте "
+"параметр --append-line несколько раз, чтобы добавить несколько строк."
 
 #: customize/customize_main.ml:114
+#, fuzzy
 msgid "--attach-format parameter must appear before --attach parameter"
-msgstr ""
+msgstr "параметр --attach-format должен предшествовать параметру --attach"
 
 #: builder/cmdline.ml:268
+#, fuzzy
 msgid ""
 "--cache-all-templates/--print-cache/--delete-cache does not need any extra "
 "arguments"
 msgstr ""
+"--cache-all-templates/--print-cache/--delete-cache не требуют дополнительных "
+"аргументов"
 
 #: sparsify/cmdline.ml:55
+#, fuzzy
 msgid "--check-tmpdir: unknown argument ‘%s’"
-msgstr ""
+msgstr "--check-tmpdir: неизвестный аргумент «%s»"
 
 #: common/mlcustomize/customize_run.ml:152
 msgid "--chown: could not parse numeric UID:GID from %s:%s"
-msgstr ""
+msgstr "--chown: не удалось разобрать числовой UID:GID из %s:%s"
 
 #: sparsify/copying.ml:74
+#, fuzzy
 msgid ""
 "--compress cannot be used for raw output.  Remove this option or use --"
 "convert qcow2."
 msgstr ""
+"--compress нельзя использовать для вывода в raw. Удалите этот параметр или "
+"используйте --convert qcow2."
 
 #. customize/customize_main.ml:72
 #: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
+#, fuzzy
 msgid "--domain option can only be given once"
-msgstr ""
+msgstr "параметр --domain можно указать только один раз"
 
 #: sysprep/main.ml:78
+#, fuzzy
 msgid "--enable option can only be given once"
-msgstr ""
+msgstr "параметр --enable можно указать только один раз"
 
 #: sysprep/main.ml:86
+#, fuzzy
 msgid "--enable: ‘%s’ is not a known operation"
-msgstr ""
+msgstr "--enable: «%s» не является известной операцией"
 
 #: resize/resize.ml:174
+#, fuzzy
 msgid "--expand option given more than once"
-msgstr ""
+msgstr "параметр --expand указан более одного раза"
 
 #: sysprep/main.ml:157 customize/customize_main.ml:111
+#, fuzzy
 msgid "--format parameter must appear before -a parameter"
-msgstr ""
+msgstr "параметр --format должен предшествовать параметру -a"
 
 #: builder/cmdline.ml:278
+#, fuzzy
 msgid "--get-kernel: too many parameters"
-msgstr ""
+msgstr "--get-kernel: слишком много параметров"
 
 #: common/mlcustomize/customize_run.ml:216
 msgid ""
 "--inject-blnsvr: blnsvr.exe not found in virtio-win source that you specified"
-msgstr ""
+msgstr "--inject-blnsvr: blnsvr.exe не найден в указанном источнике virtio-win"
 
 #: common/mlcustomize/customize_run.ml:225
 msgid ""
 "--inject-qemu-ga: QEMU Guest Agent MSI not found in virtio-win source that "
 "you specified"
 msgstr ""
+"--inject-qemu-ga: MSI-файл QEMU Guest Agent не найден в указанном источнике "
+"virtio-win"
 
 #: common/mlcustomize/customize_run.ml:241
 msgid ""
 "--inject-virtio-win: virtio drivers were not found for this Windows version "
 "in the virtio-win source that you specified"
 msgstr ""
+"--inject-virtio-win: драйверы virtio не найдены для этой версии Windows в "
+"указанном источнике virtio-win"
 
 #: builder/cmdline.ml:245
+#, fuzzy
 msgid "--list: use ‘--list-format’, not ‘--format’"
-msgstr ""
+msgstr "--list: используйте «--list-format», а не «--format»"
 
 #: builder/cmdline.ml:260
+#, fuzzy
 msgid "--notes: too many parameters, expecting ‘os-version’"
-msgstr ""
+msgstr "--notes: слишком много параметров, ожидается «os-version»"
 
 #: sysprep/main.ml:105
+#, fuzzy
 msgid "--operations: empty operation name"
-msgstr ""
+msgstr "--operations: пустое имя операции"
 
 #: sysprep/main.ml:117
+#, fuzzy
 msgid "--operations: ‘%s’ is not a known operation"
-msgstr ""
+msgstr "--operations: «%s» не является известной операцией"
 
 #: get-kernel/get_kernel.ml:53
+#, fuzzy
 msgid "--prefix option can only be given once"
-msgstr ""
+msgstr "параметр --prefix можно указать только один раз"
 
 #: sysprep/sysprep_operation_script.ml:35
+#, fuzzy
 msgid "--scriptdir cannot be used more than once"
-msgstr ""
+msgstr "--scriptdir нельзя использовать более одного раза"
 
 #: resize/resize.ml:190
+#, fuzzy
 msgid "--shrink option given more than once"
-msgstr ""
+msgstr "параметр --shrink указан более одного раза"
 
 #: sparsify/copying.ml:95
+#, fuzzy
 msgid ""
 "--tmp parameter must point to a directory, block device or prebuilt file"
 msgstr ""
+"параметр --tmp должен указывать на каталог, блочное устройство или "
+"предварительно созданный файл"
 
 #: sparsify/copying.ml:86
+#, fuzzy
 msgid "--tmp prebuilt:file: %s: file does not exist"
-msgstr ""
+msgstr "--tmp prebuilt:file: %s: файл не существует"
 
 #: sparsify/copying.ml:91
+#, fuzzy
 msgid "--tmp prebuilt:file: %s: file does not have backing file"
-msgstr ""
+msgstr "--tmp prebuilt:file: %s: файл не имеет базового файла"
 
 #: sparsify/copying.ml:89
+#, fuzzy
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
-msgstr ""
+msgstr "--tmp prebuilt:file: %s: формат файла не qcow2"
 
 #. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
+#, fuzzy
 msgid "Add disk image file"
-msgstr ""
+msgstr "Добавить файл образа диска"
 
 #: common/mlcustomize/customize_cmdline.ml:305
 msgid "Add package(s) to install"
-msgstr ""
+msgstr "Добавить пакеты для установки"
 
 #: common/mlcustomize/customize_cmdline.ml:270
 msgid "Add package(s) to install at first boot"
-msgstr ""
+msgstr "Добавить пакеты для установки при первой загрузке"
 
 #: sparsify/cmdline.ml:74
+#, fuzzy
 msgid "Add qemu-img options"
-msgstr ""
+msgstr "Добавить параметры qemu-img"
 
 #: builder/list_entries.ml:83
+#, fuzzy
 msgid "Aliases:"
-msgstr ""
+msgstr "Псевдонимы:"
 
 #: resize/resize.ml:197
+#, fuzzy
 msgid "Align first partition (default: auto)"
-msgstr ""
+msgstr "Выровнять первый раздел (по умолчанию: auto)"
 
 #: builder/repository_main.ml:216
+#, fuzzy
 msgid "Allowed characters are letters, digits, - _ and ."
-msgstr ""
+msgstr "Допустимые символы: буквы, цифры, -, _ и ."
 
 #: builder/repository_main.ml:282
+#, fuzzy
 msgid "Already existing image with id %s and architecture %s"
-msgstr ""
+msgstr "Уже существует образ с id %s и архитектурой %s"
 
 #: common/mlcustomize/customize_cmdline.ml:175
 msgid "Append line(s) to the file"
-msgstr ""
+msgstr "Добавить строки в файл"
 
 #: common/mlcustomize/customize_run.ml:137
 msgid "Appending line to %s"
-msgstr ""
+msgstr "Добавление строки в %s"
 
 #: builder/list_entries.ml:77
+#, fuzzy
 msgid "Architecture:"
-msgstr ""
+msgstr "Архитектура:"
 
 #: builder/repository_main.ml:224
+#, fuzzy
 msgid "Architecture: "
-msgstr ""
+msgstr "Архитектура: "
 
 #: builder/repository_main.ml:55
+#, fuzzy
 msgid "Ask the user about missing data"
-msgstr ""
+msgstr "Спрашивать пользователя о недостающих данных"
 
 #: customize/customize_main.ml:78 builder/cmdline.ml:128
+#, fuzzy
 msgid "Attach data disk/ISO during install"
-msgstr ""
+msgstr "Подключить диск данных/ISO во время установки"
 
 #: sparsify/copying.ml:348
+#, fuzzy
 msgid ""
 "Before deleting the old disk, carefully check that the target disk boots and "
 "works correctly."
 msgstr ""
+"Перед удалением старого диска тщательно проверьте, что целевой диск "
+"загружается и работает корректно."
 
 #: resize/resize.ml:216
+#, fuzzy
 msgid "Behaviour on expand unknown filesystems (default: warn)"
 msgstr ""
+"Поведение при расширении неизвестных файловых систем (по умолчанию: warn)"
 
 #: sysprep/sysprep_operation_user_account.ml:105
+#, fuzzy
 msgid ""
 "By default remove all the user accounts and their home directories.\n"
 "The \"root\" account is not removed.\n"
@@ -605,458 +768,565 @@ msgid ""
 "See the I<--remove-user-accounts> parameter for a way to specify\n"
 "how to remove only some users, or to not remove some others."
 msgstr ""
+"По умолчанию удаляются все учётные записи пользователей и их домашние "
+"каталоги.\n"
+"Учётная запись \"root\" не удаляется.\n"
+"\n"
+"См. параметр I<--remove-user-accounts> для указания способа удаления\n"
+"только некоторых пользователей или сохранения некоторых."
 
 #: sysprep/sysprep_operation_user_account.ml:83
+#, fuzzy
 msgid "Cannot get the home directory for %s"
-msgstr ""
+msgstr "Не удаётся получить домашний каталог для %s"
 
 #: sysprep/sysprep_operation_lvm_uuids.ml:84
+#, fuzzy
 msgid "Change LVM2 PV and VG UUIDs"
-msgstr ""
+msgstr "Изменить UUID физических томов и групп томов LVM2"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:48
+#, fuzzy
 msgid "Change filesystem UUIDs"
-msgstr ""
+msgstr "Изменить UUID файловых систем"
 
 #: common/mlcustomize/customize_cmdline.ml:197
 msgid "Change the owner user and group ID of a file or directory"
-msgstr ""
+msgstr "Изменить владельца и идентификатор группы файла или каталога"
 
 #: common/mlcustomize/customize_cmdline.ml:186
 msgid "Change the permissions of a file"
-msgstr ""
+msgstr "Изменить права доступа к файлу"
 
 #: common/mlcustomize/customize_run.ml:155
 msgid "Changing owner of %s to %d:%d"
-msgstr ""
+msgstr "Изменение владельца %s на %d:%d"
 
 #: common/mlcustomize/customize_run.ml:141
 msgid "Changing permissions of %s to %s"
-msgstr ""
+msgstr "Изменение прав доступа %s на %s"
 
 #: builder/cmdline.ml:136
+#, fuzzy
 msgid "Check digital signatures"
-msgstr ""
+msgstr "Проверять цифровые подписи"
 
 #: sparsify/cmdline.ml:68
+#, fuzzy
 msgid "Check there is enough space in $TMPDIR"
-msgstr ""
+msgstr "Проверить наличие достаточного пространства в $TMPDIR"
 
 #: builder/repository_main.ml:202
+#, fuzzy
 msgid ""
 "Choose one from the list below:\n"
 " %s\n"
 msgstr ""
+"Выберите один из списка ниже:\n"
+" %s\n"
 
 #: sparsify/in_place.ml:127 sparsify/copying.ml:279
+#, fuzzy
 msgid "Clearing Linux swap on %s"
-msgstr ""
+msgstr "Очистка раздела подкачки Linux на %s"
 
 #: common/mlcustomize/customize_cmdline.ml:488
 msgid "Compatibility option doing nothing"
-msgstr ""
+msgstr "Параметр совместимости, ничего не делающий"
 
 #: sparsify/cmdline.ml:69
+#, fuzzy
 msgid "Compressed output format"
-msgstr ""
+msgstr "Сжатый формат вывода"
 
 #: builder/builder.ml:709
+#, fuzzy
 msgid "Converting %s to %s"
-msgstr ""
+msgstr "Преобразование %s в %s"
 
 #: builder/builder.ml:708
+#, fuzzy
 msgid "Converting to %s"
-msgstr ""
+msgstr "Преобразование в %s"
 
 #: common/mlcustomize/customize_cmdline.ml:219
 msgid "Copy files in disk image"
-msgstr ""
+msgstr "Копировать файлы в образе диска"
 
 #: common/mlcustomize/customize_cmdline.ml:397
 msgid "Copy local files or directories from a tarball into image"
-msgstr ""
+msgstr "Копировать локальные файлы или каталоги из tar-архива в образ"
 
 #: common/mlcustomize/customize_cmdline.ml:230
 msgid "Copy local files or directories into image"
-msgstr ""
+msgstr "Копировать локальные файлы или каталоги в образ"
 
 #: builder/builder.ml:642
+#, fuzzy
 msgid "Copying"
-msgstr ""
+msgstr "Копирование"
 
 #: resize/resize.ml:1304
+#, fuzzy
 msgid "Copying %s"
-msgstr ""
+msgstr "Копирование %s"
 
 #: common/mlcustomize/customize_run.ml:168
 msgid "Copying (in image): %s to %s"
-msgstr ""
+msgstr "Копирование (в образе): %s в %s"
 
 #: common/mlcustomize/customize_run.ml:172
 msgid "Copying: %s to %s"
-msgstr ""
+msgstr "Копирование: %s в %s"
 
 #: common/mlcustomize/customize_cmdline.ml:322
 msgid "Create a directory"
-msgstr ""
+msgstr "Создать каталог"
 
 #: sparsify/copying.ml:152
+#, fuzzy
 msgid "Create overlay device %s to protect source disk"
-msgstr ""
+msgstr "Создание устройства-оверлея %s для защиты исходного диска"
 
 #: sparsify/copying.ml:150
+#, fuzzy
 msgid "Create overlay file in %s to protect source disk"
-msgstr ""
+msgstr "Создание файла-оверлея в %s для защиты исходного диска"
 
 #: common/mlcustomize/customize_cmdline.ml:316
 msgid "Create symbolic links"
-msgstr ""
+msgstr "Создать символические ссылки"
 
 #: builder/repository_main.ml:566
+#, fuzzy
 msgid "Creating index backup copy"
-msgstr ""
+msgstr "Создание резервной копии индекса"
 
 #: sysprep/sysprep_operation_bash_history.ml:42
+#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the bash history removed."
 msgstr ""
+"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
+"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
+"история bash не будет удалена."
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:42
+#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the ssh files removed."
 msgstr ""
+"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
+"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
+"файлы ssh не будут удалены."
 
 #: sysprep/sysprep_operation_zsh_history.ml:42
+#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the zsh history removed."
 msgstr ""
+"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
+"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
+"история zsh не будет удалена."
 
 #: sysprep/sysprep_operation_customize.ml:43
+#, fuzzy
 msgid "Customize the guest"
-msgstr ""
+msgstr "Настройка гостевой системы"
 
 #: sysprep/sysprep_operation_customize.ml:44
+#, fuzzy
 msgid ""
 "Customize the guest by providing L<virt-customize(1)> options\n"
 "for installing packages, editing files and so on."
 msgstr ""
+"Настройка гостевой системы с помощью параметров L<virt-customize(1)>\n"
+"для установки пакетов, редактирования файлов и т.д."
 
 #: common/mlcustomize/customize_cmdline.ml:321
 msgid "DIR"
-msgstr ""
+msgstr "КАТАЛОГ"
 
 #: common/mlcustomize/customize_cmdline.ml:236
 msgid "Delete a file or directory"
-msgstr ""
+msgstr "Удалить файл или каталог"
 
 #: resize/resize.ml:201
+#, fuzzy
 msgid "Delete partition"
-msgstr ""
+msgstr "Удалить раздел"
 
 #: builder/cmdline.ml:141
+#, fuzzy
 msgid "Delete the template cache"
-msgstr ""
+msgstr "Удалить кэш шаблонов"
 
 #: common/mlcustomize/customize_run.ml:176 builder/builder.ml:138
 msgid "Deleting: %s"
-msgstr ""
+msgstr "Удаление: %s"
 
 #: customize/customize_main.ml:87 builder/cmdline.ml:156
+#, fuzzy
 msgid "Disable appliance network"
-msgstr ""
+msgstr "Отключить сеть устройства"
 
 #: sysprep/main.ml:137
+#, fuzzy
 msgid "Disable appliance network (default)"
-msgstr ""
+msgstr "Отключить сеть устройства (по умолчанию)"
 
 #: builder/cmdline.ml:138
+#, fuzzy
 msgid "Disable digital signatures"
-msgstr ""
+msgstr "Отключить цифровые подписи"
 
 #: builder/cmdline.ml:132
+#, fuzzy
 msgid "Disable template cache"
-msgstr ""
+msgstr "Отключить кэш шаблонов"
 
 #: sparsify/in_place.ml:163
+#, fuzzy
 msgid "Discard space in volgroup %s"
-msgstr ""
+msgstr "Освобождение пространства в группе томов %s"
 
 #: common/mltools/getopt.ml:225
 msgid "Display brief help"
-msgstr ""
+msgstr "Показать краткую справку"
 
 #: builder/cmdline.ml:157
+#, fuzzy
 msgid "Display installation notes"
-msgstr ""
+msgstr "Показать примечания по установке"
 
 #: builder/repository_main.ml:290
+#, fuzzy
 msgid "Display name: "
-msgstr ""
+msgstr "Отображаемое имя: "
 
 #: common/mltools/tools_utils.ml:388
 msgid "Display version and exit"
-msgstr ""
+msgstr "Показать версию и выйти"
 
 #: builder/cmdline.ml:164
+#, fuzzy
 msgid "Do not fsync output file on exit"
-msgstr ""
+msgstr "Не выполнять fsync для выходного файла при выходе"
 
 #: common/mlcustomize/customize_cmdline.ml:482
 msgid "Do not relabel files with correct SELinux labels"
-msgstr ""
+msgstr "Не изменять метки SELinux файлов"
 
 #: builder/cmdline.ml:166
+#, fuzzy
 msgid "Do not warn if writing to a partition"
-msgstr ""
+msgstr "Не предупреждать при записи в раздел"
 
 #: builder/repository_main.ml:56
+#, fuzzy
 msgid "Don’t compress the new images in the index"
-msgstr ""
+msgstr "Не сжимать новые образы в индексе"
 
 #: resize/resize.ml:199
+#, fuzzy
 msgid "Don’t copy boot loader"
-msgstr ""
+msgstr "Не копировать загрузчик"
 
 #: resize/resize.ml:204
+#, fuzzy
 msgid "Don’t create extra partition"
-msgstr ""
+msgstr "Не создавать дополнительный раздел"
 
 #: builder/cmdline.ml:143
+#, fuzzy
 msgid "Don’t delete output file on failure"
-msgstr ""
+msgstr "Не удалять выходной файл при сбое"
 
 #: resize/resize.ml:203
+#, fuzzy
 msgid "Don’t expand content"
-msgstr ""
+msgstr "Не расширять содержимое"
 
 #: resize/resize.ml:208
+#, fuzzy
 msgid "Don’t perform changes"
-msgstr ""
+msgstr "Не выполнять изменения"
 
 #: common/mltools/tools_utils.ml:392
 msgid "Don’t print progress messages"
-msgstr ""
+msgstr "Не выводить сообщения о ходе выполнения"
 
 #: common/mltools/tools_utils.ml:423
 msgid "Don’t turn off echo for passphrases"
-msgstr ""
+msgstr "Не отключать эхо для парольных фраз"
 
 #: builder/cmdline.ml:134
+#, fuzzy
 msgid "Download all templates to the cache"
-msgstr ""
+msgstr "Загрузить все шаблоны в кэш"
 
 #: builder/list_entries.ml:80
+#, fuzzy
 msgid "Download size:"
-msgstr ""
+msgstr "Размер загрузки:"
 
 #: builder/builder.ml:314 builder/builder.ml:262
+#, fuzzy
 msgid "Downloading: %s"
-msgstr ""
+msgstr "Загрузка: %s"
 
 #: common/mlcustomize/customize_cmdline.ml:247
 msgid "Edit file using Perl expression"
-msgstr ""
+msgstr "Редактировать файл с помощью Perl-выражения"
 
 #: common/mlcustomize/customize_run.ml:180
 msgid "Editing: %s"
-msgstr ""
+msgstr "Редактирование: %s"
 
 #: sysprep/main.ml:136
+#, fuzzy
 msgid "Enable appliance network"
-msgstr ""
+msgstr "Включить сеть устройства"
 
 #: customize/customize_main.ml:86 builder/cmdline.ml:155
+#, fuzzy
 msgid "Enable appliance network (default)"
-msgstr ""
+msgstr "Включить сеть устройства (по умолчанию)"
 
 #: resize/resize.ml:200
+#, fuzzy
 msgid "Enable debugging messages"
-msgstr ""
+msgstr "Включить отладочные сообщения"
 
 #: common/mltools/tools_utils.ml:389
 msgid "Enable libguestfs debugging messages"
-msgstr ""
+msgstr "Включить отладочные сообщения libguestfs"
 
 #: sysprep/main.ml:132
+#, fuzzy
 msgid "Enable specific operations"
-msgstr ""
+msgstr "Включить определённые операции"
 
 #: common/mltools/tools_utils.ml:390
 msgid "Enable tracing of libguestfs calls"
-msgstr ""
+msgstr "Включить трассировку вызовов libguestfs"
 
 #: sysprep/main.ml:138
+#, fuzzy
 msgid "Enable/disable specific operations"
-msgstr ""
+msgstr "Включить/отключить определённые операции"
 
 #: sparsify/copying.ml:180
+#, fuzzy
 msgid "Examine source disk"
-msgstr ""
+msgstr "Проверка исходного диска"
 
 #: resize/resize.ml:385
+#, fuzzy
 msgid "Examining %s"
-msgstr ""
+msgstr "Проверка %s"
 
 #: sysprep/main.ml:213 customize/customize_main.ml:159
+#, fuzzy
 msgid "Examining the guest ..."
-msgstr ""
+msgstr "Проверка гостевой системы ..."
 
 #: resize/resize.ml:207
+#, fuzzy
 msgid "Expand logical volume"
-msgstr ""
+msgstr "Расширить логический том"
 
 #: resize/resize.ml:202
+#, fuzzy
 msgid "Expand partition"
-msgstr ""
+msgstr "Расширить раздел"
 
 #: builder/repository_main.ml:318 builder/repository_main.ml:311
+#, fuzzy
 msgid "Expandable partition: "
-msgstr ""
+msgstr "Расширяемый раздел: "
 
 #: builder/repository_main.ml:337 builder/repository_main.ml:330
+#, fuzzy
 msgid "Expandable volume: "
-msgstr ""
+msgstr "Расширяемый том: "
 
 #: resize/resize.ml:1472
+#, fuzzy
 msgid "Expanding %s using the ‘%s’ method"
-msgstr ""
+msgstr "Расширение %s с использованием метода «%s»"
 
 #: resize/resize.ml:1453
+#, fuzzy
 msgid "Expanding %s%s using the ‘%s’ method"
-msgstr ""
+msgstr "Расширение %s%s с использованием метода «%s»"
 
 #: builder/repository_main.ml:236
+#, fuzzy
 msgid "Extracting data from the image..."
-msgstr ""
+msgstr "Извлечение данных из образа..."
 
 #. common/mlcustomize/customize_cmdline.ml:408
 #. common/mlcustomize/customize_cmdline.ml:373
 #: common/mlcustomize/customize_cmdline.ml:414
 msgid "FILE"
-msgstr ""
+msgstr "ФАЙЛ"
 
 #: common/mlcustomize/customize_cmdline.ml:455
 msgid "FILE:CONTENT"
-msgstr ""
+msgstr "ФАЙЛ:СОДЕРЖИМОЕ"
 
 #: common/mlcustomize/customize_cmdline.ml:444
 msgid "FILE:DEST"
-msgstr ""
+msgstr "ФАЙЛ:НАЗНАЧЕНИЕ"
 
 #: common/mlcustomize/customize_cmdline.ml:242
 msgid "FILE:EXPR"
-msgstr ""
+msgstr "ФАЙЛ:ВЫРАЖЕНИЕ"
 
 #: common/mlcustomize/customize_cmdline.ml:170
 msgid "FILE:LINE"
-msgstr ""
+msgstr "ФАЙЛ:СТРОКА"
 
 #: common/mlcustomize/customize_cmdline.ml:203
 msgid "FILENAME"
-msgstr ""
+msgstr "ИМЯ_ФАЙЛА"
 
 #: resize/resize.ml:1094
+#, fuzzy
 msgid ""
 "Failed to initialize the partition table on the target disk.  You need to "
 "wipe or recreate the target disk and then run virt-resize again.\n"
 "\n"
 "The underlying error was: %s"
 msgstr ""
+"Не удалось инициализировать таблицу разделов на целевом диске. Вам нужно "
+"очистить или пересоздать целевой диск, а затем запустить virt-resize снова.\n"
+"\n"
+"Исходная ошибка: %s"
 
 #: sparsify/copying.ml:264
+#, fuzzy
 msgid "Fill free space in %s with zero"
-msgstr ""
+msgstr "Заполнение свободного пространства в %s нулями"
 
 #: sparsify/copying.ml:312
+#, fuzzy
 msgid "Fill free space in volgroup %s with zero"
-msgstr ""
+msgstr "Заполнение свободного пространства в группе томов %s нулями"
 
 #: builder/cmdline.ml:145
+#, fuzzy
 msgid "Fingerprint of valid signing key"
-msgstr ""
+msgstr "Отпечаток допустимого ключа подписи"
 
 #: builder/list_entries.ml:64
+#, fuzzy
 msgid "Fingerprint: %s\n"
-msgstr ""
+msgstr "Отпечаток: %s\n"
 
 #: customize/customize_main.ml:206 builder/builder.ml:796
 msgid "Finishing off"
-msgstr ""
+msgstr "Завершение"
 
 #: resize/resize.ml:1351
+#, fuzzy
 msgid "Fixing first NTFS partition boot record"
-msgstr ""
+msgstr "Исправление загрузочной записи первого раздела NTFS"
 
 #: sysprep/sysprep_operation_flag_reconfiguration.ml:35
+#, fuzzy
 msgid "Flag the system for reconfiguration"
-msgstr ""
+msgstr "Пометить систему для перенастройки"
 
 #. sysprep/sysprep_operation_net_hostname.ml:56
 #: sysprep/sysprep_operation_net_hwaddr.ml:53
+#, fuzzy
 msgid ""
 "For Fedora and Red Hat Enterprise Linux,\n"
 "this is removed from C<ifcfg-*> files."
 msgstr ""
+"Для Fedora и Red Hat Enterprise Linux\n"
+"это удаляется из файлов C<ifcfg-*>."
 
 #: sysprep/sysprep_operation_flag_reconfiguration.ml:36
+#, fuzzy
 msgid ""
 "For Linux guests, this touches C</.unconfigured>, which causes\n"
 "the first boot to interactively query the user for settings such\n"
 "as the root password and timezone."
 msgstr ""
+"Для гостевых систем Linux создаётся файл C</.unconfigured>, который\n"
+"вызывает интерактивный запрос к пользователю при первой загрузке\n"
+"для таких настроек, как пароль root и часовой пояс."
 
 #: resize/resize.ml:209
+#, fuzzy
 msgid "Force ntfsresize"
-msgstr ""
+msgstr "Принудительное выполнение ntfsresize"
 
 #: resize/resize.ml:212
+#, fuzzy
 msgid "Forcefully resize partition"
-msgstr ""
+msgstr "Принудительное изменение размера раздела"
 
 #. drivers/drivers.ml:54
 #: sparsify/cmdline.ml:71 resize/resize.ml:205 get-kernel/get_kernel.ml:61
+#, fuzzy
 msgid "Format of input disk"
-msgstr ""
+msgstr "Формат входного диска"
 
 #: resize/resize.ml:210
+#, fuzzy
 msgid "Format of output disk"
-msgstr ""
+msgstr "Формат выходного диска"
 
 #: sparsify/cmdline.ml:70
+#, fuzzy
 msgid "Format of output disk (default: same as input)"
-msgstr ""
+msgstr "Формат выходного диска (по умолчанию: такой же, как входной)"
 
 #: builder/repository_main.ml:501
+#, fuzzy
 msgid "Found new images: %s"
-msgstr ""
+msgstr "Найдены новые образы: %s"
 
 #: builder/builder.ml:786
+#, fuzzy
 msgid "Free space"
-msgstr ""
+msgstr "Свободное место"
 
 #: builder/list_entries.ml:76
+#, fuzzy
 msgid "Full name:"
-msgstr ""
+msgstr "Полное имя:"
 
 #: builder/sigchecker.ml:114
+#, fuzzy
 msgid ""
 "GPG failure: could not run GPG the first time\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
+"Ошибка GPG: не удалось запустить GPG в первый раз\n"
+"Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: builder/sigchecker.ml:66
+#, fuzzy
 msgid ""
 "GPG failure: could not trust the imported key\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
+"Ошибка GPG: не удалось доверять импортированному ключу\n"
+"Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: builder/sigchecker.ml:215
+#, fuzzy
 msgid ""
 "GPG failure: could not verify digital signature of file\n"
 "Try:\n"
@@ -1064,22 +1334,31 @@ msgid ""
 "- Delete the cache: virt-builder --delete-cache\n"
 "- Check no one has tampered with the website or your network!"
 msgstr ""
+"Ошибка GPG: не удалось проверить цифровую подпись файла\n"
+"Попробуйте:\n"
+" - Использовать параметр «-v» и просмотреть предыдущие сообщения об "
+"ошибках.\n"
+" - Удалить кэш: virt-builder --delete-cache\n"
+" - Проверить, не было ли вмешательства в веб-сайт или вашу сеть!"
 
 #: builder/cmdline.ml:148
+#, fuzzy
 msgid "Get kernel from image"
-msgstr ""
+msgstr "Получить ядро из образа"
 
 #: common/mlcustomize/customize_cmdline.ml:275
 msgid "HOSTNAME"
-msgstr ""
+msgstr "ИМЯ_ХОСТА"
 
 #: builder/repository_main.ml:54
+#, fuzzy
 msgid "ID of the GPG key to sign the repo with"
-msgstr ""
+msgstr "ID ключа GPG для подписи репозитория"
 
 #: builder/repository_main.ml:214
+#, fuzzy
 msgid "Identifier: "
-msgstr ""
+msgstr "Идентификатор: "
 
 #: common/mltools/tools_utils.ml:177
 msgid ""
@@ -1088,154 +1367,190 @@ msgid ""
 "\n"
 "  %s -v -x [...]"
 msgstr ""
+"При сообщении об ошибках запустите %s с включённой отладкой и приложите "
+"полный вывод:\n"
+"\n"
+"  %s -v -x [...]"
 
 #: sparsify/cmdline.ml:72
+#, fuzzy
 msgid "Ignore filesystem"
-msgstr ""
+msgstr "Игнорировать файловую систему"
 
 #: resize/resize.ml:206
+#, fuzzy
 msgid "Ignore partition"
-msgstr ""
+msgstr "Игнорировать раздел"
 
 #: sysprep/sysprep_operation_ca_certificates.ml:56
+#, fuzzy
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
+"В случае удаления какого-либо сертификата хранилище CA системы обновляется."
 
 #: common/mlcustomize/customize_cmdline.ml:386
 msgid "Inject a public key into the guest"
-msgstr ""
+msgstr "Внедрить открытый ключ в гостевую систему"
 
 #: common/mlcustomize/customize_cmdline.ml:282
 msgid "Inject the Balloon Server into a Windows guest"
-msgstr ""
+msgstr "Внедрить Balloon Server в гостевую систему Windows"
 
 #: common/mlcustomize/customize_cmdline.ml:288
 msgid "Inject the QEMU Guest Agent into a Windows guest"
-msgstr ""
+msgstr "Внедрить QEMU Guest Agent в гостевую систему Windows"
 
 #: common/mlcustomize/customize_cmdline.ml:294
 msgid "Inject virtio-win drivers into a Windows guest"
-msgstr ""
+msgstr "Внедрить драйверы virtio-win в гостевую систему Windows"
 
 #: common/mlcustomize/customize_run.ml:191
 msgid "Installing firstboot command: %s"
-msgstr ""
+msgstr "Установка команды firstboot: %s"
 
 #: common/mlcustomize/customize_run.ml:195
 msgid "Installing firstboot packages: %s"
-msgstr ""
+msgstr "Установка пакетов firstboot: %s"
 
 #: common/mlcustomize/customize_run.ml:202
 msgid "Installing firstboot script: %s"
-msgstr ""
+msgstr "Установка скрипта firstboot: %s"
 
 #: common/mlcustomize/customize_run.ml:248
 msgid "Installing packages: %s"
-msgstr ""
+msgstr "Установка пакетов: %s"
 
 #: builder/list_entries.ml:66
+#, fuzzy
 msgid "Key: %s\n"
-msgstr ""
+msgstr "Ключ: %s\n"
 
 #: common/mlcustomize/customize_cmdline.ml:225
 msgid "LOCALPATH:REMOTEDIR"
-msgstr ""
+msgstr "ЛОКАЛЬНЫЙ_ПУТЬ:УДАЛЁННЫЙ_КАТАЛОГ"
 
 #: common/mlcustomize/customize_run.ml:255
 msgid "Linking: %s -> %s"
-msgstr ""
+msgstr "Создание ссылки: %s -> %s"
 
 #: builder/cmdline.ml:150
+#, fuzzy
 msgid "List available templates"
-msgstr ""
+msgstr "Список доступных шаблонов"
 
 #: sysprep/main.ml:134
+#, fuzzy
 msgid "List supported operations"
-msgstr ""
+msgstr "Список поддерживаемых операций"
 
 #. common/mlcustomize/customize_cmdline.ml:287
 #. common/mlcustomize/customize_cmdline.ml:281
 #: common/mlcustomize/customize_cmdline.ml:293
 msgid "METHOD"
-msgstr ""
+msgstr "МЕТОД"
 
 #: common/mltools/tools_utils.ml:429
 msgid "Make output machine readable"
-msgstr ""
+msgstr "Сделать вывод машиночитаемым"
 
 #: common/mlcustomize/customize_run.ml:260
 msgid "Making directory: %s"
-msgstr ""
+msgstr "Создание каталога: %s"
 
 #: builder/list_entries.ml:78
+#, fuzzy
 msgid "Minimum/default size:"
-msgstr ""
+msgstr "Минимальный/размер по умолчанию:"
 
 #: sparsify/cmdline.ml:73
+#, fuzzy
 msgid "Modify the disk image in-place"
-msgstr ""
+msgstr "Изменить образ диска на месте"
 
 #: sysprep/sysprep_operation_script.ml:138
+#, fuzzy
 msgid "Mount point on host"
-msgstr ""
+msgstr "Точка монтирования на хосте"
 
 #: common/mlcustomize/customize_cmdline.ml:333
 msgid "Move files in disk image"
-msgstr ""
+msgstr "Переместить файлы в образе диска"
 
 #: builder/repository_main.ml:575
+#, fuzzy
 msgid "Moving files to final destination"
-msgstr ""
+msgstr "Перемещение файлов в конечное расположение"
 
 #: common/mlcustomize/customize_run.ml:264
 msgid "Moving: %s -> %s"
-msgstr ""
+msgstr "Перемещение: %s -> %s"
 
 #: builder/repository_main.ml:497
+#, fuzzy
 msgid "No new image found"
-msgstr ""
+msgstr "Новых образов не найдено"
 
 #: sysprep/sysprep_operation.ml:196
+#, fuzzy
 msgid "Notes on %s"
-msgstr ""
+msgstr "Примечания по %s"
 
 #: builder/list_entries.ml:89
+#, fuzzy
 msgid ""
 "Notes:\n"
 "\n"
 "%s\n"
 msgstr ""
+"Примечания:\n"
+"\n"
+"%s\n"
 
 #: sysprep/sysprep_operation_net_nmconn.ml:38
+#, fuzzy
 msgid "On Fedora and Red Hat Enterprise Linux, remove the C<"
-msgstr ""
+msgstr "В Fedora и Red Hat Enterprise Linux удалите C<"
 
 #: sysprep/sysprep_operation_lvm_uuids.ml:85
+#, fuzzy
 msgid ""
 "On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
 "(VGs),\n"
 "new random UUIDs are generated and assigned to those PVs and VGs."
 msgstr ""
+"В гостевых системах Linux, имеющих физические тома LVM2 (PV) или группы "
+"томов (VG),\n"
+"генерируются новые случайные UUID и назначаются этим PV и VG."
 
 #: sysprep/sysprep_operation_lvm_system_devices.ml:36
+#, fuzzy
 msgid ""
 "On Linux guests, LVM2's scanning for physical volumes (PVs) may be "
 "restricted to those block devices whose WWIDs are listed in C<"
 msgstr ""
+"В гостевых системах Linux сканирование LVM2 для поиска физических томов (PV) "
+"может быть ограничено теми блочными устройствами, чьи WWID перечислены в C<"
 
 #. sysprep/sysprep_operation_logfiles.ml:149
 #: sysprep/sysprep_operation_passwd_backups.ml:48
+#, fuzzy
 msgid ""
 "On Linux the following files are removed:\n"
 "\n"
 "%s"
 msgstr ""
+"В Linux удаляются следующие файлы:\n"
+"\n"
+"%s"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:49
+#, fuzzy
 msgid ""
 "On guests and filesystem types where this is supported,\n"
 "new random UUIDs are generated and assigned to filesystems."
 msgstr ""
+"В гостевых системах и типах файловых систем, где это поддерживается,\n"
+"генерируются новые случайные UUID и назначаются файловым системам."
 
 #: common/mlcustomize/firstboot.ml:268
 msgid ""
@@ -1243,135 +1558,163 @@ msgid ""
 "required in order to install Windows firstboot scripts.  You can get one by "
 "building rhsrvany (https://github.com/rwmjones/rhsrvany)"
 msgstr ""
+"Один из файлов rhsrvany.exe или pvvxsvc.exe отсутствует в %s. Один из них "
+"требуется для установки скриптов firstboot в Windows. Вы можете получить "
+"его, собрав rhsrvany (https://github.com/rwmjones/rhsrvany)"
 
 #: builder/builder.ml:721
+#, fuzzy
 msgid "Opening the new disk"
-msgstr ""
+msgstr "Открытие нового диска"
 
 #: get-kernel/get_kernel.ml:62
+#, fuzzy
 msgid "Output directory"
-msgstr ""
+msgstr "Выходной каталог"
 
 #: builder/builder.ml:781
+#, fuzzy
 msgid "Output file"
-msgstr ""
+msgstr "Выходной файл"
 
 #: builder/builder.ml:783
+#, fuzzy
 msgid "Output format"
-msgstr ""
+msgstr "Формат вывода"
 
 #: builder/cmdline.ml:146
+#, fuzzy
 msgid "Output format (default: raw)"
-msgstr ""
+msgstr "Формат вывода (по умолчанию: raw)"
 
 #: builder/builder.ml:782
+#, fuzzy
 msgid "Output size"
-msgstr ""
+msgstr "Размер вывода"
 
 #. common/mlcustomize/customize_cmdline.ml:235
 #: common/mlcustomize/customize_cmdline.ml:420
 msgid "PATH"
-msgstr ""
+msgstr "ПУТЬ"
 
 #: common/mlcustomize/customize_cmdline.ml:181
 msgid "PERMISSIONS:FILE"
-msgstr ""
+msgstr "ПРАВА:ФАЙЛ"
 
 #. common/mlcustomize/customize_cmdline.ml:300
 #. common/mlcustomize/customize_cmdline.ml:265
 #: common/mlcustomize/customize_cmdline.ml:427
 msgid "PKG,PKG.."
-msgstr ""
+msgstr "ПАКЕТ,ПАКЕТ.."
 
 #: sysprep/sysprep_operation.ml:162
+#, fuzzy
 msgid "POD for %s must not end with newline"
-msgstr ""
+msgstr "POD для %s не должен заканчиваться символом новой строки"
 
 #: sysprep/sysprep_operation.ml:171
+#, fuzzy
 msgid "POD notes for %s must not end with newline"
-msgstr ""
+msgstr "Примечания POD для %s не должны заканчиваться символом новой строки"
 
 #: sysprep/main.ml:129 customize/customize_main.ml:83
+#, fuzzy
 msgid "Perform a dry run"
-msgstr ""
+msgstr "Выполнить пробный запуск"
 
 #: sysprep/sysprep_operation.ml:319 sysprep/sysprep_operation.ml:298
+#, fuzzy
 msgid "Performing %S ..."
-msgstr ""
+msgstr "Выполнение %S ..."
 
 #: builder/builder.ml:577
+#, fuzzy
 msgid "Planning how to build this image"
-msgstr ""
+msgstr "Планирование построения этого образа"
 
 #: get-kernel/get_kernel.ml:64
+#, fuzzy
 msgid "Prefix for files"
-msgstr ""
+msgstr "Префикс для файлов"
 
 #: builder/repository_main.ml:186
+#, fuzzy
 msgid "Preparing %s"
-msgstr ""
+msgstr "Подготовка %s"
 
 #: builder/cmdline.ml:160
+#, fuzzy
 msgid "Print info about template cache"
-msgstr ""
+msgstr "Вывести информацию о кэше шаблонов"
 
 #: common/mlcustomize/customize_cmdline.ml:208
 msgid "Read customize commands from file"
-msgstr ""
+msgstr "Читать команды настройки из файла"
 
 #: common/mltools/tools_utils.ml:424
 msgid "Read passphrases from stdin"
-msgstr ""
+msgstr "Читать парольные фразы из stdin"
 
 #: common/mlcustomize/customize_cmdline.ml:421
 msgid "Recursively truncate all files in directory"
-msgstr ""
+msgstr "Рекурсивно обрезать все файлы в каталоге"
 
 #: common/mlcustomize/customize_run.ml:298
 msgid "Recursively truncating: %s"
-msgstr ""
+msgstr "Рекурсивное обрезание: %s"
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:38
+#, fuzzy
 msgid "Remove \".ssh\" directories in the guest"
-msgstr ""
+msgstr "Удалить каталоги \".ssh\" в гостевой системе"
 
 #: sysprep/sysprep_operation_passwd_backups.ml:46
+#, fuzzy
 msgid "Remove /etc/passwd- and similar backup files"
-msgstr ""
+msgstr "Удалить /etc/passwd- и подобные резервные файлы"
 
 #: sysprep/sysprep_operation_ca_certificates.ml:55
+#, fuzzy
 msgid "Remove CA certificates in the guest"
-msgstr ""
+msgstr "Удалить сертификаты CA в гостевой системе"
 
 #: sysprep/sysprep_operation_dhcp_client_state.ml:36
+#, fuzzy
 msgid "Remove DHCP client leases"
-msgstr ""
+msgstr "Удалить аренды DHCP-клиента"
 
 #: sysprep/sysprep_operation_dhcp_server_state.ml:31
+#, fuzzy
 msgid "Remove DHCP server leases"
-msgstr ""
+msgstr "Удалить аренды DHCP-сервера"
 
 #: sysprep/sysprep_operation_dovecot_data.ml:37
+#, fuzzy
 msgid "Remove Dovecot (mail server) data"
-msgstr ""
+msgstr "Удалить данные Dovecot (почтового сервера)"
 
 #: sysprep/sysprep_operation_net_hostname.ml:54
+#, fuzzy
 msgid "Remove HOSTNAME and DHCP_HOSTNAME in network interface configuration"
-msgstr ""
+msgstr "Удалить HOSTNAME и DHCP_HOSTNAME в конфигурации сетевого интерфейса"
 
 #: sysprep/sysprep_operation_net_hwaddr.ml:52
+#, fuzzy
 msgid "Remove HWADDR (hard-coded MAC address) configuration"
-msgstr ""
+msgstr "Удалить конфигурацию HWADDR (жёстко заданного MAC-адреса)"
 
 #: sysprep/sysprep_operation_kerberos_data.ml:43
+#, fuzzy
 msgid "Remove Kerberos data in the guest"
-msgstr ""
+msgstr "Удалить данные Kerberos в гостевой системе"
 
 #: sysprep/sysprep_operation_lvm_system_devices.ml:34
+#, fuzzy
 msgid "Remove LVM2 system.devices file"
-msgstr ""
+msgstr "Удалить файл system.devices LVM2"
 
 #: sysprep/sysprep_operation_ipa_client.ml:58
+#, fuzzy
 msgid ""
 "Remove all the files related to an IPA (Identity, Policy, Audit) system.\n"
 "This effectively unenrolls the guest from an IPA server without interacting\n"
@@ -1379,158 +1722,209 @@ msgid ""
 "\n"
 "This operation does not run C<ipa-client>."
 msgstr ""
+"Удалить все файлы, связанные с системой IPA (Identity, Policy, Audit).\n"
+"Это фактически отключает гостевую систему от сервера IPA без взаимодействия\n"
+"с ним.\n"
+"\n"
+"Эта операция не запускает C<ipa-client>."
 
 #: sysprep/sysprep_operation_blkid_tab.ml:47
+#, fuzzy
 msgid "Remove blkid tab in the guest"
-msgstr ""
+msgstr "Удалить таблицу blkid в гостевой системе"
 
 #: sysprep/sysprep_operation_backup_files.ml:81
+#, fuzzy
 msgid "Remove editor backup files from the guest"
-msgstr ""
+msgstr "Удалить резервные файлы редакторов из гостевой системы"
 
 #: sysprep/sysprep_operation_mail_spool.ml:36
+#, fuzzy
 msgid "Remove email from the local mail spool directory"
-msgstr ""
+msgstr "Удалить электронную почту из каталога локального почтового спула"
 
 #: sysprep/sysprep_operation_rpm_db.ml:38
+#, fuzzy
 msgid "Remove host-specific RPM database files"
-msgstr ""
+msgstr "Удалить специфичные для хоста файлы базы данных RPM"
 
 #: sysprep/sysprep_operation_rpm_db.ml:39
+#, fuzzy
 msgid ""
 "Remove host-specific RPM database files and locks.  RPM will\n"
 "recreate these files automatically if needed."
 msgstr ""
+"Удалить специфичные для хоста файлы базы данных RPM и блокировки. RPM\n"
+"автоматически пересоздаст эти файлы при необходимости."
 
 #: sysprep/sysprep_operation_logfiles.ml:147
+#, fuzzy
 msgid "Remove many log files from the guest"
-msgstr ""
+msgstr "Удалить многие файлы журналов из гостевой системы"
 
 #: sysprep/sysprep_operation_package_manager_cache.ml:46
+#, fuzzy
 msgid "Remove package manager cache"
-msgstr ""
+msgstr "Удалить кэш менеджера пакетов"
 
 #: sysprep/sysprep_operation_net_nmconn.ml:36
+#, fuzzy
 msgid "Remove system-local NetworkManager connection profiles (keyfiles)"
-msgstr ""
+msgstr "Удалить локальные профили подключений NetworkManager (keyfiles)"
 
 #: sysprep/sysprep_operation_tmp_files.ml:50
+#, fuzzy
 msgid "Remove temporary files"
-msgstr ""
+msgstr "Удалить временные файлы"
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:39
+#, fuzzy
 msgid ""
 "Remove the C<.ssh> directory of user \"root\" and any other\n"
 "users who have a C<.ssh> directory in their home directory."
 msgstr ""
+"Удалить каталог C<.ssh> пользователя \"root\" и любых других\n"
+"пользователей, у которых есть каталог C<.ssh> в их домашнем каталоге."
 
 #: sysprep/sysprep_operation_ipa_client.ml:57
+#, fuzzy
 msgid "Remove the IPA files"
-msgstr ""
+msgstr "Удалить файлы IPA"
 
 #: sysprep/sysprep_operation_kerberos_hostkeytab.ml:34
+#, fuzzy
 msgid "Remove the Kerberos host keytab file in the guest"
-msgstr ""
+msgstr "Удалить файл keytab Kerberos хоста в гостевой системе"
 
 #: sysprep/sysprep_operation_pam_data.ml:44
+#, fuzzy
 msgid "Remove the PAM data in the guest"
-msgstr ""
+msgstr "Удалить данные PAM в гостевой системе"
 
 #: sysprep/sysprep_operation_rh_subscription_manager.ml:38
+#, fuzzy
 msgid "Remove the RH subscription manager files"
-msgstr ""
+msgstr "Удалить файлы менеджера подписок RH"
 
 #: sysprep/sysprep_operation_rhn_systemid.ml:38
+#, fuzzy
 msgid "Remove the RHN system ID"
-msgstr ""
+msgstr "Удалить системный ID RHN"
 
 #: sysprep/sysprep_operation_ssh_hostkeys.ml:35
+#, fuzzy
 msgid "Remove the SSH host keys in the guest"
-msgstr ""
+msgstr "Удалить ключи хоста SSH в гостевой системе"
 
 #: sysprep/sysprep_operation_smolt_uuid.ml:39
+#, fuzzy
 msgid "Remove the Smolt hardware UUID"
-msgstr ""
+msgstr "Удалить UUID оборудования Smolt"
 
 #: sysprep/sysprep_operation_abrt_data.ml:38
+#, fuzzy
 msgid ""
 "Remove the automatically generated ABRT crash data in\n"
 "C</var/spool/abrt/>."
 msgstr ""
+"Удалить автоматически создаваемые данные о сбоях ABRT в\n"
+"C</var/spool/abrt/>."
 
 #: sysprep/sysprep_operation_crash_data.ml:40
+#, fuzzy
 msgid "Remove the automatically generated kdump kernel crash data."
-msgstr ""
+msgstr "Удалить автоматически создаваемые данные о сбоях ядра kdump."
 
 #: sysprep/sysprep_operation_bash_history.ml:38
+#, fuzzy
 msgid "Remove the bash history in the guest"
-msgstr ""
+msgstr "Удалить историю bash в гостевой системе"
 
 #: sysprep/sysprep_operation_bash_history.ml:39
+#, fuzzy
 msgid ""
 "Remove the bash history of user \"root\" and any other users\n"
 "who have a C<.bash_history> file in their home directory."
 msgstr ""
+"Удалить историю bash пользователя \"root\" и любых других пользователей,\n"
+"у которых есть файл C<.bash_history> в их домашнем каталоге."
 
 #: sysprep/sysprep_operation_abrt_data.ml:37
+#, fuzzy
 msgid "Remove the crash data generated by ABRT"
-msgstr ""
+msgstr "Удалить данные о сбоях, созданные ABRT"
 
 #: sysprep/sysprep_operation_crash_data.ml:39
+#, fuzzy
 msgid "Remove the crash data generated by kexec-tools"
-msgstr ""
+msgstr "Удалить данные о сбоях, созданные kexec-tools"
 
 #: sysprep/sysprep_operation_puppet_data_log.ml:44
+#, fuzzy
 msgid "Remove the data and log files of puppet"
-msgstr ""
+msgstr "Удалить данные и файлы журналов puppet"
 
 #: sysprep/sysprep_operation_samba_db_log.ml:45
+#, fuzzy
 msgid "Remove the database and log files of Samba"
-msgstr ""
+msgstr "Удалить базу данных и файлы журналов Samba"
 
 #: sysprep/sysprep_operation_sssd_db_log.ml:43
+#, fuzzy
 msgid "Remove the database and log files of sssd"
-msgstr ""
+msgstr "Удалить базу данных и файлы журналов sssd"
 
 #: sysprep/sysprep_operation_firewall_rules.ml:44
+#, fuzzy
 msgid "Remove the firewall rules"
-msgstr ""
+msgstr "Удалить правила брандмауэра"
 
 #: sysprep/sysprep_operation_machine_id.ml:37
+#, fuzzy
 msgid "Remove the local machine ID"
-msgstr ""
+msgstr "Удалить локальный идентификатор машины"
 
 #: sysprep/sysprep_operation_pacct_log.ml:57
+#, fuzzy
 msgid "Remove the process accounting log files"
-msgstr ""
+msgstr "Удалить файлы журналов учёта процессов"
 
 #: sysprep/sysprep_operation_user_account.ml:104
+#, fuzzy
 msgid "Remove the user accounts in the guest"
-msgstr ""
+msgstr "Удалить учётные записи пользователей в гостевой системе"
 
 #: sysprep/sysprep_operation_utmp.ml:35
+#, fuzzy
 msgid "Remove the utmp file"
-msgstr ""
+msgstr "Удалить файл utmp"
 
 #: sysprep/sysprep_operation_yum_uuid.ml:34
+#, fuzzy
 msgid "Remove the yum UUID"
-msgstr ""
+msgstr "Удалить UUID yum"
 
 #: sysprep/sysprep_operation_zsh_history.ml:38
+#, fuzzy
 msgid "Remove the zsh history in the guest"
-msgstr ""
+msgstr "Удалить историю zsh в гостевой системе"
 
 #: sysprep/sysprep_operation_zsh_history.ml:39
+#, fuzzy
 msgid ""
 "Remove the zsh history of user \"root\" and any other users\n"
 "who have a C<.zsh_history> file in their home directory."
 msgstr ""
+"Удалить историю zsh пользователя \"root\" и любых других пользователей,\n"
+"у которых есть файл C<.zsh_history> в их домашнем каталоге."
 
 #: sysprep/sysprep_operation_udev_persistent_net.ml:35
+#, fuzzy
 msgid "Remove udev persistent net rules"
-msgstr ""
+msgstr "Удалить постоянные правила сети udev"
 
 #: sysprep/sysprep_operation_udev_persistent_net.ml:36
+#, fuzzy
 msgid ""
 "Remove udev persistent net rules which map the guest’s existing MAC\n"
 "address to a fixed ethernet device (eg. eth0).\n"
@@ -1540,50 +1934,70 @@ msgid ""
 "MAC address is assigned to a new name (eg. eth1) and this is usually\n"
 "undesirable.  Erasing the udev persistent net rules avoids this."
 msgstr ""
+"Удалить постоянные правила сети udev, которые сопоставляют существующий MAC-"
+"адрес гостя с фиксированным сетевым устройством (например, eth0).\n"
+"\n"
+"После клонирования гостевой системы MAC-адрес обычно изменяется. Поскольку\n"
+"старый MAC-адрес занимает старое имя (например, eth0), это означает, что\n"
+"новый MAC-адрес назначается новому имени (например, eth1), что обычно\n"
+"нежелательно. Удаление постоянных правил сети udev позволяет избежать этого."
 
 #: sysprep/sysprep_operation_cron_spool.ml:55
+#, fuzzy
 msgid "Remove user at-jobs and cron-jobs"
-msgstr ""
+msgstr "Удалить задания at и cron пользователей"
 
 #: resize/resize.ml:1502
+#, fuzzy
 msgid ""
 "Resize operation completed with no errors.  Before deleting the old disk, "
 "carefully check that the resized disk boots and works correctly."
 msgstr ""
+"Операция изменения размера завершена без ошибок. Перед удалением старого "
+"диска тщательно проверьте, что изменённый диск загружается и работает "
+"корректно."
 
 #: resize/resize.ml:211
+#, fuzzy
 msgid "Resize partition"
-msgstr ""
+msgstr "Изменить размер раздела"
 
 #: builder/builder.ml:667
+#, fuzzy
 msgid "Resizing (using virt-resize) to expand the disk to %s"
 msgstr ""
+"Изменение размера (с использованием virt-resize) для расширения диска до %s"
 
 #: builder/builder.ml:694
+#, fuzzy
 msgid "Resizing container (but not filesystems) to expand the disk to %s"
 msgstr ""
+"Изменение размера контейнера (но не файловых систем) для расширения диска до "
+"%s"
 
 #: sysprep/sysprep_operation_script.ml:111
+#, fuzzy
 msgid "Run arbitrary scripts against the guest"
-msgstr ""
+msgstr "Запустить произвольные скрипты для гостевой системы"
 
 #: common/mlcustomize/customize_cmdline.ml:259
 msgid "Run command at first guest boot"
-msgstr ""
+msgstr "Запустить команду при первой загрузке гостя"
 
 #: common/mlcustomize/customize_cmdline.ml:368
 msgid "Run command in disk image"
-msgstr ""
+msgstr "Запустить команду в образе диска"
 
 #: common/mlcustomize/customize_cmdline.ml:253
 msgid "Run script at first guest boot"
-msgstr ""
+msgstr "Запустить скрипт при первой загрузке гостя"
 
 #: common/mlcustomize/customize_cmdline.ml:362
 msgid "Run script in disk image"
-msgstr ""
+msgstr "Запустить скрипт в образе диска"
 
 #: sysprep/sysprep_operation_script.ml:155
+#, fuzzy
 msgid ""
 "Run the named C<SCRIPT> (a shell script or program) against the\n"
 "guest.  The script can be any program on the host.  The script’s\n"
@@ -1592,242 +2006,277 @@ msgid ""
 "B<Note:> If the script is not on the $PATH, then you must give\n"
 "the full absolute path to the script."
 msgstr ""
+"Запустить указанный C<СКРИПТ> (скрипт оболочки или программу) для\n"
+"гостевой системы. Скрипт может быть любой программой на хосте.\n"
+"Текущим каталогом скрипта будет корневой каталог гостевой системы.\n"
+"\n"
+"B<Примечание:> Если скрипт не находится в $PATH, вы должны указать\n"
+"полный абсолютный путь к скрипту."
 
 #: common/mlcustomize/customize_cmdline.ml:409
 msgid "Run touch on a file"
-msgstr ""
+msgstr "Выполнить touch для файла"
 
 #: common/mlcustomize/customize_run.ml:307
 msgid "Running touch: %s"
-msgstr ""
+msgstr "Выполнение touch: %s"
 
 #. common/mlcustomize/customize_run.ml:159
 #: common/mlcustomize/customize_run.ml:274
 msgid "Running: %s"
-msgstr ""
+msgstr "Запуск: %s"
 
 #. common/mlcustomize/customize_cmdline.ml:252
 #: common/mlcustomize/customize_cmdline.ml:361
 msgid "SCRIPT"
-msgstr ""
+msgstr "СКРИПТ"
 
 #: common/mltools/tools_utils.ml:425
 #: common/mlcustomize/customize_cmdline.ml:351
 msgid "SELECTOR"
-msgstr ""
+msgstr "СЕЛЕКТОР"
 
 #: common/mlcustomize/customize_run.ml:363
 msgid "SELinux relabelling"
-msgstr ""
+msgstr "Изменение меток SELinux"
 
 #. common/mlcustomize/customize_cmdline.ml:214
 #: common/mlcustomize/customize_cmdline.ml:328
 msgid "SOURCE:DEST"
-msgstr ""
+msgstr "ИСТОЧНИК:НАЗНАЧЕНИЕ"
 
 #: common/mlcustomize/customize_run.ml:287
 msgid "SSH key could not be injected for this type of guest"
-msgstr ""
+msgstr "Невозможно внедрить SSH-ключ для этого типа гостя"
 
 #: common/mlcustomize/customize_run.ml:284
 msgid "SSH key inject: %s"
-msgstr ""
+msgstr "Внедрение SSH-ключа: %s"
 
 #: sysprep/sysprep_operation_script.ml:153
+#, fuzzy
 msgid "Script or program to run on guest"
-msgstr ""
+msgstr "Скрипт или программа для запуска в гостевой системе"
 
 #: common/mlcustomize/customize_cmdline.ml:374
 msgid "Scrub a file"
-msgstr ""
+msgstr "Затереть файл"
 
 #: common/mlcustomize/customize_cmdline.ml:466
 msgid "Scrub build log file"
-msgstr ""
+msgstr "Затереть файл журнала сборки"
 
 #: common/mlcustomize/customize_run.ml:374
 msgid "Scrubbing the log file"
-msgstr ""
+msgstr "Затирание файла журнала"
 
 #: common/mlcustomize/customize_run.ml:279
 msgid "Scrubbing: %s"
-msgstr ""
+msgstr "Затирание: %s"
 
 #: builder/repository_main.ml:52 builder/cmdline.ml:149
+#, fuzzy
 msgid "Set GPG binary/command"
-msgstr ""
+msgstr "Установить двоичный файл/команду GPG"
 
 #: customize/customize_main.ml:80 builder/cmdline.ml:130
+#, fuzzy
 msgid "Set attach disk format"
-msgstr ""
+msgstr "Установить формат подключаемого диска"
 
 #: builder/cmdline.ml:139
+#, fuzzy
 msgid "Set curl binary/command"
-msgstr ""
+msgstr "Установить двоичный файл/команду curl"
 
 #: get-kernel/get_kernel.ml:58 drivers/drivers.ml:51
+#, fuzzy
 msgid "Set disk sector size"
-msgstr ""
+msgstr "Установить размер сектора диска"
 
 #: sysprep/main.ml:133 customize/customize_main.ml:84
+#, fuzzy
 msgid "Set format (default: auto)"
-msgstr ""
+msgstr "Установить формат (по умолчанию: auto)"
 
 #. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+#, fuzzy
 msgid "Set libvirt URI"
-msgstr ""
+msgstr "Установить URI libvirt"
 
 #. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
+#, fuzzy
 msgid "Set libvirt guest name"
-msgstr ""
+msgstr "Установить имя гостя libvirt"
 
 #: customize/customize_main.ml:85 builder/cmdline.ml:154
 msgid "Set memory size"
-msgstr ""
+msgstr "Установить размер памяти"
 
 #: sysprep/main.ml:135
+#, fuzzy
 msgid "Set mount options (eg /:noatime;/var:rw,noatime)"
-msgstr ""
+msgstr "Установить параметры монтирования (например /:noatime;/var:rw,noatime)"
 
 #: customize/customize_main.ml:88 builder/cmdline.ml:162
 msgid "Set number of vCPUs"
-msgstr ""
+msgstr "Установить количество vCPU"
 
 #: builder/cmdline.ml:161
+#, fuzzy
 msgid "Set output disk size"
-msgstr ""
+msgstr "Установить размер выходного диска"
 
 #: builder/cmdline.ml:158
+#, fuzzy
 msgid "Set output filename"
-msgstr ""
+msgstr "Установить имя выходного файла"
 
 #: resize/resize.ml:198
+#, fuzzy
 msgid "Set partition alignment (default: 128 sectors)"
-msgstr ""
+msgstr "Установить выравнивание разделов (по умолчанию: 128 секторов)"
 
 #: common/mlcustomize/customize_cmdline.ml:476
 msgid "Set password crypto"
-msgstr ""
+msgstr "Установить шифрование пароля"
 
 #: common/mltools/tools_utils.ml:433
 msgid "Set program name"
-msgstr ""
+msgstr "Установить имя программы"
 
 #: common/mlcustomize/customize_cmdline.ml:356
 msgid "Set root password"
-msgstr ""
+msgstr "Установить пароль root"
 
 #: builder/cmdline.ml:163
+#, fuzzy
 msgid "Set source URL"
-msgstr ""
+msgstr "Установить URL источника"
 
 #: builder/cmdline.ml:131
+#, fuzzy
 msgid "Set template cache dir"
-msgstr ""
+msgstr "Установить каталог кэша шаблонов"
 
 #: sparsify/cmdline.ml:75
+#, fuzzy
 msgid "Set temporary block device, directory or prebuilt file"
 msgstr ""
+"Установить временное блочное устройство, каталог или предварительно "
+"созданный файл"
 
 #: common/mlcustomize/customize_cmdline.ml:403
 msgid "Set the default timezone"
-msgstr ""
+msgstr "Установить часовой пояс по умолчанию"
 
 #: builder/cmdline.ml:153
+#, fuzzy
 msgid "Set the format for --list (default: short)"
-msgstr ""
+msgstr "Установить формат для --list (по умолчанию: short)"
 
 #: common/mlcustomize/customize_cmdline.ml:276
 msgid "Set the hostname"
-msgstr ""
+msgstr "Установить имя хоста"
 
 #: builder/cmdline.ml:127
+#, fuzzy
 msgid "Set the output architecture"
-msgstr ""
+msgstr "Установить архитектуру вывода"
 
 #: common/mlcustomize/customize_cmdline.ml:345
 msgid "Set user password"
-msgstr ""
+msgstr "Установить пароль пользователя"
 
 #: common/mlcustomize/customize_run.ml:75
 msgid "Setting a random seed"
-msgstr ""
+msgstr "Установка случайного начального числа"
 
 #: common/mlcustomize/customize_run.ml:354
 msgid "Setting passwords"
-msgstr ""
+msgstr "Установка паролей"
 
 #: common/mlcustomize/password.ml:113
 msgid "Setting random password of %s to %s"
-msgstr ""
+msgstr "Установка случайного пароля %s на %s"
 
 #: common/mlcustomize/customize_run.ml:207
 msgid "Setting the hostname: %s"
-msgstr ""
+msgstr "Установка имени хоста: %s"
 
 #: common/mlcustomize/customize_run.ml:90
 msgid "Setting the machine ID in %s"
-msgstr ""
+msgstr "Установка идентификатора машины в %s"
 
 #: common/mlcustomize/customize_run.ml:302
 msgid "Setting the timezone: %s"
-msgstr ""
+msgstr "Установка часового пояса: %s"
 
 #: resize/resize.ml:1070
+#, fuzzy
 msgid "Setting up initial partition table on %s"
-msgstr ""
+msgstr "Настройка начальной таблицы разделов на %s"
 
 #: builder/cmdline.ml:151
+#, fuzzy
 msgid "Shortcut for --list-format long"
-msgstr ""
+msgstr "Сокращение для --list-format long"
 
 #: resize/resize.ml:213
+#, fuzzy
 msgid "Shrink partition"
-msgstr ""
+msgstr "Уменьшить раздел"
 
 #: builder/repository_main.ml:552
+#, fuzzy
 msgid "Signing index with the GPG key %s"
-msgstr ""
+msgstr "Подписание индекса ключом GPG %s"
 
 #: sparsify/copying.ml:260
+#, fuzzy
 msgid "Skipping %s, as it is a read-only btrfs snapshot."
-msgstr ""
+msgstr "Пропуск %s, так как это снимок btrfs только для чтения."
 
 #: sparsify/copying.ml:262
+#, fuzzy
 msgid "Skipping %s, as it is a read-only device."
-msgstr ""
+msgstr "Пропуск %s, так как это устройство только для чтения."
 
 #: builder/list_entries.ml:60
+#, fuzzy
 msgid "Source URI: %s\n"
-msgstr ""
+msgstr "URI источника: %s\n"
 
 #: sparsify/in_place.ml:186
+#, fuzzy
 msgid "Sparsify in-place operation completed with no errors"
-msgstr ""
+msgstr "Операция разрежения на месте завершена без ошибок"
 
 #: sparsify/copying.ml:346
+#, fuzzy
 msgid "Sparsify operation completed with no errors."
-msgstr ""
+msgstr "Операция разрежения завершена без ошибок."
 
 #: common/mltools/tools_utils.ml:425
 msgid "Specify a LUKS key"
-msgstr ""
+msgstr "Указать ключ LUKS"
 
 #: common/mlcustomize/customize_cmdline.ml:392
 msgid "TARFILE:REMOTEDIR"
-msgstr ""
+msgstr "TAR-ФАЙЛ:УДАЛЁННЫЙ_КАТАЛОГ"
 
 #: common/mlcustomize/customize_cmdline.ml:311
 msgid "TARGET:LINK[:LINK..]"
-msgstr ""
+msgstr "ЦЕЛЬ:ССЫЛКА[:ССЫЛКА..]"
 
 #: common/mlcustomize/customize_cmdline.ml:402
 msgid "TIMEZONE"
-msgstr ""
+msgstr "ЧАСОВОЙ_ПОЯС"
 
 #: sysprep/sysprep_operation_script.ml:112
+#, fuzzy
 msgid ""
 "The C<script> module lets you run arbitrary shell scripts or programs\n"
 "against the guest.\n"
@@ -1852,8 +2301,31 @@ msgid ""
 "in the context of the guest when it is booting first time).\n"
 "I<--script> scripts run on the host, not in the guest."
 msgstr ""
+"Модуль C<script> позволяет запускать произвольные скрипты оболочки или\n"
+"программы для гостевой системы.\n"
+"\n"
+"Обратите внимание, что эта функция требует поддержки FUSE. Возможно, вам\n"
+"потребуется включить это на вашем хосте, например, добавив текущего\n"
+"пользователя в группу C<fuse> или загрузив модуль ядра.\n"
+"\n"
+"Используйте один или несколько параметров I<--script> для указания\n"
+"скриптов или программ, которые будут запущены для гостевой системы.\n"
+"\n"
+"Скрипт или программа запускаются с текущим каталогом, являющимся\n"
+"корневым каталогом гостевой системы, поэтому следует использовать\n"
+"относительные пути. Например: C<rm etc/resolv.conf> в скрипте удалит\n"
+"файл конфигурации DNS гостевой системы Linux, а C<rm /etc/resolv.conf>\n"
+"(попытается) удалить файл хоста.\n"
+"\n"
+"Обычно используется временная точка монтирования для гостевой системы,\n"
+"но вы можете выбрать конкретную с помощью параметра I<--scriptdir>.\n"
+"\n"
+"B<Примечание:> Это отличается от скриптов I<--firstboot> (которые\n"
+"запускаются в контексте гостевой системы при её первой загрузке).\n"
+"Скрипты I<--script> запускаются на хосте, а не в гостевой системе."
 
 #: sysprep/sysprep_operation_ssh_hostkeys.ml:36
+#, fuzzy
 msgid ""
 "The SSH host keys are regenerated (differently) next time the guest is\n"
 "booted.\n"
@@ -1866,8 +2338,19 @@ msgid ""
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 " IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!"
 msgstr ""
+"Ключи хоста SSH будут сгенерированы заново (по-другому) при следующей\n"
+"загрузке гостевой системы.\n"
+"\n"
+"Если после клонирования гостевая система получает тот же IP-адрес, ssh\n"
+"выдаст строгое предупреждение об изменении ключа хоста:\n"
+"\n"
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+" @    ПРЕДУПРЕЖДЕНИЕ: ИДЕНТИФИКАЦИЯ УДАЛЁННОГО ХОСТА ИЗМЕНИЛАСЬ!     @\n"
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+" ВОЗМОЖНО, КТО-ТО ПЫТАЕТСЯ ПРОВЕСТИ АТАКУ!"
 
 #: sysprep/sysprep_operation_backup_files.ml:83
+#, fuzzy
 msgid ""
 "The following files are removed from anywhere in the guest\n"
 "filesystem:\n"
@@ -1879,8 +2362,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Следующие файлы удаляются из любого места файловой системы гостя:\n"
+"\n"
+"%s\n"
+"\n"
+"В операционных системах Linux и Unix будут проверены только следующие\n"
+"файловые системы:\n"
+"\n"
+"%s"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:52
+#, fuzzy
 msgid ""
 "The fs-uuids operation is disabled by default because it does\n"
 "not yet find and update all the places in the guest that use\n"
@@ -1890,23 +2382,40 @@ msgid ""
 "\n"
 "See: L<https://bugzilla.redhat.com/show_bug.cgi?id=991641>"
 msgstr ""
+"Операция fs-uuids отключена по умолчанию, потому что она ещё не\n"
+"находит и не обновляет все места в гостевой системе, использующие\n"
+"UUID. Например, C</etc/fstab> или загрузчик.\n"
+"Включение этой операции с большей вероятностью сделает вашу\n"
+"гостевую систему незагружаемой.\n"
+"\n"
+"См.: L<https://bugzilla.redhat.com/show_bug.cgi?id=991641>"
 
 #: builder/index_parser.ml:31
+#, fuzzy
 msgid ""
 "The index file downloaded from ‘%s’ is corrupt.\n"
 "You need to ask the supplier of this file to fix it and upload a fixed "
 "version."
 msgstr ""
+"Файл индекса, загруженный с «%s», повреждён.\n"
+"Вам нужно попросить поставщика этого файла исправить его и загрузить "
+"исправленную версию."
 
 #: sysprep/sysprep_operation_machine_id.ml:38
+#, fuzzy
 msgid ""
 "The machine ID is usually generated from a random source during system\n"
 "installation and stays constant for all subsequent boots.  Optionally,\n"
 "for stateless systems it is generated during runtime at boot if it is\n"
 "found to be empty."
 msgstr ""
+"Идентификатор машины обычно генерируется из случайного источника во время\n"
+"установки системы и остаётся постоянным для всех последующих загрузок.\n"
+"Для систем без сохранения состояния он может генерироваться во время\n"
+"выполнения при загрузке, если обнаружено, что он пуст."
 
 #: sysprep/sysprep_operation_script.ml:140
+#, fuzzy
 msgid ""
 "The mount point (an empty directory on the host) used when\n"
 "the C<script> operation is enabled and one or more scripts\n"
@@ -1917,14 +2426,26 @@ msgid ""
 "If I<--scriptdir> is not specified then a temporary mountpoint\n"
 "will be created."
 msgstr ""
+"Точка монтирования (пустой каталог на хосте), используемая, когда\n"
+"включена операция C<script> и указан один или несколько скриптов\n"
+"с помощью параметра(ов) I<--script>.\n"
+"\n"
+"B<Примечание:> C<SCRIPTDIR> B<должен> быть абсолютным путём.\n"
+"\n"
+"Если I<--scriptdir> не указан, будет создана временная точка\n"
+"монтирования."
 
 #: sysprep/sysprep_operation_pacct_log.ml:58
+#, fuzzy
 msgid ""
 "The system wide process accounting will store to the pacct\n"
 "log files if the process accounting is on."
 msgstr ""
+"Общесистемный учёт процессов будет сохраняться в файлы журнала pacct,\n"
+"если учёт процессов включён."
 
 #: sysprep/sysprep_operation_user_account.ml:133
+#, fuzzy
 msgid ""
 "The user accounts to be kept in the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -1937,8 +2458,20 @@ msgid ""
 "\n"
 "This option can be specified multiple times."
 msgstr ""
+"Учётные записи пользователей, которые должны быть сохранены в гостевой "
+"системе.\n"
+"Значение этого параметра — список имён пользователей, разделённых запятыми,\n"
+"где указание пользователя означает, что он будет сохранён.\n"
+"Например:\n"
+"\n"
+" --keep-user-accounts mary\n"
+"\n"
+"сохранит учётную запись пользователя C<mary>.\n"
+"\n"
+"Этот параметр можно указывать несколько раз."
 
 #: sysprep/sysprep_operation_user_account.ml:116
+#, fuzzy
 msgid ""
 "The user accounts to be removed from the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -1951,22 +2484,39 @@ msgid ""
 "\n"
 "This option can be specified multiple times."
 msgstr ""
+"Учётные записи пользователей, которые должны быть удалены из гостевой "
+"системы.\n"
+"Значение этого параметра — список имён пользователей, разделённых запятыми,\n"
+"где указание пользователя означает, что он будет удалён.\n"
+"Например:\n"
+"\n"
+" --remove-user-accounts bob,eve\n"
+"\n"
+"удалит только учётные записи пользователей C<bob> и C<eve>.\n"
+"\n"
+"Этот параметр можно указывать несколько раз."
 
 #: builder/builder.ml:286
+#, fuzzy
 msgid "There are no notes for %s\n"
-msgstr ""
+msgstr "Нет примечаний для %s\n"
 
 #: resize/resize.ml:875
+#, fuzzy
 msgid ""
 "There is a deficit of %Ld bytes (%s).  You need to make the target disk "
 "larger by at least this amount or adjust your resizing requests."
 msgstr ""
+"Имеется дефицит в %Ld байт (%s). Вам нужно увеличить целевой диск как "
+"минимум на эту величину или скорректировать запросы на изменение размера."
 
 #: resize/resize.ml:1028
+#, fuzzy
 msgid "There is a surplus of %s."
-msgstr ""
+msgstr "Имеется избыток %s."
 
 #: sparsify/copying.ml:112
+#, fuzzy
 msgid ""
 "There may not be enough free space on %s.\n"
 "You may need to set TMPDIR to point to a directory with more free space.\n"
@@ -1981,15 +2531,35 @@ msgid ""
 "\n"
 "%!"
 msgstr ""
+"Возможно, недостаточно свободного места на %s.\n"
+"Возможно, вам потребуется установить TMPDIR на каталог с большим количеством "
+"свободного места.\n"
+"\n"
+"Максимально необходимо: %s. Свободно: %s. Может потребоваться ещё %s.\n"
+"\n"
+"Обратите внимание, это завышенная оценка. Если диск гостя заполнен данными,\n"
+"требуется меньше свободного места.\n"
+"\n"
+"Вы можете проигнорировать это предупреждение или превратить его в жёсткую\n"
+"ошибку с помощью параметра --check-tmpdir=(ignore|continue|warn|fail).\n"
+"См. virt-sparsify(1).\n"
+"\n"
+"%!"
 
 #: sysprep/sysprep_operation_utmp.ml:36
+#, fuzzy
 msgid ""
 "This file records who is currently logged in on a machine.  In modern\n"
 "Linux distros it is stored in a ramdisk and hence not part of the\n"
 "virtual machine’s disk, but it was stored on disk in older distros."
 msgstr ""
+"Этот файл записывает, кто в данный момент вошёл в систему на машине. В\n"
+"современных дистрибутивах Linux он хранится в ramdisk и, следовательно,\n"
+"не является частью диска виртуальной машины, но в старых дистрибутивах\n"
+"он хранился на диске."
 
 #: sysprep/sysprep_operation_firewall_rules.ml:45
+#, fuzzy
 msgid ""
 "This removes custom firewall rules by removing C</etc/sysconfig/iptables>\n"
 "or custom firewalld configuration in C</etc/firewalld/*/*>.\n"
@@ -1997,174 +2567,213 @@ msgid ""
 "Note this is I<not> enabled by default since it may expose guests to\n"
 "exploits.  Use with care."
 msgstr ""
+"Это удаляет пользовательские правила брандмауэра путём удаления\n"
+"C</etc/sysconfig/iptables> или пользовательской конфигурации firewalld\n"
+"в C</etc/firewalld/*/*>.\n"
+"\n"
+"Обратите внимание, что это I<не> включено по умолчанию, так как может\n"
+"подвергнуть гостевые системы эксплуатации уязвимостей. Используйте с\n"
+"осторожностью."
 
 #: sysprep/sysprep_operation_tmp_files.ml:51
+#, fuzzy
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
-msgstr ""
+msgstr "Это удаляет временные файлы в C</tmp> и C</var/tmp>."
 
 #: builder/builder.ml:784
+#, fuzzy
 msgid "Total usable space"
-msgstr ""
+msgstr "Общее доступное пространство"
 
 #: sparsify/in_place.ml:103
+#, fuzzy
 msgid "Trimming %s"
-msgstr ""
+msgstr "Обрезка %s"
 
 #: common/mlcustomize/customize_cmdline.ml:415
 msgid "Truncate a file to zero size"
-msgstr ""
+msgstr "Обрезать файл до нулевого размера"
 
 #: common/mlcustomize/customize_run.ml:294
 msgid "Truncating: %s"
-msgstr ""
+msgstr "Обрезание: %s"
 
 #: resize/resize.ml:214
+#, fuzzy
 msgid "Turn off sparse copying"
-msgstr ""
+msgstr "Отключить разрежённое копирование"
 
 #: common/mlcustomize/customize_cmdline.ml:192
 msgid "UID:GID:PATH"
-msgstr ""
+msgstr "UID:GID:ПУТЬ"
 
 #: common/mlcustomize/customize_cmdline.ml:339
 msgid "USER:SELECTOR"
-msgstr ""
+msgstr "ПОЛЬЗОВАТЕЛЬ:СЕЛЕКТОР"
 
 #: common/mlcustomize/customize_cmdline.ml:380
 msgid "USER[:SELECTOR]"
-msgstr ""
+msgstr "ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР]"
 
 #: resize/resize.ml:1440
+#, fuzzy
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
-msgstr ""
+msgstr "UUID в разделе подкачки %s изменён с «%s» на «%s»"
 
 #: builder/builder.ml:655
+#, fuzzy
 msgid "Uncompressing"
-msgstr ""
+msgstr "Распаковка"
 
 #: common/mlcustomize/customize_cmdline.ml:432
 msgid "Uninstall package(s)"
-msgstr ""
+msgstr "Удалить пакеты"
 
 #: common/mlcustomize/customize_run.ml:311
 msgid "Uninstalling packages: %s"
-msgstr ""
+msgstr "Удаление пакетов: %s"
 
 #: common/mlcustomize/customize_run.ml:290
 msgid "Unpack tar file: %s to %s"
-msgstr ""
+msgstr "Распаковка tar-файла: %s в %s"
 
 #: common/mlcustomize/customize_cmdline.ml:438
 msgid "Update packages"
-msgstr ""
+msgstr "Обновить пакеты"
 
 #: common/mlcustomize/customize_run.ml:316
 msgid "Updating packages"
-msgstr ""
+msgstr "Обновление пакетов"
 
 #: common/mlcustomize/customize_cmdline.ml:449
 msgid "Upload local file to destination"
-msgstr ""
+msgstr "Отправить локальный файл в назначение"
 
 #: common/mlcustomize/customize_run.ml:321
 msgid "Uploading: %s to %s"
-msgstr ""
+msgstr "Отправка: %s в %s"
 
 #: common/mltools/tools_utils.ml:394
 msgid "Use ANSI colour sequences even if not tty"
-msgstr ""
+msgstr "Использовать ANSI-цвета, даже если не tty"
 
 #: get-kernel/get_kernel.ml:63
+#, fuzzy
 msgid "Use unversioned names for files"
-msgstr ""
+msgstr "Использовать имена файлов без версий"
 
 #: sysprep/sysprep_operation_user_account.ml:131
+#, fuzzy
 msgid "Users to keep"
-msgstr ""
+msgstr "Пользователи для сохранения"
 
 #: sysprep/sysprep_operation_user_account.ml:114
+#, fuzzy
 msgid "Users to remove"
-msgstr ""
+msgstr "Пользователи для удаления"
 
 #: sparsify/copying.ml:154
+#, fuzzy
 msgid "Using prebuilt file %s as overlay"
-msgstr ""
+msgstr "Использование предварительно созданного файла %s в качестве оверлея"
 
 #: common/mltools/tools_utils.ml:395
 msgid "Wrap log messages even if not tty"
-msgstr ""
+msgstr "Переносить сообщения журнала, даже если не tty"
 
 #: common/mlcustomize/customize_cmdline.ml:460
 msgid "Write file"
-msgstr ""
+msgstr "Записать файл"
 
 #: common/mlcustomize/customize_run.ml:346
 msgid "Writing: %s"
-msgstr ""
+msgstr "Запись: %s"
 
 #: resize/resize.ml:843
+#, fuzzy
 msgid ""
 "You cannot use --expand when there is no surplus space to expand into.  You "
 "need to make the target disk larger by at least %s."
 msgstr ""
+"Вы не можете использовать --expand, когда нет избыточного пространства для "
+"расширения. Вам нужно увеличить целевой диск как минимум на %s."
 
 #: resize/resize.ml:857
+#, fuzzy
 msgid ""
 "You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-"
 "resize(1) man page)."
 msgstr ""
+"Вы не можете использовать --shrink, когда нет дефицита (см. «deficit» в "
+"справочной странице virt-resize(1))."
 
 #: sysprep/sysprep_operation_yum_uuid.ml:35
+#, fuzzy
 msgid ""
 "Yum creates a fresh UUID the next time it runs when it notices that the\n"
 "original UUID has been erased."
 msgstr ""
+"Yum создаёт новый UUID при следующем запуске, когда замечает, что\n"
+"исходный UUID был стёрт."
 
 #: sparsify/cmdline.ml:76
+#, fuzzy
 msgid "Zero filesystem"
-msgstr ""
+msgstr "Обнулить файловую систему"
 
 #: sparsify/in_place.ml:92 sparsify/copying.ml:250
+#, fuzzy
 msgid "Zeroing %s"
-msgstr ""
+msgstr "Обнуление %s"
 
 #: resize/resize.ml:259
+#, fuzzy
 msgid "alignment cannot be < 1"
-msgstr ""
+msgstr "выравнивание не может быть < 1"
 
 #: common/mlcustomize/append_line.ml:44
 msgid "append_line: %s is not a file"
-msgstr ""
+msgstr "append_line: %s не является файлом"
 
 #: sparsify/cmdline.ml:75
+#, fuzzy
 msgid "block|dir|prebuilt:file"
-msgstr ""
+msgstr "блочное_устройство|каталог|prebuilt:файл"
 
 #: resize/resize.ml:145
+#, fuzzy
 msgid "btrfs-filesystem-resize"
-msgstr ""
+msgstr "btrfs-filesystem-resize"
 
 #: builder/builder.ml:181
+#, fuzzy
 msgid "cache %s: %s"
-msgstr ""
+msgstr "кэш %s: %s"
 
 #: builder/cache.ml:54
+#, fuzzy
 msgid "cache directory: %s\n"
-msgstr ""
+msgstr "каталог кэша: %s\n"
 
 #: builder/cache.ml:60
+#, fuzzy
 msgid "cached"
-msgstr ""
+msgstr "в кэше"
 
 #: sparsify/copying.ml:68
+#, fuzzy
 msgid "cannot detect input disk format; use the --format parameter"
 msgstr ""
+"не удаётся определить формат входного диска; используйте параметр --format"
 
 #: builder/builder.ml:99
+#, fuzzy
 msgid ""
 "cannot find os-version ‘%s’ with architecture ‘%s’.\n"
 "Use --list to list available guest types."
 msgstr ""
+"не удаётся найти os-version «%s» с архитектурой «%s».\n"
+"Используйте --list для вывода списка доступных типов гостей."
 
 #: common/mlcustomize/firstboot.ml:235
 msgid ""
@@ -2172,14 +2781,19 @@ msgid ""
 "and guest arch (%s) are not compatible.  The firstboot service may not run "
 "at boot."
 msgstr ""
+"не удаётся завершить установку firstboot путём запуска «%s», так как "
+"архитектура хоста (%s) и гостя (%s) несовместимы. Служба firstboot может не "
+"запуститься при загрузке."
 
 #: builder/builder.ml:386
+#, fuzzy
 msgid "cannot output to a character device or /dev/null"
-msgstr ""
+msgstr "нельзя выводить на символьное устройство или /dev/null"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:39
+#, fuzzy
 msgid "cannot set random UUID on filesystem %s type %s: %s"
-msgstr ""
+msgstr "не удаётся установить случайный UUID на файловой системе %s типа %s: %s"
 
 #: common/mlcustomize/guest_packages.ml:29
 msgid ""
@@ -2193,36 +2807,50 @@ msgid ""
 "possible.  Try using one of the ‘--firstboot*’ flags instead (described in "
 "the virt-customize(1) manual)."
 msgstr ""
+"нельзя использовать «%s», так как для этой гостевой ОС не обнаружен менеджер "
+"пакетов.\n"
+"\n"
+"Если эта гостевая ОС является распространённой с обычным управлением "
+"пакетами, это могло быть вызвано сбоем инспектирования libguestfs.\n"
+"\n"
+"Для ОС, таких как Windows, не имеющих управления пакетами, это невозможно. "
+"Попробуйте использовать один из флагов «--firstboot*» (описаны в справочной "
+"странице virt-customize(1))."
 
 #: common/mlcustomize/customize_cmdline.ml:508
 msgid "command '%s' cannot be used in command files, see the man page"
 msgstr ""
+"команду «%s» нельзя использовать в файлах команд, см. справочную страницу"
 
 #: common/mlcustomize/customize_cmdline.ml:525
 msgid "command '%s' not valid, see the man page"
-msgstr ""
+msgstr "команда «%s» недопустима, см. справочную страницу"
 
 #: common/mldrivers/linux_bootloaders.ml:318
 msgid "could not add grub2 serial console (ignored)"
-msgstr ""
+msgstr "не удалось добавить последовательную консоль grub2 (игнорируется)"
 
 #: common/mldrivers/linux_bootloaders.ml:221
 msgid "could not determine a way to update the configuration of Grub2"
-msgstr ""
+msgstr "не удалось определить способ обновления конфигурации Grub2"
 
 #: builder/sigchecker.ml:128
+#, fuzzy
 msgid ""
 "could not export public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
+"не удалось экспортировать открытый ключ\n"
+"Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: common/mldrivers/linux_bootloaders.ml:376
 msgid "could not find bootloader mount point (%s): %s"
-msgstr ""
+msgstr "не удалось найти точку монтирования загрузчика (%s): %s"
 
 #: builder/builder.ml:142
+#, fuzzy
 msgid "could not find cache directory. Is $HOME set?"
-msgstr ""
+msgstr "не удаётся найти каталог кэша. Установлена ли переменная $HOME?"
 
 #: common/mldrivers/windows_drivers.ml:91
 msgid ""
@@ -2231,18 +2859,26 @@ msgid ""
 "guest.  It may be either a very old or very new version of Windows that we "
 "cannot process."
 msgstr ""
+"не удалось найти запись реестра HKEY_LOCAL_MACHINE\\SYSTEM\\DriverDatabase\\D"
+"eviceIds в этой гостевой системе Windows. Возможно, это очень старая или "
+"очень новая версия Windows, которую мы не можем обработать."
 
 #: common/mlcustomize/firstboot.ml:232
 msgid ""
 "could not finish firstboot installation by running ‘%s’ because the command "
 "failed: %s"
 msgstr ""
+"не удалось завершить установку firstboot путём запуска «%s», так как команда "
+"завершилась с ошибкой: %s"
 
 #: builder/sigchecker.ml:46
+#, fuzzy
 msgid ""
 "could not import public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
+"не удалось импортировать открытый ключ\n"
+"Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: common/mldrivers/linux_bootloaders.ml:336
 msgid ""
@@ -2250,161 +2886,200 @@ msgid ""
 "output will not be sent to the serial port, but otherwise should be "
 "harmless.  Original error message: %s"
 msgstr ""
+"не удалось перестроить файл конфигурации grub2 (%s). Это может означать, что "
+"вывод grub не будет отправляться на последовательный порт, но в остальном "
+"это должно быть безвредно. Исходное сообщение об ошибке: %s"
 
 #: common/mldrivers/linux_bootloaders.ml:320
 msgid "could not remove grub2 serial console (ignored)"
-msgstr ""
+msgstr "не удалось удалить последовательную консоль grub2 (игнорируется)"
 
 #: builder/downloader.ml:92
+#, fuzzy
 msgid "cp (download) command failed copying ‘%s’"
-msgstr ""
+msgstr "команда cp (загрузка) не смогла скопировать «%s»"
 
 #: builder/builder.ml:167
+#, fuzzy
 msgid "curl is not installed (or does not work)"
-msgstr ""
+msgstr "curl не установлен (или не работает)"
 
 #: common/mltools/registry.ml:93
 msgid ""
 "decode_utf16le: Windows UTF16-LE string contains non-7-bit characters.  This "
 "is a bug in %s, please report it."
 msgstr ""
+"decode_utf16le: строка Windows UTF16-LE содержит не 7-битные символы. Это "
+"ошибка в %s, сообщите о ней."
 
 #: common/mltools/registry.ml:87
 msgid ""
 "decode_utf16le: Windows string does not appear to be in UTF16-LE encoding.  "
 "This could be a bug in %s."
 msgstr ""
+"decode_utf16le: строка Windows, по-видимому, не в кодировке UTF16-LE. Это "
+"может быть ошибкой в %s."
 
 #: common/mldrivers/linux_bootloaders.ml:126
 msgid "didn't find grub entry for kernel %s"
-msgstr ""
+msgstr "не найдена запись grub для ядра %s"
 
 #: sysprep/sysprep_operation_script.ml:137
+#, fuzzy
 msgid "dir"
-msgstr ""
+msgstr "каталог"
 
 #: get-kernel/get_kernel.ml:62
+#, fuzzy
 msgid "directory"
-msgstr ""
+msgstr "каталог"
 
 #: builder/builder.ml:182
+#, fuzzy
 msgid "disabling the cache"
-msgstr ""
+msgstr "отключение кэша"
 
 #: sysprep/sysprep_operation.ml:148
+#, fuzzy
 msgid "disallowed character (%c) in operation name"
-msgstr ""
+msgstr "недопустимый символ (%c) в имени операции"
 
 #: sparsify/in_place.ml:68
+#, fuzzy
 msgid "discard/trim is not supported"
-msgstr ""
+msgstr "discard/trim не поддерживается"
 
 #. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
+#, fuzzy
 msgid "domain"
-msgstr ""
+msgstr "домен"
 
 #: common/mldrivers/linux.ml:158
 msgid "don’t know how to find file owner using %s"
-msgstr ""
+msgstr "неизвестно, как найти владельца файла с помощью %s"
 
 #: common/mldrivers/linux.ml:89
 msgid "don’t know how to get list of files from package using %s"
-msgstr ""
+msgstr "неизвестно, как получить список файлов из пакета с помощью %s"
 
 #: common/mltools/curl.ml:82
 msgid "downloading %s"
-msgstr ""
+msgstr "загрузка %s"
 
 #: get-kernel/get_kernel.ml:192
+#, fuzzy
 msgid "dual/multi-boot images are not supported by this tool"
-msgstr ""
+msgstr "двойные/мультизагрузочные образы не поддерживаются этим инструментом"
 
 #: sysprep/sysprep_operation.ml:136
+#, fuzzy
 msgid "duplicate operation name (%s)"
-msgstr ""
+msgstr "повторяющееся имя операции (%s)"
 
 #: resize/resize.ml:172
+#, fuzzy
 msgid "empty --expand option"
-msgstr ""
+msgstr "пустой параметр --expand"
 
 #: resize/resize.ml:188
+#, fuzzy
 msgid "empty --shrink option"
-msgstr ""
+msgstr "пустой параметр --shrink"
 
 #. customize/customize_main.ml:65
 #. builder/downloader.ml:72
 #: get-kernel/get_kernel.ml:44 drivers/drivers.ml:40
+#, fuzzy
 msgid "error parsing URI '%s'. Look for error messages printed above."
-msgstr ""
+msgstr "ошибка разбора URI '%s'. Посмотрите сообщения об ошибках выше."
 
 #: sysprep/main.ml:61 resize/resize.ml:332 resize/resize.ml:324
+#, fuzzy
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
-msgstr ""
+msgstr "ошибка разбора URI «%s». Посмотрите сообщения об ошибках выше."
 
 #: common/mltools/tools_utils.ml:251
 msgid "exception: %s"
-msgstr ""
+msgstr "исключение: %s"
 
 #: common/mltools/tools_utils.ml:458
 msgid "exited with error %d"
-msgstr ""
+msgstr "завершился с ошибкой %d"
 
 #: common/mltools/xpath_helpers.ml:36
 msgid ""
 "expecting XML expression to return an integer (expression: %s, matching "
 "string: %s)"
 msgstr ""
+"ожидается, что XML-выражение вернёт целое число (выражение: %s, "
+"соответствующая строка: %s)"
 
 #: common/mltools/tools_utils.ml:443
 msgid "external command"
-msgstr ""
+msgstr "внешняя команда"
 
 #: sparsify/copying.ml:343
+#, fuzzy
 msgid "external command failed: %s"
-msgstr ""
+msgstr "внешняя команда завершилась с ошибкой: %s"
 
 #: builder/downloader.ml:126
+#, fuzzy
 msgid "failed to download %s: HTTP status code %s"
-msgstr ""
+msgstr "не удалось загрузить %s: код состояния HTTP %s"
 
 #: builder/repository_main.ml:557
+#, fuzzy
 msgid "failed to export the GPG key %s"
-msgstr ""
+msgstr "не удалось экспортировать ключ GPG %s"
 
 #: common/mldrivers/linux_bootloaders.ml:208
 msgid "failed to find grub2-mkconfig binary (but Grub2 was detected on guest)"
 msgstr ""
+"не удалось найти двоичный файл grub2-mkconfig (но Grub2 обнаружен в гостевой "
+"системе)"
 
 #: builder/repository_main.ml:563
+#, fuzzy
 msgid "failed to sign index"
-msgstr ""
+msgstr "не удалось подписать индекс"
 
 #: common/mltools/tools_utils.ml:242
 msgid "failure: %s"
-msgstr ""
+msgstr "сбой: %s"
 
 #. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
+#, fuzzy
 msgid "file"
-msgstr ""
+msgstr "файл"
 
 #: builder/sigchecker.ml:237
+#, fuzzy
 msgid ""
 "fingerprint of signature does not match the expected fingerprint!\n"
 "found fingerprint: %s\n"
 "expected fingerprint: %s"
 msgstr ""
+"отпечаток подписи не совпадает с ожидаемым отпечатком!\n"
+"найденный отпечаток: %s\n"
+"ожидаемый отпечаток: %s"
 
 #: resize/resize.ml:1348
+#, fuzzy
 msgid "first partition is NTFS but does not contain NTFS boot loader magic"
 msgstr ""
+"первый раздел является NTFS, но не содержит магическую последовательность "
+"загрузчика NTFS"
 
 #: common/mlcustomize/firstboot.ml:143
 msgid ""
 "firstboot: unknown version for old firstboot.service file %s (md5=%s), it "
 "will not be removed"
 msgstr ""
+"firstboot: неизвестная версия для старого файла firstboot.service %s (md5=%s)"
+", он не будет удалён"
 
 #. resize/resize.ml:210
 #. resize/resize.ml:205
@@ -2412,34 +3087,41 @@ msgstr ""
 #. drivers/drivers.ml:54
 #. customize/customize_main.ml:84
 #: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
+#, fuzzy
 msgid "format"
-msgstr ""
+msgstr "формат"
 
 #: sparsify/cmdline.ml:76 sparsify/cmdline.ml:72
+#, fuzzy
 msgid "fs"
-msgstr ""
+msgstr "фс"
 
 #: sparsify/in_place.ml:109
+#, fuzzy
 msgid ""
 "fstrim operation is not supported on %s (%s).  Suppress this warning using "
 "'--ignore %s', or use copying mode instead."
 msgstr ""
+"операция fstrim не поддерживается на %s (%s). Подавите это предупреждение с "
+"помощью '--ignore %s' или используйте режим копирования."
 
 #: common/mltools/tools_utils.ml:261
 msgid "generated by %s %s"
-msgstr ""
+msgstr "создано %s %s"
 
 #: common/mlcustomize/firstboot.ml:391 common/mlcustomize/firstboot.ml:164
 msgid "guest type %s is not supported"
-msgstr ""
+msgstr "тип гостя %s не поддерживается"
 
 #: common/mlcustomize/firstboot.ml:418
 msgid "guest type %s/%s is not supported"
-msgstr ""
+msgstr "тип гостя %s/%s не поддерживается"
 
 #: sysprep/sysprep_operation.ml:154
+#, fuzzy
 msgid "heading for %s must not end with newline or period"
 msgstr ""
+"заголовок для %s не должен заканчиваться символом новой строки или точкой"
 
 #: common/mltools/tools_utils.ml:752
 msgid ""
@@ -2447,146 +3129,164 @@ msgid ""
 "line options that involve running commands in the guest.  Use --firstboot "
 "scripts instead."
 msgstr ""
+"хост (%s/%s) и гость (%s/%s) несовместимы, поэтому вы не можете использовать "
+"параметры командной строки, включающие выполнение команд в гостевой системе. "
+"Используйте скрипты --firstboot."
 
 #: common/mlcustomize/customize_run.ml:209
 msgid "hostname could not be set for this type of guest"
-msgstr ""
+msgstr "не удалось установить имя хоста для этого типа гостя"
 
 #: drivers/hwdata.ml:138
+#, fuzzy
 msgid "hwdata: %s: %s"
-msgstr ""
+msgstr "hwdata: %s: %s"
 
 #: resize/resize.ml:215
+#, fuzzy
 msgid "ignore|warn|error"
-msgstr ""
+msgstr "ignore|warn|error"
 
 #: common/mldrivers/linux_kernels.ml:342
 msgid "ignoring kernel %s in bootloader, as it does not exist."
-msgstr ""
+msgstr "игнорирование ядра %s в загрузчике, так как оно не существует."
 
 #: builder/builder.ml:411
+#, fuzzy
 msgid ""
 "images cannot be shrunk, the output size is too small for this image.  "
 "Requested size = %s, minimum size = %s"
 msgstr ""
+"образы не могут быть уменьшены, выходной размер слишком мал для этого "
+"образа. Запрошенный размер = %s, минимальный размер = %s"
 
 #: builder/builder.ml:371
+#, fuzzy
 msgid "input file (%s) has an unsupported type"
-msgstr ""
+msgstr "входной файл (%s) имеет неподдерживаемый тип"
 
 #: common/mltools/tools_utils.ml:249
 msgid "internal error: Not_found exception was thrown"
-msgstr ""
+msgstr "внутренняя ошибка: возникло исключение Not_found"
 
 #: common/mltools/tools_utils.ml:246
 msgid "internal error: assertion failed at %s, line %d, char %d"
-msgstr ""
+msgstr "внутренняя ошибка: утверждение не выполнено в %s, строка %d, символ %d"
 
 #: common/mltools/tools_utils.ml:244
 msgid "internal error: invalid argument: %s"
-msgstr ""
+msgstr "внутренняя ошибка: недопустимый аргумент: %s"
 
 #: common/mldrivers/linux.ml:128
 msgid "internal error: is_file_owned: dpkg command returned no output"
-msgstr ""
+msgstr "внутренняя ошибка: is_file_owned: команда dpkg не вернула вывода"
 
 #: common/mldrivers/linux.ml:133
 msgid "internal error: is_file_owned: unexpected output from dpkg command: %s"
-msgstr ""
+msgstr "внутренняя ошибка: is_file_owned: неожиданный вывод команды dpkg: %s"
 
 #: common/mldrivers/linux_bootloaders.ml:130
 msgid "internal error: regular expression did not match ‘%s’"
-msgstr ""
+msgstr "внутренняя ошибка: регулярное выражение не соответствует «%s»"
 
 #. common/mlcustomize/customize_cmdline.ml:153
 #. common/mlcustomize/customize_cmdline.ml:145
 #: common/mlcustomize/customize_cmdline.ml:161
 msgid "invalid format for '--%s' parameter, see the man page"
-msgstr ""
+msgstr "недопустимый формат для параметра «--%s», см. справочную страницу"
 
 #: common/mltools/tools_utils.ml:362
 msgid "invalid format string for --machine-readable: %s"
-msgstr ""
+msgstr "недопустимая строка формата для --machine-readable: %s"
 
 #: common/mltools/tools_utils.ml:377
 msgid "invalid output fd for --machine-readable: %s"
-msgstr ""
+msgstr "недопустимый дескриптор вывода для --machine-readable: %s"
 
 #: common/mltools/tools_utils.ml:379
 msgid "invalid output for --machine-readable: %s"
-msgstr ""
+msgstr "недопустимый вывод для --machine-readable: %s"
 
 #: common/mltools/tools_utils.ml:371
 msgid "invalid output stream for --machine-readable: %s"
-msgstr ""
+msgstr "недопустимый поток вывода для --machine-readable: %s"
 
 #: common/mlcustomize/password.ml:73
 msgid "invalid password selector ‘%s’; see the man page"
-msgstr ""
+msgstr "недопустимый селектор пароля «%s»; см. справочную страницу"
 
 #: common/mlcustomize/ssh_key.ml:45
 msgid "invalid ssh-inject selector ‘%s’; see the man page"
-msgstr ""
+msgstr "недопустимый селектор ssh-inject «%s»; см. справочную страницу"
 
 #: common/mldrivers/linux_bootloaders.ml:114
 msgid "kernel %s is not under grub tree %s"
-msgstr ""
+msgstr "ядро %s не находится в дереве grub %s"
 
 #: common/mltools/tools_utils.ml:542 common/mltools/tools_utils.ml:461
 msgid "killed by signal %d"
-msgstr ""
+msgstr "убит сигналом %d"
 
 #: common/mltools/tools_utils.ml:240
 msgid "libguestfs error: %s"
-msgstr ""
+msgstr "ошибка libguestfs: %s"
 
 #: common/mlcustomize/customize_run.ml:47
 msgid "log file %s: %s (ignored)"
-msgstr ""
+msgstr "файл журнала %s: %s (игнорируется)"
 
 #: resize/resize.ml:207
+#, fuzzy
 msgid "lv"
-msgstr ""
+msgstr "лв"
 
 #: common/mlcustomize/customize_cmdline.ml:472
+#, fuzzy
 msgid "md5|sha256|sha512"
-msgstr ""
+msgstr "md5|sha256|sha512"
 
 #: common/mlcustomize/customize_run.ml:119
 msgid "method '%s' is no longer supported"
-msgstr ""
+msgstr "метод «%s» больше не поддерживается"
 
 #: builder/repository_main.ml:262
+#, fuzzy
 msgid "missing image identifier"
-msgstr ""
+msgstr "отсутствует идентификатор образа"
 
 #: common/mltools/JSON_parser.ml:39
 msgid "missing value for the key ‘%s’"
-msgstr ""
+msgstr "отсутствует значение для ключа «%s»"
 
 #: resize/resize.ml:147
+#, fuzzy
 msgid "mkswap"
-msgstr ""
+msgstr "mkswap"
 
 #: common/mltools/JSON_parser.ml:34
 msgid "more than value for the key ‘%s’"
-msgstr ""
+msgstr "более одного значения для ключа «%s»"
 
 #: builder/repository_main.ml:116
+#, fuzzy
 msgid "moving file ‘%s’ to ‘%s’ failed"
-msgstr ""
+msgstr "перемещение файла «%s» в «%s» не удалось"
 
 #: common/mlcustomize/customize_run.ml:103
 msgid ""
 "multiple --root-password/--password options set the password for user ‘%s’ "
 "twice"
 msgstr ""
+"несколько параметров --root-password/--password устанавливают пароль для "
+"пользователя «%s» дважды"
 
 #: resize/resize.ml:197
+#, fuzzy
 msgid "never|always|auto"
-msgstr ""
+msgstr "never|always|auto"
 
 #: builder/builder.ml:155
+#, fuzzy
 msgid ""
 "no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
 "\n"
@@ -2596,28 +3296,42 @@ msgid ""
 "signatures, use ’--no-check-signature’ but note that this may make you "
 "vulnerable to Man-In-The-Middle attacks."
 msgstr ""
+"не найден двоичный файл GNU Privacy Guard (GnuPG, gpg).\n"
+"\n"
+"Для проверки подписей можно установить gpg версии 1 или 2. Virt-builder ищет "
+"двоичный файл с именем «gpg2» или «gpg» в $PATH. Вы также можете указать "
+"двоичный файл с помощью параметра «--gpg». Если вы не хотите проверять "
+"подписи, используйте '--no-check-signature', но имейте в виду, что это может "
+"сделать вас уязвимым для атак \"человек посередине\"."
 
 #: common/mldrivers/linux_bootloaders.ml:402
 msgid "no bootloader detected"
-msgstr ""
+msgstr "загрузчик не обнаружен"
 
 #: builder/builder.ml:256
+#, fuzzy
 msgid "no cache directory"
-msgstr ""
+msgstr "нет каталога кэша"
 
 #: builder/builder.ml:249
+#, fuzzy
 msgid "no cache directory\n"
-msgstr ""
+msgstr "нет каталога кэша\n"
 
 #: builder/builder.ml:749
+#, fuzzy
 msgid ""
 "no guest operating systems or multiboot OS found in this disk image\n"
 "This is a failure of the source repository.  Use -v for more information."
 msgstr ""
+"в этом образе диска не найдены гостевая операционная система или "
+"мультизагрузочная ОС\n"
+"Это ошибка исходного репозитория. Используйте -v для получения "
+"дополнительной информации."
 
 #: common/mldrivers/linux_kernels.ml:194
 msgid "no initrd was found in /boot matching %s %s."
-msgstr ""
+msgstr "в /boot не найден initrd, соответствующий %s %s."
 
 #: common/mldrivers/linux_kernels.ml:317
 msgid ""
@@ -2625,10 +3339,15 @@ msgid ""
 "\n"
 "This probably indicates that %s was unable to inspect this guest properly."
 msgstr ""
+"не найдено установленных пакетов ядра.\n"
+"\n"
+"Вероятно, это указывает на то, что %s не удалось правильно проинспектировать "
+"эту гостевую систему."
 
 #: get-kernel/get_kernel.ml:164
+#, fuzzy
 msgid "no kernel found in %s"
-msgstr ""
+msgstr "в %s не найдено ядро"
 
 #: common/mldrivers/linux_kernels.ml:354
 msgid ""
@@ -2637,94 +3356,130 @@ msgid ""
 "This probably indicates that %s was unable to parse the bootloader "
 "configuration of this guest."
 msgstr ""
+"в конфигурации загрузчика не найдено ядер.\n"
+"\n"
+"Вероятно, это указывает на то, что %s не удалось разобрать конфигурацию "
+"загрузчика этой гостевой системы."
 
 #: get-kernel/get_kernel.ml:190
+#, fuzzy
 msgid "no operating system found"
-msgstr ""
+msgstr "операционная система не найдена"
 
 #: sysprep/main.ml:230 customize/customize_main.ml:190
+#, fuzzy
 msgid "no operating systems were found in the guest image"
-msgstr ""
+msgstr "в образе гостя не найдены операционные системы"
 
 #: builder/builder.ml:582
+#, fuzzy
 msgid ""
 "no plan could be found for making a disk image with\n"
 "the required size, format etc. This is a bug in libguestfs!\n"
 "Please file a bug, giving the command line arguments you used."
 msgstr ""
+"не удалось найти план создания образа диска с\n"
+"требуемым размером, форматом и т.д. Это ошибка в libguestfs!\n"
+"Пожалуйста, сообщите об ошибке, указав использованные аргументы командной "
+"строки."
 
 #: resize/resize.ml:144
+#, fuzzy
 msgid "ntfsresize"
-msgstr ""
+msgstr "ntfsresize"
 
 #: get-kernel/get_kernel.ml:131
+#, fuzzy
 msgid "operating system ‘%s’ not supported"
-msgstr ""
+msgstr "операционная система «%s» не поддерживается"
 
 #: sysprep/sysprep_operation.ml:160
+#, fuzzy
 msgid "operation %s has no POD"
-msgstr ""
+msgstr "операция %s не имеет POD"
 
 #: sysprep/sysprep_operation.ml:169
+#, fuzzy
 msgid "operation %s has no POD notes"
-msgstr ""
+msgstr "операция %s не имеет примечаний POD"
 
 #: sysprep/sysprep_operation.ml:152
+#, fuzzy
 msgid "operation %s has no heading"
-msgstr ""
+msgstr "операция %s не имеет заголовка"
 
 #: sysprep/sysprep_operation.ml:143
+#, fuzzy
 msgid "operation name is an empty string"
-msgstr ""
+msgstr "имя операции является пустой строкой"
 
 #: sysprep/main.ml:138 sysprep/main.ml:132
+#, fuzzy
 msgid "operations"
-msgstr ""
+msgstr "операции"
 
 #: sparsify/cmdline.ml:74
+#, fuzzy
 msgid "option"
-msgstr ""
+msgstr "параметр"
 
 #: sysprep/main.ml:135
+#, fuzzy
 msgid "opts"
-msgstr ""
+msgstr "параметры"
 
 #: builder/repository_main.ml:228
+#, fuzzy
 msgid "osinfo short ID: "
-msgstr ""
+msgstr "короткий ID osinfo: "
 
 #: builder/builder.ml:300
+#, fuzzy
 msgid ""
 "output device (%s) is a partition.  If you are writing to a USB key or "
 "external drive then you probably need to write to the whole device, not to a "
 "partition.  If this warning is wrong then you can disable it with --no-warn-"
 "if-partition"
 msgstr ""
+"выходное устройство (%s) является разделом. Если вы записываете на USB-ключ "
+"или внешний диск, вам, вероятно, нужно записывать на всё устройство, а не на "
+"раздел. Если это предупреждение ошибочно, вы можете отключить его с "
+"помощью --no-warn-if-partition"
 
 #: builder/builder.ml:416
+#, fuzzy
 msgid ""
 "output size is too large for this block device.  Requested size = %s, output "
 "block device = %s, output block device size = %s"
 msgstr ""
+"размер вывода слишком велик для этого блочного устройства. Запрошенный "
+"размер = %s, выходное блочное устройство = %s, размер выходного блочного "
+"устройства = %s"
 
 #: sparsify/cmdline.ml:150
+#, fuzzy
 msgid "output ‘%s’ cannot be a character device, it must be a regular file"
 msgstr ""
+"вывод «%s» не может быть символьным устройством, это должен быть обычный файл"
 
 #. resize/resize.ml:201
 #: resize/resize.ml:213 resize/resize.ml:206 resize/resize.ml:202
+#, fuzzy
 msgid "part"
-msgstr ""
+msgstr "раздел"
 
 #: resize/resize.ml:212 resize/resize.ml:211
+#, fuzzy
 msgid "part=size"
-msgstr ""
+msgstr "раздел=размер"
 
 #: common/mlcustomize/password.ml:51
 msgid ""
 "password-crypto: unknown algorithm %s, use \"md5\", \"sha256\", \"sha512\" "
 "or \"yescrypt\""
 msgstr ""
+"password-crypto: неизвестный алгоритм %s, используйте \"md5\", \"sha256\", "
+"\"sha512\" или \"yescrypt\""
 
 #: common/mlcustomize/password.ml:197
 msgid ""
@@ -2732,46 +3487,58 @@ msgid ""
 "version %d.%d.\n"
 "If this is incorrect, use --password-crypto option and file a bug."
 msgstr ""
+"password: используется небезопасное шифрование паролей md5 для гостя типа %s "
+"версии %d.%d.\n"
+"Если это неверно, используйте параметр --password-crypto и сообщите об "
+"ошибке."
 
 #: common/mlcustomize/customize_run.ml:359
 msgid "passwords could not be set for this type of guest"
-msgstr ""
+msgstr "не удалось установить пароли для этого типа гостя"
 
 #: resize/resize.ml:1133 resize/resize.ml:1109
+#, fuzzy
 msgid "pread-device: short read"
-msgstr ""
+msgstr "pread-device: короткое чтение"
 
 #: get-kernel/get_kernel.ml:64
+#, fuzzy
 msgid "prefix"
-msgstr ""
+msgstr "префикс"
 
 #: resize/resize.ml:142
+#, fuzzy
 msgid "pvresize"
-msgstr ""
+msgstr "pvresize"
 
 #: sparsify/in_place.ml:136 sparsify/copying.ml:288
+#, fuzzy
 msgid "pwrite: short write restoring swap partition header"
-msgstr ""
+msgstr "pwrite: короткая запись при восстановлении заголовка раздела подкачки"
 
 #: sparsify/in_place.ml:190
+#, fuzzy
 msgid "quit (^C) at user request"
-msgstr ""
+msgstr "выход (^C) по запросу пользователя"
 
 #: common/mlcustomize/customize_run.ml:77
 msgid "random seed could not be set for this type of guest"
-msgstr ""
+msgstr "не удалось установить случайное начальное число для этого типа гостя"
 
 #: builder/repository_main.ml:424
+#, fuzzy
 msgid "repository folder ‘%s’ doesn’t exist"
-msgstr ""
+msgstr "папка репозитория «%s» не существует"
 
 #: resize/resize.ml:148
+#, fuzzy
 msgid "resize.f2fs"
-msgstr ""
+msgstr "resize.f2fs"
 
 #: resize/resize.ml:143
+#, fuzzy
 msgid "resize2fs"
-msgstr ""
+msgstr "resize2fs"
 
 #. common/mlcustomize/inject_virtio_win.ml:357
 #. common/mlcustomize/inject_virtio_win.ml:352
@@ -2782,56 +3549,65 @@ msgid ""
 "This should not happen and may indicate that virtio-win or virt-v2v is "
 "broken in some way.  Please report this as a bug with a full debug log."
 msgstr ""
+"корневой каталог «/» отсутствует в каталоге или ISO virtio-win.\n"
+"\n"
+"Это не должно происходить и может указывать на то, что virtio-win или virt-"
+"v2v повреждены. Сообщите об этом как об ошибке с полным отладочным журналом."
 
 #: sysprep/sysprep_operation_script.ml:152
+#, fuzzy
 msgid "script"
-msgstr ""
+msgstr "скрипт"
 
 #: sysprep/sysprep_operation_script.ml:75
+#, fuzzy
 msgid "script failed"
-msgstr ""
+msgstr "скрипт завершился с ошибкой"
 
 #: sysprep/sysprep_operation_script.ml:65
+#, fuzzy
 msgid "script: failed (code %d)"
-msgstr ""
+msgstr "скрипт: ошибка (код %d)"
 
 #: sysprep/sysprep_operation_script.ml:69
+#, fuzzy
 msgid "script: killed by signal (%d)"
-msgstr ""
+msgstr "скрипт: убит сигналом (%d)"
 
 #: resize/resize.ml:198
+#, fuzzy
 msgid "sectors"
-msgstr ""
+msgstr "секторов"
 
 #: common/mltools/tools_utils.ml:420 common/options/keys.c:306
 #, c-format
 msgid "selector '%s': invalid TYPE"
-msgstr ""
+msgstr "селектор '%s': недопустимый ТИП"
 
 #: common/mltools/tools_utils.ml:412 common/options/keys.c:296
 #, c-format
 msgid "selector '%s': missing FILENAME, or too many fields"
-msgstr ""
+msgstr "селектор «%s»: отсутствует ИМЯ_ФАЙЛА или слишком много полей"
 
 #: common/mltools/tools_utils.ml:402 common/options/keys.c:274
 #, c-format
 msgid "selector '%s': missing ID"
-msgstr ""
+msgstr "селектор «%s»: отсутствует идентификатор"
 
 #: common/mltools/tools_utils.ml:407 common/options/keys.c:287
 #, c-format
 msgid "selector '%s': missing KEY_STRING, or too many fields"
-msgstr ""
+msgstr "селектор «%s»: отсутствует КЛЮЧ_СТРОКА или слишком много полей"
 
 #: common/mltools/tools_utils.ml:404 common/options/keys.c:281
 #, c-format
 msgid "selector '%s': missing TYPE"
-msgstr ""
+msgstr "селектор «%s»: отсутствует ТИП"
 
 #: common/mltools/tools_utils.ml:416 common/options/keys.c:304
 #, c-format
 msgid "selector '%s': too many fields"
-msgstr ""
+msgstr "селектор «%s»: слишком много полей"
 
 #: common/mlcustomize/guest_packages.ml:40
 msgid ""
@@ -2840,81 +3616,91 @@ msgid ""
 "You can work around this by using one of the ‘--run*’ or ‘--firstboot*’ "
 "options instead (described in the virt-customize(1) manual)."
 msgstr ""
+"извините, «%s» с менеджером пакетов «%s» ещё не реализован.\n"
+"\n"
+"Вы можете обойти это, используя один из параметров «--run*» или «--"
+"firstboot*» (описаны в справочной странице virt-customize(1))."
 
 #: builder/cmdline.ml:304
+#, fuzzy
 msgid "source and fingerprint lists are not the same length"
-msgstr ""
+msgstr "списки источников и отпечатков имеют разную длину"
 
 #: common/mlcustomize/ssh_key.ml:57
 msgid "ssh-inject: $HOME environment variable is not set"
-msgstr ""
+msgstr "ssh-inject: переменная окружения $HOME не установлена"
 
 #: common/mlcustomize/ssh_key.ml:93
 msgid "ssh-inject: key is an empty string"
-msgstr ""
+msgstr "ssh-inject: ключ является пустой строкой"
 
 #: common/mlcustomize/ssh_key.ml:66
 msgid "ssh-inject: no public key file found in %s"
-msgstr ""
+msgstr "ssh-inject: в %s не найден файл открытого ключа"
 
 #: common/mlcustomize/ssh_key.ml:83
 msgid "ssh-inject: public key file (%s) is empty"
-msgstr ""
+msgstr "ssh-inject: файл открытого ключа (%s) пуст"
 
 #: common/mlcustomize/ssh_key.ml:112
 msgid "ssh-inject: the user %s does not exist on the guest"
-msgstr ""
+msgstr "ssh-inject: пользователь %s не существует в гостевой системе"
 
 #: common/mltools/tools_utils.ml:545 common/mltools/tools_utils.ml:464
 msgid "stopped by signal %d"
-msgstr ""
+msgstr "остановлен сигналом %d"
 
 #: common/mlcustomize/customize_run.ml:59
 msgid ""
 "the command may have failed because the network is disabled.  Try either "
 "removing ‘--no-network’ or adding ‘--network’ on the command line."
 msgstr ""
+"команда могла завершиться ошибкой из-за отключённой сети. Попробуйте убрать "
+"«--no-network» или добавить «--network» в командную строку."
 
 #: common/mltools/JSON_parser.ml:84
 msgid "the key ‘%s’ was not found in a list of objects"
-msgstr ""
+msgstr "ключ «%s» не найден в списке объектов"
 
 #: builder/repository_main.ml:460
+#, fuzzy
 msgid ""
 "the repository must contain an index file when running in automated mode"
 msgstr ""
+"репозиторий должен содержать файл индекса при работе в автоматическом режиме"
 
 #: resize/resize.ml:484
+#, fuzzy
 msgid "the source disk has no partitions"
-msgstr ""
+msgstr "исходный диск не содержит разделов"
 
 #: common/mltools/JSON_parser.ml:78
 msgid "the value for key ‘%s’ is not a string as expected"
-msgstr ""
+msgstr "значение для ключа «%s» не является строкой, как ожидалось"
 
 #: common/mltools/JSON_parser.ml:50
 msgid "the value for the key ‘%s’ is not a bool"
-msgstr ""
+msgstr "значение для ключа «%s» не является логическим"
 
 #: common/mltools/JSON_parser.ml:45
 msgid "the value for the key ‘%s’ is not a string"
-msgstr ""
+msgstr "значение для ключа «%s» не является строкой"
 
 #: common/mltools/JSON_parser.ml:70
 msgid "the value for the key ‘%s’ is not an integer"
-msgstr ""
+msgstr "значение для ключа «%s» не является целым числом"
 
 #: common/mltools/JSON_parser.ml:55
 msgid "the value for the key ‘%s’ is not an object"
-msgstr ""
+msgstr "значение для ключа «%s» не является объектом"
 
 #: common/mltools/JSON_parser.ml:59
 msgid "the value is not an object"
-msgstr ""
+msgstr "значение не является объектом"
 
 #: common/mltools/JSON_parser.ml:35
 msgid "the value of the key ‘%s’ is not an object"
-msgstr ""
+msgstr "значение ключа «%s» не является объектом"
 
 #: common/mlcustomize/inject_virtio_win.ml:153
 msgid ""
@@ -2923,14 +3709,24 @@ msgid ""
 "\n"
 "The guest will be configured to use slower emulated devices."
 msgstr ""
+"для этой версии Windows (%d.%d %s %s %s) нет доступных драйверов virtio. "
+"virt-v2v ищет драйверы в %s\n"
+"\n"
+"Гостевая система будет настроена на использование более медленных "
+"эмулируемых устройств."
 
 #: builder/sigchecker.ml:179
+#, fuzzy
 msgid ""
 "there is no detached signature file\n"
 "This probably means the index file is missing a sig=... line.\n"
 "You can use --no-check-signature to ignore this error, but that means you "
 "are susceptible to man-in-the-middle attacks."
 msgstr ""
+"нет отдельного файла подписи\n"
+"Это, вероятно, означает, что в файле индекса отсутствует строка sig=...\n"
+"Вы можете использовать --no-check-signature, чтобы игнорировать эту ошибку, "
+"но это означает, что вы уязвимы для атак \"человек посередине\"."
 
 #: common/mlcustomize/inject_virtio_win.ml:175
 msgid ""
@@ -2939,6 +3735,11 @@ msgid ""
 "\n"
 "The guest will be configured to use a slower emulated device."
 msgstr ""
+"нет драйвера блочного устройства virtio для этой версии Windows (%d.%d %s). "
+"virt-v2v ищет этот драйвер в %s\n"
+"\n"
+"Гостевая система будет настроена на использование более медленного "
+"эмулируемого устройства."
 
 #: common/mlcustomize/inject_virtio_win.ml:206
 msgid ""
@@ -2947,228 +3748,315 @@ msgid ""
 "\n"
 "The guest will be configured to use a slower emulated device."
 msgstr ""
+"нет сетевого драйвера virtio для этой версии Windows (%d.%d %s). virt-v2v "
+"ищет этот драйвер в %s\n"
+"\n"
+"Гостевая система будет настроена на использование более медленного "
+"эмулируемого устройства."
 
 #: common/mlcustomize/timezone.ml:35
 msgid "timezone '%s' does not exist, use a location like 'Europe/London'"
 msgstr ""
+"часовой пояс «%s» не существует, используйте местоположение, например, «"
+"Europe/Moscow»"
 
 #: common/mlcustomize/customize_run.ml:304
 msgid "timezone could not be set for this type of guest"
-msgstr ""
+msgstr "не удалось установить часовой пояс для этого типа гостя"
 
 #: builder/cmdline.ml:250
+#, fuzzy
 msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
 msgstr ""
+"слишком много параметров, для --list допускается не более одного «os-version»"
 
 #: builder/cmdline.ml:241
+#, fuzzy
 msgid "too many parameters, expecting ‘os-version’"
-msgstr ""
+msgstr "слишком много параметров, ожидается «os-version»"
 
 #: builder/repository_main.ml:101
+#, fuzzy
 msgid "too many parameters, only one path to repository is allowed"
-msgstr ""
+msgstr "слишком много параметров, допускается только один путь к репозиторию"
 
 #: common/mltools/urandom.ml:37
 msgid "unexpected end of file while reading /dev/urandom"
-msgstr ""
+msgstr "неожиданный конец файла при чтении /dev/urandom"
 
 #: builder/downloader.ml:116
+#, fuzzy
 msgid ""
 "unexpected output from curl command, enable debug and look at previous "
 "messages"
 msgstr ""
+"неожиданный вывод команды curl, включите отладку и посмотрите предыдущие "
+"сообщения"
 
 #: common/mltools/checksums.ml:58
 msgid "unhandled checksum type ‘%s’"
-msgstr ""
+msgstr "необработанный тип контрольной суммы «%s»"
 
 #: resize/resize.ml:268
+#, fuzzy
 msgid "unknown --align-first option: use never|always|auto"
-msgstr ""
+msgstr "неизвестный параметр --align-first: используйте never|always|auto"
 
 #: resize/resize.ml:276
+#, fuzzy
 msgid "unknown --unknown-filesystems: use ignore|warn|error"
 msgstr ""
+"неизвестный параметр --unknown-filesystems: используйте ignore|warn|error"
 
 #. resize/resize.ml:921
 #: resize/resize.ml:1016 resize/resize.ml:982 resize/resize.ml:940
+#, fuzzy
 msgid "unknown/unavailable method for expanding the %s filesystem on %s"
-msgstr ""
+msgstr "неизвестный/недоступный метод для расширения файловой системы %s на %s"
 
 #: sysprep/utils.ml:65
+#, fuzzy
 msgid "updating the system CA store on this guest %s/%s is not supported"
 msgstr ""
+"обновление системного хранилища CA на этом госте %s/%s не поддерживается"
 
 #. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
+#, fuzzy
 msgid "uri"
-msgstr ""
+msgstr "uri"
 
 #: resize/resize.ml:312
+#, fuzzy
 msgid "usage is: %s [--options] indisk outdisk"
-msgstr ""
+msgstr "использование: %s [--параметры] входной_диск выходной_диск"
 
 #: sparsify/cmdline.ml:135
+#, fuzzy
 msgid "usage: %s [--options] indisk outdisk"
-msgstr ""
+msgstr "использование: %s [--параметры] входной_диск выходной_диск"
 
 #: sysprep/sysprep_operation_user_account.ml:149
+#, fuzzy
 msgid ""
 "user-accounts: --keep-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
+"user-accounts: использован параметр --keep-user-accounts, но операция \"user-"
+"account\" не включена"
 
 #: sysprep/sysprep_operation_user_account.ml:152
+#, fuzzy
 msgid ""
 "user-accounts: --remove-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
+"user-accounts: использован параметр --remove-user-accounts, но операция "
+"\"user-account\" не включена"
 
 #: sysprep/sysprep_operation_user_account.ml:38
+#, fuzzy
 msgid "user-accounts: empty user name"
-msgstr ""
+msgstr "user-accounts: пустое имя пользователя"
 
 #. sysprep/sysprep_operation_user_account.ml:113
 #: sysprep/sysprep_operation_user_account.ml:130
+#, fuzzy
 msgid "users"
-msgstr ""
+msgstr "пользователи"
 
 #: builder/cmdline.ml:275
+#, fuzzy
 msgid ""
 "virt-builder --get-kernel image\n"
 "Missing ‘image’ (disk image file) argument"
 msgstr ""
+"virt-builder --get-kernel образ\n"
+"Отсутствует аргумент «образ» (файл образа диска)"
 
 #: builder/cmdline.ml:257
+#, fuzzy
 msgid ""
 "virt-builder --notes os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
+"virt-builder --notes os-version\n"
+"Отсутствует «os-version». Используйте «--list» для вывода списка доступных "
+"имён шаблонов."
 
 #: builder/cmdline.ml:238
+#, fuzzy
 msgid ""
 "virt-builder os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
 msgstr ""
+"virt-builder os-version\n"
+"Отсутствует «os-version». Используйте «--list» для вывода списка доступных "
+"имён шаблонов."
 
 #: builder/repository_main.ml:244
+#, fuzzy
 msgid ""
 "virt-builder template images must have one and only one root file system, "
 "found %d"
 msgstr ""
+"образы шаблонов virt-builder должны иметь одну и только одну корневую "
+"файловую систему, найдено %d"
 
 #: builder/repository_main.ml:97
+#, fuzzy
 msgid ""
 "virt-builder-repository /path/to/repo\n"
 "\n"
 "Use ‘/path/to/repo’ to point to the repository folder."
 msgstr ""
+"virt-builder-repository /путь/к/репозиторию\n"
+"\n"
+"Используйте «/путь/к/репозиторию» для указания папки репозитория."
 
 #: builder/builder.ml:172
+#, fuzzy
 msgid "virt-resize is not installed (or does not work)"
-msgstr ""
+msgstr "virt-resize не установлен (или не работает)"
 
 #: resize/resize.ml:146
+#, fuzzy
 msgid "xfs_growfs"
-msgstr ""
+msgstr "xfs_growfs"
 
 #: drivers/drivers.ml:77
+#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-drivers(1) man page "
 "for further information."
 msgstr ""
+"вы не можете использовать параметры -a и -d вместе. Для получения "
+"дополнительной информации прочитайте справочную страницу virt-drivers(1)."
 
 #: get-kernel/get_kernel.ml:97
+#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-get-kernel(1) man "
 "page for further information."
 msgstr ""
+"вы не можете использовать параметры -a и -d вместе. Для получения "
+"дополнительной информации прочитайте справочную страницу virt-get-kernel(1)."
 
 #: sysprep/main.ml:178
+#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-sysprep(1) man page "
 "for further information."
 msgstr ""
+"вы не можете использовать параметры -a и -d вместе. Для получения "
+"дополнительной информации прочитайте справочную страницу virt-sysprep(1)."
 
 #: customize/customize_main.ml:135
+#, fuzzy
 msgid ""
 "you cannot give -a and -d options together. Read virt-customize(1) man page "
 "for further information."
 msgstr ""
+"вы не можете использовать параметры -a и -d вместе. Для получения "
+"дополнительной информации прочитайте справочную страницу virt-customize(1)."
 
 #: sysprep/main.ml:80
+#, fuzzy
 msgid "you cannot pass an empty argument to --enable"
-msgstr ""
+msgstr "вы не можете передать пустой аргумент в --enable"
 
 #: sparsify/cmdline.ml:164
+#, fuzzy
 msgid "you cannot use --in-place and --check-tmpdir options together"
-msgstr ""
+msgstr "вы не можете использовать параметры --in-place и --check-tmpdir вместе"
 
 #: sparsify/cmdline.ml:168
+#, fuzzy
 msgid "you cannot use --in-place and --compress options together"
-msgstr ""
+msgstr "вы не можете использовать параметры --in-place и --compress вместе"
 
 #: sparsify/cmdline.ml:171
+#, fuzzy
 msgid "you cannot use --in-place and --convert options together"
-msgstr ""
+msgstr "вы не можете использовать параметры --in-place и --convert вместе"
 
 #: sparsify/cmdline.ml:177
+#, fuzzy
 msgid "you cannot use --in-place and --tmp options together"
-msgstr ""
+msgstr "вы не можете использовать параметры --in-place и --tmp вместе"
 
 #: sparsify/cmdline.ml:174
+#, fuzzy
 msgid "you cannot use --in-place and -o options together"
-msgstr ""
+msgstr "вы не можете использовать параметры --in-place и -o вместе"
 
 #: resize/resize.ml:832
+#, fuzzy
 msgid "you cannot use options --expand and --shrink together"
-msgstr ""
+msgstr "вы не можете использовать параметры --expand и --shrink вместе"
 
 #: sparsify/cmdline.ml:141 resize/resize.ml:318
+#, fuzzy
 msgid "you cannot use the same disk image for input and output"
-msgstr ""
+msgstr "вы не можете использовать один и тот же образ диска для ввода и вывода"
 
 #: drivers/drivers.ml:74
+#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-drivers(1) man page for "
 "further information."
 msgstr ""
+"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
+"информации прочитайте справочную страницу virt-drivers(1)."
 
 #: get-kernel/get_kernel.ml:94
+#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-get-kernel(1) man page for "
 "further information."
 msgstr ""
+"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
+"информации прочитайте справочную страницу virt-get-kernel(1)."
 
 #: sysprep/main.ml:166
+#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-sysprep(1) man page for "
 "further information."
 msgstr ""
+"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
+"информации прочитайте справочную страницу virt-sysprep(1)."
 
 #: customize/customize_main.ml:123
+#, fuzzy
 msgid ""
 "you must give either -a or -d options. Read virt-customize(1) man page for "
 "further information."
 msgstr ""
+"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
+"информации прочитайте справочную страницу virt-customize(1)."
 
 #: builder/repository_main.ml:231
+#, fuzzy
 msgid "‘%s’ is not a recognized osinfo OS id; using it anyway"
 msgstr ""
+"«%s» не является распознанным идентификатором ОС osinfo; используется в "
+"любом случае"
 
 #: builder/repository_main.ml:159
+#, fuzzy
 msgid "‘xz’ command failed"
-msgstr ""
+msgstr "команда «xz» завершилась с ошибкой"
 
 #: align/scan.c:80 cat/cat.c:59 df/main.c:72 diff/diff.c:105 edit/edit.c:67
 #: filesystems/filesystems.c:94 inspector/inspector.c:85 log/log.c:69
 #: ls/ls.c:97 make-fs/make-fs.c:82 tail/tail.c:67
-#, c-format
+#, c-format, fuzzy
 msgid "Try ‘%s --help’ for more information.\n"
-msgstr ""
+msgstr "Попробуйте «%s --help» для получения дополнительной информации.\n"
 
 #: align/scan.c:83
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: check alignment of virtual machine partitions\n"
 "Copyright (C) 2011 Red Hat Inc.\n"
@@ -3191,83 +4079,114 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: проверка выравнивания разделов виртуальных машин\n"
+"Copyright (C) 2011 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  -P число_потоков      Использовать не более число_потоков\n"
+"  -q|--quiet            Без вывода, только код завершения\n"
+"  --uuid                Выводить UUID вместо имён\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157 df/main.c:169
 #: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:262
 #: format/format.c:192 inspector/inspector.c:188 log/log.c:160 ls/ls.c:255
 #: make-fs/make-fs.c:157 tail/tail.c:166
-#, c-format
+#, c-format, fuzzy
 msgid "unknown long option: %s (%d)"
-msgstr ""
+msgstr "неизвестный длинный параметр: %s (%d)"
 
 #: align/scan.c:185 df/main.c:195
-#, c-format
+#, c-format, fuzzy
 msgid "-P option is not numeric"
-msgstr ""
+msgstr "параметр -P не является числом"
 
 #: align/scan.c:240
-#, c-format
+#, c-format, fuzzy
 msgid "compiled without support for libvirt"
-msgstr ""
+msgstr "скомпилирован без поддержки libvirt"
 
 #: align/scan.c:244
-#, c-format
+#, c-format, fuzzy
 msgid "--uuid option cannot be used with -a or -d"
-msgstr ""
+msgstr "параметр --uuid нельзя использовать с -a или -d"
 
 #: align/scan.c:343
+#, fuzzy
 msgid "alignment < 4K"
-msgstr ""
+msgstr "выравнивание < 4K"
 
 #: align/scan.c:346
+#, fuzzy
 msgid "alignment < 64K"
-msgstr ""
+msgstr "выравнивание < 64K"
 
 #: builder/index-validate.c:117
-#, c-format
+#, c-format, fuzzy
 msgid "%s: %s: error closing input file: %m (ignored)\n"
-msgstr ""
+msgstr "%s: %s: ошибка закрытия входного файла: %m (игнорируется)\n"
 
 #: builder/index-validate.c:124
-#, c-format
+#, c-format, fuzzy
 msgid "‘%s’ could not be validated, see errors above"
-msgstr ""
+msgstr "«%s» не удалось проверить, см. ошибки выше"
 
 #: builder/index-validate.c:130
-#, c-format
+#, c-format, fuzzy
 msgid "%s contains comments which will not work with virt-builder 1.24.1"
 msgstr ""
+"%s содержит комментарии, которые не будут работать с virt-builder 1.24.1"
 
 #: builder/index-validate.c:143
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: section [%s] has invalid characters which will not work with virt-"
 "builder 1.24.0"
 msgstr ""
+"%s: раздел [%s] содержит недопустимые символы, которые не будут работать с "
+"virt-builder 1.24.0"
 
 #: builder/index-validate.c:154
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: section [%s], field ‘%s’ has invalid characters which will not work with "
 "virt-builder 1.24.0"
 msgstr ""
+"%s: раздел [%s], поле «%s» содержит недопустимые символы, которые не будут "
+"работать с virt-builder 1.24.0"
 
 #: builder/index-validate.c:163
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: section [%s], field ‘%s’ has invalid characters which will not work with "
 "virt-builder 1.24.1"
 msgstr ""
+"%s: раздел [%s], поле «%s» содержит недопустимые символы, которые не будут "
+"работать с virt-builder 1.24.1"
 
 #: builder/index-validate.c:174
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: section [%s] is missing a ‘sig’ field which will not work with virt-"
 "builder 1.24.0"
 msgstr ""
+"%s: в разделе [%s] отсутствует поле «sig», которое не будет работать с virt-"
+"builder 1.24.0"
 
 #: cat/cat.c:62
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: display files in a virtual machine\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -3292,52 +4211,77 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: отображение файлов в виртуальной машине\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена файл [файл ...]\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...] файл [файл ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -m|--mount устройство[:точка_монтирования[:параметры[:тип_фс]]]\n"
+"                        Смонтировать устройство в точку_монтирования (если "
+"опущено, /)\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:361
 #: inspector/inspector.c:288 log/log.c:217 ls/ls.c:369 tail/tail.c:231
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error: you must specify at least one -a or -d option.\n"
-msgstr ""
+msgstr "%s: ошибка: вы должны указать хотя бы один параметр -a или -d.\n"
 
 #: common/mltools/getopt-c.c:68
 #, c-format
 msgid "Try ‘%s --help’ or consult %s(1) for more information.\n"
 msgstr ""
+"Попробуйте «%s --help» или обратитесь к %s(1) для получения дополнительной "
+"информации.\n"
 
 #: common/mltools/getopt-c.c:187
 #, c-format
 msgid "%s: ‘%s’ is not a numeric value.\n"
-msgstr ""
+msgstr "%s: «%s» не является числовым значением.\n"
 
 #: common/mltools/getopt-c.c:193
 #, c-format
 msgid "%s: %s: integer out of range\n"
-msgstr ""
+msgstr "%s: %s: целое число вне допустимого диапазона\n"
 
 #: common/mltools/getopt-c.c:383
 #, c-format
 msgid "%s: ‘%s’ is not allowed for -%c; allowed values are:\n"
-msgstr ""
+msgstr "%s: «%s» не допускается для -%c; допустимые значения:\n"
 
 #: common/mltools/getopt-c.c:386
 #, c-format
 msgid "%s: ‘%s’ is not allowed for %s%s; allowed values are:\n"
-msgstr ""
+msgstr "%s: «%s» не допускается для %s%s; допустимые значения:\n"
 
 #: common/mltools/getopt-c.c:421
 #, c-format
 msgid "Extra parameter on the command line: ‘%s’.\n"
-msgstr ""
+msgstr "Лишний параметр в командной строке: «%s».\n"
 
 #: common/options/config.c:72
 #, c-format
 msgid "%s: line %d: error parsing configuration file: %s"
-msgstr ""
+msgstr "%s: строка %d: ошибка разбора файла конфигурации: %s"
 
 #: common/options/decrypt.c:52
 #, c-format
 msgid "string size overflow"
-msgstr ""
+msgstr "переполнение размера строки"
 
 #: common/options/decrypt.c:170
 #, c-format
@@ -3345,6 +4289,8 @@ msgid ""
 "'clevis_luks_unlock', needed for decrypting %s, is unavailable in this "
 "libguestfs version"
 msgstr ""
+"«clevis_luks_unlock», необходимый для расшифровки %s, недоступен в этой "
+"версии libguestfs"
 
 #: common/options/decrypt.c:184
 #, c-format
@@ -3355,6 +4301,11 @@ msgid ""
 "\n"
 "Original error: %s (%d)"
 msgstr ""
+"не удалось найти ключ для открытия зашифрованного LUKS %s.\n"
+"\n"
+"Попробуйте использовать --key в командной строке.\n"
+"\n"
+"Исходная ошибка: %s (%d)"
 
 #: common/options/inspect.c:78
 #, c-format
@@ -3374,6 +4325,21 @@ msgid ""
 "with these tools.  Use the guestfish equivalent commands\n"
 "(see the virt tool manual page).\n"
 msgstr ""
+"%s: на этом диске не найдена операционная система\n"
+"\n"
+"При использовании guestfish с параметром «-i» удалите этот параметр\n"
+"и вместо этого используйте команды «run», а затем «list-filesystems».\n"
+"Затем вы можете вручную смонтировать нужные файловые системы\n"
+"с помощью команд «mount» или «mount-ro».\n"
+"\n"
+"При использовании guestmount с параметром «-i» удалите этот параметр и "
+"выберите\n"
+"файловые системы, которые вы хотите видеть, вручную добавив параметры «-m».\n"
+"Используйте «virt-filesystems» для просмотра доступных файловых систем.\n"
+"\n"
+"При использовании других инструментов virt этот образ диска не будет\n"
+"работать с этими инструментами. Используйте эквивалентные команды\n"
+"guestfish (см. справочную страницу инструмента virt).\n"
 
 #: common/options/inspect.c:99
 #, c-format
@@ -3393,41 +4359,56 @@ msgid ""
 "with these tools.  Use the guestfish equivalent commands\n"
 "(see the virt tool manual page).\n"
 msgstr ""
+"%s: мультизагрузочные операционные системы не поддерживаются\n"
+"\n"
+"При использовании guestfish с параметром «-i» удалите этот параметр\n"
+"и вместо него используйте команды «run», а затем «list-filesystems».\n"
+"Затем вы можете вручную смонтировать нужные файловые\n"
+"системы с помощью команд «mount» или «mount-ro».\n"
+"\n"
+"При использовании guestmount с параметром «-i» удалите этот параметр и "
+"выберите\n"
+"файловые системы, которые вы хотите видеть, вручную добавив параметры «-m».\n"
+"Используйте «virt-filesystems» для просмотра доступных файловых систем.\n"
+"\n"
+"При использовании других инструментов virt мультизагрузочные операционные\n"
+"системы не будут работать с этими инструментами. Используйте эквивалентные\n"
+"команды guestfish (см. справочную страницу инструмента virt).\n"
 
 #: common/options/inspect.c:161
 #, c-format
 msgid "%s: some filesystems could not be mounted (ignored)\n"
-msgstr ""
+msgstr "%s: некоторые файловые системы не удалось смонтировать (игнорируется)\n"
 
 #: common/options/inspect.c:178
 #, c-format
 msgid "Operating system: %s\n"
-msgstr ""
+msgstr "Операционная система: %s\n"
 
 #: common/options/inspect.c:196
 #, c-format
 msgid "%s mounted on %s\n"
-msgstr ""
+msgstr "%s смонтировано в %s\n"
 
 #: common/options/keys.c:69
 #, c-format
 msgid "Enter key or passphrase (\"%s\"): "
-msgstr ""
+msgstr "Введите ключ или парольную фразу («%s»): "
 
 #: common/options/keys.c:189
 #, c-format
 msgid "size_t overflow"
-msgstr ""
+msgstr "переполнение size_t"
 
 #: common/options/keys.c:235
 #, c-format
 msgid "could not read key from user"
-msgstr ""
+msgstr "не удалось прочитать ключ от пользователя"
 
 #: common/options/options.c:283
 #, c-format
 msgid "%s: ‘%s’ could not be mounted.\n"
-msgstr ""
+msgstr "%s: «%s» не удалось смонтировать.\n"
 
 #: common/options/options.c:287
 #, c-format
@@ -3435,104 +4416,113 @@ msgid ""
 "%s: Check mount(8) man page to ensure options ‘%s’\n"
 "%s: are supported by the filesystem that is being mounted.\n"
 msgstr ""
+"%s: Проверьте справочную страницу mount(8), чтобы убедиться, что параметры "
+"«%s»\n"
+"%s: поддерживаются монтируемой файловой системой.\n"
 
 #: common/options/options.c:291
 #, c-format
 msgid "%s: Did you mean to mount one of these filesystems?\n"
-msgstr ""
+msgstr "%s: Возможно, вы хотели смонтировать одну из этих файловых систем?\n"
 
 #: common/options/options.c:304
 #, c-format
 msgid "cannot determine the subvolume for %s: %s (%d)"
-msgstr ""
+msgstr "не удаётся определить подтом для %s: %s (%d)"
 
 #: common/options/uri.c:119
 #, c-format
 msgid "%s: --add: could not parse URI ‘%s’\n"
-msgstr ""
+msgstr "%s: --add: не удалось разобрать URI «%s»\n"
 
 #: common/options/uri.c:130
 #, c-format
 msgid "%s: %s: scheme of URI is NULL or empty\n"
-msgstr ""
+msgstr "%s: %s: схема URI-адреса равна NULL или пуста\n"
 
 #: common/options/uri.c:138
 #, c-format
 msgid "%s: %s: cannot have both a server name and a socket query parameter\n"
 msgstr ""
+"%s: %s: не могут быть одновременно указаны имя сервера и параметр запроса "
+"сокета\n"
 
 #: common/parallel/domains.c:106
-#, c-format
+#, c-format, fuzzy
 msgid "could not connect to libvirt (code %d, domain %d): %s"
-msgstr ""
+msgstr "не удалось подключиться к libvirt (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:114
-#, c-format
+#, c-format, fuzzy
 msgid "could not get number of running domains (code %d, domain %d): %s"
 msgstr ""
+"не удалось получить количество работающих доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:125
-#, c-format
+#, c-format, fuzzy
 msgid "could not list running domains (code %d, domain %d): %s"
-msgstr ""
+msgstr "не удалось вывести список работающих доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:135
-#, c-format
+#, c-format, fuzzy
 msgid "could not get number of inactive domains (code %d, domain %d): %s"
 msgstr ""
+"не удалось получить количество неактивных доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:146
-#, c-format
+#, c-format, fuzzy
 msgid "could not list inactive domains (code %d, domain %d): %s"
-msgstr ""
+msgstr "не удалось вывести список неактивных доменов (код %d, домен %d): %s"
 
 #: common/utils/utils.c:107
 #, c-format
 msgid "%s exited successfully"
-msgstr ""
+msgstr "%s успешно завершился"
 
 #: common/utils/utils.c:110
 #, c-format
 msgid "%s exited with error status %d"
-msgstr ""
+msgstr "%s завершился с кодом ошибки %d"
 
 #: common/utils/utils.c:114
 #, c-format
 msgid "%s killed by signal %d (%s)"
-msgstr ""
+msgstr "%s убит сигналом %d (%s)"
 
 #: common/utils/utils.c:118
 #, c-format
 msgid "%s stopped by signal %d (%s)"
-msgstr ""
+msgstr "%s остановлен сигналом %d (%s)"
 
 #: common/utils/utils.c:122
 #, c-format
 msgid "%s exited for an unknown reason (status %d)"
-msgstr ""
+msgstr "%s завершился по неизвестной причине (состояние %d)"
 
 #: common/visit/visit.c:133
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error getting extended attrs for %s %s\n"
-msgstr ""
+msgstr "%s: ошибка получения расширенных атрибутов для %s %s\n"
 
 #: common/visit/visit.c:147
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error: cannot parse xattr count for %s %s\n"
-msgstr ""
+msgstr "%s: ошибка: не удаётся разобрать количество xattr для %s %s\n"
 
 #: common/windows/windows.c:139
-#, c-format
+#, c-format, fuzzy
 msgid "to use Windows drive letters, this must be a Windows guest"
 msgstr ""
+"для использования букв дисков Windows это должна быть гостевая система "
+"Windows"
 
 #: common/windows/windows.c:150
-#, c-format
+#, c-format, fuzzy
 msgid "drive '%c:' not found."
-msgstr ""
+msgstr "диск '%c:' не найден."
 
 #: df/main.c:75
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: display free space on virtual filesystems\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -3558,16 +4548,40 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: отображение свободного места на виртуальных файловых системах\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  -h|--human-readable   Выводить размеры в удобочитаемом формате\n"
+"  --help                Показать краткую справку\n"
+"  -i|--inodes           Показывать иноды\n"
+"  --one-per-guest       Отдельное устройство для каждого гостя\n"
+"  -P число_потоков      Использовать не более число_потоков\n"
+"  --uuid                Выводить UUID вместо имён\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:330 ls/ls.c:361
-#, c-format
+#, c-format, fuzzy
 msgid "you cannot use -h and --csv options together."
-msgstr ""
+msgstr "вы не можете использовать параметры -h и --csv вместе."
 
 #: df/main.c:281
-#, c-format
+#, c-format, fuzzy
 msgid "compiled without support for libvirt."
-msgstr ""
+msgstr "скомпилирован без поддержки libvirt."
 
 #: df/output.c:48
 msgid "VirtualMachine"
@@ -3598,8 +4612,9 @@ msgid "Use%"
 msgstr "Использование, %"
 
 #: df/output.c:59
+#, fuzzy
 msgid "Inodes"
-msgstr ""
+msgstr "Иноды"
 
 #: df/output.c:60
 msgid "IUsed"
@@ -3614,7 +4629,7 @@ msgid "IUse%"
 msgstr "|Использовано, %"
 
 #: diff/diff.c:108
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: list differences between virtual machines\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -3653,31 +4668,76 @@ msgid ""
 "  --xattrs             Display extended attributes\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: вывод различий между виртуальными машинами\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d домен1 -D домен2\n"
+"  %s [--параметры] -a диск1.img -A диск2.img [-a|-A ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ из первого гостя\n"
+"  --all                 То же, что: --extra-stats --times --uids --xattrs\n"
+"  --atime               Не игнорировать изменения времени доступа\n"
+"  -A образ              Добавить образ из второго гостя\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a "
+"или -A\n"
+"  --checksum[=...]      Использовать контрольную сумму содержимого файла\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
+"  --dir-links           Не игнорировать изменения nlink каталогов\n"
+"  --dir-times           Не игнорировать изменения времени каталогов\n"
+"  -d|--domain гость     Добавить диски из первого гостя libvirt\n"
+"  -D гость              Добавить диски из второго гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --extra-stats         Показывать дополнительную статистику\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a "
+"или -A\n"
+"  --help                Показать краткую справку\n"
+"  -h|--human-readable   Выводить размеры в удобочитаемом формате\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  --times               Показывать время файлов\n"
+"  --time-days           Показывать время файлов как количество дней до "
+"настоящего момента\n"
+"  --time-relative       Показывать время файлов как количество секунд до "
+"настоящего момента\n"
+"  --time-t              Показывать время файлов как time_t\n"
+"  --uids                Показывать UID, GID\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"  --xattrs              Показывать расширенные атрибуты\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: diff/diff.c:348
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error: you must specify at least one -A or -D option.\n"
-msgstr ""
+msgstr "%s: ошибка: вы должны указать хотя бы один параметр -A или -D.\n"
 
 #: diff/diff.c:360
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --checksum or --format like '--"
 "format=%s'.\n"
 msgstr ""
+"%s: ошибка: лишний аргумент «%s» в командной строке.\n"
+"Убедитесь, что вы указываете аргумент для --checksum или --format, например "
+"'--format=%s'.\n"
 
 #: diff/diff.c:802
-#, c-format
+#, c-format, fuzzy
 msgid "%s: external diff command failed\n"
-msgstr ""
+msgstr "%s: внешняя команда diff завершилась с ошибкой\n"
 
 #: diff/diff.c:806
+#, fuzzy
 msgid "End of diff"
-msgstr ""
+msgstr "Конец сравнения"
 
 #: edit/edit.c:70
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: Edit a file in a virtual machine\n"
 "Copyright (C) 2009-2025 Red Hat Inc.\n"
@@ -3704,19 +4764,45 @@ msgid ""
 "  -x                    Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: редактирование файла в виртуальной машине\n"
+"Copyright (C) 2009-2025 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена файл [файл ...]\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...] файл [файл ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  -b|--backup .расширение  Создать резервную копию как исходный.расширение\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  -e|--edit|--expr выражение  Неинтерактивное редактирование с "
+"использованием Perl-выражения\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -m|--mount устройство[:точка_монтирования[:параметры[:тип_фс]]]\n"
+"                        Смонтировать устройство в точку_монтирования (если "
+"опущено, /)\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: edit/edit.c:179
-#, c-format
+#, c-format, fuzzy
 msgid "-b option given multiple times"
-msgstr ""
+msgstr "параметр -b указан несколько раз"
 
 #: edit/edit.c:193
-#, c-format
+#, c-format, fuzzy
 msgid "-e option given multiple times"
-msgstr ""
+msgstr "параметр -e указан несколько раз"
 
 #: filesystems/filesystems.c:97
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: list filesystems, partitions, block devices, LVM in a VM\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -3757,32 +4843,77 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: вывод списка файловых систем, разделов, блочных устройств, LVM в ВМ\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --all                 Показать всё\n"
+"  --blkdevs|--block-devices\n"
+"                        Показать блочные устройства\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --extra               Показать файловые системы подкачки и данных\n"
+"  --filesystems         Показать монтируемые файловые системы\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --fs-version|--fs-versions\n"
+"                        Добавить версию файловой системы к выводу --long\n"
+"  -h|--human-readable   Выводить размеры в удобочитаемом формате в выводе --"
+"long\n"
+"  --help                Показать краткую справку\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -l|--long             Подробный вывод\n"
+"  --lvs|--logvols|--logical-volumes\n"
+"                        Показать логические тома LVM\n"
+"  --no-title            Без заголовка в выводе --long\n"
+"  --parts|--partitions  Показать разделы\n"
+"  --pvs|--physvols|--physical-volumes\n"
+"                        Показать физические тома LVM\n"
+"  --uuid|--uuids        Добавить UUID к выводу --long\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  --vgs|--volgroups|--volume-groups\n"
+"                        Показать группы томов LVM\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: filesystems/filesystems.c:315 inspector/inspector.c:263 log/log.c:205
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format like '--format=%s'.\n"
 msgstr ""
+"%s: ошибка: лишний аргумент «%s» в командной строке.\n"
+"Убедитесь, что вы указываете аргумент для --format, например '--format=%s'.\n"
 
 #: filesystems/filesystems.c:520
-#, c-format
+#, c-format, fuzzy
 msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
-msgstr ""
+msgstr "%s: не удаётся определить подтом для %s: %s: %s\n"
 
 #: format/format.c:68
+#, fuzzy
 msgid "IMPORTANT NOTE: This program ERASES ALL DATA on disks."
-msgstr ""
+msgstr "ВАЖНОЕ ПРИМЕЧАНИЕ: Эта программа УНИЧТОЖАЕТ ВСЕ ДАННЫЕ на дисках."
 
 #: format/format.c:71
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Try ‘%s --help’ for more information.\n"
 "%s\n"
 msgstr ""
+"Попробуйте «%s --help» для получения дополнительной информации.\n"
+"%s\n"
 
 #: format/format.c:74
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: erase and make a blank disk\n"
 "Copyright (C) 2012 Red Hat Inc.\n"
@@ -3810,46 +4941,78 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"%s: стирание и создание пустого диска\n"
+"Copyright (C) 2012 Red Hat Inc.\n"
+"\n"
+"%s\n"
+"\n"
+"Использование:\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  --filesystem=..       Создать пустую файловую систему\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --label=..            Установить метку файловой системы\n"
+"  --lvm=..              Создать логический том Linux LVM2\n"
+"  --partition=..        Создать / установить тип раздела\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  --wipe                Записать нули на весь диск\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"\n"
+"%s\n"
+"\n"
 
 #: format/format.c:162
-#, c-format
+#, c-format, fuzzy
 msgid "no filesystem was specified"
-msgstr ""
+msgstr "файловая система не указана"
 
 #: format/format.c:168
-#, c-format
+#, c-format, fuzzy
 msgid "--lvm option cannot be given multiple times"
-msgstr ""
+msgstr "параметр --lvm нельзя указывать несколько раз"
 
 #: format/format.c:234
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format, --lvm or --partition like '--"
 "format=%s'.\n"
 msgstr ""
+"%s: ошибка: лишний аргумент «%s» в командной строке.\n"
+"Убедитесь, что вы указываете аргумент для --format, --lvm или --partition, "
+"например '--format=%s'.\n"
 
 #: format/format.c:246
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error: you must specify at least one -a option.\n"
-msgstr ""
+msgstr "%s: ошибка: вы должны указать хотя бы один параметр -a.\n"
 
 #: format/format.c:288
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "failed to rescan the disks after two attempts.  This\n"
 "may mean there is some sort of partition table or disk\n"
 "data which we are unable to remove.  If you think this\n"
 "is a bug, please file a bug at http://libguestfs.org/\n"
 msgstr ""
+"не удалось повторно просканировать диски после двух попыток. Это\n"
+"может означать наличие таблицы разделов или данных на диске,\n"
+"которые мы не можем удалить. Если вы считаете, что это ошибка,\n"
+"сообщите о ней по адресу http://libguestfs.org/\n"
 
 #: format/format.c:326
-#, c-format
+#, c-format, fuzzy
 msgid "cannot parse --lvm option (%s)"
-msgstr ""
+msgstr "не удаётся разобрать параметр --lvm (%s)"
 
 #: inspector/inspector.c:88
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: display information about a virtual machine\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -3875,14 +5038,37 @@ msgid ""
 "  --xpath query        Perform an XPath query\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: вывод информации о виртуальной машине\n"
+"Copyright (C) 2010 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  --no-applications     Не выводить установленные приложения\n"
+"  --no-icon             Не выводить значок гостя\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"  --xpath запрос        Выполнить XPath-запрос\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: inspector/inspector.c:279
-#, c-format
+#, c-format, fuzzy
 msgid "cannot use --xpath together with other options."
-msgstr ""
+msgstr "нельзя использовать --xpath вместе с другими параметрами."
 
 #: inspector/inspector.c:319
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "no operating system could be detected inside this disk image.\n"
 "\n"
@@ -3897,54 +5083,66 @@ msgid ""
 "If you feel this is an error, please file a bug report including as much\n"
 "information about the disk image as possible.\n"
 msgstr ""
+"в этом образе диска не удалось обнаружить операционную систему.\n"
+"\n"
+"Это может быть связано с тем, что файл не является образом диска, не "
+"является\n"
+"образом виртуальной машины или тип ОС не распознаётся libguestfs.\n"
+"\n"
+"ПРИМЕЧАНИЕ для пользователей Red Hat Enterprise Linux 6: для поддержки\n"
+"гостевых Windows необходимо установить отдельный пакет\n"
+"libguestfs-winsupport.\n"
+"\n"
+"Если вы считаете, что это ошибка, пожалуйста, сообщите о ней, включив\n"
+"как можно больше информации об образе диска.\n"
 
 #: inspector/inspector.c:335
-#, c-format
+#, c-format, fuzzy
 msgid "xmlOutputBufferCreateFd: failed to open stdout"
-msgstr ""
+msgstr "xmlOutputBufferCreateFd: не удалось открыть stdout"
 
 #: inspector/inspector.c:341
-#, c-format
+#, c-format, fuzzy
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
-msgstr ""
+msgstr "xmlNewTextWriter: не удалось создать модуль записи libxml2"
 
 #: inspector/inspector.c:732
-#, c-format
+#, c-format, fuzzy
 msgid "unable to parse XML from stdin"
-msgstr ""
+msgstr "не удалось разобрать XML из stdin"
 
 #: inspector/inspector.c:736
-#, c-format
+#, c-format, fuzzy
 msgid "unable to create new XPath context"
-msgstr ""
+msgstr "не удалось создать новый XPath-контекст"
 
 #: inspector/inspector.c:740
-#, c-format
+#, c-format, fuzzy
 msgid "unable to evaluate XPath expression"
-msgstr ""
+msgstr "не удалось вычислить XPath-выражение"
 
 #: inspector/inspector.c:751
-#, c-format
+#, c-format, fuzzy
 msgid "xmlSaveToFd failed"
-msgstr ""
+msgstr "xmlSaveToFd не удалось"
 
 #: inspector/inspector.c:756
-#, c-format
+#, c-format, fuzzy
 msgid "xmlNewDoc failed"
-msgstr ""
+msgstr "xmlNewDoc не удалось"
 
 #: inspector/inspector.c:759
-#, c-format
+#, c-format, fuzzy
 msgid "xmlCopyNode failed"
-msgstr ""
+msgstr "xmlCopyNode не удалось"
 
 #: inspector/inspector.c:764
-#, c-format
+#, c-format, fuzzy
 msgid "xmlSaveDoc failed"
-msgstr ""
+msgstr "xmlSaveDoc не удалось"
 
 #: log/log.c:72
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: display log files in a virtual machine\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -3967,33 +5165,58 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: отображение файлов журналов в виртуальной машине\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: log/log.c:273
-#, c-format
+#, c-format, fuzzy
 msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
-msgstr ""
+msgstr "%s: Журнал событий Windows для гостей до Vista не поддерживается.\n"
 
 #: log/log.c:381
-#, c-format
+#, c-format, fuzzy
 msgid "%s: could not format journal entry timestamp\n"
-msgstr ""
+msgstr "%s: не удалось отформатировать временную метку записи журнала\n"
 
 #: log/log.c:447
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
 "in order to parse Windows Event Logs.  If you cannot install this, then\n"
 "use virt-copy-out(1) to copy the contents of /Windows/System32/winevt/Logs\n"
 "from this guest, and examine in a binary file viewer.\n"
 msgstr ""
+"%s: для разбора журналов событий Windows необходимо установить\n"
+"‘evtxdump.py’ (из пакета python-evtx). Если вы не можете установить его,\n"
+"используйте virt-copy-out(1) для копирования содержимого\n"
+"/Windows/System32/winevt/Logs из этого гостя и просмотрите его в\n"
+"просмотрщике двоичных файлов.\n"
 
 #: log/log.c:466
-#, c-format
+#, c-format, fuzzy
 msgid "%s: Windows Event Log file (%s) not found\n"
-msgstr ""
+msgstr "%s: файл журнала событий Windows (%s) не найден\n"
 
 #: ls/ls.c:100
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: list files in a virtual machine\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4029,16 +5252,56 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: вывод списка файлов в виртуальной машине\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена каталог [каталог ...]\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...] каталог [каталог ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  --checksum[=...]      Показывать контрольные суммы файлов\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  --extra-stats         Показывать дополнительную статистику\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  -h|--human-readable   Выводить размеры в удобочитаемом формате\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -l|--long             Подробный список\n"
+"  -m|--mount устройство[:точка_монтирования[:параметры[:тип_фс]]]\n"
+"                        Смонтировать устройство в точку_монтирования (если "
+"опущено, /)\n"
+"  -R|--recursive        Рекурсивный список\n"
+"  --times               Показывать время файлов\n"
+"  --time-days           Показывать время файлов как количество дней до "
+"настоящего момента\n"
+"  --time-relative       Показывать время файлов как количество секунд до "
+"настоящего момента\n"
+"  --time-t              Показывать время файлов как time_t\n"
+"  --uids                Показывать UID, GID\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: ls/ls.c:354
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "used a flag which can only be combined with -lR mode\n"
 "For more information, read the virt-ls(1) man page."
 msgstr ""
+"использован флаг, который можно комбинировать только с режимом -lR\n"
+"Для получения дополнительной информации прочитайте справочную страницу virt-"
+"ls(1)."
 
 #: make-fs/make-fs.c:85
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: make a filesystem from a tar archive or files\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4060,55 +5323,75 @@ msgid ""
 "  -x                       Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: создание файловой системы из tar-архива или файлов\n"
+"Copyright (C) 2010-2025 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] входной.tar выходной.img\n"
+"  %s [--параметры] входной.tar.gz выходной.img\n"
+"  %s [--параметры] каталог выходной.img\n"
+"Параметры:\n"
+"  --blocksize=512|4096     Установить размер сектора выходного диска\n"
+"  --floppy                 Создать виртуальную дискету\n"
+"  -F|--format=raw|qcow2|.. Установить формат вывода\n"
+"  --help                   Показать краткую справку\n"
+"  --label=метка            Метка файловой системы\n"
+"  --partition=mbr|gpt|..   Установить тип раздела\n"
+"  -s|--size=размер|+размер Установить размер выходного диска\n"
+"  -t|--type=ext4|..        Установить тип файловой системы\n"
+"  -v|--verbose             Подробные сообщения\n"
+"  -V|--version             Показать версию и выйти\n"
+"  -x                       Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: make-fs/make-fs.c:154
-#, c-format
+#, c-format, fuzzy
 msgid "--blocksize option is not numeric"
-msgstr ""
+msgstr "параметр --blocksize не является числом"
 
 #: make-fs/make-fs.c:195
-#, c-format
+#, c-format, fuzzy
 msgid "%s: missing input and output arguments on the command line\n"
-msgstr ""
+msgstr "%s: отсутствуют аргументы ввода и вывода в командной строке\n"
 
 #: make-fs/make-fs.c:214
-#, c-format
+#, c-format, fuzzy
 msgid "%s: NTFS support was disabled when libguestfs was compiled\n"
-msgstr ""
+msgstr "%s: поддержка NTFS была отключена при компиляции libguestfs\n"
 
 #: make-fs/make-fs.c:264 make-fs/make-fs.c:328
-#, c-format
+#, c-format, fuzzy
 msgid "%s: %s command failed\n"
-msgstr ""
+msgstr "%s: команда %s завершилась с ошибкой\n"
 
 #: make-fs/make-fs.c:453
-#, c-format
+#, c-format, fuzzy
 msgid "%s: cannot parse the output of ‘du’ command: %s\n"
-msgstr ""
+msgstr "%s: не удаётся разобрать вывод команды «du»: %s\n"
 
 #: make-fs/make-fs.c:488
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: %s: input is not a directory, tar archive or compressed tar archive\n"
 msgstr ""
+"%s: %s: ввод не является каталогом, tar-архивом или сжатым tar-архивом\n"
 
 #: make-fs/make-fs.c:519
-#, c-format
+#, c-format, fuzzy
 msgid "%s: %s: unknown compressed input format (%s)\n"
-msgstr ""
+msgstr "%s: %s: неизвестный сжатый формат ввода (%s)\n"
 
 #: make-fs/make-fs.c:642
-#, c-format
+#, c-format, fuzzy
 msgid "%s: %s: invalid size parameter ‘%s’ (%s returned %u)\n"
-msgstr ""
+msgstr "%s: %s: недопустимый параметр размера «%s» (%s вернул %u)\n"
 
 #: make-fs/make-fs.c:868
-#, c-format
+#, c-format, fuzzy
 msgid "%s: subprocess failed\n"
-msgstr ""
+msgstr "%s: дочерний процесс завершился с ошибкой\n"
 
 #: tail/tail.c:70
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: follow (tail) files in a virtual machine\n"
 "Copyright (C) 2016 Red Hat Inc.\n"
@@ -4134,30 +5417,57 @@ msgid ""
 "  -x                   Trace libguestfs API calls\n"
 "For more information, see the manpage %s(1).\n"
 msgstr ""
+"%s: отслеживание (tail) файлов в виртуальной машине\n"
+"Copyright (C) 2016 Red Hat Inc.\n"
+"Использование:\n"
+"  %s [--параметры] -d имя_домена файл [файл ...]\n"
+"  %s [--параметры] -a диск.img [-a диск.img ...] файл [файл ...]\n"
+"Параметры:\n"
+"  -a|--add образ        Добавить образ\n"
+"  --blocksize[=512|4096]\n"
+"                        Установить размер сектора диска для параметра -a\n"
+"  -c|--connect uri      Указать URI libvirt для параметра -d\n"
+"  -d|--domain гость     Добавить диски из гостя libvirt\n"
+"  --echo-keys           Не отключать эхо для парольных фраз\n"
+"  -f|--follow           Игнорируется для совместимости с tail\n"
+"  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
+"  --help                Показать краткую справку\n"
+"  --key селектор        Указать ключ LUKS\n"
+"  --keys-from-stdin     Читать парольные фразы из stdin\n"
+"  -m|--mount устройство[:точка_монтирования[:параметры[:тип_фс]]]\n"
+"                        Смонтировать устройство в точку_монтирования (если "
+"опущено, /)\n"
+"  -v|--verbose          Подробные сообщения\n"
+"  -V|--version          Показать версию и выйти\n"
+"  -x                    Трассировать вызовы API libguestfs\n"
+"Для получения дополнительной информации см. справочную страницу %s(1).\n"
 
 #: tail/tail.c:220
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s: error: missing filenames on command line.\n"
 "Please specify at least one file to follow.\n"
 msgstr ""
+"%s: ошибка: отсутствуют имена файлов в командной строке.\n"
+"Укажите хотя бы один файл для отслеживания.\n"
 
 #: tail/tail.c:427
-#, c-format
+#, c-format, fuzzy
 msgid "%s: error: none of the files were found in the disk image\n"
-msgstr ""
+msgstr "%s: ошибка: ни один из файлов не найден в образе диска\n"
 
 #: tail/tail.c:432
-#, c-format
+#, c-format, fuzzy
 msgid "%s: all files deleted, exiting\n"
-msgstr ""
+msgstr "%s: все файлы удалены, выход\n"
 
 #: win-reg/virt-win-reg.in:261
+#, fuzzy
 msgid "no libvirt domain name or disk image given\n"
-msgstr ""
+msgstr "не указано имя домена libvirt или образ диска\n"
 
 #: win-reg/virt-win-reg.in:317
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid ""
 "{prog}: No operating system could be detected inside this disk image.\n"
 "\n"
@@ -4168,37 +5478,48 @@ msgid ""
 "If you feel this is an error, please file a bug report including as much\n"
 "information about the disk image as possible.\n"
 msgstr ""
+"{prog}: В этом образе диска не удалось обнаружить операционную систему.\n"
+"\n"
+"Это может быть связано с тем, что файл не является образом диска, не "
+"является\n"
+"образом виртуальной машины или тип ОС не распознаётся libguestfs.\n"
+"\n"
+"Если вы считаете, что это ошибка, пожалуйста, сообщите о ней, включив\n"
+"как можно больше информации об образе диска.\n"
 
 #: win-reg/virt-win-reg.in:321
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "{prog}: multiboot operating systems are not supported.\n"
-msgstr ""
+msgstr "{prog}: мультизагрузочные операционные системы не поддерживаются.\n"
 
 #: win-reg/virt-win-reg.in:343
+#, fuzzy
 msgid ""
 "expecting 1 or 2 more parameters, subkey path and optionally the value to "
 "export\n"
 msgstr ""
+"ожидается ещё 1 или 2 параметра: путь к подключу и, опционально, значение "
+"для экспорта\n"
 
 #: win-reg/virt-win-reg.in:503
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "virt-win-reg: {p}: cannot find user directory\n"
-msgstr ""
+msgstr "virt-win-reg: {p}: не удаётся найти пользовательский каталог\n"
 
 #: win-reg/virt-win-reg.in:508
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "virt-win-reg: {p}: not a supported Windows Registry path\n"
-msgstr ""
+msgstr "virt-win-reg: {p}: не является поддерживаемым путём реестра Windows\n"
 
 #: win-reg/virt-win-reg.in:581
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
-msgstr ""
+msgstr "virt-win-reg: {p}: не удалось загрузить файл реестра: {err}\n"
 
 #: win-reg/virt-win-reg.in:598
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "virt-win-reg: {p}: could not upload registry file: {err}\n"
-msgstr ""
+msgstr "virt-win-reg: {p}: не удалось выгрузить файл реестра: {err}\n"
 
 #~ msgid "Command"
 #~ msgstr "Команда"

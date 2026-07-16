@@ -7,15 +7,17 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-07-09 11:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-16 21:17+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/"
+"libguestfs/guestfs-tools-docs-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -1868,7 +1870,7 @@ msgstr ""
 #. type: =head2
 #: builder/virt-builder.pod:114
 msgid "Set the hostname"
-msgstr ""
+msgstr "Установить имя хоста"
 
 #. type: verbatim
 #: builder/virt-builder.pod:116
@@ -6438,7 +6440,7 @@ msgstr ""
 #: common/mlcustomize/customize-options.pod:233
 #: sysprep/sysprep-extra-options.pod:220
 msgid "DIR"
-msgstr ""
+msgstr "КАТАЛОГ"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:235
@@ -15979,8 +15981,10 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:79
+#, fuzzy
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
+"В случае удаления какого-либо сертификата хранилище CA системы обновляется."
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:81
@@ -15994,8 +15998,9 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:86
+#, fuzzy
 msgid "Remove the automatically generated kdump kernel crash data."
-msgstr ""
+msgstr "Удалить автоматически создаваемые данные о сбоях ядра kdump."
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:88
@@ -16937,8 +16942,9 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:669
+#, fuzzy
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
-msgstr ""
+msgstr "Это удаляет временные файлы в C</tmp> и C</var/tmp>."
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:671
