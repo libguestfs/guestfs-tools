@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-07-09 11:24+0100\n"
-"PO-Revision-Date: 2026-07-16 21:17+0000\n"
+"PO-Revision-Date: 2026-07-18 04:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
@@ -15981,10 +15981,9 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:79
-#, fuzzy
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
-"В случае удаления какого-либо сертификата хранилище CA системы обновляется."
+"В случае удаления какого-либо сертификата хранилище ЦС системы обновляется."
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:81
@@ -15998,7 +15997,6 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:86
-#, fuzzy
 msgid "Remove the automatically generated kdump kernel crash data."
 msgstr "Удалить автоматически создаваемые данные о сбоях ядра kdump."
 
