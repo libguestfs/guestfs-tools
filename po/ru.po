@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2026-07-16 21:19+0000\n"
+"PO-Revision-Date: 2026-07-18 04:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
@@ -484,17 +484,14 @@ msgid "%s: this partition has already been ignored or deleted"
 msgstr "%s: этот раздел уже был проигнорирован или удалён"
 
 #: resize/resize.ml:690
-#, fuzzy
 msgid "%s: this partition has already been marked for resizing"
 msgstr "%s: этот раздел уже отмечен для изменения размера"
 
 #: resize/resize.ml:561
-#, fuzzy
 msgid "%s: this partition overlaps the previous one"
 msgstr "%s: этот раздел перекрывается с предыдущим"
 
 #: resize/resize.ml:433
-#, fuzzy
 msgid ""
 "%s: unknown partition table type\n"
 "virt-resize only supports MBR (DOS) and GPT partition tables."
@@ -507,13 +504,11 @@ msgid "%s: warning: %s"
 msgstr "%s: предупреждение: %s"
 
 #: builder/index_parser.ml:265
-#, fuzzy
 msgid "%s: you must use relative paths (not ‘%s’) in the index file\n"
 msgstr ""
 "%s: вы должны использовать относительные пути (не «%s») в файле индекса\n"
 
 #: builder/index_parser.ml:257
-#, fuzzy
 msgid "%s: zero length path in the index file\n"
 msgstr "%s: нулевая длина пути в файле индекса\n"
 
@@ -523,7 +518,6 @@ msgid "'CMD+ARGS'"
 msgstr "'КОМАНДА+АРГУМЕНТЫ'"
 
 #: get-kernel/get_kernel.ml:40 drivers/drivers.ml:36
-#, fuzzy
 msgid "--add option can only be given once"
 msgstr "параметр --add можно указать только один раз"
 
@@ -536,12 +530,10 @@ msgstr ""
 "параметр --append-line несколько раз, чтобы добавить несколько строк."
 
 #: customize/customize_main.ml:114
-#, fuzzy
 msgid "--attach-format parameter must appear before --attach parameter"
 msgstr "параметр --attach-format должен предшествовать параметру --attach"
 
 #: builder/cmdline.ml:268
-#, fuzzy
 msgid ""
 "--cache-all-templates/--print-cache/--delete-cache does not need any extra "
 "arguments"
@@ -550,7 +542,6 @@ msgstr ""
 "аргументов"
 
 #: sparsify/cmdline.ml:55
-#, fuzzy
 msgid "--check-tmpdir: unknown argument ‘%s’"
 msgstr "--check-tmpdir: неизвестный аргумент «%s»"
 
@@ -559,7 +550,6 @@ msgid "--chown: could not parse numeric UID:GID from %s:%s"
 msgstr "--chown: не удалось разобрать числовой UID:GID из %s:%s"
 
 #: sparsify/copying.ml:74
-#, fuzzy
 msgid ""
 "--compress cannot be used for raw output.  Remove this option or use --"
 "convert qcow2."
@@ -569,32 +559,26 @@ msgstr ""
 
 #. customize/customize_main.ml:72
 #: sysprep/main.ml:68 get-kernel/get_kernel.ml:49 drivers/drivers.ml:45
-#, fuzzy
 msgid "--domain option can only be given once"
 msgstr "параметр --domain можно указать только один раз"
 
 #: sysprep/main.ml:78
-#, fuzzy
 msgid "--enable option can only be given once"
 msgstr "параметр --enable можно указать только один раз"
 
 #: sysprep/main.ml:86
-#, fuzzy
 msgid "--enable: ‘%s’ is not a known operation"
 msgstr "--enable: «%s» не является известной операцией"
 
 #: resize/resize.ml:174
-#, fuzzy
 msgid "--expand option given more than once"
 msgstr "параметр --expand указан более одного раза"
 
 #: sysprep/main.ml:157 customize/customize_main.ml:111
-#, fuzzy
 msgid "--format parameter must appear before -a parameter"
 msgstr "параметр --format должен предшествовать параметру -a"
 
 #: builder/cmdline.ml:278
-#, fuzzy
 msgid "--get-kernel: too many parameters"
 msgstr "--get-kernel: слишком много параметров"
 
@@ -620,42 +604,34 @@ msgstr ""
 "указанном источнике virtio-win"
 
 #: builder/cmdline.ml:245
-#, fuzzy
 msgid "--list: use ‘--list-format’, not ‘--format’"
 msgstr "--list: используйте «--list-format», а не «--format»"
 
 #: builder/cmdline.ml:260
-#, fuzzy
 msgid "--notes: too many parameters, expecting ‘os-version’"
 msgstr "--notes: слишком много параметров, ожидается «os-version»"
 
 #: sysprep/main.ml:105
-#, fuzzy
 msgid "--operations: empty operation name"
 msgstr "--operations: пустое имя операции"
 
 #: sysprep/main.ml:117
-#, fuzzy
 msgid "--operations: ‘%s’ is not a known operation"
 msgstr "--operations: «%s» не является известной операцией"
 
 #: get-kernel/get_kernel.ml:53
-#, fuzzy
 msgid "--prefix option can only be given once"
 msgstr "параметр --prefix можно указать только один раз"
 
 #: sysprep/sysprep_operation_script.ml:35
-#, fuzzy
 msgid "--scriptdir cannot be used more than once"
 msgstr "--scriptdir нельзя использовать более одного раза"
 
 #: resize/resize.ml:190
-#, fuzzy
 msgid "--shrink option given more than once"
 msgstr "параметр --shrink указан более одного раза"
 
 #: sparsify/copying.ml:95
-#, fuzzy
 msgid ""
 "--tmp parameter must point to a directory, block device or prebuilt file"
 msgstr ""
@@ -663,23 +639,19 @@ msgstr ""
 "предварительно созданный файл"
 
 #: sparsify/copying.ml:86
-#, fuzzy
 msgid "--tmp prebuilt:file: %s: file does not exist"
 msgstr "--tmp prebuilt:file: %s: файл не существует"
 
 #: sparsify/copying.ml:91
-#, fuzzy
 msgid "--tmp prebuilt:file: %s: file does not have backing file"
 msgstr "--tmp prebuilt:file: %s: файл не имеет базового файла"
 
 #: sparsify/copying.ml:89
-#, fuzzy
 msgid "--tmp prebuilt:file: %s: file format is not qcow2"
 msgstr "--tmp prebuilt:file: %s: формат файла не qcow2"
 
 #. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
-#, fuzzy
 msgid "Add disk image file"
 msgstr "Добавить файл образа диска"
 
@@ -692,27 +664,22 @@ msgid "Add package(s) to install at first boot"
 msgstr "Добавить пакеты для установки при первой загрузке"
 
 #: sparsify/cmdline.ml:74
-#, fuzzy
 msgid "Add qemu-img options"
 msgstr "Добавить параметры qemu-img"
 
 #: builder/list_entries.ml:83
-#, fuzzy
 msgid "Aliases:"
 msgstr "Псевдонимы:"
 
 #: resize/resize.ml:197
-#, fuzzy
 msgid "Align first partition (default: auto)"
 msgstr "Выровнять первый раздел (по умолчанию: auto)"
 
 #: builder/repository_main.ml:216
-#, fuzzy
 msgid "Allowed characters are letters, digits, - _ and ."
 msgstr "Допустимые символы: буквы, цифры, -, _ и ."
 
 #: builder/repository_main.ml:282
-#, fuzzy
 msgid "Already existing image with id %s and architecture %s"
 msgstr "Уже существует образ с id %s и архитектурой %s"
 
@@ -725,27 +692,22 @@ msgid "Appending line to %s"
 msgstr "Добавление строки в %s"
 
 #: builder/list_entries.ml:77
-#, fuzzy
 msgid "Architecture:"
 msgstr "Архитектура:"
 
 #: builder/repository_main.ml:224
-#, fuzzy
 msgid "Architecture: "
 msgstr "Архитектура: "
 
 #: builder/repository_main.ml:55
-#, fuzzy
 msgid "Ask the user about missing data"
 msgstr "Спрашивать пользователя о недостающих данных"
 
 #: customize/customize_main.ml:78 builder/cmdline.ml:128
-#, fuzzy
 msgid "Attach data disk/ISO during install"
 msgstr "Подключить диск данных/ISO во время установки"
 
 #: sparsify/copying.ml:348
-#, fuzzy
 msgid ""
 "Before deleting the old disk, carefully check that the target disk boots and "
 "works correctly."
@@ -754,13 +716,11 @@ msgstr ""
 "загружается и работает корректно."
 
 #: resize/resize.ml:216
-#, fuzzy
 msgid "Behaviour on expand unknown filesystems (default: warn)"
 msgstr ""
 "Поведение при расширении неизвестных файловых систем (по умолчанию: warn)"
 
 #: sysprep/sysprep_operation_user_account.ml:105
-#, fuzzy
 msgid ""
 "By default remove all the user accounts and their home directories.\n"
 "The \"root\" account is not removed.\n"
@@ -770,23 +730,20 @@ msgid ""
 msgstr ""
 "По умолчанию удаляются все учётные записи пользователей и их домашние "
 "каталоги.\n"
-"Учётная запись \"root\" не удаляется.\n"
+"Учётная запись «root» не удаляется.\n"
 "\n"
 "См. параметр I<--remove-user-accounts> для указания способа удаления\n"
 "только некоторых пользователей или сохранения некоторых."
 
 #: sysprep/sysprep_operation_user_account.ml:83
-#, fuzzy
 msgid "Cannot get the home directory for %s"
 msgstr "Не удаётся получить домашний каталог для %s"
 
 #: sysprep/sysprep_operation_lvm_uuids.ml:84
-#, fuzzy
 msgid "Change LVM2 PV and VG UUIDs"
 msgstr "Изменить UUID физических томов и групп томов LVM2"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:48
-#, fuzzy
 msgid "Change filesystem UUIDs"
 msgstr "Изменить UUID файловых систем"
 
@@ -807,17 +764,14 @@ msgid "Changing permissions of %s to %s"
 msgstr "Изменение прав доступа %s на %s"
 
 #: builder/cmdline.ml:136
-#, fuzzy
 msgid "Check digital signatures"
 msgstr "Проверять цифровые подписи"
 
 #: sparsify/cmdline.ml:68
-#, fuzzy
 msgid "Check there is enough space in $TMPDIR"
 msgstr "Проверить наличие достаточного пространства в $TMPDIR"
 
 #: builder/repository_main.ml:202
-#, fuzzy
 msgid ""
 "Choose one from the list below:\n"
 " %s\n"
@@ -826,7 +780,6 @@ msgstr ""
 " %s\n"
 
 #: sparsify/in_place.ml:127 sparsify/copying.ml:279
-#, fuzzy
 msgid "Clearing Linux swap on %s"
 msgstr "Очистка раздела подкачки Linux на %s"
 
@@ -835,17 +788,14 @@ msgid "Compatibility option doing nothing"
 msgstr "Параметр совместимости, ничего не делающий"
 
 #: sparsify/cmdline.ml:69
-#, fuzzy
 msgid "Compressed output format"
 msgstr "Сжатый формат вывода"
 
 #: builder/builder.ml:709
-#, fuzzy
 msgid "Converting %s to %s"
 msgstr "Преобразование %s в %s"
 
 #: builder/builder.ml:708
-#, fuzzy
 msgid "Converting to %s"
 msgstr "Преобразование в %s"
 
@@ -862,12 +812,10 @@ msgid "Copy local files or directories into image"
 msgstr "Копировать локальные файлы или каталоги в образ"
 
 #: builder/builder.ml:642
-#, fuzzy
 msgid "Copying"
 msgstr "Копирование"
 
 #: resize/resize.ml:1304
-#, fuzzy
 msgid "Copying %s"
 msgstr "Копирование %s"
 
@@ -884,12 +832,10 @@ msgid "Create a directory"
 msgstr "Создать каталог"
 
 #: sparsify/copying.ml:152
-#, fuzzy
 msgid "Create overlay device %s to protect source disk"
 msgstr "Создание устройства-оверлея %s для защиты исходного диска"
 
 #: sparsify/copying.ml:150
-#, fuzzy
 msgid "Create overlay file in %s to protect source disk"
 msgstr "Создание файла-оверлея в %s для защиты исходного диска"
 
@@ -898,50 +844,44 @@ msgid "Create symbolic links"
 msgstr "Создать символические ссылки"
 
 #: builder/repository_main.ml:566
-#, fuzzy
 msgid "Creating index backup copy"
 msgstr "Создание резервной копии индекса"
 
 #: sysprep/sysprep_operation_bash_history.ml:42
-#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the bash history removed."
 msgstr ""
-"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
-"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
-"история bash не будет удалена."
+"В настоящее время поиск домашних каталогов выполняется только\n"
+"в C</root> и C</home/*>, поэтому у пользователей с домашними\n"
+"каталогами в других местах история bash не будет удалена."
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:42
-#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the ssh files removed."
 msgstr ""
-"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
-"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
-"файлы ssh не будут удалены."
+"В настоящее время поиск домашних каталогов выполняется\n"
+"только в C</root> и C</home/*>, поэтому у пользователей с\n"
+"домашними каталогами в других местах файлы ssh не будут удалены."
 
 #: sysprep/sysprep_operation_zsh_history.ml:42
-#, fuzzy
 msgid ""
 "Currently this only looks in C</root> and C</home/*> for\n"
 "home directories, so users with home directories in other\n"
 "locations won't have the zsh history removed."
 msgstr ""
-"В настоящее время поиск домашних каталогов выполняется только в C</root> и "
-"C</home/*>, поэтому у пользователей с домашними каталогами в других местах "
-"история zsh не будет удалена."
+"В настоящее время поиск домашних каталогов выполняется\n"
+"только в C</root> и C</home/*>, поэтому у пользователей с\n"
+"домашними каталогами в других местах история zsh не будет удалена."
 
 #: sysprep/sysprep_operation_customize.ml:43
-#, fuzzy
 msgid "Customize the guest"
 msgstr "Настройка гостевой системы"
 
 #: sysprep/sysprep_operation_customize.ml:44
-#, fuzzy
 msgid ""
 "Customize the guest by providing L<virt-customize(1)> options\n"
 "for installing packages, editing files and so on."
@@ -958,12 +898,10 @@ msgid "Delete a file or directory"
 msgstr "Удалить файл или каталог"
 
 #: resize/resize.ml:201
-#, fuzzy
 msgid "Delete partition"
 msgstr "Удалить раздел"
 
 #: builder/cmdline.ml:141
-#, fuzzy
 msgid "Delete the template cache"
 msgstr "Удалить кэш шаблонов"
 
@@ -972,27 +910,22 @@ msgid "Deleting: %s"
 msgstr "Удаление: %s"
 
 #: customize/customize_main.ml:87 builder/cmdline.ml:156
-#, fuzzy
 msgid "Disable appliance network"
 msgstr "Отключить сеть устройства"
 
 #: sysprep/main.ml:137
-#, fuzzy
 msgid "Disable appliance network (default)"
 msgstr "Отключить сеть устройства (по умолчанию)"
 
 #: builder/cmdline.ml:138
-#, fuzzy
 msgid "Disable digital signatures"
 msgstr "Отключить цифровые подписи"
 
 #: builder/cmdline.ml:132
-#, fuzzy
 msgid "Disable template cache"
 msgstr "Отключить кэш шаблонов"
 
 #: sparsify/in_place.ml:163
-#, fuzzy
 msgid "Discard space in volgroup %s"
 msgstr "Освобождение пространства в группе томов %s"
 
@@ -1001,12 +934,10 @@ msgid "Display brief help"
 msgstr "Показать краткую справку"
 
 #: builder/cmdline.ml:157
-#, fuzzy
 msgid "Display installation notes"
 msgstr "Показать примечания по установке"
 
 #: builder/repository_main.ml:290
-#, fuzzy
 msgid "Display name: "
 msgstr "Отображаемое имя: "
 
@@ -1015,7 +946,6 @@ msgid "Display version and exit"
 msgstr "Показать версию и выйти"
 
 #: builder/cmdline.ml:164
-#, fuzzy
 msgid "Do not fsync output file on exit"
 msgstr "Не выполнять fsync для выходного файла при выходе"
 
@@ -1024,37 +954,30 @@ msgid "Do not relabel files with correct SELinux labels"
 msgstr "Не изменять метки SELinux файлов"
 
 #: builder/cmdline.ml:166
-#, fuzzy
 msgid "Do not warn if writing to a partition"
 msgstr "Не предупреждать при записи в раздел"
 
 #: builder/repository_main.ml:56
-#, fuzzy
 msgid "Don’t compress the new images in the index"
 msgstr "Не сжимать новые образы в индексе"
 
 #: resize/resize.ml:199
-#, fuzzy
 msgid "Don’t copy boot loader"
 msgstr "Не копировать загрузчик"
 
 #: resize/resize.ml:204
-#, fuzzy
 msgid "Don’t create extra partition"
 msgstr "Не создавать дополнительный раздел"
 
 #: builder/cmdline.ml:143
-#, fuzzy
 msgid "Don’t delete output file on failure"
 msgstr "Не удалять выходной файл при сбое"
 
 #: resize/resize.ml:203
-#, fuzzy
 msgid "Don’t expand content"
 msgstr "Не расширять содержимое"
 
 #: resize/resize.ml:208
-#, fuzzy
 msgid "Don’t perform changes"
 msgstr "Не выполнять изменения"
 
@@ -1067,17 +990,14 @@ msgid "Don’t turn off echo for passphrases"
 msgstr "Не отключать эхо для парольных фраз"
 
 #: builder/cmdline.ml:134
-#, fuzzy
 msgid "Download all templates to the cache"
 msgstr "Загрузить все шаблоны в кэш"
 
 #: builder/list_entries.ml:80
-#, fuzzy
 msgid "Download size:"
 msgstr "Размер загрузки:"
 
 #: builder/builder.ml:314 builder/builder.ml:262
-#, fuzzy
 msgid "Downloading: %s"
 msgstr "Загрузка: %s"
 
@@ -1090,17 +1010,14 @@ msgid "Editing: %s"
 msgstr "Редактирование: %s"
 
 #: sysprep/main.ml:136
-#, fuzzy
 msgid "Enable appliance network"
 msgstr "Включить сеть устройства"
 
 #: customize/customize_main.ml:86 builder/cmdline.ml:155
-#, fuzzy
 msgid "Enable appliance network (default)"
 msgstr "Включить сеть устройства (по умолчанию)"
 
 #: resize/resize.ml:200
-#, fuzzy
 msgid "Enable debugging messages"
 msgstr "Включить отладочные сообщения"
 
@@ -1109,7 +1026,6 @@ msgid "Enable libguestfs debugging messages"
 msgstr "Включить отладочные сообщения libguestfs"
 
 #: sysprep/main.ml:132
-#, fuzzy
 msgid "Enable specific operations"
 msgstr "Включить определённые операции"
 
@@ -1118,59 +1034,48 @@ msgid "Enable tracing of libguestfs calls"
 msgstr "Включить трассировку вызовов libguestfs"
 
 #: sysprep/main.ml:138
-#, fuzzy
 msgid "Enable/disable specific operations"
 msgstr "Включить/отключить определённые операции"
 
 #: sparsify/copying.ml:180
-#, fuzzy
 msgid "Examine source disk"
 msgstr "Проверка исходного диска"
 
 #: resize/resize.ml:385
-#, fuzzy
 msgid "Examining %s"
 msgstr "Проверка %s"
 
 #: sysprep/main.ml:213 customize/customize_main.ml:159
-#, fuzzy
 msgid "Examining the guest ..."
-msgstr "Проверка гостевой системы ..."
+msgstr "Проверка гостевой системы…"
 
 #: resize/resize.ml:207
-#, fuzzy
 msgid "Expand logical volume"
 msgstr "Расширить логический том"
 
 #: resize/resize.ml:202
-#, fuzzy
 msgid "Expand partition"
 msgstr "Расширить раздел"
 
 #: builder/repository_main.ml:318 builder/repository_main.ml:311
-#, fuzzy
 msgid "Expandable partition: "
 msgstr "Расширяемый раздел: "
 
 #: builder/repository_main.ml:337 builder/repository_main.ml:330
-#, fuzzy
 msgid "Expandable volume: "
 msgstr "Расширяемый том: "
 
 #: resize/resize.ml:1472
-#, fuzzy
 msgid "Expanding %s using the ‘%s’ method"
 msgstr "Расширение %s с использованием метода «%s»"
 
 #: resize/resize.ml:1453
-#, fuzzy
 msgid "Expanding %s%s using the ‘%s’ method"
 msgstr "Расширение %s%s с использованием метода «%s»"
 
 #: builder/repository_main.ml:236
-#, fuzzy
 msgid "Extracting data from the image..."
-msgstr "Извлечение данных из образа..."
+msgstr "Извлечение данных из образа…"
 
 #. common/mlcustomize/customize_cmdline.ml:408
 #. common/mlcustomize/customize_cmdline.ml:373
@@ -1199,7 +1104,6 @@ msgid "FILENAME"
 msgstr "ИМЯ_ФАЙЛА"
 
 #: resize/resize.ml:1094
-#, fuzzy
 msgid ""
 "Failed to initialize the partition table on the target disk.  You need to "
 "wipe or recreate the target disk and then run virt-resize again.\n"
@@ -1212,22 +1116,18 @@ msgstr ""
 "Исходная ошибка: %s"
 
 #: sparsify/copying.ml:264
-#, fuzzy
 msgid "Fill free space in %s with zero"
 msgstr "Заполнение свободного пространства в %s нулями"
 
 #: sparsify/copying.ml:312
-#, fuzzy
 msgid "Fill free space in volgroup %s with zero"
 msgstr "Заполнение свободного пространства в группе томов %s нулями"
 
 #: builder/cmdline.ml:145
-#, fuzzy
 msgid "Fingerprint of valid signing key"
 msgstr "Отпечаток допустимого ключа подписи"
 
 #: builder/list_entries.ml:64
-#, fuzzy
 msgid "Fingerprint: %s\n"
 msgstr "Отпечаток: %s\n"
 
@@ -1236,18 +1136,15 @@ msgid "Finishing off"
 msgstr "Завершение"
 
 #: resize/resize.ml:1351
-#, fuzzy
 msgid "Fixing first NTFS partition boot record"
 msgstr "Исправление загрузочной записи первого раздела NTFS"
 
 #: sysprep/sysprep_operation_flag_reconfiguration.ml:35
-#, fuzzy
 msgid "Flag the system for reconfiguration"
 msgstr "Пометить систему для перенастройки"
 
 #. sysprep/sysprep_operation_net_hostname.ml:56
 #: sysprep/sysprep_operation_net_hwaddr.ml:53
-#, fuzzy
 msgid ""
 "For Fedora and Red Hat Enterprise Linux,\n"
 "this is removed from C<ifcfg-*> files."
@@ -1256,7 +1153,6 @@ msgstr ""
 "это удаляется из файлов C<ifcfg-*>."
 
 #: sysprep/sysprep_operation_flag_reconfiguration.ml:36
-#, fuzzy
 msgid ""
 "For Linux guests, this touches C</.unconfigured>, which causes\n"
 "the first boot to interactively query the user for settings such\n"
@@ -1267,48 +1163,39 @@ msgstr ""
 "для таких настроек, как пароль root и часовой пояс."
 
 #: resize/resize.ml:209
-#, fuzzy
 msgid "Force ntfsresize"
 msgstr "Принудительное выполнение ntfsresize"
 
 #: resize/resize.ml:212
-#, fuzzy
 msgid "Forcefully resize partition"
 msgstr "Принудительное изменение размера раздела"
 
 #. drivers/drivers.ml:54
 #: sparsify/cmdline.ml:71 resize/resize.ml:205 get-kernel/get_kernel.ml:61
-#, fuzzy
 msgid "Format of input disk"
 msgstr "Формат входного диска"
 
 #: resize/resize.ml:210
-#, fuzzy
 msgid "Format of output disk"
 msgstr "Формат выходного диска"
 
 #: sparsify/cmdline.ml:70
-#, fuzzy
 msgid "Format of output disk (default: same as input)"
 msgstr "Формат выходного диска (по умолчанию: такой же, как входной)"
 
 #: builder/repository_main.ml:501
-#, fuzzy
 msgid "Found new images: %s"
 msgstr "Найдены новые образы: %s"
 
 #: builder/builder.ml:786
-#, fuzzy
 msgid "Free space"
 msgstr "Свободное место"
 
 #: builder/list_entries.ml:76
-#, fuzzy
 msgid "Full name:"
 msgstr "Полное имя:"
 
 #: builder/sigchecker.ml:114
-#, fuzzy
 msgid ""
 "GPG failure: could not run GPG the first time\n"
 "Use the ‘-v’ option and look for earlier error messages."
@@ -1317,7 +1204,6 @@ msgstr ""
 "Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: builder/sigchecker.ml:66
-#, fuzzy
 msgid ""
 "GPG failure: could not trust the imported key\n"
 "Use the ‘-v’ option and look for earlier error messages."
@@ -1326,7 +1212,6 @@ msgstr ""
 "Используйте параметр «-v» и просмотрите предыдущие сообщения об ошибках."
 
 #: builder/sigchecker.ml:215
-#, fuzzy
 msgid ""
 "GPG failure: could not verify digital signature of file\n"
 "Try:\n"
@@ -1342,7 +1227,6 @@ msgstr ""
 " - Проверить, не было ли вмешательства в веб-сайт или вашу сеть!"
 
 #: builder/cmdline.ml:148
-#, fuzzy
 msgid "Get kernel from image"
 msgstr "Получить ядро из образа"
 
@@ -1351,12 +1235,10 @@ msgid "HOSTNAME"
 msgstr "ИМЯ_ХОСТА"
 
 #: builder/repository_main.ml:54
-#, fuzzy
 msgid "ID of the GPG key to sign the repo with"
-msgstr "ID ключа GPG для подписи репозитория"
+msgstr "Идентификатор ключа GPG для подписи репозитория"
 
 #: builder/repository_main.ml:214
-#, fuzzy
 msgid "Identifier: "
 msgstr "Идентификатор: "
 
@@ -1373,20 +1255,17 @@ msgstr ""
 "  %s -v -x [...]"
 
 #: sparsify/cmdline.ml:72
-#, fuzzy
 msgid "Ignore filesystem"
 msgstr "Игнорировать файловую систему"
 
 #: resize/resize.ml:206
-#, fuzzy
 msgid "Ignore partition"
 msgstr "Игнорировать раздел"
 
 #: sysprep/sysprep_operation_ca_certificates.ml:56
-#, fuzzy
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
-"В случае удаления какого-либо сертификата хранилище CA системы обновляется."
+"В случае удаления какого-либо сертификата хранилище ЦС системы обновляется."
 
 #: common/mlcustomize/customize_cmdline.ml:386
 msgid "Inject a public key into the guest"
@@ -1421,7 +1300,6 @@ msgid "Installing packages: %s"
 msgstr "Установка пакетов: %s"
 
 #: builder/list_entries.ml:66
-#, fuzzy
 msgid "Key: %s\n"
 msgstr "Ключ: %s\n"
 
@@ -1434,12 +1312,10 @@ msgid "Linking: %s -> %s"
 msgstr "Создание ссылки: %s -> %s"
 
 #: builder/cmdline.ml:150
-#, fuzzy
 msgid "List available templates"
 msgstr "Список доступных шаблонов"
 
 #: sysprep/main.ml:134
-#, fuzzy
 msgid "List supported operations"
 msgstr "Список поддерживаемых операций"
 
@@ -1458,17 +1334,14 @@ msgid "Making directory: %s"
 msgstr "Создание каталога: %s"
 
 #: builder/list_entries.ml:78
-#, fuzzy
 msgid "Minimum/default size:"
 msgstr "Минимальный/размер по умолчанию:"
 
 #: sparsify/cmdline.ml:73
-#, fuzzy
 msgid "Modify the disk image in-place"
 msgstr "Изменить образ диска на месте"
 
 #: sysprep/sysprep_operation_script.ml:138
-#, fuzzy
 msgid "Mount point on host"
 msgstr "Точка монтирования на хосте"
 
@@ -1477,7 +1350,6 @@ msgid "Move files in disk image"
 msgstr "Переместить файлы в образе диска"
 
 #: builder/repository_main.ml:575
-#, fuzzy
 msgid "Moving files to final destination"
 msgstr "Перемещение файлов в конечное расположение"
 
@@ -1486,17 +1358,14 @@ msgid "Moving: %s -> %s"
 msgstr "Перемещение: %s -> %s"
 
 #: builder/repository_main.ml:497
-#, fuzzy
 msgid "No new image found"
 msgstr "Новых образов не найдено"
 
 #: sysprep/sysprep_operation.ml:196
-#, fuzzy
 msgid "Notes on %s"
 msgstr "Примечания по %s"
 
 #: builder/list_entries.ml:89
-#, fuzzy
 msgid ""
 "Notes:\n"
 "\n"
@@ -1507,12 +1376,10 @@ msgstr ""
 "%s\n"
 
 #: sysprep/sysprep_operation_net_nmconn.ml:38
-#, fuzzy
 msgid "On Fedora and Red Hat Enterprise Linux, remove the C<"
 msgstr "В Fedora и Red Hat Enterprise Linux удалите C<"
 
 #: sysprep/sysprep_operation_lvm_uuids.ml:85
-#, fuzzy
 msgid ""
 "On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
 "(VGs),\n"
@@ -1523,7 +1390,6 @@ msgstr ""
 "генерируются новые случайные UUID и назначаются этим PV и VG."
 
 #: sysprep/sysprep_operation_lvm_system_devices.ml:36
-#, fuzzy
 msgid ""
 "On Linux guests, LVM2's scanning for physical volumes (PVs) may be "
 "restricted to those block devices whose WWIDs are listed in C<"
@@ -1533,7 +1399,6 @@ msgstr ""
 
 #. sysprep/sysprep_operation_logfiles.ml:149
 #: sysprep/sysprep_operation_passwd_backups.ml:48
-#, fuzzy
 msgid ""
 "On Linux the following files are removed:\n"
 "\n"
@@ -1544,7 +1409,6 @@ msgstr ""
 "%s"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:49
-#, fuzzy
 msgid ""
 "On guests and filesystem types where this is supported,\n"
 "new random UUIDs are generated and assigned to filesystems."
@@ -1563,32 +1427,26 @@ msgstr ""
 "его, собрав rhsrvany (https://github.com/rwmjones/rhsrvany)"
 
 #: builder/builder.ml:721
-#, fuzzy
 msgid "Opening the new disk"
 msgstr "Открытие нового диска"
 
 #: get-kernel/get_kernel.ml:62
-#, fuzzy
 msgid "Output directory"
 msgstr "Выходной каталог"
 
 #: builder/builder.ml:781
-#, fuzzy
 msgid "Output file"
 msgstr "Выходной файл"
 
 #: builder/builder.ml:783
-#, fuzzy
 msgid "Output format"
 msgstr "Формат вывода"
 
 #: builder/cmdline.ml:146
-#, fuzzy
 msgid "Output format (default: raw)"
 msgstr "Формат вывода (по умолчанию: raw)"
 
 #: builder/builder.ml:782
-#, fuzzy
 msgid "Output size"
 msgstr "Размер вывода"
 
@@ -1608,42 +1466,34 @@ msgid "PKG,PKG.."
 msgstr "ПАКЕТ,ПАКЕТ.."
 
 #: sysprep/sysprep_operation.ml:162
-#, fuzzy
 msgid "POD for %s must not end with newline"
 msgstr "POD для %s не должен заканчиваться символом новой строки"
 
 #: sysprep/sysprep_operation.ml:171
-#, fuzzy
 msgid "POD notes for %s must not end with newline"
 msgstr "Примечания POD для %s не должны заканчиваться символом новой строки"
 
 #: sysprep/main.ml:129 customize/customize_main.ml:83
-#, fuzzy
 msgid "Perform a dry run"
 msgstr "Выполнить пробный запуск"
 
 #: sysprep/sysprep_operation.ml:319 sysprep/sysprep_operation.ml:298
-#, fuzzy
 msgid "Performing %S ..."
-msgstr "Выполнение %S ..."
+msgstr "Выполнение %S…"
 
 #: builder/builder.ml:577
-#, fuzzy
 msgid "Planning how to build this image"
 msgstr "Планирование построения этого образа"
 
 #: get-kernel/get_kernel.ml:64
-#, fuzzy
 msgid "Prefix for files"
 msgstr "Префикс для файлов"
 
 #: builder/repository_main.ml:186
-#, fuzzy
 msgid "Preparing %s"
 msgstr "Подготовка %s"
 
 #: builder/cmdline.ml:160
-#, fuzzy
 msgid "Print info about template cache"
 msgstr "Вывести информацию о кэше шаблонов"
 
@@ -1664,57 +1514,46 @@ msgid "Recursively truncating: %s"
 msgstr "Рекурсивное обрезание: %s"
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:38
-#, fuzzy
 msgid "Remove \".ssh\" directories in the guest"
-msgstr "Удалить каталоги \".ssh\" в гостевой системе"
+msgstr "Удалить каталоги «.ssh» в гостевой системе"
 
 #: sysprep/sysprep_operation_passwd_backups.ml:46
-#, fuzzy
 msgid "Remove /etc/passwd- and similar backup files"
 msgstr "Удалить /etc/passwd- и подобные резервные файлы"
 
 #: sysprep/sysprep_operation_ca_certificates.ml:55
-#, fuzzy
 msgid "Remove CA certificates in the guest"
-msgstr "Удалить сертификаты CA в гостевой системе"
+msgstr "Удалить сертификаты ЦС в гостевой системе"
 
 #: sysprep/sysprep_operation_dhcp_client_state.ml:36
-#, fuzzy
 msgid "Remove DHCP client leases"
 msgstr "Удалить аренды DHCP-клиента"
 
 #: sysprep/sysprep_operation_dhcp_server_state.ml:31
-#, fuzzy
 msgid "Remove DHCP server leases"
 msgstr "Удалить аренды DHCP-сервера"
 
 #: sysprep/sysprep_operation_dovecot_data.ml:37
-#, fuzzy
 msgid "Remove Dovecot (mail server) data"
 msgstr "Удалить данные Dovecot (почтового сервера)"
 
 #: sysprep/sysprep_operation_net_hostname.ml:54
-#, fuzzy
 msgid "Remove HOSTNAME and DHCP_HOSTNAME in network interface configuration"
 msgstr "Удалить HOSTNAME и DHCP_HOSTNAME в конфигурации сетевого интерфейса"
 
 #: sysprep/sysprep_operation_net_hwaddr.ml:52
-#, fuzzy
 msgid "Remove HWADDR (hard-coded MAC address) configuration"
 msgstr "Удалить конфигурацию HWADDR (жёстко заданного MAC-адреса)"
 
 #: sysprep/sysprep_operation_kerberos_data.ml:43
-#, fuzzy
 msgid "Remove Kerberos data in the guest"
 msgstr "Удалить данные Kerberos в гостевой системе"
 
 #: sysprep/sysprep_operation_lvm_system_devices.ml:34
-#, fuzzy
 msgid "Remove LVM2 system.devices file"
 msgstr "Удалить файл system.devices LVM2"
 
 #: sysprep/sysprep_operation_ipa_client.ml:58
-#, fuzzy
 msgid ""
 "Remove all the files related to an IPA (Identity, Policy, Audit) system.\n"
 "This effectively unenrolls the guest from an IPA server without interacting\n"
@@ -1729,27 +1568,22 @@ msgstr ""
 "Эта операция не запускает C<ipa-client>."
 
 #: sysprep/sysprep_operation_blkid_tab.ml:47
-#, fuzzy
 msgid "Remove blkid tab in the guest"
 msgstr "Удалить таблицу blkid в гостевой системе"
 
 #: sysprep/sysprep_operation_backup_files.ml:81
-#, fuzzy
 msgid "Remove editor backup files from the guest"
 msgstr "Удалить резервные файлы редакторов из гостевой системы"
 
 #: sysprep/sysprep_operation_mail_spool.ml:36
-#, fuzzy
 msgid "Remove email from the local mail spool directory"
-msgstr "Удалить электронную почту из каталога локального почтового спула"
+msgstr "Удалить электронную почту из каталога локальной отправки почты"
 
 #: sysprep/sysprep_operation_rpm_db.ml:38
-#, fuzzy
 msgid "Remove host-specific RPM database files"
 msgstr "Удалить специфичные для хоста файлы базы данных RPM"
 
 #: sysprep/sysprep_operation_rpm_db.ml:39
-#, fuzzy
 msgid ""
 "Remove host-specific RPM database files and locks.  RPM will\n"
 "recreate these files automatically if needed."
@@ -1758,71 +1592,58 @@ msgstr ""
 "автоматически пересоздаст эти файлы при необходимости."
 
 #: sysprep/sysprep_operation_logfiles.ml:147
-#, fuzzy
 msgid "Remove many log files from the guest"
 msgstr "Удалить многие файлы журналов из гостевой системы"
 
 #: sysprep/sysprep_operation_package_manager_cache.ml:46
-#, fuzzy
 msgid "Remove package manager cache"
 msgstr "Удалить кэш менеджера пакетов"
 
 #: sysprep/sysprep_operation_net_nmconn.ml:36
-#, fuzzy
 msgid "Remove system-local NetworkManager connection profiles (keyfiles)"
 msgstr "Удалить локальные профили подключений NetworkManager (keyfiles)"
 
 #: sysprep/sysprep_operation_tmp_files.ml:50
-#, fuzzy
 msgid "Remove temporary files"
 msgstr "Удалить временные файлы"
 
 #: sysprep/sysprep_operation_ssh_userdir.ml:39
-#, fuzzy
 msgid ""
 "Remove the C<.ssh> directory of user \"root\" and any other\n"
 "users who have a C<.ssh> directory in their home directory."
 msgstr ""
-"Удалить каталог C<.ssh> пользователя \"root\" и любых других\n"
+"Удалить каталог C<.ssh> пользователя «root» и любых других\n"
 "пользователей, у которых есть каталог C<.ssh> в их домашнем каталоге."
 
 #: sysprep/sysprep_operation_ipa_client.ml:57
-#, fuzzy
 msgid "Remove the IPA files"
 msgstr "Удалить файлы IPA"
 
 #: sysprep/sysprep_operation_kerberos_hostkeytab.ml:34
-#, fuzzy
 msgid "Remove the Kerberos host keytab file in the guest"
 msgstr "Удалить файл keytab Kerberos хоста в гостевой системе"
 
 #: sysprep/sysprep_operation_pam_data.ml:44
-#, fuzzy
 msgid "Remove the PAM data in the guest"
 msgstr "Удалить данные PAM в гостевой системе"
 
 #: sysprep/sysprep_operation_rh_subscription_manager.ml:38
-#, fuzzy
 msgid "Remove the RH subscription manager files"
 msgstr "Удалить файлы менеджера подписок RH"
 
 #: sysprep/sysprep_operation_rhn_systemid.ml:38
-#, fuzzy
 msgid "Remove the RHN system ID"
-msgstr "Удалить системный ID RHN"
+msgstr "Удалить системный идентификатор RHN"
 
 #: sysprep/sysprep_operation_ssh_hostkeys.ml:35
-#, fuzzy
 msgid "Remove the SSH host keys in the guest"
 msgstr "Удалить ключи хоста SSH в гостевой системе"
 
 #: sysprep/sysprep_operation_smolt_uuid.ml:39
-#, fuzzy
 msgid "Remove the Smolt hardware UUID"
 msgstr "Удалить UUID оборудования Smolt"
 
 #: sysprep/sysprep_operation_abrt_data.ml:38
-#, fuzzy
 msgid ""
 "Remove the automatically generated ABRT crash data in\n"
 "C</var/spool/abrt/>."
@@ -1831,12 +1652,10 @@ msgstr ""
 "C</var/spool/abrt/>."
 
 #: sysprep/sysprep_operation_crash_data.ml:40
-#, fuzzy
 msgid "Remove the automatically generated kdump kernel crash data."
 msgstr "Удалить автоматически создаваемые данные о сбоях ядра kdump."
 
 #: sysprep/sysprep_operation_bash_history.ml:38
-#, fuzzy
 msgid "Remove the bash history in the guest"
 msgstr "Удалить историю bash в гостевой системе"
 
