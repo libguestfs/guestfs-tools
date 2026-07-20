@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-07-09 11:24+0100\n"
-"PO-Revision-Date: 2026-07-18 04:18+0000\n"
+"PO-Revision-Date: 2026-07-20 07:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
@@ -16940,7 +16940,6 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:669
-#, fuzzy
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
 msgstr "Это удаляет временные файлы в C</tmp> и C</var/tmp>."
 

@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2026-07-19 05:17+0000\n"
+"PO-Revision-Date: 2026-07-20 07:17+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
@@ -1953,7 +1953,6 @@ msgid "Set the default timezone"
 msgstr "Установить часовой пояс по умолчанию"
 
 #: builder/cmdline.ml:153
-#, fuzzy
 msgid "Set the format for --list (default: short)"
 msgstr "Установить формат для --list (по умолчанию: short)"
 
@@ -1962,7 +1961,6 @@ msgid "Set the hostname"
 msgstr "Установить имя хоста"
 
 #: builder/cmdline.ml:127
-#, fuzzy
 msgid "Set the output architecture"
 msgstr "Установить архитектуру вывода"
 
@@ -1995,47 +1993,38 @@ msgid "Setting the timezone: %s"
 msgstr "Установка часового пояса: %s"
 
 #: resize/resize.ml:1070
-#, fuzzy
 msgid "Setting up initial partition table on %s"
 msgstr "Настройка начальной таблицы разделов на %s"
 
 #: builder/cmdline.ml:151
-#, fuzzy
 msgid "Shortcut for --list-format long"
 msgstr "Сокращение для --list-format long"
 
 #: resize/resize.ml:213
-#, fuzzy
 msgid "Shrink partition"
 msgstr "Уменьшить раздел"
 
 #: builder/repository_main.ml:552
-#, fuzzy
 msgid "Signing index with the GPG key %s"
 msgstr "Подписание индекса ключом GPG %s"
 
 #: sparsify/copying.ml:260
-#, fuzzy
 msgid "Skipping %s, as it is a read-only btrfs snapshot."
 msgstr "Пропуск %s, так как это снимок btrfs только для чтения."
 
 #: sparsify/copying.ml:262
-#, fuzzy
 msgid "Skipping %s, as it is a read-only device."
 msgstr "Пропуск %s, так как это устройство только для чтения."
 
 #: builder/list_entries.ml:60
-#, fuzzy
 msgid "Source URI: %s\n"
-msgstr "URI источника: %s\n"
+msgstr "URI-адрес источника: %s\n"
 
 #: sparsify/in_place.ml:186
-#, fuzzy
 msgid "Sparsify in-place operation completed with no errors"
 msgstr "Операция разрежения на месте завершена без ошибок"
 
 #: sparsify/copying.ml:346
-#, fuzzy
 msgid "Sparsify operation completed with no errors."
 msgstr "Операция разрежения завершена без ошибок."
 
@@ -2056,7 +2045,6 @@ msgid "TIMEZONE"
 msgstr "ЧАСОВОЙ_ПОЯС"
 
 #: sysprep/sysprep_operation_script.ml:112
-#, fuzzy
 msgid ""
 "The C<script> module lets you run arbitrary shell scripts or programs\n"
 "against the guest.\n"
@@ -2105,7 +2093,6 @@ msgstr ""
 "Скрипты I<--script> запускаются на хосте, а не в гостевой системе."
 
 #: sysprep/sysprep_operation_ssh_hostkeys.ml:36
-#, fuzzy
 msgid ""
 "The SSH host keys are regenerated (differently) next time the guest is\n"
 "booted.\n"
@@ -2130,7 +2117,6 @@ msgstr ""
 " ВОЗМОЖНО, КТО-ТО ПЫТАЕТСЯ ПРОВЕСТИ АТАКУ!"
 
 #: sysprep/sysprep_operation_backup_files.ml:83
-#, fuzzy
 msgid ""
 "The following files are removed from anywhere in the guest\n"
 "filesystem:\n"
@@ -2152,7 +2138,6 @@ msgstr ""
 "%s"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:52
-#, fuzzy
 msgid ""
 "The fs-uuids operation is disabled by default because it does\n"
 "not yet find and update all the places in the guest that use\n"
@@ -2171,7 +2156,6 @@ msgstr ""
 "См.: L<https://bugzilla.redhat.com/show_bug.cgi?id=991641>"
 
 #: builder/index_parser.ml:31
-#, fuzzy
 msgid ""
 "The index file downloaded from ‘%s’ is corrupt.\n"
 "You need to ask the supplier of this file to fix it and upload a fixed "
@@ -2182,7 +2166,6 @@ msgstr ""
 "исправленную версию."
 
 #: sysprep/sysprep_operation_machine_id.ml:38
-#, fuzzy
 msgid ""
 "The machine ID is usually generated from a random source during system\n"
 "installation and stays constant for all subsequent boots.  Optionally,\n"
@@ -2195,7 +2178,6 @@ msgstr ""
 "выполнения при загрузке, если обнаружено, что он пуст."
 
 #: sysprep/sysprep_operation_script.ml:140
-#, fuzzy
 msgid ""
 "The mount point (an empty directory on the host) used when\n"
 "the C<script> operation is enabled and one or more scripts\n"
@@ -2216,7 +2198,6 @@ msgstr ""
 "монтирования."
 
 #: sysprep/sysprep_operation_pacct_log.ml:58
-#, fuzzy
 msgid ""
 "The system wide process accounting will store to the pacct\n"
 "log files if the process accounting is on."
@@ -2225,7 +2206,6 @@ msgstr ""
 "если учёт процессов включён."
 
 #: sysprep/sysprep_operation_user_account.ml:133
-#, fuzzy
 msgid ""
 "The user accounts to be kept in the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -2251,7 +2231,6 @@ msgstr ""
 "Этот параметр можно указывать несколько раз."
 
 #: sysprep/sysprep_operation_user_account.ml:116
-#, fuzzy
 msgid ""
 "The user accounts to be removed from the guest.\n"
 "The value of this option is a list of user names separated by comma,\n"
@@ -2277,12 +2256,10 @@ msgstr ""
 "Этот параметр можно указывать несколько раз."
 
 #: builder/builder.ml:286
-#, fuzzy
 msgid "There are no notes for %s\n"
 msgstr "Нет примечаний для %s\n"
 
 #: resize/resize.ml:875
-#, fuzzy
 msgid ""
 "There is a deficit of %Ld bytes (%s).  You need to make the target disk "
 "larger by at least this amount or adjust your resizing requests."
@@ -2291,12 +2268,10 @@ msgstr ""
 "минимум на эту величину или скорректировать запросы на изменение размера."
 
 #: resize/resize.ml:1028
-#, fuzzy
 msgid "There is a surplus of %s."
 msgstr "Имеется избыток %s."
 
 #: sparsify/copying.ml:112
-#, fuzzy
 msgid ""
 "There may not be enough free space on %s.\n"
 "You may need to set TMPDIR to point to a directory with more free space.\n"
@@ -2327,19 +2302,18 @@ msgstr ""
 "%!"
 
 #: sysprep/sysprep_operation_utmp.ml:36
-#, fuzzy
 msgid ""
 "This file records who is currently logged in on a machine.  In modern\n"
 "Linux distros it is stored in a ramdisk and hence not part of the\n"
 "virtual machine’s disk, but it was stored on disk in older distros."
 msgstr ""
 "Этот файл записывает, кто в данный момент вошёл в систему на машине. В\n"
-"современных дистрибутивах Linux он хранится в ramdisk и, следовательно,\n"
-"не является частью диска виртуальной машины, но в старых дистрибутивах\n"
-"он хранился на диске."
+"современных дистрибутивах Linux он хранится в ramdisk, а значит, не "
+"является\n"
+"частью диска виртуальной машины, но в старых дистрибутивах он хранился на "
+"диске."
 
 #: sysprep/sysprep_operation_firewall_rules.ml:45
-#, fuzzy
 msgid ""
 "This removes custom firewall rules by removing C</etc/sysconfig/iptables>\n"
 "or custom firewalld configuration in C</etc/firewalld/*/*>.\n"
@@ -2347,26 +2321,23 @@ msgid ""
 "Note this is I<not> enabled by default since it may expose guests to\n"
 "exploits.  Use with care."
 msgstr ""
-"Это удаляет пользовательские правила брандмауэра путём удаления\n"
-"C</etc/sysconfig/iptables> или пользовательской конфигурации firewalld\n"
-"в C</etc/firewalld/*/*>.\n"
+"Это удаляет пользовательские правила брандмауэра путём удаления C</etc/"
+"sysconfig/iptables>\n"
+"или пользовательской конфигурации firewalld в C</etc/firewalld/*/*>.\n"
 "\n"
-"Обратите внимание, что это I<не> включено по умолчанию, так как может\n"
-"подвергнуть гостевые системы эксплуатации уязвимостей. Используйте с\n"
-"осторожностью."
+"Обратите внимание, что это I<не> включено по умолчанию, так как может "
+"подвергнуть\n"
+"гостевые системы эксплуатации уязвимостей. Используйте с осторожностью."
 
 #: sysprep/sysprep_operation_tmp_files.ml:51
-#, fuzzy
 msgid "This removes temporary files under C</tmp> and C</var/tmp>."
 msgstr "Это удаляет временные файлы в C</tmp> и C</var/tmp>."
 
 #: builder/builder.ml:784
-#, fuzzy
 msgid "Total usable space"
 msgstr "Общее доступное пространство"
 
 #: sparsify/in_place.ml:103
-#, fuzzy
 msgid "Trimming %s"
 msgstr "Обрезка %s"
 
@@ -2379,7 +2350,6 @@ msgid "Truncating: %s"
 msgstr "Обрезание: %s"
 
 #: resize/resize.ml:214
-#, fuzzy
 msgid "Turn off sparse copying"
 msgstr "Отключить разрежённое копирование"
 
@@ -2396,12 +2366,10 @@ msgid "USER[:SELECTOR]"
 msgstr "ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР]"
 
 #: resize/resize.ml:1440
-#, fuzzy
 msgid "UUID in swap partition %s changed from ‘%s’ to ‘%s’"
 msgstr "UUID в разделе подкачки %s изменён с «%s» на «%s»"
 
 #: builder/builder.ml:655
-#, fuzzy
 msgid "Uncompressing"
 msgstr "Распаковка"
 
@@ -2438,22 +2406,18 @@ msgid "Use ANSI colour sequences even if not tty"
 msgstr "Использовать ANSI-цвета, даже если не tty"
 
 #: get-kernel/get_kernel.ml:63
-#, fuzzy
 msgid "Use unversioned names for files"
 msgstr "Использовать имена файлов без версий"
 
 #: sysprep/sysprep_operation_user_account.ml:131
-#, fuzzy
 msgid "Users to keep"
 msgstr "Пользователи для сохранения"
 
 #: sysprep/sysprep_operation_user_account.ml:114
-#, fuzzy
 msgid "Users to remove"
 msgstr "Пользователи для удаления"
 
 #: sparsify/copying.ml:154
-#, fuzzy
 msgid "Using prebuilt file %s as overlay"
 msgstr "Использование предварительно созданного файла %s в качестве оверлея"
 
@@ -2470,7 +2434,6 @@ msgid "Writing: %s"
 msgstr "Запись: %s"
 
 #: resize/resize.ml:843
-#, fuzzy
 msgid ""
 "You cannot use --expand when there is no surplus space to expand into.  You "
 "need to make the target disk larger by at least %s."
@@ -2479,7 +2442,6 @@ msgstr ""
 "расширения. Вам нужно увеличить целевой диск как минимум на %s."
 
 #: resize/resize.ml:857
-#, fuzzy
 msgid ""
 "You cannot use --shrink when there is no deficit (see ‘deficit’ in the virt-"
 "resize(1) man page)."
@@ -2488,7 +2450,6 @@ msgstr ""
 "справочной странице virt-resize(1))."
 
 #: sysprep/sysprep_operation_yum_uuid.ml:35
-#, fuzzy
 msgid ""
 "Yum creates a fresh UUID the next time it runs when it notices that the\n"
 "original UUID has been erased."
@@ -2497,17 +2458,14 @@ msgstr ""
 "исходный UUID был стёрт."
 
 #: sparsify/cmdline.ml:76
-#, fuzzy
 msgid "Zero filesystem"
 msgstr "Обнулить файловую систему"
 
 #: sparsify/in_place.ml:92 sparsify/copying.ml:250
-#, fuzzy
 msgid "Zeroing %s"
 msgstr "Обнуление %s"
 
 #: resize/resize.ml:259
-#, fuzzy
 msgid "alignment cannot be < 1"
 msgstr "выравнивание не может быть < 1"
 
@@ -2516,38 +2474,31 @@ msgid "append_line: %s is not a file"
 msgstr "append_line: %s не является файлом"
 
 #: sparsify/cmdline.ml:75
-#, fuzzy
 msgid "block|dir|prebuilt:file"
-msgstr "блочное_устройство|каталог|prebuilt:файл"
+msgstr "block|dir|prebuilt:file"
 
 #: resize/resize.ml:145
-#, fuzzy
 msgid "btrfs-filesystem-resize"
 msgstr "btrfs-filesystem-resize"
 
 #: builder/builder.ml:181
-#, fuzzy
 msgid "cache %s: %s"
 msgstr "кэш %s: %s"
 
 #: builder/cache.ml:54
-#, fuzzy
 msgid "cache directory: %s\n"
 msgstr "каталог кэша: %s\n"
 
 #: builder/cache.ml:60
-#, fuzzy
 msgid "cached"
 msgstr "в кэше"
 
 #: sparsify/copying.ml:68
-#, fuzzy
 msgid "cannot detect input disk format; use the --format parameter"
 msgstr ""
 "не удаётся определить формат входного диска; используйте параметр --format"
 
 #: builder/builder.ml:99
-#, fuzzy
 msgid ""
 "cannot find os-version ‘%s’ with architecture ‘%s’.\n"
 "Use --list to list available guest types."
@@ -2566,12 +2517,10 @@ msgstr ""
 "запуститься при загрузке."
 
 #: builder/builder.ml:386
-#, fuzzy
 msgid "cannot output to a character device or /dev/null"
 msgstr "нельзя выводить на символьное устройство или /dev/null"
 
 #: sysprep/sysprep_operation_fs_uuids.ml:39
-#, fuzzy
 msgid "cannot set random UUID on filesystem %s type %s: %s"
 msgstr "не удаётся установить случайный UUID на файловой системе %s типа %s: %s"
 
@@ -2615,7 +2564,6 @@ msgid "could not determine a way to update the configuration of Grub2"
 msgstr "не удалось определить способ обновления конфигурации Grub2"
 
 #: builder/sigchecker.ml:128
-#, fuzzy
 msgid ""
 "could not export public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
@@ -2628,7 +2576,6 @@ msgid "could not find bootloader mount point (%s): %s"
 msgstr "не удалось найти точку монтирования загрузчика (%s): %s"
 
 #: builder/builder.ml:142
-#, fuzzy
 msgid "could not find cache directory. Is $HOME set?"
 msgstr "не удаётся найти каталог кэша. Установлена ли переменная $HOME?"
 
@@ -2652,7 +2599,6 @@ msgstr ""
 "завершилась с ошибкой: %s"
 
 #: builder/sigchecker.ml:46
-#, fuzzy
 msgid ""
 "could not import public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
@@ -2675,12 +2621,10 @@ msgid "could not remove grub2 serial console (ignored)"
 msgstr "не удалось удалить последовательную консоль grub2 (игнорируется)"
 
 #: builder/downloader.ml:92
-#, fuzzy
 msgid "cp (download) command failed copying ‘%s’"
 msgstr "команда cp (загрузка) не смогла скопировать «%s»"
 
 #: builder/builder.ml:167
-#, fuzzy
 msgid "curl is not installed (or does not work)"
 msgstr "curl не установлен (или не работает)"
 
@@ -2705,33 +2649,27 @@ msgid "didn't find grub entry for kernel %s"
 msgstr "не найдена запись grub для ядра %s"
 
 #: sysprep/sysprep_operation_script.ml:137
-#, fuzzy
 msgid "dir"
 msgstr "каталог"
 
 #: get-kernel/get_kernel.ml:62
-#, fuzzy
 msgid "directory"
 msgstr "каталог"
 
 #: builder/builder.ml:182
-#, fuzzy
 msgid "disabling the cache"
 msgstr "отключение кэша"
 
 #: sysprep/sysprep_operation.ml:148
-#, fuzzy
 msgid "disallowed character (%c) in operation name"
 msgstr "недопустимый символ (%c) в имени операции"
 
 #: sparsify/in_place.ml:68
-#, fuzzy
 msgid "discard/trim is not supported"
 msgstr "discard/trim не поддерживается"
 
 #. customize/customize_main.ml:82
 #: sysprep/main.ml:128 get-kernel/get_kernel.ml:60 drivers/drivers.ml:53
-#, fuzzy
 msgid "domain"
 msgstr "домен"
 
@@ -2748,34 +2686,28 @@ msgid "downloading %s"
 msgstr "загрузка %s"
 
 #: get-kernel/get_kernel.ml:192
-#, fuzzy
 msgid "dual/multi-boot images are not supported by this tool"
 msgstr "двойные/мультизагрузочные образы не поддерживаются этим инструментом"
 
 #: sysprep/sysprep_operation.ml:136
-#, fuzzy
 msgid "duplicate operation name (%s)"
 msgstr "повторяющееся имя операции (%s)"
 
 #: resize/resize.ml:172
-#, fuzzy
 msgid "empty --expand option"
 msgstr "пустой параметр --expand"
 
 #: resize/resize.ml:188
-#, fuzzy
 msgid "empty --shrink option"
 msgstr "пустой параметр --shrink"
 
 #. customize/customize_main.ml:65
 #. builder/downloader.ml:72
 #: get-kernel/get_kernel.ml:44 drivers/drivers.ml:40
-#, fuzzy
 msgid "error parsing URI '%s'. Look for error messages printed above."
-msgstr "ошибка разбора URI '%s'. Посмотрите сообщения об ошибках выше."
+msgstr "ошибка разбора URI «%s». Посмотрите сообщения об ошибках выше."
 
 #: sysprep/main.ml:61 resize/resize.ml:332 resize/resize.ml:324
-#, fuzzy
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
 msgstr "ошибка разбора URI «%s». Посмотрите сообщения об ошибках выше."
 
@@ -2800,17 +2732,14 @@ msgid "external command"
 msgstr "внешняя команда"
 
 #: sparsify/copying.ml:343
-#, fuzzy
 msgid "external command failed: %s"
 msgstr "внешняя команда завершилась с ошибкой: %s"
 
 #: builder/downloader.ml:126
-#, fuzzy
 msgid "failed to download %s: HTTP status code %s"
 msgstr "не удалось загрузить %s: код состояния HTTP %s"
 
 #: builder/repository_main.ml:557
-#, fuzzy
 msgid "failed to export the GPG key %s"
 msgstr "не удалось экспортировать ключ GPG %s"
 
@@ -2821,7 +2750,6 @@ msgstr ""
 "системе)"
 
 #: builder/repository_main.ml:563
-#, fuzzy
 msgid "failed to sign index"
 msgstr "не удалось подписать индекс"
 
@@ -2831,12 +2759,10 @@ msgstr "сбой: %s"
 
 #. customize/customize_main.ml:77
 #: sysprep/main.ml:126 get-kernel/get_kernel.ml:57 drivers/drivers.ml:50
-#, fuzzy
 msgid "file"
 msgstr "файл"
 
 #: builder/sigchecker.ml:237
-#, fuzzy
 msgid ""
 "fingerprint of signature does not match the expected fingerprint!\n"
 "found fingerprint: %s\n"
@@ -2847,7 +2773,6 @@ msgstr ""
 "ожидаемый отпечаток: %s"
 
 #: resize/resize.ml:1348
-#, fuzzy
 msgid "first partition is NTFS but does not contain NTFS boot loader magic"
 msgstr ""
 "первый раздел является NTFS, но не содержит магическую последовательность "
@@ -2867,17 +2792,14 @@ msgstr ""
 #. drivers/drivers.ml:54
 #. customize/customize_main.ml:84
 #: sysprep/main.ml:133 sparsify/cmdline.ml:71 sparsify/cmdline.ml:70
-#, fuzzy
 msgid "format"
 msgstr "формат"
 
 #: sparsify/cmdline.ml:76 sparsify/cmdline.ml:72
-#, fuzzy
 msgid "fs"
 msgstr "фс"
 
 #: sparsify/in_place.ml:109
-#, fuzzy
 msgid ""
 "fstrim operation is not supported on %s (%s).  Suppress this warning using "
 "'--ignore %s', or use copying mode instead."
@@ -2898,7 +2820,6 @@ msgid "guest type %s/%s is not supported"
 msgstr "тип гостя %s/%s не поддерживается"
 
 #: sysprep/sysprep_operation.ml:154
-#, fuzzy
 msgid "heading for %s must not end with newline or period"
 msgstr ""
 "заголовок для %s не должен заканчиваться символом новой строки или точкой"
@@ -2918,12 +2839,10 @@ msgid "hostname could not be set for this type of guest"
 msgstr "не удалось установить имя хоста для этого типа гостя"
 
 #: drivers/hwdata.ml:138
-#, fuzzy
 msgid "hwdata: %s: %s"
 msgstr "hwdata: %s: %s"
 
 #: resize/resize.ml:215
-#, fuzzy
 msgid "ignore|warn|error"
 msgstr "ignore|warn|error"
 
@@ -2932,7 +2851,6 @@ msgid "ignoring kernel %s in bootloader, as it does not exist."
 msgstr "игнорирование ядра %s в загрузчике, так как оно не существует."
 
 #: builder/builder.ml:411
-#, fuzzy
 msgid ""
 "images cannot be shrunk, the output size is too small for this image.  "
 "Requested size = %s, minimum size = %s"
@@ -2941,7 +2859,6 @@ msgstr ""
 "образа. Запрошенный размер = %s, минимальный размер = %s"
 
 #: builder/builder.ml:371
-#, fuzzy
 msgid "input file (%s) has an unsupported type"
 msgstr "входной файл (%s) имеет неподдерживаемый тип"
 
@@ -3016,12 +2933,10 @@ msgid "log file %s: %s (ignored)"
 msgstr "файл журнала %s: %s (игнорируется)"
 
 #: resize/resize.ml:207
-#, fuzzy
 msgid "lv"
-msgstr "лв"
+msgstr "lv"
 
 #: common/mlcustomize/customize_cmdline.ml:472
-#, fuzzy
 msgid "md5|sha256|sha512"
 msgstr "md5|sha256|sha512"
 
@@ -3030,7 +2945,6 @@ msgid "method '%s' is no longer supported"
 msgstr "метод «%s» больше не поддерживается"
 
 #: builder/repository_main.ml:262
-#, fuzzy
 msgid "missing image identifier"
 msgstr "отсутствует идентификатор образа"
 
@@ -3039,7 +2953,6 @@ msgid "missing value for the key ‘%s’"
 msgstr "отсутствует значение для ключа «%s»"
 
 #: resize/resize.ml:147
-#, fuzzy
 msgid "mkswap"
 msgstr "mkswap"
 
@@ -3048,7 +2961,6 @@ msgid "more than value for the key ‘%s’"
 msgstr "более одного значения для ключа «%s»"
 
 #: builder/repository_main.ml:116
-#, fuzzy
 msgid "moving file ‘%s’ to ‘%s’ failed"
 msgstr "перемещение файла «%s» в «%s» не удалось"
 
@@ -3061,12 +2973,10 @@ msgstr ""
 "пользователя «%s» дважды"
 
 #: resize/resize.ml:197
-#, fuzzy
 msgid "never|always|auto"
 msgstr "never|always|auto"
 
 #: builder/builder.ml:155
-#, fuzzy
 msgid ""
 "no GNU Privacy Guard (GnuPG, gpg) binary was found.\n"
 "\n"
@@ -3081,25 +2991,22 @@ msgstr ""
 "Для проверки подписей можно установить gpg версии 1 или 2. Virt-builder ищет "
 "двоичный файл с именем «gpg2» или «gpg» в $PATH. Вы также можете указать "
 "двоичный файл с помощью параметра «--gpg». Если вы не хотите проверять "
-"подписи, используйте '--no-check-signature', но имейте в виду, что это может "
-"сделать вас уязвимым для атак \"человек посередине\"."
+"подписи, используйте «--no-check-signature», но имейте в виду, что это может "
+"сделать вас уязвимым для атак «человек посередине»."
 
 #: common/mldrivers/linux_bootloaders.ml:402
 msgid "no bootloader detected"
 msgstr "загрузчик не обнаружен"
 
 #: builder/builder.ml:256
-#, fuzzy
 msgid "no cache directory"
 msgstr "нет каталога кэша"
 
 #: builder/builder.ml:249
-#, fuzzy
 msgid "no cache directory\n"
 msgstr "нет каталога кэша\n"
 
 #: builder/builder.ml:749
-#, fuzzy
 msgid ""
 "no guest operating systems or multiboot OS found in this disk image\n"
 "This is a failure of the source repository.  Use -v for more information."
@@ -3125,7 +3032,6 @@ msgstr ""
 "эту гостевую систему."
 
 #: get-kernel/get_kernel.ml:164
-#, fuzzy
 msgid "no kernel found in %s"
 msgstr "в %s не найдено ядро"
 
@@ -3142,17 +3048,14 @@ msgstr ""
 "загрузчика этой гостевой системы."
 
 #: get-kernel/get_kernel.ml:190
-#, fuzzy
 msgid "no operating system found"
 msgstr "операционная система не найдена"
 
 #: sysprep/main.ml:230 customize/customize_main.ml:190
-#, fuzzy
 msgid "no operating systems were found in the guest image"
 msgstr "в образе гостя не найдены операционные системы"
 
 #: builder/builder.ml:582
-#, fuzzy
 msgid ""
 "no plan could be found for making a disk image with\n"
 "the required size, format etc. This is a bug in libguestfs!\n"
@@ -3164,57 +3067,46 @@ msgstr ""
 "строки."
 
 #: resize/resize.ml:144
-#, fuzzy
 msgid "ntfsresize"
 msgstr "ntfsresize"
 
 #: get-kernel/get_kernel.ml:131
-#, fuzzy
 msgid "operating system ‘%s’ not supported"
 msgstr "операционная система «%s» не поддерживается"
 
 #: sysprep/sysprep_operation.ml:160
-#, fuzzy
 msgid "operation %s has no POD"
 msgstr "операция %s не имеет POD"
 
 #: sysprep/sysprep_operation.ml:169
-#, fuzzy
 msgid "operation %s has no POD notes"
 msgstr "операция %s не имеет примечаний POD"
 
 #: sysprep/sysprep_operation.ml:152
-#, fuzzy
 msgid "operation %s has no heading"
 msgstr "операция %s не имеет заголовка"
 
 #: sysprep/sysprep_operation.ml:143
-#, fuzzy
 msgid "operation name is an empty string"
 msgstr "имя операции является пустой строкой"
 
 #: sysprep/main.ml:138 sysprep/main.ml:132
-#, fuzzy
 msgid "operations"
 msgstr "операции"
 
 #: sparsify/cmdline.ml:74
-#, fuzzy
 msgid "option"
 msgstr "параметр"
 
 #: sysprep/main.ml:135
-#, fuzzy
 msgid "opts"
 msgstr "параметры"
 
 #: builder/repository_main.ml:228
-#, fuzzy
 msgid "osinfo short ID: "
-msgstr "короткий ID osinfo: "
+msgstr "короткий ИД osinfo: "
 
 #: builder/builder.ml:300
-#, fuzzy
 msgid ""
 "output device (%s) is a partition.  If you are writing to a USB key or "
 "external drive then you probably need to write to the whole device, not to a "
@@ -3227,7 +3119,6 @@ msgstr ""
 "помощью --no-warn-if-partition"
 
 #: builder/builder.ml:416
-#, fuzzy
 msgid ""
 "output size is too large for this block device.  Requested size = %s, output "
 "block device = %s, output block device size = %s"
@@ -3237,19 +3128,16 @@ msgstr ""
 "устройства = %s"
 
 #: sparsify/cmdline.ml:150
-#, fuzzy
 msgid "output ‘%s’ cannot be a character device, it must be a regular file"
 msgstr ""
 "вывод «%s» не может быть символьным устройством, это должен быть обычный файл"
 
 #. resize/resize.ml:201
 #: resize/resize.ml:213 resize/resize.ml:206 resize/resize.ml:202
-#, fuzzy
 msgid "part"
 msgstr "раздел"
 
 #: resize/resize.ml:212 resize/resize.ml:211
-#, fuzzy
 msgid "part=size"
 msgstr "раздел=размер"
 
@@ -3277,27 +3165,22 @@ msgid "passwords could not be set for this type of guest"
 msgstr "не удалось установить пароли для этого типа гостя"
 
 #: resize/resize.ml:1133 resize/resize.ml:1109
-#, fuzzy
 msgid "pread-device: short read"
 msgstr "pread-device: короткое чтение"
 
 #: get-kernel/get_kernel.ml:64
-#, fuzzy
 msgid "prefix"
 msgstr "префикс"
 
 #: resize/resize.ml:142
-#, fuzzy
 msgid "pvresize"
 msgstr "pvresize"
 
 #: sparsify/in_place.ml:136 sparsify/copying.ml:288
-#, fuzzy
 msgid "pwrite: short write restoring swap partition header"
 msgstr "pwrite: короткая запись при восстановлении заголовка раздела подкачки"
 
 #: sparsify/in_place.ml:190
-#, fuzzy
 msgid "quit (^C) at user request"
 msgstr "выход (^C) по запросу пользователя"
 
@@ -3306,17 +3189,14 @@ msgid "random seed could not be set for this type of guest"
 msgstr "не удалось установить случайное начальное число для этого типа гостя"
 
 #: builder/repository_main.ml:424
-#, fuzzy
 msgid "repository folder ‘%s’ doesn’t exist"
 msgstr "папка репозитория «%s» не существует"
 
 #: resize/resize.ml:148
-#, fuzzy
 msgid "resize.f2fs"
 msgstr "resize.f2fs"
 
 #: resize/resize.ml:143
-#, fuzzy
 msgid "resize2fs"
 msgstr "resize2fs"
 
@@ -3335,27 +3215,22 @@ msgstr ""
 "v2v повреждены. Сообщите об этом как об ошибке с полным отладочным журналом."
 
 #: sysprep/sysprep_operation_script.ml:152
-#, fuzzy
 msgid "script"
 msgstr "скрипт"
 
 #: sysprep/sysprep_operation_script.ml:75
-#, fuzzy
 msgid "script failed"
 msgstr "скрипт завершился с ошибкой"
 
 #: sysprep/sysprep_operation_script.ml:65
-#, fuzzy
 msgid "script: failed (code %d)"
 msgstr "скрипт: ошибка (код %d)"
 
 #: sysprep/sysprep_operation_script.ml:69
-#, fuzzy
 msgid "script: killed by signal (%d)"
 msgstr "скрипт: убит сигналом (%d)"
 
 #: resize/resize.ml:198
-#, fuzzy
 msgid "sectors"
 msgstr "секторов"
 
@@ -3402,7 +3277,6 @@ msgstr ""
 "firstboot*» (описаны в справочной странице virt-customize(1))."
 
 #: builder/cmdline.ml:304
-#, fuzzy
 msgid "source and fingerprint lists are not the same length"
 msgstr "списки источников и отпечатков имеют разную длину"
 
@@ -3443,14 +3317,12 @@ msgid "the key ‘%s’ was not found in a list of objects"
 msgstr "ключ «%s» не найден в списке объектов"
 
 #: builder/repository_main.ml:460
-#, fuzzy
 msgid ""
 "the repository must contain an index file when running in automated mode"
 msgstr ""
 "репозиторий должен содержать файл индекса при работе в автоматическом режиме"
 
 #: resize/resize.ml:484
-#, fuzzy
 msgid "the source disk has no partitions"
 msgstr "исходный диск не содержит разделов"
 
@@ -3496,7 +3368,6 @@ msgstr ""
 "эмулируемых устройств."
 
 #: builder/sigchecker.ml:179
-#, fuzzy
 msgid ""
 "there is no detached signature file\n"
 "This probably means the index file is missing a sig=... line.\n"
@@ -3506,7 +3377,7 @@ msgstr ""
 "нет отдельного файла подписи\n"
 "Это, вероятно, означает, что в файле индекса отсутствует строка sig=...\n"
 "Вы можете использовать --no-check-signature, чтобы игнорировать эту ошибку, "
-"но это означает, что вы уязвимы для атак \"человек посередине\"."
+"но это означает, что вы уязвимы для атак «человек посередине»."
 
 #: common/mlcustomize/inject_virtio_win.ml:175
 msgid ""
@@ -3545,18 +3416,15 @@ msgid "timezone could not be set for this type of guest"
 msgstr "не удалось установить часовой пояс для этого типа гостя"
 
 #: builder/cmdline.ml:250
-#, fuzzy
 msgid "too many parameters, at most one ‘os-version’ is allowed for --list"
 msgstr ""
 "слишком много параметров, для --list допускается не более одного «os-version»"
 
 #: builder/cmdline.ml:241
-#, fuzzy
 msgid "too many parameters, expecting ‘os-version’"
 msgstr "слишком много параметров, ожидается «os-version»"
 
 #: builder/repository_main.ml:101
-#, fuzzy
 msgid "too many parameters, only one path to repository is allowed"
 msgstr "слишком много параметров, допускается только один путь к репозиторию"
 
@@ -3565,7 +3433,6 @@ msgid "unexpected end of file while reading /dev/urandom"
 msgstr "неожиданный конец файла при чтении /dev/urandom"
 
 #: builder/downloader.ml:116
-#, fuzzy
 msgid ""
 "unexpected output from curl command, enable debug and look at previous "
 "messages"
@@ -3578,75 +3445,63 @@ msgid "unhandled checksum type ‘%s’"
 msgstr "необработанный тип контрольной суммы «%s»"
 
 #: resize/resize.ml:268
-#, fuzzy
 msgid "unknown --align-first option: use never|always|auto"
 msgstr "неизвестный параметр --align-first: используйте never|always|auto"
 
 #: resize/resize.ml:276
-#, fuzzy
 msgid "unknown --unknown-filesystems: use ignore|warn|error"
 msgstr ""
 "неизвестный параметр --unknown-filesystems: используйте ignore|warn|error"
 
 #. resize/resize.ml:921
 #: resize/resize.ml:1016 resize/resize.ml:982 resize/resize.ml:940
-#, fuzzy
 msgid "unknown/unavailable method for expanding the %s filesystem on %s"
 msgstr "неизвестный/недоступный метод для расширения файловой системы %s на %s"
 
 #: sysprep/utils.ml:65
-#, fuzzy
 msgid "updating the system CA store on this guest %s/%s is not supported"
 msgstr ""
-"обновление системного хранилища CA на этом госте %s/%s не поддерживается"
+"обновление системного хранилища ЦС на этом госте %s/%s не поддерживается"
 
 #. customize/customize_main.ml:81
 #: sysprep/main.ml:127 get-kernel/get_kernel.ml:59 drivers/drivers.ml:52
-#, fuzzy
 msgid "uri"
 msgstr "uri"
 
 #: resize/resize.ml:312
-#, fuzzy
 msgid "usage is: %s [--options] indisk outdisk"
 msgstr "использование: %s [--параметры] входной_диск выходной_диск"
 
 #: sparsify/cmdline.ml:135
-#, fuzzy
 msgid "usage: %s [--options] indisk outdisk"
 msgstr "использование: %s [--параметры] входной_диск выходной_диск"
 
 #: sysprep/sysprep_operation_user_account.ml:149
-#, fuzzy
 msgid ""
 "user-accounts: --keep-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
-"user-accounts: использован параметр --keep-user-accounts, но операция \"user-"
-"account\" не включена"
+"user-accounts: использован параметр --keep-user-accounts, но операция «user-"
+"account» не включена"
 
 #: sysprep/sysprep_operation_user_account.ml:152
-#, fuzzy
 msgid ""
 "user-accounts: --remove-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
-"user-accounts: использован параметр --remove-user-accounts, но операция "
-"\"user-account\" не включена"
+"user-accounts: использован параметр --remove-user-accounts, но операция «"
+"user-account» не включена"
 
 #: sysprep/sysprep_operation_user_account.ml:38
-#, fuzzy
 msgid "user-accounts: empty user name"
 msgstr "user-accounts: пустое имя пользователя"
 
 #. sysprep/sysprep_operation_user_account.ml:113
 #: sysprep/sysprep_operation_user_account.ml:130
-#, fuzzy
 msgid "users"
 msgstr "пользователи"
 
 #: builder/cmdline.ml:275
-#, fuzzy
 msgid ""
 "virt-builder --get-kernel image\n"
 "Missing ‘image’ (disk image file) argument"
@@ -3655,7 +3510,6 @@ msgstr ""
 "Отсутствует аргумент «образ» (файл образа диска)"
 
 #: builder/cmdline.ml:257
-#, fuzzy
 msgid ""
 "virt-builder --notes os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
