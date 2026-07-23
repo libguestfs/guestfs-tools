@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2025-04-29 19:08+0100\n"
-"PO-Revision-Date: 2026-07-20 07:17+0000\n"
+"PO-Revision-Date: 2026-07-21 08:17+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
@@ -2128,12 +2128,13 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Следующие файлы удаляются из любого места файловой системы гостя:\n"
+"Следующие файлы удаляются из любого места файловой\n"
+"системы гостя:\n"
 "\n"
 "%s\n"
 "\n"
-"В операционных системах Linux и Unix будут проверены только следующие\n"
-"файловые системы:\n"
+"В операционных системах Linux и Unix будут проверены только\n"
+"следующие файловые системы:\n"
 "\n"
 "%s"
 
@@ -3013,8 +3014,7 @@ msgid ""
 msgstr ""
 "в этом образе диска не найдены гостевая операционная система или "
 "мультизагрузочная ОС\n"
-"Это ошибка исходного репозитория. Используйте -v для получения "
-"дополнительной информации."
+"Это ошибка исходного репозитория. Используйте -v для подробностей."
 
 #: common/mldrivers/linux_kernels.ml:194
 msgid "no initrd was found in /boot matching %s %s."
@@ -3519,7 +3519,6 @@ msgstr ""
 "имён шаблонов."
 
 #: builder/cmdline.ml:238
-#, fuzzy
 msgid ""
 "virt-builder os-version\n"
 "Missing ‘os-version’. Use ‘--list’ to list available template names."
@@ -3529,7 +3528,6 @@ msgstr ""
 "имён шаблонов."
 
 #: builder/repository_main.ml:244
-#, fuzzy
 msgid ""
 "virt-builder template images must have one and only one root file system, "
 "found %d"
@@ -3538,7 +3536,6 @@ msgstr ""
 "файловую систему, найдено %d"
 
 #: builder/repository_main.ml:97
-#, fuzzy
 msgid ""
 "virt-builder-repository /path/to/repo\n"
 "\n"
@@ -3549,148 +3546,128 @@ msgstr ""
 "Используйте «/путь/к/репозиторию» для указания папки репозитория."
 
 #: builder/builder.ml:172
-#, fuzzy
 msgid "virt-resize is not installed (or does not work)"
 msgstr "virt-resize не установлен (или не работает)"
 
 #: resize/resize.ml:146
-#, fuzzy
 msgid "xfs_growfs"
 msgstr "xfs_growfs"
 
 #: drivers/drivers.ml:77
-#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-drivers(1) man page "
 "for further information."
 msgstr ""
-"вы не можете использовать параметры -a и -d вместе. Для получения "
-"дополнительной информации прочитайте справочную страницу virt-drivers(1)."
+"вы не можете использовать параметры -a и -d вместе. Для подробностей читайте "
+"справочную страницу virt-drivers(1)."
 
 #: get-kernel/get_kernel.ml:97
-#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-get-kernel(1) man "
 "page for further information."
 msgstr ""
-"вы не можете использовать параметры -a и -d вместе. Для получения "
-"дополнительной информации прочитайте справочную страницу virt-get-kernel(1)."
+"вы не можете использовать параметры -a и -d вместе. Для подробностей читайте "
+"справочную страницу virt-get-kernel(1)."
 
 #: sysprep/main.ml:178
-#, fuzzy
 msgid ""
 "you cannot give -a and -d options together.  Read virt-sysprep(1) man page "
 "for further information."
 msgstr ""
-"вы не можете использовать параметры -a и -d вместе. Для получения "
-"дополнительной информации прочитайте справочную страницу virt-sysprep(1)."
+"вы не можете использовать параметры -a и -d вместе. Для подробностей читайте "
+"справочную страницу virt-sysprep(1)."
 
 #: customize/customize_main.ml:135
-#, fuzzy
 msgid ""
 "you cannot give -a and -d options together. Read virt-customize(1) man page "
 "for further information."
 msgstr ""
-"вы не можете использовать параметры -a и -d вместе. Для получения "
-"дополнительной информации прочитайте справочную страницу virt-customize(1)."
+"вы не можете использовать параметры -a и -d вместе. Для подробностей читайте "
+"справочную страницу virt-customize(1)."
 
 #: sysprep/main.ml:80
-#, fuzzy
 msgid "you cannot pass an empty argument to --enable"
 msgstr "вы не можете передать пустой аргумент в --enable"
 
 #: sparsify/cmdline.ml:164
-#, fuzzy
 msgid "you cannot use --in-place and --check-tmpdir options together"
 msgstr "вы не можете использовать параметры --in-place и --check-tmpdir вместе"
 
 #: sparsify/cmdline.ml:168
-#, fuzzy
 msgid "you cannot use --in-place and --compress options together"
 msgstr "вы не можете использовать параметры --in-place и --compress вместе"
 
 #: sparsify/cmdline.ml:171
-#, fuzzy
 msgid "you cannot use --in-place and --convert options together"
 msgstr "вы не можете использовать параметры --in-place и --convert вместе"
 
 #: sparsify/cmdline.ml:177
-#, fuzzy
 msgid "you cannot use --in-place and --tmp options together"
 msgstr "вы не можете использовать параметры --in-place и --tmp вместе"
 
 #: sparsify/cmdline.ml:174
-#, fuzzy
 msgid "you cannot use --in-place and -o options together"
 msgstr "вы не можете использовать параметры --in-place и -o вместе"
 
 #: resize/resize.ml:832
-#, fuzzy
 msgid "you cannot use options --expand and --shrink together"
 msgstr "вы не можете использовать параметры --expand и --shrink вместе"
 
 #: sparsify/cmdline.ml:141 resize/resize.ml:318
-#, fuzzy
 msgid "you cannot use the same disk image for input and output"
 msgstr "вы не можете использовать один и тот же образ диска для ввода и вывода"
 
 #: drivers/drivers.ml:74
-#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-drivers(1) man page for "
 "further information."
 msgstr ""
-"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
-"информации прочитайте справочную страницу virt-drivers(1)."
+"вы должны указать либо параметр -a, либо -d. Для подробностей читайте "
+"справочную страницу virt-drivers(1)."
 
 #: get-kernel/get_kernel.ml:94
-#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-get-kernel(1) man page for "
 "further information."
 msgstr ""
-"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
-"информации прочитайте справочную страницу virt-get-kernel(1)."
+"вы должны указать либо параметр -a, либо -d. Для подробностей читайте "
+"справочную страницу virt-get-kernel(1)."
 
 #: sysprep/main.ml:166
-#, fuzzy
 msgid ""
 "you must give either -a or -d options.  Read virt-sysprep(1) man page for "
 "further information."
 msgstr ""
-"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
-"информации прочитайте справочную страницу virt-sysprep(1)."
+"вы должны указать либо параметр -a, либо -d. Для подробностей читайте "
+"справочную страницу virt-sysprep(1)."
 
 #: customize/customize_main.ml:123
-#, fuzzy
 msgid ""
 "you must give either -a or -d options. Read virt-customize(1) man page for "
 "further information."
 msgstr ""
-"вы должны указать либо параметр -a, либо -d. Для получения дополнительной "
-"информации прочитайте справочную страницу virt-customize(1)."
+"вы должны указать либо параметр -a, либо -d. Для подробностей читайте "
+"справочную страницу virt-customize(1)."
 
 #: builder/repository_main.ml:231
-#, fuzzy
 msgid "‘%s’ is not a recognized osinfo OS id; using it anyway"
 msgstr ""
 "«%s» не является распознанным идентификатором ОС osinfo; используется в "
 "любом случае"
 
 #: builder/repository_main.ml:159
-#, fuzzy
 msgid "‘xz’ command failed"
 msgstr "команда «xz» завершилась с ошибкой"
 
 #: align/scan.c:80 cat/cat.c:59 df/main.c:72 diff/diff.c:105 edit/edit.c:67
 #: filesystems/filesystems.c:94 inspector/inspector.c:85 log/log.c:69
 #: ls/ls.c:97 make-fs/make-fs.c:82 tail/tail.c:67
-#, c-format, fuzzy
+#, c-format
 msgid "Try ‘%s --help’ for more information.\n"
-msgstr "Попробуйте «%s --help» для получения дополнительной информации.\n"
+msgstr "Попробуйте «%s --help» для подробностей.\n"
 
 #: align/scan.c:83
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: check alignment of virtual machine partitions\n"
 "Copyright (C) 2011 Red Hat Inc.\n"
@@ -3732,59 +3709,57 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Для подробностей см. справочную страницу %s(1).\n"
 
 #: align/scan.c:167 builder/index-validate.c:90 cat/cat.c:157 df/main.c:169
 #: diff/diff.c:289 edit/edit.c:169 filesystems/filesystems.c:262
 #: format/format.c:192 inspector/inspector.c:188 log/log.c:160 ls/ls.c:255
 #: make-fs/make-fs.c:157 tail/tail.c:166
-#, c-format, fuzzy
+#, c-format
 msgid "unknown long option: %s (%d)"
 msgstr "неизвестный длинный параметр: %s (%d)"
 
 #: align/scan.c:185 df/main.c:195
-#, c-format, fuzzy
+#, c-format
 msgid "-P option is not numeric"
 msgstr "параметр -P не является числом"
 
 #: align/scan.c:240
-#, c-format, fuzzy
+#, c-format
 msgid "compiled without support for libvirt"
 msgstr "скомпилирован без поддержки libvirt"
 
 #: align/scan.c:244
-#, c-format, fuzzy
+#, c-format
 msgid "--uuid option cannot be used with -a or -d"
 msgstr "параметр --uuid нельзя использовать с -a или -d"
 
 #: align/scan.c:343
-#, fuzzy
 msgid "alignment < 4K"
 msgstr "выравнивание < 4K"
 
 #: align/scan.c:346
-#, fuzzy
 msgid "alignment < 64K"
 msgstr "выравнивание < 64K"
 
 #: builder/index-validate.c:117
-#, c-format, fuzzy
+#, c-format
 msgid "%s: %s: error closing input file: %m (ignored)\n"
 msgstr "%s: %s: ошибка закрытия входного файла: %m (игнорируется)\n"
 
 #: builder/index-validate.c:124
-#, c-format, fuzzy
+#, c-format
 msgid "‘%s’ could not be validated, see errors above"
 msgstr "«%s» не удалось проверить, см. ошибки выше"
 
 #: builder/index-validate.c:130
-#, c-format, fuzzy
+#, c-format
 msgid "%s contains comments which will not work with virt-builder 1.24.1"
 msgstr ""
 "%s содержит комментарии, которые не будут работать с virt-builder 1.24.1"
 
 #: builder/index-validate.c:143
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: section [%s] has invalid characters which will not work with virt-"
 "builder 1.24.0"
@@ -3793,7 +3768,7 @@ msgstr ""
 "virt-builder 1.24.0"
 
 #: builder/index-validate.c:154
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: section [%s], field ‘%s’ has invalid characters which will not work with "
 "virt-builder 1.24.0"
@@ -3802,7 +3777,7 @@ msgstr ""
 "работать с virt-builder 1.24.0"
 
 #: builder/index-validate.c:163
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: section [%s], field ‘%s’ has invalid characters which will not work with "
 "virt-builder 1.24.1"
@@ -3811,7 +3786,7 @@ msgstr ""
 "работать с virt-builder 1.24.1"
 
 #: builder/index-validate.c:174
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: section [%s] is missing a ‘sig’ field which will not work with virt-"
 "builder 1.24.0"
@@ -3820,7 +3795,7 @@ msgstr ""
 "builder 1.24.0"
 
 #: cat/cat.c:62
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: display files in a virtual machine\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -3867,20 +3842,18 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Для подробностей см. справочную страницу %s(1).\n"
 
 #: cat/cat.c:245 diff/diff.c:343 edit/edit.c:269 filesystems/filesystems.c:361
 #: inspector/inspector.c:288 log/log.c:217 ls/ls.c:369 tail/tail.c:231
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error: you must specify at least one -a or -d option.\n"
 msgstr "%s: ошибка: вы должны указать хотя бы один параметр -a или -d.\n"
 
 #: common/mltools/getopt-c.c:68
 #, c-format
 msgid "Try ‘%s --help’ or consult %s(1) for more information.\n"
-msgstr ""
-"Попробуйте «%s --help» или обратитесь к %s(1) для получения дополнительной "
-"информации.\n"
+msgstr "Попробуйте «%s --help» или обратитесь к %s(1) для подробностей.\n"
 
 #: common/mltools/getopt-c.c:187
 #, c-format
@@ -4082,29 +4055,29 @@ msgstr ""
 "сокета\n"
 
 #: common/parallel/domains.c:106
-#, c-format, fuzzy
+#, c-format
 msgid "could not connect to libvirt (code %d, domain %d): %s"
 msgstr "не удалось подключиться к libvirt (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:114
-#, c-format, fuzzy
+#, c-format
 msgid "could not get number of running domains (code %d, domain %d): %s"
 msgstr ""
 "не удалось получить количество работающих доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:125
-#, c-format, fuzzy
+#, c-format
 msgid "could not list running domains (code %d, domain %d): %s"
 msgstr "не удалось вывести список работающих доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:135
-#, c-format, fuzzy
+#, c-format
 msgid "could not get number of inactive domains (code %d, domain %d): %s"
 msgstr ""
 "не удалось получить количество неактивных доменов (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:146
-#, c-format, fuzzy
+#, c-format
 msgid "could not list inactive domains (code %d, domain %d): %s"
 msgstr "не удалось вывести список неактивных доменов (код %d, домен %d): %s"
 
@@ -4134,29 +4107,29 @@ msgid "%s exited for an unknown reason (status %d)"
 msgstr "%s завершился по неизвестной причине (состояние %d)"
 
 #: common/visit/visit.c:133
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error getting extended attrs for %s %s\n"
 msgstr "%s: ошибка получения расширенных атрибутов для %s %s\n"
 
 #: common/visit/visit.c:147
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error: cannot parse xattr count for %s %s\n"
 msgstr "%s: ошибка: не удаётся разобрать количество xattr для %s %s\n"
 
 #: common/windows/windows.c:139
-#, c-format, fuzzy
+#, c-format
 msgid "to use Windows drive letters, this must be a Windows guest"
 msgstr ""
 "для использования букв дисков Windows это должна быть гостевая система "
 "Windows"
 
 #: common/windows/windows.c:150
-#, c-format, fuzzy
+#, c-format
 msgid "drive '%c:' not found."
-msgstr "диск '%c:' не найден."
+msgstr "диск «%c:» не найден."
 
 #: df/main.c:75
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: display free space on virtual filesystems\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -4205,15 +4178,15 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Для подробностей см. справочную страницу %s(1).\n"
 
 #: df/main.c:266 diff/diff.c:357 filesystems/filesystems.c:330 ls/ls.c:361
-#, c-format, fuzzy
+#, c-format
 msgid "you cannot use -h and --csv options together."
 msgstr "вы не можете использовать параметры -h и --csv вместе."
 
 #: df/main.c:281
-#, c-format, fuzzy
+#, c-format
 msgid "compiled without support for libvirt."
 msgstr "скомпилирован без поддержки libvirt."
 
@@ -4246,7 +4219,6 @@ msgid "Use%"
 msgstr "Использование, %"
 
 #: df/output.c:59
-#, fuzzy
 msgid "Inodes"
 msgstr "Иноды"
 
@@ -4263,7 +4235,7 @@ msgid "IUse%"
 msgstr "|Использовано, %"
 
 #: diff/diff.c:108
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: list differences between virtual machines\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4342,15 +4314,15 @@ msgstr ""
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
 "  --xattrs              Показывать расширенные атрибуты\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: diff/diff.c:348
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error: you must specify at least one -A or -D option.\n"
 msgstr "%s: ошибка: вы должны указать хотя бы один параметр -A или -D.\n"
 
 #: diff/diff.c:360
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --checksum or --format like '--"
@@ -4361,17 +4333,16 @@ msgstr ""
 "'--format=%s'.\n"
 
 #: diff/diff.c:802
-#, c-format, fuzzy
+#, c-format
 msgid "%s: external diff command failed\n"
 msgstr "%s: внешняя команда diff завершилась с ошибкой\n"
 
 #: diff/diff.c:806
-#, fuzzy
 msgid "End of diff"
 msgstr "Конец сравнения"
 
 #: edit/edit.c:70
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: Edit a file in a virtual machine\n"
 "Copyright (C) 2009-2025 Red Hat Inc.\n"
@@ -4423,20 +4394,20 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: edit/edit.c:179
-#, c-format, fuzzy
+#, c-format
 msgid "-b option given multiple times"
 msgstr "параметр -b указан несколько раз"
 
 #: edit/edit.c:193
-#, c-format, fuzzy
+#, c-format
 msgid "-e option given multiple times"
 msgstr "параметр -e указан несколько раз"
 
 #: filesystems/filesystems.c:97
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: list filesystems, partitions, block devices, LVM in a VM\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -4516,10 +4487,10 @@ msgstr ""
 "  --vgs|--volgroups|--volume-groups\n"
 "                        Показать группы томов LVM\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: filesystems/filesystems.c:315 inspector/inspector.c:263 log/log.c:205
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format like '--format=%s'.\n"
@@ -4528,26 +4499,25 @@ msgstr ""
 "Убедитесь, что вы указываете аргумент для --format, например '--format=%s'.\n"
 
 #: filesystems/filesystems.c:520
-#, c-format, fuzzy
+#, c-format
 msgid "%s: cannot determine the subvolume for %s: %s: %s\n"
 msgstr "%s: не удаётся определить подтом для %s: %s: %s\n"
 
 #: format/format.c:68
-#, fuzzy
 msgid "IMPORTANT NOTE: This program ERASES ALL DATA on disks."
 msgstr "ВАЖНОЕ ПРИМЕЧАНИЕ: Эта программа УНИЧТОЖАЕТ ВСЕ ДАННЫЕ на дисках."
 
 #: format/format.c:71
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Try ‘%s --help’ for more information.\n"
 "%s\n"
 msgstr ""
-"Попробуйте «%s --help» для получения дополнительной информации.\n"
+"Попробуйте «%s --help» для подробностей.\n"
 "%s\n"
 
 #: format/format.c:74
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: erase and make a blank disk\n"
 "Copyright (C) 2012 Red Hat Inc.\n"
@@ -4596,23 +4566,23 @@ msgstr ""
 "  -V|--version          Показать версию и выйти\n"
 "  --wipe                Записать нули на весь диск\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 "\n"
 "%s\n"
 "\n"
 
 #: format/format.c:162
-#, c-format, fuzzy
+#, c-format
 msgid "no filesystem was specified"
 msgstr "файловая система не указана"
 
 #: format/format.c:168
-#, c-format, fuzzy
+#, c-format
 msgid "--lvm option cannot be given multiple times"
 msgstr "параметр --lvm нельзя указывать несколько раз"
 
 #: format/format.c:234
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: error: extra argument ‘%s’ on command line.\n"
 "Make sure to specify the argument for --format, --lvm or --partition like '--"
@@ -4620,15 +4590,15 @@ msgid ""
 msgstr ""
 "%s: ошибка: лишний аргумент «%s» в командной строке.\n"
 "Убедитесь, что вы указываете аргумент для --format, --lvm или --partition, "
-"например '--format=%s'.\n"
+"например «--format=%s».\n"
 
 #: format/format.c:246
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error: you must specify at least one -a option.\n"
 msgstr "%s: ошибка: вы должны указать хотя бы один параметр -a.\n"
 
 #: format/format.c:288
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "failed to rescan the disks after two attempts.  This\n"
 "may mean there is some sort of partition table or disk\n"
@@ -4641,12 +4611,12 @@ msgstr ""
 "сообщите о ней по адресу http://libguestfs.org/\n"
 
 #: format/format.c:326
-#, c-format, fuzzy
+#, c-format
 msgid "cannot parse --lvm option (%s)"
 msgstr "не удаётся разобрать параметр --lvm (%s)"
 
 #: inspector/inspector.c:88
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: display information about a virtual machine\n"
 "Copyright (C) 2010 Red Hat Inc.\n"
@@ -4694,15 +4664,15 @@ msgstr ""
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
 "  --xpath запрос        Выполнить XPath-запрос\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: inspector/inspector.c:279
-#, c-format, fuzzy
+#, c-format
 msgid "cannot use --xpath together with other options."
 msgstr "нельзя использовать --xpath вместе с другими параметрами."
 
 #: inspector/inspector.c:319
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "no operating system could be detected inside this disk image.\n"
 "\n"
@@ -4731,52 +4701,52 @@ msgstr ""
 "как можно больше информации об образе диска.\n"
 
 #: inspector/inspector.c:335
-#, c-format, fuzzy
+#, c-format
 msgid "xmlOutputBufferCreateFd: failed to open stdout"
 msgstr "xmlOutputBufferCreateFd: не удалось открыть stdout"
 
 #: inspector/inspector.c:341
-#, c-format, fuzzy
+#, c-format
 msgid "xmlNewTextWriter: failed to create libxml2 writer"
 msgstr "xmlNewTextWriter: не удалось создать модуль записи libxml2"
 
 #: inspector/inspector.c:732
-#, c-format, fuzzy
+#, c-format
 msgid "unable to parse XML from stdin"
 msgstr "не удалось разобрать XML из stdin"
 
 #: inspector/inspector.c:736
-#, c-format, fuzzy
+#, c-format
 msgid "unable to create new XPath context"
 msgstr "не удалось создать новый XPath-контекст"
 
 #: inspector/inspector.c:740
-#, c-format, fuzzy
+#, c-format
 msgid "unable to evaluate XPath expression"
 msgstr "не удалось вычислить XPath-выражение"
 
 #: inspector/inspector.c:751
-#, c-format, fuzzy
+#, c-format
 msgid "xmlSaveToFd failed"
 msgstr "xmlSaveToFd не удалось"
 
 #: inspector/inspector.c:756
-#, c-format, fuzzy
+#, c-format
 msgid "xmlNewDoc failed"
 msgstr "xmlNewDoc не удалось"
 
 #: inspector/inspector.c:759
-#, c-format, fuzzy
+#, c-format
 msgid "xmlCopyNode failed"
 msgstr "xmlCopyNode не удалось"
 
 #: inspector/inspector.c:764
-#, c-format, fuzzy
+#, c-format
 msgid "xmlSaveDoc failed"
 msgstr "xmlSaveDoc не удалось"
 
 #: log/log.c:72
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: display log files in a virtual machine\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4818,20 +4788,20 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: log/log.c:273
-#, c-format, fuzzy
+#, c-format
 msgid "%s: Windows Event Log for pre-Vista guests is not supported.\n"
 msgstr "%s: Журнал событий Windows для гостей до Vista не поддерживается.\n"
 
 #: log/log.c:381
-#, c-format, fuzzy
+#, c-format
 msgid "%s: could not format journal entry timestamp\n"
 msgstr "%s: не удалось отформатировать временную метку записи журнала\n"
 
 #: log/log.c:447
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: you need to install ‘evtxdump.py’ (from the python-evtx package)\n"
 "in order to parse Windows Event Logs.  If you cannot install this, then\n"
@@ -4839,18 +4809,18 @@ msgid ""
 "from this guest, and examine in a binary file viewer.\n"
 msgstr ""
 "%s: для разбора журналов событий Windows необходимо установить\n"
-"‘evtxdump.py’ (из пакета python-evtx). Если вы не можете установить его,\n"
-"используйте virt-copy-out(1) для копирования содержимого\n"
-"/Windows/System32/winevt/Logs из этого гостя и просмотрите его в\n"
-"просмотрщике двоичных файлов.\n"
+"«evtxdump.py» (из пакета python-evtx). Если установка невозможна, "
+"используйте\n"
+"virt-copy-out(1) для копирования содержимого /Windows/System32/winevt/Logs\n"
+"из этого гостя и просмотрите его в просмотрщике двоичных файлов.\n"
 
 #: log/log.c:466
-#, c-format, fuzzy
+#, c-format
 msgid "%s: Windows Event Log file (%s) not found\n"
 msgstr "%s: файл журнала событий Windows (%s) не найден\n"
 
 #: ls/ls.c:100
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: list files in a virtual machine\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4922,20 +4892,19 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: ls/ls.c:354
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "used a flag which can only be combined with -lR mode\n"
 "For more information, read the virt-ls(1) man page."
 msgstr ""
 "использован флаг, который можно комбинировать только с режимом -lR\n"
-"Для получения дополнительной информации прочитайте справочную страницу virt-"
-"ls(1)."
+"Подробности см. в справочной странице virt-ls(1)."
 
 #: make-fs/make-fs.c:85
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: make a filesystem from a tar archive or files\n"
 "Copyright (C) 2010-2025 Red Hat Inc.\n"
@@ -4975,57 +4944,57 @@ msgstr ""
 "  -v|--verbose             Подробные сообщения\n"
 "  -V|--version             Показать версию и выйти\n"
 "  -x                       Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: make-fs/make-fs.c:154
-#, c-format, fuzzy
+#, c-format
 msgid "--blocksize option is not numeric"
 msgstr "параметр --blocksize не является числом"
 
 #: make-fs/make-fs.c:195
-#, c-format, fuzzy
+#, c-format
 msgid "%s: missing input and output arguments on the command line\n"
 msgstr "%s: отсутствуют аргументы ввода и вывода в командной строке\n"
 
 #: make-fs/make-fs.c:214
-#, c-format, fuzzy
+#, c-format
 msgid "%s: NTFS support was disabled when libguestfs was compiled\n"
 msgstr "%s: поддержка NTFS была отключена при компиляции libguestfs\n"
 
 #: make-fs/make-fs.c:264 make-fs/make-fs.c:328
-#, c-format, fuzzy
+#, c-format
 msgid "%s: %s command failed\n"
 msgstr "%s: команда %s завершилась с ошибкой\n"
 
 #: make-fs/make-fs.c:453
-#, c-format, fuzzy
+#, c-format
 msgid "%s: cannot parse the output of ‘du’ command: %s\n"
 msgstr "%s: не удаётся разобрать вывод команды «du»: %s\n"
 
 #: make-fs/make-fs.c:488
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: %s: input is not a directory, tar archive or compressed tar archive\n"
 msgstr ""
 "%s: %s: ввод не является каталогом, tar-архивом или сжатым tar-архивом\n"
 
 #: make-fs/make-fs.c:519
-#, c-format, fuzzy
+#, c-format
 msgid "%s: %s: unknown compressed input format (%s)\n"
 msgstr "%s: %s: неизвестный сжатый формат ввода (%s)\n"
 
 #: make-fs/make-fs.c:642
-#, c-format, fuzzy
+#, c-format
 msgid "%s: %s: invalid size parameter ‘%s’ (%s returned %u)\n"
 msgstr "%s: %s: недопустимый параметр размера «%s» (%s вернул %u)\n"
 
 #: make-fs/make-fs.c:868
-#, c-format, fuzzy
+#, c-format
 msgid "%s: subprocess failed\n"
 msgstr "%s: дочерний процесс завершился с ошибкой\n"
 
 #: tail/tail.c:70
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: follow (tail) files in a virtual machine\n"
 "Copyright (C) 2016 Red Hat Inc.\n"
@@ -5074,10 +5043,10 @@ msgstr ""
 "  -v|--verbose          Подробные сообщения\n"
 "  -V|--version          Показать версию и выйти\n"
 "  -x                    Трассировать вызовы API libguestfs\n"
-"Для получения дополнительной информации см. справочную страницу %s(1).\n"
+"Подробности см. в справочной странице %s(1).\n"
 
 #: tail/tail.c:220
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s: error: missing filenames on command line.\n"
 "Please specify at least one file to follow.\n"
@@ -5086,22 +5055,21 @@ msgstr ""
 "Укажите хотя бы один файл для отслеживания.\n"
 
 #: tail/tail.c:427
-#, c-format, fuzzy
+#, c-format
 msgid "%s: error: none of the files were found in the disk image\n"
 msgstr "%s: ошибка: ни один из файлов не найден в образе диска\n"
 
 #: tail/tail.c:432
-#, c-format, fuzzy
+#, c-format
 msgid "%s: all files deleted, exiting\n"
 msgstr "%s: все файлы удалены, выход\n"
 
 #: win-reg/virt-win-reg.in:261
-#, fuzzy
 msgid "no libvirt domain name or disk image given\n"
 msgstr "не указано имя домена libvirt или образ диска\n"
 
 #: win-reg/virt-win-reg.in:317
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid ""
 "{prog}: No operating system could be detected inside this disk image.\n"
 "\n"
@@ -5122,12 +5090,11 @@ msgstr ""
 "как можно больше информации об образе диска.\n"
 
 #: win-reg/virt-win-reg.in:321
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid "{prog}: multiboot operating systems are not supported.\n"
 msgstr "{prog}: мультизагрузочные операционные системы не поддерживаются.\n"
 
 #: win-reg/virt-win-reg.in:343
-#, fuzzy
 msgid ""
 "expecting 1 or 2 more parameters, subkey path and optionally the value to "
 "export\n"
@@ -5136,22 +5103,22 @@ msgstr ""
 "для экспорта\n"
 
 #: win-reg/virt-win-reg.in:503
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid "virt-win-reg: {p}: cannot find user directory\n"
 msgstr "virt-win-reg: {p}: не удаётся найти пользовательский каталог\n"
 
 #: win-reg/virt-win-reg.in:508
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid "virt-win-reg: {p}: not a supported Windows Registry path\n"
 msgstr "virt-win-reg: {p}: не является поддерживаемым путём реестра Windows\n"
 
 #: win-reg/virt-win-reg.in:581
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
 msgstr "virt-win-reg: {p}: не удалось загрузить файл реестра: {err}\n"
 
 #: win-reg/virt-win-reg.in:598
-#, fuzzy, perl-brace-format
+#, perl-brace-format
 msgid "virt-win-reg: {p}: could not upload registry file: {err}\n"
 msgstr "virt-win-reg: {p}: не удалось выгрузить файл реестра: {err}\n"
 
