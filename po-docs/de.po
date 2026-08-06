@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-07-09 11:24+0100\n"
+"POT-Creation-Date: 2026-08-06 08:38+0100\n"
 "PO-Revision-Date: 2015-02-21 09:57+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/libguestfs/"
@@ -7027,45 +7027,89 @@ msgstr ""
 #. type: =item
 #: common/mlcustomize/customize-options.pod:389
 #: common/mlcustomize/v2v-customize-options.pod:335
-msgid "B<--ssh-inject> USER[:SELECTOR]"
-msgstr ""
+#, fuzzy
+#| msgid "B<--selinux-relabel>"
+msgid "B<--selinux-relabel-exclude> DIR"
+msgstr "B<--selinux-relabel>"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:391
 #: common/mlcustomize/v2v-customize-options.pod:337
 #: sysprep/sysprep-extra-options.pod:442
+msgid "Exclude directories from being relabelled."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:393
+#: common/mlcustomize/v2v-customize-options.pod:339
+#: sysprep/sysprep-extra-options.pod:444
+msgid ""
+"This advanced option lets you list directories in the guest which should not "
+"be relabelled, even when SELinux relabelling is enabled.  Use this "
+"carefully, as any changes that are made inside these directories during "
+"customization will have incorrect SELinux labels, leading to potential "
+"failures later, so you must be sure that the directories do not need "
+"relabelling."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:400
+#: common/mlcustomize/v2v-customize-options.pod:346
+#: sysprep/sysprep-extra-options.pod:451
+msgid "If in doubt, do not use this option."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:402
+#: common/mlcustomize/v2v-customize-options.pod:348
+#: sysprep/sysprep-extra-options.pod:453
+msgid ""
+"You can pass the option multiple times, eg.  I<--selinux-relabel-exclude=/"
+"foo> I<--selinux-relabel-exclude=/bar>"
+msgstr ""
+
+#. type: =item
+#: common/mlcustomize/customize-options.pod:405
+#: common/mlcustomize/v2v-customize-options.pod:351
+msgid "B<--ssh-inject> USER[:SELECTOR]"
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:407
+#: common/mlcustomize/v2v-customize-options.pod:353
+#: sysprep/sysprep-extra-options.pod:459
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:395
-#: common/mlcustomize/v2v-customize-options.pod:341
-#: sysprep/sysprep-extra-options.pod:446
+#: common/mlcustomize/customize-options.pod:411
+#: common/mlcustomize/v2v-customize-options.pod:357
+#: sysprep/sysprep-extra-options.pod:463
 msgid ""
 "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:398
-#: common/mlcustomize/v2v-customize-options.pod:344
-#: sysprep/sysprep-extra-options.pod:449
+#: common/mlcustomize/customize-options.pod:414
+#: common/mlcustomize/v2v-customize-options.pod:360
+#: sysprep/sysprep-extra-options.pod:466
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:401
-#: common/mlcustomize/v2v-customize-options.pod:347
+#: common/mlcustomize/customize-options.pod:417
+#: common/mlcustomize/v2v-customize-options.pod:363
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:403
-#: common/mlcustomize/v2v-customize-options.pod:349
-#: sysprep/sysprep-extra-options.pod:455
+#: common/mlcustomize/customize-options.pod:419
+#: common/mlcustomize/v2v-customize-options.pod:365
+#: sysprep/sysprep-extra-options.pod:472
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -7074,72 +7118,72 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:409
-#: common/mlcustomize/v2v-customize-options.pod:355
+#: common/mlcustomize/customize-options.pod:425
+#: common/mlcustomize/v2v-customize-options.pod:371
 msgid "B<--timezone> TIMEZONE"
 msgstr "B<--timezone> ZEITZONE"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:411
-#: common/mlcustomize/v2v-customize-options.pod:357
-#: sysprep/sysprep-extra-options.pod:464
+#: common/mlcustomize/customize-options.pod:427
+#: common/mlcustomize/v2v-customize-options.pod:373
+#: sysprep/sysprep-extra-options.pod:481
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:414
-#: common/mlcustomize/v2v-customize-options.pod:360
+#: common/mlcustomize/customize-options.pod:430
+#: common/mlcustomize/v2v-customize-options.pod:376
 msgid "B<--touch> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:416
-#: common/mlcustomize/v2v-customize-options.pod:362
-#: sysprep/sysprep-extra-options.pod:470
+#: common/mlcustomize/customize-options.pod:432
+#: common/mlcustomize/v2v-customize-options.pod:378
+#: sysprep/sysprep-extra-options.pod:487
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:418
-#: common/mlcustomize/v2v-customize-options.pod:364
+#: common/mlcustomize/customize-options.pod:434
+#: common/mlcustomize/v2v-customize-options.pod:380
 msgid "B<--truncate> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:420
-#: common/mlcustomize/v2v-customize-options.pod:366
-#: sysprep/sysprep-extra-options.pod:475
+#: common/mlcustomize/customize-options.pod:436
+#: common/mlcustomize/v2v-customize-options.pod:382
+#: sysprep/sysprep-extra-options.pod:492
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:423
-#: common/mlcustomize/v2v-customize-options.pod:369
+#: common/mlcustomize/customize-options.pod:439
+#: common/mlcustomize/v2v-customize-options.pod:385
 msgid "B<--truncate-recursive> PATH"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:425
-#: common/mlcustomize/v2v-customize-options.pod:371
-#: sysprep/sysprep-extra-options.pod:481
+#: common/mlcustomize/customize-options.pod:441
+#: common/mlcustomize/v2v-customize-options.pod:387
+#: sysprep/sysprep-extra-options.pod:498
 msgid ""
 "This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:427
-#: common/mlcustomize/v2v-customize-options.pod:373
+#: common/mlcustomize/customize-options.pod:443
+#: common/mlcustomize/v2v-customize-options.pod:389
 msgid "B<--uninstall> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:429
-#: common/mlcustomize/v2v-customize-options.pod:375
-#: sysprep/sysprep-extra-options.pod:486
+#: common/mlcustomize/customize-options.pod:445
+#: common/mlcustomize/v2v-customize-options.pod:391
+#: sysprep/sysprep-extra-options.pod:503
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -7148,22 +7192,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:434
-#: common/mlcustomize/v2v-customize-options.pod:380
-#: sysprep/sysprep-extra-options.pod:491
+#: common/mlcustomize/customize-options.pod:450
+#: common/mlcustomize/v2v-customize-options.pod:396
+#: sysprep/sysprep-extra-options.pod:508
 msgid "See also I<--install>, I<--update>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:436
-#: common/mlcustomize/v2v-customize-options.pod:382
+#: common/mlcustomize/customize-options.pod:452
+#: common/mlcustomize/v2v-customize-options.pod:398
 msgid "B<--update>"
 msgstr "B<--update>"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:438
-#: common/mlcustomize/v2v-customize-options.pod:384
-#: sysprep/sysprep-extra-options.pod:496
+#: common/mlcustomize/customize-options.pod:454
+#: common/mlcustomize/v2v-customize-options.pod:400
+#: sysprep/sysprep-extra-options.pod:513
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -7171,22 +7215,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:442
-#: common/mlcustomize/v2v-customize-options.pod:388
-#: sysprep/sysprep-extra-options.pod:500
+#: common/mlcustomize/customize-options.pod:458
+#: common/mlcustomize/v2v-customize-options.pod:404
+#: sysprep/sysprep-extra-options.pod:517
 msgid "See also I<--install>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:444
-#: common/mlcustomize/v2v-customize-options.pod:390
+#: common/mlcustomize/customize-options.pod:460
+#: common/mlcustomize/v2v-customize-options.pod:406
 msgid "B<--upload> FILE:DEST"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:446
-#: common/mlcustomize/v2v-customize-options.pod:392
-#: sysprep/sysprep-extra-options.pod:505
+#: common/mlcustomize/customize-options.pod:462
+#: common/mlcustomize/v2v-customize-options.pod:408
+#: sysprep/sysprep-extra-options.pod:522
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -7194,18 +7238,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:450
-#: common/mlcustomize/v2v-customize-options.pod:396
-#: sysprep/sysprep-extra-options.pod:509
+#: common/mlcustomize/customize-options.pod:466
+#: common/mlcustomize/v2v-customize-options.pod:412
+#: sysprep/sysprep-extra-options.pod:526
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:453
-#: common/mlcustomize/v2v-customize-options.pod:399
-#: sysprep/sysprep-extra-options.pod:512
+#: common/mlcustomize/customize-options.pod:469
+#: common/mlcustomize/v2v-customize-options.pod:415
+#: sysprep/sysprep-extra-options.pod:529
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -7213,22 +7257,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:457
-#: common/mlcustomize/v2v-customize-options.pod:403
-#: sysprep/sysprep-extra-options.pod:516
+#: common/mlcustomize/customize-options.pod:473
+#: common/mlcustomize/v2v-customize-options.pod:419
+#: sysprep/sysprep-extra-options.pod:533
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:459
-#: common/mlcustomize/v2v-customize-options.pod:405
+#: common/mlcustomize/customize-options.pod:475
+#: common/mlcustomize/v2v-customize-options.pod:421
 msgid "B<--write> FILE:CONTENT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:461
-#: common/mlcustomize/v2v-customize-options.pod:407
-#: sysprep/sysprep-extra-options.pod:521
+#: common/mlcustomize/customize-options.pod:477
+#: common/mlcustomize/v2v-customize-options.pod:423
+#: sysprep/sysprep-extra-options.pod:538
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr ""
 
@@ -16124,51 +16168,56 @@ msgstr ""
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:439
+msgid "B<--selinux-relabel-exclude> DIR (see C<customize> below)"
+msgstr ""
+
+#. type: =item
+#: sysprep/sysprep-extra-options.pod:456
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:452
+#: sysprep/sysprep-extra-options.pod:469
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:461
+#: sysprep/sysprep-extra-options.pod:478
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:467
+#: sysprep/sysprep-extra-options.pod:484
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:472
+#: sysprep/sysprep-extra-options.pod:489
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:478
+#: sysprep/sysprep-extra-options.pod:495
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:483
+#: sysprep/sysprep-extra-options.pod:500
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:493
+#: sysprep/sysprep-extra-options.pod:510
 msgid "B<--update> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:502
+#: sysprep/sysprep-extra-options.pod:519
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:518
+#: sysprep/sysprep-extra-options.pod:535
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr ""
 
