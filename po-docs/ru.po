@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-07-09 11:24+0100\n"
+"POT-Creation-Date: 2026-08-06 08:38+0100\n"
 "PO-Revision-Date: 2026-08-05 17:20+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
@@ -40,7 +40,8 @@ msgstr "ИМЯ"
 #. type: textblock
 #: align/virt-alignment-scan.pod:3
 msgid "virt-alignment-scan - Check alignment of virtual machine partitions"
-msgstr "virt-alignment-scan - Проверка выравнивания разделов виртуальной машины"
+msgstr ""
+"virt-alignment-scan - Проверка выравнивания разделов виртуальной машины"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:5 builder/virt-builder-repository.pod:12
@@ -127,8 +128,8 @@ msgstr ""
 msgid ""
 "Currently there is no virt tool for fixing alignment problems.  You can only "
 "reinstall the guest operating system.  The following NetApp document "
-"summarises the problem and possible solutions: "
-"L<http://media.netapp.com/documents/tr-3747.pdf>"
+"summarises the problem and possible solutions: L<http://media.netapp.com/"
+"documents/tr-3747.pdf>"
 msgstr ""
 "В настоящее время не существует инструмента virt для исправления проблем с "
 "выравниванием. Вы можете только переустановить гостевую операционную "
@@ -398,7 +399,8 @@ msgstr "B<--add> файл"
 #: drivers/virt-drivers.pod:125 get-kernel/virt-get-kernel.pod:35
 #: sysprep/virt-sysprep.pod:57
 msgid "Add I<file> which should be a disk image from a virtual machine."
-msgstr "Добавить I<файл>, который должен быть образом диска виртуальной машины."
+msgstr ""
+"Добавить I<файл>, который должен быть образом диска виртуальной машины."
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:115 cat/virt-cat.pod:67 df/virt-df.pod:87
@@ -435,8 +437,8 @@ msgstr "B<--add URI>"
 #: tail/virt-tail.pod:69
 msgid "Add a remote disk.  See L<guestfish(1)/ADDING REMOTE STORAGE>."
 msgstr ""
-"Добавить удаленный диск.  См. L<guestfish(1)/ДОБАВЛЕНИЕ УДАЛЕННОГО ХРАНИЛИЩА>"
-"."
+"Добавить удаленный диск.  См. L<guestfish(1)/ДОБАВЛЕНИЕ УДАЛЕННОГО "
+"ХРАНИЛИЩА>."
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:124 cat/virt-cat.pod:76 df/virt-df.pod:96
@@ -555,8 +557,8 @@ msgstr "B<--format>"
 msgid ""
 "The default for the I<-a> option is to auto-detect the format of the disk "
 "image.  Using this forces the disk format for I<-a> options which follow on "
-"the command line.  Using I<--format> with no argument switches back to "
-"auto-detection for subsequent I<-a> options."
+"the command line.  Using I<--format> with no argument switches back to auto-"
+"detection for subsequent I<-a> options."
 msgstr ""
 "По умолчанию для опции I<-a> используется автоматическое определение формата "
 "образа диска.  Использование этого параметра принудительно задаёт формат "
@@ -615,8 +617,8 @@ msgstr ""
 #: format/virt-format.pod:110 log/virt-log.pod:103 ls/virt-ls.pod:341
 #: sysprep/virt-sysprep.pod:189 tail/virt-tail.pod:121
 msgid ""
-"forces raw format (no auto-detection) for F<disk.img> and reverts to "
-"auto-detection for F<another.img>."
+"forces raw format (no auto-detection) for F<disk.img> and reverts to auto-"
+"detection for F<another.img>."
 msgstr ""
 "принудительно задаёт формат raw (без автоматического определения) для "
 "F<disk.img> и возвращается к автоматическому определению для F<another.img>."
@@ -880,9 +882,9 @@ msgstr "* 4 Кбайт"
 #. type: textblock
 #: align/virt-alignment-scan.pod:236
 msgid ""
-"for local storage on new hard drives with 4Kbyte physical sectors; for "
-"file-backed storage on filesystems with 4Kbyte block size; or for some types "
-"of network-attached storage."
+"for local storage on new hard drives with 4Kbyte physical sectors; for file-"
+"backed storage on filesystems with 4Kbyte block size; or for some types of "
+"network-attached storage."
 msgstr ""
 "для локального хранения на новых жестких дисках с физическими секторами по 4 "
 "Кбайт; для хранилища на файлах в файловых системах с размером блока 4 Кбайт; "
@@ -1081,8 +1083,9 @@ msgstr ""
 #. type: textblock
 #: align/virt-alignment-scan.pod:314
 msgid ""
-"For detailed information about what these numbers mean, see "
-"L<http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/newstorage-iolimits.html>"
+"For detailed information about what these numbers mean, see L<http://"
+"docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/"
+"Storage_Administration_Guide/newstorage-iolimits.html>"
 msgstr ""
 "Для получения подробной информации о том, что означают эти числа, см. "
 "L<http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/"
@@ -1260,7 +1263,8 @@ msgstr "0"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:362
-msgid "successful exit, all partitions are aligned E<ge> 64K for best performance"
+msgid ""
+"successful exit, all partitions are aligned E<ge> 64K for best performance"
 msgstr ""
 "успешное завершение, все разделы выровнены E<ge> 64K для наилучшей "
 "производительности"
@@ -1423,8 +1427,8 @@ msgstr ""
 msgid ""
 "Virt-builder is a tool for quickly building new virtual machines. It can be "
 "configured to use template repositories. However creating and maintaining a "
-"repository involves many tasks which can be automated.  "
-"virt-builder-repository is a tool helping to manage these repositories."
+"repository involves many tasks which can be automated.  virt-builder-"
+"repository is a tool helping to manage these repositories."
 msgstr ""
 "Virt-builder — это инструмент для быстрого создания новых виртуальных машин. "
 "Он может быть настроен на использование репозиториев шаблонов. Однако "
@@ -1534,9 +1538,9 @@ msgid ""
 "values are computed by inspecting the disk image.  For more information, see "
 "L<virt-builder(1)/Creating and signing the index file>."
 msgstr ""
-"Значение файла должно совпадать с именем образа, дополненным суффиксом C<.xz>"
-", если не указан параметр I<--no-compression>, или с именем образа, если "
-"сжатие не используется. Другие необязательные данные могут быть "
+"Значение файла должно совпадать с именем образа, дополненным суффиксом "
+"C<.xz>, если не указан параметр I<--no-compression>, или с именем образа, "
+"если сжатие не используется. Другие необязательные данные могут быть "
 "предварительно заполнены. Значения по умолчанию вычисляются путем проверки "
 "образа диска.  Для получения дополнительной информации см. L<virt-builder(1)/"
 "Создание и подписание файла индекса>."
@@ -1590,7 +1594,8 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder-repository.pod:78
-msgid "Then running the following command will complete and update the index file:"
+msgid ""
+"Then running the following command will complete and update the index file:"
 msgstr "Затем выполнение следующей команды завершит и обновит файл индекса:"
 
 #. type: textblock
@@ -1649,12 +1654,10 @@ msgstr ""
 #: builder/virt-builder-repository.pod:105
 #, no-wrap
 msgid ""
-" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" "
-"[...]\n"
+" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" [...]\n"
 "\n"
 msgstr ""
-" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" "
-"[...]\n"
+" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" [...]\n"
 "\n"
 
 #. type: =item
@@ -1702,7 +1705,8 @@ msgstr "B<--interactive>"
 
 #. type: textblock
 #: builder/virt-builder-repository.pod:124
-msgid "Prompt for missing data. Default values are computed from the disk image."
+msgid ""
+"Prompt for missing data. Default values are computed from the disk image."
 msgstr ""
 "Запрашивать недостающие данные. Значения по умолчанию вычисляются из образа "
 "диска."
@@ -1848,8 +1852,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder-repository.pod:190
 msgid ""
-"Use the option on its own to query the capabilities of the "
-"virt-builder-repository binary.  Typical output looks like this:"
+"Use the option on its own to query the capabilities of the virt-builder-"
+"repository binary.  Typical output looks like this:"
 msgstr ""
 "Используйте этот параметр отдельно, чтобы запросить возможности двоичного "
 "файла virt-builder-repository.  Типичный вывод выглядит так:"
@@ -1895,7 +1899,8 @@ msgstr ""
 #: filesystems/virt-filesystems.pod:392 get-kernel/virt-get-kernel.pod:198
 #: inspector/virt-inspector.pod:491 log/virt-log.pod:134 ls/virt-ls.pod:516
 #: resize/virt-resize.pod:845 tail/virt-tail.pod:234
-msgid "This program returns 0 if successful, or non-zero if there was an error."
+msgid ""
+"This program returns 0 if successful, or non-zero if there was an error."
 msgstr ""
 "Эта программа возвращает 0 в случае успеха или ненулевое значение в случае "
 "ошибки."
@@ -1940,12 +1945,10 @@ msgstr ""
 #: builder/virt-builder.pod:19
 #, no-wrap
 msgid ""
-" virt-builder -l|--list [--long] [--list-format short|long|json] "
-"[os-version]\n"
+" virt-builder -l|--list [--long] [--list-format short|long|json] [os-version]\n"
 "\n"
 msgstr ""
-" virt-builder -l|--list [--long] [--list-format short|long|json] [версия-"
-"ос]\n"
+" virt-builder -l|--list [--long] [--list-format short|long|json] [версия-ос]\n"
 "\n"
 
 #. type: verbatim
@@ -2108,8 +2111,8 @@ msgid ""
 "etc.)."
 msgstr ""
 "создаст образ Fedora 41 для той же архитектуры, что и virt-builder (поэтому "
-"запуск его из установки i686 попытается создать образ i686, если он доступен)"
-".  Это будет иметь все настройки по умолчанию (минимальный размер, "
+"запуск его из установки i686 попытается создать образ i686, если он "
+"доступен).  Это будет иметь все настройки по умолчанию (минимальный размер, "
 "отсутствие пользовательских учетных записей, случайный пароль root, только "
 "минимально необходимое установленное программное обеспечение и т.д.)."
 
@@ -2131,8 +2134,8 @@ msgstr ""
 #: builder/virt-builder.pod:79
 msgid ""
 "The name of the output file is derived from the template name, so above it "
-"will be F<fedora-41.img>.  You can change the output filename using the "
-"I<-o> option:"
+"will be F<fedora-41.img>.  You can change the output filename using the I<-"
+"o> option:"
 msgstr ""
 "Имя выходного файла формируется на основе имени шаблона, поэтому в примере "
 "выше это будет F<fedora-41.img>.  Вы можете изменить имя выходного файла с "
@@ -2224,8 +2227,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:106
 msgid ""
-"Create a Fedora 41 image.  The root password is taken from the file "
-"F</tmp/rootpw>."
+"Create a Fedora 41 image.  The root password is taken from the file F</tmp/"
+"rootpw>."
 msgstr "Создает образ Fedora 41.  Пароль root берется из файла F</tmp/rootpw>."
 
 #. type: textblock
@@ -2324,8 +2327,8 @@ msgid ""
 "include: I<--run>/I<--run-command>, which run a shell script or command "
 "while the disk image is being generated and lets you add or edit files that "
 "go into the disk image.  I<--firstboot>/I<--firstboot-command>, which let "
-"you add scripts/commands that are run the first time the guest boots.  "
-"I<--edit> to edit files.  I<--upload> to upload files."
+"you add scripts/commands that are run the first time the guest boots.  I<--"
+"edit> to edit files.  I<--upload> to upload files."
 msgstr ""
 "Существует множество параметров, позволяющих настроить установку.  Они "
 "включают: I<--run>/I<--run-command>, которые выполняют сценарий оболочки или "
@@ -2569,8 +2572,8 @@ msgstr "B<--no-check-signature>"
 #: builder/virt-builder.pod:232
 msgid ""
 "Check/don’t check the digital signature of the OS template.  The default is "
-"to check the signature and exit if it is not correct.  Using "
-"I<--no-check-signature> bypasses this check."
+"to check the signature and exit if it is not correct.  Using I<--no-check-"
+"signature> bypasses this check."
 msgstr ""
 "Проверять/не проверять цифровую подпись шаблона ОС.  По умолчанию проверять "
 "подпись и выходить, если она неверна.  Использование I<--no-check-signature> "
@@ -2683,7 +2686,8 @@ msgstr "B<--format> raw"
 
 #. type: textblock
 #: builder/virt-builder.pod:282
-msgid "For ordinary builds, this selects the output format.  The default is I<raw>."
+msgid ""
+"For ordinary builds, this selects the output format.  The default is I<raw>."
 msgstr "Для обычных сборок выбирает выходной формат.  По умолчанию I<raw>."
 
 #. type: textblock
@@ -2729,8 +2733,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:298
 msgid ""
-"Note this method is B<deprecated>: there is a separate tool for this, "
-"L<virt-get-kernel(1)>, which has more options for the file extraction."
+"Note this method is B<deprecated>: there is a separate tool for this, L<virt-"
+"get-kernel(1)>, which has more options for the file extraction."
 msgstr ""
 "Обратите внимание, этот метод B<устарел>: для этого существует отдельный "
 "инструмент, L<virt-get-kernel(1)>, который имеет больше возможностей для "
@@ -2770,8 +2774,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:314
 msgid ""
-"Specify an alternate L<gpg(1)> (GNU Privacy Guard) binary.  By default "
-"virt-builder looks for either C<gpg2> or C<gpg> in the C<$PATH>."
+"Specify an alternate L<gpg(1)> (GNU Privacy Guard) binary.  By default virt-"
+"builder looks for either C<gpg2> or C<gpg> in the C<$PATH>."
 msgstr ""
 "Указать альтернативный двоичный файл L<gpg(1)> (GNU Privacy Guard).  По "
 "умолчанию virt-builder ищет C<gpg2> или C<gpg> в C<$PATH>."
@@ -2948,7 +2952,8 @@ msgstr "B<--no-network>"
 #. type: textblock
 #: builder/virt-builder.pod:388 customize/virt-customize.pod:161
 #: sysprep/virt-sysprep.pod:253
-msgid "Enable or disable network access from the guest during the installation."
+msgid ""
+"Enable or disable network access from the guest during the installation."
 msgstr "Включить или отключить сетевой доступ из гостя во время установки."
 
 #. type: textblock
@@ -3141,15 +3146,15 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:461
 msgid ""
-"Note that the output filename could be a device, partition or logical "
-"volume."
+"Note that the output filename could be a device, partition or logical volume."
 msgstr ""
 "Обратите внимание, что имя выходного файла может быть устройством, разделом "
 "или логическим томом."
 
 #. type: textblock
 #: builder/virt-builder.pod:464
-msgid "When used with I<--get-kernel>, this option specifies the output directory."
+msgid ""
+"When used with I<--get-kernel>, this option specifies the output directory."
 msgstr ""
 "При использовании с I<--get-kernel> этот параметр указывает выходной каталог."
 
@@ -3180,7 +3185,8 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:482
-msgid "Virt-builder will resize filesystems inside the disk image automatically."
+msgid ""
+"Virt-builder will resize filesystems inside the disk image automatically."
 msgstr ""
 "Virt-builder автоматически изменит размер файловых систем внутри образа "
 "диска."
@@ -3242,8 +3248,8 @@ msgstr "См. также L</ИСТОЧНИКИ ШАБЛОНОВ> ниже."
 #: builder/virt-builder.pod:505
 msgid ""
 "Note that you should not point I<--source> to sources that you don’t trust "
-"(unless the source is signed by someone you do trust).  See also the "
-"I<--no-network> option."
+"(unless the source is signed by someone you do trust).  See also the I<--no-"
+"network> option."
 msgstr ""
 "Обратите внимание, что не следует указывать I<--source> на источники, "
 "которым вы не доверяете (если только источник не подписан кем-то, кому вы "
@@ -3308,8 +3314,8 @@ msgstr "Установка пакетов во время сборки"
 #: builder/virt-builder.pod:558
 msgid ""
 "If the guest OS you are installing is similar to the host OS (eg.  both are "
-"Linux), and if libguestfs supports network connections, then you can use "
-"I<--install> to install packages like this:"
+"Linux), and if libguestfs supports network connections, then you can use I<--"
+"install> to install packages like this:"
 msgstr ""
 "Если устанавливаемая гостевая ОС похожа на хост-ОС (например, обе Linux), и "
 "если libguestfs поддерживает сетевые соединения, то вы можете использовать "
@@ -3327,7 +3333,8 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:564
-msgid "This uses the guest’s package manager and the host’s network connection."
+msgid ""
+"This uses the guest’s package manager and the host’s network connection."
 msgstr "Это использует менеджер пакетов гостя и сетевое соединение хоста."
 
 #. type: =head3
@@ -3387,16 +3394,16 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:585
-msgid "This uses the guest’s package manager and the guest’s network connection."
+msgid ""
+"This uses the guest’s package manager and the guest’s network connection."
 msgstr "Это использует менеджер пакетов гостя и сетевое соединение гостя."
 
 #. type: textblock
 #: builder/virt-builder.pod:588
 msgid ""
 "The downsides are that it will take the guest a lot longer to boot first "
-"time, and there’s nothing much you can do if package installation fails "
-"(eg. if a network problem means the guest can't reach the package "
-"repositories)."
+"time, and there’s nothing much you can do if package installation fails (eg. "
+"if a network problem means the guest can't reach the package repositories)."
 msgstr ""
 "Недостатки заключаются в том, что гостю потребуется значительно больше "
 "времени для первой загрузки, и вы мало что можете сделать, если установка "
@@ -3423,11 +3430,11 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:600
 msgid ""
-"You can create the disk image using either L<genisoimage(1)> or "
-"L<virt-make-fs(1)>.  For genisoimage, use a command like this:"
+"You can create the disk image using either L<genisoimage(1)> or L<virt-make-"
+"fs(1)>.  For genisoimage, use a command like this:"
 msgstr ""
-"Вы можете создать образ диска с помощью L<genisoimage(1)> или L<virt-make-fs"
-"(1)>.  Для genisoimage используйте команду, подобную этой:"
+"Вы можете создать образ диска с помощью L<genisoimage(1)> или L<virt-make-"
+"fs(1)>.  Для genisoimage используйте команду, подобную этой:"
 
 #. type: verbatim
 #: builder/virt-builder.pod:603
@@ -3662,11 +3669,11 @@ msgstr "Создание пользовательских учетных зап�
 #. type: textblock
 #: builder/virt-builder.pod:689
 msgid ""
-"To create user accounts, use the L<useradd(8)> command with "
-"L<--firstboot-command> like this:"
+"To create user accounts, use the L<useradd(8)> command with L<--firstboot-"
+"command> like this:"
 msgstr ""
-"Для создания пользовательских учетных записей используйте команду L<useradd"
-"(8)> с L<--firstboot-command> следующим образом:"
+"Для создания пользовательских учетных записей используйте команду "
+"L<useradd(8)> с L<--firstboot-command> следующим образом:"
 
 #. type: verbatim
 #: builder/virt-builder.pod:692
@@ -3736,9 +3743,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:713
 msgid ""
-"See L<localectl(1)> and "
-"L<https://www.happyassassin.net/2013/11/23/keyboard-layouts-in-fedora-20-and-previously/> "
-"for more details."
+"See L<localectl(1)> and L<https://www.happyassassin.net/2013/11/23/keyboard-"
+"layouts-in-fedora-20-and-previously/> for more details."
 msgstr ""
 "См. L<localectl(1)> и L<https://www.happyassassin.net/2013/11/23/keyboard-"
 "layouts-in-fedora-20-and-previously/> для получения более подробной "
@@ -3830,8 +3836,8 @@ msgstr ""
 msgid ""
 "However there is no single setting which controls this, since extra packages "
 "may need to be installed to support console and X fonts, and keyboard input "
-"methods.  The packages required, and their configuration is highly "
-"distro-specific, and it is outside the scope of virt-builder to do this."
+"methods.  The packages required, and their configuration is highly distro-"
+"specific, and it is outside the scope of virt-builder to do this."
 msgstr ""
 "Однако нет единой настройки, которая управляет этим, поскольку могут "
 "потребоваться дополнительные пакеты для поддержки консольных и X-шрифтов, а "
@@ -3860,9 +3866,7 @@ msgid ""
 "   --install @japanese-support \\\n"
 "   --install @xfce \\\n"
 "   --install xorg-x11-server-Xorg,xorg-x11-drivers,rsyslog \\\n"
-"   --link "
-"/usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target "
-"\\\n"
+"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target \\\n"
 "   --firstboot-command 'localectl set-locale LANG=ja_JP.utf8' \\\n"
 "   --firstboot-command 'localectl set-keymap jp' \\\n"
 "   --firstboot-command 'systemctl isolate graphical.target'\n"
@@ -3874,8 +3878,7 @@ msgstr ""
 "   --install @japanese-support \\\n"
 "   --install @xfce \\\n"
 "   --install xorg-x11-server-Xorg,xorg-x11-drivers,rsyslog \\\n"
-"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/"
-"default.target \\\n"
+"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target \\\n"
 "   --firstboot-command 'localectl set-locale LANG=ja_JP.utf8' \\\n"
 "   --firstboot-command 'localectl set-keymap jp' \\\n"
 "   --firstboot-command 'systemctl isolate graphical.target'\n"
@@ -3946,9 +3949,9 @@ msgstr "ФАЙЛ ЖУРНАЛА"
 #. type: textblock
 #: builder/virt-builder.pod:787
 msgid ""
-"Scripts and package installation that runs at build time (I<--run>, "
-"I<--run-command>, I<--install>, I<--update>, but I<not> firstboot) is logged "
-"in one of the following locations:"
+"Scripts and package installation that runs at build time (I<--run>, I<--run-"
+"command>, I<--install>, I<--update>, but I<not> firstboot) is logged in one "
+"of the following locations:"
 msgstr ""
 "Сценарии и установка пакетов, выполняемые во время сборки (I<--run>, I<--run-"
 "command>, I<--install>, I<--update>, но I<не> firstboot), регистрируются в "
@@ -4010,11 +4013,11 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:815
 msgid ""
-"The C<SELECTOR> part of the option value is optional; in this case, "
-"I<--ssh-inject> C<USER> means that we look in the I<current> user’s "
-"F<~/.ssh> directory to find the default public ID file.  That key is "
-"uploaded.  \"default public ID\" is the I<default_ID_file> file described in "
-"L<ssh-copy-id(1)>."
+"The C<SELECTOR> part of the option value is optional; in this case, I<--ssh-"
+"inject> C<USER> means that we look in the I<current> user’s F<~/.ssh> "
+"directory to find the default public ID file.  That key is uploaded.  "
+"\"default public ID\" is the I<default_ID_file> file described in L<ssh-copy-"
+"id(1)>."
 msgstr ""
 "Часть C<SELECTOR> значения параметра является необязательной; в этом случае "
 "I<--ssh-inject> C<USER> означает, что мы ищем в F<~/.ssh> каталоге "
@@ -4034,7 +4037,8 @@ msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ:file:ИМЯ_ФАЙЛА"
 
 #. type: textblock
 #: builder/virt-builder.pod:827
-msgid "Read the ssh key from F<FILENAME>.  F<FILENAME> is usually a I<.pub> file."
+msgid ""
+"Read the ssh key from F<FILENAME>.  F<FILENAME> is usually a I<.pub> file."
 msgstr ""
 "Прочитать ssh-ключ из F<ИМЯ_ФАЙЛА>.  F<ИМЯ_ФАЙЛА> обычно является файлом "
 "I<.pub>."
@@ -4056,8 +4060,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:837
 msgid ""
-"In any case, the F<~USER/.ssh> directory and the "
-"F<~USER/.ssh/authorized_keys> file will be created if not existing already."
+"In any case, the F<~USER/.ssh> directory and the F<~USER/.ssh/"
+"authorized_keys> file will be created if not existing already."
 msgstr ""
 "В любом случае каталог F<~ПОЛЬЗОВАТЕЛЬ/.ssh> и файл F<~ПОЛЬЗОВАТЕЛЬ/.ssh/"
 "authorized_keys> будут созданы, если они еще не существуют."
@@ -4099,7 +4103,8 @@ msgstr "Шаблон распаковывается во временный фа
 
 #. type: textblock
 #: builder/virt-builder.pod:864
-msgid "The template image is resized into the destination, using L<virt-resize(1)>."
+msgid ""
+"The template image is resized into the destination, using L<virt-resize(1)>."
 msgstr ""
 "Размер шаблона образа изменяется при копировании в целевой файл с помощью "
 "L<virt-resize(1)>."
@@ -4117,13 +4122,13 @@ msgstr "Для гостя генерируется новая случайная
 #. type: textblock
 #: builder/virt-builder.pod:877
 msgid ""
-"Guest customization is performed, in the order specified on the command "
-"line."
+"Guest customization is performed, in the order specified on the command line."
 msgstr "Настройка гостя выполняется в порядке, указанном в командной строке."
 
 #. type: textblock
 #: builder/virt-builder.pod:882
-msgid "SELinux relabelling is done unless disabled with I<--no-selinux-relabel>."
+msgid ""
+"SELinux relabelling is done unless disabled with I<--no-selinux-relabel>."
 msgstr ""
 "Выполняется перемаркировка SELinux, если не отключена с помощью I<--no-"
 "selinux-relabel>."
@@ -4247,8 +4252,8 @@ msgid ""
 "The I<--file> parameter is the virt-builder-generated disk image.  It should "
 "match virt-builder’s I<--output> option.  The I<--disk-format> parameter "
 "should match virt-builder’s I<--format> option (or C<raw> if you didn't use "
-"that option).  The I<--container-format> should always be C<bare> since "
-"virt-builder doesn't put images into containers."
+"that option).  The I<--container-format> should always be C<bare> since virt-"
+"builder doesn't put images into containers."
 msgstr ""
 "Параметр I<--file> — это образ диска, созданный virt-builder.  Он должен "
 "соответствовать параметру I<--output> в virt-builder.  Параметр I<--disk-"
@@ -4370,8 +4375,7 @@ msgid ""
 "   --update \\\n"
 "   --install puppet \\\n"
 "   --append-line '/etc/puppet/puppet.conf:[agent]' \\\n"
-"   --append-line '/etc/puppet/puppet.conf:server = "
-"puppetmaster.example.com/' \\\n"
+"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/' \\\n"
 "   --run-command 'systemctl enable puppet'\n"
 "\n"
 msgstr ""
@@ -4380,8 +4384,7 @@ msgstr ""
 "   --update \\\n"
 "   --install puppet \\\n"
 "   --append-line '/etc/puppet/puppet.conf:[agent]' \\\n"
-"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/"
-"' \\\n"
+"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/' \\\n"
 "   --run-command 'systemctl enable puppet'\n"
 "\n"
 
@@ -4499,7 +4502,8 @@ msgstr "Используйте guestmount"
 
 #. type: textblock
 #: builder/virt-builder.pod:1025
-msgid "Mount the disk image safely on the host using FUSE and L<guestmount(1)>:"
+msgid ""
+"Mount the disk image safely on the host using FUSE and L<guestmount(1)>:"
 msgstr ""
 "Безопасно смонтируйте образ диска на хосте с помощью FUSE и L<guestmount(1)>:"
 
@@ -4582,8 +4586,8 @@ msgid ""
 "$XDG_CONFIG_HOME/virt-builder/repos.d/ (C<$XDG_CONFIG_HOME> is "
 "F<$HOME/.config> if not set)."
 msgstr ""
-"$XDG_CONFIG_HOME/virt-builder/repos.d/ (C<$XDG_CONFIG_HOME> равно F<$HOME/"
-".config>, если не установлено)."
+"$XDG_CONFIG_HOME/virt-builder/repos.d/ (C<$XDG_CONFIG_HOME> равно "
+"F<$HOME/.config>, если не установлено)."
 
 #. type: textblock
 #: builder/virt-builder.pod:1061
@@ -4685,7 +4689,8 @@ msgstr "B<no>, B<off>"
 
 #. type: textblock
 #: builder/virt-builder.pod:1102
-msgid "No proxy is being used at all, even overriding the system configuration."
+msgid ""
+"No proxy is being used at all, even overriding the system configuration."
 msgstr ""
 "Прокси вообще не используется, даже с переопределением системной "
 "конфигурации."
@@ -4763,8 +4768,8 @@ msgstr "URI представляет корень дерева метаданн�
 #. type: textblock
 #: builder/virt-builder.pod:1134
 msgid ""
-"For more information about Simple Streams, see also "
-"L<https://launchpad.net/simplestreams>."
+"For more information about Simple Streams, see also L<https://launchpad.net/"
+"simplestreams>."
 msgstr ""
 "Для получения дополнительной информации о Simple Streams см. также L<https://"
 "launchpad.net/simplestreams>."
@@ -4791,11 +4796,10 @@ msgstr "Репозиторий Libguestfs.org"
 #. type: textblock
 #: builder/virt-builder.pod:1148
 msgid ""
-"Out of the box, virt-builder downloads the file "
-"L<http://libguestfs.org/download/builder/index.asc> which is an index of "
-"available templates plus some information about each one, wrapped up in a "
-"digital signature.  The command C<virt-builder --list> lists out the "
-"information in this index file."
+"Out of the box, virt-builder downloads the file L<http://libguestfs.org/"
+"download/builder/index.asc> which is an index of available templates plus "
+"some information about each one, wrapped up in a digital signature.  The "
+"command C<virt-builder --list> lists out the information in this index file."
 msgstr ""
 "Из коробки virt-builder загружает файл L<http://libguestfs.org/download/"
 "builder/index.asc>, который является индексом доступных шаблонов плюс "
@@ -4857,8 +4861,7 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:1172
 msgid ""
-"You can host this on any web or FTP server, or a local or network "
-"filesystem."
+"You can host this on any web or FTP server, or a local or network filesystem."
 msgstr ""
 "Вы можете разместить это на любом веб- или FTP-сервере, а также в локальной "
 "или сетевой файловой системе."
@@ -4884,8 +4887,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:1182
 msgid ""
-"To create a key, see the GPG manual "
-"L<http://www.gnupg.org/gph/en/manual.html>."
+"To create a key, see the GPG manual L<http://www.gnupg.org/gph/en/"
+"manual.html>."
 msgstr ""
 "Чтобы создать ключ, см. руководство GPG L<http://www.gnupg.org/gph/en/"
 "manual.html>."
@@ -4915,8 +4918,8 @@ msgstr "Создание шаблонов"
 msgid ""
 "There are many ways to create the templates.  For example you could clone "
 "existing guests (see L<virt-sysprep(1)>), or you could install a guest by "
-"hand (L<virt-install(1)>).  To see how the templates were created for "
-"virt-builder, look at the scripts in C<builder/templates>"
+"hand (L<virt-install(1)>).  To see how the templates were created for virt-"
+"builder, look at the scripts in C<builder/templates>"
 msgstr ""
 "Существует множество способов создания шаблонов.  Например, вы можете "
 "клонировать существующих гостей (см. L<virt-sysprep(1)>), или вы можете "
@@ -5051,8 +5054,8 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:1241
 msgid ""
-"The index file creation and signature can be eased with the "
-"L<virt-builder-repository(1)> tool."
+"The index file creation and signature can be eased with the L<virt-builder-"
+"repository(1)> tool."
 msgstr ""
 "Создание файла индекса и его подписание можно упростить с помощью "
 "инструмента L<virt-builder-repository(1)>."
@@ -5312,8 +5315,7 @@ msgstr ""
 #: builder/virt-builder.pod:1344
 msgid ""
 "Virt-builder also uses this as the minimum size that users can request via "
-"the I<--size> option, or as the default size if there is no I<--size> "
-"option."
+"the I<--size> option, or as the default size if there is no I<--size> option."
 msgstr ""
 "Virt-builder также использует это как минимальный размер, который "
 "пользователи могут запросить с помощью параметра I<--size>, или как размер "
@@ -5353,7 +5355,8 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:1360
-msgid "You should usually put the device name of the guest’s root filesystem here."
+msgid ""
+"You should usually put the device name of the guest’s root filesystem here."
 msgstr ""
 "Обычно здесь следует указывать имя устройства корневой файловой системы "
 "гостя."
@@ -5414,8 +5417,10 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:1382
-msgid "This information is shown in the I<--notes> and I<--list> I<--long> modes."
-msgstr "Эта информация отображается в режимах I<--notes> и I<--list> I<--long>."
+msgid ""
+"This information is shown in the I<--notes> and I<--list> I<--long> modes."
+msgstr ""
+"Эта информация отображается в режимах I<--notes> и I<--list> I<--long>."
 
 #. type: textblock
 #: builder/virt-builder.pod:1384
@@ -5452,9 +5457,8 @@ msgstr "C<hidden=true>"
 #. type: textblock
 #: builder/virt-builder.pod:1395
 msgid ""
-"Using the hidden flag prevents the template from being listed by the "
-"I<--list> option (but it is still installable).  This is used for test "
-"images."
+"Using the hidden flag prevents the template from being listed by the I<--"
+"list> option (but it is still installable).  This is used for test images."
 msgstr ""
 "Использование скрытого флага предотвращает отображение шаблона в списке "
 "параметра I<--list> (но он все еще может быть установлен).  Это используется "
@@ -5687,12 +5691,12 @@ msgstr "Кеширование пакетов"
 #: builder/virt-builder.pod:1487
 msgid ""
 "Virt-builder uses L<curl(1)> to download files and it also uses the current "
-"C<http_proxy> (etc) settings when installing packages (I<--install>, "
-"I<--update>)."
+"C<http_proxy> (etc) settings when installing packages (I<--install>, I<--"
+"update>)."
 msgstr ""
 "Virt-builder использует L<curl(1)> для загрузки файлов, а также использует "
-"текущие настройки C<http_proxy> (и т.д.) при установке пакетов (I<--install>"
-", I<--update>)."
+"текущие настройки C<http_proxy> (и т.д.) при установке пакетов (I<--"
+"install>, I<--update>)."
 
 #. type: textblock
 #: builder/virt-builder.pod:1491
@@ -5838,18 +5842,19 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder.pod:1544
-msgid "When a template is downloaded, its signature is checked in the same way."
+msgid ""
+"When a template is downloaded, its signature is checked in the same way."
 msgstr "При загрузке шаблона его подпись проверяется таким же образом."
 
 #. type: textblock
 #: builder/virt-builder.pod:1547
 msgid ""
-"Although the signatures are optional, if you don’t have them then "
-"virt-builder users will have to use I<--no-check-signature> on the command "
-"line.  This prevents an attacker from replacing the signed index file with "
-"an unsigned index file and having virt-builder silently work without "
-"checking the signature.  In any case it is highly recommended that you "
-"always create signed index and templates."
+"Although the signatures are optional, if you don’t have them then virt-"
+"builder users will have to use I<--no-check-signature> on the command line.  "
+"This prevents an attacker from replacing the signed index file with an "
+"unsigned index file and having virt-builder silently work without checking "
+"the signature.  In any case it is highly recommended that you always create "
+"signed index and templates."
 msgstr ""
 "Хотя подписи необязательны, если у вас их нет, пользователям virt-builder "
 "придется использовать I<--no-check-signature> в командной строке.  Это "
@@ -5876,8 +5881,8 @@ msgstr ""
 #: builder/virt-builder.pod:1559
 msgid ""
 "However certain options may not work, specifically options that require "
-"running commands in the guest during the build process: I<--install>, "
-"I<--update>, I<--run>, I<--run-command>.  You may need to replace these with "
+"running commands in the guest during the build process: I<--install>, I<--"
+"update>, I<--run>, I<--run-command>.  You may need to replace these with "
 "their firstboot-equivalents."
 msgstr ""
 "Однако некоторые параметры могут не работать, в частности параметры, "
@@ -6195,7 +6200,8 @@ msgstr "B<--sm-register>"
 
 #. type: textblock
 #: builder/virt-builder.pod:1695
-msgid "Use --run='subscription-manager register --username=USER --password=PASS'"
+msgid ""
+"Use --run='subscription-manager register --username=USER --password=PASS'"
 msgstr ""
 "Используйте --run='subscription-manager register --username=ПОЛЬЗОВАТЕЛЬ --"
 "password=ПАРОЛЬ'"
@@ -6414,8 +6420,8 @@ msgstr "C<XDG_CACHE_HOME>"
 #: builder/virt-builder.pod:1785
 msgid "Used to determine the location of the template cache.  See L</CACHING>."
 msgstr ""
-"Используется для определения расположения кеша шаблонов.  См. L</КЕШИРОВАНИЕ>"
-"."
+"Используется для определения расположения кеша шаблонов.  См. L</"
+"КЕШИРОВАНИЕ>."
 
 #. type: =item
 #: builder/virt-builder.pod:1787
@@ -6448,18 +6454,17 @@ msgstr ""
 #. type: textblock
 #: builder/virt-builder.pod:1806
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, "
-"L<virt-builder-repository(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, "
-"L<virt-get-kernel(1)>, L<virt-install(1)>, L<virt-rescue(1)>, "
-"L<virt-resize(1)>, L<virt-sysprep(1)>, L<oz-install(1)>, L<gpg(1)>, "
-"L<gpg2(1)>, L<curl(1)>, L<virt-make-fs(1)>, L<genisoimage(1)>, "
-"L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, L<virt-builder-"
+"repository(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, L<virt-get-"
+"kernel(1)>, L<virt-install(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-"
+"sysprep(1)>, L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-"
+"make-fs(1)>, L<genisoimage(1)>, L<http://libguestfs.org/>."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, L<virt-builder-repository"
-"(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, L<virt-get-kernel(1)>, "
-"L<virt-install(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sysprep(1)>"
-", L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-make-fs(1)>, "
-"L<genisoimage(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, L<virt-builder-"
+"repository(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, L<virt-get-"
+"kernel(1)>, L<virt-install(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-"
+"sysprep(1)>, L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-"
+"make-fs(1)>, L<genisoimage(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: builder/virt-builder.pod:1831 builder/virt-index-validate.pod:90
@@ -6485,8 +6490,8 @@ msgstr ""
 #: builder/virt-index-validate.pod:11
 msgid ""
 "L<virt-builder(1)> uses an index file to store metadata about templates that "
-"it knows how to use.  This index file has a specific format which "
-"virt-index-validate knows how to validate."
+"it knows how to use.  This index file has a specific format which virt-index-"
+"validate knows how to validate."
 msgstr ""
 "L<virt-builder(1)> использует файл индекса для хранения метаданных о "
 "шаблонах, которые он умеет использовать.  Этот файл индекса имеет "
@@ -6649,9 +6654,9 @@ msgstr ""
 #. type: textblock
 #: cat/virt-cat.pod:26
 msgid ""
-"C<virt-cat> can be used to quickly view a file.  To edit a file, use "
-"C<virt-edit>.  For more complex cases you should look at the L<guestfish(1)> "
-"tool (see L</USING GUESTFISH> below)."
+"C<virt-cat> can be used to quickly view a file.  To edit a file, use C<virt-"
+"edit>.  For more complex cases you should look at the L<guestfish(1)> tool "
+"(see L</USING GUESTFISH> below)."
 msgstr ""
 "C<virt-cat> можно использовать для быстрого просмотра файла.  Для "
 "редактирования файла используйте C<virt-edit>.  В более сложных случаях "
@@ -6660,7 +6665,8 @@ msgstr ""
 
 #. type: textblock
 #: cat/virt-cat.pod:32
-msgid "Display F</etc/fstab> file from inside the libvirt VM called C<mydomain>:"
+msgid ""
+"Display F</etc/fstab> file from inside the libvirt VM called C<mydomain>:"
 msgstr "Отобразить файл F</etc/fstab> изнутри ВМ libvirt с именем C<mydomain>:"
 
 #. type: verbatim
@@ -6884,8 +6890,8 @@ msgstr ""
 #: tail/virt-tail.pod:161
 msgid "Using this flag is equivalent to using the C<mount-options> command."
 msgstr ""
-"Использование этого флага эквивалентно использованию команды C<mount-options>"
-"."
+"Использование этого флага эквивалентно использованию команды C<mount-"
+"options>."
 
 #. type: textblock
 #: cat/virt-cat.pod:161 edit/virt-edit.pod:193 ls/virt-ls.pod:392
@@ -6974,8 +6980,8 @@ msgstr ""
 #: cat/virt-cat.pod:206
 msgid "To follow (tail) text log files, use L<virt-tail(1)>."
 msgstr ""
-"Для отслеживания (хвоста) текстовых файлов журналов используйте L<virt-tail"
-"(1)>."
+"Для отслеживания (хвоста) текстовых файлов журналов используйте L<virt-"
+"tail(1)>."
 
 #. type: =head1
 #: cat/virt-cat.pod:208 edit/virt-edit.pod:294 tail/virt-tail.pod:192
@@ -7112,9 +7118,8 @@ msgstr ""
 #. type: textblock
 #: cat/virt-cat.pod:278
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-edit(1)>, "
-"L<virt-log(1)>, L<virt-tail(1)>, L<virt-tar-out(1)>, "
-"L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-edit(1)>, L<virt-"
+"log(1)>, L<virt-tail(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-edit(1)>, L<virt-"
 "log(1)>, L<virt-tail(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
@@ -7434,7 +7439,8 @@ msgstr "B<--commands-from-file> ИМЯ_ФАЙЛА"
 #: common/mlcustomize/customize-options.pod:92
 #: common/mlcustomize/v2v-customize-options.pod:92
 #: sysprep/sysprep-extra-options.pod:68
-msgid "Read the customize commands from a file, one (and its arguments)  each line."
+msgid ""
+"Read the customize commands from a file, one (and its arguments)  each line."
 msgstr ""
 "Читать команды настройки из файла, по одной (с аргументами) в каждой строке."
 
@@ -7445,7 +7451,8 @@ msgstr ""
 msgid ""
 "Each line contains a single customization command and its arguments, for "
 "example:"
-msgstr "Каждая строка содержит одну команду настройки и её аргументы, например:"
+msgstr ""
+"Каждая строка содержит одну команду настройки и её аргументы, например:"
 
 #. type: verbatim
 #: common/mlcustomize/customize-options.pod:98
@@ -7559,8 +7566,8 @@ msgid ""
 "Delete a file from the guest.  Or delete a directory (and all its contents, "
 "recursively)."
 msgstr ""
-"Удалить файл из гостя. Или удалить каталог (и все его содержимое, рекурсивно)"
-"."
+"Удалить файл из гостя. Или удалить каталог (и все его содержимое, "
+"рекурсивно)."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:132
@@ -7733,8 +7740,8 @@ msgstr ""
 #: common/mlcustomize/v2v-customize-options.pod:196
 #: sysprep/sysprep-extra-options.pod:165 sysprep/sysprep-extra-options.pod:238
 msgid ""
-"For an overview on the different ways to install packages, see "
-"L<virt-builder(1)/INSTALLING PACKAGES>."
+"For an overview on the different ways to install packages, see L<virt-"
+"builder(1)/INSTALLING PACKAGES>."
 msgstr ""
 "Обзор различных способов установки пакетов см. в L<virt-builder(1)/УСТАНОВКА "
 "ПАКЕТОВ>."
@@ -7777,7 +7784,8 @@ msgstr ""
 #: common/mlcustomize/customize-options.pod:196
 #: common/mlcustomize/customize-options.pod:210
 #: sysprep/sysprep-extra-options.pod:181 sysprep/sysprep-extra-options.pod:196
-msgid "The parameter is the same as used by the I<--inject-virtio-win> operation."
+msgid ""
+"The parameter is the same as used by the I<--inject-virtio-win> operation."
 msgstr "Параметр такой же, как используется в операции I<--inject-virtio-win>."
 
 #. type: textblock
@@ -7849,8 +7857,8 @@ msgstr "ISO"
 #: common/mlcustomize/customize-options.pod:230
 #: sysprep/sysprep-extra-options.pod:217
 msgid ""
-"The path to the ISO image containing the virtio-win drivers "
-"(eg. F</usr/share/virtio-win/virtio-win.iso>)."
+"The path to the ISO image containing the virtio-win drivers (eg. F</usr/"
+"share/virtio-win/virtio-win.iso>)."
 msgstr ""
 "Путь к образу ISO, содержащему драйверы virtio-win (например, F</usr/share/"
 "virtio-win/virtio-win.iso>)."
@@ -7865,8 +7873,8 @@ msgstr "КАТАЛОГ"
 #: common/mlcustomize/customize-options.pod:235
 #: sysprep/sysprep-extra-options.pod:222
 msgid ""
-"The directory containing the unpacked virtio-win drivers "
-"(eg. F</usr/share/virtio-win>)."
+"The directory containing the unpacked virtio-win drivers (eg. F</usr/share/"
+"virtio-win>)."
 msgstr ""
 "Каталог, содержащий распакованные драйверы virtio-win (например, F</usr/"
 "share/virtio-win>)."
@@ -8082,8 +8090,8 @@ msgid ""
 "C<md5> will work with relatively old Linux guests (eg. RHEL 3), but is not "
 "secure against modern attacks."
 msgstr ""
-"C<md5> будет работать с относительно старыми гостями Linux (например, RHEL 3)"
-", но не является безопасным против современных атак."
+"C<md5> будет работать с относительно старыми гостями Linux (например, RHEL "
+"3), но не является безопасным против современных атак."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:314
@@ -8105,9 +8113,8 @@ msgstr ""
 msgid ""
 "Note this does not change the default password encryption used by the guest "
 "when you create new user accounts inside the guest.  If you want to do that, "
-"then you should use the I<--edit> option to modify "
-"C</etc/sysconfig/authconfig> (Fedora, RHEL) or C</etc/pam.d/common-password> "
-"(Debian, Ubuntu)."
+"then you should use the I<--edit> option to modify C</etc/sysconfig/"
+"authconfig> (Fedora, RHEL) or C</etc/pam.d/common-password> (Debian, Ubuntu)."
 msgstr ""
 "Обратите внимание, это не изменяет шифрование паролей по умолчанию, "
 "используемое гостем при создании новых учетных записей внутри гостя. Если вы "
@@ -8277,13 +8284,59 @@ msgstr "Это опция совместимости, которая ничег�
 #. type: =item
 #: common/mlcustomize/customize-options.pod:389
 #: common/mlcustomize/v2v-customize-options.pod:335
-msgid "B<--ssh-inject> USER[:SELECTOR]"
-msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР]"
+#, fuzzy
+#| msgid "B<--selinux-relabel>"
+msgid "B<--selinux-relabel-exclude> DIR"
+msgstr "B<--selinux-relabel>"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:391
 #: common/mlcustomize/v2v-customize-options.pod:337
 #: sysprep/sysprep-extra-options.pod:442
+msgid "Exclude directories from being relabelled."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:393
+#: common/mlcustomize/v2v-customize-options.pod:339
+#: sysprep/sysprep-extra-options.pod:444
+msgid ""
+"This advanced option lets you list directories in the guest which should not "
+"be relabelled, even when SELinux relabelling is enabled.  Use this "
+"carefully, as any changes that are made inside these directories during "
+"customization will have incorrect SELinux labels, leading to potential "
+"failures later, so you must be sure that the directories do not need "
+"relabelling."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:400
+#: common/mlcustomize/v2v-customize-options.pod:346
+#: sysprep/sysprep-extra-options.pod:451
+#, fuzzy
+#| msgid "There are two ways to use this option."
+msgid "If in doubt, do not use this option."
+msgstr "Существует два способа использования этой опции."
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:402
+#: common/mlcustomize/v2v-customize-options.pod:348
+#: sysprep/sysprep-extra-options.pod:453
+msgid ""
+"You can pass the option multiple times, eg.  I<--selinux-relabel-exclude=/"
+"foo> I<--selinux-relabel-exclude=/bar>"
+msgstr ""
+
+#. type: =item
+#: common/mlcustomize/customize-options.pod:405
+#: common/mlcustomize/v2v-customize-options.pod:351
+msgid "B<--ssh-inject> USER[:SELECTOR]"
+msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР]"
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:407
+#: common/mlcustomize/v2v-customize-options.pod:353
+#: sysprep/sysprep-extra-options.pod:459
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
@@ -8292,16 +8345,17 @@ msgstr ""
 "ввода пароля. C<ПОЛЬЗОВАТЕЛЬ> уже должен существовать в гостевой системе."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:395
-#: common/mlcustomize/v2v-customize-options.pod:341
-#: sysprep/sysprep-extra-options.pod:446
-msgid "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
+#: common/mlcustomize/customize-options.pod:411
+#: common/mlcustomize/v2v-customize-options.pod:357
+#: sysprep/sysprep-extra-options.pod:463
+msgid ""
+"See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr "Формат поля C<СЕЛЕКТОР> см. в L<virt-builder(1)/SSH КЛЮЧИ>."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:398
-#: common/mlcustomize/v2v-customize-options.pod:344
-#: sysprep/sysprep-extra-options.pod:449
+#: common/mlcustomize/customize-options.pod:414
+#: common/mlcustomize/v2v-customize-options.pod:360
+#: sysprep/sysprep-extra-options.pod:466
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
@@ -8311,15 +8365,15 @@ msgstr ""
 "пользователя."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:401
-#: common/mlcustomize/v2v-customize-options.pod:347
+#: common/mlcustomize/customize-options.pod:417
+#: common/mlcustomize/v2v-customize-options.pod:363
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr "B<--tar-in> ТАР_ФАЙЛ:УДАЛЕННЫЙ_КАТАЛОГ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:403
-#: common/mlcustomize/v2v-customize-options.pod:349
-#: sysprep/sysprep-extra-options.pod:455
+#: common/mlcustomize/customize-options.pod:419
+#: common/mlcustomize/v2v-customize-options.pod:365
+#: sysprep/sysprep-extra-options.pod:472
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -8332,15 +8386,15 @@ msgstr ""
 "несжатым (файлы F<.tar.gz> здесь работать не будут)"
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:409
-#: common/mlcustomize/v2v-customize-options.pod:355
+#: common/mlcustomize/customize-options.pod:425
+#: common/mlcustomize/v2v-customize-options.pod:371
 msgid "B<--timezone> TIMEZONE"
 msgstr "B<--timezone> ЧАСОВОЙ_ПОЯС"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:411
-#: common/mlcustomize/v2v-customize-options.pod:357
-#: sysprep/sysprep-extra-options.pod:464
+#: common/mlcustomize/customize-options.pod:427
+#: common/mlcustomize/v2v-customize-options.pod:373
+#: sysprep/sysprep-extra-options.pod:481
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
@@ -8349,28 +8403,28 @@ msgstr ""
 "строку местоположения, например C<Europe/London>"
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:414
-#: common/mlcustomize/v2v-customize-options.pod:360
+#: common/mlcustomize/customize-options.pod:430
+#: common/mlcustomize/v2v-customize-options.pod:376
 msgid "B<--touch> FILE"
 msgstr "B<--touch> ФАЙЛ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:416
-#: common/mlcustomize/v2v-customize-options.pod:362
-#: sysprep/sysprep-extra-options.pod:470
+#: common/mlcustomize/customize-options.pod:432
+#: common/mlcustomize/v2v-customize-options.pod:378
+#: sysprep/sysprep-extra-options.pod:487
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr "Эта команда выполняет операцию, аналогичную L<touch(1)>, над C<ФАЙЛ>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:418
-#: common/mlcustomize/v2v-customize-options.pod:364
+#: common/mlcustomize/customize-options.pod:434
+#: common/mlcustomize/v2v-customize-options.pod:380
 msgid "B<--truncate> FILE"
 msgstr "B<--truncate> ФАЙЛ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:420
-#: common/mlcustomize/v2v-customize-options.pod:366
-#: sysprep/sysprep-extra-options.pod:475
+#: common/mlcustomize/customize-options.pod:436
+#: common/mlcustomize/v2v-customize-options.pod:382
+#: sysprep/sysprep-extra-options.pod:492
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
@@ -8378,29 +8432,30 @@ msgstr ""
 "Эта команда урезает C<ФАЙЛ> до нулевой длины. Файл должен уже существовать."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:423
-#: common/mlcustomize/v2v-customize-options.pod:369
+#: common/mlcustomize/customize-options.pod:439
+#: common/mlcustomize/v2v-customize-options.pod:385
 msgid "B<--truncate-recursive> PATH"
 msgstr "B<--truncate-recursive> ПУТЬ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:425
-#: common/mlcustomize/v2v-customize-options.pod:371
-#: sysprep/sysprep-extra-options.pod:481
-msgid "This command recursively truncates all files under C<PATH> to zero-length."
+#: common/mlcustomize/customize-options.pod:441
+#: common/mlcustomize/v2v-customize-options.pod:387
+#: sysprep/sysprep-extra-options.pod:498
+msgid ""
+"This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 "Эта команда рекурсивно урезает все файлы внутри C<ПУТЬ> до нулевой длины."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:427
-#: common/mlcustomize/v2v-customize-options.pod:373
+#: common/mlcustomize/customize-options.pod:443
+#: common/mlcustomize/v2v-customize-options.pod:389
 msgid "B<--uninstall> PKG,PKG.."
 msgstr "B<--uninstall> ПАКЕТ,ПАКЕТ.."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:429
-#: common/mlcustomize/v2v-customize-options.pod:375
-#: sysprep/sysprep-extra-options.pod:486
+#: common/mlcustomize/customize-options.pod:445
+#: common/mlcustomize/v2v-customize-options.pod:391
+#: sysprep/sysprep-extra-options.pod:503
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -8413,22 +8468,22 @@ msgstr ""
 "зависимых пакетов."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:434
-#: common/mlcustomize/v2v-customize-options.pod:380
-#: sysprep/sysprep-extra-options.pod:491
+#: common/mlcustomize/customize-options.pod:450
+#: common/mlcustomize/v2v-customize-options.pod:396
+#: sysprep/sysprep-extra-options.pod:508
 msgid "See also I<--install>, I<--update>."
 msgstr "См. также I<--install>, I<--update>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:436
-#: common/mlcustomize/v2v-customize-options.pod:382
+#: common/mlcustomize/customize-options.pod:452
+#: common/mlcustomize/v2v-customize-options.pod:398
 msgid "B<--update>"
 msgstr "B<--update>"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:438
-#: common/mlcustomize/v2v-customize-options.pod:384
-#: sysprep/sysprep-extra-options.pod:496
+#: common/mlcustomize/customize-options.pod:454
+#: common/mlcustomize/v2v-customize-options.pod:400
+#: sysprep/sysprep-extra-options.pod:513
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -8439,22 +8494,22 @@ msgstr ""
 "их последних версий."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:442
-#: common/mlcustomize/v2v-customize-options.pod:388
-#: sysprep/sysprep-extra-options.pod:500
+#: common/mlcustomize/customize-options.pod:458
+#: common/mlcustomize/v2v-customize-options.pod:404
+#: sysprep/sysprep-extra-options.pod:517
 msgid "See also I<--install>, I<--uninstall>."
 msgstr "См. также I<--install>, I<--uninstall>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:444
-#: common/mlcustomize/v2v-customize-options.pod:390
+#: common/mlcustomize/customize-options.pod:460
+#: common/mlcustomize/v2v-customize-options.pod:406
 msgid "B<--upload> FILE:DEST"
 msgstr "B<--upload> ФАЙЛ:НАЗНАЧЕНИЕ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:446
-#: common/mlcustomize/v2v-customize-options.pod:392
-#: sysprep/sysprep-extra-options.pod:505
+#: common/mlcustomize/customize-options.pod:462
+#: common/mlcustomize/v2v-customize-options.pod:408
+#: sysprep/sysprep-extra-options.pod:522
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -8465,9 +8520,9 @@ msgstr ""
 "поэтому вы должны установить их так, как хотите видеть в образе диска."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:450
-#: common/mlcustomize/v2v-customize-options.pod:396
-#: sysprep/sysprep-extra-options.pod:509
+#: common/mlcustomize/customize-options.pod:466
+#: common/mlcustomize/v2v-customize-options.pod:412
+#: sysprep/sysprep-extra-options.pod:526
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
@@ -8476,9 +8531,9 @@ msgstr ""
 "переименования файла при загрузке."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:453
-#: common/mlcustomize/v2v-customize-options.pod:399
-#: sysprep/sysprep-extra-options.pod:512
+#: common/mlcustomize/customize-options.pod:469
+#: common/mlcustomize/v2v-customize-options.pod:415
+#: sysprep/sysprep-extra-options.pod:529
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -8489,22 +8544,22 @@ msgstr ""
 "имя, что и в локальной файловой системе."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:457
-#: common/mlcustomize/v2v-customize-options.pod:403
-#: sysprep/sysprep-extra-options.pod:516
+#: common/mlcustomize/customize-options.pod:473
+#: common/mlcustomize/v2v-customize-options.pod:419
+#: sysprep/sysprep-extra-options.pod:533
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr "См. также: I<--mkdir>, I<--delete>, I<--scrub>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:459
-#: common/mlcustomize/v2v-customize-options.pod:405
+#: common/mlcustomize/customize-options.pod:475
+#: common/mlcustomize/v2v-customize-options.pod:421
 msgid "B<--write> FILE:CONTENT"
 msgstr "B<--write> ФАЙЛ:СОДЕРЖИМОЕ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:461
-#: common/mlcustomize/v2v-customize-options.pod:407
-#: sysprep/sysprep-extra-options.pod:521
+#: common/mlcustomize/customize-options.pod:477
+#: common/mlcustomize/v2v-customize-options.pod:423
+#: sysprep/sysprep-extra-options.pod:538
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr "Записать C<СОДЕРЖИМОЕ> в C<ФАЙЛ>."
 
@@ -8527,10 +8582,10 @@ msgstr "B<--blocksize>"
 #: common/options/blocksize-option.pod:7
 msgid ""
 "This parameter sets the sector size of the disk image.  It affects all "
-"explicitly added subsequent disks after this parameter.  Using "
-"I<--blocksize> with no argument switches the disk sector size to the default "
-"value which is usually 512 bytes.  See also "
-"L<guestfs(3)/guestfs_add_drive_opts>."
+"explicitly added subsequent disks after this parameter.  Using I<--"
+"blocksize> with no argument switches the disk sector size to the default "
+"value which is usually 512 bytes.  See also L<guestfs(3)/"
+"guestfs_add_drive_opts>."
 msgstr ""
 "Этот параметр устанавливает размер сектора образа диска. Он влияет на все "
 "явно добавленные последующие диски после этого параметра. Использование I<--"
@@ -8771,8 +8826,8 @@ msgid ""
 "Add a remote disk.  The URI format is compatible with guestfish.  See "
 "L<guestfish(1)/ADDING REMOTE STORAGE>."
 msgstr ""
-"Добавить удаленный диск.  Формат URI совместим с guestfish.  См. L<guestfish"
-"(1)/ДОБАВЛЕНИЕ УДАЛЕННОГО ХРАНИЛИЩА>."
+"Добавить удаленный диск.  Формат URI совместим с guestfish.  См. "
+"L<guestfish(1)/ДОБАВЛЕНИЕ УДАЛЕННОГО ХРАНИЛИЩА>."
 
 #. type: textblock
 #: customize/virt-customize.pod:58
@@ -8925,8 +8980,8 @@ msgstr "Файл журнала"
 #. type: textblock
 #: customize/virt-customize.pod:252
 msgid ""
-"On Linux, output from the scripts is written to "
-"S<F<~root/virt-sysprep-firstboot.log>> inside the guest."
+"On Linux, output from the scripts is written to S<F<~root/virt-sysprep-"
+"firstboot.log>> inside the guest."
 msgstr ""
 "В Linux вывод из скриптов записывается в S<F<~root/virt-sysprep-"
 "firstboot.log>> внутри гостя."
@@ -8937,8 +8992,8 @@ msgid ""
 "On Windows, output is written to S<F<C:\\Program "
 "Files\\Guestfs\\Firstboot\\log.txt>> inside the guest."
 msgstr ""
-"В Windows вывод записывается в S<F<C:\\Program Files\\Guestfs\\Firstboot\\l"
-"og.txt>> внутри гостя."
+"В Windows вывод записывается в S<F<C:\\Program "
+"Files\\Guestfs\\Firstboot\\log.txt>> внутри гостя."
 
 #. type: =head2
 #: customize/virt-customize.pod:258
@@ -9036,10 +9091,10 @@ msgstr "Вспомогательные инструменты"
 #. type: textblock
 #: customize/virt-customize.pod:295
 msgid ""
-"On Windows guests, F<rhsrvany.exe>, available from sources at "
-"L<https://github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with "
-"SUSE VMDP, is installed to run the first boot scripts.  One of these is "
-"required, and the setup of first boot scripts will fail if not present."
+"On Windows guests, F<rhsrvany.exe>, available from sources at L<https://"
+"github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with SUSE VMDP, "
+"is installed to run the first boot scripts.  One of these is required, and "
+"the setup of first boot scripts will fail if not present."
 msgstr ""
 "В гостях Windows устанавливается F<rhsrvany.exe>, доступный из источников по "
 "адресу L<https://github.com/rwmjones/rhsrvany>, или F<pvvxsvc.exe>, "
@@ -9146,9 +9201,9 @@ msgstr ""
 #. type: textblock
 #: customize/virt-customize.pod:342
 msgid ""
-"In version 1.56 the subscription-manager options were removed: "
-"B<--sm-credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, "
-"B<--sm-remove>"
+"In version 1.56 the subscription-manager options were removed: B<--sm-"
+"credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, B<--sm-"
+"remove>"
 msgstr ""
 "В версии 1.56 параметры subscription-manager были удалены: B<--sm-"
 "credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, B<--sm-"
@@ -9170,16 +9225,18 @@ msgstr ""
 #. type: textblock
 #: customize/virt-customize.pod:386 sparsify/virt-sparsify.pod:449
 #: sysprep/virt-sysprep.pod:404
-msgid "For other environment variables, see L<guestfs(3)/ENVIRONMENT VARIABLES>."
-msgstr "Для других переменных окружения см. L<guestfs(3)/ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ>."
+msgid ""
+"For other environment variables, see L<guestfs(3)/ENVIRONMENT VARIABLES>."
+msgstr ""
+"Для других переменных окружения см. L<guestfs(3)/ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ>."
 
 #. type: textblock
 #: customize/virt-customize.pod:390
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, "
-"L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, "
-"L<virt-sysprep(1)>, L<virsh(1)>, L<lvcreate(8)>, L<qemu-img(1)>, "
-"L<scrub(1)>, L<http://libguestfs.org/>, L<http://libvirt.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, L<virt-"
+"rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, L<virt-sysprep(1)>, "
+"L<virsh(1)>, L<lvcreate(8)>, L<qemu-img(1)>, L<scrub(1)>, L<http://"
+"libguestfs.org/>, L<http://libvirt.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, L<virt-"
 "rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, L<virt-sysprep(1)>, "
@@ -9302,12 +9359,12 @@ msgstr ""
 #. type: textblock
 #: df/virt-df.pod:34
 msgid ""
-"If any I<-a> or I<-d> arguments are specified, C<virt-df> performs a "
-"C<df>-type operation on either the single named libvirt domain, or on the "
-"disk image(s) listed on the command line (which must all belong to a single "
-"VM).  B<In this mode (with arguments), C<virt-df> will only work for a "
-"single guest>.  If you want to run on multiple guests, then you have to "
-"invoke C<virt-df> multiple times."
+"If any I<-a> or I<-d> arguments are specified, C<virt-df> performs a C<df>-"
+"type operation on either the single named libvirt domain, or on the disk "
+"image(s) listed on the command line (which must all belong to a single VM).  "
+"B<In this mode (with arguments), C<virt-df> will only work for a single "
+"guest>.  If you want to run on multiple guests, then you have to invoke "
+"C<virt-df> multiple times."
 msgstr ""
 "Если указаны какие-либо аргументы I<-a> или I<-d>, C<virt-df> выполняет "
 "операцию типа C<df> либо для одного именованного домена libvirt, либо для "
@@ -9676,8 +9733,8 @@ msgstr ""
 #. type: textblock
 #: df/virt-df.pod:260
 msgid ""
-"L<df(1)>, L<guestfs(3)>, L<guestfish(1)>, L<virt-drivers(1)>, "
-"L<virt-filesystems(1)>, L<http://libguestfs.org/>."
+"L<df(1)>, L<guestfs(3)>, L<guestfish(1)>, L<virt-drivers(1)>, L<virt-"
+"filesystems(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<df(1)>, L<guestfs(3)>, L<guestfish(1)>, L<virt-drivers(1)>, L<virt-"
 "filesystems(1)>, L<http://libguestfs.org/>."
@@ -9815,8 +9872,7 @@ msgstr "B<--atime>"
 #: diff/virt-diff.pod:66
 msgid ""
 "The default is to ignore changes in file access times, since those are "
-"unlikely to be interesting.  Using this flag shows atime differences as "
-"well."
+"unlikely to be interesting.  Using this flag shows atime differences as well."
 msgstr ""
 "По умолчанию изменения времени доступа к файлам игнорируются, поскольку они "
 "вряд ли интересны.  Использование этого флага также показывает различия во "
@@ -10060,8 +10116,8 @@ msgstr "Отображать расширенные атрибуты."
 #. type: textblock
 #: diff/virt-diff.pod:251
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, "
-"L<virt-ls(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
+"ls(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
 "ls(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
@@ -10129,7 +10185,8 @@ msgstr "virt-customize"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.48.pod:23
 msgid "The yescrypt password hashing method is now supported (Björn Esser)."
-msgstr "Теперь поддерживается метод хеширования паролей yescrypt (Björn Esser)."
+msgstr ""
+"Теперь поддерживается метод хеширования паролей yescrypt (Björn Esser)."
 
 #. type: =head2
 #: docs/guestfs-tools-release-notes-1.48.pod:26
@@ -10294,8 +10351,8 @@ msgstr "L<https://bugzilla.redhat.com/1995391>"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.48.pod:78
 msgid ""
-"RFE: virt-inspector fails to detect the distro and applications on "
-"Kylin-Desktop-V10 image"
+"RFE: virt-inspector fails to detect the distro and applications on Kylin-"
+"Desktop-V10 image"
 msgstr ""
 "RFE: virt-inspector не удается обнаружить дистрибутив и приложения на образе "
 "Kylin-Desktop-V10"
@@ -10654,7 +10711,8 @@ msgstr "L<https://bugzilla.redhat.com/2072493>"
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.50.pod:140
-msgid "[RFE] Request to add lvm system.devices cleanup operation to virt-sysprep"
+msgid ""
+"[RFE] Request to add lvm system.devices cleanup operation to virt-sysprep"
 msgstr ""
 "[RFE] Запрос на добавление операции очистки lvm system.devices в virt-sysprep"
 
@@ -10700,8 +10758,8 @@ msgstr "L<https://bugzilla.redhat.com/1554735>"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.50.pod:156
 msgid ""
-"RFE: customize --selinux-relabel should be the default, with "
-"--no-selinux-relabel used to opt out"
+"RFE: customize --selinux-relabel should be the default, with --no-selinux-"
+"relabel used to opt out"
 msgstr ""
 "RFE: customize --selinux-relabel должно быть по умолчанию, с --no-selinux-"
 "relabel для отказа"
@@ -10739,9 +10797,8 @@ msgstr "virt-dib был удален"
 #: docs/guestfs-tools-release-notes-1.52.pod:20
 msgid ""
 "virt-dib, a tool that built disk images using diskimage-builder descriptions "
-"has been removed.  It only supported an older version of the "
-"diskimage-builder metadata.  See also: "
-"L<https://bugzilla.redhat.com/1910039>"
+"has been removed.  It only supported an older version of the diskimage-"
+"builder metadata.  See also: L<https://bugzilla.redhat.com/1910039>"
 msgstr ""
 "virt-dib, инструмент для создания образов дисков с использованием описаний "
 "diskimage-builder, был удален.  Он поддерживал только старую версию "
@@ -10813,8 +10870,8 @@ msgstr ""
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.52.pod:54
 msgid ""
-"The common I<--key> option now recognizes LVM names like "
-"F</dev/mapper/rhel_bootp--73--75--123-root> (Laszlo Ersek)."
+"The common I<--key> option now recognizes LVM names like F</dev/mapper/"
+"rhel_bootp--73--75--123-root> (Laszlo Ersek)."
 msgstr ""
 "Общий параметр I<--key> теперь распознает имена LVM, такие как F</dev/mapper/"
 "rhel_bootp--73--75--123-root> (Laszlo Ersek)."
@@ -10866,8 +10923,8 @@ msgstr "L<https://bugzilla.redhat.com/2175703>"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.52.pod:85
 msgid ""
-"virt-v2v failed to inspect RHEL9.2 guest due to kernel-core / "
-"kernel-modules-core subpackage split"
+"virt-v2v failed to inspect RHEL9.2 guest due to kernel-core / kernel-modules-"
+"core subpackage split"
 msgstr ""
 "virt-v2v не смог провести инспекцию гостя RHEL9.2 из-за разделения "
 "подпакетов kernel-core / kernel-modules-core"
@@ -10933,8 +10990,8 @@ msgstr "Новое расположение репозитория"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.54.pod:20
 msgid ""
-"The upstream git repository is now: "
-"L<https://github.com/libguestfs/guestfs-tools>"
+"The upstream git repository is now: L<https://github.com/libguestfs/guestfs-"
+"tools>"
 msgstr ""
 "Основной git-репозиторий теперь находится по адресу: L<https://github.com/"
 "libguestfs/guestfs-tools>"
@@ -10996,9 +11053,9 @@ msgstr "virt-resize"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.54.pod:47
 msgid ""
-"Correct the calculation of the target disk.  In some cases with the "
-"I<--resize> option it was not calculated correctly and partition creation on "
-"the target would fail with a confusing error."
+"Correct the calculation of the target disk.  In some cases with the I<--"
+"resize> option it was not calculated correctly and partition creation on the "
+"target would fail with a confusing error."
 msgstr ""
 "Исправлен расчет целевого диска.  В некоторых случаях с параметром I<--"
 "resize> он рассчитывался неправильно, и создание раздела на целевом диске "
@@ -11110,7 +11167,8 @@ msgstr "L<https://issues.redhat.com/browse/RHEL-32099>"
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.54.pod:104
-msgid "Harden grub2-mkconfig to avoid overwriting /boot/efi/EFI/redhat/grub.cfg"
+msgid ""
+"Harden grub2-mkconfig to avoid overwriting /boot/efi/EFI/redhat/grub.cfg"
 msgstr ""
 "Улучшена защита grub2-mkconfig, чтобы избежать перезаписи /boot/efi/EFI/"
 "redhat/grub.cfg"
@@ -11232,8 +11290,8 @@ msgstr "Исправлена перемаркировка SELinux для гос�
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:28
 msgid ""
-"Fix Windows Update and C<pnputil /e> command in Windows guests after "
-"virtio-win drivers are injected (Cole Robinson)."
+"Fix Windows Update and C<pnputil /e> command in Windows guests after virtio-"
+"win drivers are injected (Cole Robinson)."
 msgstr ""
 "Исправлена работа Windows Update и команды C<pnputil /e> в гостях Windows "
 "после внедрения драйверов virtio-win (Cole Robinson)."
@@ -11328,19 +11386,20 @@ msgstr "Добавлена поддержка Kylin, NeoKylin и Anolis Linux (g
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:66
 msgid "Add a new operation to clean zsh history files (Fazle Arefin)."
-msgstr "Добавлена новая операция для очистки файлов истории zsh (Fazle Arefin)."
+msgstr ""
+"Добавлена новая операция для очистки файлов истории zsh (Fazle Arefin)."
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:70
 msgid ""
 "Some bash completion scripts that were no longer used by guestfs-tools were "
-"removed.  Also new C<./configure --with-bash-completion> and C<./configure "
-"--with-bash-completion-dir> options were added (Christopher Byrne)."
+"removed.  Also new C<./configure --with-bash-completion> and C<./configure --"
+"with-bash-completion-dir> options were added (Christopher Byrne)."
 msgstr ""
 "Некоторые сценарии автодополнения bash, которые больше не использовались "
-"guestfs-tools, были удалены.  Также добавлены новые параметры C<./"
-"configure --with-bash-completion> и C<./configure --with-bash-completion-"
-"dir> (Christopher Byrne)."
+"guestfs-tools, были удалены.  Также добавлены новые параметры C<./configure "
+"--with-bash-completion> и C<./configure --with-bash-completion-dir> "
+"(Christopher Byrne)."
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:75
@@ -11374,10 +11433,11 @@ msgstr ""
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:85
-msgid "Removed a lot of obsolete documentation in the L<virt-sysprep(1)> man page."
+msgid ""
+"Removed a lot of obsolete documentation in the L<virt-sysprep(1)> man page."
 msgstr ""
-"Удалено много устаревшей документации на странице руководства L<virt-sysprep"
-"(1)>."
+"Удалено много устаревшей документации на странице руководства L<virt-"
+"sysprep(1)>."
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:90
@@ -11515,7 +11575,8 @@ msgstr "L<https://issues.redhat.com/browse/RHEL-170706>"
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:148
-msgid "Virt-customize firstboot scripts (on Windows) should be able to skip reboots"
+msgid ""
+"Virt-customize firstboot scripts (on Windows) should be able to skip reboots"
 msgstr ""
 "Сценарии firstboot в virt-customize (в Windows) должны иметь возможность "
 "пропускать перезагрузки"
@@ -11542,7 +11603,8 @@ msgstr "L<https://issues.redhat.com/browse/RHEL-171896>"
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:156
 msgid "virt-v2v failing with binary LUKS keys [guestfs-tools]"
-msgstr "virt-v2v завершается с ошибкой с двоичными ключами LUKS [guestfs-tools]"
+msgstr ""
+"virt-v2v завершается с ошибкой с двоичными ключами LUKS [guestfs-tools]"
 
 #. type: =item
 #: docs/guestfs-tools-release-notes-1.56.pod:158
@@ -11821,8 +11883,8 @@ msgstr ""
 msgid ""
 "Many more fields are usually available for Linux guests, including a "
 "complete list of kernel modules and information about support for virtio.  "
-"For a complete example see: "
-"L<https://github.com/libguestfs/guestfs-tools/tree/master/drivers>"
+"For a complete example see: L<https://github.com/libguestfs/guestfs-tools/"
+"tree/master/drivers>"
 msgstr ""
 "Обычно для гостей Linux доступно гораздо больше полей, включая полный список "
 "модулей ядра и информацию о поддержке virtio.  Полный пример см.: L<https://"
@@ -12028,11 +12090,11 @@ msgstr "Если вы хотите только просмотреть файл,
 #. type: textblock
 #: edit/virt-edit.pod:30
 msgid ""
-"For more complex cases you should look at the L<guestfish(1)> tool (see "
-"L</USING GUESTFISH> below)."
+"For more complex cases you should look at the L<guestfish(1)> tool (see L</"
+"USING GUESTFISH> below)."
 msgstr ""
-"В более сложных случаях следует обратить внимание на инструмент L<guestfish"
-"(1)> (см. L</ИСПОЛЬЗОВАНИЕ GUESTFISH> ниже)."
+"В более сложных случаях следует обратить внимание на инструмент "
+"L<guestfish(1)> (см. L</ИСПОЛЬЗОВАНИЕ GUESTFISH> ниже)."
 
 #. type: textblock
 #: edit/virt-edit.pod:33
@@ -12086,8 +12148,8 @@ msgstr ""
 #. type: textblock
 #: edit/virt-edit.pod:48
 msgid ""
-"If Perl is installed, you can also edit files non-interactively (see "
-"L</NON-INTERACTIVE EDITING> below).  To change the init default level to 5:"
+"If Perl is installed, you can also edit files non-interactively (see L</NON-"
+"INTERACTIVE EDITING> below).  To change the init default level to 5:"
 msgstr ""
 "Если установлен Perl, вы также можете редактировать файлы в неинтерактивном "
 "режиме (см. L</НЕИНТЕРАКТИВНОЕ РЕДАКТИРОВАНИЕ> ниже).  Чтобы изменить "
@@ -12149,8 +12211,7 @@ msgstr "По умолчанию резервная копия не создае�
 #. type: textblock
 #: edit/virt-edit.pod:102 win-reg/virt-win-reg.in:132
 msgid ""
-"If you specify guest block devices directly, then libvirt is not used at "
-"all."
+"If you specify guest block devices directly, then libvirt is not used at all."
 msgstr ""
 "Если вы указываете блочные устройства гостя напрямую, libvirt не "
 "используется вообще."
@@ -12557,8 +12618,8 @@ msgstr "C<EDITOR>"
 #. type: textblock
 #: edit/virt-edit.pod:372
 msgid ""
-"If set, this string is used as the editor.  It may contain arguments, "
-"eg. C<\"emacs -nw\">"
+"If set, this string is used as the editor.  It may contain arguments, eg. "
+"C<\"emacs -nw\">"
 msgstr ""
 "Если установлена, эта строка используется в качестве редактора.  Она может "
 "содержать аргументы, например. C<\"emacs -nw\">"
@@ -12571,8 +12632,8 @@ msgstr "Если не установлена, используется C<vi>."
 #. type: textblock
 #: edit/virt-edit.pod:386
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-in(1)>, "
-"L<virt-tar-in(1)>, L<http://libguestfs.org/>, L<perl(1)>, L<perlre(1)>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-in(1)>, L<virt-"
+"tar-in(1)>, L<http://libguestfs.org/>, L<perl(1)>, L<perlre(1)>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-in(1)>, L<virt-"
 "tar-in(1)>, L<http://libguestfs.org/>, L<perl(1)>, L<perlre(1)>."
@@ -12681,7 +12742,8 @@ msgstr ""
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:39
-msgid "If you add I<-l> or I<--long> then the output includes extra information:"
+msgid ""
+"If you add I<-l> or I<--long> then the output includes extra information:"
 msgstr ""
 "Если вы добавите I<-l> или I<--long>, вывод будет включать дополнительную "
 "информацию:"
@@ -12731,7 +12793,8 @@ msgstr ""
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:56
-msgid "If you add I<--partitions> then partitions are shown instead of filesystems:"
+msgid ""
+"If you add I<--partitions> then partitions are shown instead of filesystems:"
 msgstr ""
 "Если вы добавите I<--partitions>, то вместо файловых систем будут показаны "
 "разделы:"
@@ -12753,8 +12816,8 @@ msgstr ""
 #. type: textblock
 #: filesystems/virt-filesystems.pod:62
 msgid ""
-"Similarly you can use I<--logical-volumes>, I<--volume-groups>, "
-"I<--physical-volumes>, I<--block-devices> to list those items."
+"Similarly you can use I<--logical-volumes>, I<--volume-groups>, I<--physical-"
+"volumes>, I<--block-devices> to list those items."
 msgstr ""
 "Аналогично вы можете использовать I<--logical-volumes>, I<--volume-groups>, "
 "I<--physical-volumes>, I<--block-devices> для вывода этих элементов."
@@ -12779,8 +12842,8 @@ msgstr ""
 #. type: textblock
 #: filesystems/virt-filesystems.pod:72
 msgid ""
-"UUIDs (because they are quite long) are not shown by default.  Add the "
-"I<--uuid> option to display device and filesystem UUIDs in the long output."
+"UUIDs (because they are quite long) are not shown by default.  Add the I<--"
+"uuid> option to display device and filesystem UUIDs in the long output."
 msgstr ""
 "UUID (поскольку они довольно длинные) по умолчанию не показываются.  "
 "Добавьте параметр I<--uuid>, чтобы отображать UUID устройств и файловых "
@@ -12819,7 +12882,8 @@ msgstr ""
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:87
-msgid "For machine-readable output, use I<--csv> to get Comma-Separated Values."
+msgid ""
+"For machine-readable output, use I<--csv> to get Comma-Separated Values."
 msgstr ""
 "Для вывода, удобного для машинной обработки, используйте I<--csv>, чтобы "
 "получить значения, разделенные запятыми."
@@ -12828,14 +12892,14 @@ msgstr ""
 #: filesystems/virt-filesystems.pod:116
 msgid ""
 "Display everything.  This is currently the same as specifying these options: "
-"I<--filesystems>, I<--extra>, I<--partitions>, I<--block-devices>, "
-"I<--logical-volumes>, I<--volume-groups>, I<--physical-volumes>.  (More may "
-"be added to this list in future)."
+"I<--filesystems>, I<--extra>, I<--partitions>, I<--block-devices>, I<--"
+"logical-volumes>, I<--volume-groups>, I<--physical-volumes>.  (More may be "
+"added to this list in future)."
 msgstr ""
 "Отображать все.  В настоящее время это соответствует указанию следующих "
-"параметров: I<--filesystems>, I<--extra>, I<--partitions>, I<--block-devices>"
-", I<--logical-volumes>, I<--volume-groups>, I<--physical-volumes>.  (В "
-"будущем в этот список может быть добавлено больше)."
+"параметров: I<--filesystems>, I<--extra>, I<--partitions>, I<--block-"
+"devices>, I<--logical-volumes>, I<--volume-groups>, I<--physical-volumes>.  "
+"(В будущем в этот список может быть добавлено больше)."
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:121
@@ -12948,8 +13012,8 @@ msgid ""
 "v5).  XFS v4 support will be removed from Linux in 2030."
 msgstr ""
 "В режиме I<--long> отображать версию файловой системы.  В настоящее время "
-"это влияет только на XFS, отображая C<4> (для XFS v4) или C<5> (для XFS v5)"
-".  Поддержка XFS v4 будет удалена из Linux в 2030 году."
+"это влияет только на XFS, отображая C<4> (для XFS v4) или C<5> (для XFS "
+"v5).  Поддержка XFS v4 будет удалена из Linux в 2030 году."
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:212
@@ -12980,8 +13044,8 @@ msgstr "Заголовок добавляется, если вы также не
 #: filesystems/virt-filesystems.pod:224
 msgid ""
 "The extra columns displayed depend on what output you select, and the "
-"ordering of columns may change in future versions.  Use the title row, "
-"I<--csv> output and/or L<csvtool(1)> to match columns to data in external "
+"ordering of columns may change in future versions.  Use the title row, I<--"
+"csv> output and/or L<csvtool(1)> to match columns to data in external "
 "programs."
 msgstr ""
 "Дополнительные столбцы зависят от выбранного вывода, и порядок столбцов "
@@ -13212,8 +13276,8 @@ msgstr "B<MBR>"
 #: filesystems/virt-filesystems.pod:334
 msgid ""
 "The partition type byte, displayed as a two digit hexadecimal number.  A "
-"comprehensive list of partition types can be found here: "
-"L<http://www.win.tue.nl/~aeb/partitions/partition_types-1.html>"
+"comprehensive list of partition types can be found here: L<http://"
+"www.win.tue.nl/~aeb/partitions/partition_types-1.html>"
 msgstr ""
 "Байт типа раздела, отображаемый в виде двузначного шестнадцатеричного "
 "числа.  Полный список типов разделов можно найти здесь: L<http://"
@@ -13246,7 +13310,8 @@ msgstr "B<Родитель>"
 #. type: textblock
 #: filesystems/virt-filesystems.pod:347
 msgid "The parent column records the parent relationship between objects."
-msgstr "Столбец родителя записывает отношение родитель-потомок между объектами."
+msgstr ""
+"Столбец родителя записывает отношение родитель-потомок между объектами."
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:349
@@ -13292,13 +13357,13 @@ msgstr "UUID отображается только при указании па�
 #. type: textblock
 #: filesystems/virt-filesystems.pod:397
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-df(1)>, "
-"L<virt-drivers(1)>, L<virt-list-filesystems(1)>, L<virt-list-partitions(1)>, "
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-df(1)>, L<virt-"
+"drivers(1)>, L<virt-list-filesystems(1)>, L<virt-list-partitions(1)>, "
 "L<csvtool(1)>, L<http://libguestfs.org/>."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-df(1)>, L<virt-drivers"
-"(1)>, L<virt-list-filesystems(1)>, L<virt-list-partitions(1)>, L<csvtool(1)>"
-", L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-df(1)>, L<virt-"
+"drivers(1)>, L<virt-list-filesystems(1)>, L<virt-list-partitions(1)>, "
+"L<csvtool(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: format/virt-format.pod:3
@@ -13331,9 +13396,9 @@ msgstr ""
 #. type: textblock
 #: format/virt-format.pod:16
 msgid ""
-"To create a disk containing data, you may be better to use "
-"L<virt-make-fs(1)>.  If you are creating a blank disk to use in "
-"L<guestfish(1)>, you should instead use the guestfish I<-N> option."
+"To create a disk containing data, you may be better to use L<virt-make-"
+"fs(1)>.  If you are creating a blank disk to use in L<guestfish(1)>, you "
+"should instead use the guestfish I<-N> option."
 msgstr ""
 "Для создания диска, содержащего данные, вам, возможно, лучше использовать "
 "L<virt-make-fs(1)>.  Если вы создаете пустой диск для использования в "
@@ -13409,15 +13474,16 @@ msgstr "B<--lvm[=/dev/VG/LV]>"
 #. type: textblock
 #: format/virt-format.pod:44
 msgid ""
-"Create a Linux LVM2 logical volume on the disk.  When used with "
-"I<--filesystem>, the filesystem is created inside the LV."
+"Create a Linux LVM2 logical volume on the disk.  When used with I<--"
+"filesystem>, the filesystem is created inside the LV."
 msgstr ""
 "Создать логический том Linux LVM2 на диске.  При использовании с I<--"
 "filesystem> файловая система создается внутри LV."
 
 #. type: textblock
 #: format/virt-format.pod:49
-msgid "For more information about these and other options, see L</OPTIONS> below."
+msgid ""
+"For more information about these and other options, see L</OPTIONS> below."
 msgstr ""
 "Для получения дополнительной информации об этих и других параметрах см. L</"
 "ПАРАМЕТРЫ> ниже."
@@ -13521,7 +13587,8 @@ msgstr "B<--lvm>"
 
 #. type: textblock
 #: format/virt-format.pod:128
-msgid "Create a Linux LVM2 logical volume with the default name (F</dev/VG/LV>)."
+msgid ""
+"Create a Linux LVM2 logical volume with the default name (F</dev/VG/LV>)."
 msgstr ""
 "Создать логический том Linux LVM2 с именем по умолчанию (F</dev/VG/LV>)."
 
@@ -13613,7 +13680,8 @@ msgstr ""
 #. type: textblock
 #: format/virt-format.pod:185
 msgid "This program returns C<0> on success, or C<1> on failure."
-msgstr "Эта программа возвращает C<0> в случае успеха или C<1> в случае ошибки."
+msgstr ""
+"Эта программа возвращает C<0> в случае успеха или C<1> в случае ошибки."
 
 #. type: textblock
 #: format/virt-format.pod:189
@@ -13711,13 +13779,13 @@ msgstr "Этот параметр указывает префикс для из�
 msgid ""
 "If a prefix is specified, then there will be a dash (C<->) after the prefix "
 "and before the rest of the file name; for example, a kernel in the guest "
-"like C<vmlinuz-3.19.0-20-generic> is saved as "
-"C<mydistro-vmlinuz-3.19.0-20-generic> when the prefix is C<mydistro>."
+"like C<vmlinuz-3.19.0-20-generic> is saved as C<mydistro-vmlinuz-3.19.0-20-"
+"generic> when the prefix is C<mydistro>."
 msgstr ""
 "Если указан префикс, то после префикса и перед остальной частью имени файла "
-"будет стоять дефис (C<->); например, ядро в госте например C<vmlinuz-3.19.0-"
-"20-generic> сохраняется как C<mydistro-vmlinuz-3.19.0-20-generic>, если "
-"префикс C<mydistro>."
+"будет стоять дефис (C<->); например, ядро в госте например "
+"C<vmlinuz-3.19.0-20-generic> сохраняется как C<mydistro-vmlinuz-3.19.0-20-"
+"generic>, если префикс C<mydistro>."
 
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:130
@@ -13878,8 +13946,8 @@ msgid ""
 "You can also run virt-inspector directly on disk images from a single "
 "virtual machine.  Use C<virt-inspector -a disk.img>.  In rare cases a domain "
 "has several block devices, in which case you should list several I<-a> "
-"options one after another, with the first corresponding to the guest’s "
-"F</dev/sda>, the second to the guest’s F</dev/sdb> and so on."
+"options one after another, with the first corresponding to the guest’s F</"
+"dev/sda>, the second to the guest’s F</dev/sdb> and so on."
 msgstr ""
 "Вы также можете запустить virt-inspector непосредственно на образах дисков "
 "из одной виртуальной машины.  Используйте C<virt-inspector -a disk.img>.  В "
@@ -14066,8 +14134,9 @@ msgid ""
 "F<virt-inspector.rng> which is supplied with libguestfs.  This section is "
 "just an overview."
 msgstr ""
-"XML virt-inspector точно описан в файле схемы RELAX NG F<virt-inspector.rng>"
-", который поставляется с libguestfs.  Этот раздел является только обзором."
+"XML virt-inspector точно описан в файле схемы RELAX NG F<virt-"
+"inspector.rng>, который поставляется с libguestfs.  Этот раздел является "
+"только обзором."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:187
@@ -14170,8 +14239,8 @@ msgid ""
 "element which looks like this:"
 msgstr ""
 "Гости, подобные Unix, обычно имеют несколько файловых систем, которые "
-"монтируются в различные точки монтирования, и они описаны в элементе E<lt>"
-"mountpointsE<gt>, который выглядит так:"
+"монтируются в различные точки монтирования, и они описаны в элементе "
+"E<lt>mountpointsE<gt>, который выглядит так:"
 
 #. type: verbatim
 #: inspector/virt-inspector.pod:228
@@ -14302,7 +14371,8 @@ msgstr ""
 #. type: textblock
 #: inspector/virt-inspector.pod:276
 msgid "E<lt>applicationsE<gt> lists the packages or applications installed."
-msgstr "E<lt>applicationsE<gt> перечисляет установленные пакеты или приложения."
+msgstr ""
+"E<lt>applicationsE<gt> перечисляет установленные пакеты или приложения."
 
 #. type: verbatim
 #: inspector/virt-inspector.pod:279
@@ -14334,8 +14404,8 @@ msgstr ""
 #: inspector/virt-inspector.pod:289
 msgid ""
 "The version and release fields may not be available for some types guests.  "
-"Other fields are possible, see "
-"L<guestfs(3)/guestfs_inspect_list_applications>."
+"Other fields are possible, see L<guestfs(3)/"
+"guestfs_inspect_list_applications>."
 msgstr ""
 "Поля версии и выпуска могут быть недоступны для некоторых типов гостей.  "
 "Возможны и другие поля, см. L<guestfs(3)/guestfs_inspect_list_applications>."
@@ -14515,8 +14585,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 " $ virt-inspector -d Guest | \\\n"
-"     virt-inspector --xpath "
-"\"string(//filesystem[@dev='/dev/sda1']/type)\"\n"
+"     virt-inspector --xpath \"string(//filesystem[@dev='/dev/sda1']/type)\"\n"
 " ext4\n"
 "\n"
 msgstr ""
@@ -14577,7 +14646,8 @@ msgstr ""
 
 #. type: textblock
 #: inspector/virt-inspector.pod:380
-msgid "For a description of the C inspection API, read L<guestfs(3)/INSPECTION>."
+msgid ""
+"For a description of the C inspection API, read L<guestfs(3)/INSPECTION>."
 msgstr "Описание C API инспекции см. в L<guestfs(3)/INSPECTION>."
 
 #. type: textblock
@@ -14657,7 +14727,8 @@ msgstr ""
 
 #. type: textblock
 #: inspector/virt-inspector.pod:411
-msgid "Using the root device, you can fetch further information about the guest:"
+msgid ""
+"Using the root device, you can fetch further information about the guest:"
 msgstr ""
 "Используя корневое устройство, вы можете получить дополнительную информацию "
 "о госте:"
@@ -14832,7 +14903,8 @@ msgstr ""
 
 #. type: textblock
 #: inspector/virt-inspector.pod:480
-msgid "The old virt-inspector is no longer supported or shipped with libguestfs."
+msgid ""
+"The old virt-inspector is no longer supported or shipped with libguestfs."
 msgstr ""
 "Старая версия virt-inspector больше не поддерживается и не поставляется с "
 "libguestfs."
@@ -14862,11 +14934,12 @@ msgstr ""
 #: inspector/virt-inspector.pod:496
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, "
-"L<http://libguestfs.org/>."
+"L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
+">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
-", L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
+"L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
+">."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514
@@ -14910,8 +14983,8 @@ msgstr ""
 #. type: textblock
 #: log/virt-log.pod:16
 msgid ""
-"This tool understands and displays both plain text log files "
-"(eg. F</var/log/messages>) and binary formats such as the systemd journal."
+"This tool understands and displays both plain text log files (eg. F</var/log/"
+"messages>) and binary formats such as the systemd journal."
 msgstr ""
 "Этот инструмент понимает и отображает как простые текстовые файлы журналов "
 "(например, F</var/log/messages>), так и двоичные форматы, такие как журнал "
@@ -14926,10 +14999,10 @@ msgid ""
 "L<virt-win-reg(1)>."
 msgstr ""
 "Для отображения файлов других типов используйте L<virt-cat(1)>.  Для "
-"отслеживания (хвоста) текстовых файлов журналов используйте L<virt-tail(1)>"
-".  Для копирования файлов из виртуальной машины используйте L<virt-copy-out"
-"(1)>.  Для отображения содержимого реестра Windows используйте L<virt-win-reg"
-"(1)>."
+"отслеживания (хвоста) текстовых файлов журналов используйте L<virt-"
+"tail(1)>.  Для копирования файлов из виртуальной машины используйте L<virt-"
+"copy-out(1)>.  Для отображения содержимого реестра Windows используйте "
+"L<virt-win-reg(1)>."
 
 #. type: textblock
 #: log/virt-log.pod:27
@@ -14997,9 +15070,8 @@ msgstr ""
 #. type: textblock
 #: log/virt-log.pod:139
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, "
-"L<virt-tail(1)>, L<virt-tar-out(1)>, L<virt-win-reg(1)>, "
-"L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
+"tail(1)>, L<virt-tar-out(1)>, L<virt-win-reg(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
 "tail(1)>, L<virt-tar-out(1)>, L<virt-win-reg(1)>, L<http://libguestfs.org/>."
@@ -15023,8 +15095,7 @@ msgstr ""
 #: ls/virt-ls.pod:9
 #, no-wrap
 msgid ""
-" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory "
-"...]\n"
+" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory ...]\n"
 "\n"
 msgstr ""
 " virt-ls [--options] -a disk.img [-a disk.img ...] каталог [каталог ...]\n"
@@ -15456,7 +15527,8 @@ msgstr "права доступа"
 #. type: textblock
 #: ls/virt-ls.pod:161
 msgid "The Unix permissions, displayed as a 4 digit octal number."
-msgstr "Права доступа Unix, отображаемые в виде 4-значного восьмеричного числа."
+msgstr ""
+"Права доступа Unix, отображаемые в виде 4-значного восьмеричного числа."
 
 #. type: =item
 #: ls/virt-ls.pod:163
@@ -15466,9 +15538,9 @@ msgstr "размер"
 #. type: textblock
 #: ls/virt-ls.pod:165
 msgid ""
-"The size of the file.  This is shown in bytes unless I<-h> or "
-"I<--human-readable> option is given, in which case this is shown as a "
-"human-readable number."
+"The size of the file.  This is shown in bytes unless I<-h> or I<--human-"
+"readable> option is given, in which case this is shown as a human-readable "
+"number."
 msgstr ""
 "Размер файла.  Он отображается в байтах, если не указан параметр I<-h> или "
 "I<--human-readable>, в этом случае он отображается в виде удобочитаемого "
@@ -15620,7 +15692,8 @@ msgstr "rdev"
 
 #. type: textblock
 #: ls/virt-ls.pod:236
-msgid "For block and char special files, the device (displayed as major:minor)."
+msgid ""
+"For block and char special files, the device (displayed as major:minor)."
 msgstr ""
 "Для блочных и символьных специальных файлов — устройство (отображается как "
 "старший:младший)."
@@ -15723,8 +15796,8 @@ msgstr ""
 #. type: textblock
 #: ls/virt-ls.pod:409
 msgid ""
-"C<virt-ls -l> produces a \"long listing\", which shows more detail.  See "
-"L</LONG LISTING>."
+"C<virt-ls -l> produces a \"long listing\", which shows more detail.  See L</"
+"LONG LISTING>."
 msgstr ""
 "C<virt-ls -l> выводит \"длинный список\", который показывает больше "
 "подробностей.  См. L</ДЛИННЫЙ СПИСОК>."
@@ -15775,8 +15848,8 @@ msgstr ""
 #. type: textblock
 #: ls/virt-ls.pod:521
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, "
-"L<virt-diff(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
+"diff(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-cat(1)>, L<virt-copy-out(1)>, L<virt-"
 "diff(1)>, L<virt-tar-out(1)>, L<http://libguestfs.org/>."
@@ -16145,7 +16218,8 @@ msgstr "B<-s> B<+>N"
 
 #. type: textblock
 #: make-fs/virt-make-fs.pod:150
-msgid "Use the I<--size> (or I<-s>) option to choose the size of the output image."
+msgid ""
+"Use the I<--size> (or I<-s>) option to choose the size of the output image."
 msgstr ""
 "Используйте параметр I<--size> (или I<-s>), чтобы выбрать размер выходного "
 "образа."
@@ -16162,8 +16236,8 @@ msgstr ""
 #. type: textblock
 #: make-fs/virt-make-fs.pod:156
 msgid ""
-"To choose a fixed size output disk, specify an absolute number followed by "
-"b/K/M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, "
+"To choose a fixed size output disk, specify an absolute number followed by b/"
+"K/M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, "
 "Petabytes or Exabytes.  This must be large enough to contain all the input "
 "files, else you will get an error."
 msgstr ""
@@ -16176,8 +16250,8 @@ msgstr ""
 #. type: textblock
 #: make-fs/virt-make-fs.pod:161
 msgid ""
-"To leave extra space, specify C<+> (plus sign) and a number followed by "
-"b/K/M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, "
+"To leave extra space, specify C<+> (plus sign) and a number followed by b/K/"
+"M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, "
 "Petabytes or Exabytes.  For example: I<--size=+200M> means enough space for "
 "the input files, and (approximately) an extra 200 MB free space."
 msgstr ""
@@ -16243,7 +16317,8 @@ msgstr "По умолчанию C<ext2>."
 
 #. type: textblock
 #: make-fs/virt-make-fs.pod:188
-msgid "Any filesystem which is supported read-write by libguestfs can be used here."
+msgid ""
+"Any filesystem which is supported read-write by libguestfs can be used here."
 msgstr ""
 "Здесь можно использовать любую файловую систему, которая поддерживается "
 "libguestfs в режиме чтения-записи."
@@ -16256,8 +16331,7 @@ msgstr "B<--partition=>ТИП_РАЗДЕЛА"
 #. type: textblock
 #: make-fs/virt-make-fs.pod:199
 msgid ""
-"If specified, this flag adds an MBR partition table to the output disk "
-"image."
+"If specified, this flag adds an MBR partition table to the output disk image."
 msgstr ""
 "Если указан, этот флаг добавляет таблицу разделов MBR в выходной образ диска."
 
@@ -16293,8 +16367,8 @@ msgid ""
 "L<resize2fs(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfish(1)>, L<virt-format(1)>, L<virt-resize(1)>, L<virt-tar-in(1)>, "
-"L<mkisofs(1)>, L<genisoimage(1)>, L<mksquashfs(1)>, L<mke2fs(8)>, L<resize2fs"
-"(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
+"L<mkisofs(1)>, L<genisoimage(1)>, L<mksquashfs(1)>, L<mke2fs(8)>, "
+"L<resize2fs(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: resize/virt-resize.pod:3
@@ -16312,8 +16386,7 @@ msgid ""
 msgstr ""
 " virt-resize [--resize /dev/sdaN=[+/-]<размер>[%]]\n"
 "   [--expand /dev/sdaN] [--shrink /dev/sdaN]\n"
-"   [--ignore /dev/sdaN] [--delete /dev/sdaN] [...] входной_диск "
-"выходной_диск\n"
+"   [--ignore /dev/sdaN] [--delete /dev/sdaN] [...] входной_диск выходной_диск\n"
 "\n"
 
 #. type: textblock
@@ -16354,9 +16427,9 @@ msgid ""
 "This example takes C<olddisk> and resizes it into C<newdisk>, extending one "
 "of the guest’s partitions to fill the extra 5GB of space:"
 msgstr ""
-"В этом примере берется C<старый_диск> и изменяется его размер в C<новый_диск>"
-", с расширением одного из разделов гостя для заполнения дополнительного "
-"пространства в 5 ГБ:"
+"В этом примере берется C<старый_диск> и изменяется его размер в "
+"C<новый_диск>, с расширением одного из разделов гостя для заполнения "
+"дополнительного пространства в 5 ГБ:"
 
 #. type: verbatim
 #: resize/virt-resize.pod:35
@@ -16388,8 +16461,7 @@ msgid ""
 " virt-resize --expand /dev/sda2 olddisk newdisk\n"
 "\n"
 msgstr ""
-" # Обратите внимание: \"/dev/sda2\" — это раздел внутри файла "
-"\"старый_диск\".\n"
+" # Обратите внимание: \"/dev/sda2\" — это раздел внутри файла \"старый_диск\".\n"
 " virt-resize --expand /dev/sda2 старый_диск новый_диск\n"
 "\n"
 
@@ -16557,7 +16629,8 @@ msgstr ""
 
 #. type: textblock
 #: resize/virt-resize.pod:108
-msgid "To store the resized disk image in a file, create a file of a suitable size:"
+msgid ""
+"To store the resized disk image in a file, create a file of a suitable size:"
 msgstr ""
 "Чтобы сохранить измененный образ диска в файл, создайте файл подходящего "
 "размера:"
@@ -16621,8 +16694,8 @@ msgid ""
 "output disk is the one created in the previous step."
 msgstr ""
 "virt-resize принимает два обязательных параметра: входной диск и выходной "
-"диск (оба могут быть, например, устройством, файлом или URI удаленного диска)"
-".  Выходной диск — это тот, который был создан на предыдущем шаге."
+"диск (оба могут быть, например, устройством, файлом или URI удаленного "
+"диска).  Выходной диск — это тот, который был создан на предыдущем шаге."
 
 #. type: verbatim
 #: resize/virt-resize.pod:129
@@ -16785,8 +16858,8 @@ msgstr ""
 #. type: textblock
 #: resize/virt-resize.pod:180
 msgid ""
-"Change E<lt>source ...E<gt>, see "
-"L<http://libvirt.org/formatdomain.html#elementsDisks>"
+"Change E<lt>source ...E<gt>, see L<http://libvirt.org/"
+"formatdomain.html#elementsDisks>"
 msgstr ""
 "Измените E<lt>source ...E<gt>, см. L<http://libvirt.org/"
 "formatdomain.html#elementsDisks>"
@@ -16823,7 +16896,8 @@ msgstr "7. Измените размер LV и т.д. внутри гостя"
 #. type: textblock
 #: resize/virt-resize.pod:192
 msgid "(This can also be done offline using L<guestfish(1)>)"
-msgstr "(Это также можно сделать в автономном режиме с помощью L<guestfish(1)>)"
+msgstr ""
+"(Это также можно сделать в автономном режиме с помощью L<guestfish(1)>)"
 
 #. type: textblock
 #: resize/virt-resize.pod:194
@@ -16870,8 +16944,8 @@ msgstr ""
 #: resize/virt-resize.pod:211
 msgid "(Shrinking can also be done offline using L<guestfish(1)>)"
 msgstr ""
-"(Уменьшение также можно выполнить в автономном режиме с помощью L<guestfish"
-"(1)>)"
+"(Уменьшение также можно выполнить в автономном режиме с помощью "
+"L<guestfish(1)>)"
 
 #. type: textblock
 #: resize/virt-resize.pod:213
@@ -16884,7 +16958,8 @@ msgstr ""
 
 #. type: textblock
 #: resize/virt-resize.pod:216
-msgid "Then run virt-resize with any of the I<--shrink> and/or I<--resize> options."
+msgid ""
+"Then run virt-resize with any of the I<--shrink> and/or I<--resize> options."
 msgstr ""
 "Затем запустите virt-resize с любыми параметрами I<--shrink> и/или I<--"
 "resize>."
@@ -16963,8 +17038,8 @@ msgstr ""
 #. type: textblock
 #: resize/virt-resize.pod:244
 msgid ""
-"(on older systems that don’t have the L<fallocate(1)> command use C<dd "
-"if=/dev/zero of=outdisk bs=1M count=..>)"
+"(on older systems that don’t have the L<fallocate(1)> command use C<dd if=/"
+"dev/zero of=outdisk bs=1M count=..>)"
 msgstr ""
 "(в старых системах, где нет команды L<fallocate(1)>, используйте C<dd if=/"
 "dev/zero of=выходной_диск bs=1M count=..>)"
@@ -16986,10 +17061,10 @@ msgstr ""
 #. type: textblock
 #: resize/virt-resize.pod:252
 msgid ""
-"To understand what is going on, firstly one of the four partitions "
-"F</dev/sda1-4> will have MBR partition type C<05> or C<0f>.  This is called "
-"the B<extended partition>.  Use L<virt-filesystems(1)> to see the MBR "
-"partition type."
+"To understand what is going on, firstly one of the four partitions F</dev/"
+"sda1-4> will have MBR partition type C<05> or C<0f>.  This is called the "
+"B<extended partition>.  Use L<virt-filesystems(1)> to see the MBR partition "
+"type."
 msgstr ""
 "Чтобы понять, что происходит, во-первых, один из четырех разделов F</dev/"
 "sda1-4> будет иметь тип раздела MBR C<05> или C<0f>.  Это называется "
@@ -17006,9 +17081,9 @@ msgstr "Логические разделы находятся внутри ра
 msgid ""
 "The extended partition can be expanded, but not shrunk (unless you force it, "
 "which is not advisable).  When the extended partition is copied across, all "
-"the logical partitions contained inside are copied over implicitly.  "
-"Virt-resize does not look inside the extended partition, so it copies the "
-"logical partitions blindly."
+"the logical partitions contained inside are copied over implicitly.  Virt-"
+"resize does not look inside the extended partition, so it copies the logical "
+"partitions blindly."
 msgstr ""
 "Расширенный раздел можно расширить, но не уменьшить (если только вы не "
 "принудите это, что не рекомендуется).  При копировании расширенного раздела "
@@ -17043,8 +17118,8 @@ msgstr "B<--align-first> B<always>"
 #. type: textblock
 #: resize/virt-resize.pod:282
 msgid ""
-"Align the first partition for improved performance (see also the "
-"I<--alignment> option)."
+"Align the first partition for improved performance (see also the I<--"
+"alignment> option)."
 msgstr ""
 "Выровнять первый раздел для повышения производительности (см. также параметр "
 "I<--alignment>)."
@@ -17376,8 +17451,8 @@ msgstr "B<--LV-expand> LOGVOL"
 msgid ""
 "This takes the logical volume and, as a final step, expands it to fill all "
 "the space available in its volume group.  A typical usage, assuming a Linux "
-"guest with a single PV F</dev/sda2> and a root device called "
-"F</dev/vg_guest/lv_root> would be:"
+"guest with a single PV F</dev/sda2> and a root device called F</dev/vg_guest/"
+"lv_root> would be:"
 msgstr ""
 "Этот параметр берет логический том и в качестве последнего шага расширяет "
 "его, чтобы заполнить все доступное пространство в его группе томов.  "
@@ -17564,8 +17639,8 @@ msgstr ""
 msgid ""
 "Note that this option I<does not create> the output format.  This option "
 "just tells libguestfs what it is so it doesn't try to guess it.  You still "
-"need to create the output disk with the right format.  See L</QCOW2 AND "
-"NON-SPARSE RAW FORMATS>."
+"need to create the output disk with the right format.  See L</QCOW2 AND NON-"
+"SPARSE RAW FORMATS>."
 msgstr ""
 "Обратите внимание, что этот параметр I<не создает> выходной формат.  Этот "
 "параметр просто сообщает libguestfs, что это такое, чтобы он не пытался "
@@ -17679,16 +17754,16 @@ msgid ""
 "direct content of the partition if it knows how (see I<--expand> above)."
 msgstr ""
 "Вы можете увеличить размер любого раздела.  Virt-resize расширит "
-"непосредственное содержимое раздела, если он знает как (см. I<--expand> выше)"
-"."
+"непосредственное содержимое раздела, если он знает как (см. I<--expand> "
+"выше)."
 
 #. type: textblock
 #: resize/virt-resize.pod:565
 msgid ""
 "You can only I<decrease> the size of partitions that contain filesystems or "
 "PVs which have already been shrunk.  Virt-resize will check this has been "
-"done before proceeding, or else will print an error (see also "
-"I<--resize-force>)."
+"done before proceeding, or else will print an error (see also I<--resize-"
+"force>)."
 msgstr ""
 "Вы можете I<уменьшать> размер только тех разделов, которые содержат файловые "
 "системы или PV, которые уже были уменьшены.  Virt-resize проверит, что это "
@@ -17840,8 +17915,8 @@ msgstr "Существует два способа использования э
 #. type: textblock
 #: resize/virt-resize.pod:654
 msgid ""
-"Firstly use the option on its own to query the capabilities of the "
-"virt-resize binary.  Typical output looks like this:"
+"Firstly use the option on its own to query the capabilities of the virt-"
+"resize binary.  Typical output looks like this:"
 msgstr ""
 "Во-первых, используйте этот параметр отдельно, чтобы запросить возможности "
 "двоичного файла virt-resize.  Типичный вывод выглядит так:"
@@ -17924,8 +17999,8 @@ msgstr ""
 #. type: textblock
 #: resize/virt-resize.pod:695
 msgid ""
-"Versions of the program prior to 1.13.9 did not support the "
-"I<--machine-readable> option and will return an error."
+"Versions of the program prior to 1.13.9 did not support the I<--machine-"
+"readable> option and will return an error."
 msgstr ""
 "Версии программы до 1.13.9 не поддерживали параметр I<--machine-readable> и "
 "возвращали ошибку."
@@ -17943,8 +18018,8 @@ msgstr "\"Раздел 1 не заканчивается на границе ц�
 #. type: textblock
 #: resize/virt-resize.pod:705
 msgid ""
-"Virt-resize aligns partitions to multiples of 128 sectors (see the "
-"I<--alignment> parameter).  Usually this means the partitions will not be "
+"Virt-resize aligns partitions to multiples of 128 sectors (see the I<--"
+"alignment> parameter).  Usually this means the partitions will not be "
 "aligned to the ancient CHS geometry.  However CHS geometry is meaningless "
 "for disks manufactured since the early 1990s, and doubly so for virtual hard "
 "drives.  Alignment of partitions to cylinders is not required by any modern "
@@ -18032,8 +18107,8 @@ msgid ""
 "Windows disks which use NTFS must be consistent before virt-resize can be "
 "used.  If the ntfsresize operation fails, try booting the original VM and "
 "running C<chkdsk /f> on all NTFS partitions, then shut down the VM cleanly.  "
-"For further information see: "
-"L<https://bugzilla.redhat.com/show_bug.cgi?id=975753>"
+"For further information see: L<https://bugzilla.redhat.com/show_bug.cgi?"
+"id=975753>"
 msgstr ""
 "Диски Windows, использующие NTFS, должны быть согласованы, прежде чем можно "
 "будет использовать virt-resize.  Если операция ntfsresize завершается "
@@ -18096,7 +18171,8 @@ msgstr "РАЗРЕЖЕННОЕ КОПИРОВАНИЕ"
 
 #. type: textblock
 #: resize/virt-resize.pod:764
-msgid "You should create a fresh, zeroed target disk image for virt-resize to use."
+msgid ""
+"You should create a fresh, zeroed target disk image for virt-resize to use."
 msgstr ""
 "Вы должны создать новый обнуленный целевой образ диска для использования "
 "virt-resize."
@@ -18139,8 +18215,7 @@ msgstr ""
 #. type: =head2
 #: resize/virt-resize.pod:780
 msgid ""
-"\"unknown/unavailable method for expanding the TYPE filesystem on "
-"DEVICE/LV\""
+"\"unknown/unavailable method for expanding the TYPE filesystem on DEVICE/LV\""
 msgstr ""
 "\"неизвестный/недоступный метод для расширения файловой системы TYPE на "
 "DEVICE/LV\""
@@ -18293,15 +18368,15 @@ msgid ""
 "L<lvm(8)>, L<pvresize(8)>, L<lvresize(8)>, L<resize2fs(8)>, "
 "L<ntfsresize(8)>, L<btrfs(8)>, L<xfs_growfs(8)>, L<resize.f2fs(8)>, "
 "L<virsh(1)>, L<parted(8)>, L<truncate(1)>, L<fallocate(1)>, L<grub(8)>, "
-"L<grub-install(8)>, L<virt-rescue(1)>, L<virt-sparsify(1)>, "
-"L<virt-alignment-scan(1)>, L<http://libguestfs.org/>."
+"L<grub-install(8)>, L<virt-rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-"
+"scan(1)>, L<http://libguestfs.org/>."
 msgstr ""
-"L<virt-filesystems(1)>, L<virt-df(1)>, L<guestfs(3)>, L<guestfish(1)>, L<lvm"
-"(8)>, L<pvresize(8)>, L<lvresize(8)>, L<resize2fs(8)>, L<ntfsresize(8)>, "
-"L<btrfs(8)>, L<xfs_growfs(8)>, L<resize.f2fs(8)>, L<virsh(1)>, L<parted(8)>, "
-"L<truncate(1)>, L<fallocate(1)>, L<grub(8)>, L<grub-install(8)>, L<virt-"
-"rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-scan(1)>, L<http://"
-"libguestfs.org/>."
+"L<virt-filesystems(1)>, L<virt-df(1)>, L<guestfs(3)>, L<guestfish(1)>, "
+"L<lvm(8)>, L<pvresize(8)>, L<lvresize(8)>, L<resize2fs(8)>, "
+"L<ntfsresize(8)>, L<btrfs(8)>, L<xfs_growfs(8)>, L<resize.f2fs(8)>, "
+"L<virsh(1)>, L<parted(8)>, L<truncate(1)>, L<fallocate(1)>, L<grub(8)>, "
+"L<grub-install(8)>, L<virt-rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-"
+"scan(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:3
@@ -18343,8 +18418,8 @@ msgstr ""
 #. type: textblock
 #: sparsify/virt-sparsify.pod:18
 msgid ""
-"Virt-sparsify can locate and sparsify free space in most filesystems "
-"(eg. ext2/3/4, btrfs, NTFS, etc.), and also in LVM physical volumes."
+"Virt-sparsify can locate and sparsify free space in most filesystems (eg. "
+"ext2/3/4, btrfs, NTFS, etc.), and also in LVM physical volumes."
 msgstr ""
 "Virt-sparsify может находить и делать разреженным свободное пространство в "
 "большинстве файловых систем (например, ext2/3/4, btrfs, NTFS и т.д.), а "
@@ -18364,8 +18439,8 @@ msgstr ""
 msgid ""
 "Virt-sparsify can operate on any disk image, not just ones from virtual "
 "machines.  However if a virtual machine has multiple disks and uses volume "
-"management, then virt-sparsify will work but not be very effective "
-"(L<http://bugzilla.redhat.com/887826>)."
+"management, then virt-sparsify will work but not be very effective (L<http://"
+"bugzilla.redhat.com/887826>)."
 msgstr ""
 "Virt-sparsify может работать с любым образом диска, а не только с образами "
 "от виртуальных машин.  Однако если виртуальная машина имеет несколько дисков "
@@ -18444,7 +18519,8 @@ msgstr ""
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:61
-msgid "Virt-sparsify cannot resize disk images.  To do that, use L<virt-resize(1)>."
+msgid ""
+"Virt-sparsify cannot resize disk images.  To do that, use L<virt-resize(1)>."
 msgstr ""
 "Virt-sparsify не может изменять размер образов дисков.  Для этого "
 "используйте L<virt-resize(1)>."
@@ -18482,8 +18558,8 @@ msgstr ""
 #. type: textblock
 #: sparsify/virt-sparsify.pod:82
 msgid ""
-"You may also want to read the manual pages for the associated tools "
-"L<virt-filesystems(1)> and L<virt-df(1)> before starting."
+"You may also want to read the manual pages for the associated tools L<virt-"
+"filesystems(1)> and L<virt-df(1)> before starting."
 msgstr ""
 "Возможно, вы также захотите прочитать страницы руководства для связанных "
 "инструментов L<virt-filesystems(1)> и L<virt-df(1)> перед началом."
@@ -18508,8 +18584,7 @@ msgstr ""
 msgid ""
 "which copies C<indisk> to C<outdisk>, making the output sparse.  C<outdisk> "
 "is created, or overwritten if it already exists.  The format of the input "
-"disk is detected (eg. qcow2) and the same format is used for the output "
-"disk."
+"disk is detected (eg. qcow2) and the same format is used for the output disk."
 msgstr ""
 "который копирует C<входной_диск> в C<выходной_диск>, делая выходной "
 "разреженным.  C<выходной_диск> создается или перезаписывается, если уже "
@@ -18555,7 +18630,8 @@ msgstr ""
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:106
-msgid "See L<virt-filesystems(1)> to get a list of filesystems within a disk image."
+msgid ""
+"See L<virt-filesystems(1)> to get a list of filesystems within a disk image."
 msgstr ""
 "См. L<virt-filesystems(1)>, чтобы получить список файловых систем внутри "
 "образа диска."
@@ -18683,15 +18759,16 @@ msgstr ""
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:183
-msgid "Supported and known-working output formats are: C<raw>, C<qcow2>, C<vdi>."
+msgid ""
+"Supported and known-working output formats are: C<raw>, C<qcow2>, C<vdi>."
 msgstr ""
 "Поддерживаемые и заведомо рабочие выходные форматы: C<raw>, C<qcow2>, C<vdi>."
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:185
 msgid ""
-"You can also use any format supported by the L<qemu-img(1)> program, "
-"eg. C<vmdk>, but support for other formats is reliant on qemu."
+"You can also use any format supported by the L<qemu-img(1)> program, eg. "
+"C<vmdk>, but support for other formats is reliant on qemu."
 msgstr ""
 "Вы также можете использовать любой формат, поддерживаемый программой L<qemu-"
 "img(1)>, например C<vmdk>, но поддержка других форматов зависит от qemu."
@@ -18699,8 +18776,8 @@ msgstr ""
 #. type: textblock
 #: sparsify/virt-sparsify.pod:188
 msgid ""
-"Specifying the I<--convert> option is usually a good idea, because then "
-"virt-sparsify doesn't need to try to guess the input format."
+"Specifying the I<--convert> option is usually a good idea, because then virt-"
+"sparsify doesn't need to try to guess the input format."
 msgstr ""
 "Указание параметра I<--convert> обычно является хорошей идеей, потому что "
 "тогда virt-sparsify не нужно пытаться угадать входной формат."
@@ -18771,8 +18848,8 @@ msgstr "B<--in-place>"
 #. type: textblock
 #: sparsify/virt-sparsify.pod:230
 msgid ""
-"Do in-place sparsification instead of copying sparsification.  See "
-"L</IN-PLACE SPARSIFICATION> below."
+"Do in-place sparsification instead of copying sparsification.  See L</IN-"
+"PLACE SPARSIFICATION> below."
 msgstr ""
 "Выполнить разрежение на месте вместо разрежения с копированием.  См. L</"
 "РАЗРЕЖЕНИЕ НА МЕСТЕ> ниже."
@@ -18851,8 +18928,8 @@ msgstr ""
 #. type: textblock
 #: sparsify/virt-sparsify.pod:276
 msgid ""
-"If the parameter is a directory, then this is the same as setting the "
-"L</TMPDIR> environment variable."
+"If the parameter is a directory, then this is the same as setting the L</"
+"TMPDIR> environment variable."
 msgstr ""
 "Если параметр является каталогом, это эквивалентно установке переменной "
 "среды L</TMPDIR>."
@@ -18884,7 +18961,8 @@ msgstr ""
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:296
-msgid "If you rerun virt-sparsify, you B<must> recreate the file before each run."
+msgid ""
+"If you rerun virt-sparsify, you B<must> recreate the file before each run."
 msgstr ""
 "Если вы запускаете virt-sparsify повторно, вы B<должны> пересоздать файл "
 "перед каждым запуском."
@@ -18953,8 +19031,8 @@ msgstr ""
 #: sparsify/virt-sparsify.pod:352
 msgid ""
 "Some options are not compatible with this mode: I<--convert>, I<--compress> "
-"and I<-o> because they require wholesale disk format changes; "
-"I<--check-tmpdir> because large amounts of temporary space are not required."
+"and I<-o> because they require wholesale disk format changes; I<--check-"
+"tmpdir> because large amounts of temporary space are not required."
 msgstr ""
 "Некоторые параметры несовместимы с этим режимом: I<--convert>, I<--compress> "
 "и I<-o>, поскольку они требуют кардинальных изменений формата диска; I<--"
@@ -18962,7 +19040,8 @@ msgstr ""
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:357
-msgid "In-place sparsification works using discard (a.k.a trim or unmap)  support."
+msgid ""
+"In-place sparsification works using discard (a.k.a trim or unmap)  support."
 msgstr ""
 "Разрежение на месте работает с использованием поддержки discard (также "
 "известного как trim или unmap)."
@@ -18981,8 +19060,8 @@ msgstr ""
 #. type: textblock
 #: sparsify/virt-sparsify.pod:368
 msgid ""
-"Firstly use the option on its own to query the capabilities of the "
-"virt-sparsify binary.  Typical output looks like this:"
+"Firstly use the option on its own to query the capabilities of the virt-"
+"sparsify binary.  Typical output looks like this:"
 msgstr ""
 "Во-первых, используйте этот параметр отдельно, чтобы запросить возможности "
 "двоичного файла virt-sparsify.  Типичный вывод выглядит так:"
@@ -19124,12 +19203,12 @@ msgstr ""
 #: sparsify/virt-sparsify.pod:464
 msgid ""
 "L<virt-df(1)>, L<virt-filesystems(1)>, L<virt-resize(1)>, L<virt-rescue(1)>, "
-"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, "
-"L<qemu-img(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-"
+"img(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<virt-df(1)>, L<virt-filesystems(1)>, L<virt-resize(1)>, L<virt-rescue(1)>, "
-"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-img"
-"(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-"
+"img(1)>, L<http://libguestfs.org/>."
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:1
@@ -19366,8 +19445,8 @@ msgid ""
 "parameter(s)."
 msgstr ""
 "Точка монтирования (пустой каталог на хосте), используемая, когда операция "
-"C<script> включена и один или несколько сценариев указаны с помощью параметра"
-"(ов) I<--script>."
+"C<script> включена и один или несколько сценариев указаны с помощью "
+"параметра(ов) I<--script>."
 
 #. type: textblock
 #: sysprep/sysprep-extra-options.pod:412
@@ -19394,51 +19473,58 @@ msgstr "B<--selinux-relabel> (см. C<customize> ниже)"
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:439
+#, fuzzy
+#| msgid "B<--selinux-relabel> (see C<customize> below)"
+msgid "B<--selinux-relabel-exclude> DIR (see C<customize> below)"
+msgstr "B<--selinux-relabel> (см. C<customize> ниже)"
+
+#. type: =item
+#: sysprep/sysprep-extra-options.pod:456
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР] (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:452
+#: sysprep/sysprep-extra-options.pod:469
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr "B<--tar-in> TAR_ФАЙЛ:УДАЛЕННЫЙ_КАТАЛОГ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:461
+#: sysprep/sysprep-extra-options.pod:478
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr "B<--timezone> ЧАСОВОЙ_ПОЯС (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:467
+#: sysprep/sysprep-extra-options.pod:484
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr "B<--touch> ФАЙЛ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:472
+#: sysprep/sysprep-extra-options.pod:489
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr "B<--truncate> ФАЙЛ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:478
+#: sysprep/sysprep-extra-options.pod:495
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr "B<--truncate-recursive> ПУТЬ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:483
+#: sysprep/sysprep-extra-options.pod:500
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr "B<--uninstall> ПАКЕТ,ПАКЕТ..  (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:493
+#: sysprep/sysprep-extra-options.pod:510
 msgid "B<--update> (see C<customize> below)"
 msgstr "B<--update> (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:502
+#: sysprep/sysprep-extra-options.pod:519
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr "B<--upload> ФАЙЛ:ЦЕЛЬ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:518
+#: sysprep/sysprep-extra-options.pod:535
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr "B<--write> ФАЙЛ:СОДЕРЖИМОЕ (см. C<customize> ниже)"
 
@@ -19454,7 +19540,8 @@ msgstr "Удалить данные о сбоях, сгенерированны�
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:6
-msgid "Remove the automatically generated ABRT crash data in C</var/spool/abrt/>."
+msgid ""
+"Remove the automatically generated ABRT crash data in C</var/spool/abrt/>."
 msgstr ""
 "Удалить автоматически сгенерированные данные о сбоях ABRT в C</var/spool/"
 "abrt/>."
@@ -19716,8 +19803,8 @@ msgid ""
 "custom firewalld configuration in C</etc/firewalld/*/*>."
 msgstr ""
 "Это удаляет пользовательские правила брандмауэра, удаляя C</etc/sysconfig/"
-"iptables> или пользовательскую конфигурацию firewalld в C</etc/firewalld/*/*>"
-"."
+"iptables> или пользовательскую конфигурацию firewalld в C</etc/firewalld/*/"
+"*>."
 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:123
@@ -19777,9 +19864,9 @@ msgstr "Примечания к fs-uuids"
 #: sysprep/sysprep-operations.pod:143
 msgid ""
 "The fs-uuids operation is disabled by default because it does not yet find "
-"and update all the places in the guest that use the UUIDs.  For example "
-"C</etc/fstab> or the bootloader.  Enabling this operation is more likely "
-"than not to make your guest unbootable."
+"and update all the places in the guest that use the UUIDs.  For example C</"
+"etc/fstab> or the bootloader.  Enabling this operation is more likely than "
+"not to make your guest unbootable."
 msgstr ""
 "Операция fs-uuids отключена по умолчанию, поскольку она еще не находит и не "
 "обновляет все места в госте, где используются UUID.  Например, C</etc/fstab> "
@@ -20215,9 +20302,9 @@ msgstr "Удалить файл LVM2 system.devices."
 #: sysprep/sysprep-operations.pod:467
 msgid ""
 "On Linux guests, LVM2's scanning for physical volumes (PVs) may be "
-"restricted to those block devices whose WWIDs are listed in "
-"C</etc/lvm/devices/system.devices>.  When cloning VMs, WWIDs may change, "
-"breaking C<lvm pvscan>.  Remove C</etc/lvm/devices/system.devices>."
+"restricted to those block devices whose WWIDs are listed in C</etc/lvm/"
+"devices/system.devices>.  When cloning VMs, WWIDs may change, breaking C<lvm "
+"pvscan>.  Remove C</etc/lvm/devices/system.devices>."
 msgstr ""
 "В гостях Linux сканирование физических томов (PV) в LVM2 может быть "
 "ограничено теми блочными устройствами, чьи WWID перечислены в C</etc/lvm/"
@@ -20317,8 +20404,8 @@ msgstr "Удалить локальные профили подключений 
 #. type: textblock
 #: sysprep/sysprep-operations.pod:513
 msgid ""
-"On Fedora and Red Hat Enterprise Linux, remove the "
-"C</etc/NetworkManager/system-connections/*.nmconnection> files."
+"On Fedora and Red Hat Enterprise Linux, remove the C</etc/NetworkManager/"
+"system-connections/*.nmconnection> files."
 msgstr ""
 "В Fedora и Red Hat Enterprise Linux удалите файлы C</etc/NetworkManager/"
 "system-connections/*.nmconnection>."
@@ -20504,10 +20591,9 @@ msgstr ""
 #: sysprep/sysprep-operations.pod:611
 msgid ""
 "The script or program is run with its current directory being the guest’s "
-"root directory, so relative paths should be used.  For example: C<rm "
-"etc/resolv.conf> in the script would remove a Linux guest’s DNS "
-"configuration file, but C<rm /etc/resolv.conf> would (try to) remove the "
-"host’s file."
+"root directory, so relative paths should be used.  For example: C<rm etc/"
+"resolv.conf> in the script would remove a Linux guest’s DNS configuration "
+"file, but C<rm /etc/resolv.conf> would (try to) remove the host’s file."
 msgstr ""
 "Сценарий или программа запускаются с текущим каталогом, являющимся корневым "
 "каталогом гостя, поэтому следует использовать относительные пути.  Например: "
@@ -20849,9 +20935,9 @@ msgid ""
 "Virt-sysprep can reset or unconfigure a virtual machine so that clones can "
 "be made from it, or to prepare a template from which clones can be made "
 "later on.  Steps in this process include removing SSH host keys, removing "
-"persistent network MAC configuration, and removing user accounts.  "
-"Virt-sysprep can also customize a virtual machine, for instance by adding "
-"SSH keys, users or logos.  Each step can be enabled or disabled as required."
+"persistent network MAC configuration, and removing user accounts.  Virt-"
+"sysprep can also customize a virtual machine, for instance by adding SSH "
+"keys, users or logos.  Each step can be enabled or disabled as required."
 msgstr ""
 "Virt-sysprep может сбросить или перенастроить виртуальную машину, чтобы из "
 "нее можно было создавать клоны, или для подготовки шаблона, из которого "
@@ -20928,7 +21014,8 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/virt-sysprep.pod:109 sysprep/virt-sysprep.pod:133
-msgid "would enable ONLY C<ssh-hostkeys> and C<udev-persistent-net> operations."
+msgid ""
+"would enable ONLY C<ssh-hostkeys> and C<udev-persistent-net> operations."
 msgstr "включит ТОЛЬКО операции C<ssh-hostkeys> и C<udev-persistent-net>."
 
 #. type: textblock
@@ -20960,7 +21047,8 @@ msgstr ""
 
 #. type: textblock
 #: sysprep/virt-sysprep.pod:121 sysprep/virt-sysprep.pod:162
-msgid "See L</OPERATIONS> below for a list and an explanation of each operation."
+msgid ""
+"See L</OPERATIONS> below for a list and an explanation of each operation."
 msgstr "См. L</ОПЕРАЦИИ> ниже для списка и объяснения каждой операции."
 
 #. type: =item
@@ -20987,9 +21075,9 @@ msgstr ""
 #: sysprep/virt-sysprep.pod:135
 msgid ""
 "I<--operations> allows you to enable and disable any operation, including "
-"the default ones (which would be tried when specifying neither "
-"I<--operations> nor I<--enable>) and all the available ones; prepending a "
-"C<-> in front of an operation name removes it from the list of enabled "
+"the default ones (which would be tried when specifying neither I<--"
+"operations> nor I<--enable>) and all the available ones; prepending a C<-> "
+"in front of an operation name removes it from the list of enabled "
 "operations, while the meta-names C<defaults> and C<all> represent "
 "respectively the operations enabled by default and all the available ones.  "
 "For example:"
@@ -21126,10 +21214,10 @@ msgstr ""
 #. type: textblock
 #: sysprep/virt-sysprep.pod:214
 msgid ""
-"The first field is the operation name, which can be supplied to "
-"I<--enable>.  The second field is a C<*> character if the operation is "
-"enabled by default or blank if not.  Subsequent fields on the same line are "
-"the description of the operation."
+"The first field is the operation name, which can be supplied to I<--"
+"enable>.  The second field is a C<*> character if the operation is enabled "
+"by default or blank if not.  Subsequent fields on the same line are the "
+"description of the operation."
 msgstr ""
 "Первое поле — это имя операции, которое может быть передано в I<--enable>.  "
 "Второе поле — символ C<*>, если операция включена по умолчанию, или пустое, "
@@ -21206,9 +21294,9 @@ msgstr "сделает то же самое, плюс смонтирует F</va
 #. type: textblock
 #: sysprep/virt-sysprep.pod:255
 msgid ""
-"In virt-sysprep, the network is I<disabled> by default.  You must use "
-"I<--network> to enable it, in order that options such as I<--install> or "
-"I<--update> will work."
+"In virt-sysprep, the network is I<disabled> by default.  You must use I<--"
+"network> to enable it, in order that options such as I<--install> or I<--"
+"update> will work."
 msgstr ""
 "В virt-sysprep сеть по умолчанию I<отключена>.  Вы должны использовать I<--"
 "network>, чтобы включить ее, чтобы такие параметры, как I<--install> или I<--"
@@ -21245,9 +21333,9 @@ msgstr ""
 #. type: textblock
 #: sysprep/virt-sysprep.pod:293
 msgid ""
-"Use C<virt-sysprep --list-operations> to list all operations for your "
-"virt-sysprep binary.  The ones which are enabled by default are marked with "
-"a C<*> character.  Regardless of the I<--enable>/I<--operations> options, "
+"Use C<virt-sysprep --list-operations> to list all operations for your virt-"
+"sysprep binary.  The ones which are enabled by default are marked with a "
+"C<*> character.  Regardless of the I<--enable>/I<--operations> options, "
 "sysprep operations are skipped for some guest types."
 msgstr ""
 "Используйте C<virt-sysprep --list-operations>, чтобы вывести список всех "
@@ -21305,9 +21393,8 @@ msgid ""
 "Virtual machines that employ full disk encryption I<internally to the guest> "
 "should not be considered for cloning and distribution, as it provides "
 "multiple parties with the same internal volume key, enabling any one such "
-"party to decrypt all the other clones.  Refer to the L<LUKS "
-"FAQ|https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md> for "
-"details."
+"party to decrypt all the other clones.  Refer to the L<LUKS FAQ|https://"
+"gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md> for details."
 msgstr ""
 "Виртуальные машины, использующие полное шифрование диска I<внутри гостя>, не "
 "должны рассматриваться для клонирования и распространения, поскольку это "
@@ -21331,8 +21418,8 @@ msgstr ""
 #: sysprep/virt-sysprep.pod:326
 msgid ""
 "Sensitive files are simply removed.  The data they contained may still exist "
-"on the disk, easily recovered with a hex editor or undelete tool.  The "
-"I<--scrub> option can be used to scrub files instead of just deleting them.  "
+"on the disk, easily recovered with a hex editor or undelete tool.  The I<--"
+"scrub> option can be used to scrub files instead of just deleting them.  "
 "L<virt-sparsify(1)> is another way to remove this content.  See also the "
 "L<scrub(1)> command to get rid of deleted content in directory entries and "
 "inodes."
@@ -21340,10 +21427,10 @@ msgstr ""
 "Конфиденциальные файлы просто удаляются.  Данные, которые они содержали, все "
 "еще могут существовать на диске и легко восстанавливаются с помощью hex-"
 "редактора или инструмента восстановления.  Параметр I<--scrub> можно "
-"использовать для затирания файлов вместо простого удаления.  L<virt-sparsify"
-"(1)> — это еще один способ удаления этого содержимого.  См. также команду "
-"L<scrub(1)>, чтобы избавиться от удаленного содержимого в записях каталогов "
-"и инодах."
+"использовать для затирания файлов вместо простого удаления.  L<virt-"
+"sparsify(1)> — это еще один способ удаления этого содержимого.  См. также "
+"команду L<scrub(1)>, чтобы избавиться от удаленного содержимого в записях "
+"каталогов и инодах."
 
 #. type: =head2
 #: sysprep/virt-sysprep.pod:333
@@ -21420,10 +21507,10 @@ msgstr ""
 #. type: textblock
 #: sysprep/virt-sysprep.pod:408
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, "
-"L<virt-customize(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, "
-"L<virt-sparsify(1)>, L<virsh(1)>, L<lvcreate(8)>, L<qemu-img(1)>, "
-"L<scrub(1)>, L<http://libguestfs.org/>, L<http://libvirt.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, L<virt-"
+"customize(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, "
+"L<virsh(1)>, L<lvcreate(8)>, L<qemu-img(1)>, L<scrub(1)>, L<http://"
+"libguestfs.org/>, L<http://libvirt.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, L<virt-"
 "customize(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, "
@@ -21499,8 +21586,10 @@ msgstr "Пользователь не нажмет ^C или не будет п�
 
 #. type: textblock
 #: tail/virt-tail.pod:31
-msgid "None of the listed files was found in the guest, or they all get deleted."
-msgstr "Ни один из перечисленных файлов не найден в госте, или все они удалены."
+msgid ""
+"None of the listed files was found in the guest, or they all get deleted."
+msgstr ""
+"Ни один из перечисленных файлов не найден в госте, или все они удалены."
 
 #. type: textblock
 #: tail/virt-tail.pod:36
@@ -21509,7 +21598,8 @@ msgstr "Произошла невосстановимая ошибка."
 
 #. type: textblock
 #: tail/virt-tail.pod:42
-msgid "Follow F</var/log/messages> inside a virtual machine called C<mydomain>:"
+msgid ""
+"Follow F</var/log/messages> inside a virtual machine called C<mydomain>:"
 msgstr ""
 "Отслеживать F</var/log/messages> внутри виртуальной машины с именем "
 "C<mydomain>:"
@@ -21588,8 +21678,8 @@ msgstr ""
 #. type: textblock
 #: tail/virt-tail.pod:239
 msgid ""
-"L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-cat(1)>, "
-"L<virt-log(1)>, L<virt-tar-out(1)>, L<tail(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-cat(1)>, L<virt-"
+"log(1)>, L<virt-tar-out(1)>, L<tail(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-copy-out(1)>, L<virt-cat(1)>, L<virt-"
 "log(1)>, L<virt-tar-out(1)>, L<tail(1)>, L<http://libguestfs.org/>."
@@ -21602,8 +21692,7 @@ msgstr "Copyright (C) 2016 Red Hat Inc."
 #. type: textblock
 #: win-reg/virt-win-reg.in:34
 msgid ""
-"virt-win-reg - Export and merge Windows Registry entries from a Windows "
-"guest"
+"virt-win-reg - Export and merge Windows Registry entries from a Windows guest"
 msgstr ""
 "virt-win-reg - Экспорт и слияние записей реестра Windows из гостя Windows"
 
@@ -21708,8 +21797,8 @@ msgstr ""
 #. type: textblock
 #: win-reg/virt-win-reg.in:68
 msgid ""
-"If I<--merge> is I<not> specified, then the chosen registry key is "
-"displayed/exported (recursively).  For example:"
+"If I<--merge> is I<not> specified, then the chosen registry key is displayed/"
+"exported (recursively).  For example:"
 msgstr ""
 "Если I<--merge> I<не> указан, выбранный ключ реестра отображается/"
 "экспортируется (рекурсивно).  Например:"
@@ -21726,7 +21815,8 @@ msgstr ""
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:73
-msgid "You can also display single values from within registry keys, for example:"
+msgid ""
+"You can also display single values from within registry keys, for example:"
 msgstr ""
 "Вы также можете отображать отдельные значения из ключей реестра, например:"
 
@@ -21979,7 +22069,8 @@ msgstr "C<HKEY_USERS\\I<имя_пользователя>>"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:628
-msgid "where I<username> is a local user name (this is a libguestfs extension)."
+msgid ""
+"where I<username> is a local user name (this is a libguestfs extension)."
 msgstr ""
 "где I<имя_пользователя> — это локальное имя пользователя (это расширение "
 "libguestfs)."
@@ -22022,10 +22113,10 @@ msgstr "КОДИРОВКА"
 #: win-reg/virt-win-reg.in:646
 msgid ""
 "C<virt-win-reg> expects that regedit files have already been re-encoded in "
-"the local encoding.  Usually on Linux hosts, this means UTF-8 with "
-"Unix-style line endings.  Since Windows regedit files are often in UTF-16LE "
-"with Windows-style line endings, you may need to re-encode the whole file "
-"before or after processing."
+"the local encoding.  Usually on Linux hosts, this means UTF-8 with Unix-"
+"style line endings.  Since Windows regedit files are often in UTF-16LE with "
+"Windows-style line endings, you may need to re-encode the whole file before "
+"or after processing."
 msgstr ""
 "C<virt-win-reg> ожидает, что файлы regedit уже перекодированы в локальную "
 "кодировку.  Обычно на хостах Linux это означает UTF-8 с окончаниями строк в "
@@ -22075,15 +22166,15 @@ msgstr ""
 #: win-reg/virt-win-reg.in:662
 msgid "For more information about encoding, see L<Win::Hivex::Regedit(3)>."
 msgstr ""
-"Для получения дополнительной информации о кодировке см. L<Win::Hivex::Regedit"
-"(3)>."
+"Для получения дополнительной информации о кодировке см. "
+"L<Win::Hivex::Regedit(3)>."
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:664
 msgid ""
 "If you are unsure about the current encoding, use the L<file(1)> command.  "
-"Recent versions of Windows regedit.exe produce a UTF-16LE file with "
-"Windows-style (CRLF) line endings, like this:"
+"Recent versions of Windows regedit.exe produce a UTF-16LE file with Windows-"
+"style (CRLF) line endings, like this:"
 msgstr ""
 "Если вы не уверены в текущей кодировке, используйте команду L<file(1)>.  "
 "Последние версии regedit.exe в Windows создают файл UTF-16LE с окончаниями "
@@ -22099,8 +22190,7 @@ msgid ""
 "\n"
 msgstr ""
 " $ file software.reg\n"
-" software.reg: Текст Unicode UTF-16 с прямым порядком байтов, с очень "
-"длинными строками,\n"
+" software.reg: Текст Unicode UTF-16 с прямым порядком байтов, с очень длинными строками,\n"
 " с разделителями строк CRLF\n"
 "\n"
 
@@ -22164,8 +22254,10 @@ msgstr "\"Current\" — это тот, который Windows выберет п�
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:693
-msgid "Similarly, other C<Current...> keys in the path may need to be replaced."
-msgstr "Аналогично, другие ключи C<Current...> в пути могут потребовать замены."
+msgid ""
+"Similarly, other C<Current...> keys in the path may need to be replaced."
+msgstr ""
+"Аналогично, другие ключи C<Current...> в пути могут потребовать замены."
 
 #. type: =head1
 #: win-reg/virt-win-reg.in:696
@@ -22314,8 +22406,7 @@ msgstr ""
 #: win-reg/virt-win-reg.in:742
 msgid ""
 "First upload the program and optionally the service wrapper.  In this case "
-"the test program is called C<test.exe> and we are using the RHSrvAny "
-"wrapper:"
+"the test program is called C<test.exe> and we are using the RHSrvAny wrapper:"
 msgstr ""
 "Сначала загрузите программу и, при необходимости, оболочку службы.  В этом "
 "случае тестовая программа называется C<test.exe>, и мы используем оболочку "
@@ -22462,12 +22553,13 @@ msgstr "Пути и имена значений не чувствительны 
 msgid ""
 "L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, "
 "L<guestfish(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, "
-"L<Win::Hivex(3)>, L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, "
-"L<http://libguestfs.org/>."
+"L<Win::Hivex(3)>, L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://"
+"libguestfs.org/>."
 msgstr ""
-"L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, L<guestfish"
-"(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, L<Win::Hivex(3)>, "
-"L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://libguestfs.org/>."
+"L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, "
+"L<guestfish(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, "
+"L<Win::Hivex(3)>, L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://"
+"libguestfs.org/>."
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:826
