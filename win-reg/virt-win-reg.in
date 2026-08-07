@@ -709,6 +709,32 @@ To delete a single value within a key, use the syntax:
 Note that some of these tips modify the guest disk image.  The guest
 I<must> be shut off, else you will get disk corruption.
 
+=head2 ENABLING CRASH DUMPS
+
+Prepare a regedit file containing the registry change:
+
+ cat > test.reg <<'EOF'
+ [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl]
+ "CrashDumpEnabled"=dword:00000002
+ EOF
+
+(Note this assumes C<CurrentControlSet> is C<ControlSet001>.  See
+L</CurrentControlSet etc.> above.)
+
+Update the registry:
+
+ virt-win-reg --merge WindowsGuest test.reg
+
+C<dword:00000002> enables kernel memory dumps.  C<dword:00000001>
+enables complete memory dumps.  (See
+L<https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/memory-dump-file-options#registry-values-for-startup-and-recovery>)
+
+The memory dump is written to either C<%SystemRoot%\Memory.dmp> or
+into the C<%SystemRoot%\Minidump\> directory, and can be read out with
+tools like L<guestfish(1)>.  Memory dumps can be very large and
+Windows will not write them unless there is sufficient free disk space
+on F<C:>.
+
 =head2 RUNNING A BATCH SCRIPT WHEN A USER LOGS IN
 
 Prepare a DOS batch script, VBScript or executable.  Upload this using
