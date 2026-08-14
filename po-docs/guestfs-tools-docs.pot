@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: guestfs-tools 1.57.1\n"
+"Project-Id-Version: guestfs-tools 1.57.2\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-08-06 08:38+0100\n"
+"POT-Creation-Date: 2026-08-14 12:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1025,10 +1025,16 @@ msgstr ""
 #: common/mlcustomize/customize-options.pod:78
 #: common/mlcustomize/customize-options.pod:375
 #: common/mlcustomize/customize-options.pod:379
+#: common/mlcustomize/customize-options.pod:402
+#: common/mlcustomize/customize-options.pod:407
+#: common/mlcustomize/customize-options.pod:411
 #: common/mlcustomize/v2v-customize-options.pod:73
 #: common/mlcustomize/v2v-customize-options.pod:78
 #: common/mlcustomize/v2v-customize-options.pod:321
 #: common/mlcustomize/v2v-customize-options.pod:325
+#: common/mlcustomize/v2v-customize-options.pod:348
+#: common/mlcustomize/v2v-customize-options.pod:353
+#: common/mlcustomize/v2v-customize-options.pod:357
 #: docs/guestfs-tools-release-notes-1.50.pod:32
 #: docs/guestfs-tools-release-notes-1.50.pod:36
 #: docs/guestfs-tools-release-notes-1.50.pod:40
@@ -1047,13 +1053,14 @@ msgstr ""
 #: sparsify/virt-sparsify.pod:289 sparsify/virt-sparsify.pod:294
 #: sparsify/virt-sparsify.pod:299 sysprep/sysprep-extra-options.pod:48
 #: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:424
-#: sysprep/sysprep-extra-options.pod:428 tail/virt-tail.pod:25
-#: tail/virt-tail.pod:29 tail/virt-tail.pod:34 tail/virt-tail.pod:201
-#: tail/virt-tail.pod:206 tail/virt-tail.pod:211 tail/virt-tail.pod:222
-#: tail/virt-tail.pod:226 win-reg/virt-win-reg.in:194
+#: sysprep/sysprep-extra-options.pod:428 sysprep/sysprep-extra-options.pod:453
+#: sysprep/sysprep-extra-options.pod:458 sysprep/sysprep-extra-options.pod:462
+#: tail/virt-tail.pod:25 tail/virt-tail.pod:29 tail/virt-tail.pod:34
+#: tail/virt-tail.pod:201 tail/virt-tail.pod:206 tail/virt-tail.pod:211
+#: tail/virt-tail.pod:222 tail/virt-tail.pod:226 win-reg/virt-win-reg.in:194
 #: win-reg/virt-win-reg.in:199 win-reg/virt-win-reg.in:205
-#: win-reg/virt-win-reg.in:774 win-reg/virt-win-reg.in:780
-#: win-reg/virt-win-reg.in:786
+#: win-reg/virt-win-reg.in:800 win-reg/virt-win-reg.in:806
+#: win-reg/virt-win-reg.in:812
 msgid "*"
 msgstr ""
 
@@ -1115,7 +1122,7 @@ msgstr ""
 #: inspector/virt-inspector.pod:494 log/virt-log.pod:137 ls/virt-ls.pod:519
 #: make-fs/virt-make-fs.pod:225 resize/virt-resize.pod:848
 #: sparsify/virt-sparsify.pod:462 sysprep/virt-sysprep.pod:406
-#: tail/virt-tail.pod:237 win-reg/virt-win-reg.in:805
+#: tail/virt-tail.pod:237 win-reg/virt-win-reg.in:831
 msgid "SEE ALSO"
 msgstr ""
 
@@ -1135,7 +1142,7 @@ msgstr ""
 #: get-kernel/virt-get-kernel.pod:210 log/virt-log.pod:148 ls/virt-ls.pod:529
 #: make-fs/virt-make-fs.pod:239 resize/virt-resize.pod:873
 #: sparsify/virt-sparsify.pod:475 tail/virt-tail.pod:248
-#: win-reg/virt-win-reg.in:820
+#: win-reg/virt-win-reg.in:846
 msgid "AUTHOR"
 msgstr ""
 
@@ -1149,7 +1156,7 @@ msgstr ""
 #: log/virt-log.pod:150 ls/virt-ls.pod:531 make-fs/virt-make-fs.pod:241
 #: resize/virt-resize.pod:875 sparsify/virt-sparsify.pod:477
 #: sysprep/virt-sysprep.pod:425 tail/virt-tail.pod:250
-#: win-reg/virt-win-reg.in:822
+#: win-reg/virt-win-reg.in:848
 msgid "Richard W.M. Jones L<http://people.redhat.com/~rjones/>"
 msgstr ""
 
@@ -1167,7 +1174,7 @@ msgstr ""
 #: inspector/virt-inspector.pod:518 log/virt-log.pod:152 ls/virt-ls.pod:533
 #: make-fs/virt-make-fs.pod:243 resize/virt-resize.pod:877
 #: sparsify/virt-sparsify.pod:479 sysprep/virt-sysprep.pod:429
-#: tail/virt-tail.pod:252 win-reg/virt-win-reg.in:824
+#: tail/virt-tail.pod:252 win-reg/virt-win-reg.in:850
 msgid "COPYRIGHT"
 msgstr ""
 
@@ -3434,7 +3441,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: builder/virt-builder.pod:897 win-reg/virt-win-reg.in:770
+#: builder/virt-builder.pod:897 win-reg/virt-win-reg.in:796
 msgid "Notes:"
 msgstr ""
 
@@ -6802,20 +6809,83 @@ msgstr ""
 #. type: =item
 #: common/mlcustomize/customize-options.pod:389
 #: common/mlcustomize/v2v-customize-options.pod:335
-msgid "B<--selinux-relabel-exclude> DIR"
+msgid "B<--selinux-relabel-at-boot>"
 msgstr ""
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:391
 #: common/mlcustomize/v2v-customize-options.pod:337
 #: sysprep/sysprep-extra-options.pod:442
+msgid ""
+"This advanced option lets you defer SELinux relabelling until the first time "
+"the guest boots after conversion."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:395
+#: common/mlcustomize/v2v-customize-options.pod:341
+#: sysprep/sysprep-extra-options.pod:446
+msgid ""
+"The advantage of doing this is that conversion is quicker and uses less "
+"memory."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:398
+#: common/mlcustomize/v2v-customize-options.pod:344
+#: sysprep/sysprep-extra-options.pod:449
+msgid "The disadvantages are:"
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:404
+#: common/mlcustomize/v2v-customize-options.pod:350
+#: sysprep/sysprep-extra-options.pod:455
+msgid ""
+"The guest will take I<much> longer to boot up and become ready the first "
+"time it boots."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:409
+#: common/mlcustomize/v2v-customize-options.pod:355
+#: sysprep/sysprep-extra-options.pod:460
+msgid "The guest will reboot at least once."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:413
+#: common/mlcustomize/v2v-customize-options.pod:359
+#: sysprep/sysprep-extra-options.pod:464
+msgid "SELinux relabelling problems cannot be detected during conversion."
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:417
+#: common/mlcustomize/customize-options.pod:430
+#: common/mlcustomize/v2v-customize-options.pod:363
+#: common/mlcustomize/v2v-customize-options.pod:376
+#: sysprep/sysprep-extra-options.pod:468 sysprep/sysprep-extra-options.pod:482
+msgid "If in doubt, do not use this option."
+msgstr ""
+
+#. type: =item
+#: common/mlcustomize/customize-options.pod:419
+#: common/mlcustomize/v2v-customize-options.pod:365
+msgid "B<--selinux-relabel-exclude> DIR"
+msgstr ""
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:421
+#: common/mlcustomize/v2v-customize-options.pod:367
+#: sysprep/sysprep-extra-options.pod:473
 msgid "Exclude directories from being relabelled."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:393
-#: common/mlcustomize/v2v-customize-options.pod:339
-#: sysprep/sysprep-extra-options.pod:444
+#: common/mlcustomize/customize-options.pod:423
+#: common/mlcustomize/v2v-customize-options.pod:369
+#: sysprep/sysprep-extra-options.pod:475
 msgid ""
 "This advanced option lets you list directories in the guest which should not "
 "be relabelled, even when SELinux relabelling is enabled.  Use this "
@@ -6826,62 +6896,55 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:400
-#: common/mlcustomize/v2v-customize-options.pod:346
-#: sysprep/sysprep-extra-options.pod:451
-msgid "If in doubt, do not use this option."
-msgstr ""
-
-#. type: textblock
-#: common/mlcustomize/customize-options.pod:402
-#: common/mlcustomize/v2v-customize-options.pod:348
-#: sysprep/sysprep-extra-options.pod:453
+#: common/mlcustomize/customize-options.pod:432
+#: common/mlcustomize/v2v-customize-options.pod:378
+#: sysprep/sysprep-extra-options.pod:484
 msgid ""
 "You can pass the option multiple times, eg.  "
 "I<--selinux-relabel-exclude=/foo> I<--selinux-relabel-exclude=/bar>"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:405
-#: common/mlcustomize/v2v-customize-options.pod:351
+#: common/mlcustomize/customize-options.pod:435
+#: common/mlcustomize/v2v-customize-options.pod:381
 msgid "B<--ssh-inject> USER[:SELECTOR]"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:407
-#: common/mlcustomize/v2v-customize-options.pod:353
-#: sysprep/sysprep-extra-options.pod:459
+#: common/mlcustomize/customize-options.pod:437
+#: common/mlcustomize/v2v-customize-options.pod:383
+#: sysprep/sysprep-extra-options.pod:490
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:411
-#: common/mlcustomize/v2v-customize-options.pod:357
-#: sysprep/sysprep-extra-options.pod:463
+#: common/mlcustomize/customize-options.pod:441
+#: common/mlcustomize/v2v-customize-options.pod:387
+#: sysprep/sysprep-extra-options.pod:494
 msgid "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:414
-#: common/mlcustomize/v2v-customize-options.pod:360
-#: sysprep/sysprep-extra-options.pod:466
+#: common/mlcustomize/customize-options.pod:444
+#: common/mlcustomize/v2v-customize-options.pod:390
+#: sysprep/sysprep-extra-options.pod:497
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:417
-#: common/mlcustomize/v2v-customize-options.pod:363
+#: common/mlcustomize/customize-options.pod:447
+#: common/mlcustomize/v2v-customize-options.pod:393
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:419
-#: common/mlcustomize/v2v-customize-options.pod:365
-#: sysprep/sysprep-extra-options.pod:472
+#: common/mlcustomize/customize-options.pod:449
+#: common/mlcustomize/v2v-customize-options.pod:395
+#: sysprep/sysprep-extra-options.pod:503
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -6890,71 +6953,71 @@ msgid ""
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:425
-#: common/mlcustomize/v2v-customize-options.pod:371
+#: common/mlcustomize/customize-options.pod:455
+#: common/mlcustomize/v2v-customize-options.pod:401
 msgid "B<--timezone> TIMEZONE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:427
-#: common/mlcustomize/v2v-customize-options.pod:373
-#: sysprep/sysprep-extra-options.pod:481
+#: common/mlcustomize/customize-options.pod:457
+#: common/mlcustomize/v2v-customize-options.pod:403
+#: sysprep/sysprep-extra-options.pod:512
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:430
-#: common/mlcustomize/v2v-customize-options.pod:376
+#: common/mlcustomize/customize-options.pod:460
+#: common/mlcustomize/v2v-customize-options.pod:406
 msgid "B<--touch> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:432
-#: common/mlcustomize/v2v-customize-options.pod:378
-#: sysprep/sysprep-extra-options.pod:487
+#: common/mlcustomize/customize-options.pod:462
+#: common/mlcustomize/v2v-customize-options.pod:408
+#: sysprep/sysprep-extra-options.pod:518
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:434
-#: common/mlcustomize/v2v-customize-options.pod:380
+#: common/mlcustomize/customize-options.pod:464
+#: common/mlcustomize/v2v-customize-options.pod:410
 msgid "B<--truncate> FILE"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:436
-#: common/mlcustomize/v2v-customize-options.pod:382
-#: sysprep/sysprep-extra-options.pod:492
+#: common/mlcustomize/customize-options.pod:466
+#: common/mlcustomize/v2v-customize-options.pod:412
+#: sysprep/sysprep-extra-options.pod:523
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:439
-#: common/mlcustomize/v2v-customize-options.pod:385
+#: common/mlcustomize/customize-options.pod:469
+#: common/mlcustomize/v2v-customize-options.pod:415
 msgid "B<--truncate-recursive> PATH"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:441
-#: common/mlcustomize/v2v-customize-options.pod:387
-#: sysprep/sysprep-extra-options.pod:498
+#: common/mlcustomize/customize-options.pod:471
+#: common/mlcustomize/v2v-customize-options.pod:417
+#: sysprep/sysprep-extra-options.pod:529
 msgid "This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:443
-#: common/mlcustomize/v2v-customize-options.pod:389
+#: common/mlcustomize/customize-options.pod:473
+#: common/mlcustomize/v2v-customize-options.pod:419
 msgid "B<--uninstall> PKG,PKG.."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:445
-#: common/mlcustomize/v2v-customize-options.pod:391
-#: sysprep/sysprep-extra-options.pod:503
+#: common/mlcustomize/customize-options.pod:475
+#: common/mlcustomize/v2v-customize-options.pod:421
+#: sysprep/sysprep-extra-options.pod:534
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -6963,22 +7026,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:450
-#: common/mlcustomize/v2v-customize-options.pod:396
-#: sysprep/sysprep-extra-options.pod:508
+#: common/mlcustomize/customize-options.pod:480
+#: common/mlcustomize/v2v-customize-options.pod:426
+#: sysprep/sysprep-extra-options.pod:539
 msgid "See also I<--install>, I<--update>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:452
-#: common/mlcustomize/v2v-customize-options.pod:398
+#: common/mlcustomize/customize-options.pod:482
+#: common/mlcustomize/v2v-customize-options.pod:428
 msgid "B<--update>"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:454
-#: common/mlcustomize/v2v-customize-options.pod:400
-#: sysprep/sysprep-extra-options.pod:513
+#: common/mlcustomize/customize-options.pod:484
+#: common/mlcustomize/v2v-customize-options.pod:430
+#: sysprep/sysprep-extra-options.pod:544
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -6986,22 +7049,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:458
-#: common/mlcustomize/v2v-customize-options.pod:404
-#: sysprep/sysprep-extra-options.pod:517
+#: common/mlcustomize/customize-options.pod:488
+#: common/mlcustomize/v2v-customize-options.pod:434
+#: sysprep/sysprep-extra-options.pod:548
 msgid "See also I<--install>, I<--uninstall>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:460
-#: common/mlcustomize/v2v-customize-options.pod:406
+#: common/mlcustomize/customize-options.pod:490
+#: common/mlcustomize/v2v-customize-options.pod:436
 msgid "B<--upload> FILE:DEST"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:462
-#: common/mlcustomize/v2v-customize-options.pod:408
-#: sysprep/sysprep-extra-options.pod:522
+#: common/mlcustomize/customize-options.pod:492
+#: common/mlcustomize/v2v-customize-options.pod:438
+#: sysprep/sysprep-extra-options.pod:553
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -7009,18 +7072,18 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:466
-#: common/mlcustomize/v2v-customize-options.pod:412
-#: sysprep/sysprep-extra-options.pod:526
+#: common/mlcustomize/customize-options.pod:496
+#: common/mlcustomize/v2v-customize-options.pod:442
+#: sysprep/sysprep-extra-options.pod:557
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:469
-#: common/mlcustomize/v2v-customize-options.pod:415
-#: sysprep/sysprep-extra-options.pod:529
+#: common/mlcustomize/customize-options.pod:499
+#: common/mlcustomize/v2v-customize-options.pod:445
+#: sysprep/sysprep-extra-options.pod:560
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -7028,22 +7091,22 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:473
-#: common/mlcustomize/v2v-customize-options.pod:419
-#: sysprep/sysprep-extra-options.pod:533
+#: common/mlcustomize/customize-options.pod:503
+#: common/mlcustomize/v2v-customize-options.pod:449
+#: sysprep/sysprep-extra-options.pod:564
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr ""
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:475
-#: common/mlcustomize/v2v-customize-options.pod:421
+#: common/mlcustomize/customize-options.pod:505
+#: common/mlcustomize/v2v-customize-options.pod:451
 msgid "B<--write> FILE:CONTENT"
 msgstr ""
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:477
-#: common/mlcustomize/v2v-customize-options.pod:423
-#: sysprep/sysprep-extra-options.pod:538
+#: common/mlcustomize/customize-options.pod:507
+#: common/mlcustomize/v2v-customize-options.pod:453
+#: sysprep/sysprep-extra-options.pod:569
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr ""
 
@@ -15803,56 +15866,61 @@ msgstr ""
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:439
+msgid "B<--selinux-relabel-at-boot> (see C<customize> below)"
+msgstr ""
+
+#. type: =item
+#: sysprep/sysprep-extra-options.pod:470
 msgid "B<--selinux-relabel-exclude> DIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:456
+#: sysprep/sysprep-extra-options.pod:487
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:469
+#: sysprep/sysprep-extra-options.pod:500
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:478
+#: sysprep/sysprep-extra-options.pod:509
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:484
+#: sysprep/sysprep-extra-options.pod:515
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:489
+#: sysprep/sysprep-extra-options.pod:520
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:495
+#: sysprep/sysprep-extra-options.pod:526
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:500
+#: sysprep/sysprep-extra-options.pod:531
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:510
+#: sysprep/sysprep-extra-options.pod:541
 msgid "B<--update> (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:519
+#: sysprep/sysprep-extra-options.pod:550
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr ""
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:535
+#: sysprep/sysprep-extra-options.pod:566
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr ""
 
@@ -18233,11 +18301,69 @@ msgstr ""
 
 #. type: =head2
 #: win-reg/virt-win-reg.in:712
+msgid "ENABLING CRASH DUMPS"
+msgstr ""
+
+#. type: textblock
+#: win-reg/virt-win-reg.in:714 win-reg/virt-win-reg.in:746
+msgid "Prepare a regedit file containing the registry change:"
+msgstr ""
+
+#. type: verbatim
+#: win-reg/virt-win-reg.in:716
+#, no-wrap
+msgid ""
+" cat > test.reg <<'EOF'\n"
+" [HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\CrashControl]\n"
+" \"CrashDumpEnabled\"=dword:00000002\n"
+" EOF\n"
+"\n"
+msgstr ""
+
+#. type: textblock
+#: win-reg/virt-win-reg.in:721
+msgid ""
+"(Note this assumes C<CurrentControlSet> is C<ControlSet001>.  See "
+"L</CurrentControlSet etc.> above.)"
+msgstr ""
+
+#. type: textblock
+#: win-reg/virt-win-reg.in:724 win-reg/virt-win-reg.in:819
+msgid "Update the registry:"
+msgstr ""
+
+#. type: verbatim
+#: win-reg/virt-win-reg.in:726 win-reg/virt-win-reg.in:759
+#, no-wrap
+msgid ""
+" virt-win-reg --merge WindowsGuest test.reg\n"
+"\n"
+msgstr ""
+
+#. type: textblock
+#: win-reg/virt-win-reg.in:728
+msgid ""
+"C<dword:00000002> enables kernel memory dumps.  C<dword:00000001> enables "
+"complete memory dumps.  (See "
+"L<https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/memory-dump-file-options#registry-values-for-startup-and-recovery>)"
+msgstr ""
+
+#. type: textblock
+#: win-reg/virt-win-reg.in:732
+msgid ""
+"The memory dump is written to either C<%SystemRoot%\\Memory.dmp> or into the "
+"C<%SystemRoot%\\Minidump\\> directory, and can be read out with tools like "
+"L<guestfish(1)>.  Memory dumps can be very large and Windows will not write "
+"them unless there is sufficient free disk space on F<C:>."
+msgstr ""
+
+#. type: =head2
+#: win-reg/virt-win-reg.in:738
 msgid "RUNNING A BATCH SCRIPT WHEN A USER LOGS IN"
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:714
+#: win-reg/virt-win-reg.in:740
 msgid ""
 "Prepare a DOS batch script, VBScript or executable.  Upload this using "
 "L<guestfish(1)>.  For this example the script is called C<test.bat> and it "
@@ -18245,20 +18371,15 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: win-reg/virt-win-reg.in:718
+#: win-reg/virt-win-reg.in:744
 #, no-wrap
 msgid ""
 " guestfish -i -d WindowsGuest upload test.bat /test.bat\n"
 "\n"
 msgstr ""
 
-#. type: textblock
-#: win-reg/virt-win-reg.in:720
-msgid "Prepare a regedit file containing the registry change:"
-msgstr ""
-
 #. type: verbatim
-#: win-reg/virt-win-reg.in:722
+#: win-reg/virt-win-reg.in:748
 #, no-wrap
 msgid ""
 " cat > test.reg <<'EOF'\n"
@@ -18269,7 +18390,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:727
+#: win-reg/virt-win-reg.in:753
 msgid ""
 "In this example we use the key C<RunOnce> which means that the script will "
 "run precisely once when the first user logs in.  If you want it to run every "
@@ -18277,25 +18398,17 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:731
+#: win-reg/virt-win-reg.in:757
 msgid "Now update the registry:"
 msgstr ""
 
-#. type: verbatim
-#: win-reg/virt-win-reg.in:733
-#, no-wrap
-msgid ""
-" virt-win-reg --merge WindowsGuest test.reg\n"
-"\n"
-msgstr ""
-
 #. type: =head2
-#: win-reg/virt-win-reg.in:735
+#: win-reg/virt-win-reg.in:761
 msgid "INSTALLING A SERVICE"
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:737
+#: win-reg/virt-win-reg.in:763
 msgid ""
 "This section assumes you are familiar with Windows services, and you either "
 "have a program which handles the Windows Service Control Protocol directly "
@@ -18304,7 +18417,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:742
+#: win-reg/virt-win-reg.in:768
 msgid ""
 "First upload the program and optionally the service wrapper.  In this case "
 "the test program is called C<test.exe> and we are using the RHSrvAny "
@@ -18312,7 +18425,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: win-reg/virt-win-reg.in:746
+#: win-reg/virt-win-reg.in:772
 #, no-wrap
 msgid ""
 " guestfish -i -d WindowsGuest <<EOF\n"
@@ -18323,7 +18436,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:751
+#: win-reg/virt-win-reg.in:777
 msgid ""
 "Prepare a regedit file containing the registry changes.  In this example, "
 "the first registry change is needed for the service itself or the service "
@@ -18332,7 +18445,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: win-reg/virt-win-reg.in:756
+#: win-reg/virt-win-reg.in:782
 #, no-wrap
 msgid ""
 " cat > service.reg <<'EOF'\n"
@@ -18347,7 +18460,7 @@ msgid ""
 msgstr ""
 
 #. type: verbatim
-#: win-reg/virt-win-reg.in:765
+#: win-reg/virt-win-reg.in:791
 #, no-wrap
 msgid ""
 " [HKLM\\SYSTEM\\ControlSet001\\services\\RHSrvAny\\Parameters]\n"
@@ -18358,7 +18471,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:776
+#: win-reg/virt-win-reg.in:802
 msgid ""
 "For use of C<ControlSet001> see the section above in this manual page.  You "
 "may need to adjust this according to the control set that is in use by the "
@@ -18366,7 +18479,7 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:782
+#: win-reg/virt-win-reg.in:808
 msgid ""
 "C<\"ObjectName\"> controls the privileges that the service will have.  An "
 "alternative is C<\"ObjectName\"=\"LocalSystem\"> which would be the most "
@@ -18374,19 +18487,14 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:788
+#: win-reg/virt-win-reg.in:814
 msgid ""
 "For the meaning of the magic numbers, see this Microsoft KB article: "
 "L<http://support.microsoft.com/kb/103000>."
 msgstr ""
 
-#. type: textblock
-#: win-reg/virt-win-reg.in:793
-msgid "Update the registry:"
-msgstr ""
-
 #. type: verbatim
-#: win-reg/virt-win-reg.in:795
+#: win-reg/virt-win-reg.in:821
 #, no-wrap
 msgid ""
 " virt-win-reg --merge WindowsGuest service.reg\n"
@@ -18394,12 +18502,12 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: win-reg/virt-win-reg.in:797
+#: win-reg/virt-win-reg.in:823
 msgid "SHELL QUOTING"
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:799
+#: win-reg/virt-win-reg.in:825
 msgid ""
 "Be careful when passing parameters containing C<\\> (backslash) in the "
 "shell.  Usually you will have to use 'single quotes' or double backslashes "
@@ -18407,12 +18515,12 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:803
+#: win-reg/virt-win-reg.in:829
 msgid "Paths and value names are case-insensitive."
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:807
+#: win-reg/virt-win-reg.in:833
 msgid ""
 "L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, "
 "L<guestfish(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, "
@@ -18421,6 +18529,6 @@ msgid ""
 msgstr ""
 
 #. type: textblock
-#: win-reg/virt-win-reg.in:826
+#: win-reg/virt-win-reg.in:852
 msgid "Copyright (C) 2010 Red Hat Inc."
 msgstr ""
