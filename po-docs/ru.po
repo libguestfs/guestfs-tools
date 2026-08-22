@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2026-08-12 09:17+0000\n"
+"PO-Revision-Date: 2026-08-15 14:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
@@ -8291,10 +8291,8 @@ msgstr "Это опция совместимости, которая ничег�
 #. type: =item
 #: common/mlcustomize/customize-options.pod:389
 #: common/mlcustomize/v2v-customize-options.pod:335
-#, fuzzy
-#| msgid "B<--selinux-relabel>"
 msgid "B<--selinux-relabel-at-boot>"
-msgstr "B<--selinux-relabel>"
+msgstr "B<--selinux-relabel-at-boot>"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:391
@@ -8304,6 +8302,8 @@ msgid ""
 "This advanced option lets you defer SELinux relabelling until the first time "
 "the guest boots after conversion."
 msgstr ""
+"Эта расширенная опция позволяет отложить перемаркировку SELinux до первого "
+"запуска гостевой системы после преобразования."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:395
@@ -8313,13 +8313,15 @@ msgid ""
 "The advantage of doing this is that conversion is quicker and uses less "
 "memory."
 msgstr ""
+"Преимущество такого подхода в том, что преобразование выполняется быстрее и "
+"использует меньше памяти."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:398
 #: common/mlcustomize/v2v-customize-options.pod:344
 #: sysprep/sysprep-extra-options.pod:449
 msgid "The disadvantages are:"
-msgstr ""
+msgstr "Недостатки:"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:404
@@ -8329,13 +8331,14 @@ msgid ""
 "The guest will take I<much> longer to boot up and become ready the first "
 "time it boots."
 msgstr ""
+"Гостевая система будет загружаться I<значительно> дольше при первом запуске."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:409
 #: common/mlcustomize/v2v-customize-options.pod:355
 #: sysprep/sysprep-extra-options.pod:460
 msgid "The guest will reboot at least once."
-msgstr ""
+msgstr "Гостевая система перезагрузится как минимум один раз."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:413
@@ -8343,6 +8346,8 @@ msgstr ""
 #: sysprep/sysprep-extra-options.pod:464
 msgid "SELinux relabelling problems cannot be detected during conversion."
 msgstr ""
+"Проблемы перемаркировки SELinux не могут быть обнаружены во время "
+"преобразования."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:417
