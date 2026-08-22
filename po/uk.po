@@ -13,10 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-07-11 10:17+0000\n"
+"PO-Revision-Date: 2026-08-15 14:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/uk/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
@@ -772,7 +772,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_cmdline.ml:511
 msgid "Defer SELinux relabelling until boot"
-msgstr ""
+msgstr "Відкласти повторне встановлення міток SELinux до завантаження"
 
 #: common/mlcustomize/customize_cmdline.ml:244
 msgid "Delete a file or directory"
@@ -932,7 +932,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_cmdline.ml:505
 msgid "Exclude directories from SELinux relabelling"
-msgstr ""
+msgstr "Виключити каталоги з повторного встановлення міток SELinux"
 
 #: resize/resize.ml:207
 msgid "Expand logical volume"
@@ -1655,7 +1655,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_run.ml:367
 msgid "SELinux relabelling deferred to first boot"
-msgstr ""
+msgstr "Повторне встановлення міток SELinux відкладено до першого завантаження"
 
 #. common/mlcustomize/customize_cmdline.ml:222
 #: common/mlcustomize/customize_cmdline.ml:336
