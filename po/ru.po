@@ -5,6 +5,7 @@
 # Translators:
 # Stanislav Hanzhin <hanzhin.stas@gmail.com>, 2012
 # Andrei Stepanov <adem4ik@gmail.com>, 2026.
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
@@ -12,7 +13,7 @@ msgstr ""
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
 "PO-Revision-Date: 2026-08-26 01:10+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
 "Language: ru\n"

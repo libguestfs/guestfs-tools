@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the libguestfs package.
 #
 # Translators:
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
 "PO-Revision-Date: 2026-08-26 01:18+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: English (United Kingdom) <https://translate.fedoraproject.org/"
 "projects/libguestfs/guestfs-tools-docs-master/en_GB/>\n"
 "Language: en_GB\n"
@@ -13403,8 +13404,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514

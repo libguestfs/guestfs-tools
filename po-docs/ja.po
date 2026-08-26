@@ -9,13 +9,14 @@
 # carrotsoft <www.carrotsoft@gmail.com>, 2011
 # carrotsoft <www.carrotsoft@gmail.com>, 2011
 # Richard Jones <rjones@redhat.com>, 2017. #zanata
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
 "PO-Revision-Date: 2026-08-26 01:25+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ja/>\n"
 "Language: ja\n"
@@ -12037,8 +12038,8 @@ msgstr ""
 #| "guest."
 msgid "This program extracts the kernel and initramfs from a guest."
 msgstr ""
-"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーをエク"
-"スポートおよびマージできます。"
+"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーを"
+"エクスポートおよびマージできます。"
 
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:18
@@ -13079,8 +13080,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514

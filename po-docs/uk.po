@@ -12,13 +12,14 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
 # Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata
 # Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
 "PO-Revision-Date: 2026-08-26 01:32+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/uk/>\n"
 "Language: uk\n"
@@ -4052,7 +4053,8 @@ msgstr ""
 "   --install @japanese-support \\\n"
 "   --install @xfce \\\n"
 "   --install xorg-x11-server-Xorg,xorg-x11-drivers,rsyslog \\\n"
-"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target \\\n"
+"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/"
+"default.target \\\n"
 "   --firstboot-command 'localectl set-locale LANG=ja_JP.utf8' \\\n"
 "   --firstboot-command 'localectl set-keymap jp' \\\n"
 "   --firstboot-command 'systemctl isolate graphical.target'\n"
@@ -4595,7 +4597,8 @@ msgstr ""
 "   --update \\\n"
 "   --install puppet \\\n"
 "   --append-line '/etc/puppet/puppet.conf:[agent]' \\\n"
-"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/' \\\n"
+"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/"
+"' \\\n"
 "   --run-command 'systemctl enable puppet' \\\n"
 "   --selinux-relabel\n"
 "\n"
@@ -9558,8 +9561,8 @@ msgid ""
 msgstr ""
 "I<--firstboot скрипт> вивантажує файл C<скрипт> до гостьової системи і "
 "робить так, щоб він запускався у гостьовій системі під час наступного її "
-"завантаження. (Скрипт буде запущено лише один раз, при «першому "
-"завантаження».)"
+"завантаження. (Скрипт буде запущено лише один раз, при «першому завантаження"
+"».)"
 
 #. type: textblock
 #: customize/virt-customize.pod:316
@@ -11887,8 +11890,8 @@ msgid ""
 "(F<cat/>) for no particular reason.  These were moved to separate "
 "directories."
 msgstr ""
-"Код програм L<virt-cat(1)>, L<virt-filesystems(1)>, L<virt-log(1)>, L<virt-"
-"ls(1)> and L<virt-tail(1)> та документація до них."
+"Код програм L<virt-cat(1)>, L<virt-filesystems(1)>, L<virt-log(1)>, L<virt-ls"
+"(1)> and L<virt-tail(1)> та документація до них."
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:124
@@ -15337,8 +15340,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514
