@@ -14,8 +14,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-08-26 01:04+0000\n"
-"Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
+"PO-Revision-Date: 2026-08-26 01:05+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/es/>\n"
 "Language: es\n"
@@ -4601,8 +4601,8 @@ msgstr "virt-win-reg: {p}: no es una ruta de Windows Registry soportada\n"
 #, perl-brace-format
 msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
 msgstr ""
-"virt-win-reg: {p}: no ha sido posible descargar el archivo de registro: "
-"{err}\n"
+"virt-win-reg: {p}: no ha sido posible descargar el archivo de registro: {err}"
+"\n"
 
 #: win-reg/virt-win-reg.in:598
 #, perl-brace-format
