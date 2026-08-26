@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.55.8\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-07-07 09:18+0000\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"PO-Revision-Date: 2026-08-26 01:35+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ka/>\n"
 "Language: ka\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
@@ -758,7 +758,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_cmdline.ml:244
 msgid "Delete a file or directory"
-msgstr ""
+msgstr "ფაილის, ან საქაღალდის წაშლა"
 
 #: resize/resize.ml:201
 msgid "Delete partition"
@@ -918,7 +918,7 @@ msgstr ""
 
 #: resize/resize.ml:207
 msgid "Expand logical volume"
-msgstr ""
+msgstr "ლოგიკური ტომის გაფართოება"
 
 #: resize/resize.ml:202
 msgid "Expand partition"
@@ -992,7 +992,7 @@ msgstr ""
 
 #: builder/list_entries.ml:64
 msgid "Fingerprint: %s\n"
-msgstr ""
+msgstr "თითის ანაბეჭდი: %s\n"
 
 #: customize/customize_main.ml:206 builder/builder.ml:796
 msgid "Finishing off"
@@ -1100,11 +1100,11 @@ msgstr ""
 
 #: sparsify/cmdline.ml:72
 msgid "Ignore filesystem"
-msgstr ""
+msgstr "ფაილური სისტემის გამოტოვება"
 
 #: resize/resize.ml:206
 msgid "Ignore partition"
-msgstr ""
+msgstr "დანაყოფის გამოტოვება"
 
 #: sysprep/sysprep_operation_ca_certificates.ml:56
 msgid "In case any certificate is removed, the system CA store is updated."
@@ -1136,7 +1136,7 @@ msgstr "პირველი ჩატვირთვის პაკეტე�
 
 #: common/mlcustomize/customize_run.ml:202
 msgid "Installing firstboot script: %s"
-msgstr ""
+msgstr "პირველი ჩატვირთვის პროგრამის დაყენება: %s"
 
 #: common/mlcustomize/customize_run.ml:248
 msgid "Installing packages: %s"
@@ -3486,8 +3486,7 @@ msgstr "libvirt-თან მიერთების შეცდომა (კ
 #: common/parallel/domains.c:114
 #, c-format
 msgid "could not get number of running domains (code %d, domain %d): %s"
-msgstr ""
-"გაშვებული დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
+msgstr "გაშვებული დომენების რაოდენობის მიღების შეცდომა (კოდი %d, დომენი %d): %s"
 
 #: common/parallel/domains.c:125
 #, c-format

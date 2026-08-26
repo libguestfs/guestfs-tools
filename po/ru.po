@@ -5,14 +5,15 @@
 # Translators:
 # Stanislav Hanzhin <hanzhin.stas@gmail.com>, 2012
 # Andrei Stepanov <adem4ik@gmail.com>, 2026.
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-08-08 08:23+0000\n"
-"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
+"PO-Revision-Date: 2026-08-26 01:10+0000\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
 "Language: ru\n"
@@ -331,8 +332,7 @@ msgstr "%s: файл слишком мал для образа диска (%Ld �
 
 #: builder/index_parser.ml:81
 msgid "%s: index is corrupt: %s: field ‘%s[%s]’ appears two or more times\n"
-msgstr ""
-"%s: индекс повреждён: %s: поле «%s[%s]» встречается два или более раз\n"
+msgstr "%s: индекс повреждён: %s: поле «%s[%s]» встречается два или более раз\n"
 
 #: builder/index_parser.ml:84
 msgid "%s: index is corrupt: %s: field ‘%s’ appears two or more times\n"
@@ -2541,8 +2541,7 @@ msgstr "нельзя выводить на символьное устройст
 
 #: sysprep/sysprep_operation_fs_uuids.ml:39
 msgid "cannot set random UUID on filesystem %s type %s: %s"
-msgstr ""
-"не удаётся установить случайный UUID на файловой системе %s типа %s: %s"
+msgstr "не удаётся установить случайный UUID на файловой системе %s типа %s: %s"
 
 #: common/mlcustomize/guest_packages.ml:29
 msgid ""
@@ -2606,10 +2605,9 @@ msgid ""
 "guest.  It may be either a very old or very new version of Windows that we "
 "cannot process."
 msgstr ""
-"не удалось найти запись реестра "
-"HKEY_LOCAL_MACHINE\\SYSTEM\\DriverDatabase\\DeviceIds в этой гостевой "
-"системе Windows. Возможно, это очень старая или очень новая версия Windows, "
-"которую мы не можем обработать."
+"не удалось найти запись реестра HKEY_LOCAL_MACHINE\\SYSTEM\\DriverDatabase\\D"
+"eviceIds в этой гостевой системе Windows. Возможно, это очень старая или "
+"очень новая версия Windows, которую мы не можем обработать."
 
 #: common/mlcustomize/firstboot.ml:232
 msgid ""
@@ -2804,8 +2802,8 @@ msgid ""
 "firstboot: unknown version for old firstboot.service file %s (md5=%s), it "
 "will not be removed"
 msgstr ""
-"firstboot: неизвестная версия для старого файла firstboot.service %s "
-"(md5=%s), он не будет удалён"
+"firstboot: неизвестная версия для старого файла firstboot.service %s (md5=%s)"
+", он не будет удалён"
 
 #. resize/resize.ml:210
 #. resize/resize.ml:205
@@ -3135,8 +3133,8 @@ msgid ""
 msgstr ""
 "выходное устройство (%s) является разделом. Если вы записываете на USB-ключ "
 "или внешний диск, вам, вероятно, нужно записывать на всё устройство, а не на "
-"раздел. Если это предупреждение ошибочно, вы можете отключить его с помощью "
-"--no-warn-if-partition"
+"раздел. Если это предупреждение ошибочно, вы можете отключить его с "
+"помощью --no-warn-if-partition"
 
 #: builder/builder.ml:416
 msgid ""
@@ -3428,8 +3426,8 @@ msgstr ""
 #: common/mlcustomize/timezone.ml:35
 msgid "timezone '%s' does not exist, use a location like 'Europe/London'"
 msgstr ""
-"часовой пояс «%s» не существует, используйте местоположение, например, "
-"«Europe/Moscow»"
+"часовой пояс «%s» не существует, используйте местоположение, например, «"
+"Europe/Moscow»"
 
 #: common/mlcustomize/customize_run.ml:304
 msgid "timezone could not be set for this type of guest"
@@ -3509,8 +3507,8 @@ msgid ""
 "user-accounts: --remove-user-accounts parameter was used, but the \"user-"
 "account\" operation is not enabled"
 msgstr ""
-"user-accounts: использован параметр --remove-user-accounts, но операция "
-"«user-account» не включена"
+"user-accounts: использован параметр --remove-user-accounts, но операция «"
+"user-account» не включена"
 
 #: sysprep/sysprep_operation_user_account.ml:38
 msgid "user-accounts: empty user name"
@@ -4005,8 +4003,7 @@ msgstr ""
 #: common/options/inspect.c:161
 #, c-format
 msgid "%s: some filesystems could not be mounted (ignored)\n"
-msgstr ""
-"%s: некоторые файловые системы не удалось смонтировать (игнорируется)\n"
+msgstr "%s: некоторые файловые системы не удалось смонтировать (игнорируется)\n"
 
 #: common/options/inspect.c:178
 #, c-format
@@ -4186,8 +4183,8 @@ msgstr ""
 "  --blocksize[=512|4096]\n"
 "                        Установить размер сектора диска для параметра -a\n"
 "  -c|--connect uri      Указать URI libvirt для параметра -d\n"
-"  --csv                 Вывод в формате CSV (значения, разделённые "
-"запятыми)\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
 "  -d|--domain гость     Добавить диски из гостя libvirt\n"
 "  --format[=raw|..]     Принудительно задать формат диска для параметра -a\n"
 "  -h|--human-readable   Выводить размеры в удобочитаемом формате\n"
@@ -4306,12 +4303,12 @@ msgstr ""
 "  --atime               Не игнорировать изменения времени доступа\n"
 "  -A образ              Добавить образ из второго гостя\n"
 "  --blocksize[=512|4096]\n"
-"                        Установить размер сектора диска для параметра -a или "
-"-A\n"
+"                        Установить размер сектора диска для параметра -a "
+"или -A\n"
 "  --checksum[=...]      Использовать контрольную сумму содержимого файла\n"
 "  -c|--connect uri      Указать URI libvirt для параметра -d\n"
-"  --csv                 Вывод в формате CSV (значения, разделённые "
-"запятыми)\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
 "  --dir-links           Не игнорировать изменения nlink каталогов\n"
 "  --dir-times           Не игнорировать изменения времени каталогов\n"
 "  -d|--domain гость     Добавить диски из первого гостя libvirt\n"
@@ -4482,8 +4479,8 @@ msgstr ""
 "  --blocksize[=512|4096]\n"
 "                        Установить размер сектора диска для параметра -a\n"
 "  -c|--connect uri      Указать URI libvirt для параметра -d\n"
-"  --csv                 Вывод в формате CSV (значения, разделённые "
-"запятыми)\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
 "  -d|--domain гость     Добавить диски из гостя libvirt\n"
 "  --echo-keys           Не отключать эхо для парольных фраз\n"
 "  --extra               Показать файловые системы подкачки и данных\n"
@@ -4888,8 +4885,8 @@ msgstr ""
 "                        Установить размер сектора диска для параметра -a\n"
 "  --checksum[=...]      Показывать контрольные суммы файлов\n"
 "  -c|--connect uri      Указать URI libvirt для параметра -d\n"
-"  --csv                 Вывод в формате CSV (значения, разделённые "
-"запятыми)\n"
+"  --csv                 Вывод в формате CSV (значения, разделённые запятыми)"
+"\n"
 "  -d|--domain гость     Добавить диски из гостя libvirt\n"
 "  --echo-keys           Не отключать эхо для парольных фраз\n"
 "  --extra-stats         Показывать дополнительную статистику\n"

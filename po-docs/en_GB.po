@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the libguestfs package.
 #
 # Translators:
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2015-02-21 10:15+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/"
-"libguestfs/language/en_GB/)\n"
+"PO-Revision-Date: 2026-08-26 01:18+0000\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
+"Language-Team: English (United Kingdom) <https://translate.fedoraproject.org/"
+"projects/libguestfs/guestfs-tools-docs-master/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -1157,9 +1158,9 @@ msgid ""
 "document above contains an example."
 msgstr ""
 "For Red Hat Enterprise Linux E<le> 5, use a Kickstart script that contains "
-"an explicit C<%pre> section that creates aligned partitions using "
-"L<parted(8)>.  Do not use the Kickstart C<part> command.  The NetApp "
-"document above contains an example."
+"an explicit C<%pre> section that creates aligned partitions using L<parted"
+"(8)>.  Do not use the Kickstart C<part> command.  The NetApp document above "
+"contains an example."
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:352 builder/virt-builder-repository.pod:202
@@ -11928,9 +11929,9 @@ msgid ""
 "fs(1)>.  If you are creating a blank disk to use in L<guestfish(1)>, you "
 "should instead use the guestfish I<-N> option."
 msgstr ""
-"To create a disk containing data, you may be better to use L<virt-make-"
-"fs(1)>.  If you are creating a blank disk to use in L<guestfish(1)>, you "
-"should instead use the guestfish I<-N> option."
+"To create a disk containing data, you may be better to use L<virt-make-fs(1)>"
+".  If you are creating a blank disk to use in L<guestfish(1)>, you should "
+"instead use the guestfish I<-N> option."
 
 #. type: textblock
 #: format/virt-format.pod:20
@@ -11987,8 +11988,7 @@ msgstr ""
 #. type: textblock
 #: format/virt-format.pod:40
 msgid "Create an empty filesystem (C<ext3>, C<ntfs> etc) inside the partition."
-msgstr ""
-"Create an empty filesystem (C<ext3>, C<ntfs> etc) inside the partition."
+msgstr "Create an empty filesystem (C<ext3>, C<ntfs> etc) inside the partition."
 
 #. type: =item
 #: format/virt-format.pod:42
@@ -13361,9 +13361,9 @@ msgid ""
 "also output in other formats like text."
 msgstr ""
 "As described above, early versions of libguestfs shipped with a different "
-"virt-inspector program written in Perl (the current version is written in "
-"C).  The XML output of the Perl virt-inspector was different and it could "
-"also output in other formats like text."
+"virt-inspector program written in Perl (the current version is written in C)"
+".  The XML output of the Perl virt-inspector was different and it could also "
+"output in other formats like text."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:480
@@ -13404,8 +13404,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514
@@ -13536,7 +13536,8 @@ msgid ""
 " virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory ...]\n"
 "\n"
 msgstr ""
-" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory ...]\n"
+" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory "
+"...]\n"
 "\n"
 
 #. type: verbatim
@@ -13594,8 +13595,8 @@ msgid ""
 "L<guestfs(3)> API."
 msgstr ""
 "C<virt-ls> can do many simple file listings.  For more complicated cases you "
-"may need to use L<guestfish(1)>, or write a program directly to the "
-"L<guestfs(3)> API."
+"may need to use L<guestfish(1)>, or write a program directly to the L<guestfs"
+"(3)> API."
 
 #. type: textblock
 #: ls/virt-ls.pod:35
@@ -14328,11 +14329,11 @@ msgid ""
 "(eg. to import large amounts of read-only data to a VM)."
 msgstr ""
 "Virt-make-fs is a command line tool for creating a filesystem from a tar "
-"archive or some files in a directory.  It is similar to tools like "
-"L<mkisofs(1)>, L<genisoimage(1)> and L<mksquashfs(1)>.  Unlike those tools, "
-"it can create common filesystem types like ext2/3 or NTFS, which can be "
-"useful if you want to attach these filesystems to existing virtual machines "
-"(eg. to import large amounts of read-only data to a VM)."
+"archive or some files in a directory.  It is similar to tools like L<mkisofs"
+"(1)>, L<genisoimage(1)> and L<mksquashfs(1)>.  Unlike those tools, it can "
+"create common filesystem types like ext2/3 or NTFS, which can be useful if "
+"you want to attach these filesystems to existing virtual machines (eg. to "
+"import large amounts of read-only data to a VM)."
 
 #. type: textblock
 #: make-fs/virt-make-fs.pod:23
@@ -14381,8 +14382,8 @@ msgid ""
 "ISO9660).  Here are some of the more common choices:"
 msgstr ""
 "The default filesystem type is C<ext2>.  Just about any filesystem type that "
-"libguestfs supports can be used (but I<not> read-only formats like "
-"ISO9660).  Here are some of the more common choices:"
+"libguestfs supports can be used (but I<not> read-only formats like ISO9660)"
+".  Here are some of the more common choices:"
 
 #. type: =item
 #: make-fs/virt-make-fs.pod:44
@@ -14978,8 +14979,7 @@ msgstr "3. Look at current sizing"
 #. type: textblock
 #: resize/virt-resize.pod:91
 msgid "Use L<virt-filesystems(1)> to display the current partitions and sizes:"
-msgstr ""
-"Use L<virt-filesystems(1)> to display the current partitions and sizes:"
+msgstr "Use L<virt-filesystems(1)> to display the current partitions and sizes:"
 
 #. type: verbatim
 #: resize/virt-resize.pod:94
@@ -15786,8 +15786,8 @@ msgid ""
 msgstr ""
 "Ignore the named partition.  Effectively this means the partition is "
 "allocated on the destination disk, but the content is not copied across from "
-"the source disk.  The content of the partition will be blank (all zero "
-"bytes)."
+"the source disk.  The content of the partition will be blank (all zero bytes)"
+"."
 
 #. type: =item
 #: resize/virt-resize.pod:439
@@ -16432,8 +16432,8 @@ msgstr ""
 "Windows disks which use NTFS must be consistent before virt-resize can be "
 "used.  If the ntfsresize operation fails, try booting the original VM and "
 "running C<chkdsk /f> on all NTFS partitions, then shut down the VM cleanly.  "
-"For further information see: L<https://bugzilla.redhat.com/show_bug.cgi?"
-"id=975753>"
+"For further information see: L<https://bugzilla.redhat.com/"
+"show_bug.cgi?id=975753>"
 
 #. type: textblock
 #: resize/virt-resize.pod:744
@@ -16478,8 +16478,8 @@ msgid ""
 "STARTUP>."
 msgstr ""
 "Windows 8 \"fast startup\" can prevent virt-resize from resizing NTFS "
-"partitions.  See L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST "
-"STARTUP>."
+"partitions.  See L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>"
+"."
 
 #. type: =head2
 #: resize/virt-resize.pod:762
@@ -16730,8 +16730,8 @@ msgid ""
 "-sh>.  It can make a huge difference:"
 msgstr ""
 "If the input is raw, then the default output is raw sparse.  B<You must "
-"check the output size using a tool that understands sparseness> such as C<du "
-"-sh>.  It can make a huge difference:"
+"check the output size using a tool that understands sparseness> such as "
+"C<du -sh>.  It can make a huge difference:"
 
 #. type: verbatim
 #: sparsify/virt-sparsify.pod:35
@@ -18510,8 +18510,8 @@ msgid ""
 "On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
 "(VGs), new random UUIDs are generated and assigned to those PVs and VGs."
 msgstr ""
-"On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
-"(VGs), new random UUIDs are generated and assigned to those PVs and VGs."
+"On Linux guests that have LVM2 physical volumes (PVs) or volume groups (VGs)"
+", new random UUIDs are generated and assigned to those PVs and VGs."
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:477
@@ -19392,9 +19392,9 @@ msgid ""
 "by default or blank if not.  Subsequent fields on the same line are the "
 "description of the operation."
 msgstr ""
-"The first field is the operation name, which can be supplied to I<--"
-"enable>.  The second field is a C<*> character if the operation is enabled "
-"by default or blank if not.  Subsequent fields on the same line are the "
+"The first field is the operation name, which can be supplied to I<--enable>"
+".  The second field is a C<*> character if the operation is enabled by "
+"default or blank if not.  Subsequent fields on the same line are the "
 "description of the operation."
 
 #. type: textblock
@@ -20017,8 +20017,8 @@ msgid ""
 "L<Win::Hivex::Regedit(3)/ENCODING STRINGS>."
 msgstr ""
 "When merging (only), you may need to specify the encoding for strings to be "
-"used in the hive file.  This is explained in detail in "
-"L<Win::Hivex::Regedit(3)/ENCODING STRINGS>."
+"used in the hive file.  This is explained in detail in L<Win::Hivex::Regedit"
+"(3)/ENCODING STRINGS>."
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:176

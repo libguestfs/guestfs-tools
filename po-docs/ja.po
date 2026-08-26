@@ -9,21 +9,22 @@
 # carrotsoft <www.carrotsoft@gmail.com>, 2011
 # carrotsoft <www.carrotsoft@gmail.com>, 2011
 # Richard Jones <rjones@redhat.com>, 2017. #zanata
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2017-02-24 07:33+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/libguestfs/"
-"language/ja/)\n"
+"PO-Revision-Date: 2026-08-26 01:25+0000\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
+"Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+"libguestfs/guestfs-tools-docs-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -46,8 +47,7 @@ msgstr "名前"
 #. type: textblock
 #: align/virt-alignment-scan.pod:3
 msgid "virt-alignment-scan - Check alignment of virtual machine partitions"
-msgstr ""
-"virt-alignment-scan - 仮想マシンのパーティションにおけるアライメントの確認"
+msgstr "virt-alignment-scan - 仮想マシンのパーティションにおけるアライメントの確認"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:5 builder/virt-builder-repository.pod:12
@@ -114,11 +114,11 @@ msgid ""
 "partitions can result in an operating system issuing more I/O than should be "
 "necessary."
 msgstr ""
-"古いオペレーティングシステムが自身をインストールするとき、パーティションツー"
-"ルが基礎となるストレージと一致しないセクターにパーティションを配置します (一"
-"般的に最初のパーティションはセクター C<63> から始まります)。一致しないパー"
-"ティションにより、必要以上に I/O を発生させるというオペレーティングシステムの"
-"問題を引き起こします。"
+"古いオペレーティングシステムが自身をインストールするとき、"
+"パーティションツールが基礎となるストレージと一致しないセクターに"
+"パーティションを配置します (一般的に最初のパーティションはセクター C<63> から"
+"始まります)。一致しないパーティションにより、必要以上に I/O を発生させるとい"
+"うオペレーティングシステムの問題を引き起こします。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:21
@@ -126,8 +126,8 @@ msgid ""
 "The virt-alignment-scan tool checks the alignment of partitions in virtual "
 "machines and disk images and warns you if there are alignment problems."
 msgstr ""
-"virt-alignment-scan ツールは、仮想マシンおよびディスクイメージにあるパーティ"
-"ションの配置を確認します。配置に問題があれば警告します。"
+"virt-alignment-scan ツールは、仮想マシンおよびディスクイメージにある"
+"パーティションの配置を確認します。配置に問題があれば警告します。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:25
@@ -137,10 +137,10 @@ msgid ""
 "summarises the problem and possible solutions: L<http://media.netapp.com/"
 "documents/tr-3747.pdf>"
 msgstr ""
-"現在、配置の問題を修正するための仮想化ツールはありません。ゲストオペレーティ"
-"ングシステムを再インストールすることだけができます。以下の NetApp のドキュメ"
-"ントが、問題と取り得る解決策をまとめています: L<http://media.netapp.com/"
-"documents/tr-3747.pdf>"
+"現在、配置の問題を修正するための仮想化ツールはありません。"
+"ゲストオペレーティングシステムを再インストールすることだけができます。以下の "
+"NetApp のドキュメントが、問題と取り得る解決策をまとめています: L<http://"
+"media.netapp.com/documents/tr-3747.pdf>"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:30
@@ -188,8 +188,8 @@ msgid ""
 "To run the tool on a guest known to libvirt, use the I<-d> option and "
 "possibly the I<-c> option:"
 msgstr ""
-"libvirt が把握している仮想マシンにおいてツールを実行するには、I<-d> オプショ"
-"ンおよびおそらく I<-c> オプションを使用します:"
+"libvirt が把握している仮想マシンにおいてツールを実行するには、I<-d> "
+"オプションおよびおそらく I<-c> オプションを使用します:"
 
 #. type: verbatim
 #: align/virt-alignment-scan.pod:45
@@ -275,9 +275,9 @@ msgid ""
 "column is prefixed by the libvirt name or UUID (if I<--uuid> is given).  eg: "
 "C<WinXP:/dev/sda1>"
 msgstr ""
-"すべての libvirt 仮想マシンを一覧表示するとき (I<-a> や I<-d> オプションな"
-"し)、この列は libvirt 名または UUID が先頭につきます (I<--uuid> が指定されて"
-"いると)。例: C<WinXP:/dev/sda1>"
+"すべての libvirt 仮想マシンを一覧表示するとき (I<-a> や I<-d> オプションなし)"
+"、この列は libvirt 名または UUID が先頭につきます (I<--uuid> が指定されている"
+"と)。例: C<WinXP:/dev/sda1>"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:77
@@ -310,8 +310,8 @@ msgid ""
 "C<ok> if the alignment is best for performance, or C<bad> if the alignment "
 "can cause performance problems"
 msgstr ""
-"アライメントが最適なパフォーマンスの場合に C<ok>、アライメントがパフォーマン"
-"スの問題を引き起こす可能性がある場合に C<bad>。"
+"アライメントが最適なパフォーマンスの場合に C<ok>、アライメントが"
+"パフォーマンスの問題を引き起こす可能性がある場合に C<bad>。"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:90
@@ -335,8 +335,7 @@ msgstr ""
 #. type: textblock
 #: align/virt-alignment-scan.pod:99
 msgid "If you just want the exit code with no output, use the I<-q> option."
-msgstr ""
-"出力なしで終了コードを欲しいならば、I<-q> オプションを使用してください。"
+msgstr "出力なしで終了コードを欲しいならば、I<-q> オプションを使用してください。"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:101 builder/virt-builder-repository.pod:87
@@ -440,8 +439,8 @@ msgstr ""
 #: tail/virt-tail.pod:69
 msgid "Add a remote disk.  See L<guestfish(1)/ADDING REMOTE STORAGE>."
 msgstr ""
-"リモートディスクを追加します。 L<guestfish(1)/リモートストレージの追加> 参"
-"照。"
+"リモートディスクを追加します。 L<guestfish(1)/リモートストレージの追加> 参照"
+"。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:124 cat/virt-cat.pod:76 df/virt-df.pod:96
@@ -484,8 +483,8 @@ msgid ""
 "If using libvirt, connect to the given I<URI>.  If omitted, then we connect "
 "to the default libvirt hypervisor."
 msgstr ""
-"libvirt を使用していると、指定された I<URI> に接続します。  省略すると、デ"
-"フォルトの libvirt ハイパーバイザーに接続します。"
+"libvirt を使用していると、指定された I<URI> に接続します。  省略すると、"
+"デフォルトの libvirt ハイパーバイザーに接続します。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:133 cat/virt-cat.pod:85
@@ -634,8 +633,8 @@ msgid ""
 "with malicious guests (CVE-2010-3851)."
 msgstr ""
 "仮想マシンのディスクイメージが信頼できない raw 形式である場合、 ディスク形式"
-"を指定するためにこのオプションを使用すべきです。 これにより、悪意のある仮想マ"
-"シンにより起こり得る セキュリティ問題を回避できます (CVE-2010-3851)。"
+"を指定するためにこのオプションを使用すべきです。 これにより、悪意のある仮想"
+"マシンにより起こり得る セキュリティ問題を回避できます (CVE-2010-3851)。"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:167 df/virt-df.pod:164
@@ -831,14 +830,13 @@ msgid ""
 "places the first partition at the start of the second \"track\", at sector "
 "63."
 msgstr ""
-"Windows 2008 および ca.2010 以前のLinux よりも古いオペレーティングシステム"
-"は、512 バイトのセクター容量でセクター 63 に、第 1 パーティションの第1セク"
-"ターを配置しなければいけません。これは古くからの障害によるものです。ドライブ"
-"は BIOS にシリンダー/ヘッド/セクター (CHS) の配置を通知する必要があります。配"
-"置は最近のドライブにおいては意味がありませんが、必ずトラックあたり 63 セク"
-"ターを持つことをときどき通知します。そのため、オペレーティングシステムはセク"
-"ター 63 にある、第 2 \"トラック\" の先頭にある第 1 パーティションに置かれま"
-"す。"
+"Windows 2008 および ca.2010 以前のLinux よりも古いオペレーティングシステムは"
+"、512 バイトのセクター容量でセクター 63 に、第 1 パーティションの第1セクター"
+"を配置しなければいけません。これは古くからの障害によるものです。ドライブは "
+"BIOS にシリンダー/ヘッド/セクター (CHS) の配置を通知する必要があります。配置"
+"は最近のドライブにおいては意味がありませんが、必ずトラックあたり 63 セクター"
+"を持つことをときどき通知します。そのため、オペレーティングシステムはセクター "
+"63 にある、第 2 \"トラック\" の先頭にある第 1 パーティションに置かれます。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:224
@@ -846,8 +844,9 @@ msgid ""
 "When the guest OS is virtualized, the host operating system and hypervisor "
 "may prefer accesses aligned to one of:"
 msgstr ""
-"ゲスト OS が仮想化されているとき、ホストオペレーティングシステムおよびハイ"
-"パーバイザーは以下のどれかにアライメントされていることが好ましいでしょう。"
+"ゲスト OS が仮想化されているとき、ホストオペレーティングシステムおよび"
+"ハイパーバイザーは以下のどれかにアライメントされていることが好ましいでしょう"
+"。"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:229
@@ -860,8 +859,8 @@ msgid ""
 "if the host OS uses local storage directly on hard drive partitions, and the "
 "hard drive has 512 byte physical sectors."
 msgstr ""
-"ホスト OS がハードディスクのパーティションに直接ローカルストレージを使用し"
-"て、ハードディスクが 512 バイトの物理セクターを持っている場合。"
+"ホスト OS がハードディスクのパーティションに直接ローカルストレージを使用して"
+"、ハードディスクが 512 バイトの物理セクターを持っている場合。"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:234
@@ -875,9 +874,9 @@ msgid ""
 "backed storage on filesystems with 4Kbyte block size; or for some types of "
 "network-attached storage."
 msgstr ""
-"4K バイトの物理セクターを持つ新規ハードディスクにおけるローカルストレージ向"
-"け。 4K バイトのブロック容量を持つファイルシステムにおけるファイル形式のスト"
-"レージ向け。もしくは、何種類かのネットワークストレージ（NAS）向け。"
+"4K バイトの物理セクターを持つ新規ハードディスクにおけるローカルストレージ向け"
+"。 4K バイトのブロック容量を持つファイルシステムにおけるファイル形式の"
+"ストレージ向け。もしくは、何種類かのネットワークストレージ（NAS）向け。"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:240
@@ -935,11 +934,11 @@ msgid ""
 "written, two host blocks must first be read, the old and new data combined, "
 "and the two blocks written back (4x I/O)."
 msgstr ""
-"この例では、4K ブロックが読み込まれるたびに、ホストにある 2 つのブロックにア"
-"クセスする必要があります（そのため I/O が 2 倍になります）。仮想マシンの 4K "
-"ブロックが書き込まれるとき、まず 2 つのホストブロックを読み込む必要があり、古"
-"いデータと新しいデータが結合され、2 つのブロックが書き込まれます（4 倍の I/"
-"O）。"
+"この例では、4K ブロックが読み込まれるたびに、ホストにある 2 つのブロックに"
+"アクセスする必要があります（そのため I/O が 2 倍になります）。仮想マシンの "
+"4K ブロックが書き込まれるとき、まず 2 つのホストブロックを読み込む必要があり"
+"、古いデータと新しいデータが結合され、2 つのブロックが書き込まれます（4 倍の "
+"I/O）。"
 
 #. type: =head2
 #: align/virt-alignment-scan.pod:268
@@ -1090,8 +1089,9 @@ msgid ""
 "Microsoft picked 1 MB as the default alignment for all partitions starting "
 "with Windows 2008 Server, and Linux has followed this."
 msgstr ""
-"Microsoft は Windows Server 2008 以降、すべてのパーティションに対してデフォル"
-"トのアライメントとして 1 MB を選択しました。 Linux はこれに従ってきました。"
+"Microsoft は Windows Server 2008 以降、すべてのパーティションに対して"
+"デフォルトのアライメントとして 1 MB を選択しました。 Linux はこれに従ってきま"
+"した。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:325
@@ -1101,8 +1101,8 @@ msgid ""
 "multiple of 2048 sectors."
 msgstr ""
 "仮想マシンにおいて 512 バイトのセクターと仮定すると、セクター 2048 に開始され"
-"ている最初のパーティションを参照してください。また、（もしあれば）後続のパー"
-"ティションは 2048 セクターの倍数から始まります。"
+"ている最初のパーティションを参照してください。また、（もしあれば）後続の"
+"パーティションは 2048 セクターの倍数から始まります。"
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:329
@@ -1110,8 +1110,8 @@ msgid ""
 "1 MB alignment is compatible with all current alignment requirements (4K, "
 "64K) and provides room for future growth in physical block sizes."
 msgstr ""
-"1 MB アライメントはすべての現行アライメント要求 (4K, 64K) と互換性がありま"
-"す。また、物理ブロック容量における将来的な拡張の余地を残します。"
+"1 MB アライメントはすべての現行アライメント要求 (4K, 64K) と互換性があります"
+"。また、物理ブロック容量における将来的な拡張の余地を残します。"
 
 #. type: =head2
 #: align/virt-alignment-scan.pod:332
@@ -1276,8 +1276,8 @@ msgid ""
 "successful exit, some partitions have alignment E<lt> 4K which can result in "
 "poor performance on most hypervisors"
 msgstr ""
-"正常終了、いくつかのパーティションが多くのハイパーバイザーにおいてパフォーマ"
-"ンスの悪い E<lt> 4K のアライメントを持ちます"
+"正常終了、いくつかのパーティションが多くのハイパーバイザーにおいて"
+"パフォーマンスの悪い E<lt> 4K のアライメントを持ちます"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:386 builder/virt-builder-repository.pod:207
@@ -5838,8 +5838,8 @@ msgid ""
 "and/or extended attributes if the filesystem can support them:"
 msgstr ""
 "マウントパラメーターの三番目の (ほとんど使用されない) 項目は、 バックエンドの"
-"ファイルシステムをマウントするために使用される マウントオプションの一覧で"
-"す。 これが指定されていない場合、 マウントオプションは空文字列または C<ro> "
+"ファイルシステムをマウントするために使用される マウントオプションの一覧です"
+"。 これが指定されていない場合、 マウントオプションは空文字列または C<ro> "
 "(I<--ro> フラグが使用されている場合) になります。"
 
 #. type: verbatim
@@ -6007,8 +6007,8 @@ msgid ""
 "L<guestfish(1)> is a more powerful, lower level tool which you can use when "
 "C<virt-cat> doesn't work."
 msgstr ""
-"L<guestfish(1)> は C<virt-cat> がうまく機能しないときに使用できる、より強力"
-"な、より低レベルなツールです。"
+"L<guestfish(1)> は C<virt-cat> がうまく機能しないときに使用できる、より強力な"
+"、より低レベルなツールです。"
 
 #. type: textblock
 #: cat/virt-cat.pod:253
@@ -7911,8 +7911,7 @@ msgstr ""
 #: customize/virt-customize.pod:338 sysprep/virt-sysprep.pod:359
 #, fuzzy
 msgid "For further details, see L<virt-builder(1)/SELINUX>."
-msgstr ""
-"詳細は次を参照してください: L<virt-sysprep(1)/コピー方法およびクローン方法>。"
+msgstr "詳細は次を参照してください: L<virt-sysprep(1)/コピー方法およびクローン方法>。"
 
 #. type: textblock
 #: customize/virt-customize.pod:342
@@ -7926,8 +7925,7 @@ msgstr ""
 #: customize/virt-customize.pod:346
 #, fuzzy
 msgid "For further details, see L<virt-builder(1)/DEPRECATED OPTIONS>."
-msgstr ""
-"詳細は次を参照してください: L<virt-sysprep(1)/コピー方法およびクローン方法>。"
+msgstr "詳細は次を参照してください: L<virt-sysprep(1)/コピー方法およびクローン方法>。"
 
 #. type: textblock
 #: customize/virt-customize.pod:350 sysprep/virt-sysprep.pod:368
@@ -8353,8 +8351,8 @@ msgid ""
 "Myth: Read the file one line at a time.  Reality: This does I<not> work "
 "reliably.  This example has one row:"
 msgstr ""
-"神話: 同時にファイルの 1 行を読み込みます。 真実: これは正しく動き I<ません"
-">。この例は 1 つの行があります:"
+"神話: 同時にファイルの 1 行を読み込みます。 真実: これは正しく動き I<ません>"
+"。この例は 1 つの行があります:"
 
 #. type: verbatim
 #: df/virt-df.pod:242 diff/virt-diff.pod:233
@@ -10506,15 +10504,14 @@ msgid ""
 "turn.  Each filename must be a full path, starting at the root directory "
 "(starting with '/')."
 msgstr ""
-"複数のファイル名を指定できます。その場合、それぞれ順番に編集されます。各ファ"
-"イル名はルートディレクトリーから始まる（つまり '/' から始まる）完全パスである"
-"必要があります。"
+"複数のファイル名を指定できます。その場合、それぞれ順番に編集されます。各"
+"ファイル名はルートディレクトリーから始まる（つまり '/' から始まる）完全パスで"
+"ある必要があります。"
 
 #. type: textblock
 #: edit/virt-edit.pod:28
 msgid "If you want to just view a file, use L<virt-cat(1)>."
-msgstr ""
-"単にファイルを表示したいだけならば、 L<virt-cat(1)> を使用してください。"
+msgstr "単にファイルを表示したいだけならば、 L<virt-cat(1)> を使用してください。"
 
 #. type: textblock
 #: edit/virt-edit.pod:30
@@ -10531,8 +10528,8 @@ msgid ""
 "C<virt-edit> cannot be used to create a new file.  L<guestfish(1)> can do "
 "that and much more."
 msgstr ""
-"C<virt-edit> は新しいファイルを作成するために使用できません。 "
-"L<guestfish(1)> はこのことやさらにいろいろなことができます。"
+"C<virt-edit> は新しいファイルを作成するために使用できません。 L<guestfish"
+"(1)> はこのことやさらにいろいろなことができます。"
 
 #. type: textblock
 #: edit/virt-edit.pod:38
@@ -10580,8 +10577,8 @@ msgid ""
 "If Perl is installed, you can also edit files non-interactively (see L</NON-"
 "INTERACTIVE EDITING> below).  To change the init default level to 5:"
 msgstr ""
-"Perl がインストールされていると、非対話的にファイルを編集することもできます"
-"（以下の L</非対話的な編集方法> 参照）。 init の初期ランベルを 5 に変更するに"
+"Perl がインストールされていると、非対話的にファイルを編集することもできます（"
+"以下の L</非対話的な編集方法> 参照）。 init の初期ランベルを 5 に変更するに"
 "は:"
 
 #. type: verbatim
@@ -10610,8 +10607,8 @@ msgid ""
 "Create a backup of the original file I<in the guest disk image>.  The backup "
 "has the original filename with C<extension> added."
 msgstr ""
-"I<仮想マシンのディスクイメージにある> 元のファイルのバックアップを作成しま"
-"す。バックアップは元のファイル名に C<extension> を加えたものになります。"
+"I<仮想マシンのディスクイメージにある> 元のファイルのバックアップを作成します"
+"。バックアップは元のファイル名に C<extension> を加えたものになります。"
 
 #. type: textblock
 #: edit/virt-edit.pod:86
@@ -10996,8 +10993,8 @@ msgid ""
 "If set, this string is used as the editor.  It may contain arguments, eg. "
 "C<\"emacs -nw\">"
 msgstr ""
-"設定されていると、この文字列がエディターとして使用されます。  C<\"emacs "
-"-nw\"> のように、引数を含めることもできます。"
+"設定されていると、この文字列がエディターとして使用されます。  C<\"emacs -"
+"nw\"> のように、引数を含めることもできます。"
 
 #. type: textblock
 #: edit/virt-edit.pod:375
@@ -11080,8 +11077,8 @@ msgid ""
 msgstr ""
 "他の使用方法は、これらのパーティションを変更するために (L<virt-resize(1)> の"
 "ような) 他のツールを使用する前に、パーティションを一覧表示することです。未知"
-"のディスクイメージが含んでいるものについてわからなければ、L<virt-"
-"inspector(1)> とともにこのツールを使用します。"
+"のディスクイメージが含んでいるものについてわからなければ、L<virt-inspector"
+"(1)> とともにこのツールを使用します。"
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:30
@@ -11091,9 +11088,9 @@ msgid ""
 "guest respectively.  If you just specify that then the program shows "
 "filesystems found, one per line, like this:"
 msgstr ""
-"さまざまなコマンドラインオプションがこのプログラムが表示するものを制御しま"
-"す。それぞれディスクイメージまたは libvirt 仮想マシンを指定するには I<-a> ま"
-"たは I<-d> オプションを与える必要があります。単にそれを指定すると、見つけた"
+"さまざまなコマンドラインオプションがこのプログラムが表示するものを制御します"
+"。それぞれディスクイメージまたは libvirt 仮想マシンを指定するには I<-a> また"
+"は I<-d> オプションを与える必要があります。単にそれを指定すると、見つけた"
 "ファイルシステムを 1 行ごとに 1 つずつこのように表示します:"
 
 #. type: verbatim
@@ -11325,8 +11322,7 @@ msgstr ""
 #. type: textblock
 #: filesystems/virt-filesystems.pod:174
 msgid "With I<--extra>, non-mountable filesystems are shown too."
-msgstr ""
-"I<--extra> を用いると、マウントできないファイルシステムも表示されます。"
+msgstr "I<--extra> を用いると、マウントできないファイルシステムも表示されます。"
 
 #. type: verbatim
 #: filesystems/virt-filesystems.pod:187
@@ -11446,8 +11442,8 @@ msgid ""
 "Display LVM logical volumes.  In this mode, these are displayed irrespective "
 "of whether the LVs contain filesystems."
 msgstr ""
-"LVM 論理ボリュームを表示します。  このモードでは、論理ボリュームが含むファイ"
-"ルシステムにかかわりなく表示します。"
+"LVM 論理ボリュームを表示します。  このモードでは、論理ボリュームが含む"
+"ファイルシステムにかかわりなく表示します。"
 
 #. type: =item
 #: filesystems/virt-filesystems.pod:245
@@ -11483,8 +11479,8 @@ msgid ""
 "Display partitions.  In this mode, these are displayed irrespective of "
 "whether the partitions contain filesystems."
 msgstr ""
-"パーティションを表示します。  このモードでは、パーティションが含むファイルシ"
-"ステムにかかわりなく表示します。"
+"パーティションを表示します。  このモードでは、パーティションが含む"
+"ファイルシステムにかかわりなく表示します。"
 
 #. type: =item
 #: filesystems/virt-filesystems.pod:260
@@ -11574,8 +11570,8 @@ msgid ""
 "If the I<--long> option is B<not> specified, then only the name column is "
 "shown in the output."
 msgstr ""
-"I<--long> オプションが指定されてB<いない>と、名前の列のみが出力に表示されま"
-"す。"
+"I<--long> オプションが指定されてB<いない>と、名前の列のみが出力に表示されます"
+"。"
 
 #. type: =item
 #: filesystems/virt-filesystems.pod:318
@@ -11668,8 +11664,8 @@ msgid ""
 "column is the name of the volume group."
 msgstr ""
 "たとえば、オブジェクトがパーティションならば、このカラムは含んでいるデバイス"
-"の名前が含まれます。オブジェクトが論理ボリュームならば、このカラムはボリュー"
-"ムグループの名前です。"
+"の名前が含まれます。オブジェクトが論理ボリュームならば、このカラムは"
+"ボリュームグループの名前です。"
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:353
@@ -12042,8 +12038,8 @@ msgstr ""
 #| "guest."
 msgid "This program extracts the kernel and initramfs from a guest."
 msgstr ""
-"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーをエク"
-"スポートおよびマージできます。"
+"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーを"
+"エクスポートおよびマージできます。"
 
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:18
@@ -12227,8 +12223,8 @@ msgstr ""
 #: inspector/virt-inspector.pod:23
 msgid "Virt-inspector produces XML output for feeding into other programs."
 msgstr ""
-"Virt-inspector は他のプログラムに提供するための情報をXML形式出力で生成しま"
-"す。"
+"Virt-inspector は他のプログラムに提供するための情報をXML形式出力で生成します"
+"。"
 
 #. type: textblock
 #: inspector/virt-inspector.pod:25
@@ -12302,9 +12298,9 @@ msgid ""
 "about Tempest attacks and there is no one else in the room you can specify "
 "this flag to see what you are typing."
 msgstr ""
-"キーやパスフレーズを入力するとき、通常 virt-inspector はエコーを無効化しま"
-"す。 そのため、入力内容を確認できません。 テンペスト攻撃の心配がなく、 部屋に"
-"誰も居なければ、 入力内容を確認するためにこのフラグを指定できます。"
+"キーやパスフレーズを入力するとき、通常 virt-inspector はエコーを無効化します"
+"。 そのため、入力内容を確認できません。 テンペスト攻撃の心配がなく、 部屋に誰"
+"も居なければ、 入力内容を確認するためにこのフラグを指定できます。"
 
 #. type: textblock
 #: inspector/virt-inspector.pod:111 win-reg/virt-win-reg.in:141
@@ -12922,8 +12918,7 @@ msgstr ""
 #. type: textblock
 #: inspector/virt-inspector.pod:428
 msgid "To list applications, you have to first mount up the disks:"
-msgstr ""
-"アプリケーションを一覧表示するには、まずディスクをマウントする必要があります:"
+msgstr "アプリケーションを一覧表示するには、まずディスクをマウントする必要があります:"
 
 #. type: verbatim
 #: inspector/virt-inspector.pod:430
@@ -13050,8 +13045,8 @@ msgstr ""
 msgid ""
 "The old virt-inspector is no longer supported or shipped with libguestfs."
 msgstr ""
-"古い virt-inspector はもはや libguestfs でサポートされず、同梱されていませ"
-"ん。"
+"古い virt-inspector はもはや libguestfs でサポートされず、同梱されていません"
+"。"
 
 #. type: textblock
 #: inspector/virt-inspector.pod:483
@@ -13059,8 +13054,8 @@ msgid ""
 "To confuse matters further, in Red Hat Enterprise Linux 6 we ship two "
 "versions of virt-inspector with different names:"
 msgstr ""
-"さらに混乱することに、Red Hat Enterprise Linux 6 では異なる名前で 2 つのバー"
-"ジョンの virt-inspector が同梱されています:"
+"さらに混乱することに、Red Hat Enterprise Linux 6 では異なる名前で 2 つの"
+"バージョンの virt-inspector が同梱されています:"
 
 #. type: verbatim
 #: inspector/virt-inspector.pod:486
@@ -13085,8 +13080,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514
@@ -13217,7 +13212,8 @@ msgid ""
 " virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory ...]\n"
 "\n"
 msgstr ""
-" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory ...]\n"
+" virt-ls [--options] -a disk.img [-a disk.img ...] directory [directory "
+"...]\n"
 "\n"
 
 #. type: verbatim
@@ -13287,8 +13283,7 @@ msgstr ""
 #. type: textblock
 #: ls/virt-ls.pod:39
 msgid "List all setuid or setgid programs in a Linux virtual machine:"
-msgstr ""
-"Linux 仮想マシンにある setuid または setgid プログラムを一覧表示します:"
+msgstr "Linux 仮想マシンにある setuid または setgid プログラムを一覧表示します:"
 
 #. type: verbatim
 #: ls/virt-ls.pod:41
@@ -13484,8 +13479,8 @@ msgid ""
 "instead."
 msgstr ""
 "これはディレクトリーを表示するために有用ですが、他のプログラムにおいてこの出"
-"力を解析しないよう注意してください。代わりに L</再帰的なロング形式の一覧方法"
-"> を使用してください。"
+"力を解析しないよう注意してください。代わりに L</再帰的なロング形式の一覧方"
+"法> を使用してください。"
 
 #. type: =head2
 #: ls/virt-ls.pod:101
@@ -13498,8 +13493,8 @@ msgid ""
 "With the I<-R> (I<--recursive>) option, C<virt-ls> lists the names of files "
 "and directories recursively:"
 msgstr ""
-"I<-R> (I<--recursive>) オプションを用いると、C<virt-ls> はファイルおよびディ"
-"レクトリーを再帰的に一覧表示します:"
+"I<-R> (I<--recursive>) オプションを用いると、C<virt-ls> はファイルおよび"
+"ディレクトリーを再帰的に一覧表示します:"
 
 #. type: verbatim
 #: ls/virt-ls.pod:106
@@ -13523,8 +13518,8 @@ msgid ""
 "To generate this output, C<virt-ls> runs the C<guestfs_find0> function and "
 "converts C<\\0> characters to C<\\n>."
 msgstr ""
-"この出力を生成するには、C<virt-ls> が C<guestfs_find0> 関数を実行して、"
-"C<\\0> 文字を C<\\n> に変換します。"
+"この出力を生成するには、C<virt-ls> が C<guestfs_find0> 関数を実行して、C<\\"
+"0> 文字を C<\\n> に変換します。"
 
 #. type: =head2
 #: ls/virt-ls.pod:114
@@ -13781,8 +13776,8 @@ msgstr "rdev"
 msgid ""
 "For block and char special files, the device (displayed as major:minor)."
 msgstr ""
-"ブロックおよびキャラクタースペシャルファイルに対する、デバイス (メジャー:マイ"
-"ナーとして表示)。"
+"ブロックおよびキャラクタースペシャルファイルに対する、デバイス "
+"(メジャー:マイナーとして表示)。"
 
 #. type: =item
 #: ls/virt-ls.pod:239
@@ -14328,8 +14323,8 @@ msgstr ""
 msgid ""
 "If specified, this flag adds an MBR partition table to the output disk image."
 msgstr ""
-"このフラグが指定されていると、出力ディスクイメージに MBR パーティションテーブ"
-"ルを追加します。"
+"このフラグが指定されていると、出力ディスクイメージに MBR "
+"パーティションテーブルを追加します。"
 
 #. type: textblock
 #: make-fs/virt-make-fs.pod:202
@@ -14440,7 +14435,8 @@ msgid ""
 " virt-resize --expand /dev/sda2 olddisk newdisk\n"
 "\n"
 msgstr ""
-" # \"/dev/sda2\" は \"olddisk\" ファイルの中にあるパーティションであることに注意してください。\n"
+" # \"/dev/sda2\" は \"olddisk\" ファイルの中にあるパーティションであることに"
+"注意してください。\n"
 " virt-resize --expand /dev/sda2 olddisk newdisk\n"
 "\n"
 
@@ -14777,8 +14773,7 @@ msgstr ""
 #. type: textblock
 #: resize/virt-resize.pod:176
 msgid "If you are using libvirt, edit the XML to point at the new disk:"
-msgstr ""
-"libvirt を使用しているならば、新しいディスクを指し示すよう XML を編集します:"
+msgstr "libvirt を使用しているならば、新しいディスクを指し示すよう XML を編集します:"
 
 #. type: verbatim
 #: resize/virt-resize.pod:178
@@ -15416,10 +15411,10 @@ msgid ""
 "this option if you want to resize a Windows guest multiple times without "
 "booting into Windows between each resize."
 msgstr ""
-"L<ntfsresize(8)> に I<--force> オプションを渡します。これにより、NTFS ディス"
-"クが整合性の確認が必要であるという印をつけたときでも、容量の変更を許可しま"
-"す。Windows 仮想マシンを各容量において起動することなく、何回も容量変更したい"
-"ならば、このオプションを使用する必要があります。"
+"L<ntfsresize(8)> に I<--force> オプションを渡します。これにより、NTFS "
+"ディスクが整合性の確認が必要であるという印をつけたときでも、容量の変更を許可"
+"します。Windows 仮想マシンを各容量において起動することなく、何回も容量変更し"
+"たいならば、このオプションを使用する必要があります。"
 
 #. type: =item
 #: resize/virt-resize.pod:517
@@ -16251,8 +16246,8 @@ msgstr ""
 msgid ""
 "See L<virt-filesystems(1)> to get a list of filesystems within a disk image."
 msgstr ""
-"ディスクイメージにあるファイルシステムの一覧を取得するには L<virt-"
-"filesystems(1)> を参照してください。"
+"ディスクイメージにあるファイルシステムの一覧を取得するには L<virt-filesystems"
+"(1)> を参照してください。"
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:109
@@ -17061,8 +17056,7 @@ msgstr "ABRT により生成されたクラッシュデータを削除します�
 #: sysprep/sysprep-operations.pod:6
 msgid ""
 "Remove the automatically generated ABRT crash data in C</var/spool/abrt/>."
-msgstr ""
-"C</var/spool/abrt/> に自動的に生成された ABRT クラッシュデータを削除します。"
+msgstr "C</var/spool/abrt/> に自動的に生成された ABRT クラッシュデータを削除します。"
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:9
@@ -17829,9 +17823,9 @@ msgid ""
 "On Linux guests that have LVM2 physical volumes (PVs) or volume groups "
 "(VGs), new random UUIDs are generated and assigned to those PVs and VGs."
 msgstr ""
-"LVM2 物理ボリューム (PV) またはボリュームグループ (VG) を持つ Linux 仮想マシ"
-"ンにおいて、新しいランダムな UUID が生成され、これらの PV や VG に割り当てら"
-"れます。"
+"LVM2 物理ボリューム (PV) またはボリュームグループ (VG) を持つ Linux 仮想"
+"マシンにおいて、新しいランダムな UUID が生成され、これらの PV や VG に割り当"
+"てられます。"
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:477
@@ -17932,8 +17926,8 @@ msgid ""
 "The system wide process accounting will store to the pacct log files if the "
 "process accounting is on."
 msgstr ""
-"プロセス・アカウンティングが有効になっていると、システム全体のプロセス・アカ"
-"ウンティングが pacct ログファイルに保存されます。"
+"プロセス・アカウンティングが有効になっていると、システム全体のプロセス・"
+"アカウンティングが pacct ログファイルに保存されます。"
 
 #. type: =head2
 #: sysprep/sysprep-operations.pod:523
@@ -18355,8 +18349,8 @@ msgid ""
 "virt-sysprep - Reset, unconfigure or customize a virtual machine so clones "
 "can be made"
 msgstr ""
-"virt-sysprep - 仮想マシンをクローンできるよう、再設定、設定解除またはカスタマ"
-"イズします"
+"virt-sysprep - 仮想マシンをクローンできるよう、再設定、設定解除または"
+"カスタマイズします"
 
 #. type: verbatim
 #: sysprep/virt-sysprep.pod:7
@@ -19015,8 +19009,8 @@ msgstr ""
 msgid ""
 "virt-win-reg - Export and merge Windows Registry entries from a Windows guest"
 msgstr ""
-"virt-win-reg - Windows 仮想マシンからの Windows レジストリエントリーのエクス"
-"ポートおよびマージ"
+"virt-win-reg - Windows 仮想マシンからの Windows レジストリエントリーの"
+"エクスポートおよびマージ"
 
 #. type: verbatim
 #: win-reg/virt-win-reg.in:38
@@ -19097,8 +19091,8 @@ msgid ""
 "This program can export and merge Windows Registry entries from a Windows "
 "guest."
 msgstr ""
-"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーをエク"
-"スポートおよびマージできます。"
+"このプログラムは Windows 仮想マシンから Windows レジストリのエントリーを"
+"エクスポートおよびマージできます。"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:65
@@ -19106,8 +19100,8 @@ msgid ""
 "The first parameter is the libvirt guest name or the raw disk image of a "
 "Windows guest."
 msgstr ""
-"第一パラメーターは Windows 仮想マシンの libvirt 仮想マシン名または生のディス"
-"クイメージです。"
+"第一パラメーターは Windows 仮想マシンの libvirt 仮想マシン名または生の"
+"ディスクイメージです。"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:68
@@ -19349,8 +19343,7 @@ msgstr "C<HKEY_USERS\\I<username>>"
 #: win-reg/virt-win-reg.in:628
 msgid ""
 "where I<username> is a local user name (this is a libguestfs extension)."
-msgstr ""
-"ここで I<username> はローカルユーザー名です (これは libguestfs の拡張です)。"
+msgstr "ここで I<username> はローカルユーザー名です (これは libguestfs の拡張です)。"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:632
@@ -19426,8 +19419,7 @@ msgstr ""
 #. type: textblock
 #: win-reg/virt-win-reg.in:662
 msgid "For more information about encoding, see L<Win::Hivex::Regedit(3)>."
-msgstr ""
-"エンコーディングの詳細は L<Win::Hivex::Regedit(3)> を参照してください。"
+msgstr "エンコーディングの詳細は L<Win::Hivex::Regedit(3)> を参照してください。"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:664
@@ -19804,8 +19796,8 @@ msgid ""
 "(but not both) to protect them from the shell."
 msgstr ""
 "シェルにおいて C<\\> (backslash) を含むパラメーターを渡すとき、注意する必要が"
-"あります。通常シェルからそれらを保護するには、'単一引用符' または二つのバック"
-"スラッシュ (しかし、両方ではない) を使用する必要があります。"
+"あります。通常シェルからそれらを保護するには、'単一引用符' または二つの"
+"バックスラッシュ (しかし、両方ではない) を使用する必要があります。"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:829

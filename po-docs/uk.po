@@ -12,21 +12,23 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
 # Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata
 # Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2019-06-03 03:49+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"PO-Revision-Date: 2026-08-26 01:32+0000\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"libguestfs/guestfs-tools-docs-master/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -119,8 +121,8 @@ msgid ""
 msgstr ""
 "Під час встановлення застарілих операційних систем засоби розподілу диска "
 "можуть розташувати розділ на секторі з помилковим вирівнюванням відносно "
-"системи зберігання даних (типово, перший розділ починається з сектора "
-"C<63>). Розділи з помилковим вирівнюванням можуть призвести до неоптимальної "
+"системи зберігання даних (типово, перший розділ починається з сектора C<63>)"
+". Розділи з помилковим вирівнюванням можуть призвести до неоптимальної "
 "кількості запитів щодо виведення та введення даних від операційної системи."
 
 #. type: textblock
@@ -144,8 +146,8 @@ msgstr ""
 "У поточній версії не передбачено програми для виправлення помилок, "
 "пов’язаних з вирівнюванням. Ви можете лише перевстановити гостьову "
 "операційну систему. У цьому документі можна знайти короткі описи помилок та "
-"можливі шляхи усування цих помилок: L<http://media.netapp.com/documents/"
-"tr-3747.pdf>"
+"можливі шляхи усування цих помилок: L<http://media.netapp.com/documents/tr-"
+"3747.pdf>"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:30
@@ -861,8 +863,8 @@ msgstr ""
 "повідомити дані щодо геометрії (циліндр / голівка / сектор або CHS) до BIOS. "
 "Ця геометрія є повністю непотрібною на сучасних дисках, але, так "
 "трапляється, що повідомлені драйвером дані вказують на те, що у доріжці 63 "
-"сектори. Тому операційна система розташовує перший розділ на початку другої "
-"«доріжки» у секторі 63."
+"сектори. Тому операційна система розташовує перший розділ на початку другої «"
+"доріжки» у секторі 63."
 
 #. type: textblock
 #: align/virt-alignment-scan.pod:224
@@ -1688,7 +1690,8 @@ msgid ""
 " virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" [...]\n"
 "\n"
 msgstr ""
-" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" [...]\n"
+" virt-builder-repository --gpg \"gpg --passphrase-file /tmp/pass --batch\" "
+"[...]\n"
 "\n"
 
 #. type: =item
@@ -3823,8 +3826,8 @@ msgid ""
 "To create user accounts, use the L<useradd(8)> command with L<--firstboot-"
 "command> like this:"
 msgstr ""
-"Для створення облікових записів користувачів скористайтеся командою "
-"L<useradd(8)> з параметром L<--firstboot-command>, ось так:"
+"Для створення облікових записів користувачів скористайтеся командою L<useradd"
+"(8)> з параметром L<--firstboot-command>, ось так:"
 
 #. type: verbatim
 #: builder/virt-builder.pod:692
@@ -3909,8 +3912,7 @@ msgstr ""
 #. type: =head3
 #: builder/virt-builder.pod:717
 msgid "Keyboard layout using F</etc/sysconfig/keyboard>"
-msgstr ""
-"Визначення розкладки клавіатури за допомогою F</etc/sysconfig/keyboard>"
+msgstr "Визначення розкладки клавіатури за допомогою F</etc/sysconfig/keyboard>"
 
 #. type: textblock
 #: builder/virt-builder.pod:719
@@ -4051,7 +4053,8 @@ msgstr ""
 "   --install @japanese-support \\\n"
 "   --install @xfce \\\n"
 "   --install xorg-x11-server-Xorg,xorg-x11-drivers,rsyslog \\\n"
-"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target \\\n"
+"   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/"
+"default.target \\\n"
 "   --firstboot-command 'localectl set-locale LANG=ja_JP.utf8' \\\n"
 "   --firstboot-command 'localectl set-keymap jp' \\\n"
 "   --firstboot-command 'systemctl isolate graphical.target'\n"
@@ -4126,8 +4129,8 @@ msgid ""
 "of the following locations:"
 msgstr ""
 "Скрипти та засоби встановлення пакунків, які працюватимуть під час збирання "
-"(I<--run>, I<--run-command>, I<--install>, I<--update>, але I<не> "
-"firstboot), записуватимуть повідомлення до одного з таких файлів:"
+"(I<--run>, I<--run-command>, I<--install>, I<--update>, але I<не> firstboot)"
+", записуватимуть повідомлення до одного з таких файлів:"
 
 #. type: =item
 #: builder/virt-builder.pod:793
@@ -4323,8 +4326,8 @@ msgid ""
 "Import the disk image into libvirt using L<virt-install(1)> I<--import> "
 "option."
 msgstr ""
-"Імпортування образу диска до libvirt за допомогою параметра L<virt-"
-"install(1)> I<--import>."
+"Імпортування образу диска до libvirt за допомогою параметра L<virt-install"
+"(1)> I<--import>."
 
 #. type: verbatim
 #: builder/virt-builder.pod:893
@@ -4393,8 +4396,8 @@ msgstr ""
 "Запускати virt-install можна від імені адміністратора (root) або від імені "
 "простого користувача. Між цими способами є незначні відмінності, оскільки "
 "libvirt керує різними наборами віртуальних машин для кожного користувача. "
-"Зокрема, virt-manager показує віртуальні машини, власником яких є root, а "
-"«Коробки» з GNOME показують лише віртуальні машини поточного користувача. "
+"Зокрема, virt-manager показує віртуальні машини, власником яких є root, а «"
+"Коробки» з GNOME показують лише віртуальні машини поточного користувача. "
 "Інші ж програми можуть також мати свої особливості показу."
 
 #. type: =head3
@@ -4594,7 +4597,8 @@ msgstr ""
 "   --update \\\n"
 "   --install puppet \\\n"
 "   --append-line '/etc/puppet/puppet.conf:[agent]' \\\n"
-"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/' \\\n"
+"   --append-line '/etc/puppet/puppet.conf:server = puppetmaster.example.com/"
+"' \\\n"
 "   --run-command 'systemctl enable puppet' \\\n"
 "   --selinux-relabel\n"
 "\n"
@@ -4798,8 +4802,8 @@ msgid ""
 "$XDG_CONFIG_HOME/virt-builder/repos.d/ (C<$XDG_CONFIG_HOME> is "
 "F<$HOME/.config> if not set)."
 msgstr ""
-"$XDG_CONFIG_HOME/virt-builder/reposd/ (C<$XDG_CONFIG_HOME> дорівнює "
-"F<$HOME/.config>, якщо не встановлено)."
+"$XDG_CONFIG_HOME/virt-builder/reposd/ (C<$XDG_CONFIG_HOME> дорівнює F<$HOME/"
+".config>, якщо не встановлено)."
 
 #. type: textblock
 #: builder/virt-builder.pod:1061
@@ -4908,8 +4912,7 @@ msgstr "B<no>, B<off>"
 #: builder/virt-builder.pod:1102
 msgid ""
 "No proxy is being used at all, even overriding the system configuration."
-msgstr ""
-"Не використовувати проксі взагалі, незважаючи на  налаштування системи."
+msgstr "Не використовувати проксі взагалі, незважаючи на  налаштування системи."
 
 #. type: =item
 #: builder/virt-builder.pod:1104
@@ -5539,8 +5542,8 @@ msgid ""
 "from the source format to the requested output format."
 msgstr ""
 "Зауважте, що це формат початкових даних, який відрізняється від параметра "
-"I<--format> (бажаний формат результату). Virt-builder виконує перетворення "
-"«на льоту» з початкового формату до бажаного формату результату."
+"I<--format> (бажаний формат результату). Virt-builder виконує перетворення «"
+"на льоту» з початкового формату до бажаного формату результату."
 
 #. type: =item
 #: builder/virt-builder.pod:1336
@@ -5596,10 +5599,10 @@ msgid ""
 "expand the named partition in the guest image to fill up all available "
 "space.  This works like the virt-resize I<--expand> option."
 msgstr ""
-"При розпаковуванні образу до його остаточного розміру, наказати L<virt-"
-"resize(1)> розпакувати дані до іменованого розділу у образі гостьової "
-"системи для заповнення усього доступного місця. Це працює подібно до "
-"параметра I<--expand> virt-resize."
+"При розпаковуванні образу до його остаточного розміру, наказати L<virt-resize"
+"(1)> розпакувати дані до іменованого розділу у образі гостьової системи для "
+"заповнення усього доступного місця. Це працює подібно до параметра I<--"
+"expand> virt-resize."
 
 #. type: textblock
 #: builder/virt-builder.pod:1360
@@ -5632,8 +5635,8 @@ msgid ""
 "expand the named logical volume in the guest image to fill up all available "
 "space.  This works like the virt-resize I<--lv-expand> option."
 msgstr ""
-"При розпаковуванні образу до його остаточного розміру, наказати L<virt-"
-"resize(1)> розпакувати дані до іменованого логічного тому у образі гостьової "
+"При розпаковуванні образу до його остаточного розміру, наказати L<virt-resize"
+"(1)> розпакувати дані до іменованого логічного тому у образі гостьової "
 "системи для заповнення усього доступного місця. Це працює подібно до "
 "параметра I<--lv-expand> virt-resize."
 
@@ -6748,11 +6751,11 @@ msgid ""
 "sysprep(1)>, L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-"
 "make-fs(1)>, L<genisoimage(1)>, L<http://libguestfs.org/>."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, L<virt-builder-"
-"repository(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, L<virt-get-"
-"kernel(1)>, L<virt-install(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-"
-"sysprep(1)>, L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-"
-"make-fs(1)>, L<genisoimage(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<guestmount(1)>, L<virt-builder-repository"
+"(1)>, L<virt-copy-out(1)>, L<virt-customize(1)>, L<virt-get-kernel(1)>, "
+"L<virt-install(1)>, L<virt-rescue(1)>, L<virt-resize(1)>, L<virt-sysprep(1)>"
+", L<oz-install(1)>, L<gpg(1)>, L<gpg2(1)>, L<curl(1)>, L<virt-make-fs(1)>, "
+"L<genisoimage(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: builder/virt-builder.pod:1831 builder/virt-index-validate.pod:90
@@ -7278,8 +7281,8 @@ msgstr ""
 #: cat/virt-cat.pod:206
 msgid "To follow (tail) text log files, use L<virt-tail(1)>."
 msgstr ""
-"Для стеження за вмістом (хвостом) файлів журналу скористайтеся L<virt-"
-"tail(1)>."
+"Для стеження за вмістом (хвостом) файлів журналу скористайтеся L<virt-tail"
+"(1)>."
 
 #. type: =head1
 #: cat/virt-cat.pod:208 edit/virt-edit.pod:294 tail/virt-tail.pod:192
@@ -7514,8 +7517,10 @@ msgid ""
 " (at your option) any later version.\n"
 "\n"
 msgstr ""
-" Ця програма є вільним програмним забезпеченням; ви можете поширювати та/або\n"
-" змінювати її за умов дотримання GNU General Public License  утому вигляді, що\n"
+" Ця програма є вільним програмним забезпеченням; ви можете поширювати та/"
+"або\n"
+" змінювати її за умов дотримання GNU General Public License  утому вигляді, "
+"що\n"
 " оприлюднений Free Software Foundation; версії 2 цієї Ліцензії, або (якщо\n"
 " забажаєте) будь-якої випущеної пізніше.\n"
 "\n"
@@ -7548,7 +7553,8 @@ msgid ""
 "\n"
 msgstr ""
 " Ви маєте отримати копію GNU General Public License разом з цією програмою;\n"
-" якщо це не так, повідомте про факт за адресою Free Software Foundation, Inc.,\n"
+" якщо це не так, повідомте про факт за адресою Free Software Foundation, "
+"Inc.,\n"
 " Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 "\n"
 
@@ -8067,8 +8073,8 @@ msgid ""
 "For an overview on the different ways to install packages, see L<virt-"
 "builder(1)/INSTALLING PACKAGES>."
 msgstr ""
-"Огляд різних способів встановлення пакунків наведено у розділі L<virt-"
-"builder(1)/ВСТАНОВЛЕННЯ ПАКУНКІВ>."
+"Огляд різних способів встановлення пакунків наведено у розділі L<virt-builder"
+"(1)/ВСТАНОВЛЕННЯ ПАКУНКІВ>."
 
 #. type: =item
 #: common/mlcustomize/customize-options.pod:185
@@ -8085,8 +8091,8 @@ msgid ""
 "hostname.domainname (FQDN) if you want."
 msgstr ""
 "Встановити як назву вузла гостьової системи значення C<НАЗВА_ВУЗЛА>. Якщо "
-"потрібно, можете скористатися форматом із крапкою, "
-"«назва_вузла.назва_домену» (FQDN)."
+"потрібно, можете скористатися форматом із крапкою, «назва_вузла.назва_домену"
+"» (FQDN)."
 
 #. type: =item
 #: common/mlcustomize/customize-options.pod:190
@@ -8794,8 +8800,8 @@ msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
 msgstr ""
-"Встановити типовий часовий пояс гостьової системи у значення "
-"C<ЧАСОВИЙ_ПОЯС>. Скористайтеся рядком місця у форматі C<Europe/London>"
+"Встановити типовий часовий пояс гостьової системи у значення C<ЧАСОВИЙ_ПОЯС>"
+". Скористайтеся рядком місця у форматі C<Europe/London>"
 
 #. type: =item
 #: common/mlcustomize/customize-options.pod:460
@@ -9555,8 +9561,8 @@ msgid ""
 msgstr ""
 "I<--firstboot скрипт> вивантажує файл C<скрипт> до гостьової системи і "
 "робить так, щоб він запускався у гостьовій системі під час наступного її "
-"завантаження. (Скрипт буде запущено лише один раз, при «першому "
-"завантаження».)"
+"завантаження. (Скрипт буде запущено лише один раз, при «першому завантаження"
+"».)"
 
 #. type: textblock
 #: customize/virt-customize.pod:316
@@ -9865,9 +9871,9 @@ msgid ""
 "this with unrelated guest disks.>"
 msgstr ""
 "Якщо у одній гостьовій системі декілька дисків, скористайтеся параметром I<-"
-"a> декілька разів. Для кожного з додаткових дисків буде показано символ "
-"«плюс» (C<+>). B<Зауваження: не робіть цього для непов'язаних дисків "
-"гостьових систем.>"
+"a> декілька разів. Для кожного з додаткових дисків буде показано символ «плюс"
+"» (C<+>). B<Зауваження: не робіть цього для непов'язаних дисків гостьових "
+"систем.>"
 
 #. type: verbatim
 #: df/virt-df.pod:65
@@ -11884,8 +11890,8 @@ msgid ""
 "(F<cat/>) for no particular reason.  These were moved to separate "
 "directories."
 msgstr ""
-"Код програм L<virt-cat(1)>, L<virt-filesystems(1)>, L<virt-log(1)>, L<virt-"
-"ls(1)> and L<virt-tail(1)> та документація до них."
+"Код програм L<virt-cat(1)>, L<virt-filesystems(1)>, L<virt-log(1)>, L<virt-ls"
+"(1)> and L<virt-tail(1)> та документація до них."
 
 #. type: textblock
 #: docs/guestfs-tools-release-notes-1.56.pod:124
@@ -12525,9 +12531,9 @@ msgid ""
 "Create a backup of the original file I<in the guest disk image>.  The backup "
 "has the original filename with C<extension> added."
 msgstr ""
-"Створити резервну копію початкового файла I<у образі диска гостьової "
-"системи>. Резервна копія матиме таку саму назву, що і початковий файл, із "
-"додаванням суфікса C<суфікс>."
+"Створити резервну копію початкового файла I<у образі диска гостьової системи>"
+". Резервна копія матиме таку саму назву, що і початковий файл, із додаванням "
+"суфікса C<суфікс>."
 
 #. type: textblock
 #: edit/virt-edit.pod:86
@@ -12711,9 +12717,8 @@ msgid ""
 "The full power of Perl regular expressions can be used (see L<perlre(1)>).  "
 "For example to delete root’s password you could do:"
 msgstr ""
-"Можна скористатися усією потужністю формальних виразів Perl (див. "
-"L<perlre(1)>). Наприклад, для вилучення пароля root ви можете віддати таку "
-"команду:"
+"Можна скористатися усією потужністю формальних виразів Perl (див. L<perlre"
+"(1)>). Наприклад, для вилучення пароля root ви можете віддати таку команду:"
 
 #. type: verbatim
 #: edit/virt-edit.pod:256
@@ -13395,8 +13400,7 @@ msgstr "Показувати додаткові стовпчики даних (�
 #. type: textblock
 #: filesystems/virt-filesystems.pod:222
 msgid "A title row is added unless you also specify I<--no-title>."
-msgstr ""
-"Якщо ви не додасте параметр I<--no-title>, буде додано рядок заголовка."
+msgstr "Якщо ви не додасте параметр I<--no-title>, буде додано рядок заголовка."
 
 #. type: textblock
 #: filesystems/virt-filesystems.pod:224
@@ -14068,8 +14072,7 @@ msgstr "© Red Hat Inc., 2012"
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:3
 msgid "virt-get-kernel - Extract kernel and ramdisk from guests"
-msgstr ""
-"virt-get-kernel — видобування ядра і диска в пам'яті з гостьових систем"
+msgstr "virt-get-kernel — видобування ядра і диска в пам'яті з гостьових систем"
 
 #. type: verbatim
 #: get-kernel/virt-get-kernel.pod:7
@@ -14158,8 +14161,8 @@ msgid ""
 msgstr ""
 "Якщо вказано префікс, програма додасть дефіс (C<->) після префікса і перед "
 "рештою назви файла. Наприклад, якщо у гостьовій системі ядро називалося "
-"C<vmlinuz-3.19.0-20-generic>, його буде збережено як C<mydistro-"
-"vmlinuz-3.19.0-20-generic>, якщо було вказано префікс C<mydistro>."
+"C<vmlinuz-3.19.0-20-generic>, його буде збережено як C<mydistro-vmlinuz-"
+"3.19.0-20-generic>, якщо було вказано префікс C<mydistro>."
 
 #. type: textblock
 #: get-kernel/virt-get-kernel.pod:130
@@ -14400,8 +14403,8 @@ msgid ""
 "at all."
 msgstr ""
 "Libvirt використовуватиметься, лише якщо ви вкажете C<назву домену> у рядку "
-"команди. Якщо вказати блокові пристрої гостьових систем безпосередньо (I<-"
-"a>), libvirt не буде використовуватися взагалі."
+"команди. Якщо вказати блокові пристрої гостьових систем безпосередньо (I<-a>)"
+", libvirt не буде використовуватися взагалі."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:102
@@ -14533,8 +14536,8 @@ msgid ""
 "which is vanishingly rare in real world VMs."
 msgstr ""
 "Елементом верхнього рівня є E<lt>operatingsystemsE<gt>. Він містить один або "
-"декілька елементів E<lt>operatingsystemE<gt>. Елементів "
-"E<lt>operatingsystemE<gt> буде декілька, лише якщо у віртуальній машині "
+"декілька елементів E<lt>operatingsystemE<gt>. Елементів E<lt>"
+"operatingsystemE<gt> буде декілька, лише якщо у віртуальній машині "
 "передбачено декілька варіантів завантаження. Такі випадки є дуже рідкісними "
 "у світі віртуальних машин."
 
@@ -15337,8 +15340,8 @@ msgid ""
 "L<base64(1)>, L<xmlstarlet(1)>, L<virt-drivers(1)>, L<http://libguestfs.org/"
 ">."
 msgstr ""
-"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, "
-"L<base64(1)>, L<xmlstarlet(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<http://www.w3.org/TR/xpath/>, L<base64(1)>"
+", L<xmlstarlet(1)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: inspector/virt-inspector.pod:514
@@ -15398,10 +15401,9 @@ msgid ""
 "L<virt-win-reg(1)>."
 msgstr ""
 "Для виведення вмісту файлів інших типів скористайтеся L<virt-cat(1)>. Для "
-"стеження (tail) за текстовими файлами журналу, скористайтеся L<virt-"
-"tail(1)>. Щоб скопіювати файли з віртуальної машини, скористайтеся L<virt-"
-"copy-out(1)>. Щоб вивести вміст реєстру Windows, скористайтеся L<virt-win-"
-"reg(1)>."
+"стеження (tail) за текстовими файлами журналу, скористайтеся L<virt-tail(1)>"
+". Щоб скопіювати файли з віртуальної машини, скористайтеся L<virt-copy-out"
+"(1)>. Щоб вивести вміст реєстру Windows, скористайтеся L<virt-win-reg(1)>."
 
 #. type: textblock
 #: log/virt-log.pod:27
@@ -16048,8 +16050,8 @@ msgid ""
 "I<--time-t>, I<--time-relative> or I<--time-days> flags is given."
 msgstr ""
 "Вміст полів дат і часу буде показано у форматі рядків, якщо не вказано "
-"одного з таких параметрів: I<--time-t>, I<--time-relative> або I<--time-"
-"days>."
+"одного з таких параметрів: I<--time-t>, I<--time-relative> або I<--time-days>"
+"."
 
 #. type: textblock
 #: ls/virt-ls.pod:217
@@ -16067,9 +16069,9 @@ msgid ""
 "The device containing the file (displayed as major:minor).  This may not "
 "match devices as known to the guest."
 msgstr ""
-"Пристрій на якому міститься файл (буде показано у форматі "
-"основний:підлеглий). Запис пристрою може не збігатися із записом пристрою, "
-"який відомий гостьовій системі."
+"Пристрій на якому міститься файл (буде показано у форматі основний:підлеглий)"
+". Запис пристрою може не збігатися із записом пристрою, який відомий "
+"гостьовій системі."
 
 #. type: =item
 #: ls/virt-ls.pod:226
@@ -16383,10 +16385,9 @@ msgid ""
 "you are not going to use the filesystem in a way that requires the journal, "
 "then this is just wasted overhead."
 msgstr ""
-"Зауважте, що у файлових системах ext3 міститься журнал із типовим розміром "
-"1-32 МБ. Якщо ви не збираєтеся використовувати файлову систему у спосіб, "
-"який потребує журналу, цей журнал є лише непотрібним доповненням файлової "
-"системи."
+"Зауважте, що у файлових системах ext3 міститься журнал із типовим розміром 1-"
+"32 МБ. Якщо ви не збираєтеся використовувати файлову систему у спосіб, який "
+"потребує журналу, цей журнал є лише непотрібним доповненням файлової системи."
 
 #. type: =item
 #: make-fs/virt-make-fs.pod:50
@@ -16464,8 +16465,8 @@ msgstr ""
 "З іншого боку, якщо у вас є таблиця розділів, образ-результат вже не буде "
 "простою файловою системою. Наприклад, ви не зможете запустити L<fsck(8)> "
 "безпосередньо для поділеного на розділи образу диска. (Втім, можна буде "
-"користуватися засобами libguestfs, зокрема L<guestfish(1)> і L<virt-"
-"resize(1)>)."
+"користуватися засобами libguestfs, зокрема L<guestfish(1)> і L<virt-resize"
+"(1)>)."
 
 #. type: textblock
 #: make-fs/virt-make-fs.pod:82
@@ -16517,8 +16518,8 @@ msgid ""
 "but you can use the I<--size> flag to leave space in the filesystem if you "
 "want it."
 msgstr ""
-"На відміну від форматів, таких як tar і squashfs, файлова система не може "
-"«просто підлаштуватися» під файли, які вона містить, — вона може потребувати "
+"На відміну від форматів, таких як tar і squashfs, файлова система не може «"
+"просто підлаштуватися» під файли, які вона містить, — вона може потребувати "
 "зайвого місця. Залежно від того, як ви збираєтеся використовувати виведений "
 "образ, зайве місце може бути небажаним, таким, яке слід мінімізувати, або "
 "бажаним для додавання згодом файлів. Типовою поведінкою virt-make-fs є "
@@ -16553,8 +16554,8 @@ msgid ""
 msgstr ""
 "Не забувайте, що ви також можете скористатися локальними командами, зокрема "
 "L<resize2fs(8)> та L<virt-resize(1)>, для зміни розмірів наявних файлових "
-"систем або повторно запустити virt-make-fs для збирання іншого образу «з "
-"нуля»."
+"систем або повторно запустити virt-make-fs для збирання іншого образу «з нуля"
+"»."
 
 #. type: verbatim
 #: make-fs/virt-make-fs.pod:115
@@ -16780,8 +16781,8 @@ msgid ""
 "L<resize2fs(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<guestfish(1)>, L<virt-format(1)>, L<virt-resize(1)>, L<virt-tar-in(1)>, "
-"L<mkisofs(1)>, L<genisoimage(1)>, L<mksquashfs(1)>, L<mke2fs(8)>, "
-"L<resize2fs(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
+"L<mkisofs(1)>, L<genisoimage(1)>, L<mksquashfs(1)>, L<mke2fs(8)>, L<resize2fs"
+"(8)>, L<guestfs(3)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: resize/virt-resize.pod:3
@@ -16799,7 +16800,8 @@ msgid ""
 msgstr ""
 " virt-resize [--resize /dev/sdaN=[+/-]<розмір>[%]]\n"
 "   [--expand /dev/sdaN] [--shrink /dev/sdaN]\n"
-"   [--ignore /dev/sdaN] [--delete /dev/sdaN] [...] вхідний_диск вихідний_диск\n"
+"   [--ignore /dev/sdaN] [--delete /dev/sdaN] [...] вхідний_диск "
+"вихідний_диск\n"
 "\n"
 
 #. type: textblock
@@ -17221,11 +17223,11 @@ msgid ""
 msgstr ""
 "Якщо на розширюваному розділі у образі міститься файлова система або "
 "фізичний том LVM, тоді, якщо virt-resize відомий спосіб, програма змінить "
-"розміри вмісту так, як це роблять виклики команд L<pvresize(8)>, "
-"L<resize2fs(8)>, L<ntfsresize(8)>, L<btrfs(8)>, L<xfs_growfs(8)> або "
-"L<resize.f2fs(8)>. Втім, virt-resize не відомі способи зміни розмірів деяких "
-"файлових систем, тому вам доведеться якось змінювати їхні розміри після "
-"завантаження гостьової системи."
+"розміри вмісту так, як це роблять виклики команд L<pvresize(8)>, L<resize2fs"
+"(8)>, L<ntfsresize(8)>, L<btrfs(8)>, L<xfs_growfs(8)> або L<resize.f2fs(8)>. "
+"Втім, virt-resize не відомі способи зміни розмірів деяких файлових систем, "
+"тому вам доведеться якось змінювати їхні розміри після завантаження "
+"гостьової системи."
 
 #. type: verbatim
 #: resize/virt-resize.pod:164
@@ -17754,9 +17756,9 @@ msgid ""
 msgstr ""
 "Якщо virt-resize відомий спосіб, програма розширить безпосередній вміст "
 "розділу. Наприклад, якщо розділ є фізичним томом LVM, програма розширить "
-"фізичний том так, щоб він зайняв усе місце (подібно до виклику "
-"L<pvresize(8)>). Якщо спосіб розширення виявиться невідомим virt-resize, "
-"програма не чіпатиме вмісту розділу."
+"фізичний том так, щоб він зайняв усе місце (подібно до виклику L<pvresize"
+"(8)>). Якщо спосіб розширення виявиться невідомим virt-resize, програма не "
+"чіпатиме вмісту розділу."
 
 #. type: textblock
 #: resize/virt-resize.pod:372
@@ -18527,8 +18529,8 @@ msgid ""
 "other parameters to grub-install, use L<virt-rescue(1)>."
 msgstr ""
 "Для гнучкішого переналаштовування гостьової системи, зокрема випадків, коли "
-"вам потрібно вказати інші параметри grub-install, скористайтеся L<virt-"
-"rescue(1)>."
+"вам потрібно вказати інші параметри grub-install, скористайтеся L<virt-rescue"
+"(1)>."
 
 #. type: =head2
 #: resize/virt-resize.pod:727
@@ -18836,12 +18838,12 @@ msgid ""
 "L<grub-install(8)>, L<virt-rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-"
 "scan(1)>, L<http://libguestfs.org/>."
 msgstr ""
-"L<virt-filesystems(1)>, L<virt-df(1)>, L<guestfs(3)>, L<guestfish(1)>, "
-"L<lvm(8)>, L<pvresize(8)>, L<lvresize(8)>, L<resize2fs(8)>, "
-"L<ntfsresize(8)>, L<btrfs(8)>, L<xfs_growfs(8)>, L<resize.f2fs(8)>, "
-"L<virsh(1)>, L<parted(8)>, L<truncate(1)>, L<fallocate(1)>, L<grub(8)>, "
-"L<grub-install(8)>, L<virt-rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-"
-"scan(1)>, L<http://libguestfs.org/>."
+"L<virt-filesystems(1)>, L<virt-df(1)>, L<guestfs(3)>, L<guestfish(1)>, L<lvm"
+"(8)>, L<pvresize(8)>, L<lvresize(8)>, L<resize2fs(8)>, L<ntfsresize(8)>, "
+"L<btrfs(8)>, L<xfs_growfs(8)>, L<resize.f2fs(8)>, L<virsh(1)>, L<parted(8)>, "
+"L<truncate(1)>, L<fallocate(1)>, L<grub(8)>, L<grub-install(8)>, L<virt-"
+"rescue(1)>, L<virt-sparsify(1)>, L<virt-alignment-scan(1)>, L<http://"
+"libguestfs.org/>."
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:3
@@ -18970,9 +18972,8 @@ msgid ""
 "usually much less space is required."
 msgstr ""
 "Virt-sparsify може потребувати для роботи удвічі більшого місця на диску, "
-"ніж розмір початкового образу диска (1 тимчасова копія + 1 образ "
-"призначення). Ця оцінка є максимальною, і зазвичай потрібно набагато менше "
-"місця."
+"ніж розмір початкового образу диска (1 тимчасова копія + 1 образ призначення)"
+". Ця оцінка є максимальною, і зазвичай потрібно набагато менше місця."
 
 #. type: textblock
 #: sparsify/virt-sparsify.pod:56 sparsify/virt-sparsify.pod:444
@@ -19514,8 +19515,8 @@ msgid ""
 "and I<-o> because they require wholesale disk format changes; I<--check-"
 "tmpdir> because large amounts of temporary space are not required."
 msgstr ""
-"Деякі параметри несумісні із цим режимом: I<--convert>, I<--compress> і I<-"
-"o>, оскільки їхнє використання вимагає загальної зміни формату диска; I<--"
+"Деякі параметри несумісні із цим режимом: I<--convert>, I<--compress> і I<-o>"
+", оскільки їхнє використання вимагає загальної зміни формату диска; I<--"
 "check-tmpdir>, оскільки великі обсяги для зберігання тимчасових даних не "
 "потрібні."
 
@@ -19591,8 +19592,8 @@ msgid ""
 "Windows 8 \"fast startup\" can prevent virt-sparsify from working.  See "
 "L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>."
 msgstr ""
-"«Швидкий запуск» Windows 8 може заважати роботі virt-sparsify. Див. "
-"L<guestfs(3)/ПРИСИПЛЯННЯ WINDOWS  ТА ШВИДКИЙ ЗАПУСК WINDOWS 8>."
+"«Швидкий запуск» Windows 8 може заважати роботі virt-sparsify. Див. L<guestfs"
+"(3)/ПРИСИПЛЯННЯ WINDOWS  ТА ШВИДКИЙ ЗАПУСК WINDOWS 8>."
 
 #. type: =item
 #: sparsify/virt-sparsify.pod:422
@@ -19694,8 +19695,8 @@ msgid ""
 "img(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<virt-df(1)>, L<virt-filesystems(1)>, L<virt-resize(1)>, L<virt-rescue(1)>, "
-"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-"
-"img(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-img"
+"(1)>, L<http://libguestfs.org/>."
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:1
@@ -19825,8 +19826,7 @@ msgstr "Цей параметр можна вказувати декілька �
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:257
 msgid "B<--link> TARGET:LINK[:LINK..] (see C<customize> below)"
-msgstr ""
-"B<--link> ПРИЗНАЧЕННЯ:ПОСИЛАННЯ[:ПОСИЛАННЯ..] (див. C<customize> нижче)"
+msgstr "B<--link> ПРИЗНАЧЕННЯ:ПОСИЛАННЯ[:ПОСИЛАННЯ..] (див. C<customize> нижче)"
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:263
@@ -21788,9 +21788,9 @@ msgid ""
 "by default or blank if not.  Subsequent fields on the same line are the "
 "description of the operation."
 msgstr ""
-"У першому полі міститься назва дії, яку можна додати до параметра I<--"
-"enable>. У другому полі міститься символ C<*>, якщо дію типово увімкнено, і "
-"пробіл, якщо дію вимкнено. Наступні поля у тому самому рядку є описом дії."
+"У першому полі міститься назва дії, яку можна додати до параметра I<--enable>"
+". У другому полі міститься символ C<*>, якщо дію типово увімкнено, і пробіл, "
+"якщо дію вимкнено. Наступні поля у тому самому рядку є описом дії."
 
 #. type: textblock
 #: sysprep/virt-sysprep.pod:219
@@ -22071,8 +22071,8 @@ msgid ""
 "Windows 8 \"fast startup\" can prevent virt-sysprep from working.  See "
 "L<guestfs(3)/WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP>."
 msgstr ""
-"«Швидкий запуск» Windows 8 може заважати роботі virt-sysprep. Див. "
-"L<guestfs(3)/ПРИСИПЛЯННЯ WINDOWS  ТА ШВИДКИЙ ЗАПУСК WINDOWS 8>."
+"«Швидкий запуск» Windows 8 може заважати роботі virt-sysprep. Див. L<guestfs"
+"(3)/ПРИСИПЛЯННЯ WINDOWS  ТА ШВИДКИЙ ЗАПУСК WINDOWS 8>."
 
 #. type: textblock
 #: sysprep/virt-sysprep.pod:408
@@ -22100,8 +22100,7 @@ msgstr "Авторські права належать Fujitsu Ltd., 2012"
 #. type: textblock
 #: tail/virt-tail.pod:3
 msgid "virt-tail - Follow (tail) files in a virtual machine"
-msgstr ""
-"virt-tail — відтворення вмісту (наприкінці) файлів у віртуальній машині"
+msgstr "virt-tail — відтворення вмісту (наприкінці) файлів у віртуальній машині"
 
 #. type: verbatim
 #: tail/virt-tail.pod:7
@@ -22442,9 +22441,9 @@ msgid ""
 msgstr ""
 "Цю програму призначено лише для спрощення доступу до реєстру. Якщо вам "
 "потрібні якісь складні дії з реєстром, рекомендуємо вам отримати файли роїв "
-"реєстру з гостьової системи за допомогою L<libguestfs(3)> або "
-"L<guestfish(1)> і обробити їх локально, наприклад за допомогою L<hivex(3)>, "
-"L<hivexsh(1)> або L<hivexregedit(1)>."
+"реєстру з гостьової системи за допомогою L<libguestfs(3)> або L<guestfish"
+"(1)> і обробити їх локально, наприклад за допомогою L<hivex(3)>, L<hivexsh"
+"(1)> або L<hivexregedit(1)>."
 
 #. type: =item
 #: win-reg/virt-win-reg.in:125
@@ -22762,9 +22761,9 @@ msgid ""
 "Recent versions of Windows regedit.exe produce a UTF-16LE file with Windows-"
 "style (CRLF) line endings, like this:"
 msgstr ""
-"Якщо ви не певні щодо поточного кодування, скористайтеся командою "
-"L<file(1)>. У свіжих версіях Windows regedit.exe створює файли кодування "
-"UTF-16LE із символами завершення рядків у стилі Windows (CRLF), ось такі:"
+"Якщо ви не певні щодо поточного кодування, скористайтеся командою L<file(1)>"
+". У свіжих версіях Windows regedit.exe створює файли кодування UTF-16LE із "
+"символами завершення рядків у стилі Windows (CRLF), ось такі:"
 
 #. type: verbatim
 #: win-reg/virt-win-reg.in:668
@@ -22843,8 +22842,7 @@ msgstr "«Поточним» є  той набір, який Windows вибер�
 #: win-reg/virt-win-reg.in:693
 msgid ""
 "Similarly, other C<Current...> keys in the path may need to be replaced."
-msgstr ""
-"Аналогічно, інші ключі C<Current...> у шляху можуть потребувати заміни."
+msgstr "Аналогічно, інші ключі C<Current...> у шляху можуть потребувати заміни."
 
 #. type: =head1
 #: win-reg/virt-win-reg.in:696
@@ -23193,10 +23191,9 @@ msgid ""
 "L<Win::Hivex(3)>, L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://"
 "libguestfs.org/>."
 msgstr ""
-"L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, "
-"L<guestfish(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, "
-"L<Win::Hivex(3)>, L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://"
-"libguestfs.org/>."
+"L<hivex(3)>, L<hivexsh(1)>, L<hivexregedit(1)>, L<guestfs(3)>, L<guestfish"
+"(1)>, L<virt-cat(1)>, L<virt-tail(1)>, L<Sys::Guestfs(3)>, L<Win::Hivex(3)>, "
+"L<Win::Hivex::Regedit(3)>, L<Sys::Virt(3)>, L<http://libguestfs.org/>."
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:852
