@@ -13,11 +13,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-07-11 10:17+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2026-08-26 01:12+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/uk/>\n"
 "Language: uk\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: resize/resize.ml:1031
 msgid "  An extra partition will be created for the surplus."
@@ -3284,8 +3284,8 @@ msgstr "вирівнювання < 64кБ"
 #, c-format
 msgid "%s: %s: error closing input file: %m (ignored)\n"
 msgstr ""
-"%s: %s: помилка під час спроби закрити файл вхідних даних: %m "
-"(проігноровано)\n"
+"%s: %s: помилка під час спроби закрити файл вхідних даних: %m (проігноровано)"
+"\n"
 
 #: builder/index-validate.c:124
 #, c-format
@@ -3584,8 +3584,7 @@ msgstr "не вдалося встановити з’єднання з libvirt 
 #: common/parallel/domains.c:114
 #, c-format
 msgid "could not get number of running domains (code %d, domain %d): %s"
-msgstr ""
-"не вдалося визначити кількість запущених доменів (код %d, домен %d): %s"
+msgstr "не вдалося визначити кількість запущених доменів (код %d, домен %d): %s"
 
 #: common/parallel/domains.c:125
 #, c-format
@@ -3596,8 +3595,8 @@ msgstr "не вдалося побудувати список запущених
 #, c-format
 msgid "could not get number of inactive domains (code %d, domain %d): %s"
 msgstr ""
-"не вдалося отримати дані щодо кількості неактивних доменів (код %d, домен "
-"%d): %s"
+"не вдалося отримати дані щодо кількості неактивних доменів (код %d, домен %d)"
+": %s"
 
 #: common/parallel/domains.c:146
 #, c-format
@@ -4054,8 +4053,8 @@ msgstr ""
 "  --filesystems        Показати дані щодо придатних до монтування файлових "
 "систем\n"
 "  --format[=raw|..]    Вказати формат дисків для параметра -a\n"
-"  -h|--human-readable  Зручні для читання записи розмірів у даних, виведених "
-"--long\n"
+"  -h|--human-readable  Зручні для читання записи розмірів у даних, "
+"виведених --long\n"
 "  --help               Показати коротеньку довідкову інформацію\n"
 "  --keys-from-stdin    Читати паролі stdin\n"
 "  -l|--long            Виводити докладні дані\n"
