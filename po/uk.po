@@ -17,7 +17,7 @@ msgstr ""
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
 "PO-Revision-Date: 2026-08-26 01:12+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/uk/>\n"
 "Language: uk\n"
@@ -772,7 +772,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_cmdline.ml:511
 msgid "Defer SELinux relabelling until boot"
-msgstr ""
+msgstr "Відкласти повторне встановлення міток SELinux до завантаження"
 
 #: common/mlcustomize/customize_cmdline.ml:244
 msgid "Delete a file or directory"
@@ -932,7 +932,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_cmdline.ml:505
 msgid "Exclude directories from SELinux relabelling"
-msgstr ""
+msgstr "Виключити каталоги з повторного встановлення міток SELinux"
 
 #: resize/resize.ml:207
 msgid "Expand logical volume"
@@ -1655,7 +1655,7 @@ msgstr ""
 
 #: common/mlcustomize/customize_run.ml:367
 msgid "SELinux relabelling deferred to first boot"
-msgstr ""
+msgstr "Повторне встановлення міток SELinux відкладено до першого завантаження"
 
 #. common/mlcustomize/customize_cmdline.ml:222
 #: common/mlcustomize/customize_cmdline.ml:336
