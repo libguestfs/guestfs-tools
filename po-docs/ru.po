@@ -2,13 +2,14 @@
 # Copyright (C) YEAR Red Hat Inc.
 # This file is distributed under the same license as the guestfs-tools package.
 # Andrei Stepanov <adem4ik@gmail.com>, 2026.
+# GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
 "PO-Revision-Date: 2026-08-26 01:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
 "Language: ru\n"
