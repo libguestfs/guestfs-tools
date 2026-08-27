@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the libguestfs package.
 #
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2011-2014
-# Yuri Chornoivan <yurchor@ukr.net>, 2013
-# Yuri Chornoivan <yurchor@ukr.net>, 2011-2014.
-# Yuri Chornoivan <yurchor@ukr.net>, 2013, 2015.
-# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2011-2014, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2013, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011-2014, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2013, 2015, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata, 2026.
+# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2026.
 # GitHub webhook <noreply-webhook-github@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2026-08-26 01:32+0000\n"
-"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
+"PO-Revision-Date: 2026-08-26 11:18+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/uk/>\n"
 "Language: uk\n"
@@ -8020,10 +8020,8 @@ msgstr ""
 #: common/mlcustomize/v2v-customize-options.pod:164
 #: common/mlcustomize/v2v-customize-options.pod:174
 #: sysprep/sysprep-extra-options.pod:145 sysprep/sysprep-extra-options.pod:156
-#, fuzzy
-#| msgid "See also: L<virt-sysprep(1)>."
 msgid "See also: L<virt-customize(1)/FIRSTBOOT>, I<--run>."
-msgstr "Див. також L<virt-sysprep(1)>."
+msgstr "Див. також L<virt-customize(1)/FIRSTBOOT>, I<--run>."
 
 #. type: =item
 #: common/mlcustomize/customize-options.pod:166
@@ -8620,10 +8618,8 @@ msgstr ""
 #. type: =item
 #: common/mlcustomize/customize-options.pod:389
 #: common/mlcustomize/v2v-customize-options.pod:335
-#, fuzzy
-#| msgid "B<--selinux-relabel>"
 msgid "B<--selinux-relabel-at-boot>"
-msgstr "B<--selinux-relabel>"
+msgstr "B<--selinux-relabel-at-boot>"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:391
@@ -8633,6 +8629,9 @@ msgid ""
 "This advanced option lets you defer SELinux relabelling until the first time "
 "the guest boots after conversion."
 msgstr ""
+"За допомогою цього додаткового параметра ви можете відкласти повторне "
+"визначення міток SELinux до першого завантаження гостьової системи після "
+"перетворення."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:395
@@ -8642,15 +8641,15 @@ msgid ""
 "The advantage of doing this is that conversion is quicker and uses less "
 "memory."
 msgstr ""
+"Перевагою такого підходу є те, що перетворення відбуваєтсья швидше і "
+"потребує менше пам'яті."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:398
 #: common/mlcustomize/v2v-customize-options.pod:344
 #: sysprep/sysprep-extra-options.pod:449
-#, fuzzy
-#| msgid "The main steps are:"
 msgid "The disadvantages are:"
-msgstr "Основні кроки:"
+msgstr "Недоліки:"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:404
@@ -8660,13 +8659,15 @@ msgid ""
 "The guest will take I<much> longer to boot up and become ready the first "
 "time it boots."
 msgstr ""
+"Гостьова система завантажуватиметься вперше I<набагато> довше і набуде "
+"готовності лише після першого завантаження."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:409
 #: common/mlcustomize/v2v-customize-options.pod:355
 #: sysprep/sysprep-extra-options.pod:460
 msgid "The guest will reboot at least once."
-msgstr ""
+msgstr "Гостьову систему доведеться принаймні один раз перезавантажити."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:413
@@ -8674,6 +8675,8 @@ msgstr ""
 #: sysprep/sysprep-extra-options.pod:464
 msgid "SELinux relabelling problems cannot be detected during conversion."
 msgstr ""
+"Під час перетворення не можна буде виявити проблеми із повторним визначенням "
+"міток SELinux."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:417
@@ -8681,25 +8684,21 @@ msgstr ""
 #: common/mlcustomize/v2v-customize-options.pod:363
 #: common/mlcustomize/v2v-customize-options.pod:376
 #: sysprep/sysprep-extra-options.pod:468 sysprep/sysprep-extra-options.pod:482
-#, fuzzy
-#| msgid "There are two ways to use this option."
 msgid "If in doubt, do not use this option."
-msgstr "Існує два способи використання цього параметра."
+msgstr "Якщо не певні, не користуйтеся цим параметром."
 
 #. type: =item
 #: common/mlcustomize/customize-options.pod:419
 #: common/mlcustomize/v2v-customize-options.pod:365
-#, fuzzy
-#| msgid "B<--selinux-relabel>"
 msgid "B<--selinux-relabel-exclude> DIR"
-msgstr "B<--selinux-relabel>"
+msgstr "B<--selinux-relabel-exclude> КАТАЛОГ"
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:421
 #: common/mlcustomize/v2v-customize-options.pod:367
 #: sysprep/sysprep-extra-options.pod:473
 msgid "Exclude directories from being relabelled."
-msgstr ""
+msgstr "Виключити каталоги з процедури повторного встановлення міток."
 
 #. type: textblock
 #: common/mlcustomize/customize-options.pod:423
