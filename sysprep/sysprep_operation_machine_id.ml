@@ -32,6 +32,7 @@ let machine_id_perform (g : Guestfs.guestfs) root side_effects =
 
 let op = {
   defaults with
+    order = 999;
     name = "machine-id";
     enabled_by_default = true;
     heading = s_"Remove the local machine ID";
