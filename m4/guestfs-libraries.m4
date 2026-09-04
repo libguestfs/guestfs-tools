@@ -126,12 +126,14 @@ AM_CONDITIONAL([HAVE_GNU_GETTEXT],
 
 dnl Check for gettext.
 AC_CHECK_HEADERS([libintl.h])
+old_LIBS="$LIBS"
 AC_SEARCH_LIBS([dgettext], [intl], [
 if test "$ac_cv_search_dgettext" != "none required"; then
   LIBINTL="$ac_cv_search_dgettext"
   LTLIBINTL="$ac_cv_search_dgettext"
 fi
 ])
+LIBS="$old_LIBS"
 AC_SUBST([LIBINTL])
 AC_SUBST([LTLIBINTL])
 
