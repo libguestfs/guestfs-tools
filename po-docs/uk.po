@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2026-08-27 18:18+0000\n"
+"PO-Revision-Date: 2026-09-05 08:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/uk/>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.8.1\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -460,7 +460,7 @@ msgstr ""
 #: inspector/virt-inspector.pod:80 log/virt-log.pod:60 ls/virt-ls.pod:274
 #: tail/virt-tail.pod:71
 msgid "__INCLUDE:blocksize-option.pod__"
-msgstr ""
+msgstr "__INCLUDE:blocksize-option.pod__"
 
 #. type: =item
 #: align/virt-alignment-scan.pod:126 cat/virt-cat.pod:78
@@ -1558,13 +1558,6 @@ msgstr ""
 
 #. type: textblock
 #: builder/virt-builder-repository.pod:54
-#, fuzzy
-#| msgid ""
-#| "The file value needs to match the image name extended with the C<.xz> "
-#| "suffix if the I<--no-compression> parameter is not provided or the image "
-#| "name if no compression is involved. Other optional data can be prefilled. "
-#| "Default values are computed by inspecting the disk image.  For more "
-#| "informations, see L<virt-builder(1)/Creating and signing the index file>."
 msgid ""
 "The file value needs to match the image name extended with the C<.xz> suffix "
 "if the I<--no-compression> parameter is not provided or the image name if no "
@@ -1847,10 +1840,8 @@ msgstr ""
 #: customize/virt-customize.pod:227 drivers/virt-drivers.pod:212
 #: get-kernel/virt-get-kernel.pod:161 resize/virt-resize.pod:634
 #: sparsify/virt-sparsify.pod:320 sysprep/virt-sysprep.pod:274
-#, fuzzy
-#| msgid "B<--wipe>"
 msgid "B<--wrap>"
-msgstr "B<--wipe>"
+msgstr "B<--wrap>"
 
 #. type: textblock
 #: builder/virt-builder-repository.pod:174 builder/virt-builder.pod:535
