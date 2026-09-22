@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-08-14 12:43+0100\n"
+"POT-Creation-Date: 2026-09-16 13:43+0100\n"
 "PO-Revision-Date: 2026-08-26 11:04+0000\n"
 "Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/"
@@ -7468,6 +7468,34 @@ msgstr ""
 msgid ""
 "Note that if any such option is present on the command line, QEMU user "
 "networking will be automatically enabled for the libguestfs appliance."
+msgstr ""
+
+#. type: =item
+#: common/options/key-option.pod:41
+#, fuzzy
+#| msgid "B<--root-password> file:FILENAME"
+msgid "B<--key> NAMEB<:error>"
+msgstr "B<--root-password> file:DATEINAME"
+
+#. type: =item
+#: common/options/key-option.pod:43
+#, fuzzy
+#| msgid "B<--root-password> file:FILENAME"
+msgid "B<--key> UUIDB<:error>"
+msgstr "B<--root-password> file:DATEINAME"
+
+#. type: =item
+#: common/options/key-option.pod:45
+#, fuzzy
+#| msgid "B<--root-password> file:FILENAME"
+msgid "B<--key> B<all:error>"
+msgstr "B<--root-password> file:DATEINAME"
+
+#. type: textblock
+#: common/options/key-option.pod:47
+msgid ""
+"Any encrypted device matching will cause an error.  S<I<--key all:error>> "
+"can be used to reject any disk image that contains an encrypted partition."
 msgstr ""
 
 #. type: =item
@@ -15989,8 +16017,8 @@ msgid ""
 "img(1)>, L<http://libguestfs.org/>."
 msgstr ""
 "L<virt-df(1)>, L<virt-filesystems(1)>, L<virt-resize(1)>, L<virt-rescue(1)>, "
-"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-img"
-"(1)>, L<http://libguestfs.org/>."
+"L<guestfs(3)>, L<guestfish(1)>, L<truncate(1)>, L<fallocate(1)>, L<qemu-"
+"img(1)>, L<http://libguestfs.org/>."
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:1

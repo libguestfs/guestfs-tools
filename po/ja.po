@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
-"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
+"component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
 "PO-Revision-Date: 2026-08-26 10:54+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
@@ -43,7 +43,7 @@ msgid ""
 "guest to partition this extra space if you want."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:238
+#: common/mltools/tools_utils.ml:239
 msgid "%s"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:698 common/mlcustomize/customize_run.ml:395
+#: common/mltools/tools_utils.ml:703 common/mlcustomize/customize_run.ml:395
 msgid "%s (ignored)"
 msgstr ""
 
@@ -92,11 +92,11 @@ msgstr ""
 msgid "%s is not a regular file in the guest"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:234 common/mltools/tools_utils.ml:202
+#: common/mltools/tools_utils.ml:235 common/mltools/tools_utils.ml:203
 msgid "%s: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:236
+#: common/mltools/tools_utils.ml:237
 msgid "%s: %s: %s"
 msgstr ""
 
@@ -241,7 +241,7 @@ msgid ""
 "read the man page virt-drivers(1).\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:172
+#: common/mltools/tools_utils.ml:173
 msgid "%s: error: %s"
 msgstr ""
 
@@ -306,7 +306,7 @@ msgstr ""
 msgid "%s: no ‘uri’ entry for ‘%s’ in %s, skipping it\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:729
+#: common/mltools/tools_utils.ml:734
 msgid "%s: operation timed out"
 msgstr ""
 
@@ -393,7 +393,7 @@ msgid ""
 "virt-resize only supports MBR (DOS) and GPT partition tables."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:191
+#: common/mltools/tools_utils.ml:192
 msgid "%s: warning: %s"
 msgstr ""
 
@@ -753,11 +753,11 @@ msgid ""
 msgstr ""
 
 #. common/mlcustomize/customize_cmdline.ml:329
-#: common/mlcustomize/customize_cmdline.ml:502
+#: common/mlcustomize/customize_cmdline.ml:508
 msgid "DIR"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:511
+#: common/mlcustomize/customize_cmdline.ml:502
 msgid "Defer SELinux relabelling until boot"
 msgstr ""
 
@@ -809,7 +809,7 @@ msgstr ""
 msgid "Display name: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:388
+#: common/mltools/tools_utils.ml:389
 msgid "Display version and exit"
 msgstr ""
 
@@ -849,11 +849,11 @@ msgstr ""
 msgid "Don’t perform changes"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:392
+#: common/mltools/tools_utils.ml:393
 msgid "Don’t print progress messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:423
+#: common/mltools/tools_utils.ml:428
 msgid "Don’t turn off echo for passphrases"
 msgstr ""
 
@@ -889,7 +889,7 @@ msgstr ""
 msgid "Enable debugging messages"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:389
+#: common/mltools/tools_utils.ml:390
 msgid "Enable libguestfs debugging messages"
 msgstr ""
 
@@ -897,7 +897,7 @@ msgstr ""
 msgid "Enable specific operations"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:390
+#: common/mltools/tools_utils.ml:391
 msgid "Enable tracing of libguestfs calls"
 msgstr ""
 
@@ -917,7 +917,7 @@ msgstr ""
 msgid "Examining the guest ..."
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:505
+#: common/mlcustomize/customize_cmdline.ml:511
 msgid "Exclude directories from SELinux relabelling"
 msgstr ""
 
@@ -1095,7 +1095,7 @@ msgstr ""
 msgid "Identifier: "
 msgstr ""
 
-#: common/mltools/tools_utils.ml:177
+#: common/mltools/tools_utils.ml:178
 msgid ""
 "If reporting bugs, run %s with debugging enabled and include the complete "
 "output:\n"
@@ -1173,7 +1173,7 @@ msgstr ""
 msgid "METHOD"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:429
+#: common/mltools/tools_utils.ml:434
 msgid "Make output machine readable"
 msgstr ""
 
@@ -1333,7 +1333,7 @@ msgstr ""
 msgid "Read customize commands from file"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:424
+#: common/mltools/tools_utils.ml:429
 msgid "Read passphrases from stdin"
 msgstr ""
 
@@ -1627,7 +1627,7 @@ msgstr ""
 msgid "SCRIPT"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:425
+#: common/mltools/tools_utils.ml:430
 #: common/mlcustomize/customize_cmdline.ml:359
 msgid "SELECTOR"
 msgstr ""
@@ -1731,7 +1731,7 @@ msgstr ""
 msgid "Set password crypto"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:433
+#: common/mltools/tools_utils.ml:438
 #, fuzzy
 #| msgid "get the program name"
 msgid "Set program name"
@@ -1833,7 +1833,7 @@ msgstr ""
 msgid "Sparsify operation completed with no errors."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:425
+#: common/mltools/tools_utils.ml:430
 msgid "Specify a LUKS key"
 msgstr ""
 
@@ -2094,7 +2094,7 @@ msgstr ""
 msgid "Uploading: %s to %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:394
+#: common/mltools/tools_utils.ml:395
 msgid "Use ANSI colour sequences even if not tty"
 msgstr ""
 
@@ -2114,7 +2114,7 @@ msgstr ""
 msgid "Using prebuilt file %s as overlay"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:395
+#: common/mltools/tools_utils.ml:396
 msgid "Wrap log messages even if not tty"
 msgstr ""
 
@@ -2366,11 +2366,11 @@ msgstr ""
 msgid "error parsing URI ‘%s’. Look for error messages printed above."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:251
+#: common/mltools/tools_utils.ml:252
 msgid "exception: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:458
+#: common/mltools/tools_utils.ml:463
 #, fuzzy
 #| msgid "%s exited with error status %d"
 msgid "exited with error %d"
@@ -2382,7 +2382,7 @@ msgid ""
 "string: %s)"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:443
+#: common/mltools/tools_utils.ml:448
 msgid "external command"
 msgstr ""
 
@@ -2406,7 +2406,7 @@ msgstr ""
 msgid "failed to sign index"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:242
+#: common/mltools/tools_utils.ml:243
 msgid "failure: %s"
 msgstr ""
 
@@ -2451,7 +2451,7 @@ msgid ""
 "'--ignore %s', or use copying mode instead."
 msgstr ""
 
-#: common/mltools/tools_utils.ml:261
+#: common/mltools/tools_utils.ml:262
 msgid "generated by %s %s"
 msgstr ""
 
@@ -2467,7 +2467,7 @@ msgstr ""
 msgid "heading for %s must not end with newline or period"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:752
+#: common/mltools/tools_utils.ml:757
 msgid ""
 "host (%s/%s) and guest (%s/%s) are not compatible, so you cannot use command "
 "line options that involve running commands in the guest.  Use --firstboot "
@@ -2500,15 +2500,15 @@ msgstr ""
 msgid "input file (%s) has an unsupported type"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:249
+#: common/mltools/tools_utils.ml:250
 msgid "internal error: Not_found exception was thrown"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:246
+#: common/mltools/tools_utils.ml:247
 msgid "internal error: assertion failed at %s, line %d, char %d"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:244
+#: common/mltools/tools_utils.ml:245
 msgid "internal error: invalid argument: %s"
 msgstr ""
 
@@ -2530,19 +2530,19 @@ msgstr ""
 msgid "invalid format for '--%s' parameter, see the man page"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:362
+#: common/mltools/tools_utils.ml:363
 msgid "invalid format string for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:377
+#: common/mltools/tools_utils.ml:378
 msgid "invalid output fd for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:379
+#: common/mltools/tools_utils.ml:380
 msgid "invalid output for --machine-readable: %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:371
+#: common/mltools/tools_utils.ml:372
 msgid "invalid output stream for --machine-readable: %s"
 msgstr ""
 
@@ -2558,13 +2558,13 @@ msgstr ""
 msgid "kernel %s is not under grub tree %s"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:542 common/mltools/tools_utils.ml:461
+#: common/mltools/tools_utils.ml:547 common/mltools/tools_utils.ml:466
 #, fuzzy
 #| msgid "%s killed by signal %d (%s)"
 msgid "killed by signal %d"
 msgstr "%s がシグナル %d (%s) によりキルされました"
 
-#: common/mltools/tools_utils.ml:240
+#: common/mltools/tools_utils.ml:241
 msgid "libguestfs error: %s"
 msgstr ""
 
@@ -2831,32 +2831,33 @@ msgstr ""
 msgid "sectors"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:420 common/options/keys.c:306
+#: common/mltools/tools_utils.ml:425 common/options/keys.c:310
 #, c-format
 msgid "selector '%s': invalid TYPE"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:412 common/options/keys.c:296
+#: common/mltools/tools_utils.ml:413 common/options/keys.c:300
 #, c-format
 msgid "selector '%s': missing FILENAME, or too many fields"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:402 common/options/keys.c:274
+#: common/mltools/tools_utils.ml:403 common/options/keys.c:278
 #, c-format
 msgid "selector '%s': missing ID"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:407 common/options/keys.c:287
+#: common/mltools/tools_utils.ml:408 common/options/keys.c:291
 #, c-format
 msgid "selector '%s': missing KEY_STRING, or too many fields"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:404 common/options/keys.c:281
+#: common/mltools/tools_utils.ml:405 common/options/keys.c:285
 #, c-format
 msgid "selector '%s': missing TYPE"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:416 common/options/keys.c:304
+#: common/mltools/tools_utils.ml:421 common/mltools/tools_utils.ml:417
+#: common/options/keys.c:308
 #, c-format
 msgid "selector '%s': too many fields"
 msgstr ""
@@ -2893,7 +2894,7 @@ msgstr ""
 msgid "ssh-inject: the user %s does not exist on the guest"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:545 common/mltools/tools_utils.ml:464
+#: common/mltools/tools_utils.ml:550 common/mltools/tools_utils.ml:469
 #, fuzzy
 #| msgid "%s stopped by signal %d (%s)"
 msgid "stopped by signal %d"
@@ -3427,7 +3428,8 @@ msgstr ""
 #: common/options/inspect.c:161
 #, c-format
 msgid "%s: some filesystems could not be mounted (ignored)\n"
-msgstr "%s: いくつかのファイルシステムがマウントできませんでした（無視されました）\n"
+msgstr ""
+"%s: いくつかのファイルシステムがマウントできませんでした（無視されました）\n"
 
 #: common/options/inspect.c:178
 #, c-format
@@ -3449,7 +3451,12 @@ msgstr "キーかパスフレーズを入力してください。(\"%s\"): "
 msgid "size_t overflow"
 msgstr ""
 
-#: common/options/keys.c:235
+#: common/options/keys.c:228
+#, c-format
+msgid "encrypted device %s matched --key ...:error"
+msgstr ""
+
+#: common/options/keys.c:239
 #, c-format
 msgid "could not read key from user"
 msgstr ""
@@ -3469,7 +3476,8 @@ msgstr ""
 #: common/options/options.c:291
 #, c-format
 msgid "%s: Did you mean to mount one of these filesystems?\n"
-msgstr "%s: これらのファイルシステムのどれかをマウントしたいということですか?\n"
+msgstr ""
+"%s: これらのファイルシステムのどれかをマウントしたいということですか?\n"
 
 #: common/options/options.c:304
 #, c-format
@@ -3552,7 +3560,8 @@ msgstr "%s: %s %s に対する拡張属性を取得中にエラーが発生し�
 #: common/visit/visit.c:147
 #, c-format
 msgid "%s: error: cannot parse xattr count for %s %s\n"
-msgstr "%s: error: %s %s に対する xattr カウントを構文解析中にエラーが発生しました\n"
+msgstr ""
+"%s: error: %s %s に対する xattr カウントを構文解析中にエラーが発生しました\n"
 
 #: common/windows/windows.c:139
 #, c-format
@@ -3736,12 +3745,12 @@ msgstr ""
 "  --csv                出力結果をカンマ区切りの値(CSV形式)で表示します。\n"
 "  -d|--domain guest    libvirtゲストからディスクイメージを追加します。\n"
 "  --echo-keys          パスフレーズのエコーバックをオフにしません。\n"
-"  --extra              スワップとデータのファイルシステムの一覧を表示します"
-"。\n"
+"  --extra              スワップとデータのファイルシステムの一覧を表示しま"
+"す。\n"
 "  --filesystems        マウント可能なファイルシステムの一覧を表示します。\n"
 "  --format[=raw|..]    -a オプションのディスク形式を強制します。\n"
-"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせます"
-"。\n"
+"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせま"
+"す。\n"
 "  --help               簡易ヘルプを表示します。\n"
 "  --keys-from-stdin    標準入力からパスフレーズを読み込みます。\n"
 "  -l|--long            長い結果を表示します。\n"
@@ -3859,12 +3868,12 @@ msgstr ""
 "  --csv                出力結果をカンマ区切りの値(CSV形式)で表示します。\n"
 "  -d|--domain guest    libvirtゲストからディスクイメージを追加します。\n"
 "  --echo-keys          パスフレーズのエコーバックをオフにしません。\n"
-"  --extra              スワップとデータのファイルシステムの一覧を表示します"
-"。\n"
+"  --extra              スワップとデータのファイルシステムの一覧を表示しま"
+"す。\n"
 "  --filesystems        マウント可能なファイルシステムの一覧を表示します。\n"
 "  --format[=raw|..]    -a オプションのディスク形式を強制します。\n"
-"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせます"
-"。\n"
+"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせま"
+"す。\n"
 "  --help               簡易ヘルプを表示します。\n"
 "  --keys-from-stdin    標準入力からパスフレーズを読み込みます。\n"
 "  -l|--long            長い結果を表示します。\n"
@@ -3984,12 +3993,12 @@ msgstr ""
 "  --csv                出力結果をカンマ区切りの値(CSV形式)で表示します。\n"
 "  -d|--domain guest    libvirtゲストからディスクイメージを追加します。\n"
 "  --echo-keys          パスフレーズのエコーバックをオフにしません。\n"
-"  --extra              スワップとデータのファイルシステムの一覧を表示します"
-"。\n"
+"  --extra              スワップとデータのファイルシステムの一覧を表示しま"
+"す。\n"
 "  --filesystems        マウント可能なファイルシステムの一覧を表示します。\n"
 "  --format[=raw|..]    -a オプションのディスク形式を強制します。\n"
-"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせます"
-"。\n"
+"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせま"
+"す。\n"
 "  --help               簡易ヘルプを表示します。\n"
 "  --keys-from-stdin    標準入力からパスフレーズを読み込みます。\n"
 "  -l|--long            長い結果を表示します。\n"
@@ -4266,12 +4275,12 @@ msgstr ""
 "  --csv                出力結果をカンマ区切りの値(CSV形式)で表示します。\n"
 "  -d|--domain guest    libvirtゲストからディスクイメージを追加します。\n"
 "  --echo-keys          パスフレーズのエコーバックをオフにしません。\n"
-"  --extra              スワップとデータのファイルシステムの一覧を表示します"
-"。\n"
+"  --extra              スワップとデータのファイルシステムの一覧を表示しま"
+"す。\n"
 "  --filesystems        マウント可能なファイルシステムの一覧を表示します。\n"
 "  --format[=raw|..]    -a オプションのディスク形式を強制します。\n"
-"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせます"
-"。\n"
+"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせま"
+"す。\n"
 "  --help               簡易ヘルプを表示します。\n"
 "  --keys-from-stdin    標準入力からパスフレーズを読み込みます。\n"
 "  -l|--long            長い結果を表示します。\n"
@@ -4400,12 +4409,12 @@ msgstr ""
 "  --csv                出力結果をカンマ区切りの値(CSV形式)で表示します。\n"
 "  -d|--domain guest    libvirtゲストからディスクイメージを追加します。\n"
 "  --echo-keys          パスフレーズのエコーバックをオフにしません。\n"
-"  --extra              スワップとデータのファイルシステムの一覧を表示します"
-"。\n"
+"  --extra              スワップとデータのファイルシステムの一覧を表示しま"
+"す。\n"
 "  --filesystems        マウント可能なファイルシステムの一覧を表示します。\n"
 "  --format[=raw|..]    -a オプションのディスク形式を強制します。\n"
-"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせます"
-"。\n"
+"  -h|--human-readable  --long の出力結果を人間が読みやすいサイズに合わせま"
+"す。\n"
 "  --help               簡易ヘルプを表示します。\n"
 "  --keys-from-stdin    標準入力からパスフレーズを読み込みます。\n"
 "  -l|--long            長い結果を表示します。\n"
@@ -4592,21 +4601,22 @@ msgstr "virt-win-reg: {p}: ユーザー・ディレクトリを見つけられ�
 #: win-reg/virt-win-reg.in:508
 #, perl-brace-format
 msgid "virt-win-reg: {p}: not a supported Windows Registry path\n"
-msgstr "virt-win-reg: {p}: サポートされる Windows レジストリのパスではありません\n"
+msgstr ""
+"virt-win-reg: {p}: サポートされる Windows レジストリのパスではありません\n"
 
 #: win-reg/virt-win-reg.in:581
 #, perl-brace-format
 msgid "virt-win-reg: {p}: could not download registry file: {err}\n"
 msgstr ""
-"virt-win-reg: {p}: レジストリ・ファイルをダウンロードできませんでした: {err}"
-"\n"
+"virt-win-reg: {p}: レジストリ・ファイルをダウンロードできませんでした: "
+"{err}\n"
 
 #: win-reg/virt-win-reg.in:598
 #, perl-brace-format
 msgid "virt-win-reg: {p}: could not upload registry file: {err}\n"
 msgstr ""
-"virt-win-reg: {p}: レジストリ・ファイルをアップロードできませんでした: {err}"
-"\n"
+"virt-win-reg: {p}: レジストリ・ファイルをアップロードできませんでした: "
+"{err}\n"
 
 #, c-format
 #~ msgid "use 'alloc file size' to create an image\n"
