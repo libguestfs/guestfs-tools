@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-09-16 13:43+0100\n"
-"PO-Revision-Date: 2026-09-13 02:17+0000\n"
+"PO-Revision-Date: 2026-09-22 07:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
@@ -8771,24 +8771,18 @@ msgstr ""
 
 #. type: =item
 #: common/options/key-option.pod:41
-#, fuzzy
-#| msgid "B<--key> NAMEB<:clevis>"
 msgid "B<--key> NAMEB<:error>"
-msgstr "B<--key> ИМЯB<:clevis>"
+msgstr "B<--key> ИМЯB<:error>"
 
 #. type: =item
 #: common/options/key-option.pod:43
-#, fuzzy
-#| msgid "B<--key> UUIDB<:clevis>"
 msgid "B<--key> UUIDB<:error>"
-msgstr "B<--key> UUIDB<:clevis>"
+msgstr "B<--key> UUIDB<:error>"
 
 #. type: =item
 #: common/options/key-option.pod:45
-#, fuzzy
-#| msgid "B<--key> B<all:clevis>"
 msgid "B<--key> B<all:error>"
-msgstr "B<--key> B<all:clevis>"
+msgstr "B<--key> B<all:error>"
 
 #. type: textblock
 #: common/options/key-option.pod:47
@@ -8796,6 +8790,9 @@ msgid ""
 "Any encrypted device matching will cause an error.  S<I<--key all:error>> "
 "can be used to reject any disk image that contains an encrypted partition."
 msgstr ""
+"Любое совпадение с зашифрованным устройством вызовет ошибку.  S<I<--key "
+"all:error>> можно использовать, чтобы отклонить любой образ диска, "
+"содержащий зашифрованный раздел."
 
 #. type: =item
 #: common/options/keys-from-stdin-option.pod:1

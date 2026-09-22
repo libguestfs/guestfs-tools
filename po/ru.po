@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libguestfs 1.39.12\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-08-14 11:42+0100\n"
-"PO-Revision-Date: 2026-09-13 02:17+0000\n"
+"PO-Revision-Date: 2026-09-22 07:17+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-master/ru/>\n"
@@ -4029,7 +4029,7 @@ msgstr "переполнение size_t"
 #: common/options/keys.c:228
 #, c-format
 msgid "encrypted device %s matched --key ...:error"
-msgstr ""
+msgstr "зашифрованное устройство %s сопоставлено --key ...:error"
 
 #: common/options/keys.c:239
 #, c-format
