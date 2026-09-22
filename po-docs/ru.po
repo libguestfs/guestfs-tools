@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
 "POT-Creation-Date: 2026-08-14 12:43+0100\n"
-"PO-Revision-Date: 2026-08-26 11:25+0000\n"
-"Last-Translator: GitHub webhook <noreply-webhook-github@weblate.org>\n"
+"PO-Revision-Date: 2026-09-13 02:17+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.8.1\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -19539,10 +19539,8 @@ msgstr "B<--selinux-relabel> (см. C<customize> ниже)"
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:439
-#, fuzzy
-#| msgid "B<--selinux-relabel> (see C<customize> below)"
 msgid "B<--selinux-relabel-at-boot> (see C<customize> below)"
-msgstr "B<--selinux-relabel> (см. C<customize> ниже)"
+msgstr "B<--selinux-relabel-at-boot> (см. C<customize> ниже)"
 
 #. type: =item
 #: sysprep/sysprep-extra-options.pod:470
@@ -22383,7 +22381,7 @@ msgstr ""
 #. type: =head2
 #: win-reg/virt-win-reg.in:712
 msgid "ENABLING CRASH DUMPS"
-msgstr ""
+msgstr "ВКЛЮЧЕНИЕ ДАМПОВ ПРИ СБОЕ"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:714 win-reg/virt-win-reg.in:746
@@ -22400,6 +22398,11 @@ msgid ""
 " EOF\n"
 "\n"
 msgstr ""
+" cat > test.reg <<'EOF'\n"
+" [HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\CrashControl]\n"
+" \"CrashDumpEnabled\"=dword:00000002\n"
+" EOF\n"
+"\n"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:721
@@ -22407,6 +22410,8 @@ msgid ""
 "(Note this assumes C<CurrentControlSet> is C<ControlSet001>.  See L</"
 "CurrentControlSet etc.> above.)"
 msgstr ""
+"(Обратите внимание: здесь предполагается, что C<CurrentControlSet> — это "
+"C<ControlSet001>.  См. L</CurrentControlSet etc.> выше.)"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:724 win-reg/virt-win-reg.in:819
@@ -22431,6 +22436,10 @@ msgid ""
 "troubleshoot/windows-server/performance/memory-dump-file-options#registry-"
 "values-for-startup-and-recovery>)"
 msgstr ""
+"C<dword:00000002> включает дампы памяти ядра.  C<dword:00000001> включает "
+"полные дампы памяти.  (См. L<https://learn.microsoft.com/en-us/troubleshoot/"
+"windows-server/performance/memory-dump-file-options#registry-values-for-"
+"startup-and-recovery>)"
 
 #. type: textblock
 #: win-reg/virt-win-reg.in:732
@@ -22440,6 +22449,11 @@ msgid ""
 "L<guestfish(1)>.  Memory dumps can be very large and Windows will not write "
 "them unless there is sufficient free disk space on F<C:>."
 msgstr ""
+"Дамп памяти записывается либо в C<%SystemRoot%\\Memory.dmp>, либо в каталог "
+"C<%SystemRoot%\\Minidump\\>, и его можно прочитать с помощью таких "
+"инструментов, как L<guestfish(1)>.  Дампы памяти могут быть очень большими, "
+"и Windows не будет их записывать, если на F<C:> недостаточно свободного "
+"дискового пространства."
 
 #. type: =head2
 #: win-reg/virt-win-reg.in:738
