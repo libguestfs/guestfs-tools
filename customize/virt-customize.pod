@@ -265,8 +265,7 @@ execution flow and whether Windows will reboot between each script:
 =item * 249
 
 The batch file is treated as a failure.  The batch file will be run
-again on next reboot.  (Be careful that batch files do not
-continuously give this exit code, otherwise Windows will boot loop.)
+again on next reboot (up to 3 times).
 
 =item * 250
 
