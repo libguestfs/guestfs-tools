@@ -1,0 +1,8 @@
+# Copyright 2026 Cisco Systems, Inc. and its affiliates
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+# VERSION ARCH FORMAT SHA256 URI
+#
+# Verify checksum updates against Canonical's signed SHA256SUMS using the
+# Ubuntu cloud-image signing key D2EB44626FDDC30B513D5BB71A5D6C4C7DB87C81.
+24.04 x86_64 qcow2 5fa5b05e5ec239858c4531485d6023b0896448c2df7c63b34f8dae6ea6051a44 https://cloud-images.ubuntu.com/releases/noble/release-20260615/ubuntu-24.04-server-cloudimg-amd64.img

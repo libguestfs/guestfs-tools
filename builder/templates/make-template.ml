@@ -1,6 +1,8 @@
 #!/usr/bin/env ocaml
 (* libguestfs
  * Copyright (C) 2016-2025 Red Hat Inc.
+ * Copyright 2026 Cisco Systems, Inc. and its affiliates
+ * SPDX-License-Identifier: GPL-2.0-or-later
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -94,6 +96,16 @@ type boot_media =
   | Location of string          (* virt-install --location (preferred) *)
   | CDRom of string             (* downloaded CD-ROM *)
 
+type cloud_image = {
+  uri : string;
+  checksum_sha256 : string;
+  format : string;
+}
+
+type install_source =
+  | Installer
+  | CloudImage of cloud_image
+
 let quote = Filename.quote
 let (//) = Filename.concat
 
@@ -104,21 +116,10 @@ let rec main () =
   (* Parse the command line. *)
   let os, arch = parse_cmdline () in
 
+  let install_source = install_source_of_os os arch in
+
   (* Choose a disk size for this OS. *)
   let virtual_size_gb = get_virtual_size_gb os arch in
-
-  (* For OSes which require a kickstart, this generates one.
-   * For OSes which require a preseed file, this returns one (we
-   * don't generate preseed files at the moment).
-   * For Windows this returns an unattend file in an ISO.
-   * For OSes which cannot be automated (FreeBSD), this returns None.
-   *)
-  let ks = make_kickstart os arch in
-
-  (* Find the boot media.  Normally ‘virt-install --location’ but
-   * for FreeBSD it downloads the boot ISO.
-   *)
-  let boot_media = make_boot_media os arch in
 
   (* Choose a random temporary name for the libvirt domain. *)
   let tmpname = sprintf "tmp-%s" (random8 ()) in
@@ -132,78 +133,108 @@ let rec main () =
    *)
   let output = filename_of_os os arch "" in
 
-  (* Some architectures need EFI boot. *)
-  let tmpefivars =
-    if needs_uefi os arch then (
-      let code, vars =
-        match arch with
-        | X86_64 ->
-           "/usr/share/edk2/ovmf/OVMF_CODE.fd",
-           "/usr/share/edk2/ovmf/OVMF_VARS.fd"
-        | Aarch64 ->
-           "/usr/share/edk2/aarch64/QEMU_EFI-pflash.raw",
-           "/usr/share/edk2/aarch64/vars-template-pflash.raw"
-        | Armv7 ->
-           "/usr/share/edk2/arm/QEMU_EFI-pflash.raw",
-           "/usr/share/edk2/arm/vars-template-pflash.raw"
-        | _ -> assert false in
-
-      let vars_out = Sys.getcwd () // sprintf "%s.vars" tmpname in
-      unlink_on_exit vars_out;
-      let cmd = sprintf "cp %s %s" (quote vars) (quote vars_out) in
-      if Sys.command cmd <> 0 then exit 1;
-      Some (code, vars_out)
-    )
-    else None in
-
-  (* Now construct the virt-install command. *)
-  let vi = make_virt_install_command os arch ks tmpname tmpout tmpefivars
-                                     boot_media virtual_size_gb in
-
-  (* Print the virt-install command just before we run it, because
-   * this is expected to be long-running.
-   *)
-  print_virt_install_command stdout vi;
-
-  (* Save the virt-install command to a file, for documentation. *)
-  let chan = open_out (filename_of_os os arch ".virt-install-cmd") in
-  fprintf chan "# This is the virt-install command which was used to create\n";
-  fprintf chan "# the virt-builder template '%s'\n" (string_of_os os arch);
-  fprintf chan "# NB: This file is generated for documentation \
-                purposes ONLY!\n";
-  fprintf chan "# This script was never run, and is not intended to be run.\n";
-  fprintf chan "\n";
-  print_virt_install_command chan vi;
-  close_out chan;
-
-  (* Print the virt-install notes for OSes which cannot be automated
-   * fully.  (These are different from the ‘notes=’ section in the
-   * index fragment).
-   *)
-  print_install_notes os;
-  printf "\n\n%!";
-
-  (* Run the virt-install command. *)
-  let pid = Unix.fork () in
-  if pid = 0 then Unix.execvp "virt-install" vi;
-  let _, pstat = Unix.waitpid [] pid in
-  check_process_status_for_errors pstat;
-  (* If there were NVRAM variables, move them to the final name and
-   * compress them.  Doing this operation later means the cleanup of
-   * the guest will remove them as well (because of --nvram).
-   *)
   let nvram =
-    match tmpefivars with
-    | Some (_, vars) ->
-       let f = sprintf "%s-nvram" output in
-       let cmd = sprintf "mv %s %s" (quote vars) (quote f) in
-       if Sys.command cmd <> 0 then exit 1;
-       let cmd = sprintf "xz -f --best %s" (quote f) in
-       if Sys.command cmd <> 0 then exit 1;
-       Some (f ^ ".xz")
-    | None -> None in
+    match install_source with
+    | CloudImage image ->
+       import_cloud_image image tmpout;
+       None
+
+    | Installer ->
+       (* For OSes which require a kickstart, this generates one.
+        * For OSes which require a preseed file, this returns one (we
+        * don't generate preseed files at the moment).
+        * For Windows this returns an unattend file in an ISO.
+        * For OSes which cannot be automated (FreeBSD), this returns None.
+        *)
+       let ks = make_kickstart os arch in
+
+       (* Find the boot media.  Normally ‘virt-install --location’ but
+        * for FreeBSD it downloads the boot ISO.
+        *)
+       let boot_media = make_boot_media os arch in
+
+       (* Some architectures need EFI boot. *)
+       let tmpefivars =
+         if needs_uefi os arch then (
+           let code, vars =
+             match arch with
+             | X86_64 ->
+                "/usr/share/edk2/ovmf/OVMF_CODE.fd",
+                "/usr/share/edk2/ovmf/OVMF_VARS.fd"
+             | Aarch64 ->
+                "/usr/share/edk2/aarch64/QEMU_EFI-pflash.raw",
+                "/usr/share/edk2/aarch64/vars-template-pflash.raw"
+             | Armv7 ->
+                "/usr/share/edk2/arm/QEMU_EFI-pflash.raw",
+                "/usr/share/edk2/arm/vars-template-pflash.raw"
+             | _ -> assert false in
+
+           let vars_out = Sys.getcwd () // sprintf "%s.vars" tmpname in
+           unlink_on_exit vars_out;
+           let cmd = sprintf "cp %s %s" (quote vars) (quote vars_out) in
+           if Sys.command cmd <> 0 then exit 1;
+           Some (code, vars_out)
+         )
+         else None in
+
+       let vi =
+         make_virt_install_command os arch ks tmpname tmpout tmpefivars
+                                   boot_media virtual_size_gb in
+
+       (* Print the virt-install command just before we run it, because
+        * this is expected to be long-running.
+        *)
+       print_virt_install_command stdout vi;
+
+       (* Save the virt-install command to a file, for documentation. *)
+       let chan = open_out (filename_of_os os arch ".virt-install-cmd") in
+       fprintf chan "# This is the virt-install command which was used to create\n";
+       fprintf chan "# the virt-builder template '%s'\n" (string_of_os os arch);
+       fprintf chan "# NB: This file is generated for documentation \
+                     purposes ONLY!\n";
+       fprintf chan "# This script was never run, and is not intended to be run.\n";
+       fprintf chan "\n";
+       print_virt_install_command chan vi;
+       close_out chan;
+
+       (* Print the virt-install notes for OSes which cannot be automated
+        * fully.  (These are different from the ‘notes=’ section in the
+        * index fragment).
+        *)
+       print_install_notes os;
+       printf "\n\n%!";
+
+       (* Run the virt-install command. *)
+       let pid = Unix.fork () in
+       if pid = 0 then Unix.execvp "virt-install" vi;
+       let _, pstat = Unix.waitpid [] pid in
+       check_process_status_for_errors pstat;
+
+       (* If there were NVRAM variables, move them to the final name and
+        * compress them.  Doing this operation later means the cleanup of
+        * the guest will remove them as well (because of --nvram).
+        *)
+       match tmpefivars with
+       | Some (_, vars) ->
+          let f = sprintf "%s-nvram" output in
+          let cmd = sprintf "mv %s %s" (quote vars) (quote f) in
+          if Sys.command cmd <> 0 then exit 1;
+          let cmd = sprintf "xz -f --best %s" (quote f) in
+          if Sys.command cmd <> 0 then exit 1;
+          Some (f ^ ".xz")
+       | None -> None in
 
   ignore (Sys.command "sync");
+
+  (* A raw imported cloud image's apparent length is its virtual size.
+   * Keep the historical fixed size for installer-built templates.
+   *)
+  let virtual_size =
+    match install_source with
+    | CloudImage _ ->
+       (Unix.LargeFile.stat tmpout).Unix.LargeFile.st_size
+    | Installer ->
+       Int64.mul (Int64.of_int virtual_size_gb) 1073741824_L in
 
   (* Run virt-filesystems, simply to display the filesystems in the image. *)
   let cmd = sprintf "virt-filesystems -a %s --all --long -h" (quote tmpout) in
@@ -242,8 +273,8 @@ let rec main () =
   g#shutdown ();
   g#close ();
 
-  (match os with
-   | Ubuntu (ver, _) when ver >= "14.04" ->
+  (match install_source, os with
+   | Installer, Ubuntu (ver, _) when ver >= "14.04" ->
       (* In Ubuntu >= 14.04 you can't complete the install without creating
        * a user account.  We create one called 'builder', but we also
        * disable it.  XXX Combine with virt-sysprep step.
@@ -258,8 +289,23 @@ let rec main () =
   if can_sysprep_os os then (
     (* Sysprep.  Relabel SELinux-using guests. *)
     printf "Sysprepping ...\n%!";
-    let cmd = sprintf "virt-sysprep --quiet -a %s" (quote tmpout) in
+    let cmd =
+      sprintf "virt-sysprep --quiet --format raw -a %s" (quote tmpout) in
     if Sys.command cmd <> 0 then exit 1
+  );
+
+  (match install_source with
+   | CloudImage _ when can_sysprep_os os ->
+      (* The customize operation runs late in the default sysprep pass and
+       * can populate an empty /etc/machine-id.  Make machine-id cleanup the
+       * final image-changing operation so clones generate their own ID.
+       *)
+      printf "Clearing cloud image machine ID ...\n%!";
+      let cmd =
+        sprintf "virt-sysprep --quiet --format raw \
+                 --operations machine-id -a %s" (quote tmpout) in
+      if Sys.command cmd <> 0 then exit 1
+   | CloudImage _ | Installer -> ()
   );
 
   (* Sparsify and copy to output name. *)
@@ -303,8 +349,8 @@ let rec main () =
         | `No_revision -> Some 2
         (* existing file with revision line *)
         | `Revision i -> Some (i+1) in
-      make_index_fragment os arch index_fragment output nvram revision
-                          expandfs lvexpandfs virtual_size_gb;
+      make_index_fragment os arch install_source index_fragment output nvram
+                          revision expandfs lvexpandfs virtual_size;
 
       (* Validate the fragment we have just created. *)
       let cmd = sprintf "virt-index-validate %s" (quote index_fragment) in
@@ -349,6 +395,88 @@ Options:
 
   os, arch
 
+and install_source_of_os os arch =
+  match os, arch with
+  | Ubuntu ("24.04", _), arch ->
+     let arch = string_of_arch arch in
+     (match find_cloud_image "24.04" arch with
+      | Some image -> CloudImage image
+      | None ->
+         eprintf "%s: Ubuntu 24.04 cloud image import is not implemented for \
+                  %s\n" prog arch;
+         exit 1
+     )
+  | _ -> Installer
+
+and find_cloud_image version arch =
+  let filename =
+    Filename.dirname Sys.argv.(0) // "ubuntu-cloud-images" in
+  let chan =
+    try open_in filename
+    with Sys_error msg ->
+      eprintf "%s: %s\n" prog msg;
+      exit 1 in
+  let regexp = Str.regexp "[ \t]+" in
+  let valid_sha256 checksum =
+    let valid_hex_digit = function
+      | '0'..'9' | 'a'..'f' -> true
+      | _ -> false in
+    String.length checksum = 64 &&
+    try
+      String.iter
+        (fun c -> if not (valid_hex_digit c) then raise Exit)
+        checksum;
+      true
+    with Exit -> false in
+  let rec loop line_number =
+    match input_line chan with
+    | line ->
+       let line = String.trim line in
+       if line = "" || line.[0] = '#' then loop (line_number + 1)
+       else (
+         match Str.split regexp line with
+         | [v; a; format; checksum_sha256; uri] ->
+            if not (valid_sha256 checksum_sha256) then (
+              eprintf "%s: %s:%d: invalid SHA-256\n"
+                      prog filename line_number;
+              exit 1
+            );
+            if v = version && a = arch then
+              Some { uri; checksum_sha256; format }
+            else
+              loop (line_number + 1)
+         | _ ->
+            eprintf "%s: %s:%d: expected five whitespace-separated fields\n"
+                    prog filename line_number;
+            exit 1
+       )
+    | exception End_of_file -> None in
+  let result = loop 1 in
+  close_in chan;
+  result
+
+and import_cloud_image { uri; checksum_sha256; format } output =
+  let downloaded = output ^ ".download" in
+  unlink_on_exit downloaded;
+
+  printf "Downloading cloud image: %s\n%!" uri;
+  let cmd =
+    sprintf "curl --fail --location --proto '=https' --proto-redir '=https' \
+             --output %s --url %s"
+            (quote downloaded) (quote uri) in
+  if Sys.command cmd <> 0 then exit 1;
+
+  printf "Verifying SHA-256 and converting cloud image from %s to raw ...\n%!"
+         format;
+  let helper =
+    Filename.dirname Sys.argv.(0) // "prepare-cloud-image.sh" in
+  let cmd =
+    sprintf "%s %s %s %s %s"
+            (quote helper) (quote downloaded) (quote checksum_sha256)
+            (quote format) (quote output) in
+  if Sys.command cmd <> 0 then exit 1;
+  Unix.unlink downloaded
+
 and os_of_string os ver =
   match os, ver with
   | "alma", ver -> let maj, min = parse_major_minor ver in Alma (maj, min)
@@ -370,6 +498,7 @@ and os_of_string os ver =
   | "ubuntu", "18.04" -> Ubuntu (ver, "bionic")
   | "ubuntu", "20.04" -> Ubuntu (ver, "focal")
   | "ubuntu", "22.04" -> Ubuntu (ver, "jammy")
+  | "ubuntu", "24.04" -> Ubuntu (ver, "noble")
   | "fedora", ver -> Fedora (int_of_string ver)
   | "freebsd", ver -> let maj, min = parse_major_minor ver in FreeBSD (maj, min)
   | "windows", ver -> parse_windows_version ver
@@ -1440,13 +1569,8 @@ keepcache=0
 
   Buffer.contents buf
 
-and make_index_fragment os arch index_fragment output nvram revision
-                        expandfs lvexpandfs virtual_size_gb =
-  let virtual_size = Int64.of_int virtual_size_gb in
-  let virtual_size = Int64.mul virtual_size 1024_L in
-  let virtual_size = Int64.mul virtual_size 1024_L in
-  let virtual_size = Int64.mul virtual_size 1024_L in
-
+and make_index_fragment os arch install_source index_fragment output nvram
+                        revision expandfs lvexpandfs virtual_size =
   let chan = open_out (index_fragment ^ ".new") in
   let fpf fs = fprintf chan fs in
 
@@ -1469,7 +1593,7 @@ and make_index_fragment os arch index_fragment output nvram revision
    | Some fs -> fpf "lvexpand=%s\n" fs
   );
 
-  let notes = notes_of_os os arch nvram in
+  let notes = notes_of_os os arch install_source nvram in
   (match notes with
    | first :: notes ->
       fpf "notes=%s\n" first;
@@ -1532,40 +1656,53 @@ and long_name_of_os os arch =
      sprintf "Windows Server 2016 (%s)" (string_of_arch arch)
   | Windows _, _ -> assert false
 
-and notes_of_os os arch nvram =
+and notes_of_os os arch install_source nvram =
   let args = ref [] in
   let add arg = args := arg :: !args in
 
   add (long_name_of_os os arch);
   add "";
 
-  (match os with
-   | Alma _ ->
+  (match install_source, os with
+   | _, Alma _ ->
       add "This AlmaLinux image contains only unmodified @Core group packages."
-   | CentOS _ ->
+   | _, CentOS _ ->
       add "This CentOS image contains only unmodified @Core group packages."
-   | CentOSStream _ ->
+   | _, CentOSStream _ ->
       add "This CentOS Stream image contains only unmodified @Core \
            group packages."
-   | Debian _ ->
+   | _, Debian _ ->
       add "This is a minimal Debian install."
-   | Fedora _ ->
+   | _, Fedora _ ->
       add "This Fedora image contains only unmodified @Core group packages.";
       add "";
       add "Fedora and the Infinity design logo are trademarks of Red Hat, Inc.";
       add "Source and further information is available from \
            http://fedoraproject.org/"
-   | RHEL _ -> assert false (* cannot happen, see caller *)
-   | Ubuntu _ ->
+   | _, RHEL _ -> assert false (* cannot happen, see caller *)
+   | Installer, Ubuntu _ ->
       add "This is a minimal Ubuntu install."
-   | FreeBSD _ ->
+   | CloudImage _, Ubuntu _ ->
+      add "This image is derived from Canonical's standard Ubuntu Server \
+           cloud image."
+   | _, FreeBSD _ ->
       add "This is an all-default FreeBSD install."
-   | Windows _ ->
+   | _, Windows _ ->
       add "This is an unattended Windows install.";
       add "";
       add "You must have an MSDN subscription to use this image."
   );
   add "";
+
+  (match install_source with
+   | Installer -> ()
+   | CloudImage { uri; checksum_sha256; format = _ } ->
+      add "This template was imported from an official Ubuntu cloud image:";
+      add (sprintf "    %s" uri);
+      add "The source image matched this pinned SHA-256:";
+      add (sprintf "    %s" checksum_sha256);
+      add ""
+  );
 
   (* Specific notes for particular versions. *)
   let reconfigure_ssh_host_keys_debian () =
@@ -1591,23 +1728,23 @@ and notes_of_os os arch nvram =
     add "might still wish to delete it completely.";
     add ""
   in
-  (match os with
-   | CentOS (6, _) ->
+  (match install_source, os with
+   | _, CentOS (6, _) ->
       add "‘virt-builder centos-6’ will always install the latest 6.x release.";
       add ""
-   | Debian ((8|9), _) ->
+   | _, Debian ((8|9), _) ->
       reconfigure_ssh_host_keys_debian ();
-   | Debian _ ->
+   | _, Debian _ ->
       add "This image is so very minimal that it only includes an ssh server";
       reconfigure_ssh_host_keys_debian ();
-   | Ubuntu ("16.04", _) ->
+   | Installer, Ubuntu ("16.04", _) ->
       builder_account_warning ();
       fix_serial_console_debian ();
       reconfigure_ssh_host_keys_debian ();
-   | Ubuntu (ver, _) when ver >= "14.04" ->
+   | Installer, Ubuntu (ver, _) when ver >= "14.04" ->
       builder_account_warning ();
       reconfigure_ssh_host_keys_debian ();
-   | Ubuntu _ ->
+   | _, Ubuntu _ ->
       reconfigure_ssh_host_keys_debian ();
    | _ -> ()
   );
