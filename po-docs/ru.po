@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guestfs-tools 1.56.0\n"
 "Report-Msgid-Bugs-To: guestfs@lists.libguestfs.org\n"
-"POT-Creation-Date: 2026-09-16 13:43+0100\n"
-"PO-Revision-Date: 2026-09-22 07:18+0000\n"
+"POT-Creation-Date: 2026-10-05 12:23+0100\n"
+"PO-Revision-Date: 2026-10-06 15:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "libguestfs/guestfs-tools-docs-master/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.9.1\n"
+"X-Generator: Weblate 2026.10\n"
 
 #. type: =head1
 #: align/virt-alignment-scan.pod:1 builder/virt-builder-repository.pod:8
@@ -1193,7 +1193,7 @@ msgstr ""
 #. type: =head1
 #: align/virt-alignment-scan.pod:352 builder/virt-builder-repository.pod:202
 #: builder/virt-builder.pod:1799 builder/virt-index-validate.pod:74
-#: cat/virt-cat.pod:271 customize/virt-customize.pod:348 df/virt-df.pod:253
+#: cat/virt-cat.pod:271 customize/virt-customize.pod:347 df/virt-df.pod:253
 #: diff/virt-diff.pod:244 drivers/virt-drivers.pod:229 edit/virt-edit.pod:379
 #: filesystems/virt-filesystems.pod:390 format/virt-format.pod:183
 #: get-kernel/virt-get-kernel.pod:196 inspector/virt-inspector.pod:489
@@ -1226,15 +1226,17 @@ msgstr "Эта программа возвращает:"
 #: common/mlcustomize/customize-options.pod:375
 #: common/mlcustomize/customize-options.pod:379
 #: common/mlcustomize/customize-options.pod:402
-#: common/mlcustomize/customize-options.pod:407
-#: common/mlcustomize/customize-options.pod:411
+#: common/mlcustomize/customize-options.pod:410
+#: common/mlcustomize/customize-options.pod:415
+#: common/mlcustomize/customize-options.pod:419
 #: common/mlcustomize/v2v-customize-options.pod:73
 #: common/mlcustomize/v2v-customize-options.pod:78
 #: common/mlcustomize/v2v-customize-options.pod:321
 #: common/mlcustomize/v2v-customize-options.pod:325
 #: common/mlcustomize/v2v-customize-options.pod:348
-#: common/mlcustomize/v2v-customize-options.pod:353
-#: common/mlcustomize/v2v-customize-options.pod:357
+#: common/mlcustomize/v2v-customize-options.pod:356
+#: common/mlcustomize/v2v-customize-options.pod:361
+#: common/mlcustomize/v2v-customize-options.pod:365
 #: docs/guestfs-tools-release-notes-1.50.pod:32
 #: docs/guestfs-tools-release-notes-1.50.pod:36
 #: docs/guestfs-tools-release-notes-1.50.pod:40
@@ -1254,10 +1256,11 @@ msgstr "Эта программа возвращает:"
 #: sparsify/virt-sparsify.pod:299 sysprep/sysprep-extra-options.pod:48
 #: sysprep/sysprep-extra-options.pod:53 sysprep/sysprep-extra-options.pod:424
 #: sysprep/sysprep-extra-options.pod:428 sysprep/sysprep-extra-options.pod:453
-#: sysprep/sysprep-extra-options.pod:458 sysprep/sysprep-extra-options.pod:462
-#: tail/virt-tail.pod:25 tail/virt-tail.pod:29 tail/virt-tail.pod:34
-#: tail/virt-tail.pod:201 tail/virt-tail.pod:206 tail/virt-tail.pod:211
-#: tail/virt-tail.pod:222 tail/virt-tail.pod:226 win-reg/virt-win-reg.in:194
+#: sysprep/sysprep-extra-options.pod:461 sysprep/sysprep-extra-options.pod:466
+#: sysprep/sysprep-extra-options.pod:470 tail/virt-tail.pod:25
+#: tail/virt-tail.pod:29 tail/virt-tail.pod:34 tail/virt-tail.pod:201
+#: tail/virt-tail.pod:206 tail/virt-tail.pod:211 tail/virt-tail.pod:222
+#: tail/virt-tail.pod:226 win-reg/virt-win-reg.in:194
 #: win-reg/virt-win-reg.in:199 win-reg/virt-win-reg.in:205
 #: win-reg/virt-win-reg.in:800 win-reg/virt-win-reg.in:806
 #: win-reg/virt-win-reg.in:812
@@ -1319,7 +1322,7 @@ msgstr ""
 #. type: =head1
 #: align/virt-alignment-scan.pod:386 builder/virt-builder-repository.pod:207
 #: builder/virt-builder.pod:1804 builder/virt-index-validate.pod:79
-#: cat/virt-cat.pod:276 customize/virt-customize.pod:388 df/virt-df.pod:258
+#: cat/virt-cat.pod:276 customize/virt-customize.pod:387 df/virt-df.pod:258
 #: diff/virt-diff.pod:249 docs/guestfs-tools-release-notes-1.48.pod:102
 #: docs/guestfs-tools-release-notes-1.50.pod:160
 #: docs/guestfs-tools-release-notes-1.52.pod:99
@@ -1359,7 +1362,7 @@ msgstr "АВТОР"
 #. type: textblock
 #: align/virt-alignment-scan.pod:397 builder/virt-builder.pod:1827
 #: builder/virt-index-validate.pod:86 cat/virt-cat.pod:289
-#: customize/virt-customize.pod:407 df/virt-df.pod:269 diff/virt-diff.pod:261
+#: customize/virt-customize.pod:406 df/virt-df.pod:269 diff/virt-diff.pod:261
 #: drivers/virt-drivers.pod:246 edit/virt-edit.pod:397
 #: filesystems/virt-filesystems.pod:409 format/virt-format.pod:199
 #: get-kernel/virt-get-kernel.pod:212 inspector/virt-inspector.pod:510
@@ -1373,7 +1376,7 @@ msgstr "Ричард У.М. Джонс L<http://people.redhat.com/~rjones/>"
 #. type: =head1
 #: align/virt-alignment-scan.pod:399 builder/virt-builder-repository.pod:216
 #: builder/virt-builder.pod:1829 builder/virt-index-validate.pod:88
-#: cat/virt-cat.pod:291 customize/virt-customize.pod:409 df/virt-df.pod:271
+#: cat/virt-cat.pod:291 customize/virt-customize.pod:408 df/virt-df.pod:271
 #: diff/virt-diff.pod:263 docs/guestfs-tools-release-notes-1.48.pod:128
 #: docs/guestfs-tools-release-notes-1.50.pod:180
 #: docs/guestfs-tools-release-notes-1.52.pod:121
@@ -6119,7 +6122,7 @@ msgstr ""
 "время сборки, используется обычный C<xzcat>, который является однопоточным."
 
 #. type: =head1
-#: builder/virt-builder.pod:1657 customize/virt-customize.pod:332
+#: builder/virt-builder.pod:1657 customize/virt-customize.pod:331
 msgid "SELINUX"
 msgstr "SELINUX"
 
@@ -6187,7 +6190,7 @@ msgstr ""
 "использовании, что является нормальным и безвредным."
 
 #. type: =head1
-#: builder/virt-builder.pod:1685 customize/virt-customize.pod:340
+#: builder/virt-builder.pod:1685 customize/virt-customize.pod:339
 msgid "DEPRECATED OPTIONS"
 msgstr "УСТАРЕВШИЕ ПАРАМЕТРЫ"
 
@@ -6287,7 +6290,7 @@ msgstr ""
 "\n"
 
 #. type: =head1
-#: builder/virt-builder.pod:1734 customize/virt-customize.pod:352
+#: builder/virt-builder.pod:1734 customize/virt-customize.pod:351
 #: drivers/virt-drivers.pod:224 edit/virt-edit.pod:366
 #: get-kernel/virt-get-kernel.pod:191 sparsify/virt-sparsify.pod:418
 #: sysprep/virt-sysprep.pod:370
@@ -6343,13 +6346,13 @@ msgstr ""
 "источников пользователя.  См. L</КЕШИРОВАНИЕ> и L</ИСТОЧНИКИ ШАБЛОНОВ>."
 
 #. type: =item
-#: builder/virt-builder.pod:1755 customize/virt-customize.pod:356
+#: builder/virt-builder.pod:1755 customize/virt-customize.pod:355
 #: sysprep/virt-sysprep.pod:374
 msgid "C<VIRT_TOOLS_DATA_DIR>"
 msgstr "C<VIRT_TOOLS_DATA_DIR>"
 
 #. type: textblock
-#: builder/virt-builder.pod:1757 customize/virt-customize.pod:358
+#: builder/virt-builder.pod:1757 customize/virt-customize.pod:357
 #: sysprep/virt-sysprep.pod:376
 msgid ""
 "This can point to the directory containing data files used for Windows "
@@ -6359,7 +6362,7 @@ msgstr ""
 "установки firstboot в Windows."
 
 #. type: textblock
-#: builder/virt-builder.pod:1760 customize/virt-customize.pod:361
+#: builder/virt-builder.pod:1760 customize/virt-customize.pod:360
 #: sysprep/virt-sysprep.pod:379
 msgid ""
 "Normally you do not need to set this.  If not set, a compiled-in default "
@@ -6370,19 +6373,19 @@ msgstr ""
 "tools>)."
 
 #. type: textblock
-#: builder/virt-builder.pod:1763 customize/virt-customize.pod:364
+#: builder/virt-builder.pod:1763 customize/virt-customize.pod:363
 #: sysprep/virt-sysprep.pod:382
 msgid "This directory may contain the following files:"
 msgstr "Этот каталог может содержать следующие файлы:"
 
 #. type: =item
-#: builder/virt-builder.pod:1767 customize/virt-customize.pod:368
+#: builder/virt-builder.pod:1767 customize/virt-customize.pod:367
 #: sysprep/virt-sysprep.pod:386
 msgid "F<rhsrvany.exe>"
 msgstr "F<rhsrvany.exe>"
 
 #. type: textblock
-#: builder/virt-builder.pod:1769 customize/virt-customize.pod:370
+#: builder/virt-builder.pod:1769 customize/virt-customize.pod:369
 #: sysprep/virt-sysprep.pod:388
 msgid ""
 "This is the RHSrvAny Windows binary, used to install a \"firstboot\" script "
@@ -6395,19 +6398,19 @@ msgstr ""
 "Windows."
 
 #. type: textblock
-#: builder/virt-builder.pod:1773 customize/virt-customize.pod:374
+#: builder/virt-builder.pod:1773 customize/virt-customize.pod:373
 #: sysprep/virt-sysprep.pod:392
 msgid "See also: C<https://github.com/rwmjones/rhsrvany>"
 msgstr "См. также: C<https://github.com/rwmjones/rhsrvany>"
 
 #. type: =item
-#: builder/virt-builder.pod:1775 customize/virt-customize.pod:376
+#: builder/virt-builder.pod:1775 customize/virt-customize.pod:375
 #: sysprep/virt-sysprep.pod:394
 msgid "F<pvvxsvc.exe>"
 msgstr "F<pvvxsvc.exe>"
 
 #. type: textblock
-#: builder/virt-builder.pod:1777 customize/virt-customize.pod:378
+#: builder/virt-builder.pod:1777 customize/virt-customize.pod:377
 #: sysprep/virt-sysprep.pod:396
 msgid ""
 "This is a Windows binary shipped with SUSE VMDP, used to install a "
@@ -8329,53 +8332,69 @@ msgstr "Недостатки:"
 #: common/mlcustomize/v2v-customize-options.pod:350
 #: sysprep/sysprep-extra-options.pod:455
 msgid ""
+"It is very difficult to know when this option can be safely used.  Other "
+"common options such as I<--install> may conflict with it.  Especially with "
+"systemd-based distributions, because of bugs in systemd, this option may not "
+"work at all (L<https://bugzilla.redhat.com/show_bug.cgi?id=2021835>)."
+msgstr ""
+"Очень трудно определить, когда эту опцию можно безопасно использовать.  "
+"Другие распространённые опции, такие как I<--install>, могут конфликтовать с "
+"ней.  Особенно в дистрибутивах на основе systemd из-за ошибок в systemd эта "
+"опция может вообще не работать (L<https://bugzilla.redhat.com/"
+"show_bug.cgi?id=2021835>)."
+
+#. type: textblock
+#: common/mlcustomize/customize-options.pod:412
+#: common/mlcustomize/v2v-customize-options.pod:358
+#: sysprep/sysprep-extra-options.pod:463
+msgid ""
 "The guest will take I<much> longer to boot up and become ready the first "
 "time it boots."
 msgstr ""
 "Гостевая система будет загружаться I<значительно> дольше при первом запуске."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:409
-#: common/mlcustomize/v2v-customize-options.pod:355
-#: sysprep/sysprep-extra-options.pod:460
+#: common/mlcustomize/customize-options.pod:417
+#: common/mlcustomize/v2v-customize-options.pod:363
+#: sysprep/sysprep-extra-options.pod:468
 msgid "The guest will reboot at least once."
 msgstr "Гостевая система перезагрузится как минимум один раз."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:413
-#: common/mlcustomize/v2v-customize-options.pod:359
-#: sysprep/sysprep-extra-options.pod:464
+#: common/mlcustomize/customize-options.pod:421
+#: common/mlcustomize/v2v-customize-options.pod:367
+#: sysprep/sysprep-extra-options.pod:472
 msgid "SELinux relabelling problems cannot be detected during conversion."
 msgstr ""
 "Проблемы перемаркировки SELinux не могут быть обнаружены во время "
 "преобразования."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:417
-#: common/mlcustomize/customize-options.pod:430
-#: common/mlcustomize/v2v-customize-options.pod:363
-#: common/mlcustomize/v2v-customize-options.pod:376
-#: sysprep/sysprep-extra-options.pod:468 sysprep/sysprep-extra-options.pod:482
-msgid "If in doubt, do not use this option."
-msgstr "Если сомневаетесь, не используйте эту опцию."
+#: common/mlcustomize/customize-options.pod:425
+#: common/mlcustomize/customize-options.pod:438
+#: common/mlcustomize/v2v-customize-options.pod:371
+#: common/mlcustomize/v2v-customize-options.pod:384
+#: sysprep/sysprep-extra-options.pod:476 sysprep/sysprep-extra-options.pod:490
+msgid "B<If in doubt, do not use this option>."
+msgstr "B<Если сомневаетесь, не используйте эту опцию>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:419
-#: common/mlcustomize/v2v-customize-options.pod:365
+#: common/mlcustomize/customize-options.pod:427
+#: common/mlcustomize/v2v-customize-options.pod:373
 msgid "B<--selinux-relabel-exclude> DIR"
 msgstr "B<--selinux-relabel-exclude> КАТАЛОГ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:421
-#: common/mlcustomize/v2v-customize-options.pod:367
-#: sysprep/sysprep-extra-options.pod:473
+#: common/mlcustomize/customize-options.pod:429
+#: common/mlcustomize/v2v-customize-options.pod:375
+#: sysprep/sysprep-extra-options.pod:481
 msgid "Exclude directories from being relabelled."
 msgstr "Исключить каталоги из перемаркировки SELinux."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:423
-#: common/mlcustomize/v2v-customize-options.pod:369
-#: sysprep/sysprep-extra-options.pod:475
+#: common/mlcustomize/customize-options.pod:431
+#: common/mlcustomize/v2v-customize-options.pod:377
+#: sysprep/sysprep-extra-options.pod:483
 msgid ""
 "This advanced option lets you list directories in the guest which should not "
 "be relabelled, even when SELinux relabelling is enabled.  Use this "
@@ -8392,9 +8411,9 @@ msgstr ""
 "должны быть уверены, что эти каталоги не нуждаются в перемаркировке."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:432
-#: common/mlcustomize/v2v-customize-options.pod:378
-#: sysprep/sysprep-extra-options.pod:484
+#: common/mlcustomize/customize-options.pod:440
+#: common/mlcustomize/v2v-customize-options.pod:386
+#: sysprep/sysprep-extra-options.pod:492
 msgid ""
 "You can pass the option multiple times, eg.  I<--selinux-relabel-exclude=/"
 "foo> I<--selinux-relabel-exclude=/bar>"
@@ -8403,15 +8422,15 @@ msgstr ""
 "exclude=/foo> I<--selinux-relabel-exclude=/bar>"
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:435
-#: common/mlcustomize/v2v-customize-options.pod:381
+#: common/mlcustomize/customize-options.pod:443
+#: common/mlcustomize/v2v-customize-options.pod:389
 msgid "B<--ssh-inject> USER[:SELECTOR]"
 msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР]"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:437
-#: common/mlcustomize/v2v-customize-options.pod:383
-#: sysprep/sysprep-extra-options.pod:490
+#: common/mlcustomize/customize-options.pod:445
+#: common/mlcustomize/v2v-customize-options.pod:391
+#: sysprep/sysprep-extra-options.pod:498
 msgid ""
 "Inject an ssh key so the given C<USER> will be able to log in over ssh "
 "without supplying a password.  The C<USER> must exist already in the guest."
@@ -8420,17 +8439,17 @@ msgstr ""
 "ввода пароля. C<ПОЛЬЗОВАТЕЛЬ> уже должен существовать в гостевой системе."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:441
-#: common/mlcustomize/v2v-customize-options.pod:387
-#: sysprep/sysprep-extra-options.pod:494
+#: common/mlcustomize/customize-options.pod:449
+#: common/mlcustomize/v2v-customize-options.pod:395
+#: sysprep/sysprep-extra-options.pod:502
 msgid ""
 "See L<virt-builder(1)/SSH KEYS> for the format of the C<SELECTOR> field."
 msgstr "Формат поля C<СЕЛЕКТОР> см. в L<virt-builder(1)/SSH КЛЮЧИ>."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:444
-#: common/mlcustomize/v2v-customize-options.pod:390
-#: sysprep/sysprep-extra-options.pod:497
+#: common/mlcustomize/customize-options.pod:452
+#: common/mlcustomize/v2v-customize-options.pod:398
+#: sysprep/sysprep-extra-options.pod:505
 msgid ""
 "You can have multiple I<--ssh-inject> options, for different users and also "
 "for more keys for each user."
@@ -8440,15 +8459,15 @@ msgstr ""
 "пользователя."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:447
-#: common/mlcustomize/v2v-customize-options.pod:393
+#: common/mlcustomize/customize-options.pod:455
+#: common/mlcustomize/v2v-customize-options.pod:401
 msgid "B<--tar-in> TARFILE:REMOTEDIR"
 msgstr "B<--tar-in> ТАР_ФАЙЛ:УДАЛЕННЫЙ_КАТАЛОГ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:449
-#: common/mlcustomize/v2v-customize-options.pod:395
-#: sysprep/sysprep-extra-options.pod:503
+#: common/mlcustomize/customize-options.pod:457
+#: common/mlcustomize/v2v-customize-options.pod:403
+#: sysprep/sysprep-extra-options.pod:511
 msgid ""
 "Copy local files or directories from a local tar file called C<TARFILE> into "
 "the disk image, placing them in the directory C<REMOTEDIR> (which must "
@@ -8461,15 +8480,15 @@ msgstr ""
 "несжатым (файлы F<.tar.gz> здесь работать не будут)"
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:455
-#: common/mlcustomize/v2v-customize-options.pod:401
+#: common/mlcustomize/customize-options.pod:463
+#: common/mlcustomize/v2v-customize-options.pod:409
 msgid "B<--timezone> TIMEZONE"
 msgstr "B<--timezone> ЧАСОВОЙ_ПОЯС"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:457
-#: common/mlcustomize/v2v-customize-options.pod:403
-#: sysprep/sysprep-extra-options.pod:512
+#: common/mlcustomize/customize-options.pod:465
+#: common/mlcustomize/v2v-customize-options.pod:411
+#: sysprep/sysprep-extra-options.pod:520
 msgid ""
 "Set the default timezone of the guest to C<TIMEZONE>.  Use a location string "
 "like C<Europe/London>"
@@ -8478,28 +8497,28 @@ msgstr ""
 "строку местоположения, например C<Europe/London>"
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:460
-#: common/mlcustomize/v2v-customize-options.pod:406
+#: common/mlcustomize/customize-options.pod:468
+#: common/mlcustomize/v2v-customize-options.pod:414
 msgid "B<--touch> FILE"
 msgstr "B<--touch> ФАЙЛ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:462
-#: common/mlcustomize/v2v-customize-options.pod:408
-#: sysprep/sysprep-extra-options.pod:518
+#: common/mlcustomize/customize-options.pod:470
+#: common/mlcustomize/v2v-customize-options.pod:416
+#: sysprep/sysprep-extra-options.pod:526
 msgid "This command performs a L<touch(1)>-like operation on C<FILE>."
 msgstr "Эта команда выполняет операцию, аналогичную L<touch(1)>, над C<ФАЙЛ>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:464
-#: common/mlcustomize/v2v-customize-options.pod:410
+#: common/mlcustomize/customize-options.pod:472
+#: common/mlcustomize/v2v-customize-options.pod:418
 msgid "B<--truncate> FILE"
 msgstr "B<--truncate> ФАЙЛ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:466
-#: common/mlcustomize/v2v-customize-options.pod:412
-#: sysprep/sysprep-extra-options.pod:523
+#: common/mlcustomize/customize-options.pod:474
+#: common/mlcustomize/v2v-customize-options.pod:420
+#: sysprep/sysprep-extra-options.pod:531
 msgid ""
 "This command truncates C<FILE> to a zero-length file. The file must exist "
 "already."
@@ -8507,30 +8526,30 @@ msgstr ""
 "Эта команда урезает C<ФАЙЛ> до нулевой длины. Файл должен уже существовать."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:469
-#: common/mlcustomize/v2v-customize-options.pod:415
+#: common/mlcustomize/customize-options.pod:477
+#: common/mlcustomize/v2v-customize-options.pod:423
 msgid "B<--truncate-recursive> PATH"
 msgstr "B<--truncate-recursive> ПУТЬ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:471
-#: common/mlcustomize/v2v-customize-options.pod:417
-#: sysprep/sysprep-extra-options.pod:529
+#: common/mlcustomize/customize-options.pod:479
+#: common/mlcustomize/v2v-customize-options.pod:425
+#: sysprep/sysprep-extra-options.pod:537
 msgid ""
 "This command recursively truncates all files under C<PATH> to zero-length."
 msgstr ""
 "Эта команда рекурсивно урезает все файлы внутри C<ПУТЬ> до нулевой длины."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:473
-#: common/mlcustomize/v2v-customize-options.pod:419
+#: common/mlcustomize/customize-options.pod:481
+#: common/mlcustomize/v2v-customize-options.pod:427
 msgid "B<--uninstall> PKG,PKG.."
 msgstr "B<--uninstall> ПАКЕТ,ПАКЕТ.."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:475
-#: common/mlcustomize/v2v-customize-options.pod:421
-#: sysprep/sysprep-extra-options.pod:534
+#: common/mlcustomize/customize-options.pod:483
+#: common/mlcustomize/v2v-customize-options.pod:429
+#: sysprep/sysprep-extra-options.pod:542
 msgid ""
 "Uninstall the named packages (a comma-separated list).  These are removed "
 "during the image build using the guest’s package manager (eg. apt, yum, "
@@ -8543,22 +8562,22 @@ msgstr ""
 "зависимых пакетов."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:480
-#: common/mlcustomize/v2v-customize-options.pod:426
-#: sysprep/sysprep-extra-options.pod:539
+#: common/mlcustomize/customize-options.pod:488
+#: common/mlcustomize/v2v-customize-options.pod:434
+#: sysprep/sysprep-extra-options.pod:547
 msgid "See also I<--install>, I<--update>."
 msgstr "См. также I<--install>, I<--update>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:482
-#: common/mlcustomize/v2v-customize-options.pod:428
+#: common/mlcustomize/customize-options.pod:490
+#: common/mlcustomize/v2v-customize-options.pod:436
 msgid "B<--update>"
 msgstr "B<--update>"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:484
-#: common/mlcustomize/v2v-customize-options.pod:430
-#: sysprep/sysprep-extra-options.pod:544
+#: common/mlcustomize/customize-options.pod:492
+#: common/mlcustomize/v2v-customize-options.pod:438
+#: sysprep/sysprep-extra-options.pod:552
 msgid ""
 "Do the equivalent of C<yum update>, C<apt-get upgrade>, or whatever command "
 "is required to update the packages already installed in the template to "
@@ -8569,22 +8588,22 @@ msgstr ""
 "их последних версий."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:488
-#: common/mlcustomize/v2v-customize-options.pod:434
-#: sysprep/sysprep-extra-options.pod:548
+#: common/mlcustomize/customize-options.pod:496
+#: common/mlcustomize/v2v-customize-options.pod:442
+#: sysprep/sysprep-extra-options.pod:556
 msgid "See also I<--install>, I<--uninstall>."
 msgstr "См. также I<--install>, I<--uninstall>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:490
-#: common/mlcustomize/v2v-customize-options.pod:436
+#: common/mlcustomize/customize-options.pod:498
+#: common/mlcustomize/v2v-customize-options.pod:444
 msgid "B<--upload> FILE:DEST"
 msgstr "B<--upload> ФАЙЛ:НАЗНАЧЕНИЕ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:492
-#: common/mlcustomize/v2v-customize-options.pod:438
-#: sysprep/sysprep-extra-options.pod:553
+#: common/mlcustomize/customize-options.pod:500
+#: common/mlcustomize/v2v-customize-options.pod:446
+#: sysprep/sysprep-extra-options.pod:561
 msgid ""
 "Upload local file C<FILE> to destination C<DEST> in the disk image.  File "
 "owner and permissions from the original are preserved, so you should set "
@@ -8595,9 +8614,9 @@ msgstr ""
 "поэтому вы должны установить их так, как хотите видеть в образе диска."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:496
-#: common/mlcustomize/v2v-customize-options.pod:442
-#: sysprep/sysprep-extra-options.pod:557
+#: common/mlcustomize/customize-options.pod:504
+#: common/mlcustomize/v2v-customize-options.pod:450
+#: sysprep/sysprep-extra-options.pod:565
 msgid ""
 "C<DEST> could be the final filename.  This can be used to rename the file on "
 "upload."
@@ -8606,9 +8625,9 @@ msgstr ""
 "переименования файла при загрузке."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:499
-#: common/mlcustomize/v2v-customize-options.pod:445
-#: sysprep/sysprep-extra-options.pod:560
+#: common/mlcustomize/customize-options.pod:507
+#: common/mlcustomize/v2v-customize-options.pod:453
+#: sysprep/sysprep-extra-options.pod:568
 msgid ""
 "If C<DEST> is a directory name (which must already exist in the guest)  then "
 "the file is uploaded into that directory, and it keeps the same name as on "
@@ -8619,22 +8638,22 @@ msgstr ""
 "имя, что и в локальной файловой системе."
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:503
-#: common/mlcustomize/v2v-customize-options.pod:449
-#: sysprep/sysprep-extra-options.pod:564
+#: common/mlcustomize/customize-options.pod:511
+#: common/mlcustomize/v2v-customize-options.pod:457
+#: sysprep/sysprep-extra-options.pod:572
 msgid "See also: I<--mkdir>, I<--delete>, I<--scrub>."
 msgstr "См. также: I<--mkdir>, I<--delete>, I<--scrub>."
 
 #. type: =item
-#: common/mlcustomize/customize-options.pod:505
-#: common/mlcustomize/v2v-customize-options.pod:451
+#: common/mlcustomize/customize-options.pod:513
+#: common/mlcustomize/v2v-customize-options.pod:459
 msgid "B<--write> FILE:CONTENT"
 msgstr "B<--write> ФАЙЛ:СОДЕРЖИМОЕ"
 
 #. type: textblock
-#: common/mlcustomize/customize-options.pod:507
-#: common/mlcustomize/v2v-customize-options.pod:453
-#: sysprep/sysprep-extra-options.pod:569
+#: common/mlcustomize/customize-options.pod:515
+#: common/mlcustomize/v2v-customize-options.pod:461
+#: sysprep/sysprep-extra-options.pod:577
 msgid "Write C<CONTENT> to C<FILE>."
 msgstr "Записать C<СОДЕРЖИМОЕ> в C<ФАЙЛ>."
 
@@ -9118,21 +9137,18 @@ msgstr "* 249"
 #: customize/virt-customize.pod:267
 msgid ""
 "The batch file is treated as a failure.  The batch file will be run again on "
-"next reboot.  (Be careful that batch files do not continuously give this "
-"exit code, otherwise Windows will boot loop.)"
+"next reboot (up to 3 times)."
 msgstr ""
 "Пакетный файл считается неудачным.  Пакетный файл будет запущен снова при "
-"следующей перезагрузке.  (Будьте осторожны, чтобы пакетные файлы не выдавали "
-"этот код завершения постоянно, иначе Windows будет зацикливаться при "
-"загрузке.)"
+"следующей перезагрузке (до 3 раз)."
 
 #. type: =item
-#: customize/virt-customize.pod:271
+#: customize/virt-customize.pod:270
 msgid "* 250"
 msgstr "* 250"
 
 #. type: textblock
-#: customize/virt-customize.pod:273
+#: customize/virt-customize.pod:272
 msgid ""
 "The script indicates that a system reboot is not required at this stage.  "
 "The next script in the sequence will run without initiating a reboot."
@@ -9142,12 +9158,12 @@ msgstr ""
 "перезагрузки."
 
 #. type: =item
-#: customize/virt-customize.pod:277
+#: customize/virt-customize.pod:276
 msgid "* Any other code"
 msgstr "* Любой другой код"
 
 #. type: textblock
-#: customize/virt-customize.pod:279
+#: customize/virt-customize.pod:278
 msgid ""
 "This script is considered successful.  Windows will reboot and run the next "
 "script."
@@ -9156,12 +9172,12 @@ msgstr ""
 "скрипт."
 
 #. type: =head2
-#: customize/virt-customize.pod:284
+#: customize/virt-customize.pod:283
 msgid "Windows sentinel file"
 msgstr "Сигнальный файл Windows"
 
 #. type: textblock
-#: customize/virt-customize.pod:286
+#: customize/virt-customize.pod:285
 msgid ""
 "On Windows guests (only) a sentinel file is written into the guest once all "
 "firstboot scripts have finished running.  You can use this to detect if the "
@@ -9174,7 +9190,7 @@ msgstr ""
 "преобразование L<virt-v2v(1)>).  Расположение этого файла по умолчанию:"
 
 #. type: verbatim
-#: customize/virt-customize.pod:291
+#: customize/virt-customize.pod:290
 #, no-wrap
 msgid ""
 " C:\\Program Files\\Guestfs\\Firstboot\\complete\n"
@@ -9184,12 +9200,12 @@ msgstr ""
 "\n"
 
 #. type: =head2
-#: customize/virt-customize.pod:293
+#: customize/virt-customize.pod:292
 msgid "Auxiliary tools"
 msgstr "Вспомогательные инструменты"
 
 #. type: textblock
-#: customize/virt-customize.pod:295
+#: customize/virt-customize.pod:294
 msgid ""
 "On Windows guests, F<rhsrvany.exe>, available from sources at L<https://"
 "github.com/rwmjones/rhsrvany>, or F<pvvxsvc.exe>, available with SUSE VMDP, "
@@ -9203,7 +9219,7 @@ msgstr ""
 "отсутствует."
 
 #. type: textblock
-#: customize/virt-customize.pod:301
+#: customize/virt-customize.pod:300
 msgid ""
 "F<rhsrvany.exe> or F<pvvxsvc.exe> is copied from the location pointed to by "
 "the C<VIRT_TOOLS_DATA_DIR> environment variable; if not set, a compiled-in "
@@ -9215,12 +9231,12 @@ msgstr ""
 "tools>)."
 
 #. type: =head2
-#: customize/virt-customize.pod:306
+#: customize/virt-customize.pod:305
 msgid "I<--firstboot> vs I<--script>"
 msgstr "I<--firstboot> против I<--script>"
 
 #. type: textblock
-#: customize/virt-customize.pod:308
+#: customize/virt-customize.pod:307
 msgid ""
 "The two options I<--firstboot> and I<--script> both supply shell scripts "
 "that are run against the guest.  However these two options are significantly "
@@ -9231,7 +9247,7 @@ msgstr ""
 "отличаются."
 
 #. type: textblock
-#: customize/virt-customize.pod:312
+#: customize/virt-customize.pod:311
 msgid ""
 "I<--firstboot script> uploads the file C<script> into the guest and arranges "
 "that it will run, in the guest, when the guest is next booted."
@@ -9240,7 +9256,7 @@ msgstr ""
 "он выполнялся в госте при следующей загрузке."
 
 #. type: textblock
-#: customize/virt-customize.pod:316
+#: customize/virt-customize.pod:315
 msgid ""
 "I<--script> runs the shell script I<on the host>, with its current directory "
 "inside the guest filesystem."
@@ -9249,7 +9265,7 @@ msgstr ""
 "внутри файловой системы гостя."
 
 #. type: textblock
-#: customize/virt-customize.pod:319
+#: customize/virt-customize.pod:318
 msgid ""
 "If you needed, for example, to C<yum install> new packages, then you I<must "
 "not> use I<--script> for this, since that would (a) run the C<yum> command "
@@ -9264,7 +9280,7 @@ msgstr ""
 "выполняться на госте, I<должна> выполняться через I<--firstboot>."
 
 #. type: textblock
-#: customize/virt-customize.pod:325
+#: customize/virt-customize.pod:324
 msgid ""
 "On the other hand if you need to make adjustments to the guest filesystem "
 "(eg. copying in files), then I<--script> is ideal since (a)  it has access "
@@ -9276,14 +9292,14 @@ msgstr ""
 "об ошибках."
 
 #. type: textblock
-#: customize/virt-customize.pod:330
+#: customize/virt-customize.pod:329
 msgid "Either or both options can be used multiple times on the command line."
 msgstr ""
 "Любой из этих параметров или оба могут использоваться несколько раз в "
 "командной строке."
 
 #. type: textblock
-#: customize/virt-customize.pod:334 sysprep/virt-sysprep.pod:355
+#: customize/virt-customize.pod:333 sysprep/virt-sysprep.pod:355
 msgid ""
 "For guests which make use of SELinux, special handling for them might be "
 "needed when using operations which create new files or alter existing ones."
@@ -9293,13 +9309,13 @@ msgstr ""
 "существующие."
 
 #. type: textblock
-#: customize/virt-customize.pod:338 sysprep/virt-sysprep.pod:359
+#: customize/virt-customize.pod:337 sysprep/virt-sysprep.pod:359
 msgid "For further details, see L<virt-builder(1)/SELINUX>."
 msgstr ""
 "Для получения более подробной информации см. L<virt-builder(1)/SELINUX>."
 
 #. type: textblock
-#: customize/virt-customize.pod:342
+#: customize/virt-customize.pod:341
 msgid ""
 "In version 1.56 the subscription-manager options were removed: B<--sm-"
 "credentials>, B<--sm-register>, B<--sm-unregister>, B<--sm-attach>, B<--sm-"
@@ -9310,20 +9326,20 @@ msgstr ""
 "remove>"
 
 #. type: textblock
-#: customize/virt-customize.pod:346
+#: customize/virt-customize.pod:345
 msgid "For further details, see L<virt-builder(1)/DEPRECATED OPTIONS>."
 msgstr ""
 "Для получения более подробной информации см. L<virt-builder(1)/УСТАРЕВШИЕ "
 "ПАРАМЕТРЫ>."
 
 #. type: textblock
-#: customize/virt-customize.pod:350 sysprep/virt-sysprep.pod:368
+#: customize/virt-customize.pod:349 sysprep/virt-sysprep.pod:368
 msgid "This program returns 0 on success, or 1 if there was an error."
 msgstr ""
 "Эта программа возвращает 0 в случае успеха или 1, если произошла ошибка."
 
 #. type: textblock
-#: customize/virt-customize.pod:386 sparsify/virt-sparsify.pod:449
+#: customize/virt-customize.pod:385 sparsify/virt-sparsify.pod:449
 #: sysprep/virt-sysprep.pod:404
 msgid ""
 "For other environment variables, see L<guestfs(3)/ENVIRONMENT VARIABLES>."
@@ -9331,7 +9347,7 @@ msgstr ""
 "Для других переменных окружения см. L<guestfs(3)/ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ>."
 
 #. type: textblock
-#: customize/virt-customize.pod:390
+#: customize/virt-customize.pod:389
 msgid ""
 "L<guestfs(3)>, L<guestfish(1)>, L<virt-builder(1)>, L<virt-clone(1)>, L<virt-"
 "rescue(1)>, L<virt-resize(1)>, L<virt-sparsify(1)>, L<virt-sysprep(1)>, "
@@ -9344,7 +9360,7 @@ msgstr ""
 "libguestfs.org/>, L<http://libvirt.org/>."
 
 #. type: =head1
-#: customize/virt-customize.pod:405
+#: customize/virt-customize.pod:404
 #: docs/guestfs-tools-release-notes-1.48.pod:106
 #: docs/guestfs-tools-release-notes-1.50.pod:164
 #: docs/guestfs-tools-release-notes-1.52.pod:103
@@ -9355,7 +9371,7 @@ msgid "AUTHORS"
 msgstr "АВТОРЫ"
 
 #. type: textblock
-#: customize/virt-customize.pod:411 sparsify/virt-sparsify.pod:481
+#: customize/virt-customize.pod:410 sparsify/virt-sparsify.pod:481
 #: sysprep/virt-sysprep.pod:431
 msgid "Copyright (C) 2011-2025 Red Hat Inc."
 msgstr "Copyright (C) 2011-2025 Red Hat Inc."
@@ -19577,57 +19593,57 @@ msgid "B<--selinux-relabel-at-boot> (see C<customize> below)"
 msgstr "B<--selinux-relabel-at-boot> (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:470
+#: sysprep/sysprep-extra-options.pod:478
 msgid "B<--selinux-relabel-exclude> DIR (see C<customize> below)"
 msgstr "B<--selinux-relabel-exclude> КАТАЛОГ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:487
+#: sysprep/sysprep-extra-options.pod:495
 msgid "B<--ssh-inject> USER[:SELECTOR] (see C<customize> below)"
 msgstr "B<--ssh-inject> ПОЛЬЗОВАТЕЛЬ[:СЕЛЕКТОР] (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:500
+#: sysprep/sysprep-extra-options.pod:508
 msgid "B<--tar-in> TARFILE:REMOTEDIR (see C<customize> below)"
 msgstr "B<--tar-in> TAR_ФАЙЛ:УДАЛЕННЫЙ_КАТАЛОГ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:509
+#: sysprep/sysprep-extra-options.pod:517
 msgid "B<--timezone> TIMEZONE (see C<customize> below)"
 msgstr "B<--timezone> ЧАСОВОЙ_ПОЯС (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:515
+#: sysprep/sysprep-extra-options.pod:523
 msgid "B<--touch> FILE (see C<customize> below)"
 msgstr "B<--touch> ФАЙЛ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:520
+#: sysprep/sysprep-extra-options.pod:528
 msgid "B<--truncate> FILE (see C<customize> below)"
 msgstr "B<--truncate> ФАЙЛ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:526
+#: sysprep/sysprep-extra-options.pod:534
 msgid "B<--truncate-recursive> PATH (see C<customize> below)"
 msgstr "B<--truncate-recursive> ПУТЬ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:531
+#: sysprep/sysprep-extra-options.pod:539
 msgid "B<--uninstall> PKG,PKG..  (see C<customize> below)"
 msgstr "B<--uninstall> ПАКЕТ,ПАКЕТ..  (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:541
+#: sysprep/sysprep-extra-options.pod:549
 msgid "B<--update> (see C<customize> below)"
 msgstr "B<--update> (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:550
+#: sysprep/sysprep-extra-options.pod:558
 msgid "B<--upload> FILE:DEST (see C<customize> below)"
 msgstr "B<--upload> ФАЙЛ:ЦЕЛЬ (см. C<customize> ниже)"
 
 #. type: =item
-#: sysprep/sysprep-extra-options.pod:566
+#: sysprep/sysprep-extra-options.pod:574
 msgid "B<--write> FILE:CONTENT (see C<customize> below)"
 msgstr "B<--write> ФАЙЛ:СОДЕРЖИМОЕ (см. C<customize> ниже)"
 
