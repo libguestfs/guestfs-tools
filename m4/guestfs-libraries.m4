@@ -19,12 +19,9 @@ dnl Any C libraries required by the libguestfs C library (not the daemon).
 
 dnl Of course we need libguestfs.
 dnl
-dnl We need libguestfs 1.57.1 for guestfs_setfiles.
-dnl We need libguestfs 1.57.6 for guestfs_inspect_get_applications2 app2_class.
-dnl We need libguestfs 1.57.6 for guestfs_inspect_get_windows_group_policy
-dnl We need libguestfs 1.59.7 for text: and base64: prefix in LUKS funcs.
-dnl We need libguestfs 1.61.1 for guestfs_setfiles excludes parameter.
-PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.61.1])
+dnl We need libguestfs 1.61.1 for guestfs_setfiles excludes parameter
+dnl We need libguestfs 1.61.6 for guestfs_kill_procs
+PKG_CHECK_MODULES([LIBGUESTFS], [libguestfs >= 1.61.6])
 printf "libguestfs version is "; $PKG_CONFIG --modversion libguestfs
 
 dnl Test if it's GNU or XSI strerror_r.
