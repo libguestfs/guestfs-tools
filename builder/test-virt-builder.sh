@@ -71,6 +71,7 @@ virt-builder phony-fedora \
 ' \
     --append-line '/etc/append6:line2' \
     --chown 1:1:/etc/append6 \
+    --setxattr /etc/append6:user.test:123456abc \
     --firstboot Makefile --firstboot-command 'echo "hello"' \
     --firstboot-install "minicom,inkscape"
 
@@ -116,6 +117,9 @@ echo append6:
 cat /etc/append6
 stat /etc/append6 | grep '^[ug]id:'
 
+getxattr /etc/append6 user.test
+echo
+
 echo -----
 EOF
 
@@ -159,6 +163,7 @@ line2
 
 uid: 1
 gid: 1
+123456abc
 -----" ]; then
     echo "$0: unexpected output:"
     cat test-virt-builder.out
