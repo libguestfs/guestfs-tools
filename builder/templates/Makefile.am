@@ -1,5 +1,7 @@
 # libguestfs virt-builder tool
 # Copyright (C) 2013-2025 Red Hat Inc.
+# Copyright 2026 Cisco Systems, Inc. and its affiliates
+# SPDX-License-Identifier: GPL-2.0-or-later
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,8 +25,13 @@ EXTRA_DIST = \
 	$(index_fragments) \
 	*.ks \
 	*.virt-install-cmd \
+	README-ubuntu-cloud.md \
 	debian.preseed \
 	make-template.ml \
+	prepare-cloud-image.sh \
+	test-ubuntu-cloud-image-import.sh \
+	test-ubuntu-cloud-images.sh \
+	ubuntu-cloud-images \
 	ubuntu.preseed \
 	validate.sh
 
@@ -42,7 +49,10 @@ index: $(index_fragments)
 TESTS_ENVIRONMENT = \
 	top_srcdir="$(top_srcdir)" \
 	$(top_builddir)/run --test
-TESTS = validate.sh
+TESTS = \
+	test-ubuntu-cloud-image-import.sh \
+	test-ubuntu-cloud-images.sh \
+	validate.sh
 
 check-valgrind:
 	$(MAKE) VG="@VG@" check
