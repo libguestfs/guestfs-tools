@@ -51,7 +51,7 @@ msgid ""
 "Options:\n"
 msgstr ""
 
-#: common/mltools/tools_utils.ml:703 common/mlcustomize/customize_run.ml:395
+#: common/mltools/tools_utils.ml:703 common/mlcustomize/customize_run.ml:397
 msgid "%s (ignored)"
 msgstr ""
 
@@ -403,8 +403,8 @@ msgstr ""
 msgid "%s: zero length path in the index file\n"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:266
-#: common/mlcustomize/customize_cmdline.ml:375
+#. common/mlcustomize/customize_cmdline.ml:270
+#: common/mlcustomize/customize_cmdline.ml:379
 msgid "'CMD+ARGS'"
 msgstr ""
 
@@ -534,11 +534,11 @@ msgstr ""
 msgid "Add disk image file"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:313
+#: common/mlcustomize/customize_cmdline.ml:317
 msgid "Add package(s) to install"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:278
+#: common/mlcustomize/customize_cmdline.ml:282
 msgid "Add package(s) to install at first boot"
 msgstr ""
 
@@ -562,7 +562,7 @@ msgstr ""
 msgid "Already existing image with id %s and architecture %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:183
+#: common/mlcustomize/customize_cmdline.ml:187
 msgid "Append line(s) to the file"
 msgstr ""
 
@@ -617,13 +617,13 @@ msgstr ""
 msgid "Change filesystem UUIDs"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:205
+#: common/mlcustomize/customize_cmdline.ml:209
 #, fuzzy
 #| msgid "set extended attribute of a file or directory"
 msgid "Change the owner user and group ID of a file or directory"
 msgstr "ಒಂದು ಕಡತ ಅಥವ ಕೋಶದ ವಿಸ್ತರಿಸಲಾದ ಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿಸು"
 
-#: common/mlcustomize/customize_cmdline.ml:194
+#: common/mlcustomize/customize_cmdline.ml:198
 msgid "Change the permissions of a file"
 msgstr ""
 
@@ -653,7 +653,7 @@ msgstr ""
 msgid "Clearing Linux swap on %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:496
+#: common/mlcustomize/customize_cmdline.ml:500
 msgid "Compatibility option doing nothing"
 msgstr ""
 
@@ -669,15 +669,15 @@ msgstr ""
 msgid "Converting to %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:227
+#: common/mlcustomize/customize_cmdline.ml:231
 msgid "Copy files in disk image"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:405
+#: common/mlcustomize/customize_cmdline.ml:409
 msgid "Copy local files or directories from a tarball into image"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:238
+#: common/mlcustomize/customize_cmdline.ml:242
 msgid "Copy local files or directories into image"
 msgstr ""
 
@@ -697,7 +697,7 @@ msgstr ""
 msgid "Copying: %s to %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:330
+#: common/mlcustomize/customize_cmdline.ml:334
 msgid "Create a directory"
 msgstr ""
 
@@ -709,7 +709,7 @@ msgstr ""
 msgid "Create overlay file in %s to protect source disk"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:324
+#: common/mlcustomize/customize_cmdline.ml:328
 msgid "Create symbolic links"
 msgstr ""
 
@@ -748,16 +748,16 @@ msgid ""
 "for installing packages, editing files and so on."
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:329
-#: common/mlcustomize/customize_cmdline.ml:508
+#. common/mlcustomize/customize_cmdline.ml:333
+#: common/mlcustomize/customize_cmdline.ml:512
 msgid "DIR"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:502
+#: common/mlcustomize/customize_cmdline.ml:506
 msgid "Defer SELinux relabelling until boot"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:244
+#: common/mlcustomize/customize_cmdline.ml:248
 msgid "Delete a file or directory"
 msgstr ""
 
@@ -813,7 +813,7 @@ msgstr ""
 msgid "Do not fsync output file on exit"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:490
+#: common/mlcustomize/customize_cmdline.ml:494
 msgid "Do not relabel files with correct SELinux labels"
 msgstr ""
 
@@ -865,7 +865,7 @@ msgstr ""
 msgid "Downloading: %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:255
+#: common/mlcustomize/customize_cmdline.ml:259
 msgid "Edit file using Perl expression"
 msgstr ""
 
@@ -913,7 +913,7 @@ msgstr ""
 msgid "Examining the guest ..."
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:511
+#: common/mlcustomize/customize_cmdline.ml:515
 msgid "Exclude directories from SELinux relabelling"
 msgstr ""
 
@@ -945,29 +945,29 @@ msgstr ""
 msgid "Extracting data from the image..."
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:416
-#. common/mlcustomize/customize_cmdline.ml:381
-#: common/mlcustomize/customize_cmdline.ml:422
+#. common/mlcustomize/customize_cmdline.ml:420
+#. common/mlcustomize/customize_cmdline.ml:385
+#: common/mlcustomize/customize_cmdline.ml:426
 msgid "FILE"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:463
+#: common/mlcustomize/customize_cmdline.ml:467
 msgid "FILE:CONTENT"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:452
+#: common/mlcustomize/customize_cmdline.ml:456
 msgid "FILE:DEST"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:250
+#: common/mlcustomize/customize_cmdline.ml:254
 msgid "FILE:EXPR"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:178
+#: common/mlcustomize/customize_cmdline.ml:182
 msgid "FILE:LINE"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:211
+#: common/mlcustomize/customize_cmdline.ml:215
 msgid "FILENAME"
 msgstr ""
 
@@ -1079,7 +1079,7 @@ msgstr ""
 msgid "Get kernel from image"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:283
+#: common/mlcustomize/customize_cmdline.ml:287
 msgid "HOSTNAME"
 msgstr ""
 
@@ -1111,19 +1111,19 @@ msgstr ""
 msgid "In case any certificate is removed, the system CA store is updated."
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:394
+#: common/mlcustomize/customize_cmdline.ml:398
 msgid "Inject a public key into the guest"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:290
+#: common/mlcustomize/customize_cmdline.ml:294
 msgid "Inject the Balloon Server into a Windows guest"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:296
+#: common/mlcustomize/customize_cmdline.ml:300
 msgid "Inject the QEMU Guest Agent into a Windows guest"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:302
+#: common/mlcustomize/customize_cmdline.ml:306
 msgid "Inject virtio-win drivers into a Windows guest"
 msgstr ""
 
@@ -1147,7 +1147,7 @@ msgstr ""
 msgid "Key: %s\n"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:233
+#: common/mlcustomize/customize_cmdline.ml:237
 msgid "LOCALPATH:REMOTEDIR"
 msgstr ""
 
@@ -1163,9 +1163,9 @@ msgstr ""
 msgid "List supported operations"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:295
-#. common/mlcustomize/customize_cmdline.ml:289
-#: common/mlcustomize/customize_cmdline.ml:301
+#. common/mlcustomize/customize_cmdline.ml:299
+#. common/mlcustomize/customize_cmdline.ml:293
+#: common/mlcustomize/customize_cmdline.ml:305
 msgid "METHOD"
 msgstr ""
 
@@ -1189,7 +1189,7 @@ msgstr ""
 msgid "Mount point on host"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:341
+#: common/mlcustomize/customize_cmdline.ml:345
 msgid "Move files in disk image"
 msgstr ""
 
@@ -1254,6 +1254,12 @@ msgid ""
 "building rhsrvany (https://github.com/rwmjones/rhsrvany)"
 msgstr ""
 
+#: common/mlcustomize/customize_cmdline.ml:521
+#, fuzzy
+#| msgid "find all files and directories"
+msgid "Only relabel FHS directories"
+msgstr "ಎಲ್ಲಾ ಕಡತಗಳನ್ನು ಹಾಗು ಕೋಶಗಳನ್ನು ಪತ್ತೆ ಮಾಡು"
+
 #: builder/builder.ml:721
 msgid "Opening the new disk"
 msgstr ""
@@ -1278,18 +1284,18 @@ msgstr ""
 msgid "Output size"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:243
-#: common/mlcustomize/customize_cmdline.ml:428
+#. common/mlcustomize/customize_cmdline.ml:247
+#: common/mlcustomize/customize_cmdline.ml:432
 msgid "PATH"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:189
+#: common/mlcustomize/customize_cmdline.ml:193
 msgid "PERMISSIONS:FILE"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:308
-#. common/mlcustomize/customize_cmdline.ml:273
-#: common/mlcustomize/customize_cmdline.ml:435
+#. common/mlcustomize/customize_cmdline.ml:312
+#. common/mlcustomize/customize_cmdline.ml:277
+#: common/mlcustomize/customize_cmdline.ml:439
 msgid "PKG,PKG.."
 msgstr ""
 
@@ -1325,7 +1331,7 @@ msgstr ""
 msgid "Print info about template cache"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:216
+#: common/mlcustomize/customize_cmdline.ml:220
 msgid "Read customize commands from file"
 msgstr ""
 
@@ -1333,7 +1339,7 @@ msgstr ""
 msgid "Read passphrases from stdin"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:429
+#: common/mlcustomize/customize_cmdline.ml:433
 msgid "Recursively truncate all files in directory"
 msgstr ""
 
@@ -1577,19 +1583,19 @@ msgstr ""
 msgid "Run arbitrary scripts against the guest"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:267
+#: common/mlcustomize/customize_cmdline.ml:271
 msgid "Run command at first guest boot"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:376
+#: common/mlcustomize/customize_cmdline.ml:380
 msgid "Run command in disk image"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:261
+#: common/mlcustomize/customize_cmdline.ml:265
 msgid "Run script at first guest boot"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:370
+#: common/mlcustomize/customize_cmdline.ml:374
 msgid "Run script in disk image"
 msgstr ""
 
@@ -1603,7 +1609,7 @@ msgid ""
 "the full absolute path to the script."
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:417
+#: common/mlcustomize/customize_cmdline.ml:421
 msgid "Run touch on a file"
 msgstr ""
 
@@ -1616,26 +1622,30 @@ msgstr ""
 msgid "Running: %s"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:260
-#: common/mlcustomize/customize_cmdline.ml:369
+#. common/mlcustomize/customize_cmdline.ml:264
+#: common/mlcustomize/customize_cmdline.ml:373
 msgid "SCRIPT"
 msgstr ""
 
 #: common/mltools/tools_utils.ml:430
-#: common/mlcustomize/customize_cmdline.ml:359
+#: common/mlcustomize/customize_cmdline.ml:363
 msgid "SELECTOR"
 msgstr ""
 
-#: common/mlcustomize/customize_run.ml:365
+#: common/mlcustomize/customize_run.ml:367
 msgid "SELinux relabelling"
 msgstr ""
 
-#: common/mlcustomize/customize_run.ml:367
+#: common/mlcustomize/customize_run.ml:369
 msgid "SELinux relabelling deferred to first boot"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:222
-#: common/mlcustomize/customize_cmdline.ml:336
+#: common/mlcustomize/customize_run.ml:368
+msgid "SELinux relabelling only FHS"
+msgstr ""
+
+#. common/mlcustomize/customize_cmdline.ml:226
+#: common/mlcustomize/customize_cmdline.ml:340
 msgid "SOURCE:DEST"
 msgstr ""
 
@@ -1651,15 +1661,15 @@ msgstr ""
 msgid "Script or program to run on guest"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:382
+#: common/mlcustomize/customize_cmdline.ml:386
 msgid "Scrub a file"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:474
+#: common/mlcustomize/customize_cmdline.ml:478
 msgid "Scrub build log file"
 msgstr ""
 
-#: common/mlcustomize/customize_run.ml:379
+#: common/mlcustomize/customize_run.ml:381
 msgid "Scrubbing the log file"
 msgstr ""
 
@@ -1721,7 +1731,7 @@ msgstr ""
 msgid "Set partition alignment (default: 128 sectors)"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:484
+#: common/mlcustomize/customize_cmdline.ml:488
 msgid "Set password crypto"
 msgstr ""
 
@@ -1731,7 +1741,7 @@ msgstr ""
 msgid "Set program name"
 msgstr "ವಿಭಾಗಕ್ಕೆ ಒಂದು ಹೆಸರನ್ನು ಸೂಚಿಸು"
 
-#: common/mlcustomize/customize_cmdline.ml:364
+#: common/mlcustomize/customize_cmdline.ml:368
 msgid "Set root password"
 msgstr ""
 
@@ -1747,7 +1757,7 @@ msgstr ""
 msgid "Set temporary block device, directory or prebuilt file"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:411
+#: common/mlcustomize/customize_cmdline.ml:415
 msgid "Set the default timezone"
 msgstr ""
 
@@ -1755,7 +1765,7 @@ msgstr ""
 msgid "Set the format for --list (default: short)"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:284
+#: common/mlcustomize/customize_cmdline.ml:288
 msgid "Set the hostname"
 msgstr ""
 
@@ -1763,7 +1773,7 @@ msgstr ""
 msgid "Set the output architecture"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:353
+#: common/mlcustomize/customize_cmdline.ml:357
 msgid "Set user password"
 msgstr ""
 
@@ -1831,15 +1841,15 @@ msgstr ""
 msgid "Specify a LUKS key"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:400
+#: common/mlcustomize/customize_cmdline.ml:404
 msgid "TARFILE:REMOTEDIR"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:319
+#: common/mlcustomize/customize_cmdline.ml:323
 msgid "TARGET:LINK[:LINK..]"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:410
+#: common/mlcustomize/customize_cmdline.ml:414
 msgid "TIMEZONE"
 msgstr ""
 
@@ -2026,7 +2036,7 @@ msgstr ""
 msgid "Trimming %s"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:423
+#: common/mlcustomize/customize_cmdline.ml:427
 msgid "Truncate a file to zero size"
 msgstr ""
 
@@ -2038,15 +2048,15 @@ msgstr ""
 msgid "Turn off sparse copying"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:200
+#: common/mlcustomize/customize_cmdline.ml:204
 msgid "UID:GID:PATH"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:347
+#: common/mlcustomize/customize_cmdline.ml:351
 msgid "USER:SELECTOR"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:388
+#: common/mlcustomize/customize_cmdline.ml:392
 msgid "USER[:SELECTOR]"
 msgstr ""
 
@@ -2058,7 +2068,7 @@ msgstr ""
 msgid "Uncompressing"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:440
+#: common/mlcustomize/customize_cmdline.ml:444
 msgid "Uninstall package(s)"
 msgstr ""
 
@@ -2072,7 +2082,7 @@ msgstr ""
 msgid "Unpack tar file: %s to %s"
 msgstr "tar ಕಡತದಲ್ಲಿರುವುದನ್ನು ಕೋಶಕ್ಕೆ ಹೊರತೆಗೆ"
 
-#: common/mlcustomize/customize_cmdline.ml:446
+#: common/mlcustomize/customize_cmdline.ml:450
 msgid "Update packages"
 msgstr ""
 
@@ -2080,7 +2090,7 @@ msgstr ""
 msgid "Updating packages"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:457
+#: common/mlcustomize/customize_cmdline.ml:461
 msgid "Upload local file to destination"
 msgstr ""
 
@@ -2112,7 +2122,7 @@ msgstr ""
 msgid "Wrap log messages even if not tty"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:468
+#: common/mlcustomize/customize_cmdline.ml:472
 msgid "Write file"
 msgstr ""
 
@@ -2212,15 +2222,15 @@ msgid ""
 "the virt-customize(1) manual)."
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:531
+#: common/mlcustomize/customize_cmdline.ml:541
 msgid "command '%s' cannot be used in command files, see the man page"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:548
+#: common/mlcustomize/customize_cmdline.ml:558
 msgid "command '%s' not valid, see the man page"
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:318
+#: common/mldrivers/linux_bootloaders.ml:329
 msgid "could not add grub2 serial console (ignored)"
 msgstr ""
 
@@ -2234,7 +2244,7 @@ msgid ""
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:376
+#: common/mldrivers/linux_bootloaders.ml:387
 msgid "could not find bootloader mount point (%s): %s"
 msgstr ""
 
@@ -2256,21 +2266,31 @@ msgid ""
 "failed: %s"
 msgstr ""
 
+#: common/mldrivers/linux_bootloaders.ml:271
+msgid ""
+"could not get the default kernel using Perl Bootloader::Tools, ignoring: %s"
+msgstr ""
+
 #: builder/sigchecker.ml:46
 msgid ""
 "could not import public key\n"
 "Use the ‘-v’ option and look for earlier error messages."
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:336
+#: common/mldrivers/linux_bootloaders.ml:347
 msgid ""
 "could not rebuild grub2 configuration file (%s).  This may mean that grub "
 "output will not be sent to the serial port, but otherwise should be "
 "harmless.  Original error message: %s"
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:320
+#: common/mldrivers/linux_bootloaders.ml:331
 msgid "could not remove grub2 serial console (ignored)"
+msgstr ""
+
+#: common/mldrivers/linux_bootloaders.ml:311
+msgid ""
+"could not set the default kernel using Perl Bootloader::Tools, ignoring: %s"
 msgstr ""
 
 #: builder/downloader.ml:92
@@ -2516,9 +2536,9 @@ msgstr ""
 msgid "internal error: regular expression did not match ‘%s’"
 msgstr ""
 
-#. common/mlcustomize/customize_cmdline.ml:161
-#. common/mlcustomize/customize_cmdline.ml:153
-#: common/mlcustomize/customize_cmdline.ml:169
+#. common/mlcustomize/customize_cmdline.ml:165
+#. common/mlcustomize/customize_cmdline.ml:157
+#: common/mlcustomize/customize_cmdline.ml:173
 msgid "invalid format for '--%s' parameter, see the man page"
 msgstr ""
 
@@ -2566,7 +2586,7 @@ msgstr ""
 msgid "lv"
 msgstr ""
 
-#: common/mlcustomize/customize_cmdline.ml:480
+#: common/mlcustomize/customize_cmdline.ml:484
 msgid "md5|sha256|sha512"
 msgstr ""
 
@@ -2615,7 +2635,7 @@ msgid ""
 "vulnerable to Man-In-The-Middle attacks."
 msgstr ""
 
-#: common/mldrivers/linux_bootloaders.ml:402
+#: common/mldrivers/linux_bootloaders.ml:413
 msgid "no bootloader detected"
 msgstr ""
 
@@ -2791,9 +2811,9 @@ msgstr ""
 msgid "resize2fs"
 msgstr ""
 
-#. common/mlcustomize/inject_virtio_win.ml:395
-#. common/mlcustomize/inject_virtio_win.ml:390
-#: common/mlcustomize/inject_virtio_win.ml:400
+#. common/mlcustomize/inject_virtio_win.ml:399
+#. common/mlcustomize/inject_virtio_win.ml:394
+#: common/mlcustomize/inject_virtio_win.ml:404
 msgid ""
 "root directory ‘/’ is missing from the virtio-win directory or ISO.\n"
 "\n"
@@ -2935,7 +2955,7 @@ msgstr ""
 msgid "the value of the key ‘%s’ is not an object"
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:188
+#: common/mlcustomize/inject_virtio_win.ml:194
 msgid ""
 "there are no virtio drivers available for this version of Windows (%d.%d %s "
 "%s %s).  virt-v2v looks for drivers in %s\n"
@@ -2951,7 +2971,7 @@ msgid ""
 "are susceptible to man-in-the-middle attacks."
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:212
+#: common/mlcustomize/inject_virtio_win.ml:218
 msgid ""
 "there is no virtio block device driver for this version of Windows (%d.%d "
 "%s).  virt-v2v looks for this driver in %s\n"
@@ -2959,7 +2979,7 @@ msgid ""
 "The guest will be configured to use a slower emulated device."
 msgstr ""
 
-#: common/mlcustomize/inject_virtio_win.ml:243
+#: common/mlcustomize/inject_virtio_win.ml:249
 msgid ""
 "there is no virtio network driver for this version of Windows (%d.%d %s).  "
 "virt-v2v looks for this driver in %s\n"
@@ -4409,9 +4429,6 @@ msgstr ""
 
 #~ msgid "fill a file with octets"
 #~ msgstr "ಆಕ್ಟೆಟ್‌ಗಳೊಂದಿಗೆ ಒಂದು ಕಡತವನ್ನು ತುಂಬಿಸು"
-
-#~ msgid "find all files and directories"
-#~ msgstr "ಎಲ್ಲಾ ಕಡತಗಳನ್ನು ಹಾಗು ಕೋಶಗಳನ್ನು ಪತ್ತೆ ಮಾಡು"
 
 #~ msgid "find all files and directories, returning NUL-separated list"
 #~ msgstr "ಎಲ್ಲಾ ಕಡತಗಳನ್ನು ಹಾಗು ಕೋಶಗಳನ್ನು, NUL- ಇಂದ ಬೇರ್ಪಡಿಸಲಾದ ಪಟ್ಟಿಯಲ್ಲಿ ಮರಳಿಸು"
